@@ -1,0 +1,76 @@
+
+
+.materHead{
+    width: 100%;
+    height: auto;
+}
+.materHead img{
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+.materialsC{
+    width: 1001px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background: #e6e6e6;
+    padding: 11px 0 30px 0;
+}
+.materialsC>ul>li{
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    border-bottom: 1px #cbcbcb solid;
+}
+.materialsC>ul>li:last-child{
+    border-bottom: none;
+    margin-bottom: 0;
+}
+.leftBook{
+    width: 185px;
+    height: 236px;
+    float: left;
+    margin-left: 35px;
+    overflow: hidden;
+}
+.leftBook img{
+    width: 100%;
+}
+.rightInfo{
+    width: 757px;
+    float: left;
+    margin-left: 20px;
+}
+.rightInfo h4{
+    margin-top: 38px;
+}
+.rightInfo p{
+    text-indent: 2em;
+    font-size: 13px;
+    margin-top: 14px;
+}
+.rightInfo h5{
+    width: 84px;
+    height: 23px;
+    color: white;
+    text-align: center;
+    background: url("../images/shenYou_tuijian.png") no-repeat;
+}
+.excuse{
+    width: 100%;
+    /*height: 69px;*/
+    padding: 8px 0 10px 17px;
+    font-size: 14px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background: url("../images/shenYou_excuseBG.png") no-repeat;
+    background-size: 100% 100%;
+}
+.excuse pre{
+    margin-bottom: 10px;
+}
+.excuse ul li:not(:first-child){
+    float: left;
+    margin-right: 19px;
+}

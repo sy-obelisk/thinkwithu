@@ -1,0 +1,102 @@
+
+.assessment{
+    width: 1001px;
+    height: 511px;
+    margin: 0 auto;
+    background: url("../images/assessmentResults_BG.jpg") no-repeat;
+    background-size: 100% auto;
+    margin-top: 30px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.assessment h1{
+    text-align: center;
+    color: #80107e;
+}
+.assessment h1 span{
+    font-size: 30px;
+}
+.inContent{
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 161px;
+    padding-left: 75px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.inContent ul li{
+    overflow: auto;
+    margin-bottom: 8px;
+}
+.inContent ul li label{
+    width: 40px;
+    float: left;
+    font-size: 12px;
+}
+.inContent ul li div{
+    float: left;
+    margin-top: -5px;
+}
+.inContent ul li div input{
+    width: 90px;
+    height: 17px;
+    border: none;
+}
+.inContent ul li a{
+    font-size: 12px;
+    color: #000000;
+    float: left;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+.inContent>div{
+    margin-top: 15px;
+    font-size: 12px;
+    margin-left: 20px;
+}
+.inContent>div>label:hover{
+    cursor: pointer;
+}
+.inContent .completion{
+    width: 166px;
+    height: 33px;
+    line-height: 33px;
+    display: block;
+    color: white;
+    font-weight: bold;
+    background: url("../images/assessmentResults_btnBG.png") no-repeat;
+    padding-left: 47px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size: 15px;
+    margin-top: 95px;
+    margin-left: 20px;
+}
+.checkDiv{
+    width: 12px;
+    height: 12px;
+    border: 1px #000000 solid;
+    background: white;
+    float: left;
+    margin-right: 5px;
+    /*margin-top: 2px;*/
+    position: relative;
+}
+.checkDiv input{
+    /*display: none;*/
+    position: absolute;
+    left: -3px;
+    top: -3px;
+    z-index: 11;
+    opacity: 0;
+}
+.checkDiv img{
+    display: none;
+    position: absolute;
+    top: -3px;
+    left: 0;
+}

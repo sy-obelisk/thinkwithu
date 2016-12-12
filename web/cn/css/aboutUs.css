@@ -1,0 +1,347 @@
+.about-top{
+    width: 100%;
+    overflow: auto;
+}
+.abT-left{
+    width: 231px;
+    float: left;
+}
+.abT-left img{
+    width: 100%;
+}
+.abT-right{
+    width: 423px;
+    float: left;
+    margin-left: 36px;
+}
+.abT-right h2{
+    margin-top: 26px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.abT-right p{
+    margin-left: 20px;
+}
+.abT-right p span{
+    font-size: 16px;
+}
+.abT-right p b{
+    font-size: 16px;
+    margin-left: 10px;
+}
+.abT-right p b img{
+    width: 20px;
+}
+.infoBanner{
+    width: 100%;
+    margin-top: 23px;
+    margin-bottom: 38px;
+}
+.infobHd{
+    width: 100%;
+    height: 76px;
+    background: url("../images/aboutUs_navBG.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.infobHd ul{
+    margin-left: 30px;
+}
+.infobHd ul li{
+    display: inline-block;
+    padding: 20px 10px;
+    margin-right: 12px;
+    font-size: 15px;
+}
+.infobHd ul li:hover{
+    cursor: pointer;
+}
+.infobHd ul li:last-child{
+    margin-right: 0;
+}
+.infobHd ul li.on{
+    background: #dbdbdb;
+}
+.infobHd ul li.on span{
+    font-weight: bold;
+}
+.infoLimg{
+    width: 44px;
+    height: auto;
+    background: white;
+    float: left;
+    padding: 2px 2px 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.infoLimg img{
+    width:100%;
+}
+.infoRifont{
+    width: 27px;
+    line-height: 15px;
+    float: left;
+    margin-left: 3px;
+}
+.infoRifont span{
+    font-size: 12px;
+}
+.infobBd{
+    width: 100%;
+    /*height: 531px;*/
+    background: #f5f5f5;
+    padding: 42px 0 35px 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.bdContent{
+    width: 100%;
+}
+.c-top{
+    width: 100%;
+    height: 29px;
+    position: relative;
+    color: white;
+    padding: 3px 0 0 15px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.topBack01{
+    background: url("../images/aboutUs_titleBG.png") no-repeat;
+    background-size: 100% auto;
+}
+.topBack02{
+    background: url("../images/aboutUs_titleBG02.png") no-repeat;
+}
+.c-top>h3{
+    font-size: 18px;
+}
+.c-top>b{
+    font-style: italic;
+    padding-left: 18px;
+    color: #ff6302;
+    position: absolute;
+    top: -5px;
+    right: 0;
+    font-size: 16px;
+    background: url("../images/aboutUs_yPhone.png") no-repeat;
+    background-size: 18px auto;
+}
+.c-center{
+    margin-top: 19px;
+    overflow: auto;
+}
+.c-ceLeft{
+    width: 495px;
+    float: left;
+    font-size: 14px;
+}
+.c-ceLeft p{
+    text-indent: 2em;
+}
+.c-ceRight{
+    width: 189px;
+    float: left;
+    margin-left: 5px;
+}
+.c-ceRight img{
+    width: 100%;
+}
+.c-bottom{
+    width: 100%;
+    margin-top: 15px;
+}
+.c-bottom h4{
+    padding-left: 18px;
+    color: #ff9139;
+    margin-bottom: 15px;
+    background: url("../images/aboutUs_yxing.png") no-repeat;
+}
+.bo-left{
+    width: 262px;
+    height: 74px;
+    float: left;
+    margin-right: 98px;
+    background: url("../images/aboutUs_blueBG.png") no-repeat;
+    background-size: 100% auto;
+}
+.bo-left span{
+    font-size: 14px;
+    padding-left: 5px;
+}
+.bo-left h1{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 16px;
+}
+.bo-right{
+    width: 262px;
+    height: 74px;
+    float: left;
+    padding-top: 2px;
+    background: url("../images/aboutUs_orangeBG.png") no-repeat;
+    background-size: 100% auto;
+}
+.bo-right span{
+    font-size: 14px;
+    padding-left: 5px;
+}
+.bo-right h1{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 16px;
+}
+/*课程体系*/
+.classContent{
+    width: 100%;
+    font-size: 14px;
+    margin-top: 40px;
+}
+.classContent p{
+    text-indent: 2em;
+    margin-bottom: 27px;
+}
+.faceToFace{
+    width: 716px;
+}
+.face-left{
+    width: 400px;
+    float: left;
+    margin-left: 15px;
+}
+.face-left ul li{
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 7px;
+}
+.face-left ul li:first-child{
+    margin-left: 50px;
+}
+.comGrey{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #dcdedd;
+    text-align: center;
+    font-size: 14px;
+    display: table;
+}
+.comGrey span{
+    display: table-cell;
+    vertical-align: middle;
+}
+.face-left ul li img{
+    margin-top: 18px;
+}
+.face-right{
+    width: 237px;
+    height: 137px;
+    line-height: 20px;
+    float: left;
+    color: white;
+    font-size: 12px;
+    margin-left: 30px;
+    background: url("../images/aboutUs_classBG.png") no-repeat;
+    padding: 29px 0 0 7px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.face-right p{
+    text-indent: 2em;
+}
+
+.countryIcon{
+    width: 716px;
+    overflow: auto;
+}
+.countryIcon>ul{
+    margin-left: 15px;
+}
+.countryIcon>ul>li{
+    width: 94px;
+    text-align: center;
+    margin-right: 20px;
+    float: left;
+}
+.countryIcon>ul>li:last-child{
+    margin-right: 0;
+}
+.countryIcon>ul>li>div{
+    width:100%;
+    height: 94px;
+    background: white;
+    border: 2px #b6b6b6 solid;
+    text-align: center;
+}
+.countryIcon>ul>li>div>span{
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.countryIcon>ul>li>div>img{
+    height: 80%;
+    vertical-align: middle;
+}
+/*品牌介绍*/
+.diffPro{
+    width: 100%;
+}
+.diffPro p{
+    text-indent: 2em;
+    font-size: 14px;
+    line-height: 25px;
+}
+.productInfo-L{
+    width: 400px;
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.productInfo-R{
+    width: 262px;
+    height: 116px;
+    float: left;
+    margin-left: 28px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.productInfo-R img{
+    width: 100%;
+}
+.fourDiff{
+    overflow: auto;
+    margin-top: 12px;
+    margin-bottom: 21px;
+}
+.fourDiff ul li{
+    width: 158px;
+    height: 59px;
+    line-height: 59px;
+    float: left;
+    border: 2px #000000 solid;
+    text-align: center;
+    margin-right: 12px;
+    font-size: 30px;
+}
+.fourDiff ul li:last-child{
+    margin-right: 0;
+}
+
+/*服务理念*/
+.serviceConcept{
+    width: 100%;
+    word-break: break-all;
+    word-wrap: break-word;
+    margin-top: 16px;
+}
+.serviceConcept pre{
+    font-size: 14px;
+    font-family: '微软雅黑';
+}

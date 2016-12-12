@@ -1,0 +1,911 @@
+/*---------------留学优势-------------------*/
+.ad-tit-wrap span.ad-tit-l{
+    color: #474443;
+    font-size: 0.8rem;
+}
+.ad-tit-wrap i.ad-tit-r{
+    font-style: normal;
+    color: #FF6633;
+    margin-top: 0.2rem;
+    font-size: 0.5rem;
+}
+.tit-num{
+    text-align: center;
+    width: 0.9rem;
+    height: 0.9rem;
+    color: #ffffff;
+    line-height: 0.9rem;
+    font-size: 0.6rem;
+    background: #FF6633;
+    border-radius: 50%;
+    margin-right: 0.25rem;
+}
+.ad1-list{
+    background: #ffffff;
+    text-align: center;
+    padding: 0.625rem 0.625rem;
+}
+.ad1-list li{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 0.4rem;
+    margin-bottom: 0.7rem;
+}
+.ad1-list li:nth-child(3n){
+    margin-right: 0;
+}
+.ad1-list li:last-child{
+    margin-right: 0;
+}
+.ad1-name{
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 0.6rem;
+    line-height: 1rem;
+    opacity: 0.8;
+    left: 0;
+    bottom: 0;
+}
+.a1-img{
+    width: 5.4rem;
+}
+.ad1-de{
+    padding-top: 0.3rem;
+    line-height: 0.75rem;
+    font-size: 0.6rem;
+    max-width: 5.4rem;
+}
+
+.ad2-left{
+    width: 70%;
+}
+.ad2-left p{
+    font-size: 0.55rem;
+    line-height: 0.8rem;
+}
+.ad2-right{
+    width: 28%;
+}
+.ad4-wrap li{
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    height: 2rem;
+    padding: 1rem 0;
+    width: 48%;
+    margin-bottom: 0.5rem;
+
+    border-radius: 5px;
+}
+.ad4-wrap li p{
+    padding:0 0.6rem;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    font-size: 0.6rem;
+    line-height: 0.9rem;
+    color: #ffffff;
+}
+.mg-t{
+    margin: 0.6rem 0 0.7rem;
+}
+/*-----------------------------留学优势END-----------------------------------------*/
+
+/*==============================背景提升=======================================*/
+.boost-tit {
+    padding: 0.4rem 0.625rem;
+}
+
+.boost-icon {
+    width: 1.4rem;
+}
+
+.boost-tit-name {
+    color: #ffffff;
+    font-size: 0.8rem;
+}
+
+.b-crrow {
+    width: 1rem;
+}
+
+.b1-wrap {
+    padding: 0 0.625rem 1.8rem;
+}
+
+.b1 li {
+    text-align: center;
+    width: 48%;
+    padding-bottom: 0.5rem;
+    border: 1px solid #CCCCCC;
+}
+
+.b1 li:nth-child(n) {
+    float: left;
+}
+
+.b1 li:nth-child(2n) {
+    float: right;
+}
+
+.boost-img {
+    width: 100%;
+    /*height: 5rem;*/
+    overflow: hidden;
+}
+
+.boost-name {
+    margin-top: 0.2rem;
+    line-height: 0.9rem;
+    font-size: 0.7rem;
+    color: #802F8A;
+}
+
+.boost-time {
+    margin-top: 0.2rem;
+    color: #333333;
+    line-height: 0.6rem;
+    font-size: 0.5rem;
+}
+
+.boost-xq {
+    text-align: center;
+    width: 5rem;
+    margin-top: 0.2rem;
+    background: #F95B52;
+    border-radius: 10px;
+    color: #ffffff;
+    line-height: 1rem;
+    font-size: 0.5rem;
+}
+
+.boost-xq img {
+    margin-right: 0.1rem;
+    width: 0.5rem;
+}
+
+.b2-select span {
+    width: 4.5rem;
+    border-radius: 3px;
+    display: inline-block;
+    vertical-align: top;
+    background: #CCCCCC;
+    color: #ffffff;
+    font-size: 0.6rem;
+}
+
+.b2-current {
+    background: #FF6600 !important;
+
+}
+.banner2-wrap{
+    width: 100%;
+    overflow: hidden;
+}
+.banner2-wrap .swiper-pagination-bullet {
+    opacity: 1;
+    width: 0.5rem;
+    height: 0.5rem;
+    bottom: inherit;
+    background: #CCCCCC;
+}
+
+.banner2-wrap .swiper-pagination-bullet-active {
+    background: #742080;
+}
+/*===============================背景提升 END=====================================*/
+
+/*===============================案例中心=====================================*/
+.case-wrap {
+    padding: 1.5rem 0.625rem 1rem;
+    background: #87C146;
+}
+
+.case-select span {
+    border: 1px solid #E6E6E6;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 0.7rem;
+    border-radius: 3px;
+    background: #E6E6E6;
+    color: #332C2B;
+    width: 31.5%;
+}
+
+.case-current {
+    border-color: #802F8A !important;
+    color: #802F8A !important;
+    background: #ffffff !important;
+}
+/*===============================案例中心 END=====================================*/
+
+
+/*===============================留学咨询=====================================*/
+.ct-1 {
+    padding: 1rem 0.625rem 2rem;
+    background: #3089ED;
+}
+
+.arrow-1 {
+    width: 1.8rem;
+    left: 50%;
+    margin-left: -0.9rem;
+    bottom: -0.9rem;
+}
+
+.line-1 {
+    padding: 0 0.2rem;
+}
+
+.ct-2 {
+    padding: 2rem 0.625rem 1rem;
+    background: #87C146;
+}
+
+
+
+.ct-tel {
+    padding: 0.8rem 0;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 0.9rem;
+    color: #802F8A;
+}
+/*===============================留学咨询 END=====================================*/
+
+/*===============================联系申友=====================================*/
+.contact-tit {
+    font-weight: normal;
+    font-size: 0.8rem;
+    color: #802F8A;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.contact-wrap li {
+    background: #ffffff;
+    padding: 0.65rem;
+    margin-bottom: 0.5rem;
+}
+
+.region-name {
+    font-weight: normal;
+    color: #802F8A;
+    font-size: 0.8rem;
+}
+
+.contact-text {
+    color: #333333;
+    font-size: 0.7rem;
+    line-height: 1rem;
+}
+
+.c-addres {
+    vertical-align: top;
+}
+/*===============================联系申友 END=====================================*/
+
+
+/*===============================单项加油站=====================================*/
+.pd-3 {
+    padding: 1.25rem 0.6rem;
+}
+
+.gas-list li {
+    display: inline-block;
+    background: #ffffff;
+    text-align: center;
+    padding: 0.35rem;
+    margin-bottom: 0.5rem;
+}
+
+.gas-list li:nth-child(n) {
+    float: left;
+}
+
+.gas-list li:nth-child(2n) {
+    float: right;
+}
+
+.gas-img {
+    width: 8rem;
+    height: 4.75rem;
+    overflow: hidden;
+    text-align: center;
+    line-height: 4.75rem;
+}
+
+.gas-name {
+    color: #332C2B;
+    font-size: 0.8rem;
+}
+
+.gas-show {
+    color: #ffffff;
+    display: inline-block;
+    vertical-align: top;
+    background: #F95B52;
+    font-size: 0.6rem;
+    line-height: 1.3rem;
+    width: 100%;
+}
+
+/*===============================单项加油站 END=====================================*/
+
+/*===============================GMAT课程=====================================*/
+.sub-list {
+    padding: 0 0.625rem 0.625rem;
+}
+
+.sub-list a img {
+    height: 4.35rem;
+    margin-bottom: 0.4rem;
+}
+
+.course-wrap{
+    padding-top: 0.8rem;
+}
+.course-wrap li{
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    width: 3.15rem;
+    margin-bottom: 0.5rem;
+}
+.course-tit{
+    display: inline-block;
+    background: #FFB469;
+    color: #ffffff;
+    width: 2.6rem;
+    height: 2.1rem;
+    padding-top: 0.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    text-align: center;
+    font-size: 0.65rem;
+    line-height: 0.8rem;
+}
+.course-de{
+    margin-top: 0.25rem;
+    margin-bottom: 0.1rem;
+    line-height: 0.6rem;
+    font-size: 0.5rem;
+    color: #4D4D4D;
+}
+.course-time{
+    line-height: 0.7rem;
+    font-size: 0.5rem;
+    color: #ff0000;
+}
+.sub-8{
+    margin: 0.5rem -0.1rem 0;
+}
+/*===============================GMAT课程 END=====================================*/
+
+/*===============================GMATVIP班=====================================*/
+.teacher-list{
+    padding-top: 1rem;
+}
+.teacher-list li {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin-right: 2%;
+    margin-bottom: 1.5rem;
+}
+
+.teacher-list li:nth-child(3n) {
+    margin-right: 0;
+}
+
+.teacher-name {
+    position: absolute;
+    text-align: center;
+    width: 2rem;
+    line-height: 2rem;
+    border-radius: 50%;
+    background: #008BA3;
+    font-size: 0.6rem;
+    color: #ffffff;
+    font-family: Impact;
+    left: 25%;
+    bottom: -0.9rem;
+}
+/*===============================GMATVIP班 END=====================================*/
+
+/*===============================GMAT周末班 END=====================================*/
+.books-list{
+    padding-top: 1rem;
+}
+.books-list li{
+    width: 32%;
+    margin-right: 0.3%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+.boos-list li:last-child{
+    margin-right: 0;
+}
+.book-img{
+    width: 3.9rem;
+}
+.books-name{
+    padding: 0.2rem 0 0.5rem 0.25rem;
+    font-size: 0.46rem;
+}
+/*===============================GMAT周末班 END=====================================*/
+
+/*===============================了解申友=====================================*/
+.know-tit {
+    padding: 0.3rem 0;
+    /*margin-bottom: 1rem;*/
+    background: #B061BA;
+    border-bottom: 1px solid #82488c;
+}
+.know-tit:last-child{
+    border-bottom: none;
+}
+
+.k-crrow-wrap {
+    width: 24%;
+    margin-right: 0.8rem;
+}
+
+.k-crrow {
+    width: 0.8rem;
+}
+
+.k-tit {
+    margin-left: 1.6rem;
+    width: 60%;
+    color: #ffffff;
+    font-size: 0.8rem;
+}
+
+.know-text {
+    color: #332C2B;
+    line-height: 0.9rem;
+    font-size: 0.6rem;
+}
+
+.k1 {
+    width: 59%;
+    color: #332C2B;
+    text-indent: 1rem;
+    font-size: 0.6rem;
+    line-height: 0.9rem;
+}
+
+.k2 {
+    color: #332C2B;
+    padding-bottom: 0.6rem;
+    font-size: 0.6rem;
+    line-height: 0.9rem;
+}
+
+.k3 {
+    font-size: 0.6rem;
+    line-height: 0.9rem;
+    color: #332C2B;
+}
+
+.k-name {
+    color: #FF6600;
+    font-size: 0.7rem;
+}
+
+.k-info {
+    color: #333333;
+    line-height: 0.5rem;
+    font-size: 0.35rem;
+}
+
+.team-img {
+    width: 3.6rem;
+    height: 3.6rem;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.k-team-wrap li {
+    width: 49.5%;
+    margin: 0.9rem 0;
+    overflow: hidden;
+}
+
+.k-team-wrap li:nth-child(odd) {
+    float: left;
+}
+
+.k-team-wrap li:nth-child(even) {
+    float: right;
+}
+
+.team-left {
+    margin-top: 0.1rem;
+    float: left;
+    width: 46%;
+}
+
+.team-right {
+    float: right;
+    width: 53%;
+}
+.know-info-wrap{
+    padding: 0.8rem 0;
+}
+/*===============================了解申友 END=====================================*/
+
+/*===============================最新资讯=====================================*/
+.n1-page {
+    bottom: 0;
+}
+
+.n1-page .swiper-pagination-bullet {
+    opacity: 1;
+    width: 0.5rem !important;
+    height: 0.5rem !important;
+    background: #ffffff !important;
+}
+
+.n1-page .swiper-pagination-bullet-active {
+    background: #742080 !important;
+}
+
+.news-select {
+    padding-bottom: 0.5rem;;
+}
+
+.news-select span {
+    position: relative;
+    text-align: center;
+    line-height: 3.1rem;
+    margin-right: 0.24rem;
+    width: 5.5rem;
+}
+
+.news-select span:last-child {
+    margin-right: 0;
+}
+
+.n-select-img {
+    width: 3rem;
+}
+
+.triangle {
+    display: none;
+    width: 0;
+    height: 0;
+    left: 50%;
+    margin-left: -0.5rem;
+    bottom: -0.4rem;
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+}
+
+.n-wrap {
+    display: none;
+}
+/*===============================最新资讯 END=====================================*/
+
+/*===============================院校搜索=====================================*/
+.form-wrap{
+    display: inline;
+}
+.search-text-wrap{
+    padding: 0 0.625rem 0.4rem;
+    background: #474443;
+}
+.search-wrap {
+    overflow: hidden;
+    margin-top: 0.4rem;
+    border-radius: 5px;
+    width: 7.5rem;
+    padding-left: 0.375rem;
+    line-height: 1.25rem;
+    height: 1.25rem;
+    background: #ffffff;
+}
+
+.search-wrap input {
+    vertical-align: top;
+    width: 6.5rem;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 0.6rem;
+    padding-left: 0.1rem;
+
+}
+
+.search-1 {
+    margin-top: -0.15rem;
+    width: 0.68rem;
+}
+.sc-logo{
+    text-align: center;
+    width: 4.85rem;
+    padding: 0.5rem 0.3rem 0;
+    height: 4.85rem;
+    border: 1px solid #CCCCCC;
+}
+.sc-logo img{
+    width: 3.55rem;
+}
+.concern{
+    color: #757475;
+    font-size: 0.6rem;
+}
+.sc-info{
+    width: 65%;
+}
+.ch-name{
+    margin-right: 0.2rem;
+    font-size: 0.8rem;
+    line-height: 0.9rem;
+    color: #663399;
+}
+.en-name{
+    color: #757475;
+    line-height: 1.2rem;
+    font-size: 0.7rem;
+}
+.sc-pe{
+    width: 4rem;
+}
+.school-wrap{
+    padding: 0 0.625rem;
+}
+.school-wrap li{
+    overflow: hidden;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #CCCCCC;
+}
+.school-wrap li:last-child{
+    border-bottom: none;
+}
+.sc-other{
+    padding-bottom: 1rem;
+}
+.sc-other a{
+    display: block;
+    margin-bottom: 0.4rem;
+}
+/*===============================院校搜索 END=====================================*/
+
+
+/*===============================申友课堂 =====================================*/
+.class-wrap {
+    padding: 1rem 0.625rem;
+}
+
+.class-select-wrap span {
+    width: 23%;
+    margin-right: 0.7%;
+    text-align: center;
+    font-size: 0.7rem;
+    background: #E6E6E6;
+}
+
+.class-select-wrap span:last-child {
+    margin-right: 0;
+}
+
+.class-current {
+    border: 1px solid #802F8A;
+    color: #802F8A !important;
+    background: #ffffff !important;
+}
+.class-list-wrap{
+    display: none;
+}
+/*===============================申友课堂 END=====================================*/
+
+
+/*===============================名师云集=====================================*/
+.tc-select {
+    font-size: 0.8rem;
+    background: #F2F9FF;
+}
+
+.tc-select span {
+    width: 23.9%;
+    text-align: center;
+    color: #333333;
+}
+
+.tc-current {
+    color: #802F8A !important;
+}
+
+.tc-list li {
+    overflow: hidden;
+}
+
+.tc-img {
+    border-radius: 100%;
+    overflow: hidden;
+    text-align: center;
+    width: 5rem;
+    margin-right: 0.3rem;
+}
+
+.tc-info {
+    width: 68%;
+}
+.tc-de{
+    margin-top: 0.3rem;
+}
+.tc-de-text {
+    color: #666666;
+    line-height: 0.9rem;
+    font-size: 0.6rem;
+}
+
+.tc-lev{
+    margin-top: 0.6rem;
+    background: #F95B52;
+    font-size: 0.7rem;
+    line-height: 1.3rem;
+    border-radius: 15px;
+    padding: 0 0.5rem;
+    color: #ffffff;
+}
+.tc-cm{
+    color: #332C2B;
+    line-height: 1.2rem;
+    font-size: 0.8rem;
+}
+.tc-em{
+    color: #802F8A;
+    line-height: 1rem;
+    font-size: 0.7rem;
+}
+.tc-list li{
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #CCCCCC;
+}
+.tc-list li:last-child{
+    border-bottom: none;
+}
+.tc-wrap{
+    display: none;
+}
+/*===============================名师云集 END=====================================*/
+
+/*===============================托福课程=====================================*/
+.tf-special{
+    padding-bottom:0.8rem;
+}
+.tf-top{
+    margin-bottom: 0.2rem;
+}
+.tf-top a{
+    float:left;
+    width: 32%;
+    margin-right: 1.5%;
+}
+.tf-top a:last-child{
+    margin-right: 0;
+}
+.tf-bottom a{
+    width: 49%;
+}
+/*===============================托福课程 END=====================================*/
+
+
+/*===============================美国申请方案=====================================*/
+.usa-wrap {
+    background: url("../images/u-b1.png") no-repeat 0 0, #F2F3EE;
+    background-size: contain;
+}
+
+.u-t1 {
+    letter-spacing: 0.1rem;
+    padding-top: 0.5rem;
+    font-size: 1.75rem;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+.u-t2 {
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 0.8rem;
+    line-height: 1.8rem;
+}
+
+.u-top {
+    background: #F14949;
+    border-radius: 3px;
+    padding: 0.6rem 1.5rem;
+}
+
+.u-select {
+    padding-top: 0.6rem;
+    padding-bottom: 0.3rem;
+}
+
+.u-select a {
+    display: inline-block;
+    vertical-align: top;
+    width: 4.5rem;
+}
+
+.u-select a:first-child {
+    margin-right: 1.3rem;
+}
+
+.u-tit {
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: #F14949;
+}
+
+.u1 {
+    padding-bottom: 0.8rem;
+}
+
+.u-num {
+    text-align: center;
+    width: 0.8rem;
+    font-weight: bold;
+    line-height: 0.8rem;
+    border-radius: 50%;
+    font-size: 0.7rem;
+    color: #663333;
+    border: 1px solid #663333;
+}
+
+.u-t3 {
+    color: #663333;
+    font-size: 0.8rem;
+}
+
+.u-de-wrap {
+    padding-left: 1.2rem;
+}
+
+.u-de {
+    color: #333333;
+    font-size: 0.6rem;
+    line-height: 0.9rem;
+    padding-bottom: 0.3rem;
+}
+
+.u-btn {
+    padding-top: 0.3rem;
+    width: 5rem;
+}
+
+.price {
+    font-size: 0.7rem;
+    line-height: 1rem;
+    color: #b30000;
+}
+
+.u-price {
+    padding-left: 0.2rem;
+    text-decoration: line-through;
+    font-size: 0.7rem;
+    color: #999999;
+}
+
+.u-big {
+    width: 0.9rem;
+}
+
+.u2-wrap {
+    background: url("../images/u-bg2.png") no-repeat 0 0;
+    background-size: cover;
+}
+.u2-de{
+    padding: 0.8rem 0 0;
+}
+/*===============================美国申请方案 END=====================================*/

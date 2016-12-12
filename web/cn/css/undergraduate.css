@@ -1,0 +1,815 @@
+
+@import "studyAbroad.css";
+@import "index.css";
+
+.advanRight{
+    width: 284px;
+}
+.bannerRight{
+    width: 265px;
+}
+.graduateNav{
+    width: 1001px;
+    height: 85px;
+    margin: 0 auto;
+    margin-top: 21px;
+}
+.graN-left{
+    width: 237px;
+    height: 65px;
+    float: left;
+    padding: 4px 8px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.leftDiffb01{
+    background: #02349a;
+}
+.leftDiffb02{
+    background: #353c84;
+}
+.leftDiffb03{
+    background: #4c8ddc;
+}
+.graN-left>div{
+    width: 220px;
+    height: 52px;
+    line-height: 52px;
+    text-align: center;
+    border: 2px white solid;
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+}
+.graN-right{
+    width: 729px;
+    height: 40px;
+    background: #efeeec;
+    float: left;
+    margin-left: 31px;
+    margin-top: 15px;
+}
+.graN-right ul{
+    margin-left: 12px;
+    margin-top: 9px;
+}
+.graN-right ul li{
+    float: left;
+    margin-right: 58px;
+    font-size: 16px;
+}
+.rightDiff01 ul li.on{
+    background: url("../images/graduate_smallTbg.png") no-repeat;
+    background-size: 100% 100%;
+}
+.rightDiff02 ul li.on{
+    background: url("../images/graduate_smallTbg02.png") no-repeat;
+    background-size: 100% 100%;
+}
+.rightDiff03 ul li.on{
+    background: url("../images/graduate_smallTbg03.png") no-repeat;
+    background-size: 100% 100%;
+}
+.graN-right ul li.on a{
+    color: white;
+}
+.graN-right ul li:last-child{
+    margin-right: 0;
+}
+.assessBtn{
+    margin-top: 26px;
+}
+.assessBtn>a{
+    width: 127px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 3px;
+    padding: 7px 7px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.assessBtn>a:first-child{
+    margin-left: 15px;
+}
+.assessBtn>a:last-child{
+    margin-left: 10px;
+}
+.assessBtn>a>div{
+    width: 100%;
+    height: 100%;
+    border: 1px white solid;
+    color: white;
+    text-align: center;
+    border-radius: 2px;
+    display: table;
+}
+.assessBtn>a>div>span{
+    display: table-cell;
+    vertical-align: middle;
+}
+.assessBtn>a>div>span>img{
+    height: 22px;
+    vertical-align: middle;
+    margin-right: 7px;
+}
+.diffBac01{
+    background: #033399;
+}
+.diffBac02{
+    background: #353c84;
+}
+.diffBac03{
+    background: #4a8ee2;
+}
+.graduateBan{
+    width: 1001px;
+    margin: 0 auto;
+    margin-top: 16px;
+}
+.gradu01 .dissertation div span{
+    color: #04359b;
+}
+.gradu01 .adChd ul li a{
+    color: #04359b;
+}
+.gradu01 .adChd ul li.on{
+    background: url("../images/graduate_smallTbg.png") no-repeat center;
+}
+.gradu01 .adChd ul li.on a{
+    color: white;
+}
+.gradu01 .bannerRhd>ul>li.on a{
+    color: #353c84;
+}
+.gradu02 .dissertation div span{
+    color: #353c84;
+}
+.gradu02 .adChd ul li a{
+    color: #353c84;
+}
+.gradu02 .adChd ul li.on{
+    background: url("../images/graduate_smallTbg02.png") no-repeat center;
+}
+.gradu02 .adChd ul li.on a{
+    color: white;
+}
+.gradu02 .bannerRhd>ul>li.on a{
+    color: #353c84;
+}
+.gradu03 .dissertation div span a{
+    color: #4d8edc;
+}
+.gradu03 .adChd ul li a{
+    color: #4d8edc;
+}
+.gradu03 .adChd ul li.on{
+    background: url("../images/graduate_smallTbg03.png") no-repeat center;
+}
+.gradu03 .adChd ul li.on a{
+    color: white;
+}
+.gradu03 .bannerRhd>ul>li.on a{
+    color: #4d8edc;
+}
+.essence{
+    width: 1001px;
+    height: 181px;
+    margin: 0 auto;
+    background: #e6e6e6;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-top: 25px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.essence ul li{
+    width: 129px;
+    float: left;
+    margin-right: 45px;
+}
+.essence ul li:last-child{
+    margin-right: 0;
+}
+.essence ul li div{
+    text-align: center;
+    position: relative;
+    width: 111px;
+    height: 111px;
+    border-radius: 50%;
+    border: 5px white solid;
+    margin: 0 auto;
+}
+.essence ul li div a{
+    color: white;
+}
+.essence ul li div img{
+    width: 129px;
+    position: absolute;
+    top: -20px;
+    left: -12px;
+}
+.essence ul li div b{
+    width: 129px;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    position: absolute;
+    bottom: 17px;
+    left: -12px;
+}
+.essence ul li h4{
+    text-align: center;
+    margin-top: 10px;
+}
+.essence ul li:hover div{
+    background: white;
+}
+.speColor01 ul li div{
+    background: #023499;
+}
+.speColor01 ul li:hover{
+    cursor: pointer;
+}
+
+.speColor01 ul li h4 a{
+    color: #02349a;
+}
+.speColor01 ul li:hover div{
+    border: 5px #02349a solid;
+}
+
+.speColor02 ul li div{
+    background: #353c84;
+}
+.speColor02 ul li:hover{
+    cursor: pointer;
+}
+
+.speColor02 ul li h4 a{
+    color: #353c84;
+}
+.speColor02 ul li:hover div{
+    border: 5px #353c84 solid;
+}
+.speColor03 ul li div{
+    background: #81318c;
+}
+.speColor03 ul li:hover{
+    cursor: pointer;
+}
+
+.speColor03 ul li h4 a{
+    color: #81318c;
+}
+.speColor03 ul li:hover div{
+    border: 5px #81318c solid;
+}
+.graduateComT{
+    width: 1001px;
+    height: 47px;
+    margin: 0 auto;
+    background: url("../images/graduate_titleBG.png") no-repeat center;
+    text-align: center;
+}
+.graduateComT h1{
+    color: #023499;
+    background: white;
+    padding: 0 26px;
+    display: inline-block;
+}
+.graduateComT02{
+    width: 1001px;
+    height: 47px;
+    margin: 0 auto;
+    background: url("../images/graduate_titleBG02.png") no-repeat center;
+    text-align: center;
+}
+.graduateComT02 h1{
+    color: #353c84;
+    background: white;
+    padding: 0 26px;
+    display: inline-block;
+}
+.graduateComT03{
+    width: 1001px;
+    height: 47px;
+    margin: 0 auto;
+    background: url("../images/graduate_titleBG03.png") no-repeat center;
+    text-align: center;
+}
+.graduateComT03 h1{
+    color: #4a8ee2;
+    background: white;
+    padding: 0 26px;
+    display: inline-block;
+}
+.fourSort{
+    width: 1001px;
+    margin: 0 auto;
+    margin-top: 23px;
+    margin-bottom: 18px;
+}
+.fourSort:after{
+    display:block;clear:both;content:"";visibility:hidden;
+}
+.fourSort>ul>li{
+    width: 215px;
+    float: left;
+    margin-right: 46px;
+}
+.fourSort>ul>li:last-child{
+    margin-right: 0;
+}
+.fourSort>ul>li>img{
+    width: 100%;
+    vertical-align: bottom;
+}
+.fourSort>ul>li>div{
+    width: 100%;
+    height: 163px;
+    padding-top: 9px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.divBack01>ul>li>div{
+    background: #343434;
+}
+.divBack02>ul>li>div{
+    background: #353c84;
+}
+.newMTun{
+    margin-top: 30px!important;
+}
+.fourSort>ul>li>div>h4{
+    color: white;
+    width:100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+    background: url("../images/graduate_hFourBG.png") no-repeat bottom;
+}
+.fourSort>ul>li>div>ul{
+    /*margin-left: 13px;*/
+}
+.fourSort>ul>li>div>ul>li{
+    margin-bottom: 3px;
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+.fourSort>ul>li>div>ul>li>a{
+    color: white;
+}
+.otherSort{
+    width: 1001px;
+    overflow: auto;
+    margin: 0 auto;
+    margin-top: 19px;
+}
+.otherSort>ul>li{
+    width: 394px;
+    height: 159px;
+    border: 2px #b3b3b3 solid;
+    border-radius: 15px;
+    float: left;
+    margin-left: 67px;
+    margin-right: 77px;
+    margin-bottom: 41px;
+    position: relative;
+    padding-left: 83px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.otherSort>ul>li:nth-child(2n){
+    margin-right: 0;
+}
+.otherSort>ul>li:nth-child(3){
+    margin-bottom: 10px;
+}
+.otherSort>ul>li:nth-child(4){
+    margin-bottom:  10px;
+}
+.otherSort>ul>li>img{
+    width: 110px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    left: -55px;
+    top: 50%;
+    margin-top: -55px;
+}
+.otherSort>ul>li>h4{
+    width: 256px;
+    border-bottom: 2px #b3b3b3 dashed;
+    padding-bottom: 7px;
+    margin-bottom: 8px;
+    margin-top: 5px;
+}
+.otherSort>ul>li>ul>li{
+    margin-bottom: 3px;
+}
+.interCutAd{
+    width: 1001px;
+    margin: 0 auto;
+    margin-bottom: 39px;
+}
+.otherCutAd{
+    width: 1001px;
+    margin: 0 auto;
+    margin-bottom: 31px;
+}
+.otherCityShow{
+    width: 1001px;
+    margin: 0 auto;
+    overflow: auto;
+    margin-top: 26px;
+    margin-bottom: 33px;
+}
+.otherCityShow>ul>li{
+    width: 189px;
+    height: 282px;
+    float: left;
+    margin-right: 13px;
+    position: relative;
+}
+.otherCityShow>ul>li:last-child{
+    margin-right: 0;
+}
+.twoStyle>ul>li:nth-child(1){
+    background: #48a749;
+}
+.twoStyle>ul>li:nth-child(2){
+    background: #a6748f;
+}
+.twoStyle>ul>li:nth-child(3){
+    background: #f0b090;
+}
+.twoStyle>ul>li:nth-child(4){
+    background: #e77a5f;
+}
+.twoStyle>ul>li:nth-child(5){
+    background: #858a54;
+}
+.twoStyle>ul>li>div.haveUL>ul>li{
+    color: white;
+}
+.twoStyle>ul>li>div.haveUL>ul>li>a{
+    color: white;
+}
+.oneStyle>ul>li:nth-child(1){
+    background: #e89690;
+}
+.oneStyle>ul>li:nth-child(2){
+    background: #62b67e;
+}
+.oneStyle>ul>li:nth-child(3){
+    background: #f0b090;
+}
+.oneStyle>ul>li:nth-child(4){
+    background: #4b8ede;
+}
+.oneStyle>ul>li:nth-child(5){
+    background: #9acc68;
+}
+.threeStyle{
+    width: 1001px;
+    /*height: 524px;*/
+    background: url("../images/masterOf_bigBG.png") no-repeat;
+    margin-top: 13px;
+    padding-top: 26px;
+    padding-bottom: 31px;
+
+}
+.threeStyle>ul>li:nth-child(1){
+    background: #f55259;
+}
+.threeStyle>ul>li:nth-child(2){
+    background: #61caf1;
+}
+.threeStyle>ul>li:nth-child(3){
+    background: #f79d64;
+}
+.threeStyle>ul>li:nth-child(4){
+    background: #25d4b7;
+}
+.threeStyle>ul>li:nth-child(5){
+    background: #9b9aff;
+}
+.threeStyle>ul>li>div.haveUL>ul>li>a{
+    color: white;
+}
+
+.otherCityShow>ul>li>b{
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 10px transparent solid;
+    border-right: 10px white solid;
+    border-left: 10px transparent solid;
+    border-bottom: 10px white solid;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.threeStyle>ul>li>b{
+    border-right: 10px #fff1c7 solid;
+    border-bottom: 10px #fff1c7 solid;
+}
+.threeStyle>ul>li:nth-child(1)>b{
+    border-top: 10px #f6202b solid;
+    border-left: 10px #f6202b solid;
+}
+.threeStyle>ul>li:nth-child(2)>b{
+    border-top: 10px #023599 solid;
+    border-left: 10px #023599 solid;
+}
+.threeStyle>ul>li:nth-child(3)>b{
+    border-top: 10px #ff6702 solid;
+    border-left: 10px #ff6702 solid;
+}
+.threeStyle>ul>li:nth-child(4)>b{
+    border-top: 10px #1cae94 solid;
+    border-left: 10px #1cae94 solid;
+}
+.threeStyle>ul>li:nth-child(5)>b{
+    border-top: 10px #5050e3 solid;
+    border-left: 10px #5050e3 solid;
+}
+.circle{
+    width: 108px;
+    height: 108px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 29px;
+    position: relative;
+    overflow: hidden;
+}
+.circle div{
+    width: 100%;
+    height: 38px;
+    background: #6766fe;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.circle img{
+    width: 100%;
+}
+.circle:hover{
+    cursor: pointer;
+}
+.circle:hover div{
+    background: #81318c;
+}
+.otherCityShow>ul>li>div.haveUL{
+    margin-left: 5px;
+    margin-top: 15px;
+    font-size: 15px;
+}
+.otherCityShow>ul>li>div.haveUL>ul>li{
+    display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+    margin-bottom: 3px;
+}
+
+.starCounselor{
+    width: 1001px;
+    margin: 0 auto;
+    border: 1px #c8c8c8 solid;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.starCounselor:after{
+    display:block;clear:both;content:"";visibility:hidden;height:0;
+}
+/*博士留学*/
+.doctorSort{
+    width: 1001px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 23px;
+    overflow: auto;
+}
+.doctorS-left{
+    width: 174px;
+    height: 252px;
+    float: left;
+    overflow: hidden;
+}
+.doctorS-left img{
+    width: 100%;
+}
+.doctorS-right{
+    width: 815px;
+    height: 252px;
+    float: left;
+    margin-left: 8px;
+    background: #e6e6e6;
+}
+.doctorS-right>ul{
+    margin-top: 44px;
+    margin-left: 12px;
+}
+.doctorS-right>ul>li{
+    width: 189px;
+    float: left;
+    margin-right: 15px;
+}
+.doctorS-right>ul>li:last-child{
+    margin-right: 0;
+}
+.doctorS-right>ul>li>h4{
+    width: 88px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border: 1px #000000 solid;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+.doctorS-right>ul>li>ul{
+    margin-top: 10px;
+}
+.doctorS-right>ul>li>ul>li{
+    display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+    margin-bottom: 12px;
+}
+.doctorOthSort{
+    width: 1001px;
+    height: 231px;
+    margin: 0 auto;
+    background: #e6e6e6;
+    margin-top: 29px;
+    margin-bottom: 18px;
+    padding-top: 12px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.doctorOthSort>ul{
+    margin-left: 35px;
+}
+.doctorOthSort>ul>li{
+    width: 208px;
+    float: left;
+    margin-right: 32px;
+}
+.doctorOthSort>ul>li:last-child{
+    margin-right: 0;
+}
+.doctorOthSort>ul>li>div{
+    width: 100%;
+    height: 58px;
+    line-height: 58px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    margin-bottom: 15px;
+}
+.doctorOthSort>ul>li>div>span{
+    width: 88px;
+    height: 25px;
+    line-height: 25px;
+    display: inline-block;
+    border: 1px white solid;
+    border-radius: 5px;
+    text-align: center;
+}
+.doctorOthSort>ul>li>div>b{
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-top: 10px transparent solid;
+    border-left: 10px transparent solid;
+    border-right: 10px #e6e6e6 solid;
+    border-bottom: 10px #e6e6e6 solid;
+}
+.doctorOthSort>ul>li>ul>li{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+}
+.diffBack01{
+    background: #e89690;
+}
+.diffBack02{
+    background: #62b67e;
+}
+.diffBack03{
+    background: #f0b090;
+}
+.diffBack04{
+    background: #4b8ede;
+}
+/*硕士留学*/
+.masterOfC{
+    width: 1001px;
+    height: 404px;
+    margin: 0 auto;
+    background: url("../images/masterOf_bigBG.png") no-repeat;
+    margin-top: 12px;
+    margin-bottom: 30px;
+    padding-top: 26px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.masterOfC>ul{
+    margin-left: 28px;
+}
+.masterOfC>ul>li{
+    width: 210px;
+    height: 363px;
+    float: left;
+    margin-right: 34px;
+    position: relative;
+}
+.masterOfC>ul>li:last-child{
+    margin-right: 0;
+}
+.masterOfC>ul>li:nth-child(1){
+    background: #f55259;
+}
+.masterOfC>ul>li:nth-child(1)>b{
+    border-top: 10px #f5212b solid;
+    border-left: 10px #f5212b solid;
+}
+.masterOfC>ul>li:nth-child(2){
+    background: #61caf1;
+}
+.masterOfC>ul>li:nth-child(2)>b{
+    border-top: 10px #02349a solid;
+    border-left: 10px #02349a solid;
+}
+.masterOfC>ul>li:nth-child(3){
+    background: #f79d64;
+}
+.masterOfC>ul>li:nth-child(3)>b{
+    border-top: 10px #ff6702 solid;
+    border-left: 10px #ff6702 solid;
+}
+.masterOfC>ul>li:nth-child(4){
+    background: #25d4b7;
+}
+.masterOfC>ul>li:nth-child(4)>b{
+    border-top: 10px #1cae94 solid;
+    border-left: 10px #1cae94 solid;
+}
+.masterOfC>ul>li>b{
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-right: 10px #fff1c7 solid;
+    border-bottom: 10px #fff1c7 solid;
+}
+.masterOfC>ul>li>div{
+    width: 139px;
+    height: 139px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.masterOfC>ul>li>div>img{
+    width: 100%;
+}
+.masterOfC>ul>li>h4{
+    width: 88px;
+    height: 25px;
+    line-height: 25px;
+    color: white;
+    text-align: center;
+    border: 1px white solid;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 13px;
+}
+.masterOfC>ul>li>ul{
+    margin-left: 14px;
+    margin-top: 15px;
+}
+.masterOfC>ul>li>ul>li{
+    margin-bottom: 8px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.masterOfC>ul>li>ul>li>a{
+    color: white;
+}

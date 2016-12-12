@@ -1,0 +1,553 @@
+
+.bigBG{
+    width: 1267px;
+    margin: 0 auto;
+    background: url("../images/TFdy_bigBG.png") no-repeat top;
+    background-size: 100% 100%;
+    padding-top: 800px;
+}
+.danyeHead{
+    width: 100%;
+    height: 78px;
+    line-height: 78px;
+    background: #020202;
+}
+.danyeHead .d_he_indiv{
+    width: 1128px;
+    height: 100%;
+    margin: 0 auto;
+}
+.danyeHead .d_he_indiv img.logo{
+    vertical-align: middle;
+}
+.danyeHead .d_he_indiv div{
+    float: right;
+}
+.danyeHead .d_he_indiv div span{
+    font-size: 35px;
+    font-style: italic;
+    color: white;
+}
+.dHe_img{
+    width: 100%;
+    height: 511px;
+    background: url("../images/TFdy_lunbo.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.runPlan{
+    width: 984px;
+    height: 380px;
+    margin: 0 auto;
+   background: url("../images/TFdy_runplan.png") no-repeat right 180px;
+}
+.runTitle{
+    text-align: center;
+    color: #4f1b0b;
+}
+.runTitle img.win{
+    position: relative;
+    top: 25px;
+}
+.runTitle span{
+    font-size: 30px;
+    border-right: 4px #4f1b0b solid;
+    border-left: 4px #4f1b0b solid;
+    padding: 8px 10px;
+    font-weight: bold;
+    margin-left: 22px;
+}
+.runTitle>span>img{
+    vertical-align: middle;
+}
+.runTitleT{
+    text-align: center;
+}
+.runTitleT img.win{
+    position: relative;
+    top: 17px;
+}
+.runTitleT span{
+    font-size: 30px;
+    border-right: 4px #fff solid;
+    border-left: 4px #fff solid;
+    padding: 8px 10px;
+    font-weight: bold;
+    margin-left: 22px;
+    color: white;
+}
+.runPlan .runCome{
+    margin-top: 73px;
+    margin-left: 18px;
+}
+.runPlan .runCome ul{
+    overflow: auto;
+}
+.runPlan .runCome ul li{
+    float: left;
+    width: 113px;
+    margin-bottom: 45px;
+    color: #554d38;
+    margin-right: 64px;
+    position: relative;
+    /*border: 1px red solid;*/
+}
+.runPlan .runCome ul li:last-child{
+    margin-right: 0;
+}
+.runPlan .runCome ul li:hover{
+    cursor: pointer;
+}
+.runPlan .runCome ul li .redBg{
+   width: 116px;
+    height: 125px;
+    line-height: 135px;
+    background: url("../images/TFdy_redbg.png") no-repeat;
+    color: white;
+    padding-left: 25px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.zhiboClass{
+    width: 984px;
+    height: 820px;
+    margin: 0 auto;
+    background: url("../images/TFdy_zhiboClass.png") no-repeat right bottom;
+    position: relative;
+}
+.zhiboClass .classBG{
+    width: 884px;
+    height: 238px;
+    background: url("../images/TFdy_classThree.png") no-repeat;
+    margin-left: 18px;
+    margin-top: 29px;
+}
+.zhiboClass .classBG table {
+    margin-left: 60px;
+}
+.zhiboClass .classBG table tr th{
+    height: 46px;
+    line-height: 46px;
+    color: white;
+    text-align: left;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.zhiboClass .classBG table tr td{
+    height: 65px;
+    /*line-height: 71px;*/
+    font-size: 15px;
+    padding-right: 58px;
+}
+.zhiboClass .classBG table tr td a{
+    background: #d13643;
+    color: white;
+    padding:2px 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+.zhiboClass .classBG table tr td a img{
+    vertical-align: middle;
+}
+.zhiboClass .dreamTitle{
+    font-size: 30px;
+    color: #df313d;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+}
+.zhiboClass .dreamCountry{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 17px;
+}
+.zhiboClass .dreamLunbo{
+    width: 873px;
+    height: 156px;
+    margin-top: 45px;
+    margin-left: 18px;
+    position: absolute;
+}
+.zhiboClass .dreamLunbo .lunboHd img{
+    width: 18px;
+}
+.zhiboClass .dreamLunbo .lunboHd a.prev{
+    position: absolute;
+    left: 0;
+    top: 85px;
+}
+.zhiboClass .dreamLunbo .lunboHd a.next{
+    position: absolute;
+    right: 0;
+    top: 85px;
+}
+.zhiboClass  .lunboBd ul li{
+    width: 137px;
+    float: left;
+    text-align: center;
+    margin-right: 15px;
+}
+.zhiboClass  .lunboBd ul li:last-child{
+    margin-right: 0;
+}
+.zhiboClass  .lunboBd ul li .topRed{
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    background: #f5424d;
+    color: white;
+    font-size: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top: 10px;
+}
+.zhiboClass  .lunboBd{
+    margin-left: 63px;
+}
+.zhiboClass  .lunboBd ul li .bottomRed{
+    width: 100%;
+    height: 23px;
+    line-height: 23px;
+    background: #aa222c;
+    color: #ffeaef;
+    font-size: 12px;
+    margin-top: 2px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.zhiboClass  .lunboBd ul li img{
+    height: 53px;
+}
+.small_tree{
+    width: 89px;
+    height: 140px;
+    background: url("../images/TFdy_greenTree.png") no-repeat;
+    position: absolute;
+    right: -113px;
+    top: 100px;
+}
+.small_treeT{
+    width: 89px;
+    height: 140px;
+    background: url("../images/TFdy_greenTree.png") no-repeat;
+    position: absolute;
+    left: -88px;
+    top: -100px;
+}
+.rightPerson{
+    width: 189px;
+    height: 255px;
+    background: url("../images/TFdy_runWoman.png") no-repeat;
+    position: absolute;
+    bottom: -55px;
+    right: -95px;
+}
+.leftPerson{
+    width: 232px;
+    height: 258px;
+    background: url("../images/TFdy_runman.png") no-repeat;
+    position: absolute;
+   top: -158px;
+    left: -114px;
+}
+
+.treeTop{
+    top: -30px;
+}
+.treeTop2{
+    top: 290px;
+}
+.startClass{
+    width: 984px;
+    height: 700px;
+    margin: 0 auto;
+    background: url("../images/TFdy_startClass.png") no-repeat left bottom;
+    position: relative;
+}
+.startClass .calendar{
+    width: 895px;
+    height: 434px;
+    margin-top: 80px;
+    margin-left: 70px;
+}
+.startClass .calendar .cal-left{
+    width: 284px;
+    float: left;
+    margin-top: 39px;
+}
+.startClass .calendar .cal-left .ca-l-top{
+    width: 100%;
+    height: 198px;
+    background: #d73341;
+    color: white;
+    font-size: 150px;
+    text-align: center;
+}
+.startClass .calendar .cal-left .ca-l-center{
+    width: 100%;
+    height: 128px;
+    background: #f1973c;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    padding-top: 38px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.startClass .calendar .cal-left .ca-l-bottom{
+    width: 100%;
+    height: 7px;
+    background: #f3851b;
+}
+.startClass .calendar .cal-right{
+    width: 581px;
+    float: left;
+    margin-left: 26px;
+}
+.startClass .calendar .cal-right div ul{
+    margin-top: 5px;
+}
+.startClass .calendar .cal-right div ul li:hover{
+    cursor: pointer;
+    color: #cf3844;
+}
+.startClass .calendar .cal-right div ul li{
+    width: 51px;
+    height: 53px;
+    line-height: 53px;
+    float: left;
+    font-size: 25px;
+    text-align: center;
+    margin-right: 35px;
+    margin-bottom: 5px;
+
+}
+
+.startClass .calendar .cal-right div ul li.orangeColor{
+    color: white;
+    background:#cf3844;
+}
+.startClass .calendar .cal-right span{
+    color: #cf3844;
+    font-size: 20px;
+    float: right;
+}
+.runCoach{
+    width: 984px;
+    height: 680px;
+    margin: 0 auto;
+    background: url("../images/TFdy_runCoach.png") no-repeat right top;
+    position: relative;
+}
+.runCoach .runCoachTitle{
+   color: #e6464c;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 45px;
+}
+.runCoach ul {
+    margin-left: 70px;
+    margin-top: 120px;
+}
+.runCoach ul li{
+    width: 207px;
+    height: 343px;
+    background: url("../images/TFdy_greyBg.png") no-repeat;
+    float: left;
+    position: relative;
+}
+.runCoach ul li div{
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    position: absolute;
+    top: -54px;
+    left: 50%;
+    margin-left: -62px;
+}
+.runCoach ul li div img{
+    width: 110%;
+}
+.runCoach ul li:hover{
+    cursor: pointer;
+    color: white;
+    background: url("../images/TFdy_orangeBg.png") no-repeat;
+}
+.runCoach ul li:hover span{
+    color: white;
+}
+.runCoach ul li p{
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 97px;
+    margin-bottom: 17px;
+    text-align: center;
+    padding-bottom: 10px;
+    background: url("../images/TFdy_blackJ.png") no-repeat bottom center;
+}
+.runCoach ul li:hover p{
+    background: url("../images/TFdy_whiteJ.png") no-repeat bottom center;
+}
+.runCoach ul li span{
+    display: block;
+    color: #888687;
+    font-size: 12px;
+    padding: 0 29px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.runStudents{
+    width: 1267px;
+    height: 935px;
+    background: #f8414b;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.runStudents .runS_bg{
+    width: 984px;
+    height: 846px;
+    margin: 0 auto;
+    background: url("../images/TFdy_runStudents.png") no-repeat right top;
+    position: relative;
+    padding-top: 56px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.runStudents .runS_bg .runS_lunbo{
+    width: 1065px;
+    height: 324px;
+    margin-top: 50px;
+}
+.runStudents .runS_bg .runS_lunbo .inLB_bd{
+    margin-left: 56px;
+}
+.runStudents .runS_bg .runS_lunbo .inLB_bd ul li:hover{
+    cursor: pointer;
+}
+.runStudents .runS_bg .runS_lunbo .inLB_bd ul li{
+    width: 188px;
+    height: 200px;
+    margin-right: 15px;
+    float: left;
+    position: relative;
+}
+.runStudents .runS_bg .runS_lunbo .inLB_bd ul li .lbZzc{
+    width: 100%;
+    height: 47px;
+    position: absolute;
+    bottom: 0;
+    background: rgba(19, 19, 21, 0.71);
+    color: white;
+    text-align: center;
+}
+.runStudents .runS_bg .runS_lunbo .inLB_bd ul li .lbZzc .showFont span{
+    font-size: 12px;
+}
+.runStudents .runS_bg .runS_lunbo .inLB_bd ul li .lbZzc .hideFont{
+    width: 100%;
+    height: 100%;
+    padding: 25px 20px 0 20px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    word-break: break-all;
+    display: none;
+}
+.runStudents .runS_bg .runS_lunbo .inLB_bd ul li:last-child{
+    margin-right: 0;
+}
+.runStudents .runS_bg .runS_lunbo .lb_inLB{
+    width: 600px;
+    height: 205px;
+    float: left;
+    margin-left: 70px;
+    position: relative;
+}
+.runStudents .runS_bg .runS_lunbo .lb_inLB .inLB_hd a.prev{
+   position: absolute;
+    left: 0;
+    top: 84px;
+}
+.runStudents .runS_bg .runS_lunbo .lb_inLB .inLB_hd a.next{
+    position: absolute;
+    right: 0;
+    top: 84px;
+}
+.runStudents .runS_bg .runS_lunbo .lb_inLBRight{
+    width: 226px;
+    float: left;
+    text-align: center;
+    color: white;
+}
+.runStudents .runS_bg .runS_lunbo .lb_inLBRight:hover{
+    cursor: pointer;
+}
+.lb_inLBRight div{
+    width: 226px;
+    height: 227px;
+    background: url("../images/TFdy_tuxJX.png") no-repeat;
+    background-size: 100% 100%;
+}
+.lb_inLBRight h4{
+    margin-top: 30px;
+}
+.runStudents .runS_bg .fuTilte{
+  text-align: center;
+    margin-top: 25px;
+    color: white;
+    font-size: 20px;
+}
+.joinRun{
+    width: 906px;
+    height: 220px;
+    margin-top: 66px;
+    margin-left: 29px;
+}
+.joinRun span{
+    color: white;
+    font-size: 40px;
+    margin-left: 20px;
+    font-weight: bold;
+   position: relative;
+    top: -30px;
+    font-style: italic;
+}
+.dyFooter{
+    width: 100%;
+    height: 52px;
+    line-height: 52px;
+    background: #352e2c;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+
+/*可能会删除的css*/
+.dieFangS {
+    margin-top: -20px;
+}
+.dieFangS ol li{
+    float: left;
+    color: white;
+    font-size: 12px;
+    margin-right: 10px;
+}
+.dieFangS ol li img{
+    width: 178px;
+}
+.dieFangS ol li p{
+    font-size: 20px;
+    font-weight: bold;
+}

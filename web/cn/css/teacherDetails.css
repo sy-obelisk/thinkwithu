@@ -1,0 +1,189 @@
+
+.detailTop{
+    width: 1001px;
+    margin: 0 auto;
+}
+.detailTop img{
+    width: 100%;
+}
+.detailCon{
+    width: 1001px;
+    margin: 0 auto;
+    margin-top: 15px;
+    background: url("../images/teacherD_bigBG.jpg") no-repeat;
+    background-size: 100% auto;
+    padding: 39px 33px 34px 28px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.detail-top{
+    width: 100%;
+}
+.detailLeft{
+    /*width: 489px;*/
+    float: left;
+}
+.l-left{
+    width: 144px;
+    height: 144px;
+    overflow: hidden;
+    border-radius: 50%;
+    float: left;
+}
+.l-left img{
+    width: 100%;
+}
+.l-right{
+    padding: 5px 23px;
+    margin-left: 9px;
+    color: #8b2a96;
+    font-weight: bold;
+    font-size: 25px;
+    background: white;
+    display: inline-block;
+    margin-top: 60px;
+}
+.detailRight{
+    width: 151px;
+    float: right;
+    margin-right: 25px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 67px;
+    position: relative;
+}
+.detailRight a{
+    color: white;
+}
+.detailRight img{
+    vertical-align: middle;
+}
+.detailRight span{
+    vertical-align: middle;
+}
+.detailRight b{
+    position: absolute;
+    bottom: -8px;
+    right:-2px;
+}
+.detail-con{
+    width: 100%;
+    padding: 43px 10px 50px 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background: rgba(137, 114, 170, 0.43);
+    margin-top: -30px;
+    color: white;
+    font-size: 14px;
+}
+.students{
+    width: 1001px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 14px;
+}
+.stu-left{
+    width: 208px;
+    height: 373px;
+    float: left;
+}
+.stu-right{
+    width: 770px;
+    float: left;
+    margin-left: 23px;
+}
+.ri-grey{
+    width: 100%;
+    background: #eeeeee;
+    margin-bottom: 8px;
+    padding: 5px 30px 17px 25px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.ri-grey h4{
+    height: 26px;
+    line-height: 26px;
+    background: url("../images/teacherD_titleBG.png") no-repeat;
+    padding-left: 29px;
+    color: #7e3388;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+.ri-grey h4 span{
+    color: #4b4545;
+    background: #c9cbca;
+    padding: 0 5px;
+    font-weight: normal;
+    font-size: 12px;
+}
+.riG-left{
+    width: 388px;
+    float: left;
+}
+.riGl-left{
+    width: 74px;
+    /*height: 89px;*/
+    float: left;
+    overflow: hidden;
+    border: 2px #f6a000 solid;
+    padding: 5px 5px 0 5px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin-left: 30px;
+}
+.riGl-left img{
+    width: 100%;
+    /*height: 100%;*/
+}
+.riGl-right{
+    width: 275px;
+    margin-left: 5px;
+    float: left;
+}
+.riGl-right p{
+    text-indent: 2em;
+    font-size: 14px;
+    line-height: 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -moz-box;
+    -webkit-line-clamp: 4;
+    -moz-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+}
+.riGl-right h2{
+    text-align: center;
+    font-weight: normal;
+    font-size: 15px;
+    margin-bottom: 6px;
+    background: url("../images/teacherD_playIcon.png") no-repeat 10px center;
+    padding-left: 30px;
+    display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+.riG-right{
+    width: 274px;
+    float: left;
+    margin-left: 25px;
+    background: #c9cbca;
+    padding: 10px 0 5px 8px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.riG-right ul li{
+    width: 100%;
+    height: 19px;
+    margin-bottom: 5px;
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+.riG-right ul li img{
+    width: 10px;
+    margin-right: 5px;
+}

@@ -1,0 +1,127 @@
+
+.rank_fliter{
+    width: 100%;
+    height: 74px;
+    margin-top: 23px;
+}
+.rankFLeft{
+    width: 52px;
+    height: 100%;
+    line-height: 74px;
+    background: url("../images/rank_fliterBG.png") no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.rankFRight{
+    width: 640px;
+    height: 100%;
+    background: #e5e5e5;
+    float: left;
+    padding: 12px 0 0 9px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.rankFRight ul {
+    overflow: auto;
+    margin-bottom: 5px;
+}
+
+.rankFRight ul.ml li{
+    width: 53px;
+    text-align: center;
+    margin-right: 0;
+}
+.rankFRight ul li{
+    float: left;
+    margin-right: 10px;
+    font-size: 12px;
+}
+.rankFRight ul li:first-child{
+    text-align: right;
+}
+.rankFRight ul.ml li:nth-child(2){
+    padding-left: 16px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.IssuerContent{
+    width: 100%;
+    margin-top: 30px;
+}
+.IssuerContent table tr th{
+    background: #cccccc;
+    padding: 3px 0;
+}
+.IssuerContent table tr th:nth-child(1){
+    width: 133px;
+    text-align: left;
+}
+.IssuerContent table tr th:nth-child(2){
+    width: 115px;
+    text-align: left;
+}
+.IssuerContent table tr th:nth-child(3){
+    width: 134px;
+    text-align: left;
+}
+.IssuerContent table tr th:nth-child(4){
+    width: 148px;
+    text-align: left;
+}
+.IssuerContent table tr th:nth-child(5){
+    width: 300px;
+    text-align: center;
+}
+.IssuerContent table tr td:nth-child(5){
+    text-align: center;
+}
+.IssuerContent table tr th:nth-child(6){
+    width: 64px;
+    text-align: left;
+}
+
+.IssuerContent table tr td{
+    font-size: 12px;
+    background: #f2f2f2;
+    padding: 5px 0;
+    border-top: 3px white solid;
+}
+.IssuerContent table tr:hover td{
+    background: #c8b7db;
+    cursor: pointer;
+}
+.IssuerContent table tr td:nth-child(6){
+    color: #81318b;
+}
+/*三级排名css*/
+.threeLevelRank{
+    width: 100%;
+    margin-top: 16px;
+    margin-bottom: 40px;
+}
+.botLevel{
+    margin-top: 13px;
+}
+.botLevel ul li{
+    height: 39px;
+    line-height: 39px;
+    background: #e8f6ff;
+}
+.botLevel ul li:first-child{
+    background: #baddf3;
+    color: #5a7aa1;
+}
+.level-left{
+    width: 55px;
+    float: left;
+}
+.level-right{
+    width: 638px;
+    float: left;
+}

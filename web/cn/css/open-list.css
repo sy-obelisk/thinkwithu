@@ -1,0 +1,107 @@
+@import "public.css";
+
+.list-content{
+    width: 1001px;
+    margin: 0 auto;
+    margin-top: 16px;
+    margin-bottom: 35px;
+}
+
+.list-left{
+    width: 705px;
+    background: white;
+    border: 1px #dee0df solid;
+    float: left;
+}
+.list-left>ul>li{
+    width: 100%;
+    border-bottom:1px #dee0df solid;
+    padding: 19px 0 8px 0;
+}
+.list-left>ul>li:last-child{
+    border-bottom: none;
+}
+.inlist-left{
+    width: 483px;
+    margin-left: 5px;
+    float: left;
+}
+.inlist-left h4{
+    font-size: 16px;
+    margin-bottom: 22px;
+}
+.inlist-left ul li{
+    font-size: 12px;
+    margin-bottom: 14px;
+}
+.inlist-right{
+    width: 207px;
+    height: 121px;
+    text-align: center;
+    margin-left: 9px;
+    float: left;
+    border: 1px #d3d5d4 solid;
+    padding: 3px 5px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.inlist-right img{
+    width: 100%;
+}
+.list-right{
+    width: 262px;
+    float: left;
+    margin-left: 30px;
+}
+.bottList{
+    font-size: 12px;
+    color: #8c8c8c;
+}
+.bottList img{
+    vertical-align: middle;
+}
+.mlTime{
+    margin-left: 18px;
+}
+.blackC{
+    color: #000000;
+}
+.bottList a{
+    width: 76px;
+    height: 25px;
+    line-height: 25px;
+    display: inline-block;
+    text-align: center;
+    color: white;
+    background: url("../images/openList_btnBG.png") no-repeat;
+    border-radius: 5px;
+    margin-left: 18px;
+    font-size: 16px;
+}
+.dimension{
+    width: 264px;
+    height: 210px;
+    background: url("../images/openList_dimension.png") no-repeat;
+    text-align: center;
+}
+.dimension span{
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+.dimension img{
+    vertical-align: middle;
+}
+.dimensionFont{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 22px;
+}
+.dimensionFont h4{
+    color: #d15455;
+}
+.dimensionFont span{
+    color: #535353;
+    font-size: 12px;
+}

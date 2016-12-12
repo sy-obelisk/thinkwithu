@@ -1,0 +1,429 @@
+
+/*留学规划、留学申请、留学提升公用一个css*/
+.project-topImg{
+    width: 1001px;
+    margin: 0 auto;
+}
+.project-topImg img{
+    width: 100%;
+}
+.project-nav{
+    width: 1001px;
+    height: 47px;
+    margin: 0 auto;
+    margin-top: 14px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+.project-nav .nav-one{
+    width: 87px;
+    height: 100%;
+    line-height:47px;
+    display: inline-block;
+    background: url("../images/project_nav01.png") no-repeat;
+    background-size: 100% auto;
+    padding-left: 5px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size: 16px;
+    color: white;
+}
+.project-nav .nav-two{
+    width: 310px;
+    height: 100%;
+    line-height:47px;
+    display: inline-block;
+    background: url("../images/project_nav02.png") no-repeat;
+    background-size: 100% auto;
+    text-align: center;
+    margin-left: -10px;
+    font-size: 16px;
+    color: white;
+}
+.project-nav .nav-three{
+    width: 310px;
+    height: 100%;
+    line-height:47px;
+    display: inline-block;
+    background: url("../images/project_nav03.png") no-repeat;
+    background-size: 100% auto;
+    text-align: center;
+    margin-left: -15px;
+    font-size: 16px;
+    color: white;
+}
+.project-nav .nav-four{
+    width: 232px;
+    height: 100%;
+    line-height:47px;
+    display: inline-block;
+    background: url("../images/project_nav04.png") no-repeat;
+    background-size: 100% auto;
+    text-align: center;
+    margin-left: -10px;
+    font-size: 16px;
+    color: white;
+}
+.project-nav .nav-five{
+    width: 232px;
+    height: 100%;
+    line-height:47px;
+    display: inline-block;
+    background: url("../images/project_nav05.png") no-repeat;
+    background-size: 100% auto;
+    text-align: center;
+    margin-left: -10px;
+    color: white;
+}
+.commonTitle{
+    width: 1001px;
+    height: 91px;
+    background:  url("../images/project_titleBG.png") no-repeat;
+    background-size: 100% auto;
+    margin: 0 auto;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size: 20px;
+    color: #84308d;
+}
+.padd01{
+    padding: 23px 0  0 27px;
+}
+.padd02{
+    padding: 36px 0  0 25px;
+}
+.padd03{
+    padding: 30px 0  0 20px;
+}
+.commonTitle b{
+    line-height: 35px;
+    color: white;
+    float: right;
+    font-size: 20px;
+    margin-right: 60px;
+    font-weight: normal;
+    padding-left: 20px;
+    background: url("../images/project_phone.png") no-repeat left center;
+    background-size: 14px auto;
+}
+.padd01 b{
+    margin-top: -22px;
+    font-size: 14px;
+}
+.padd02 b{
+    margin-top: -10px;
+    font-size: 14px;
+}
+.padd03 b{
+    margin-top: -20px;
+    font-size: 14px;
+}
+.commonContent{
+    width: 1001px;
+    margin: 0 auto;
+    margin-top: 27px;
+    margin-bottom: 20px;
+}
+.content-left{
+    width: 697px;
+    /*height: 275px;*/
+    background: #f5f5f5;
+    float: left;
+}
+.le-top{
+    margin-bottom: 20px;
+    overflow: auto;
+}
+.le-top .leT-left{
+    width: 115px;
+    height: 130px;
+    margin-left: 57px;
+    float: left;
+    margin-top: 5px;
+    font-size: 14px;
+    padding: 15px 0 0 3px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+}
+.circleMT{
+    position: relative;
+    top: 10px;
+    left: 15px;
+}
+.circleMT02{
+    position: relative;
+    top: 10px;
+    left: 3px;
+}
+.red{
+    color: red;
+}
+.le-top .leT-left span{
+    color: #ec222e;
+    font-weight: bold;
+}
+.le-top .back03 span{
+    color: #ec222e;
+    font-weight: bold;
+}
+.le-top .leT-left.back01{
+    background: url("../images/project_img01.png") no-repeat;
+    background-size: 100% auto;
+}
+.le-top .leT-left.back02{
+    background: url("../images/project_img02.png") no-repeat;
+    background-size: 100% auto;
+}
+.le-top .back03{
+    width: 193px;
+    height: 137px;
+    margin-left: 25px;
+    float: left;
+    margin-top: 5px;
+    font-size: 15px;
+    padding: 10px 0 0 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background: url("../images/project_img03.png") no-repeat;
+    background-size: 100% auto;
+}
+.leT-right{
+    width: 449px;
+    float: left;
+    margin-left: 74px;
+    margin-top: 23px;
+}
+.speML{
+    margin-left: 30px;
+}
+.leT-right p{
+    color: #6e6e6e;
+    font-size: 14px;
+    text-indent: 2em;
+}
+.leT-right>div>span{
+    font-size: 12px;
+    color: #6e6e6e;
+}
+.leT-right p span{
+    font-size: 12px;
+}
+.leT-right>span{
+    float: right;
+    font-size: 12px;
+    text-align: right;
+}
+.content-right{
+    width: 268px;
+    height: auto;
+    float: left;
+    margin-left: 28px;
+}
+.content-right>img{
+    width: 100%;
+}
+.speR{
+    /*height: 355px;*/
+    background: #f0f0f0;
+}
+.speR-top{
+    width: 100%;
+    height: 47px;
+    background: #ac70ac;
+    text-align: center;
+    color: white;
+    padding-top: 5px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.speR-top b{
+    font-size: 15px;
+}
+.speR-top img{
+    width: 35px;
+    float: left;
+    margin-left: 10px;
+}
+.speR-top span{
+    font-size: 12px;
+}
+.speR-bottom{
+    margin-top: 20px;
+}
+.speR-bottom ul{
+    margin-left: 12px;
+}
+.speR-bottom ul li{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.speR-bottom ul li span{
+    font-size: 12px;
+    color: #9a9a9a;
+}
+.speR-bottom ul li a{
+    margin-left: 15px;
+}
+.le-boUl ul{
+    width: 33%;
+    float: left;
+    font-size: 14px;
+}
+.le-boUl ul:nth-child(2){
+    text-align: center;
+}
+.le-boUl ul:last-child{
+    width: 33.4%;
+    text-align: right;
+}
+.le-boUl ul li{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+/*名校录取、高分榜单css*/
+.bannerRight{
+    width: 264px;
+    /*height: 350px;*/
+    float: left;
+    margin-left: 20px;
+}
+.bannerRhd>ul>li{
+    float: left;
+    width: 50%;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 16px;
+}
+.bannerRhd>ul>li:hover{
+    cursor: pointer;
+}
+.bannerRhd>ul>li.on{
+    color: #81318b;
+}
+.bannerRbd ul li .labaTiao{
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    background: #f5f5f5;
+    margin-top: 2px;
+}
+.schoolImg img{
+    width: 46px;
+}
+.bannerRbd ul li .labaTiao img{
+    vertical-align: middle;
+    margin-left: 5px;
+    margin-right: 6px;
+}
+.showMessage{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+div.showMbd ul li{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 0 0 5px 0;
+    font-size: 14px;
+}
+div.showMbd ul li:hover a{
+    color: #5b258c;
+}
+div.showMbd ul li i{
+    color: #615271;
+    margin-left: 5px;
+    margin-right: 15px;
+}
+.schoolImg img{
+    margin-right: 32px;
+}
+.schoolImg img:first-child{
+    margin-left: 22px;
+}
+.schoolImg img:last-child{
+    margin-right:0;
+}
+/*留学提升新增css*/
+.ascensionContent{
+    width: 1001px;
+    height: 482px;
+    margin: 0 auto;
+    margin-top: 16px;
+    margin-bottom: 15px;
+}
+.ascension-left{
+    width: 245px;
+    height: 100%;
+    float: left;
+}
+.ascenTop{
+    width: 100%;
+    height: 306px;
+    background: #ff6702;
+    border-radius: 20px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 25px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin-bottom: 60px;
+}
+.ascenTop img{
+    width: 85%;
+}
+.ascenTop h3{
+    margin-top: 5px;
+    font-size: 20px;
+}
+.ascension-right{
+    width: 720px;
+    height: 100%;
+    float: left;
+    background: #e6e6e6;
+    padding: 20px 0 0 20px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.comML{
+    margin-left: 35px;
+}
+.ascension-right ul li{
+    width: 313px;
+    float: left;
+    margin-right: 57px;
+    margin-bottom: 18px;
+}
+.ascension-right ul li:nth-child(2n){
+    margin-right: 0;
+}
+.ascension-right ul li p{
+    color: #767676;
+    text-indent: 2em;
+    font-size: 13px;
+}
+.ascension-right ul li a{
+    padding: 2px 12px;
+    border-radius: 5px;
+    background: #ff6602;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+}

@@ -1,0 +1,164 @@
+/*@import "public.css";*/
+
+/*遮罩层css*/
+.maskLayer{
+    width: 100%;
+    background: #000;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1900;
+}
+/*遮罩层css end*/
+
+.Dialog{
+    width: 503px;
+    background: white;
+    border-radius: 20px;
+    border: 1px #a9a9a9 solid;
+    position: fixed;
+    left: 50%;
+    margin-left: -251px;
+    top: 50%;
+    margin-top: -201px;
+    z-index: 1901;
+}
+.topPos{
+    margin-top: -222px!important;
+}
+.DiaNone{
+    display: none;
+}
+.imgTitle{
+    text-align: center;
+    margin-top: 33px;
+}
+.login-close{
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    right: 14px;
+    top: 16px;
+}
+.login-close:hover{
+    cursor: pointer;
+}
+.group-input{
+    width: 310px;
+    margin: 0 auto;
+    margin-top: 36px;
+}
+.groupHd ul li{
+    width: 50%;
+    height: 35px;
+    line-height: 35px;
+    font-size: 12px;
+    text-align: center;
+    border-top: 1px white solid;
+    border-bottom: 1px #d9d9d9 solid;
+    float: left;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    color: #a2a2a2;
+}
+.groupHd ul li:hover{
+    cursor: pointer;
+}
+.groupHd ul li:first-child span{
+    padding-left: 10px;
+    background: url("../images/login_phoneG.png") no-repeat;
+}
+.groupHd ul li:last-child{
+    border-left: 1px #d9d9d9 solid;
+}
+.groupHd ul li:last-child span{
+    padding-left: 17px;
+    background: url("../images/login_emailG.png") no-repeat;
+}
+.groupHd ul li.on{
+    border-bottom: 1px white solid;
+    border-top: 1px #d9d9d9 solid;
+    color: #82338d;
+}
+.groupHd ul li.on:first-child span{
+    background: url("../images/login_phoneY.png") no-repeat left center;
+}
+.groupHd ul li.on:last-child span{
+    padding-left: 17px;
+    background: url("../images/login_emailY.png") no-repeat left center;
+}
+.groupBd{
+    margin-top: 20px;
+}
+.authCode{
+    width: 214px!important;
+    height: 40px!important;
+}
+.obtain{
+    width: 74px!important;
+    height: 40px!important;
+    font-size: 12px!important;
+}
+.group-input input[type='text']{
+    width: 295px;
+    height: 41px;
+    border: 1px #d3d3d3 solid;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+.group-input input[type='password']{
+    width: 295px;
+    height: 41px;
+    border: 1px #d3d3d3 solid;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+.group-input p{
+    font-size: 12px;
+    color: #8b0000;
+    visibility: hidden;
+}
+.group-input .inputMT{
+    margin-top: 3px;
+}
+.group-input input[type='button']{
+    width: 310px;
+    height: 43px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    background: #82338d;
+    border: none;
+    font-size: 20px;
+    font-family: '微软雅黑';
+}
+.otherCont{
+    width: 310px;
+    margin: 0 auto;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.conMB{
+    margin-bottom: 29px;
+}
+.otherCont a{
+    color: #82338d;
+}
+.otherCont a.floatR{
+    float: right;
+}
+.other-login{
+    width: 310px;
+    margin: 0 auto;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.other-login>img{
+    position: relative;
+    top: 8px;
+}

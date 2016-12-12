@@ -1,0 +1,465 @@
+.bg-col-1 {
+    background: #ffffff;
+}
+.pd1 {
+    padding: 0.625rem 0.625rem;
+}
+.color-1 {
+    color: #9E319E;
+}
+
+.color-2 {
+    color: #4545DE;
+}
+
+.color-3 {
+    color: #005678;
+}
+.bg-1 {
+    background: #ffffff;
+}
+
+.pd-1 {
+    padding: 0.65rem 0;
+}
+
+/*--------------------------栏目--------------------------------*/
+.col-name {
+    line-height: 0.9rem;
+    font-size: 0.75rem;
+    padding-left: 0.4rem;
+    border-left: 0.3rem solid #742080;
+}
+
+.r-name {
+    font-size: 0.6rem;
+}
+
+/*---------------------------------------栏目 End-------------------*/
+/*-----------------------------留学产品 分类----------------------*/
+.classify-wrap {
+    float: left;
+    width: 8.57rem;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+    margin-right: 0.3rem;
+}
+
+.classify-wrap:nth-child(2n) {
+    margin-right: 0;
+    float: right;
+
+}
+
+.cp-img {
+    position: relative;
+    width: 8.57rem;
+    height: 5rem;
+    overflow: hidden;
+}
+.must{
+    position: absolute;
+    z-index: 1;
+    right: 0.25rem;
+    top: 0.25rem;
+    border-radius: 3px;
+    padding: 0 0.3rem;
+    line-height: 1rem;
+    font-size: 0.55rem;
+    color: #ffffff;
+    background: #fc092c;
+}
+
+.cp-tit {
+    margin-top: 0.2rem;
+    color: #332C2B;
+    font-size: 0.65rem;
+}
+
+.cp-describe {
+    margin-top: -0.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 0.5rem;
+    color: #757475;
+    line-height: 0.8rem;
+}
+
+.other-list li {
+    padding: 0.375rem 1.5rem;
+    margin-bottom: 0.35rem;
+}
+
+.other-list li:nth-child(1) {
+    background: #DE8CDE;
+}
+
+.other-list li:nth-child(2) {
+    background: #9999FF;
+}
+
+.other-list li:nth-child(3) {
+    background: #17BDFF;
+}
+
+.c2-icon {
+    width: 2.62rem;
+    margin-right: 0.5rem;
+}
+
+.other-tit {
+    color: #ffffff;
+    line-height: 0.65rem;
+    padding-bottom: 0.3rem;
+    font-size: 0.65rem;
+}
+
+.other-de {
+    line-height: 0.6rem;
+    font-size: 0.5rem;
+}
+
+.train-wrap {
+    padding-bottom: 1.5rem;
+}
+
+.train-text-wrap {
+    width: 8rem;
+    padding-left: 0.5rem;
+    line-height: 3.25rem;
+    height: 3.25rem;
+    border-radius: 5px;
+}
+
+.train-text {
+    margin-left: 0.4rem;
+    line-height: normal;
+}
+
+.train-tit {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 0.65rem;
+}
+
+.train-de {
+    color: #ffffff;
+    font-size: 0.5rem;
+}
+
+.r-top {
+    margin-bottom: 0.4rem;
+}
+
+/*-----------------------------留学产品 分类  End----------------------*/
+
+
+/*----------------------footer-----------------------*/
+body{
+    padding-bottom: 3.5rem;
+}
+footer {
+    padding: 0.1rem 0 0.25rem;
+    background: #CC66CC;
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.ft-name {
+    font-size: 0.65rem;
+    color: #ffffff;
+}
+
+.f-list {
+
+    width: 22.2%;
+}
+
+/*------------------------footer End--------------------*/
+
+
+.pd-0{
+    padding: 0.4rem 0.625rem;
+}
+.pd-1{
+    padding: 0  0.625rem;
+}
+.bg-1{
+    background: #ffffff;
+}
+.mg-t1{
+    margin-top: 0.8rem;
+}
+.reBack{
+    width: 1.1rem;
+}
+.menu-icon{
+    width: 1.3rem;
+}
+.header-2{
+    display: table;
+    width: 100%;
+}
+.header-2 .tb:nth-child(1){
+    width: 20%;
+}
+.header-2 .tb:nth-child(2){
+    width: 60%;
+}
+.header-2 .tb:nth-child(3){
+    width: 20%;
+}
+.header-tit{
+    color: #802F8A;
+    font-size: 0.9rem;
+}
+.nav2-wrap li{
+    padding: 0.6rem 0;
+    border-bottom: 1px solid #CCCCCC;
+}
+.nav2-wrap li:last-child{
+    border-bottom: none;
+}
+.nav-icon{
+    width: 1.4rem;
+    vertical-align: baseline;
+}
+.nav2-name{
+    color: #333333;
+    vertical-align: baseline;
+    font-size: 0.9rem;
+}
+.know-wrap{
+    text-align: center;
+    padding-top: 0.625rem;
+}
+.know-wrap a{
+    width: 5.5rem;
+    color: #4D4D4D;
+    text-align: center;
+    font-size: 0.8rem;
+    border-radius: 3px;
+    line-height: 1.6rem;
+    background: #ffffff;
+    margin-right: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+.know-wrap a:nth-child(3n){
+    margin-right: 0;
+}
+/*----------------------------------------------*/
+.ct-user-list li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0.3rem 0.1rem 0 0;
+    width: 28%;
+    padding: 0.6rem 0.3rem;
+    text-align: center;
+    background: #ffffff;
+}
+
+.ct-head {
+    width: 3.7rem;
+    line-height: 3.7rem;
+    border-radius: 50%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.user-de {
+    text-align: left;
+    margin: 0.5rem 0 0.3rem;
+    font-size: 0.5rem;
+    overflow: hidden;
+    line-height: 0.7rem;
+    color: #332C2B;
+}
+
+.ct-school {
+    font-size: 0.6rem;
+    line-height: 0.9rem;
+    color: #ffffff;
+    background: #F95B52;
+}
+
+.ct-b1 {
+    background: #FCEA02;
+    line-height: 1.3rem;
+    color: #55331F;
+    padding: 0 0.75rem;
+    font-weight: bold;
+    font-size: 0.6rem;
+    border-radius: 3px;
+}
+
+
+
+
+.ct-team-1 li {
+    position: relative;
+    text-align: center;
+    float: left;
+    height: 3.8rem;
+    width: 25%;
+    overflow: hidden;
+}
+
+.ct-team-1 li:nth-child(2) {
+    width: 50%;
+}
+
+.ct-team-2 li {
+    position: relative;
+    text-align: center;
+    float: left;
+    height: 3.25rem;
+    width: 16.6%;
+    overflow: hidden;
+}
+
+.ct-teacher-name {
+    text-align: center;
+    line-height: 0.9rem;
+    width: 100%;
+    background: #000000;
+    opacity: 0.7;
+    font-size: 0.7rem;
+    color: #ffffff;
+    left: 0;
+    bottom: 0;
+}
+/*-----------------------------------------*/
+.open-list li {
+    overflow: hidden;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #CCCCCC;
+}
+.open-list li:last-child{
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.open-name {
+    color: #332C2B;
+    line-height: 1.2rem;
+    font-size: 0.7rem;
+    font-weight: normal;
+}
+
+.open-time {
+    color: #5F5D5D;
+    line-height: 0.8rem;
+    font-size: 0.6rem;
+}
+
+.open-img {
+    width: 22%;
+    /*width:3.75rem;*/
+    height: 2.25rem;
+    overflow: hidden;
+}
+
+.open-text {
+    width: 75%;
+}
+.sub-case{
+    padding: 1.5rem 0.625rem 1rem;
+    background: url("../images/sub-bg.png")no-repeat 0 0;
+    background-size: cover;
+}
+.topic-wrap li{
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #CCCCCC;
+}
+.topic-wrap li:last-child{
+    border-bottom: 0;
+    /*padding-bottom: 0;*/
+}
+.topic{
+    font-size: 0.7rem;
+    font-weight: normal;
+    line-height: 1rem;
+}
+.topic-de{
+    color: #666666;
+    line-height: 0.9rem;
+    font-size: 0.6rem;
+    /*margin-top: 0.2rem;*/
+}
+.topic-time{
+    color: #B3B3B3;
+    line-height: 0.8rem;
+    font-size: 0.5rem;
+    margin-top: 0.1rem;
+}
+
+.class-page a {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 0.7rem;
+    width: 18.5%;
+}
+.class-link a{
+    margin-bottom: 1rem;
+    width: 50%;
+    float: left;
+}
+
+.class-list li {
+    padding: 0.8rem 0;
+    overflow: hidden;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.class-list li:last-child {
+    border-bottom: none;
+}
+
+.class-img {
+    width: 44%;
+    overflow: hidden;
+    /*height: 4.2rem;*/
+}
+
+.class-info {
+    width: 54%;
+}
+
+.class-tit {
+    font-weight: normal;
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+    margin-top: 0.2rem;
+}
+
+.class-time {
+    color: #8B8B8C;
+    font-size: 0.6rem;
+}
+
+.class-btn {
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.7rem;
+    background: #F59701;
+    border-radius: 3px;
+}
+.case-btn {
+    width: 100%;
+    margin-top: 0.3rem;
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.7rem;
+    background: #F95B52;
+    border-radius: 3px;
+}
+.class-list-wrap{
+    display: none;
+}
+.mg-t2{
+    margin-top: 1rem;
+}

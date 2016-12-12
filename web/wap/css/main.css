@@ -1,0 +1,458 @@
+.bg-col-1 {
+    background: #ffffff;
+}
+
+.bg-col-2 {
+    background: url("../images/bg.png") no-repeat 0 0;
+    background-size: cover;
+}
+
+.pd1 {
+    padding: 0.25rem 0.625rem;
+}
+
+.pd2 {
+    padding: 0 0.625rem 0.625rem 0.625rem;
+}
+.pd3{
+    padding: 0 0.9rem;
+}
+
+.mg {
+    margin-bottom: 0.8rem;
+}
+
+.color-1 {
+    color: #9E319E;
+}
+
+.color-2 {
+    color: #4545DE;
+}
+
+.color-3 {
+    color: #005678;
+}
+body{
+    padding-bottom: 3.5rem;
+}
+/*---------------------------header--------------------*/
+.logo {
+    width: 5.375rem;
+}
+
+.menu{
+    margin-top: 0.1rem;
+ }
+.search-wrap {
+    overflow: hidden;
+    border: 1px solid #FF9933;
+    border-radius: 5px;
+    width: 8.5rem;
+    padding-left: 0.375rem;
+    line-height: 1.25rem;
+    height: 1.25rem;
+}
+
+.search-wrap input{
+    vertical-align: top;
+    width: 7.25rem;
+    height: 1.2rem;
+    border: none;
+    outline: none;
+    font-size: 0.6rem;
+    padding-left: 0.1rem;
+
+}
+
+.form-wrap{
+    display: inline;
+}
+
+.search-1 {
+    margin-top: -0.15rem;
+    width: 0.68rem;
+}
+
+.menu img {
+    width: 1.3rem;
+}
+
+/*----------------------------------header  End-------------------------*/
+
+/*-------------------------------------banner-----------------------*/
+.banner {
+    width: 100%;
+    height: 6.75rem;
+    overflow: hidden;
+}
+
+.baner-page{
+    bottom: 0;
+}
+.baner-page .swiper-pagination-bullet {
+    opacity: 1;
+    background: #ffffff;
+}
+
+.baner-page .swiper-pagination-bullet-active {
+    background: #742080;
+}
+
+.baner-page .swiper-pagination {
+    bottom: 0 !important;
+}
+
+/*--------------------------------banner End-----------------------*/
+
+/*---------------------------------nav-------------------------*/
+.nav-list {
+    padding-bottom: 1.25rem;
+    background: #ffffff;
+    margin-bottom: 0.8rem;
+}
+
+.nav-list li {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin-right: 1.7rem;
+    margin-top: 1.25rem;
+}
+
+.nav-list li:nth-child(4n) {
+    /*float: right;*/
+    margin-right: 0;
+    /*background: red;*/
+}
+
+.nav-icon {
+    position: relative;
+    width: 2.8rem;
+}
+
+.hot {
+    right: -1.2rem;
+    top: -0.3rem;
+    width: 1.4rem;
+}
+
+.nav-name {
+    width: 2.7rem;
+    margin-top: 0.25rem;
+    text-align: center;
+    font-size: 0.65rem;
+}
+
+/*---------------------------------nav  End-------------------------*/
+/*--------------------------栏目--------------------------------*/
+.col-name {
+    line-height: 0.9rem;
+    font-size: 0.75rem;
+    padding-left: 0.4rem;
+    border-left: 0.3rem solid #742080;
+}
+
+.r-name {
+    font-size: 0.6rem;
+}
+
+/*---------------------------------------栏目 End-------------------*/
+/*-----------------------------留学产品 分类----------------------*/
+.classify-wrap {
+    float: left;
+    width: 8.57rem;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+    margin-right: 0.3rem;
+}
+
+.classify-wrap:nth-child(2n) {
+    margin-right: 0;
+    float: right;
+
+}
+
+.cp-img {
+    position: relative;
+    width: 8.57rem;
+    height: 5rem;
+    overflow: hidden;
+}
+.must{
+    position: absolute;
+    z-index: 1;
+    right: 0.25rem;
+    top: 0.25rem;
+    border-radius: 3px;
+    padding: 0 0.3rem;
+    line-height: 1rem;
+    font-size: 0.55rem;
+    color: #ffffff;
+    background: #fc092c;
+}
+
+.cp-tit {
+    margin-top: 0.2rem;
+    color: #332C2B;
+    font-size: 0.65rem;
+}
+
+.cp-describe {
+    margin-top: -0.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 0.5rem;
+    color: #757475;
+    line-height: 0.8rem;
+}
+
+.other-list li {
+    padding: 0.375rem 1.5rem;
+    margin-bottom: 0.35rem;
+}
+
+.other-list li:nth-child(1) {
+    background: #DE8CDE;
+}
+
+.other-list li:nth-child(2) {
+    background: #9999FF;
+}
+
+.other-list li:nth-child(3) {
+    background: #17BDFF;
+}
+
+.c2-icon {
+    width: 2.62rem;
+    margin-right: 0.5rem;
+}
+
+.other-tit {
+    color: #ffffff;
+    line-height: 0.65rem;
+    padding-bottom: 0.3rem;
+    font-size: 0.65rem;
+}
+
+.other-de {
+    line-height: 0.6rem;
+    font-size: 0.5rem;
+}
+
+.train-wrap {
+    padding-bottom: 1.5rem;
+}
+
+.train-text-wrap {
+    width: 8rem;
+    padding-left: 0.5rem;
+    line-height: 3.25rem;
+    height: 3.25rem;
+    border-radius: 5px;
+}
+
+.train-text {
+    margin-left: 0.4rem;
+    line-height: normal;
+}
+
+.train-tit {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 0.65rem;
+}
+
+.train-de {
+    color: #ffffff;
+    font-size: 0.5rem;
+}
+
+.r-top {
+    margin-bottom: 0.4rem;
+}
+
+/*-----------------------------留学产品 分类  End----------------------*/
+
+/*=================================版权===================*/
+.ft-tit {
+    font-size: 0.75rem;
+    color: #802F8A;
+}
+
+.copyright {
+    font-size: 0.55rem;
+    color: #AFAFAF;
+}
+
+.pc-enter {
+    border-radius: 8px;
+    border: 1px solid #AFAFAF;
+    line-height: 1.25rem;
+    padding: 0 1.25rem;
+    font-size: 0.65rem;
+    color: #AFAFAF;
+}
+
+/*====================================-=版权 End============*/
+
+/*----------------------footer-----------------------*/
+
+footer {
+    padding: 0.1rem 0 0.25rem;
+    background: #CC66CC;
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.ft-name {
+    font-size: 0.65rem;
+    color: #ffffff;
+}
+
+.f-list {
+
+    width: 22.2%;
+}
+
+/*------------------------footer End--------------------*/
+
+.select-wrap span {
+    color: #ffffff;
+    padding: 0 0.6rem;
+    line-height: 1.4rem;
+    font-size: 0.7rem;
+    border-radius: 3px;
+    background: #CCCCCC;
+    margin-right: 0.4rem;
+}
+
+.select-wrap span:last-child {
+    margin-right: 0;
+}
+
+.current {
+    background: #FF6600 !important;
+}
+
+.info-img {
+    width: 3.75rem;
+    height: 3.75rem;
+    margin-right: 0.35rem;
+    overflow: hidden;
+}
+
+.info-text {
+
+}
+
+.info-tit {
+    font-size: 0.7rem;
+}
+
+.info-de {
+    font-size: 0.6rem;
+    line-height: 0.8rem;
+    max-width: 13rem;
+    color: #666666;
+}
+
+.time {
+    color: #B3B3B3;
+    font-size: 0.5rem;
+}
+
+.info-wrap {
+    padding: 0.4rem 0;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.info-wrap:last-child {
+    border: none;
+}
+.info-select-wrap{
+    display: none;
+}
+.anli-wrap{
+    padding: 0.8rem 0 0 0;
+}
+.anli-show{
+    width: 6.75rem;
+}
+.ali-img{
+    width: 6.75rem;
+    height: 6.5rem;
+    overflow: hidden;
+}
+.anli-moj{
+    margin-top: 0.3rem;
+    font-size: 0.7rem;
+    line-height: 0.9rem;
+}
+.anli-mark{
+    border: 1px solid #F95B52;
+    color: #F95B52;
+    padding: 0 0.5rem;
+    line-height: 0.9rem;
+    font-size: 0.6rem;
+    border-radius: 3px;
+}
+.s2 span{
+    padding: 0 0.85rem;
+    margin-right: 0.45rem;
+}
+.s2 span:last-child{
+    margin-right: 0;
+}
+.anli-wrap{
+    position: relative;
+    display: none;
+    width: 100%;
+    overflow: hidden;
+}
+
+.anli-banner{
+    padding-bottom: 1.8rem;
+}
+.anli-page .swiper-pagination-bullet {
+    opacity: 1;
+    width: 0.5rem;
+    height: 0.5rem;
+    background: #CCCCCC;
+}
+
+.anli-page .swiper-pagination-bullet-active {
+    background: #b32d78;
+}
+
+.anli-page .swiper-pagination {
+    bottom: 0 !important;
+}
+.sidebar-wrap{
+    position: fixed;
+    top: 50%;
+    right: 0;
+    width: 1.7rem;
+    z-index: 99;
+    margin-top: -110px;
+}
+.sidebar-wrap a{
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+
+/*----------------------------*/
+/*.menu-wrap{*/
+/*width: 100%;*/
+/*left: 0;*/
+/*top: 0;*/
+/*height: 200px;*/
+/*background: red;*/
+/*z-index: 9999;*/
+/*}*/

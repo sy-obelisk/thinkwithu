@@ -1,0 +1,162 @@
+
+@import "applications.css";
+
+.abroadProBig{
+    width: 100%;
+    background: url("../images/masterA_bigBG.png") no-repeat;
+    background-size: 100% 325px;
+    padding-top: 107px;
+}
+.customization{
+    width: 1001px;
+    margin: 0 auto;
+    margin-top: 66px;
+}
+.cust-top{
+    width: 100%;
+    /*height: 46px;*/
+    background: url("../images/mba_titleBG.png") no-repeat center;
+    background-size: 100% auto;
+    text-align: center;
+}
+.cust-top div{
+    display: inline-block;
+    background: white;
+    padding: 0 5px;
+}
+.cust-top div img{
+    width: 285px;
+}
+.cust-center{
+    width: 100%;
+    height: 240px;
+    background: #e6e6e6;
+    margin-top: 10px;
+    margin-bottom: 23px;
+    padding-top: 38px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.essence ul li{
+    width: 186px;
+    float: left;
+    margin-right: 84px;
+}
+.essence ul li:last-child{
+    margin-right: 0;
+}
+.essence ul li div{
+    text-align: center;
+    color: white;
+    position: relative;
+    width: 165px;
+    height: 165px;
+    border-radius: 50%;
+    border: 5px white solid;
+    margin: 0 auto;
+}
+.essence ul li div img{
+    width: 186px;
+    position: absolute;
+    top: -20px;
+    left: -12px;
+}
+.essence ul li div b{
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    position: absolute;
+    bottom: 23px;
+    left: 0;
+}
+.essence ul li h4{
+    color: #84318e;
+    text-align: center;
+    margin-top: 27px;
+    font-size: 40px;
+}
+
+.essence ul li:hover div{
+    background: white;
+}
+.speColor01 ul li div{
+    background: #84318e;
+}
+.speColor01 ul li:hover{
+    cursor: pointer;
+}
+.speColor01 ul li:hover div{
+    border: 5px #84318e solid;
+}
+
+.tetralogy{
+    width: 788px;
+    margin: 0 auto;
+    margin-top: 44px;
+    overflow: auto;
+}
+.tetralogy ul li{
+    width: 339px;
+    float: left;
+    margin-right: 108px;
+}
+.tetralogy ul li:last-child{
+    margin-right: 0;
+}
+.topDiv{
+    width: 100%;
+    height: 27px;
+    line-height: 27px;
+    background: #30accb;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}
+.bottDiv{
+    width: 100%;
+    height: 147px;
+    line-height: 147px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    margin-top: -10px;
+}
+.bottDiv a{
+    color: white;
+}
+.tetralogy ul li:first-child div.bottDiv{
+    background: url("../images/mba_fourBQ01.png") no-repeat;
+    background-size: 100% auto;
+}
+.tetralogy ul li:last-child div.bottDiv{
+    background: url("../images/mba_fourBQ02.png") no-repeat;
+    background-size: 100% auto;
+}
+.aboTitle{
+    background: url("../images/masterA_admissBG.png") no-repeat;
+    background-size: 100% auto;
+}
+
+
+.stu-left a{
+    color: #7c3585;
+}
+.whoUs>ul>li:hover>div{
+    border: 3px rgb(135, 45, 149) solid;
+}
+.whoUs>ul>li>div>div{
+    background: rgba(161, 94, 135, 0.40);
+}
+.whoUs>a{
+    color: #83318c;
+}
+.subject>ul>li>div{
+    background: #679a9b;
+}
+.disBot-left{
+    background: #02349a;
+}

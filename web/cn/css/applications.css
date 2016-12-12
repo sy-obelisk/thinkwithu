@@ -1,0 +1,679 @@
+
+.abroadProBig{
+    width: 100%;
+    background: url("../images/abroadPro_bigBG.png") no-repeat;
+    background-size: 100% 715px;
+    padding-top: 117px;
+}
+.abroadPro-top{
+    width:100%;
+    text-align: center;
+}
+.abroadPro-group{
+    width: 889px;
+    height: 91px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.abroadPro-group ul li{
+    float: left;
+    margin-right: 104px;
+}
+.abroadPro-group ul li:last-child{
+    margin-right: 0;
+}
+.inputBG{
+    height: 67px;
+    line-height: 67px;
+    position: relative;
+    padding-left: 55px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.inputBG01{
+    width: 180px;
+    background: url("../images/mba_inputBG01.png") no-repeat;
+}
+.inputBG02{
+    width: 316px;
+    background: url("../images/mba_inputBG.png") no-repeat;
+}
+.inputBG a{
+    font-size: 25px;
+    font-weight: bold;
+}
+.redFont a{
+    color: #f12525;
+}
+.redsFont a{
+    color: #ca2d10;
+}
+.blueFont a{
+    color: #02349a;
+}
+.bluesFont a{
+    color: #02349a;
+}
+.purpleFont a{
+    color: #6525b3;
+}
+.purplesFont a{
+    color: #7e3388;
+}
+.inputBG div{
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    border: 5px white solid;
+    position: absolute;
+    left: -43px;
+    top: -15px;
+    text-align: center;
+}
+.inputBG div span{
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.inputBG div img{
+    vertical-align: middle;
+}
+.redFont div{
+    background: #e42d2b;
+}
+.redsFont div{
+    background: #ca2d10;
+}
+.blueFont div{
+    background: #02349a;
+}
+.bluesFont div{
+    background: #02339c;
+}
+.purpleFont div{
+    background: #6525b5;
+}
+.purplesFont div{
+    background: #81318c;
+}
+
+.abroadPro-apply{
+    width: 1283px;
+    height: 518px;
+    margin: 0 auto;
+    margin-top: 139px;
+    background: #4b8ede;
+    border-radius: 50px;
+    padding-top: 31px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.abroadPro-apply ul li{
+    float: left;
+    margin-right: 37px;
+    margin-bottom: 13px;
+    position: relative;
+    font-weight: bold;
+    font-size: 20px;
+}
+.abroadPro-apply ul li:nth-child(3n){
+    margin-right: 0;
+}
+.abroadPro-apply ul{
+    margin-left: 14px;
+}
+.applyFA01{
+    width: 464px;
+    height: 221px;
+    padding: 140px 0 0 19px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkitbox-sizing: border-box;
+    background: url("../images/abroadPro_apply01.jpg") no-repeat;
+}
+.applyFA02{
+    width: 387px;
+    height: 221px;
+    padding: 46px 0 0 39px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkitbox-sizing: border-box;
+    background: url("../images/abroadPro_apply02.jpg") no-repeat;
+}
+.applyFA03{
+    width: 332px;
+    height: 221px;
+    padding: 46px 0 0 173px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkitbox-sizing: border-box;
+    background: url("../images/abroadPro_apply03.jpg") no-repeat;
+}
+.applyFA04{
+    width: 464px;
+    height: 220px;
+    padding: 186px 0 0 278px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkitbox-sizing: border-box;
+    background: url("../images/abroadPro_apply04.jpg") no-repeat;
+}
+.applyFA05{
+    width: 387px;
+    height: 220px;
+    padding: 174px 0 0 207px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkitbox-sizing: border-box;
+    background: url("../images/abroadPro_apply05.jpg") no-repeat;
+}
+.applyFA06{
+    width: 333px;
+    height: 220px;
+    padding: 20px 0 0 15px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkitbox-sizing: border-box;
+    background: url("../images/abroadPro_apply06.png") no-repeat;
+}
+.abroadPro-apply ul li:hover{
+    cursor: pointer;
+}
+.abroadPro-apply ul li:hover>a{
+    color: #000000;
+}
+.abroadPro-apply ul li>a>div>div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(220, 220, 220, 0.51);
+    display: none;
+}
+.abroadPro-apply ul li:hover>a>div>div{
+    display: block;
+}
+.abroadPro-advan{
+    width: 1283px;
+    height: 58px;
+    line-height: 58px;
+    margin: 0 auto;
+    margin-top: 30px;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+}
+.abroadPro-advan span{
+    position: relative;
+    z-index: 1;
+}
+.abroadPro-advan img{
+    position: absolute;
+    left: 50%;
+    margin-left: -48px;
+    top: 50%;
+    margin-top: -40px;
+    z-index:0;
+}
+.advanBG01{
+    background: #e62c2b;
+}
+.advanBG02{
+    background: #4b8ede;
+}
+.advanBG03{
+    background: #274283;
+}
+.advanBG04{
+    background: #6724b5;
+}
+.advanBG05{
+    background: #c72e12;
+}
+.advanBG06{
+    background: #30accb;
+}
+.distinction{
+    width: 1283px;
+    /*height: 371px;*/
+    margin: 0 auto;
+    margin-top: 45px;
+}
+.disTitle{
+    width: 682px;
+    height: 17px;
+    margin: 0 auto;
+    border-top: 3px #000000 solid;
+    border-left: 3px #000000 solid;
+    border-right: 3px #000000 solid;
+    position: relative;
+    text-align: center;
+    padding-top: 5px;
+}
+.disTitle b{
+    color: #f80504;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: normal;
+}
+.disTitle h3{
+    font-size: 25px;
+    background: white;
+    padding: 0 5px;
+    display: inline-block;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    margin-left: -25%;
+}
+.disTitle span{
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    top: 27px;
+}
+.disTitle span.span01{
+    left: -35px;
+}
+.disTitle span.span02{
+    right: -35px;
+}
+.disBot{
+    margin-top: 51px;
+    position: relative;
+}
+.disBot-left{
+    width: 50%;
+    float: left;
+    background: #4b8ede;
+    padding: 48px 0 15px 0;
+    color: white;
+}
+.disBot-left ul li{
+    padding: 5px 125px 5px 13px;
+    margin-bottom: 10px;
+}
+.disBot-left ul li:hover{
+    cursor: pointer;
+    background: rgba(220, 220, 220, 0.47);
+}
+.disBot-right{
+    width: 50%;
+    float: left;
+    background: #ff6702;
+    padding: 48px 0 15px 0;
+    color: white;
+}
+.rightH{
+    height: 289px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.rightH02{
+    height: 457px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.disBot-right ul li{
+    padding: 7px 10px 7px 150px;
+    margin-bottom: 10px;
+}
+.disBot-right ul li:hover{
+    cursor: pointer;
+    background: rgba(220, 220, 220, 0.47);
+}
+.specDiv{
+    width: 222px;
+    height: 235px;
+    background: url("../images/abroadPro_yellowBG.png") no-repeat;
+    position: absolute;
+    top: 47px;
+    left: 50%;
+    margin-left: -111px;
+}
+.specH{
+    height: 371px;
+}
+.specDiv ul li{
+    width: 203px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 13px 0;
+}
+.specH ul li{
+    padding: 25px 0;
+}
+.specDiv ul li:hover{
+    cursor: pointer;
+    background: rgba(220, 220, 220, 0.47);
+}
+.specDiv ul li span{
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    border: 1px #000000 solid;
+    position: relative;
+    top: -2px;
+}
+.distinction02{
+    width: 1283px;
+    height: 507px;
+    margin: 0 auto;
+    margin-top: 35px;
+    border: 1px red solid;
+
+}
+.abroadPro-admiss{
+    width: 1283px;
+    height: 278px;
+    margin: 0 auto;
+    margin-top: 84px;
+    background: #e6e6e6;
+    position: relative;
+}
+.aboTitle{
+    width: 1113px;
+    height: 80px;
+    line-height: 80px;
+    color: white;
+    text-align: center;
+    background: url("../images/abroadPro_titleBG.png") no-repeat;
+    position: absolute;
+    top: -41px;
+    left: 50%;
+    margin-left: -556px;
+    font-size: 22px;
+    font-weight: normal;
+}
+.scorll01,.scorll02{
+    margin-right: 100px;
+}
+.aboBot-ul{
+    float: left;
+    padding: 69px 80px 0 80px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.ul01Hd a.prev{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+}
+.ul01Hd a.next{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+}
+.ul01Bd{
+    width: 1128px;
+    overflow: hidden;
+}
+.ul01Bd>ul>li>ul{
+    margin-right: 100px;
+}
+
+.aboBot-ul div.ul01Bd>ul>li{
+    float: left;
+}
+.aboBot-span01{
+    width: 78px;
+    text-align: center;
+    display:inline-block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+.aboBot-span02{
+    width: 150px;
+    text-align: center;
+    display:inline-block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+.aboBot-span03{
+    width: 70px;
+    text-align: center;
+    display:inline-block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+.abroadPro-school{
+    width: 1283px;
+    height: 247px;
+    margin: 0 auto;
+    margin-top: 19px;
+    background: #e6e6e6;
+}
+.abroadPro-school .schoolBd{
+    margin-left: 11px;
+}
+.abroadPro-school ul li{
+    width: 120px;
+    height: 167px;
+    float: left;
+    margin-right: 33px;
+    margin-top: 43px;
+}
+.abroadPro-school ul li img{
+    width: 100%;
+    height: 100%;
+}
+.studentInfo{
+    width: 1283px;
+    height: 204px;
+    margin: 0 auto;
+    margin-top: 18px;
+}
+.studentInfo>ul>li{
+    float: left;
+    margin-right: 100px;
+}
+.studentInfo>ul>li:last-child{
+    margin-right: 0;
+}
+.stu-left{
+    width: 145px;
+    height: 155px;
+    float: left;
+    border-right: 3px #818181 solid;
+}
+.stu-left img{
+    margin-bottom: 5px;
+}
+.stu-left a{
+    width: 96px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    background: url("../images/abroadPro_seeXQ.png") no-repeat;
+    color: #528cd4;
+}
+.stu-right{
+    width: 184px;
+    float: left;
+    margin-left: 27px;
+}
+.stu-right h4{
+    margin-bottom: 30px;
+}
+.stu-right ul li{
+    margin-bottom: 5px;
+}
+.whoUs{
+    width: 1283px;
+    height: 579px;
+    margin: 0 auto;
+    background: url("../images/abroadPro_whoUs.jpg") no-repeat;
+    position: relative;
+}
+.whoUs>ul>li:hover{
+    cursor: pointer;
+}
+.whoUs>ul>li:hover>div{
+    border: 3px #4a8ee2 solid;
+}
+.whoUs>ul>li:hover>div>div{
+    display: block;
+}
+.whoUs>ul>li>div>img{
+    width: 100%;
+}
+.whoUs>ul>li>div>div{
+    width: 100%;
+    height:  100%;
+    background: rgba(131, 137, 171, 0.56);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    display: none;
+}
+.whoUs>ul>li>div>div>h4{
+    margin-top: 60%;
+    font-weight: normal;
+}
+.circle01{
+    width: 207px;
+    height: 207px;
+    border-radius: 207px;
+    overflow: hidden;
+    position: absolute;
+    top: 62px;
+    border: 3px transparent solid;
+}
+.LeOrR1{
+    left: 44px;
+}
+.LeOrR12{
+    right: 44px;
+}
+.circle02{
+    width: 232px;
+    height: 232px;
+    border-radius: 232px;
+    overflow: hidden;
+    position: absolute;
+    top: 176px;
+    border: 3px transparent solid;
+}
+.LeOrR2{
+    left: 217px;
+}
+.LeOrR22{
+    right: 217px;
+}
+.circle03{
+    width: 131px;
+    height: 131px;
+    border-radius: 131px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 40px;
+    border: 3px transparent solid;
+}
+.LeOrR3{
+    left: 353px;
+}
+.LeOrR32{
+    right: 353px;
+}
+.circle04{
+    width: 176px;
+    height: 176px;
+    border-radius: 176px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 129px;
+    border: 3px transparent solid;
+}
+.LeOrR4{
+    left: 17px;
+}
+.LeOrR42{
+    right: 17px;
+}
+.circle05{
+    width: 144px;
+    height: 144px;
+    border-radius: 144px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 20px;
+    border: 3px transparent solid;
+}
+.LeOrR5{
+    left: 157px;
+}
+.LeOrR52{
+    right: 157px;
+}
+.circle06{
+    width: 259px;
+    height: 259px;
+    border-radius: 259px;
+    overflow: hidden;
+    position: absolute;
+    top: 235px;
+    left: 50%;
+    margin-left: -129px;
+    border: 3px transparent solid;
+}
+.whoUs>a{
+    width: 160px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 25px;
+    color: #528cd4;
+    font-weight: bold;
+    position: absolute;
+    bottom: 13px;
+    left: 50%;
+    margin-left: -80px;
+    background: url("../images/abroadPro_starBtn.png") no-repeat;
+}
+.subject{
+    width: 1283px;
+    margin: 0 auto;
+    margin-top: 25px;
+    overflow: auto;
+}
+.subject>ul>li{
+    width: 298px;
+    height: 443px;
+    background: #e6e6e6;
+    float: left;
+    margin-right: 30px;
+}
+.subject>ul>li:last-child{
+    margin-right: 0;
+}
+.subject>ul>li>ul{
+    margin-top: 48px;
+    margin-left: 20px;
+}
+.subject>ul>li>ul>li{
+    margin-bottom: 22px;
+    color: #3b3a38;
+}
+.subject>ul>li>div{
+    width: 100%;
+    height: 96px;
+    line-height: 96px;
+    text-align: center;
+    background: #4b8ede;
+    color: white;
+    font-weight: bold;
+    margin-top: 40px;
+}
+.subject>ul>li>div>img{
+    vertical-align: middle;
+}

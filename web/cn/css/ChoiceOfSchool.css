@@ -1,0 +1,96 @@
+
+.filtrate{
+    width: 100%;
+    height: 40px;
+}
+.filterLeft{
+    width: 50px;
+    height: 100%;
+    line-height: 40px;
+    float: left;
+    background: url("../images/choiceSchool_filter.png") no-repeat;
+    background-size: 100% auto;
+    color: white;
+    padding-left: 8px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-weight: bold;
+    font-size:15px;
+}
+.filterRight{
+    width: 640px;
+    height: 100%;
+    float: left;
+    background: #e5e5e5;
+}
+.filterRight p{
+    margin-top: 2px;
+    margin-left: 10px;
+}
+.filterRight p a{
+    margin-right: 27px;
+}
+.collegeContent{
+    width: 100%;
+    background: #f2f2f2;
+    padding-top: 17px;
+    margin-top: 28px;
+}
+.collegeContent>ul>li{
+    margin-bottom: 40px;
+    position: relative;
+}
+.collegeContent>ul>li:last-child{
+    margin-bottom: 0;
+}
+.collegeLeft{
+    width: 161px;
+    height: 149px;
+    float: left;
+}
+.collegeLeft img{
+    width: 100%;
+}
+.collegeRight{
+    width: 512px;
+    float: left;
+    margin-left: 20px;
+}
+.collegeRight p{
+    color: #767676;
+    font-size: 13px;
+    margin-top: 5px;
+}
+.collegeRight span{
+    font-size: 12px;
+    color: #767676;
+}
+.collegeRight .consult{
+    width: 34px;
+    height: 26px;
+    line-height: 26px;
+    color: white;
+    padding-left: 5px;
+    background: url("../images/choiceSchool_consult.png") no-repeat;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 12px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.collegeRight .ViewMore{
+    width: 68px;
+    height: 17px;
+    line-height: 17px;
+    background: url("../images/choiceSchool_viewmore.png") no-repeat center;
+    background-size: 100% 100%;
+    font-size: 12px;
+    display: block;
+    padding-left: 8px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

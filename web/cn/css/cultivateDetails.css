@@ -1,0 +1,270 @@
+
+.cultivateBig{
+    width: 100%;
+    background: url("../images/cultivateD_bigBG.png") no-repeat;
+    background-size: 100% 455px;
+    padding-top: 102px;
+}
+.gmat-cult{
+    width: 610px;
+    height: 132px;
+    line-height: 132px;
+    margin: 0 auto;
+    background: url("../images/cultivateD_gmatBG.png") no-repeat;
+    background-size: 100% 100%;
+    font-size: 50px;
+    color: white;
+    padding-left: 190px;
+    font-weight: bold;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.basicClass{
+    width: 1001px;
+    height: 700px;
+    background: #2557aa;
+    margin: 0 auto;
+    margin-top: 150px;
+    padding-top: 25px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.basicBig{
+    width: 906px;
+    margin: 0 auto;
+    color: #1e57b7;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.basicBig>div.kou-group{
+    position: absolute;
+    left: 203px;
+}
+.basicBig>div.kou-group>img{
+    width: 48px;
+}
+.basicBig>div.top01{
+    top: 39%;
+}
+.basicBig>div.top02{
+    top: 20px;
+}
+.basicBig>div.top03{
+    top: 24px;
+}
+.basic-left{
+    width: 220px;
+    float: left;
+    background: white;
+    text-align: center;
+    border-radius: 20px;
+    display: table;
+}
+.HL01{
+    height: 75px;
+}
+.HL02{
+    height: 113px;
+}
+.HL03{
+    height: 205px;
+}
+.HL04{
+    height: 145px;
+}
+.basic-left>span{
+    display: table-cell;
+    vertical-align: middle;
+}
+.basic-right{
+    width: 669px;
+    float: left;
+    background: white;
+    border-radius: 20px;
+    margin-left: 16px;
+    padding: 28px 0 25px 25px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.basic-right>ul>li{
+    float: left;
+    margin-bottom: 5px;
+}
+.basic-right>ul>li:nth-child(2n-1){
+    width: 340px;
+}
+.basic-right>ul>li:last-child{
+    margin-bottom: 0;
+}
+.testimonials{
+    width: 1001px;
+    margin: 0 auto;
+    margin-top: 27px;
+}
+.testimonialsL{
+    width: 524px;
+    height: 188px;
+    float: left;
+}
+.customer-left{
+    width: 217px;
+    height: 100%;
+    float: left;
+}
+.customer-left img{
+    width: 100%;
+}
+.customer-right{
+    width: 304px;
+    height: 100%;
+    float: left;
+    background: #f73c4a;
+    padding: 20px 0 0 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.customer-right ul li{
+    margin-bottom: 5px;
+}
+.customer-right ul li a{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+    color: #ffe9ee;
+}
+.testimonialsC{
+    width: 228px;
+    height: 188px;
+    float: left;
+    margin-left: 24px;
+    border-left: 1px #a7a7a7 solid;
+    border-right: 1px #a7a7a7 solid;
+    border-bottom: 1px #a7a7a7 solid;
+    border-top: 2px #f23f4b solid;
+}
+.testimonialsC h4{
+    text-align: center;
+    color: #ff5f6d;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+.testimonialsC ul li{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.testimonialsC ul li:last-child{
+    margin-bottom: 0;
+}
+.testimonialsC ul li img{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.testimonialsR{
+    width: 190px;
+    float: left;
+    margin-left: 14px;
+}
+.testimonialsR input{
+    color: #274281;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+}
+.testimonialsR input:first-child{
+    width: 100%;
+    height: 64px;
+    padding-left: 40px;
+    background: url("../images/cultivateD_btn01.png") no-repeat;
+    background-size: 100% auto;
+    margin-top: 25px;
+}
+.testimonialsR input:last-child{
+    width: 100%;
+    height: 64px;
+    padding-left: 60px;
+    background: url("../images/cultivateD_btn02.png") no-repeat;
+    background-size: 100% auto;
+    margin-top: 10px;
+}
+.gmatTeacher{
+    width: 1001px;
+    height: 520px;
+    margin: 0 auto;
+    background: #2557aa;
+    margin-top: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 25px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.gmatTeacher>a{
+    width: 59px;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+    text-align: center;
+    border: 2px white solid;
+    color: white;
+    display: inline-block;
+    margin-top: 18px;
+}
+.gmatTitle{
+    width: 227px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    border: 3px white solid;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    margin: 0 auto;
+}
+.gmatTeacher ul li{
+    width: 161px;
+    height: 327px;
+    float: left;
+    margin-right: 49px;
+    color: white;
+}
+.gmatTeacher ul{
+    margin-top: 40px;
+}
+.gmatTeacher ul li:last-child{
+    margin-right: 0;
+}
+.gmatTeacher ul li:nth-child(2n-1){
+    background: url("../images/cultivateD_liBG01.png") no-repeat bottom;
+    background-size: 100% auto;
+}
+.gmatTeacher ul li:nth-child(2n){
+    background: url("../images/cultivateD_liBG02.png") no-repeat bottom;
+    background-size: 100% auto;
+}
+.headPortrait{
+    width: 133px;
+    height: 133px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 3px;
+}
+.headPortrait img{
+    width: 100%;
+}
+.gmatTeacher ul li div p{
+    width: 95%;
+    margin: 0 auto;
+    font-size: 12px;
+}

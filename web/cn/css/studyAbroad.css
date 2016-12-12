@@ -1,0 +1,919 @@
+
+.abNavHd ul li.on{
+    background: #c3a2e9;
+}
+.abNavBd{
+    width: 1001px;
+
+    margin: 0 auto;
+    margin-top: 24px;
+    margin-bottom: 5px;
+}
+.abNavBd ul li .navBdLeft{
+    width: 270px;
+    height: 67px;
+    float: left;
+    padding-left: 27px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.abNavBd ul li .navBdLeft b{
+    font-size: 20px;
+    position: relative;
+    top: -20px;
+    left: 15px;
+}
+.abNavBd ul li .navBdLeft img{
+    height: 100%;
+}
+.abNavBd ul li .navBdRight{
+    width: 731px;
+    height: 71px;
+    float: left;
+    background: #e5e5e5;
+}
+.navBdRight ul{
+    margin-top: 24px;
+    margin-left: 12px;
+}
+.navBdRight ul li{
+    float: left;
+    font-size: 16px;
+}
+.navBdRight ul li:not(.notBG){
+    width: 98px;
+    height: 19px;
+    line-height: 19px;
+    margin-right: 88px;
+    text-align: center;
+}
+.navBdRight ul li .notBG{
+    margin-right: 0;
+}
+.navBdRight ul li:not(.notBG):hover{
+    background: url("../images/studyA_mapBG.png") no-repeat;
+}
+.navBdRight ul li:not(.notBG):hover a{
+    color: white;
+}
+
+.advantage{
+    width: 1001px;
+    /*height: 548px;*/
+    margin: 0 auto;
+    overflow: auto;
+}
+.advanLeft{
+    width: 469px;
+    height: 100%;
+    float: left;
+}
+.leftBanner01{
+    width: 100%;
+    height: 236px;
+    position: relative;
+}
+.bannerLhd{
+    width: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -20px;
+}
+.bannerLhd ul li{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: #999b98;
+    float: left;
+    margin-right: 3px;
+}
+.bannerLhd ul li:last-child{
+    margin-right: 0;
+}
+.bannerLhd ul li:hover{
+    cursor: pointer;
+}
+.bannerLhd ul li.on{
+    background: #676966;
+}
+.bannerLbd ul li img{
+    width: 100%;
+}
+.hotRecommend{
+    width: 100%;
+    height: 21px;
+    border: 2px #81318b solid;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.hotBd{
+    display: inline-block;
+    position: relative;
+    top: 3px;
+}
+.hotBd ul li{
+    width: 100px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    float: left;
+    margin-right: 20px;
+    font-size: 12px;
+}
+.dissertation{
+    background: #eeeeee;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+.newMT02{
+    /*margin-top: 45px;*/
+}
+.dissertation div.title{
+    width: 100%;
+    border-bottom: 2px #000000 solid;
+    position: relative;
+}
+.dissertation div.title span{
+    position: absolute;
+    left: 50%;
+    top:-10px;
+    margin-left: -10%;
+    background: white;
+    padding: 0 5px;
+    font-size: 16px;
+    color: #81318b;
+    font-weight: bold;
+}
+.dissertation div.title span a{
+    color: #81318b;
+}
+.dissertation div.details{
+    width: 100%;
+    height: 77px;
+    background: #eeeeee;
+    margin-top: 14px;
+}
+.det-left{
+    width: 73px;
+    height: 71px;
+    float: left;
+    margin-left: 36px;
+}
+.det-left img{
+    width: 100%;
+}
+.det-right{
+    width: 317px;
+    float: left;
+    margin-left: 37px;
+    margin-top: 26px;
+}
+.dissertation ul{
+    margin-top: 9px;
+    overflow: auto;
+}
+.dissertation ul li{
+    width: 234px;
+    float: left;
+    margin-bottom: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.dissertation ul li:nth-child(3),.dissertation ul li:nth-child(4){
+    margin-bottom: 0;
+}
+.centerBanner02{
+    margin-top: 22px;
+}
+.centerBanner02 .adCbd ul li{
+    margin-bottom: 10px;
+}
+.speMT{
+    /*margin-top: 30px;*/
+}
+.advanCenter{
+    width: 225px;
+    float: left;
+    margin-left: 18px;
+    /*margin-top: 16px;*/
+}
+.newMT{
+    margin-top: 0;
+}
+.speGrey{
+    background: #eeeeee;
+    padding-bottom: 3px;
+    margin-top: 19px;
+}
+.adChd ul li{
+    height: 23px;
+    line-height: 23px;
+    margin-right: 13px;
+    padding:0 10px;
+    float: left;
+    font-size: 15px;
+}
+.adChd ul li a{
+    color: #82338c;
+}
+.adChd ul li:hover{
+    cursor: pointer;
+}
+.adChd ul li.on{
+    background: url("../images/studyA_mapBG.png") no-repeat center;
+    color: white;
+}
+.adChd ul li.on a{
+    color: white;
+}
+.adCbd ul{
+    margin-top: 10px;
+}
+.adCbd ul li{
+    margin-bottom: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.adCbd ul li:last-child{
+    margin-bottom: 0;
+}
+.advanRight{
+    width: 272px;
+    height: 100%;
+    float: left;
+    margin-left: 5px;
+}
+.admission{
+    width: 100%;
+    /*height: 335px;*/
+    position: relative;
+
+}
+.admission h3{
+    color: #81318b;
+    text-align: center;
+}
+.admission h3 a{
+    color: #81318b;
+}
+.admission .adm01{
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+.admission .adm02{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.missSchool{
+    padding-top: 40px;
+    border-left: 1px #e3e3e3 solid;
+    border-right: 1px #e3e3e3 solid;
+}
+.missSchool .userName{
+    width:50%;
+    float: left;
+    text-align: center;
+}
+.missSchool .admissionS{
+    width:100%;
+    float: left;
+    /*text-align: center;*/
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.missSchool .admissionS i{
+    margin-left: 5px;
+    margin-right: 10px;
+    color: #812e8c;
+}
+.missSchool .admiSubject{
+    width:50%;
+    float: left;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.adminBd{
+    margin-top: 10px;
+}
+.adminBd ul li{
+    height: 15px;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.evaluate{
+    width: 128px;
+    height: 45px;
+    background: #81318b;
+    border-radius: 5px;
+    margin-left: 8px;
+    margin-top: 18px;
+    /*margin-bottom: 23px;*/
+    text-align: center;
+    float: left;
+}
+.evaluate:hover{
+    background: rgba(130, 51, 140, 0.64);
+}
+.evaluate input{
+    border: none;
+    color: white;
+    margin-top: 7px;
+    font-size: 15px;
+    font-family: '微软雅黑';
+    padding-left: 40px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 114px;
+    height: 32px;
+}
+.evaluate input.evaOne{
+    background: url("../images/studyA_evaBtn01.png") no-repeat;
+    background-size: 100% auto;
+}
+.evaluate input.evaTwo{
+    background: url("../images/studyA_evaBtn02.png") no-repeat;
+    background-size: 100% auto;
+}
+.evaluate input.evaThree{
+    background: url("../images/studyA_evaBtn03.png") no-repeat;
+    background-size: 100% auto;
+}
+.evaluate input.evaFour{
+    background: url("../images/studyA_evaBtn04.png") no-repeat;
+    background-size: 100% auto;
+}
+.eliteSchool{
+    width: 1001px;
+    height: 93px;
+    background: url("../images/studyA_schoolBG.jpg") no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-bottom: 12px;
+    padding: 36px 0 0 230px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.eliteSchool .comeonSearch{
+    background: #030267;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: '微软雅黑';
+    padding: 0 10px;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+/*留学页面下拉框css*/
+.eliteSchool .floatF{
+    float: left;
+    color: #020b73;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 18px;
+}
+.eliteSchool .default{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background: white;
+    position: relative;
+}
+.eliteSchool .defa02{
+    width: 92px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 3px;
+    padding-left: 2px;
+    float: left;
+}
+.eliteSchool .default span{
+    color: #000000;
+    margin-left: 0;
+    font-size: 12px;
+}
+
+.eliteSchool .clickBac{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.eliteSchool .clickBac02{
+    width: 16px;
+    height: 20px;
+    background: url("../images/index_xiaosjia.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.eliteSchool .clickBac:hover{
+    cursor: pointer;
+}
+.eliteSchool .secFont{
+    position: absolute;
+    left: 0;
+    background: white;
+    display: none;
+    z-index: 11;
+}
+
+.eliteSchool .secFont02{
+    width: 92px;
+    height: 100px;
+    overflow: auto;
+    position: absolute;
+    top: 20px;
+}
+.eliteSchool .secFont ul{
+    margin: 0;
+    padding: 0;
+}
+.eliteSchool .secFont ul li{
+    font-size: 12px;
+    border-top: 1px #dcdcdc solid;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 3px 0;
+}
+
+.eliteSchool .secFont02 ul li{
+    padding-left: 28px;
+}
+.eliteSchool .secFont ul li:hover{
+    cursor: pointer;
+    background: #dcdcdc;
+    color: #683aa6;
+}
+/*留学页面下拉框css end*/
+.commonTitle{
+    width: 1001px;
+    height: 76px;
+    margin: 0 auto;
+}
+.titleBG01{
+    background: url("../images/studyA_titleBG01.png") no-repeat;
+    background-size: 100% 100%;
+}
+.titleBG02{
+    background: url("../images/studyA_titleBG02.png") no-repeat;
+    background-size: 100% 100%;
+}
+.titleBG03{
+    background: url("../images/studyA_titleBG03.png") no-repeat;
+    background-size: 100% 100%;
+}
+.titleB{
+    width: 50%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    float: left;
+}
+.titleBpadd01{
+    padding: 46px 0 0 75px;
+}
+.titleBpadd02{
+    padding: 45px 0 0 53px;
+}
+.titleB b{
+    font-size: 23px;
+    margin-right: 10px;
+}
+.titleB span{
+    font-size: 12px;
+}
+.titleB02{
+    float: right;
+}
+.titleB02 input:hover{
+    transform:translate(0,-5px);
+    -webkit-transform:translate(0,-5px);
+    -moz-transform:translate(0,-5px);
+    -ms-transform:translate(0,-5px);
+    -o-transform:translate(0,-5px);
+}
+.titleB02.mt01{
+    margin-top: -48px;
+}
+.titleB02.mt02{
+    margin-top: -48px;
+}
+.titleB02 input{
+    width: 109px;
+    height: 20px;
+    border: none;
+    color: white;
+    font-family: '微软雅黑';
+    font-size: 12px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    text-align: left;
+    font-weight: bold;
+    margin-left: 43px;
+}
+.titleB02 input.inputBg01{
+    background: url("../images/studyA_inputBg01.png") no-repeat;
+}
+.titleB02 input.inputBg02{
+    background: url("../images/studyA_inputBg02.png") no-repeat;
+}
+.titleB02 input.inputBg03{
+    background: url("../images/studyA_inputBg03.png") no-repeat;
+}
+.titleB02 .b01{
+    margin-right: 40px;
+    font-size: 14px;
+}
+.titleB02 .b02{
+    font-size: 14px;
+}
+
+.commonAbroad{
+    width: 1001px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.commonMasterL{
+    width: 259px;
+    height: 100%;
+    float: left;
+}
+.commerBanner{
+    width: 259px;
+    height: 179px;
+    position: relative;
+    margin-bottom: 16px;
+}
+.comHd{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -5%;
+}
+.comHd ul li{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: #989898;
+    margin-right: 5px;
+    float: left;
+}
+.comHd ul li.on{
+    background: #676767;
+}
+.comBd ul li img{
+    width: 100%;
+}
+.commonList{
+    margin-top: 18px;
+}
+.commonList02{
+    margin-top: 22px;
+}
+.commonList02 h3{
+    font-size: 14px;
+}
+.commonList02 div{
+    background: #eeeeee;
+}
+.commonList02 div ul li{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-top: 25px;
+    margin-left: 5px;
+}
+.commonList02 input{
+    width: 79px;
+    height: 20px;
+    border: none;
+    font-family: '微软雅黑';
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 8px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+    float: right;
+}
+.commonList02 input.background01{
+    background: url("../images/studyA_comeonQuestion01.png") no-repeat;
+}
+.commonList02 input.background02{
+    background: url("../images/studyA_comeonQuestion02.png") no-repeat;
+}
+.commonList02 input.background03{
+    background: url("../images/studyA_comeonQuestion03.png") no-repeat;
+}
+.commonList h3{
+    float: left;
+    font-size: 15px;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+.listHd ul li{
+    float: left;
+    margin-right: 5px;
+    margin-top: 3px;
+}
+.listHd ul li:hover{
+    cursor: pointer;
+}
+.listHd ul li:last-child{
+    margin-right: 0;
+}
+.back01 ul li.on{
+    background: url("../images/studyA_yellowBG01.png") no-repeat center;
+    background-size: 100% 100%;
+}
+.back02 ul li.on{
+    background: url("../images/studyA_yellowBG02.png") no-repeat center;
+    background-size: 100% 100%;
+}
+.back03 ul li.on{
+    background: url("../images/studyA_yellowBG03.png") no-repeat center;
+    background-size: 100% 100%;
+}
+.listBd{
+    margin-left: 5px;
+    background: #eeeeee;
+}
+.listBd ul li{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-top: 25px;
+}
+
+.commonMasterC{
+    width: 252px;
+    height: 100%;
+    float: left;
+    margin-left: 24px;
+}
+.usually{
+    margin-bottom: 26px;
+}
+.usually ul li{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-bottom: 18px;
+}
+.commonMasterR{
+    width: 446px;
+    height: 100%;
+    float: left;
+    margin-left: 18px;
+}
+.commonMasterR h3{
+    padding-left: 10px;
+}
+.commonMasterR h3 a span{
+    color: #a3a3a3;
+    font-weight: normal;
+    text-decoration: underline;
+}
+.commonMasterR .h3border01{
+    border-left: 6px #fcd442 solid;
+}
+.commonMasterR .h3border02{
+    border-left: 6px #699bfb solid;
+}
+.commonMasterR .h3border03{
+    border-left: 6px #5cca89 solid;
+}
+.abroadProduct{
+    width: 436px;
+    height: 136px;
+    margin: 12px 0 30px 10px;
+    color: #717d71;
+    font-size: 12px;
+}
+.product01{
+    width: 108px;
+    height: 54px;
+    background:url("../images/studyA_product01.jpg") no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    padding: 22px 0 0 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    position: relative;
+}
+.product02{
+    width: 88px;
+    height: 54px;
+    background:url("../images/studyA_product02.jpg") no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    padding: 2px 0 0 5px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    position: relative;
+    margin-left: 6px;
+}
+.product03{
+    width: 67px;
+    height: 54px;
+    background:url("../images/studyA_product03.jpg") no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    padding: 19px 0 0 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    position: relative;
+    margin-left:7px;
+}
+.product04{
+    width: 153px;
+    height: 54px;
+    background:url("../images/studyA_product04.jpg") no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    padding: 36px 0 0 8px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    position: relative;
+    margin-left: 6px;
+}
+.product05{
+    width: 145px;
+    height: 77px;
+    background:url("../images/studyA_product06.png") no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    padding: 39px 3px 0 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    position: relative;
+    margin-top: 2px;
+    color: #000000;
+    text-align: right;
+}
+.product06{
+    width: 166px;
+    height: 77px;
+    background:url("../images/studyA_product05.jpg") no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    padding: 45px 0 0 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    position: relative;
+    margin-top: 2px;
+    text-align: center;
+    margin-left: 8px;
+}
+.product07{
+    width: 106px;
+    height: 77px;
+    background:url("../images/studyA_product07.png") no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    text-align: center;
+    position: relative;
+    margin-top: 2px;
+    text-align: center;
+    margin-left: 8px;
+}
+.product01,.product02,.product03,.product04,.product05,.product06,.product07:hover{
+    cursor: pointer;
+}
+.productZZC{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(220, 220, 220, 0.4);
+}
+.studentGY{
+    width: 428px;
+    height: 146px;
+    border: 1px #b8b8b8 solid;
+    margin: 9px 0 20px 11px;
+    padding: 5px 0 0 8px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.stuLeft{
+    width: 134px;
+    float: left;
+}
+.stuLeft img{
+    width: 100%;
+}
+.stuRight{
+    width: 281px;
+    height: 100%;
+    float: left;
+    margin-left: 3px;
+    position: relative;
+}
+.stuRight p{
+    /*多行显示省略号*/
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -moz-box;
+    -webkit-line-clamp: 4;
+    -moz-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+}
+.stuRight h4{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.stuRight b{
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    font-size: 12px;
+}
+.stuRight i{
+    color: #838383;
+}
+.stuRight h4{
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.schoolAL{
+    margin-top: 20px;
+    margin-left: 23px;
+}
+.schoolAL ul li{
+    width: 91px;
+    float: left;
+    margin-right: 14px;
+}
+.schoolAL ul li img{
+    width: 100%;
+}
+.schoolAL ul li:last-child{
+    margin-right: 0;
+}
+
+.applyFor{
+    width: 1001px;
+    height: 95px;
+    margin: 0 auto;
+    margin-top: 22px;
+    margin-bottom: 5px;
+    background: url("../images/studyA_apply.jpg") no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.applyFor input{
+    font-size: 16px;
+    color: white;
+    border-radius: 5px;
+    padding: 2px 10px;
+    background: #69459d;
+    border: none;
+    font-family: '微软雅黑';
+    position: absolute;
+    right: 0;
+    bottom: 14px;
+}
+.applyFor a{
+    color: white;
+}
+.advertisement{
+    width: 1001px;
+    height: 90px;
+    margin: 0 auto;
+    margin-top: 12px;
+    margin-bottom: 22px;
+}
+.advertisement img{
+    width: 100%;
+}

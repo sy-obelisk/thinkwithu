@@ -1,0 +1,68 @@
+body{
+    background: white!important;
+}
+.collect-content{
+    width: 1001px;
+    margin: 0 auto;
+    background: #eeeeee;
+    margin-bottom: 48px;
+    padding: 40px 0;
+}
+.collect-content h4{
+    border-bottom: 1px #dddfde dashed;
+    font-weight: normal;
+    padding-left: 12px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size: 16px;
+}
+.noContent{
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 16px;
+}
+.haveContent{
+    width: 100%;
+    margin-top: 33px;
+}
+.haveContent ul{
+    margin-left: 15px;
+}
+.haveContent ul:after{
+    display:block;clear:both;content:"";visibility:hidden;height:0;
+}
+.haveContent ul li{
+    width: 216px;
+    float: left;
+    margin-right: 35px;
+    margin-bottom: 20px;
+}
+.haveContent ul li:nth-child(4n){
+    margin-right: 0;
+}
+.haveContent ul li img{
+    width: 100%;
+}
+.haveContent ul li p{
+    margin-top: 8px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.haveContent ul li span{
+    color: #969696;
+    font-size: 12px;
+}
+.haveContent ul li b{
+    color: #969696;
+    font-size: 12px;
+    font-weight: normal;
+    float: right;
+    background: url("../images/open_love.png") no-repeat left center;
+    padding-left: 13px;
+}

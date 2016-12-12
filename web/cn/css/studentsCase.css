@@ -1,0 +1,503 @@
+
+
+.caseBanner{
+    width: 1001px;
+    /*height:270px;*/
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.leftBanner{
+    width: 707px;
+    float: left;
+    position: relative;
+}
+.caseBanhd{
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    z-index: 11;
+}
+.caseBanhd ul li{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border: 1px #000000 solid;
+    background: white;
+    text-align: center;
+    float: left;
+    margin-right: 5px;
+}
+.caseBanhd ul li:hover{
+    cursor: pointer;
+}
+.caseBanhd ul li.on{
+    background: #f2080c;
+    color: white;
+}
+.caseBanbd ul li img{
+    width: 100%;
+}
+.rightList{
+    width: 280px;
+    height: 268px;
+    border: 1px #b5b5b5 solid;
+    float:left;
+    margin-left: 12px;
+}
+.listHd ul li{
+    width: 50%;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #494949;
+    background: #cccccc;
+    float: left;
+    font-weight: bold;
+}
+.listHd ul li:hover{
+    cursor: pointer;
+}
+.listHd ul li.on{
+    background: white;
+    color: #81318b;
+}
+.listHd ul li.on a{
+    color: #81318b;
+}
+.listBd ul li img{
+    width: 47px;
+    margin-right: 23px;
+    margin-top: 5px;
+}
+.listBd ul li img:first-child{
+    margin-left: 50px;
+}
+.listB-Bd ul li{
+    height: 20px;
+    margin-top: 5px;
+}
+.listB-Bd ul li i{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.listbhd ul li{
+    width: 33.3%;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    float: left;
+    background: #f7f1ff;
+    color: #8d888f;
+    font-size: 12px;
+}
+.listbhd ul li.on{
+    background: #81318b;
+    color: white;
+}
+.listbhd ul li:hover{
+    cursor: pointer;
+}
+.listbbd{
+    margin-top: 10px;
+}
+.listbbd ul li{
+    margin-bottom: 2px;
+}
+.listbbd ul li img{
+    width: 47px;
+    margin-right: 23px;
+    margin-top: 5px;
+}
+.listbbd ul li img:first-child{
+    margin-left: 50px;
+}
+.listbbd ul li i{
+    color: #736586;
+    margin: 0 20px 0 20px;
+}
+.allCase{
+    width: 1001px;
+    margin: 0 auto;
+    margin-top: 23px;
+}
+.allCase:after{
+    display:block;clear:both;content:"";visibility:hidden;height:0;
+}
+.allcaseHd h2{
+    font-weight: normal;
+    margin-left: 18px;
+    font-size: 15px;
+}
+.allcaseHd{
+    border-bottom: 4px #81318b solid;
+    padding-bottom: 5px;
+}
+.allcaseHd h2{
+    float: left;
+    margin-right: 131px;
+}
+.allcaseHd h2 span{
+    color: #878984;
+    font-size: 12px;
+}
+
+.allcaseHd ul{
+    float: right;
+    margin-top: -30px;
+}
+.allcaseHd ul li{
+    float: left;
+    padding: 2px 10px 0 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #727272;
+    margin-right: 25px;
+}
+.allcaseHd ul li:last-child{
+    margin-right: 0;
+}
+.allcaseHd ul li:hover{
+    cursor: pointer;
+}
+.allcaseHd ul li.on{
+    background: #81318b;
+    color: white;
+}
+.allcaseHd ul li.on a{
+    color: white;
+}
+.allcaseHd ul li span{
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.allcaseHd ul li img{
+    vertical-align: middle;
+}
+.allcaseBd{
+    margin-top: 28px;
+}
+.allcaseBd>ul>li{
+    width: 165px;
+    float: left;
+    margin-right: 42px;
+    margin-bottom: 17px;
+}
+.allcaseBd>ul>li img{
+    width: 100%;
+    height: 155px;
+}
+.allcaseBd>ul>li:nth-child(5n){
+    margin-right:0;
+}
+.allcaseBd>ul>li:nth-child(11){
+    margin-bottom: 23px;
+}
+.allcaseBd>ul>li:nth-child(12){
+    margin-bottom: 23px;
+}
+.allcaseBd>ul>li:nth-child(13){
+    margin-bottom: 23px;
+}
+.allcaseBd>ul>li:nth-child(14){
+    margin-bottom: 23px;
+}.allcaseBd>ul>li:nth-child(15){
+     margin-bottom: 23px;
+ }
+
+.allcaseBd>ul>li div{
+    width: 100%;
+    height: 67px;
+    background: #cbccce;
+    margin-top: 3px;
+    color: #81318b;
+    font-size: 12px;
+}
+.allcaseBd>ul>li>a{
+    color: #81318b;
+}
+.allcaseBd>ul>li div ul li{
+    border-bottom: 1px #81318b solid;
+}
+.allcaseBd>ul>li div ul li:last-child{
+    border-bottom: none;
+}
+
+.admission{
+    width: 1001px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.admission:after{
+    display:block;clear:both;content:"";visibility:hidden;height:0;
+}
+.admissHd{
+    width: 100%;
+    border-bottom: 3px #81318b solid;
+}
+.admissHd b{
+    float: right;
+    margin-top: 20px;
+}
+.admissHd b img{
+    margin-top: -55px;
+}
+.admissHd ul{
+    margin-left: 5px;
+}
+.admissHd ul li:hover{
+    cursor: pointer;
+}
+.admissHd ul li{
+    width: 116px;
+    height: 34px;
+    line-height: 34px;
+    color: #81318b;
+    border-top: 1px #82338c solid;
+    border-left: 1px #82338c solid;
+    border-right: 1px #82338c solid;
+    float: left;
+    text-align: center;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    margin-right: 50px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+.admissHd ul li.on{
+    background: #81318b;
+    color: white;
+}
+.admissHd ul li.on a{
+    color: white;
+}
+.admissBd>ul>li>ul{
+    margin-top: 18px;
+}
+.admissBd>ul>li>ul>li{
+    width: 183px;
+    float: left;
+    margin-right: 20px;
+}
+.admissBd>ul>li>ul>li:nth-child(5n){
+    margin-right: 0;
+}
+.admissBd>ul>li>ul>li>a>img{
+    width: 100%;
+}
+.admissBd>ul>li>.admissLeft{
+    width: 615px;
+    height: 449px;
+    float: left;
+    background: #eeeeee;
+    margin-top: 12px;
+    padding: 9px 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.admissLeft>ul>li{
+    width: 189px;
+    margin-right: 23px;
+    margin-bottom: 22px;
+    float: left;
+    text-align: center;
+}
+.admissLeft>ul>li>a>span{
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+}
+.admissLeft>ul>li>a>div>img{
+    width: 100%;
+    vertical-align: middle;
+}
+.admissLeft>ul>li>a>div{
+    width: 145px;
+    height: 167px;
+    margin: 0 auto;
+    padding: 12px 8px;
+    margin-bottom: 3px;
+    background: url("../images/studentsCase_bookBac.png") no-repeat;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.admissLeft>ul>li:nth-child(3n){
+    margin-right: 0;
+}
+.admissLeft>ul>li:nth-child(4),.admissLeft>ul>li:nth-child(5),.admissLeft>ul>li:nth-child(6){
+    margin-bottom: 10px;
+}
+.admissBd ul li .admissRight{
+    width: 355px;
+    float: left;
+    margin-left: 29px;
+    margin-top: 12px;
+    background: url("../images/studentsCase_xinancaij.jpg") no-repeat;
+    background-size: 100% 197px;
+}
+.admissRight h2{
+    text-align: center;
+    margin-top: 34px;
+    margin-bottom: 28px;
+    font-size: 16px;
+}
+.admissRight .university{
+    height: 110px;
+}
+.admissRight .university .uniLeft{
+    width: 78px;
+    float: left;
+    margin-left: 10px;
+}
+.admissRight .university .uniLeft img{
+    width: 78px;
+}
+.admissRight .university .uniRight{
+    width: 252px;
+    float: left;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.studentC span{
+    font-size: 14px;
+}
+.studentCaseW{
+    width: 455px;
+    margin-top: -8px;
+}
+.studentCase01{
+    width: 113px;
+    height: 106px;
+    background:url("../images/studentsCase_product01.jpg") no-repeat center;
+    background-size: 100% 100%;
+    float: left;
+    padding: 16px 0 0 13px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    position: relative;
+    margin-bottom: 6px;
+}
+.studentCase02{
+    width: 111px;
+    height: 106px;
+    background:url("../images/studentsCase_product02.jpg") no-repeat center;
+    background-size: 100% 100%;
+    float: left;
+    padding: 44px 0 0 15px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    position: relative;
+    margin-left: 6px;
+    margin-bottom: 6px;
+}
+.studentCase03{
+    width: 118px;
+    height: 106px;
+    background:url("../images/studentsCase_product03.jpg") no-repeat center;
+    background-size: 100% 100%;
+    float: left;
+    padding: 60px 0 0 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    position: relative;
+    margin-left:6px;
+    margin-bottom: 6px;
+    text-align: center;
+}
+.studentCase04{
+    width: 115px;
+    height: 115px;
+    background:url("../images/studentsCase_product04.jpg") no-repeat center;
+    background-size: 100% 100%;
+    float: left;
+    padding: 32px 0 0 12px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    position: relative;
+    margin-left: 0;
+}
+.studentCase05{
+    width: 110px;
+    height: 115px;
+    background:url("../images/studentsCase_product05.jpg") no-repeat center;
+    background-size: 100% 100%;
+    float: left;
+    text-align: center;
+    padding: 68px 0 0 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    position: relative;
+    margin-top: 0;
+    color: #000000;
+    margin-left: 6px;
+}
+.studentCase06{
+    width: 119px;
+    height: 115px;
+    background:url("../images/studentsCase_product06.jpg") no-repeat center;
+    background-size: 100% 100%;
+    float: left;
+    padding: 60px 0 0 0;
+    text-align: center;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    position: relative;
+    margin-top: 0;
+    text-align: center;
+    margin-left: 6px;
+}
+
+.onlineEvaluation{
+    width: 1001px;
+    margin: 0 auto;
+    margin-top: 35px;
+    margin-bottom: 45px;
+}
+.studenTeac{
+    width: 429px;
+    height: 272px;
+    float: left;
+    overflow: hidden;
+}
+.studenInfo{
+    width: 397px;
+}
+
+.recommend{
+    width: 225px;
+    height: 100px;
+    float: left;
+    margin-left: 18px;
+}
+.recommend h4{
+    width: 133px;
+    height: 52px;
+    color: white;
+    background: url("../images/studentsCase_recommendRead.png") no-repeat;
+    margin: 0 auto;
+    padding: 25px 0 0 52px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.recommend ul{
+    margin-top: 25px;
+}
+.recommend ul li{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 16px;
+}

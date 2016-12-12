@@ -1,0 +1,25 @@
+
+.highScoreC{
+    width: 100%;
+    margin-top: 27px;
+    background: #f7f7f7;
+    padding: 15px 32px 30px 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.highScoreC>ul>li{
+    margin-bottom: 15px;
+}
+.highScoreC>ul>li>i{
+    color: #82338c;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 13px;
+}
+.highScoreC>ul>li>span{
+    float: right;
+}
+.highScoreC>ul>li:last-child{
+    margin-bottom: 0;
+}

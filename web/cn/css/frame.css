@@ -1,0 +1,48 @@
+
+.articlesContent{
+    width: 100%;
+    margin-top: 20px;
+}
+.articlesContent .titleFrame{
+    width: 100%;
+    text-align: center;
+}
+.articlesContent .titleFrame h4{
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+.articlesContent .titleFrame span{
+    color: #4d4d4d;
+    font-size: 12px;
+}
+.contentFrame{
+    width: 100%;
+    border: 1px #adadad solid;
+    margin-top: 10px;
+    margin-bottom: 39px;
+}
+.contentFrame img{
+    /*width: 100%!important;*/
+}
+.contentFrame .abstract{
+    width: 100%;
+    height: 75px;
+    padding: 10px;
+    background: #e5e5e5;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size: 13px;
+}
+.abstractContent{
+    word-wrap: break-word;
+    word-break: break-all;
+    font-size: 13px;
+    padding: 10px 5px;
+}
+.abstractContent pre{
+    font-family: '微软雅黑';
+}
+.abstractContent table{
+    width: 100%!important;
+}

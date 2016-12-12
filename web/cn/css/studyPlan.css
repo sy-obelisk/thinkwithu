@@ -1,0 +1,244 @@
+
+.computerImg{
+    width: 951px;
+    margin: 0 auto;
+    margin-top: 49px;
+}
+.computerImg img{
+    width: 100%;
+}
+.applicationRating{
+    width: 1001px;
+    /*height: 1175px;*/
+    margin: 0 auto;
+    background: #e5e5e5;
+    position: relative;
+}
+.hands01{
+    width: 28%;
+    position: absolute;
+    top: 424px;
+    left: -239px;
+}
+.hands02{
+    width: 28%;
+    position: absolute;
+    top: 570px;
+    right: -239px;
+}
+.applicationTop{
+    width: 100%;
+    height: 132px;
+    line-height: 132px;
+    background: url("../images/studyPlan_topBG.png") no-repeat;
+    color: white;
+}
+.applicationTop span{
+    font-size: 18px;
+    font-weight: bold;
+}
+.applicationTop b{
+    float: right;
+    font-size: 20px;
+    /*margin-top: 30px;*/
+}
+.applicationTop b img{
+    width: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.applicationBot{
+    width: 100%;
+}
+.intention{
+
+    height: 332px;
+    border-left: 4px #9b9b9b solid;
+    border-bottom: 1px #b8b8b8 solid;
+    margin-left: 122px;
+    margin-top: 70px;
+}
+.intention02{
+    border-left: 4px #9b9b9b solid;
+    margin-left: 122px;
+}
+.intenLeft{
+    width: 250px;
+    float: left;
+    padding-top: 32px;
+}
+.intenLeft img{
+    width: 112px;
+}
+.intenLeft h1{
+    font-size: 15px;
+}
+.intenRight{
+    float: left;
+    margin-top: 32px;
+}
+.ulLimB{
+    margin-top: 68px;
+    margin-bottom: 43px;
+}
+.ulLimB ul li{
+    margin-bottom: 9px!important;
+}
+.intenLeft02{
+    width: 250px;
+    float: left;
+    padding-top: 100px;
+}
+.intenLeft02 h1{
+    margin-top: 80px;
+    font-size: 15px;
+}
+.intenLeft02 span{
+    font-size: 13px;
+    line-height: 30px;
+}
+.intenRight02{
+    float: left;
+    margin-top: 64px;
+}
+.intenRight>ul>li{
+    font-size: 14px;
+    margin-bottom: 26px;
+}
+.intenRight>ul>li>label{
+    width: 200px;
+    height: 23px;
+    line-height: 23px;
+    text-align: right;
+    float: left;
+    margin-top: 3px;
+}
+.intenRight>ul>li>label>span{
+    color: red;
+    margin-right: 8px;
+}
+.intenRight>ul>li>div.group-input{
+    margin-left: 20px;
+    float: left;
+}
+.intenRight>ul>li>div.group-input input{
+    width: 187px;
+    height: 23px;
+    border: 1px #6c6c6c solid;
+    background: none;
+}
+.intenRight>ul>li>div.group-input textarea{
+    width: 321px;
+    height: 62px;
+    border: 1px #6c6c6c solid;
+    background: none;
+}
+.referBtn{
+    width: 100%;
+    text-align: center;
+    margin-top: 21px;
+    margin-bottom: 23px;
+}
+.referBtn input{
+    width: 173px;
+    height: 60px;
+    background: url("../images/studyPlan_referBtn.png") no-repeat;
+    background-size: 100% 100%;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    text-align: left;
+    padding-left: 80px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.referBtn span{
+    font-size: 12px;
+}
+.leftProduct{
+    width: 202px;
+    float: left;
+}
+.leftProduct h4{
+    width: 153px;
+    height: 62px;
+    background: url("../images/studyPlan_tuijRead.png") no-repeat;
+    background-size: 100% 100%;
+    color: white;
+    padding: 32px 0 0 58px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin-top: -34px;
+}
+.leftProduct ul li{
+    font-size: 14px;
+    margin-top: 17px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.planProduct{
+    width: 1001px;
+    margin: 0 auto;
+    margin-top: 42px;
+    margin-bottom: 30px;
+}
+.studyPlanW{
+    width: 790px;
+    float: left;
+    font-size: 14px;
+    margin-left: 7px;
+}
+.abroadProduct{
+    font-size: 15px;
+}
+.studyPlanW .productHd ul{
+    margin-right: 220px;
+}
+
+.studyPlanW .productHd ul li{
+    margin-right: 28px;
+}
+.proWidth01{
+    width: 197px;
+    height: 97px;
+    padding: 50px 0 0 24px;
+}
+.proWidth02{
+    width: 164px;
+    height: 97px;
+    padding: 5px 0 0 8px;
+    margin-left: 14px;
+}
+.proWidth03{
+    width: 148px;
+    height: 97px;
+    padding: 50px 0 0 12px;
+    margin-left: 15px;
+}
+.proWidth04{
+    width: 236px;
+    height: 97px;
+    padding: 9px 0 0 28px;
+    margin-left: 15px;
+}
+.proWidth05{
+    width: 290px;
+    height: 136px;
+    padding: 115px 5px 0 0;
+}
+.proWidth06{
+    width: 243px;
+    height: 136px;
+    padding: 114px 0 0 0;
+    margin-left: 23px;
+}
+.proWidth07{
+    width: 208px;
+    height: 136px;
+    padding: 10px 0 0 0;
+    margin-left: 23px;
+}

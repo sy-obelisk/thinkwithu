@@ -1,0 +1,730 @@
+
+.applicationHead{
+    width: 100%;
+    height: 411px;
+    background: #008000;
+    text-align: center;
+    padding-top: 125px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background: url("../images/mba_bigBG01.jpg") no-repeat center;
+}
+.applicationHead h1{
+    font-weight: normal;
+    font-size: 100px;
+    color: white;
+}
+.applicationHead p{
+    font-size: 20px;
+}
+.applicationHead ul:after{
+    display:block;clear:both;content:"";visibility:hidden;height:0;
+}
+.applicationHead ul{
+    display: inline-block;
+    margin-top: 30px;
+}
+.applicationHead ul li{
+    float: left;
+    margin-right: 53px;
+}
+.applicationHead ul li:last-child{
+    margin-right: 0;
+}
+.applicationHead ul li a{
+    display: block;
+    padding: 5px 15px 2px 15px;
+    background: #fffffd;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.applicationHead ul li a img{
+    vertical-align: middle;
+}
+
+.servicePromise{
+    width: 1001px;
+    padding: 18px 0 55px 0;
+    margin: 0 auto;
+}
+.servicePromise h4{
+    color: #475464;
+    font-weight: normal;
+    font-size: 25px;
+    text-align: center;
+}
+.servicePromise h4 span{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.service-con{
+    width: 853px;
+    height: 88px;
+    margin: 0 auto;
+    background: #a4abb2;
+    position: relative;
+    padding: 20px 0;
+    margin-top: 18px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.markDiv{
+    width: 75px;
+    height: 88px;
+    background: #475766;
+    text-align: center;
+}
+.markDiv span{
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.markDiv img{
+    vertical-align: middle;
+}
+.leftMark{
+    position: absolute;
+    top: 0;
+    left: -75px;
+}
+.rightMark{
+    position: absolute;
+    top: 0;
+    right: -75px;
+}
+.service-con ul{
+    margin-left: 20px;
+}
+.service-con ul li{
+    width: 400px;
+    float: left;
+    margin-bottom: 10px;
+}
+.service-con ul li b{
+    border: 1px #230802 solid;
+    font-weight: normal;
+    padding: 0 4px;
+    border-radius: 50%;
+    font-size: 12px;
+}
+/*申友成功案例*/
+.success{
+    width: 100%;
+    height: 321px;
+    background: url("../images/mba_bigBG02.jpg") no-repeat;
+    background-size: 100% 100%;
+    padding: 42px 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.inSuccess{
+    width: 1001px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    padding: 24px 10px 10px 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.success-top{
+    width: 1001px;
+    height: 45px;
+    line-height: 45px;
+    /*background: #4b8ede;*/
+    margin: 0 auto;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+.success-top span{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.success-bot{
+    width: 1001px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.succB-left{
+    width: 709px;
+    float: left;
+}
+.succB-left>ul>li{
+    width: 225px;
+    height: 142px;
+    background: #ffffff;
+    border-bottom: 3px #1a1f23 solid;
+    float: left;
+    padding-top: 5px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin-right: 15px;
+}
+.succB-left>ul>li:last-child{
+    margin-right: 0;
+}
+.headP-left{
+    width: 69px;
+    height: 69px;
+    border-radius: 50%;
+    border: 1px #4a5664 solid;
+    /*float: left;*/
+    overflow: hidden;
+    margin: 0 auto;
+}
+.headP-left img{
+    width: 100%;
+}
+.headP-right{
+    width: 125px;
+    margin-left: 5px;
+    float: left;
+    margin-top: 18px;
+    text-align: center;
+}
+.headP-right h4{
+    text-align: center;
+    color: #4a5664;
+    font-size: 16px;
+    background: url("../images/products_stuTitle.png") no-repeat;
+    margin-bottom: 8px;
+}
+.headP-right span{
+    text-decoration: underline;
+    font-style: italic;
+    color: white;
+    display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+.headP-bottom{
+    width: 100%;
+    font-size: 12px;
+}
+.headP-bottom ul li{
+    margin-top: 5px;
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+.headP-bottom>a{
+    color: #4a5664;
+    float: right;
+    margin-right: 15px;
+}
+
+.succB-right{
+    width: 260px;
+    height: 140px;
+    float: left;
+    margin-left: 10px;
+    border: 1px #3e8577 solid;
+    padding: 15px 10px 0 12px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.succBr-bd ul li{
+    height: 20px;
+    color: white;
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+.succBr-bd ul li a{
+    color: white;
+}
+
+
+
+.joker{
+    width: 1001px;
+    /*height: 330px;*/
+    margin: 0 auto;
+    background: #e6e6e6;
+}
+.toefl-teacher{
+    width: 100%;
+}
+.inTeacher{
+    padding-top: 20px;
+    text-align: center;
+}
+.inTeacher>a.subscribe{
+    width: 128px;
+    height: 27px;
+    background: #266f7c;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 18px;
+    color: white;
+}
+.inTeacher>a img{
+    position: relative;
+    top: 2px;
+}
+.inTeacher h2{
+    font-size: 35px;
+    font-weight: normal;
+}
+.inTeacher h2 a{
+    /*color: white;*/
+}
+.inTeacher h2 a span{
+    color: #ffff67;
+    text-decoration: underline;
+}
+.inTeacher>span{
+    color: #81accc;
+    font-size: 18px;
+}
+.toggleSummer{
+    width: 100%;
+    margin-top: 29px;
+    position: relative;
+}
+.summerHd{
+    width: 100%;
+}
+.summerHd a{
+    position: absolute;
+    top: 50%;
+    margin-top: -21px;
+}
+.summerHd a img{
+    width: 32px;
+}
+.summerHd a.prev{
+    left: 0;
+}
+.summerHd a.next{
+    right: 0;
+}
+.summerBd ul li{
+    width: 140px;
+    text-align: center;
+    float: left;
+    margin-right: 27px;
+}
+
+.summerBd ul li>span{
+    font-size: 16px;
+}
+.summerTop{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 2px white solid;
+    overflow: hidden;
+    margin-bottom: 10px;
+    position: relative;
+}
+.summerTop>img{
+    height: 100%;
+}
+.summerBd{
+    width: 850px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.summerBd ul{
+    padding: 20px 0 0 20px!important;
+    /*border: 1px red solid;*/
+}
+.summerBd:after{
+    display:block;clear:both;content:"";visibility:hidden;height:0;
+}
+.summer-mask{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: white;
+    display: none;
+}
+.summer-mask a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.summer-mask h4{
+    font-size: 30px;
+    margin-top: 60px;
+}
+.summer-mask p{
+    font-size: 20px;
+    margin-top: 75px;
+}
+.summer-mask a{
+    color: #fbf92c;
+}
+
+.classroom{
+    width: 1001px;
+    /*height: 292px;*/
+    margin: 0 auto;
+    margin-top: 28px;
+}
+.classTop{
+    width: 100%;
+    height: 33px;
+    line-height: 33px;
+    padding-left: 14px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background: #dbc3f7;
+    font-size: 18px;
+}
+.open-commonStyle{
+    width: 1001px;
+    margin: 0 auto;
+}
+.open-commonStyle:after{
+    display:block;clear:both;content:"";visibility:hidden;height:0;
+}
+.open-commonStyle ul li{
+    width: 236px;
+    height: 260px;
+    float: left;
+    margin-right: 19px;
+}
+.open-commonStyle ul li:not(.noBorderLi){
+    background: #fefefe;
+    border: 1px #dcdedb solid;
+    padding: 10px 10px 0 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.open-commonStyle ul li:nth-child(4n){
+    margin-right: 0;
+}
+.open-commonStyle ul li img{
+    width: 100%;
+}
+.open-commonStyle ul li p{
+    margin-top: 8px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.open-commonStyle ul li span{
+    color: #969696;
+    font-size: 12px;
+}
+.open-commonStyle ul li b{
+    color: #969696;
+    font-size: 12px;
+    font-weight: normal;
+    float: right;
+    background: url("../images/open_love.png") no-repeat left center;
+    padding-left: 13px;
+}
+.classBtn{
+    width: 71px;
+    height: 32px;
+    display: inline-block;
+    line-height: 32px;
+    background: #343434;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.diffColor01{
+    color: #c6b83e;
+    margin-left: 18px;
+}
+.diffColor02{
+    color: white;
+    margin-left: 30px;
+}
+.accelerated{
+    width: 1001px;
+    margin: 0 auto;
+    margin-top: 22px;
+    margin-bottom: 26px;
+}
+
+
+.detaL-bottom{
+    width: 100%;
+}
+.detaLB-top{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background: #dbc3f7;
+    padding: 0 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size: 18px;
+}
+.detaLB-top a{
+    float: right;
+    padding: 0 5px;
+    line-height: 17px;
+    background: #7f3487;
+    color: white;
+    border-radius: 3px;
+    margin-top: 8px;
+    font-size: 12px;
+}
+.detaLB-bot{
+    width: 100%;
+    border: 1px #cdcdcd solid;
+    padding: 14px 0 23px 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background: white;
+}
+.detaLB-bot ul li{
+    width: 154px;
+    margin-right: 13px;
+    float: left;
+}
+.detaLB-bot ul li:last-child{
+    margin-right: 0;
+}
+.botTop{
+    width: 100%;
+    border: 5px #e7e6e4 solid;
+}
+.botTop a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.botTop a img{
+    width: 100%;
+}
+.detaLB-bot ul li h4 a{
+    color: #8b2a98;
+    font-weight: normal;
+    display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+.detaLB-bot ul li>span{
+    color: #959595;
+    display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+.detaLB-bot ul li>a{
+    width: 122px;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    display: block;
+    color: #ac9d1d;
+    background: #343434;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.detaLB-bot:after{
+    display:block;clear:both;content:"";visibility:hidden;height:0;
+}
+
+/*服务对象*/
+.serviceObj{
+    width: 1001px;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+.serviceObj h4{
+    text-align: center;
+    font-weight: normal;
+    font-size: 30px;
+}
+.serviceObj h4 img{
+    vertical-align: middle;
+    margin-right: 22px;
+}
+.mba-common{
+    width: 49.9%;
+    float: left;
+    background: #f0f0f0;
+    margin-top: 10px;
+}
+.rightBor{
+    border-right: 1px #b8b8b8 solid;
+}
+.com-top{
+    width: 100%;
+    height: 53px;
+    line-height: 53px;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+.com-topbac01{
+    background: #42526c;
+}
+.com-topbac02{
+    background: #9a9a9a;
+}
+.com-bot{
+    width: 100%;
+    padding: 50px 0 50px 33px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size: 14px;
+}
+
+.centreService{
+    width: 864px;
+    margin: 0 auto;
+    margin-top: 24px;
+}
+.centreService h4{
+    text-align: center;
+    font-weight: normal;
+    font-size: 30px;
+}
+.centreSort01{
+    width: 100%;
+    height: 290px;
+    position: relative;
+    border-left: 3px #656565 solid;
+    padding: 15px 0 0 37px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.centreSort01 h5{
+    color: #ad022a;
+    font-size: 15px;
+}
+.greyCentre{
+    padding: 10px 0 10px 13px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background: #e6e6e6;
+    font-size: 12px;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+.greyCentre ul li:first-child{
+    color: #b30229;
+}
+.greyCentre ul li{
+    margin-bottom: 5px;
+}
+.commonLeft{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px #e6e6e6 solid;
+    position: absolute;
+    left: -30px;
+    top: 0;
+    color: white;
+    font-size: 30px;
+}
+.commonLbac01{
+    background: #ad022a;
+}
+.commonLbac02{
+    background: #023d82;
+}
+.commonLbac03{
+    background: #64332d;
+}
+.centreSort02{
+    width: 100%;
+    height: 283px;
+    position: relative;
+    border-left: 3px #656565 solid;
+    padding: 20px 0 0 37px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.centreSort02 h5{
+    font-size: 15px;
+    color: #0234a5;
+}
+.centreSort02 p{
+    color: #525252;
+    font-size: 12px;
+    margin-top: 19px;
+}
+.allStep{
+   margin-top: 20px;
+}
+.allStep ul li{
+    width: 148px;
+    height: 69px;
+    background: #e6e6e6;
+    border-radius: 10px;
+    float: left;
+    position: relative;
+    padding: 0 20px 0 17px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    display: table;
+    margin-right: 13px;
+    margin-bottom: 10px;
+}
+.allStep ul{
+    margin-left: 96px;
+}
+.allStep ul li p{
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 12px;
+    color: #07338e;
+}
+.allStep ul li:last-child{
+    margin-right: 0;
+}
+.allStep ul li img{
+    position: absolute;
+    left: -13px;
+    top: 50%;
+    margin-top: -13px;
+}
+.centreSort03{
+    width: 100%;
+    position: relative;
+    padding: 20px 0 0 37px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.centreSort03 h5{
+    font-size: 15px;
+    color: #693230;
+}
+.centreSort03 ul li{
+    margin-top: 24px;
+}
+.centreSort03 ul li span{
+    color: #653533;
+}
+.centreSort03 ul li p{
+    color: #404040;
+    font-size: 12px;
+}
+.centreSort03 a{
+    width: 164px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    background: #49585f;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

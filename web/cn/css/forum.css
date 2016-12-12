@@ -1,0 +1,498 @@
+
+.subNav{
+    width: 1284px;
+    height: 48px;
+    margin: 0 auto;
+}
+.subNav ul li{
+    float: left;
+    margin-right: 63px;
+    font-size: 14px;
+}
+.subNav ul li:last-child{
+    margin-right: 0;
+}
+.subNav ul li .subLeft{
+    width: 84px;
+    height: 47px;
+    float: left;
+    background: #81318b;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    display: table;
+}
+.subNav ul li .subLeft span{
+    display: table-cell;
+    vertical-align: middle;
+}
+.subNav ul li .subRight{
+    float: left;
+    margin-left: 10px;
+}
+.subNav ul li .subRight p{
+    margin-top: 3px;
+}
+.subNav ul li:last-child{
+    border-left: 2px #56298a solid;
+    padding-left: 10px;
+    margin-top: 4px;
+}
+.forumBanner{
+    width: 1284px;
+    height: 350px;
+    margin: 0 auto;
+    margin-top: 16px;
+    margin-bottom: 33px;
+}
+.forumLeft{
+    width: 827px;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+.leftHd ul{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -10px;
+}
+.leftHd ul li{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: #95999c;
+    float: left;
+    margin-right: 5px;
+}
+.leftHd ul li.on{
+    background: #000000;
+}
+.forumRight{
+    width: 446px;
+    height: 331px;
+    float: left;
+    margin-left: 9px;
+    border: 1px #bebebe solid;
+}
+.rightHd{
+    overflow: auto;
+}
+.rightHd ul li{
+    width: 33.3%;
+    height: 42px;
+    line-height: 42px;
+    float: left;
+    text-align: center;
+    font-size: 18px;
+    background: #e5e5e5;
+}
+.rightHd ul li:hover{
+    cursor: pointer;
+}
+
+.rightHd ul li.on{
+    background: white;
+}
+.rightBd{
+    margin-top: 19px;
+}
+.rightBd ul li{
+    margin-bottom: 27px;
+    margin-left: 10px;
+}
+.rightBd ul li i{
+    margin-right: 10px;
+}
+.commonTitle{
+    width: 1284px;
+    height: 83px;
+    margin: 0 auto;
+    background: url("../images/forum_titleBG.png") no-repeat;
+    border: 1px #ededed solid;
+    text-align: center;
+    position: relative;
+}
+.commonTitle h1{
+    float: left;
+    font-size: 40px;
+    position: absolute;
+    top: 17px;
+    left: 16px;
+}
+.titleB01{
+    margin-top: 47px;
+    display: block;
+    font-size: 16px;
+}
+.titleB02{
+    position: absolute;
+    bottom: 14px;
+    right: 0;
+    font-size: 16px;
+}
+.dissertation{
+    width: 1284px;
+    height: 225px;
+    margin: 0 auto;
+    margin-top: 38px;
+    margin-bottom: 20px;
+}
+.dissLeft{
+    width: 934px;
+    height: 228px;
+    float: left;
+}
+.dissLeft ul li{
+    width: 182px;
+    height: 228px;
+    background: #ebdcf9;
+    float: left;
+    margin-right: 6px;
+    text-align: center;
+    position: relative;
+}
+.dissLeft ul li:last-child{
+    margin-right: 0;
+}
+.dissLeft ul li img{
+    margin-top: 55px;
+}
+.dissLeft ul li:hover{
+    cursor: pointer;
+}
+.dissLeft ul li svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.abroadApply{
+    width: 1284px;
+    margin: 0 auto;
+    margin-top: 23px;
+    margin-bottom: 30px;
+    overflow: auto;
+}
+.abroadApply>ul>li{
+    float: left;
+    width: 446px;
+}
+.abroadApply>ul>li:nth-child(3n){
+    width: 392px;
+}
+.abroadApply ul li .applyTLeft{
+    width: 141px;
+    height: 130px;
+    float: left;
+}
+.abroadApply ul li .applyTLeft img{
+    width: 100%;
+}
+.abroadApply ul li .applyTRight{
+    float: left;
+    margin-left: 25px;
+}
+.applyTRight h1{
+    color: #81318b;
+    margin-bottom: 10px;
+    margin-top: 32px;
+    font-size: 35px;
+}
+.applyTRight span{
+    color: #848484;
+    font-size: 14px;
+}
+.applyBottom{
+    margin-top: 20px;
+}
+.applyBottom ul li{
+    margin-bottom: 20px;
+}
+.abroadPeer{
+    width: 1284px;
+    height: 352px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+.peerLeft{
+    width: 791px;
+    height: 100%;
+    float: left;
+}
+.pl_left{
+    width: 161px;
+    height: 149px;
+    float: left;
+}
+.pl_left img{
+    width: 100%;
+}
+.pl_center{
+    width: 199px;
+    float: left;
+    margin-left: 14px;
+}
+.pl_center h1{
+    color: #81318b;
+    margin-top: 16px;
+    font-size: 30px;
+}
+.pl_center span{
+    color: #848484;
+    font-size: 14px;
+}
+.pl_right{
+    float: left;
+}
+.pl_right ul li{
+    margin-top: 20px;
+}
+.peerRight{
+    width: 493px;
+    height:343px;
+    background: #e5e5e5;
+    float: left;
+    border-radius: 10px;
+    margin-top: 9px;
+}
+.todaySign{
+    background: #6c96ff;
+    color: white;
+    padding: 0 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+.everyday{
+    width: 154px;
+    height: 56px;
+    line-height: 65px;
+    background: url("../images/forum-everyday.png") no-repeat;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-top: -5px;
+}
+.todayDate{
+    width: 94px;
+    height: 158px;
+    float: left;
+    margin-top: 24px;
+    margin-left: 44px;
+    background: url("../images/forum_todayDate.png") no-repeat;
+    text-align: center;
+    padding-top: 28px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.todayDate p{
+    color: #6697fc;
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+.everyCalendar{
+    width: 325px;
+    height: 181px;
+    float: left;
+    margin-left: 27px;
+    position: relative;
+    border: 1px #d7d7d7 solid;
+}
+.everyCahd{
+    width: 118px;
+    position: absolute;
+    left: -140px;
+    bottom: 10px;
+    text-align: center;
+}
+.everyCahd ul li{
+    font-size: 14px;
+}
+.everyCahd a{
+    font-size: 20px;
+    position: absolute;
+    top: -4px;
+}
+.everyCahd a.prev{
+    left: 0;
+}
+.everyCahd a.next{
+    right: 0;
+}
+.everyCabd{
+    width: 325px;
+}
+.everyCabd ul li ul{
+    margin-left: 5px;
+}
+.everyCabd ul li ul li{
+    width: 40px;
+    height: 24px;
+    text-align: center;
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 7px;
+}
+.everyCabd ul li ul li a{
+    width: 24px;
+    height: 24px;
+    border-radius: 24px;
+    display: block;
+    margin:  0 auto;
+}
+.blueColor{
+    color: #6998ff;
+}
+.backgroundC{
+    background: #f8fb02;
+}
+.welfare{
+    width: 100%;
+    height: 22px;
+    background: #659bfa;
+    color: white;
+    padding-left: 33px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin-top: 13px;
+}
+.present ul li{
+    width: 33.3%;
+    padding-left: 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    float: left;
+    text-align: center;
+    margin-top: 7px;
+}
+.present ul li .signIn{
+    width: 95px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: white;
+    background: #659bfa;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+.present ul li a{
+    color: white;
+    background: #659bfa;
+    font-size: 12px;
+    padding: 0 2px;
+    border-radius: 3px;
+}
+.membership{
+    width: 1284px;
+    height: 309px;
+    margin: 0 auto;
+    margin-top: 33px;
+    margin-bottom: 48px;
+}
+.shipLeft{
+    width: 788px;
+    height: 308px;
+    float: left;
+    background: url("../images/forum_shipImg01.png") no-repeat;
+}
+.shipLeft div{
+    width: 211px;
+    height: 308px;
+    float: right;
+    color: white;
+    padding: 64px 35px 0 40px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.shipLeft div h1{
+   font-size: 45px;
+}
+.shipLeft div p{
+    font-size: 20px;
+    text-align: right;
+}
+.shipLeft div .p1{
+    width: 136px;
+    margin-top: 33px;
+}
+.shipLeft div .p2{
+    width: 102px;
+    padding-bottom: 5px;
+    border-bottom: 1px #b0a8a5 solid;
+    margin-left: 35px;
+    margin-bottom: 20px;
+}
+.shipLeft div a{
+    width: 100px;
+    height: 21px;
+    line-height: 21px;
+   float: right;
+    color: #81318b;
+    font-size: 12px;
+    background: url("../images/forum_seeMore.png") no-repeat;
+    text-align: center;
+    font-weight: bold;
+}
+.shipRight{
+    width: 493px;
+    height: 308px;
+    float: left;
+    background: url("../images/forum_shipImg02.jpg") no-repeat;
+    margin-left: 2px;
+}
+.vipApply{
+    width: 373px;
+    margin: 0 auto;
+    margin-top: 75px;
+}
+.vipApply h2{
+    font-weight: normal;
+    border-bottom: 2px #858587 solid;
+}
+.vipApply h2 span{
+    font-size: 15px;
+    color: #7f8593;
+    float: right;
+    margin-top: 10px;
+}
+.vipApply div{
+    margin-top: 24px;
+}
+.vipApply div ul{
+    margin-left: 17px;
+}
+.vipApply div ul li{
+    margin-bottom: 5px;
+}
+.vipApply div ul li span{
+    color: #b5596b;
+}
+.vipApply div ul li b{
+    font-weight: normal;
+}
+.vipApply div ul li input[type='text']{
+    width: 137px;
+    margin-left: 10px;
+}
+.vipApply div ul li:not(.spec) input[type='text']{
+    margin-left: 43px;
+}
+.vipApply div ul li:last-child input[type='text']{
+    width: 106px;
+}
+.vipApply div ul li:last-child input[type='button']{
+    color: white;
+    background: #81318b;
+    padding: 4px 2px;
+    border-radius: 20px;
+    border: none;
+    font-size: 12px;
+    margin-left: 5px;
+}

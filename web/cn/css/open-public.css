@@ -1,0 +1,632 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{
+    margin:0;
+    padding:0;
+    outline:none;
+    list-style-image: none;
+    list-style-type: none;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+}
+html{
+    /*谷歌网页中的最小字体*/
+    -webkit-text-size-adjust:none;
+}
+body{
+    font-family: '微软雅黑';
+    font-size: 14px;
+}
+img{
+    border: 0 none;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+body{
+    background: #eeeeee;
+}
+/*头部*/
+.classHead{
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    background: #81318c;
+}
+.headNav{
+    width: 1001px;
+    height: 100%;
+    margin: 0 auto;
+}
+.headNav>ul>li{
+    float: left;
+    padding: 0 5px;
+    font-size: 16px;
+    margin-right: 13px;
+    position: relative;
+}
+.headNav>ul>li>a{
+    display: block;
+    color: white;
+}
+.headNav>ul>li:hover{
+    background: #c3a3e9;
+}
+.headNav>ul>li.on{
+    background: #c3a3e9;
+}
+.headNav>ul>li:nth-child(10):hover,.headNav>ul>li:nth-child(11):hover,.headNav>ul>li:nth-child(12):hover{
+    background: none;
+}
+.login-reg{
+    width: 85px;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 2px;
+    font-size: 14px;
+    margin-left: 32px;
+}
+.login-reg a{
+    color: #000000;
+}
+.headNav>ul>li>a>img{
+    margin-top: 2px;
+}
+.headNav>ul>li:last-child{
+    margin-right: 0;
+    padding: 0;
+}
+.login{
+    width: 50%;
+    /*height: 100%;*/
+    float: left;
+    background: #fffdfe;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-align: center;
+}
+.register{
+    width: 50%;
+    /*height: 100%;*/
+    float: left;
+    background: #c2a4e7;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+}
+.headNav>ul>li:first-child:hover .pull-down{
+    display: block;
+}
+
+.pull-down{
+    width: 233px;
+    background: #c3a3e9;
+    position: absolute;
+    top: 34px;
+    left: 0;
+    z-index: 11;
+    display: none;
+}
+.pull-down ul li{
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    padding-left: 13px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-bottom: 1px #997db9 solid;
+}
+.pull-down ul li:last-child{
+    border-bottom: none;
+}
+.pull-down ul li a{
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: block;
+}
+.pull-down ul li:hover a{
+    color: #733888;
+}
+.pull-down ul li span{
+    width: 86px;
+    display: inline-block;
+    text-align: center;
+}
+.pull-down ul li b{
+    font-weight: normal;
+}
+.pull-down ul li span img,.pull-down ul li b{
+    vertical-align: middle;
+}
+
+/*标题导航*/
+.open-detailsTitle{
+    width: 1001px;
+    height: 35px;
+    line-height: 35px;
+    margin: 0 auto;
+    background: url("../images/openD_titleBG.png") no-repeat right;
+    margin-top: 26px;
+
+}
+.open-detailsTitle ul li{
+    float: left;
+}
+.open-detailsTitle ul li b{
+    margin-left: 12px;
+    font-size: 15px;
+}
+.open-detailsTitle ul li a{
+    font-size: 12px;
+}
+.open-detailsTitle ul li:nth-child(3) a{
+    margin-left: 15px;
+}
+.open-detailsTitle ul li:nth-child(4){
+    margin-left: 5px;
+    margin-right: 5px;
+}
+/*尾部*/
+.open-footer{
+  width: 100%;
+  text-align: center;
+  background: #eeeeee;
+    padding: 18px 0 10px 0;
+    color: #898989;
+}
+.open-footer a{
+    color: #898989;
+}
+
+/*固定部分（右边）*/
+.open-fixed{
+    width: 50px;
+    height: 128px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background: url("../images/open_fixBG.png") no-repeat;
+    background-size: 100% auto;
+}
+.inFix{
+    width: 13px;
+    font-size: 14px;
+    margin: 0 auto;
+    margin-top: 50px;
+    line-height: 15px;
+    text-align: center;
+}
+.inFix b{
+    width: 0;
+    height: 0;
+    margin: 0 auto;
+    display: block;
+    border-right: 5px transparent solid;
+    border-left: 5px transparent solid;
+    border-bottom: 5px #000000 solid;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.inFix a{
+    font-weight: bold;
+    color: #81318c;
+}
+.inFix span:hover{
+    cursor: pointer;
+}
+
+
+/*=======================注册css====================*/
+
+.register-content{
+    width: 1001px;
+    margin: 0 auto;
+    margin-top: 27px;
+    margin-bottom: 25px;
+    border: 1px #d0d0d0 solid;
+    background: white;
+    padding-bottom: 14px;
+}
+
+.reg-head{
+    width: 100%;
+    height: 33px;
+    line-height: 33px;
+    background: #e6e6e6;
+    border-bottom: 1px #d0d0d0 solid;
+}
+.reg-head h4{
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.reg-con{
+    width: 726px;
+    margin: 0 auto;
+    margin-top: 31px;
+}
+.reg-con ul li{
+    width: 100%;
+    border-bottom: 1px #c5c5c5 solid;
+    padding: 15px 0;
+}
+.reg-con ul li:last-child{
+    border-bottom: none;
+}
+.reg-con ul li label{
+    width: 80px;
+    display: inline-block;
+    text-align: right;
+}
+.reg-con ul li  h4{
+    font-size: 15px;
+}
+.reg-con ul li  h4 span{
+    color: red;
+}
+.reg-con ul li label span{
+    color: red;
+}
+.reg-con ul li input[type='text'],.reg-con ul li input[type='password']{
+    width: 204px;
+    height: 25px;
+    border: 1px #a5a4a2 solid;
+    margin-right: 40px;
+    margin-left: 20px;
+}
+.reg-con ul li input[type='text'].short{
+    width: 112px;
+    margin-right: 20px;
+}
+.reg-con ul li span.markedWords{
+    color: red;
+    font-size: 13px;
+    display: none;
+}
+.purple{
+    color: #8d378e;
+}
+.verification{
+    margin-left: 105px;
+    margin-top: 15px;
+}
+.verification>div{
+    width: 88px;
+    height: 39px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+.sub-btn{
+    width: 87px;
+    height: 37px;
+    color: white;
+    background: url("../images/open-regBtn.png") no-repeat;
+    border: none;
+    margin-left: 105px;
+    font-family: '微软雅黑';
+    font-size: 15px;
+}
+.sub-btn:hover{
+    cursor: pointer;
+}
+.other{
+    margin-left: 40px;
+    margin-top: 17px;
+}
+.other img{
+    vertical-align: middle;
+}
+/*=======================注册css  end====================*/
+
+/*==========================登录css============================*/
+.maskLayer{
+    width: 100%;
+    /*height: 100%;*/
+    background: #000000;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#reminder h4{
+    margin-top: 47px;
+}
+.login-frame{
+    width: 543px;
+    background: white;
+    border: 5px #b2b0af solid;
+    border-radius: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -272px;
+    z-index: 999;
+    display: none;
+}
+.diffHei01{
+    height: 300px;
+    margin-top: -150px;
+}
+.diffHei02{
+    height: 264px;
+    margin-top: -132px;
+}
+.close-log{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+.close-log:hover{
+    cursor: pointer;
+}
+.login-frame h4{
+    margin-top: 18px;
+    margin-left: 19px;
+}
+.login-frame ul li{
+    padding: 13px 0;
+    border-bottom: 1px #c5c1c0 solid;
+}
+.login-frame ul li:last-child{
+    border-bottom: none;
+}
+.login-frame ul li label{
+    width: 67px;
+    display: inline-block;
+    text-align: right;
+    margin-right: 22px;
+    margin-left: 96px;
+}
+.login-frame ul {
+    margin-top: 20px;
+}
+.login-frame ul li label span{
+    color: red;
+}
+.login-frame ul li input[type='text'],.login-frame ul li input[type='password']{
+    width: 205px;
+    height: 32px;
+    border: 1px #434343 solid;
+    margin-right: 6px;
+}
+.login-frame ul li a{
+    color: #8b2483;
+}
+.login-frame ul li input[type='button']{
+    width: 87px;
+    height: 37px;
+    border: none;
+    background: url("../images/open-regBtn.png") no-repeat;
+    margin-left: 190px;
+    color: white;
+}
+.other-log{
+    margin-left: 190px;
+}
+.other-log img{
+    width: 5%;
+    vertical-align: middle;
+}
+
+.reminCon{
+    width: 100%;
+    border-bottom: 1px #bebebe solid;
+    padding-bottom: 30px;
+    margin-top: 55px;
+    margin-bottom: 26px;
+}
+.re-left{
+    width: 33px;
+    float: left;
+    margin-left: 58px;
+}
+.re-right{
+    width: 309px;
+    float: left;
+    margin-left: 20px;
+    font-size: 12px;
+    color: #5e5c5d;
+}
+#second{
+    font-size: 12px;
+    color: #767271;
+    margin-left: 30px;
+}
+
+
+/*注册框样式*/
+.Dialog{
+    width: 503px;
+    background: white;
+    border-radius: 20px;
+    border: 1px #a9a9a9 solid;
+    position: fixed;
+    left: 50%;
+    margin-left: -251px;
+    top: 50%;
+    margin-top: -201px;
+    z-index: 99;
+    display: none;
+}
+.imgTitle{
+    text-align: center;
+    margin-top: 33px;
+}
+.login-close{
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    right: 14px;
+    top: 16px;
+}
+.login-close:hover{
+    cursor: pointer;
+}
+.group-input{
+    width: 310px;
+    margin: 0 auto;
+    margin-top: 36px;
+}
+.groupHd ul li{
+    width: 50%;
+    height: 35px;
+    line-height: 35px;
+    font-size: 12px;
+    text-align: center;
+    border-top: 1px white solid;
+    border-bottom: 1px #d9d9d9 solid;
+    float: left;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    color: #a2a2a2;
+}
+.groupHd ul li:hover{
+    cursor: pointer;
+}
+.groupHd ul li:first-child span{
+    padding-left: 10px;
+    background: url("../images/login_phoneG.png") no-repeat;
+}
+.groupHd ul li:last-child{
+    border-left: 1px #d9d9d9 solid;
+}
+.groupHd ul li:last-child span{
+    padding-left: 17px;
+    background: url("../images/login_emailG.png") no-repeat;
+}
+.groupHd ul li.on{
+    border-bottom: 1px white solid;
+    border-top: 1px #d9d9d9 solid;
+    color: #82338d;
+}
+.groupHd ul li.on:first-child span{
+    background: url("../images/login_phoneY.png") no-repeat;
+}
+.groupHd ul li.on:last-child span{
+    padding-left: 17px;
+    background: url("../images/login_emailY.png") no-repeat left center;
+}
+.groupBd{
+    margin-top: 20px;
+}
+.authCode{
+    width: 214px!important;
+    height: 40px!important;
+}
+.obtain{
+    width: 74px!important;
+    height: 40px!important;
+    font-size: 12px!important;
+}
+.group-input input[type='text']{
+    width: 295px;
+    height: 41px;
+    border: 1px #d3d3d3 solid;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+.group-input input[type='password']{
+    width: 295px;
+    height: 41px;
+    border: 1px #d3d3d3 solid;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+.group-input p{
+    font-size: 12px;
+    color: #8b0000;
+    visibility: hidden;
+}
+.group-input .inputMT{
+    margin-top: 3px;
+}
+.group-input input[type='button']{
+    width: 310px;
+    height: 43px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    background: #82338d;
+    border: none;
+    font-size: 20px;
+    font-family: '微软雅黑';
+}
+.otherCont{
+    width: 310px;
+    margin: 0 auto;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.conMB{
+    margin-bottom: 29px;
+}
+.otherCont a{
+    color: #82338d;
+}
+.otherCont a.floatR{
+    float: right;
+}
+
+/*登录之后的效果*/
+.loginAfter{
+    width: 54px;
+    height: 35px;
+    position: relative;
+    margin-left: 70px;
+    overflow: hidden;
+}
+.loginAfter:hover{
+    cursor: pointer;
+}
+.loginAfter>img.userImg{
+    width: 100%;
+}
+.rightTriangle{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.loginAfter:hover .toggleDiv{
+    display: block;
+}
+.toggleDiv{
+    width: 127px;
+    position: absolute;
+    top: 34px;
+    right: 0;
+    z-index: 99;
+    background: #c3a3e9;
+    display: none;
+}
+.toggleDiv ul li{
+    width: 100%;
+    border-bottom: 1px #a88ac9 solid;
+}
+.toggleDiv ul li:last-child{
+    border-bottom: none;
+}
+.toggleDiv ul li a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 3px 0;
+    font-size: 14px;
+    padding-left: 14px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.toggleDiv ul li a img{
+    width: 14px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.toggleDiv ul li:hover{
+    background: #c9cbca;
+}

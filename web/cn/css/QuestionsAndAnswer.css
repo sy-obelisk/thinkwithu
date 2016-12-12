@@ -1,0 +1,30 @@
+
+.answerContent{
+    margin-top: 30px;
+    background: #f5f5f5;
+    padding-bottom: 5px;
+}
+.answerContent>ul>li{
+    margin-bottom: 14px;
+    position: relative;
+    padding-bottom: 26px;
+}
+.answerContent>ul>li>h4{
+    font-weight: normal;
+}
+.answerContent>ul>li>p{
+    color: #7d7d7d;
+    font-size: 13px;
+    margin-top: 5px;
+}
+.answerContent>ul>li>span{
+    color: #7d7d7d;
+    font-size: 13px;
+}
+.answerContent>ul>li>b{
+    font-weight: normal;
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

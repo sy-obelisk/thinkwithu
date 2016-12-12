@@ -1,0 +1,208 @@
+@import "public.css";
+
+.feldHead{
+    width: 1440px;
+    height: 92px;
+    line-height: 92px;
+    margin: 0 auto;
+    background: #247878;
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+.feldHead ul{
+    float: right;
+}
+.feldHead ul li{
+    float: left;
+    padding: 0 10px;
+}
+.feldHead ul li a{
+    color: white;
+}
+.feldContent{
+    width: 1440px;
+    height: 2043px;
+    margin: 0 auto;
+    background: url("../images/feld_bigBG.jpg") no-repeat center top;
+    padding-top: 500px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.introduce{
+    width: 1010px;
+    /*height: 500px;*/
+    margin: 0 auto;
+    font-size: 15px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.inMT{
+    margin-top: 160px;
+}
+.introduce-left{
+    width: 373px;
+    float: left;
+    text-align: center;
+}
+.introduce-left img{
+    width: 348px;
+}
+.introduce-right{
+    width: 605px;
+    float: left;
+}
+.introduce-right h1{
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.introduce-right p{
+    text-indent: 2em;
+}
+.introduce-left02{
+    width: 540px;
+    height: 100px;
+    float: left;
+    margin-left: 47px;
+}
+.introduce-left02 h2{
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    background: url("../images/feld_smallTitleBG.png") no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+.introduce-left02 h2 span{
+    color: #97d8d8;
+    font-size: 17px;
+}
+.introduce-left02 ul li{
+    margin-bottom: 10px;
+}
+.introduce-right02{
+    width: 326px;
+    height: 227px;
+    float: left;
+    margin-left: 50px;
+    margin-top: -50px;
+    background: #eeeeee;
+    padding: 20px 0 0 31px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.introduce-right02 h2{
+    font-weight: normal;
+}
+.introduce-right02 ul{
+    margin-top: 13px;
+    margin-left: 20px;
+}
+.introduce-right02 ul li{
+    margin-bottom: 7px;
+}
+.introduce-right02 select{
+    width: 173px;
+    height: 21px;
+}
+.introduce-right02 select:hover{
+    cursor: pointer;
+}
+.introduce-right02 input[type='button']{
+    width: 61px;
+    height: 21px;
+    background: #36889b;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    float: right;
+    margin-right: 50px;
+}
+
+.active-left{
+    width: 494px;
+    float: left;
+    margin-left: 60px;
+}
+.active-left h3{
+    font-weight: normal;
+    margin-bottom: 24px;
+}
+.active-left ul li{
+    margin-bottom: 5px;
+}
+.active-left ul li b{
+    font-weight: normal;
+    color: #78787a;
+    float: right;
+    font-size: 12px;
+}
+.active-right{
+    width: 361px;
+    float: left;
+    margin-left: 44px;
+}
+.actR-left{
+    width: 96px;
+    float: left;
+}
+.actR-left img{
+    width: 100%;
+}
+.actR-right{
+    width: 265px;
+    height: 104px;
+    background: #eeeeee;
+    float: left;
+    padding: 14px 0 0 14px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.btnGroup{
+    margin-top: 20px;
+}
+.btnGroup a img{
+    width: 177px;
+}
+.activeBanner{
+    width: 947px;
+    height: 409px;
+    margin-left: 33px;
+    padding-top: 20px;
+    position: relative;
+}
+.activeHd{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 11;
+}
+.activeHd ul li{
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    background: rgba(0, 0, 0, 0.61);
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    float: left;
+    margin-right: 5px;
+}
+.activeHd ul li:hover{
+    cursor: pointer;
+}
+.activeHd ul li.on{
+    background: orange;
+}
+.activeBd ul li img{
+    width: 947px;
+}

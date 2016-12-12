@@ -1,0 +1,135 @@
+
+.vacationClass{
+    width: 1001px;
+    margin: 0 auto;
+}
+.vacaLeft{
+    width: 701px;
+    height: 268px;
+    float: left;
+    background: url("../images/publicClass_holiday.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.thinkuPclass{
+    width: 100%;
+    height: 54px;
+    background: #e5e5e5;
+    color: #81318b;
+    padding-top: 5px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.thinkuPclass span{
+    font-size: 12px;
+}
+.thinkuPclass b{
+    float: right;
+    color: #000000;
+    margin-right: 50px;
+    margin-top: -10px;
+}
+.thinkuPclass input{
+    width: 109px;
+    height: 20px;
+    background: url("../images/quesAnswer_jiantouBG.png") no-repeat;
+    float: right;
+    border: none;
+    color: white;
+    text-align: left;
+    padding-left: 8px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: -5px;
+}
+.pubC-filter{
+    width: 100%;
+    margin-top: 7px;
+}
+.pubCleft{
+    width: 61px;
+    height: 31px;
+    line-height: 31px;
+    background: url("../images/publicClass_fliter.jpg") no-repeat;
+    float: left;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+.pubCright{
+    width: 627px;
+    height: 30px;
+    line-height: 30px;
+    background: #f2f2f2;
+    float: left;
+    margin-left: 5px;
+}
+.pubCright ul{
+    margin-left: 14px;
+}
+.pubCright ul li{
+    float: left;
+    position: relative;
+    margin-right: 35px;
+}
+.pubCright ul li img{
+    position: absolute;
+    top: 0;
+    right: -14px;
+}
+.pubC-filterC{
+    width: 100%;
+    margin-top: 22px;
+    background: #f5f5f5;
+    padding-top: 7px;
+}
+.pubC-filterC ul li{
+    margin-bottom: 40px;
+    overflow: auto;
+}
+.pubC-filterC ul li:last-child{
+    margin-bottom: 0;
+}
+.pubC-filterC ul li .leftImgInfo{
+    width: 229px;
+    float: left;
+    font-size: 12px;
+}
+.pubC-filterC ul li .leftImgInfo img{
+    width:100%;
+}
+.pubC-filterC ul li .rightFontInfo{
+    width: 445px;
+    float: left;
+    margin-left: 18px;
+}
+.pubC-filterC ul li .rightFontInfo h4{
+    color: #81318b;
+    margin-bottom: 15px;
+}
+.pubC-filterC ul li .rightFontInfo p{
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+.pubC-filterC ul li .rightFontInfo p b{
+    font-weight: normal;
+    color: #919191;
+}
+.pubC-filterC ul li .rightFontInfo .lijiFound{
+    width: 81px;
+    height: 20px;
+    line-height: 20px;
+    background: url("../images/publicClass_jianBG.png") no-repeat;
+    float: right;
+    color: white;
+    padding-left: 8px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size: 12px;
+    margin-top: 10px;
+}
