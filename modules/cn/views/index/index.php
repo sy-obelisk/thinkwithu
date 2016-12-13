@@ -298,9 +298,9 @@
             </select>
             <p class="info-tit">我计划出国的时间：</p>
             <select class="info-select" name="data" id="data">
-                <option value="半年内">半年内</option>
-                <option value="一年内">一年内</option>
-                <option value="两年内">两年内</option>
+                <option value="2017年春季入学">2017年春季入学</option>
+                <option value="2017年秋季入学">2017年秋季入学</option>
+                <option value="2018年入学">2018年入学</option>
             </select>
             <h1 onclick="lxfa()" class="info-btn tm">获取我定制专属方案</h1>
         </div>

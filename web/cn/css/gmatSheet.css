@@ -496,7 +496,11 @@
 }
 
 .summerBd ul li>span{
+    color: #ffffff;
     font-size: 16px;
+}
+.summerBd ul li>p{
+    color: #ffffff;
 }
 .summerTop{
     width: 140px;
@@ -543,6 +547,7 @@
     margin-top: 60px;
 }
 .summer-mask p{
+    color: #ffffff;
     font-size: 20px;
     margin-top: 75px;
 }
@@ -982,6 +987,7 @@
     -webkit-box-sizing: border-box;
     margin-top: 10px;
     font-size: 12px;
+
 }
 .whiteRes p{
     text-overflow: ellipsis;
@@ -992,6 +998,7 @@
     -moz-line-clamp: 5;
     -webkit-box-orient: vertical;
     -moz-box-orient: vertical;
+    height: 80px;
 }
 .dynamic{
     width: 990px;

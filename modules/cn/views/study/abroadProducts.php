@@ -82,7 +82,7 @@
                 <h4>申友留学“非中介”服务优势</h4>
             </div>
             <div class="common-t">
-                <img src="/cn/images/products_PKicon.png" alt="pk图标">
+<!--                <img src="/cn/images/products_PKicon.png" alt="pk图标">-->
                 <div class="commonT-left">申友留学和传统中介的区别</div>
                 <div class="commonT-right">传统中介</div>
             </div>
@@ -141,7 +141,7 @@
             <!----------------------第二个----------------------->
 
             <div class="common-t">
-                <img src="/cn/images/products_PKicon.png" alt="pk图标">
+<!--                <img src="/cn/images/products_PKicon.png" alt="pk图标">-->
                 <div class="commonT-left">申友留学和普通“咨询”公司的区别</div>
                 <div class="commonT-right">普通“咨询”公司</div>
             </div>
@@ -448,9 +448,9 @@
             </li>
             <li>
                 <div class="circle05 LeOrR5">
-                    <img src="/cn/images/products_teacher03.png" alt="老师头像"/>
+                    <img src="/cn/images/products_teacher03.jpg" alt="老师头像"/>
                     <div>
-                        <h4>Ada</h4>
+                        <h4>Natasha</h4>
                     </div>
                 </div>
             </li>
@@ -464,9 +464,9 @@
             </li>
             <li>
                 <div class="circle01 LeOrR12">
-                    <img src="/cn/images/products_teacher06.png" alt="老师头像"/>
+                    <img src="/cn/images/products_teacher06.jpg" alt="老师头像"/>
                     <div>
-                        <h4>Eve</h4>
+                        <h4>Zora</h4>
                     </div>
                 </div>
             </li>
@@ -496,9 +496,9 @@
             </li>
             <li>
                 <div class="circle05 LeOrR52">
-                    <img src="/cn/images/products_teacher08.png" alt="老师头像"/>
+                    <img src="/cn/images/products_teacher08.jpg" alt="老师头像"/>
                     <div>
-                        <h4>Jenny</h4>
+                        <h4>Bob</h4>
                     </div>
                 </div>
             </li>

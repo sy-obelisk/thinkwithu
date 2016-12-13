@@ -162,7 +162,7 @@
     position: relative;
 }
 .common-cL{
-    width: 630px;
+    width: 660px;
     float: left;
     background: #eeeeee;
     padding: 23px 0 16px 0;
@@ -171,10 +171,12 @@
 
 .common-cL ul li{
     border-bottom: 2px #cacaca dashed;
-    padding: 10px 77px 10px 9px;
+    /*padding: 10px 77px 10px 9px;*/
+    padding: 10px 0px 10px 115px;
 }
 .paddL ul li{
-    padding: 12px 77px 12px 9px;
+    /*padding: 12px 77px 12px 9px;*/
+    padding: 12px 0px 12px 115px;
 }
 .common-cL ul li img{
     width: 10px;
@@ -189,7 +191,7 @@
     float: left;
 }
 .common-cR{
-    width: 370px;
+    width: 340px;
     float: left;
     background: #8c8c8c;
     padding: 23px 0 16px 0;
@@ -198,7 +200,8 @@
 }
 .common-cR ul li{
     border-bottom: 2px white dashed;
-    padding: 10px 0 10px 84px;
+    /*padding: 10px 0 10px 84px;*/
+    padding: 10px 10px 10px 40px;
 }
 .yellowDiv{
     width: 113px;
@@ -206,8 +209,9 @@
     background-size: 100% 100%;
     padding: 10px 0 26px 0;
     position: absolute;
-    right: 313px;
+    /*right: 313px;*/
     top: 15px;
+    left: 0;
 }
 
 .yellowDiv ul li{
@@ -340,7 +344,7 @@
 .succBr-bd ul li{
     height: 20px;
     color: white;
-   white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
 }
 .succBr-bd ul li a{
     color: white;
@@ -381,6 +385,7 @@
     display: none;
 }
 .whoUs>ul>li>div>div>h4{
+    color: #ffffff;
     margin-top: 50%;
     font-weight: normal;
 }
