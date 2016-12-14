@@ -213,21 +213,6 @@
         </div>
         <ul class="teach-list clearfix">
             <li>
-                <div><img src="/cn/ielts/images/c1.png" alt=""></div>
-                <p class="c4-name">Kevin Ni</p>
-                <p class="c4-de">
-                    申友雅思联合创始人，国内较早一批雅
-                    思教师，行业内的联合创始人。多次走访海外名校，
-                    与招生官交流。长期专注雅思考试研究，洞悉雅
-                    思题型，培养雅思学生过万，遍布世界名校。期
-                    间研发和出版多本留学英语培训教材，并不断优
-                    化教学方法。
-
-                </p>
-                <a class="btn-2" target="_blank"
-                   href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">约课</a>
-            </li>
-            <li>
                 <div><img src="/cn/ielts/images/c2.png" alt=""></div>
                 <p class="c4-name">Amanda Dai</p>
                 <p class="c4-de">
@@ -250,6 +235,15 @@
                     谙雅思考试技法，为广大考生带来福音。以缜密
                     的工科思维和批判式的文科思维穿行于雅思讲堂，
                     深受学生亲睐。
+                </p>
+                <a class="btn-2" target="_blank"
+                   href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">约课</a>
+            </li>
+            <li>
+                <div><img src="/cn/ielts/images/c5.png" alt=""></div>
+                <p class="c4-name">Vicky Jiang</p>
+                <p class="c4-de">
+                    英国南安普顿大学硕士，国内英专毕业，在国外学习期间对英语思维及表达方式建立了浓厚的兴趣和深刻的了解，对雅思口语和听力的独到见解让人印象深刻，上课风格活泼，教学幽默，深受学生喜爱。主讲雅思口语和听力。
                 </p>
                 <a class="btn-2" target="_blank"
                    href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">约课</a>
