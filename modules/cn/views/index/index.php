@@ -90,7 +90,7 @@
     if ($action != 'word-details' && $action != 'picture-details') {
         ?>
         <meta name="description" content="<?php echo $seo['description'] ?>">
-        <?php
+    <?php
     }
     ?>
     <script>
@@ -261,9 +261,9 @@
             foreach ($data as $v) {
                 ?>
                 <li><a href="<?php echo $v['url'] ?>" target="_blank"
-                       style="background: url('<?php echo "http://images.gmatonline.cn".$v['image']  ?>') no-repeat center;background-size: auto 100%;"></a>
+                       style="background: url('<?php echo $v['image'] ?>') no-repeat center;background-size: auto 100%;"></a>
                 </li>
-                <?php
+            <?php
             }
             ?>
         </ul>
@@ -549,7 +549,7 @@
                         <dt>
                             <a href="/word-details/<?php echo $v['id'] ?>/index,178,125.html"><?php echo $v['name'] ?></a>
                         </dt>
-                        <?php
+                    <?php
                     }
                     ?>
                 </dl>
@@ -570,7 +570,7 @@
                         <dt>
                             <a href="/word-details/<?php echo $v['id'] ?>/index,178,121.html"><?php echo $v['name'] ?></a>
                         </dt>
-                        <?php
+                    <?php
                     }
                     ?>
                 </dl>
@@ -591,7 +591,7 @@
                         ?>
                         <dt><a href="/public-class/<?php echo $v['id'] ?>.html"><?php echo $k + 1 ?>
                                 .<?php echo $v['name'] ?></a></dt>
-                        <?php
+                    <?php
                     }
                     ?>
 
@@ -683,7 +683,7 @@
                             foreach ($data as $v) {
                                 ?>
                                 <li><a href="/word-details/<?php echo $v['id'] ?>/249.html"><?php echo $v['name'] ?></a></li>
-                                <?php
+                            <?php
                             }
                             ?>
                         </ol>
@@ -755,7 +755,7 @@
                     ?>
                     <li>
                         <div class="enroll-wrap clearfix">
-                            <div class="student-img fl"><img src="<?php echo "http://images.gmatonline.cn".$v['smallPhoto']  ?>" alt=""></div>
+                            <div class="student-img fl"><img src="<?php echo $v['smallPhoto'] ?>" alt=""></div>
                             <div class="fr enroll-school">
                                 <p class="stu-name ellipsis"><?php echo $v['name'] ?></p>
                                 <p class="school-name ellipsis"><?php echo $v['abroadSchool'] ?></p>
@@ -768,7 +768,7 @@
                             </div>
                         </div>
                     </li>
-                    <?php
+                <?php
                 }
                 ?>
             </ul>
@@ -782,7 +782,7 @@
                         foreach ($data as $v) {
                             ?>
                             <li>
-                                <div class="fl stu-img"><img src="<?php echo "http://images.gmatonline.cn".$v['smallPhoto']  ?>" alt=""></div>
+                                <div class="fl stu-img"><img src="<?php echo $v['smallPhoto'] ?>" alt=""></div>
                                 <div class="fl stuIntro-wrap">
                                     <p><?php echo $v['name'] ?>：<?php echo $v['abroadSchool'] ?></p>
                                     <p class="ellipsis-2 stu-info">
@@ -790,7 +790,7 @@
                                     </p>
                                 </div>
                             </li>
-                            <?php
+                        <?php
                         }
                         ?>
                     </ul>
@@ -821,7 +821,7 @@
                             <li>
                                 <div class="teacher-img fl"><a
                                         href="/teachers/<?php echo $value['name'] ?>/<?php echo $value['id'] ?>.html"><img
-                                            src="<?php echo "http://images.gmatonline.cn".$value['image']  ?>"
+                                            src="<?php echo $value['image'] ?>"
                                             alt="<?php echo $value['name'] ?>头像"></a>
                                 </div>
                                 <div class="teacherInfo-wrap fr">
@@ -842,7 +842,7 @@
                         }
                         ?>
                     </ul>
-                    <?php
+                <?php
                 }
                 ?>
             </div>
@@ -871,9 +871,9 @@
                             <div class="tri-2"></div>
                             <div class="abroad-line"></div>
                         </div>
-                        <div class="abroad-img"><a href="#"><img src="<?php echo "http://images.gmatonline.cn".$v['image']  ?>" alt=""></a></div>
+                        <div class="abroad-img"><a href="#"><img src="<?php echo $v['image'] ?>" alt=""></a></div>
                     </li>
-                    <?php
+                <?php
                 }
                 ?>
             </ul>
@@ -892,9 +892,9 @@
                     $data = \app\modules\cn\models\Content::getContent(['category' => "108"]);
                     foreach ($data as $k => $v) {
                         ?>
-                        <li><a href="/materials.html"><span></span><img src="<?php echo "http://images.gmatonline.cn".$v['image']  ?>" alt="教材"></a>
+                        <li><a href="/materials.html"><span></span><img src="<?php echo $v['image'] ?>" alt="教材"></a>
                         </li>
-                        <?php
+                    <?php
                     }
                     ?>
                 </ul>
@@ -1142,13 +1142,13 @@
                         ?>
                         <li>
                             <div class="smallStyle">
-                                <img src="<?php echo "http://images.gmatonline.cn".$v['image']  ?>" alt="图片">
+                                <img src="<?php echo $v['image'] ?>" alt="图片">
 
                                 <div class="city"><?php echo $v['name'] ?></div>
                             </div>
                             <div class="bigStyle">
                                 <div class="big-left">
-                                    <img src="<?php echo "http://images.gmatonline.cn".$v['image']  ?>" alt="图片">
+                                    <img src="<?php echo $v['image'] ?>" alt="图片">
 
                                     <div class="big-city"><?php echo $v['name'] ?></div>
                                 </div>
@@ -1166,7 +1166,7 @@
                                 <div style="clear: both"></div>
                             </div>
                         </li>
-                        <?php
+                    <?php
                     }
                     ?>
                 </ul>
@@ -1180,7 +1180,7 @@
 } elseif ($url == '/practices.html' || strstr($url, '/practices/')) {
     ?>
 
-    <?php
+<?php
 }
 else{
 ?>
@@ -1190,7 +1190,7 @@ else{
     <script type="text/javascript">
         jQuery(".connection").slide({mainCell: ".connectBd", trigger: "mouseover"});
     </script>
-    <?php
+<?php
 }
 ?>
 
