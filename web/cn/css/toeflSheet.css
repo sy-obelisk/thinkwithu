@@ -815,14 +815,16 @@
     font-size: 12px;
 }
 .whiteRes p{
-    text-overflow: ellipsis;
-    overflow: hidden;
     display: -webkit-box;
     display: -moz-box;
+    height: 80px;
+    overflow: hidden;
     -webkit-line-clamp: 5;
     -moz-line-clamp: 5;
-    -webkit-box-orient: vertical;
     -moz-box-orient: vertical;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
 }
 .dynamic{
     width: 990px;
