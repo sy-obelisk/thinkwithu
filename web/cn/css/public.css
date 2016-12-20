@@ -2439,3 +2439,177 @@ a:hover{
     left: 18px;
     bottom: 8px;
 }
+/*咨询框改版样式*/
+.referBox{
+    width: 71px;
+    height: 465px;
+    background: #c25abf;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    position: fixed;
+    right: 7px;
+    top: 50%;
+    z-index: 55;
+    margin-top: -232px;
+}
+.refer_close{
+    width: 15px;
+    height: 15px;
+    background: url("../images/refer_close.png") no-repeat;
+    position: absolute;
+    right: -7px;
+    top: -15px;
+}
+.refer_close:hover{
+    cursor: pointer;
+}
+.refer_top{
+    width: 139px;
+    height: 131px;
+    position: absolute;
+    top: -90px;
+    left: -60px;
+    background: url("../images/refer_topImg.png") no-repeat;
+    background-size: 100% 100%;
+}
+.refer_con{
+    width: 100%;
+    margin-top: 30px;
+}
+.refer_con ul li a{
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 5px 0 15px 0;
+    font-size: 12px;
+    background: url("../images/refer_border01.png") no-repeat bottom;
+    /*border-bottom: 1px #e5e5e5 solid;*/
+    position: relative;
+}
+.refer_con ul li:last-child a{
+    background: none;
+}
+.refer_con ul li a p{
+    color: #ffffff;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.refer_con ul li:hover a{
+    background: url("../images/refer_border02.png") no-repeat bottom;
+}
+.refer_con ul li:hover a p{
+    color: #edce39;
+}
+.refer_con ul li:last-child:hover a{
+    background: none;
+}
+.refer_con ul li:hover .diffBG01{
+    background: url("../images/refer_icon001.png") no-repeat;
+    background-size: 100% 100%;
+}
+.refer_con ul li:hover .diffBG02{
+    background: url("../images/refer_icon002.png") no-repeat;
+    background-size: 100% 100%;
+}
+.refer_con ul li:hover .diffBG03{
+    background: url("../images/refer_icon003.png") no-repeat;
+    background-size: 100% 100%;
+}
+.refer_con ul li:hover .diffBG04{
+    background: url("../images/refer_icon004.png") no-repeat;
+    background-size: 100% 100%;
+}
+.refer_con ul li:hover .diffBG05{
+    background: url("../images/refer_icon005.png") no-repeat;
+    background-size: 100% 100%;
+}
+.diffBG01{
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+    background: url("../images/refer_icon01.png") no-repeat;
+    background-size: 100% 100%;
+}
+.diffBG02{
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+    background: url("../images/refer_icon02.png") no-repeat;
+    background-size: 100% 100%;
+}
+.diffBG03{
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+    background: url("../images/refer_icon03.png") no-repeat;
+    background-size: 100% 100%;
+}
+.diffBG04{
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+    background: url("../images/refer_icon04.png") no-repeat;
+    background-size: 100% 100%;
+}
+.diffBG05{
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+    background: url("../images/refer_icon05.png") no-repeat;
+    background-size: 100% 100%;
+}
+.diffBG06{
+    width: 45px;
+    height: 23px;
+    margin: 0 auto;
+    /*background: url("../images/refer_icon06.png") no-repeat;*/
+}
+.refer_con ul li:nth-child(2):hover .tanc_mask01{
+    display: block;
+    -webkit-animation-name:fadeIn;
+    -webkit-animation-duration:0.8s;
+    -webkit-animation-timing-function:ease-out;
+    -webkit-animation-iteration-count: 1;
+}
+.refer_con ul li:nth-child(4):hover .tanc_mask02{
+    display: block;
+    -webkit-animation-name:fadeInLeft;
+    -webkit-animation-duration:0.3s;
+    -webkit-animation-timing-function:ease-out;
+    -webkit-animation-iteration-count: 1;
+}
+.refer_con ul li:last-child:hover .diffBG06{
+    -webkit-animation-name:bounce;
+    -webkit-animation-duration:0.8s;
+    -webkit-animation-timing-function:ease-out;
+    -webkit-animation-iteration-count: 1;
+}
+.tanc_mask01{
+    width: 113px;
+    height: 107px;
+    background: url("../images/bg-11.png") no-repeat;
+    position: absolute;
+    left: -113px;
+    top: -20px;
+    display: none;
+    padding: 10px 13px 10px 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.tanc_mask01 img{
+    width: 100%;
+}
+.tanc_mask02{
+    width: 212px;
+    height: 45px;
+    line-height: 45px;
+    background: url("../images/bg-12.png") no-repeat;
+    position: absolute;
+    left: -212px;
+    top: 20px;
+    color: #ffffff;
+    font-size: 22px;
+    display: none;
+}
+/*zxk end*/

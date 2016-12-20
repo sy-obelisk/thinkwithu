@@ -484,7 +484,7 @@
 }
 /*----------------------------*/
 .other{
-    vertical-align: top;
+    vertical-align: top!important;
     margin: 0 80px;
     text-align: center;
     width: 433px;
