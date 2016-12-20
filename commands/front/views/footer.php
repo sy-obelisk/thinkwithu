@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="/cn/css/animate.min.css">
 <div class="footer">
     <div class="footerFont">
         <ul>
@@ -130,7 +131,7 @@
 <!--            <li><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">美国留学</a></li>-->
 <!--            <li><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">英国留学</a></li>-->
 <!--            <li><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">其他留学</a></li>-->
-<!--            <li><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">海外咨询</a></li>-->
+<!--            <li><a href="http://p.qiao.baidu.com/im/index?siteid=605 8744&ucid=3827656&cp=&cr=&cw=">海外咨询</a></li>-->
 <!--            <li><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">留学规划</a></li>-->
 <!--            <li><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">游学与实习</a></li>-->
 <!--        </ul>-->
@@ -138,20 +139,71 @@
 <!--    <div class="bottom_top" onclick="scroll_Top();"></div>-->
 <!--</div>-->
 <!--<div class="rightLayer_two" onclick="showLayer();"></div>-->
-<div id="right-wrap" class="right-wrap">
-    <div class="img-wrap">
-        <div class="wx-wrap">
-            <div class="erm-wrap"><img src="/cn/images/erm-1.jpg" alt=""></div>
-        </div>
-        <div class="tel-wrap2">
-            <div class="tel-text2">400-600-1123</div>
-        </div>
-        <img src="/cn/images/consult.png" alt="">
-        <a class="online" href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="></a>
-        <div class="close-wrap"></div>
+<!--Hrisi --弹窗-->
+<!--<div id="right-wrap" class="right-wrap">-->
+<!--    <div class="img-wrap">-->
+<!--        <div class="wx-wrap">-->
+<!--            <div class="erm-wrap"><img src="/cn/images/erm-1.jpg" alt=""></div>-->
+<!--        </div>-->
+<!--        <div class="tel-wrap2">-->
+<!--            <div class="tel-text2">400-600-1123</div>-->
+<!--        </div>-->
+<!--        <img src="/cn/images/consult.png" alt="">-->
+<!--        <a class="online" href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="></a>-->
+<!--        <div class="close-wrap"></div>-->
+<!--    </div>-->
+<!--</div>-->
+<!--<div class="rightLayer_two" ></div>-->
+<!--Anne --弹窗-->
+<!-------------------咨询框------------------------>
+<div class="referBox">
+    <div class="refer_close" onclick="closeRefer()"></div>
+    <div class="refer_top"></div>
+    <div class="refer_con">
+        <ul>
+            <li>
+                <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=%E6%96%B0%E5%AE%98%E7%BD%91%EF%BC%88thinkwithu%EF%BC%89&cw=%E5%AE%98%E7%BD%91%E5%8F%B3%E4%BE%A7%E5%AE%A2%E6%9C%8D%E5%88%97%E8%A1%A8http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=%E6%96%B0%E5%AE%98%E7%BD%91%EF%BC%88thinkwithu%EF%BC%89&cw=%E5%AE%98%E7%BD%91%E5%8F%B3%E4%BE%A7%E5%AE%A2%E6%9C%8D%E5%88%97%E8%A1%A8"
+                   target="_blank">
+                    <div class="diffBG01"></div>
+                    <p>在线咨询</p>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);">
+                    <div class="diffBG02"></div>
+                    <p>微信</p>
+                    <div class="tanc_mask01 animated"><img src="/cn/images/thinku_ewm.jpg" alt="二维码图片"></div>
+                </a>
+            </li>
+            <li>
+                <a href="tencent://message/?uin=2265835386&amp;Site=www.cnclcy&amp;Menu=yes" target="_blank">
+                    <div class="diffBG03"></div>
+                    <p>QQ</p>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);">
+                    <div class="diffBG04"></div>
+                    <p>电话</p>
+                    <div class="tanc_mask02 animated">400-600-1123</div>
+                </a>
+            </li>
+            <li>
+                <a href="tencent://message/?uin=3435834301&amp;Site=www.cnclcy&amp;Menu=yes" target="_blank">
+                    <div class="diffBG05"></div>
+                    <p>吐槽入口</p>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" onclick="referTop();">
+                    <div class="diffBG06 animated">
+                        <img src="/cn/images/refer_icon06.png" alt="回到顶部图标"/>
+                    </div>
+                </a>
+            </li>
+        </ul>
     </div>
 </div>
-<div class="rightLayer_two" ></div>
 <script>
     $(".close-wrap").click(function(){
         $("#right-wrap").hide();

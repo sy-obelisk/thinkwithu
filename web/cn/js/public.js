@@ -117,3 +117,11 @@ function showLayer(){
     $(".rightLayer").show('slide');
     $(".rightLayer_two").hide('slide');
 }
+//关闭咨询框
+function closeRefer(){
+    $(".referBox").hide();
+}
+//回到顶部
+function referTop(){
+    $("html,body").animate({scrollTop:0},800);
+}
