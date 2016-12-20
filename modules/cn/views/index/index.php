@@ -257,7 +257,7 @@
         <ul class="hd clearfix"></ul>
         <ul class="banner">
             <?php
-            $data = \app\modules\cn\models\Content::getContent(['fields' => 'url', 'category' => "190,223", 'pageSize' => 5]);
+            $data = \app\modules\cn\models\Content::getContent(['fields' => 'url', 'category' => "190,223", 'pageSize' => 6]);
             foreach ($data as $v) {
                 ?>
                 <li><a href="<?php echo $v['url'] ?>" target="_blank"
