@@ -81,8 +81,6 @@
         }
     }
     ?>
-    <meta name="robots" content="noindex,nofollow">
-    <link rel='canonical' href='www.thinkwithu.com'/>
     <title><?php echo $seo['title'] ?>-申友网</title>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="keywords" content="<?php echo $seo['keywords'] ?>">
@@ -102,6 +100,7 @@
             s.parentNode.insertBefore(hm, s);
         })();
     </script>
+    <script type="text/javascript" src="//s.union.360.cn/7302.js"></script>
     <link rel="stylesheet" href="/cn/css/header.css"/>
     <link rel="stylesheet" href="/cn/css/footer.css"/>
     <link rel="stylesheet" href="/cn/css/public.css"/>
