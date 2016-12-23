@@ -257,7 +257,7 @@
         <ul class="hd clearfix"></ul>
         <ul class="banner">
             <?php
-            $data = \app\modules\cn\models\Content::getContent(['fields' => 'url', 'category' => "190,223", 'pageSize' => 6]);
+            $data = \app\modules\cn\models\Content::getContent(['fields' => 'url', 'category' => "190,223", 'pageSize' => 10]);
             foreach ($data as $v) {
                 ?>
                 <li><a href="<?php echo $v['url'] ?>" target="_blank"
@@ -664,7 +664,7 @@
         </ul>
         <div class="clearfix">
             <ul class="testLeft-wrap fl clearfix">
-                <li>
+                <li style="margin-bottom: 15px;">
                     <div class="erm-wrap"><img src="/cn/Hirsi/images/erm-1.png" alt="扫描二维码，下载APP"></div>
                     <p class="erm-name">GMAT APP</p>
                 </li>
@@ -674,32 +674,83 @@
                 </li>
             </ul>
             <div class="testRight-wrap fr">
-                <p class="rightServe-name">每日一题</p>
-                <div class="slide02">
+                <p class="rightServe-name tl clearfix">每日一题 <a class="more fr" href="/problem.html">MORE</a></p>
+                <div class="slide02 clearfix">
+                    <div class="slide-f1 fl">
                     <div class="topicBd">
                         <ol class="topic-list">
-                            <?php
-                            $data = \app\modules\cn\models\Content::getContent(['category' => "249", "pageSize" => 100]);
-                            foreach ($data as $v) {
-                                ?>
-                                <li><a href="/word-details/<?php echo $v['id'] ?>/249.html"><?php echo $v['name'] ?></a></li>
-                            <?php
-                            }
-                            ?>
+                            <li>
+                                <a href="/word-details/1085/249.html">GMAT数学每日一题解析（1）</a>
+                                <p class="ellipsis tode">申友申友申友申友吾问无为谓申友申友申友申友吾问无为谓</p>
+                            </li>
+                            <li>
+                                <a href="/word-details/1085/249.html">GMAT数学每日一题解析（2）</a>
+                                <p class="ellipsis tode">申友申友申友申友吾问无为谓申友申友申友申友吾问无为谓</p>
+                            </li>
+                            <li>
+                                <a href="/word-details/1085/249.html">GMAT数学每日一题解析（3）</a>
+                                <p class="ellipsis tode">申友申友申友申友吾问无为谓申友申友申友申友吾问无为谓</p>
+                            </li>
+                            <li>
+                                <a href="/word-details/1085/249.html">GMAT数学每日一题解析（4）</a>
+                                <p class="ellipsis tode">申友申友申友申友吾问无为谓申友申友申友申友吾问无为谓</p>
+                            </li>
+                            <li>
+                                <a href="/word-details/1085/249.html">GMAT数学每日一题解析（5）</a>
+                                <p class="ellipsis tode">申友申友申友申友吾问无为谓申友申友申友申友吾问无为谓</p>
+                            </li>
+
                         </ol>
+
+                    </div>
+                    </div>
+                    <div class="slide-fr fr">
+                        <div class="topicBd">
+                            <ol class="topic-list">
+                                <li>
+                                    <a href="/word-details/1085/249.html">GMAT数学每日一题解析（1）</a>
+                                    <p class="ellipsis tode">申友申友申友申友吾问无为谓申友申友申友申友吾问无为谓</p>
+                                </li>
+                                <li>
+                                    <a href="/word-details/1085/249.html">GMAT数学每日一题解析（2）</a>
+                                    <p class="ellipsis tode">申友申友申友申友吾问无为谓申友申友申友申友吾问无为谓</p>
+                                </li>
+                                <li>
+                                    <a href="/word-details/1085/249.html">GMAT数学每日一题解析（3）</a>
+                                    <p class="ellipsis tode">申友申友申友申友吾问无为谓申友申友申友申友吾问无为谓</p>
+                                </li>
+                                <li>
+                                    <a href="/word-details/1085/249.html">GMAT数学每日一题解析（4）</a>
+                                    <p class="ellipsis tode">申友申友申友申友吾问无为谓申友申友申友申友吾问无为谓</p>
+                                </li>
+                                <li>
+                                    <a href="/word-details/1085/249.html">GMAT数学每日一题解析（5）</a>
+                                    <p class="ellipsis tode">申友申友申友申友吾问无为谓申友申友申友申友吾问无为谓</p>
+                                </li>
+
+                            </ol>
+
+                        </div>
                     </div>
                 </div>
                 <script>
-                    jQuery(".slide02").slide({
+                    jQuery(".slide-f1").slide({
                         mainCell: ".topicBd ol",
                         autoPlay: true,
                         effect: "topMarquee",
                         interTime: 50,
-                        vis: 4,
+                        vis: 5,
+                        autoPage: true
+                    });
+                    jQuery(".slide-fr").slide({
+                        mainCell: ".topicBd ol",
+                        autoPlay: true,
+                        effect: "topMarquee",
+                        interTime: 50,
+                        vis: 5,
                         autoPage: true
                     });
                 </script>
-                <a class="topic-more" href="/problem.html">查看更多</a>
             </div>
         </div>
     </div>
