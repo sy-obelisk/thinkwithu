@@ -750,7 +750,7 @@ h1.info-tit {
 .testRight-wrap {
     width: 780px;
     height: 400px;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.5);
 }
 .slide02{
     text-align: left;
