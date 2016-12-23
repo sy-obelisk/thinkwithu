@@ -52,7 +52,7 @@
             </li>
             <li>
                 <ol class="olTwo">
-                    <li><a href="/about-thinku.html">申友介绍</a></li>
+                    <li><a href="/about-thinku.html">关于我们</a></li>
                     <li><a href="/teachers/interviews.html">名师文档</a></li>
                     <li><a href="/about-thinku.html">行业资质</a></li>
                     <li><a href="/joinus.html">加入我们</a></li>
@@ -83,15 +83,15 @@
                     <span>申友留学</span>
                 </div>
             </li>
-<!--            <li>-->
-<!--                <div class="left-ewm">-->
-<!---->
-<!--                    <img src="/cn/images/index_erweima03.png" alt="托福100"/>-->
-<!--                </div>-->
-<!--                <div class="right-font">-->
-<!--                    <span>托福100</span>-->
-<!--                </div>-->
-<!--            </li>-->
+            <li>
+                <div class="left-ewm">
+
+                    <img src="/cn/images/index_erweima03.png" alt="托福100"/>
+                </div>
+                <div class="right-font">
+                    <span>官方微博</span>
+                </div>
+            </li>
         </ul>
     </div>
     <div style="clear: both"></div>
