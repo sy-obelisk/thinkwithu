@@ -675,62 +675,58 @@
             <div class="testRight-wrap fr">
                 <p class="rightServe-name tl clearfix">每日一题 <a class="more fr" href="/problem.html">MORE</a></p>
                 <div class="slide02 clearfix">
+                    <?php
+                    $one = [];
+                    $two = [];
+                    $data = \app\modules\cn\models\Content::getContent(['category' => "249",'fields' => "abstract", "pageSize" => 100]);
+                    foreach ($data as $k => $v) {
+                        if($k%2==0){
+                            $one[] = $v;
+                        }else{
+                            $two[] = $v;
+                        }
+                    }
+                        ?>
+
+
                     <div class="slide-f1 fl">
-                    <div class="topicBd">
-                        <ol class="topic-list">
-                            <li>
-                                <a href="/word-details/1085/249.html">GMAT数学每日一题解析（1）</a>
-                                <p class="ellipsis tode">申友申友申友申友吾问无为谓申友申友申友申友吾问无为谓</p>
-                            </li>
-                            <li>
-                                <a href="/word-details/1085/249.html">GMAT数学每日一题解析（2）</a>
-                                <p class="ellipsis tode">申友申友申友申友吾问无为谓申友申友申友申友吾问无为谓</p>
-                            </li>
-                            <li>
-                                <a href="/word-details/1085/249.html">GMAT数学每日一题解析（3）</a>
-                                <p class="ellipsis tode">申友申友申友申友吾问无为谓申友申友申友申友吾问无为谓</p>
-                            </li>
-                            <li>
-                                <a href="/word-details/1085/249.html">GMAT数学每日一题解析（4）</a>
-                                <p class="ellipsis tode">申友申友申友申友吾问无为谓申友申友申友申友吾问无为谓</p>
-                            </li>
-                            <li>
-                                <a href="/word-details/1085/249.html">GMAT数学每日一题解析（5）</a>
-                                <p class="ellipsis tode">申友申友申友申友吾问无为谓申友申友申友申友吾问无为谓</p>
-                            </li>
-
-                        </ol>
-
-                    </div>
-                    </div>
-                    <div class="slide-fr fr">
                         <div class="topicBd">
                             <ol class="topic-list">
-                                <li>
-                                    <a href="/word-details/1085/249.html">GMAT数学每日一题解析（1）</a>
-                                    <p class="ellipsis tode">申友申友申友申友吾问无为谓申友申友申友申友吾问无为谓</p>
-                                </li>
-                                <li>
-                                    <a href="/word-details/1085/249.html">GMAT数学每日一题解析（2）</a>
-                                    <p class="ellipsis tode">申友申友申友申友吾问无为谓申友申友申友申友吾问无为谓</p>
-                                </li>
-                                <li>
-                                    <a href="/word-details/1085/249.html">GMAT数学每日一题解析（3）</a>
-                                    <p class="ellipsis tode">申友申友申友申友吾问无为谓申友申友申友申友吾问无为谓</p>
-                                </li>
-                                <li>
-                                    <a href="/word-details/1085/249.html">GMAT数学每日一题解析（4）</a>
-                                    <p class="ellipsis tode">申友申友申友申友吾问无为谓申友申友申友申友吾问无为谓</p>
-                                </li>
-                                <li>
-                                    <a href="/word-details/1085/249.html">GMAT数学每日一题解析（5）</a>
-                                    <p class="ellipsis tode">申友申友申友申友吾问无为谓申友申友申友申友吾问无为谓</p>
-                                </li>
+                                <?php
+                                    foreach($one as $v) {
+                                        ?>
+                                        <li>
+                                            <a href="/word-details/1085/249.html"><?php echo $v['name']?></a>
 
+                                            <p class="ellipsis tode"><?php echo $v['abstract']?></p>
+                                        </li>
+                                    <?php
+                                    }
+                                ?>
                             </ol>
 
                         </div>
                     </div>
+
+                    <div class="slide-fr fr">
+                        <div class="topicBd">
+                            <ol class="topic-list">
+                                <?php
+                                foreach($two as $v) {
+                                    ?>
+                                    <li>
+                                        <a href="/word-details/1085/249.html"><?php echo $v['name']?></a>
+
+                                        <p class="ellipsis tode"><?php echo $v['abstract']?></p>
+                                    </li>
+                                <?php
+                                }
+                                ?>
+                            </ol>
+
+                        </div>
+                    </div>
+
                 </div>
                 <script>
                     jQuery(".slide-f1").slide({
