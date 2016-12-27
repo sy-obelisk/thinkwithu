@@ -197,7 +197,7 @@
             <li>
                 <a href="javascript:void(0);" onclick="referTop();">
                     <div class="diffBG06 animated">
-                        <img src="/cn/images/refer_icon06.png" alt="回到顶部图标"/>
+<!--                        <img src="/cn/images/refer_icon06.png" alt="回到顶部图标"/>-->
                     </div>
                 </a>
             </li>
