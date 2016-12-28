@@ -1,4 +1,19 @@
 $(function(){
+    //    咨询框改版自适应2016.12.26
+    $(".refer_top").css({
+        "height":$(".refer_top").width(),
+        "top":"-"+$(".refer_top").width()/1.4+"px"
+    });
+    $(".refer_con").css("marginTop",$(".refer_top").width()/4);
+    var com_height=$(".diffBG01").width();
+    $(".diffBG01").css("height",com_height);
+    $(".diffBG02").css("height",com_height);
+    $(".diffBG03").css("height",com_height);
+    $(".diffBG04").css("height",com_height);
+    $(".diffBG05").css("height",com_height);
+    $(".diffBG06").css("height",$(".diffBG06").width()/2);
+    $(".referBox").css("marginTop","-"+($(".referBox").height()-$(".refer_top").width()/1.4)/2+"px");
+    //    咨询框自适应 end
     //获取值在页面定位
     var id=$("body").attr("data-value");
      if(id){
