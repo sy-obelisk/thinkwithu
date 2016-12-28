@@ -673,7 +673,7 @@
                 </li>
             </ul>
             <div class="testRight-wrap fr">
-                <p class="rightServe-name tl clearfix">每日一题 <a class="more fr" href="/problem.html">MORE</a></p>
+                <p class="rightServe-name tl clearfix">GMAT每日一题 <a class="more fr" href="/problem.html">MORE</a></p>
                 <div class="slide02 clearfix">
                     <?php
                     $one = [];
@@ -696,9 +696,10 @@
                                     foreach($one as $v) {
                                         ?>
                                         <li>
-                                            <a href="/word-details/1085/249.html"><?php echo $v['name']?></a>
 
-                                            <p class="ellipsis tode"><?php echo $v['abstract']?></p>
+                                        <a href="/word-details/<?php echo $v['id'] ?>/249.html"><?php echo $v['name']?></a>
+
+                                            <p class="ellipsis-2 tode"><?php echo $v['abstract']?></p>
                                         </li>
                                     <?php
                                     }
@@ -717,11 +718,12 @@
                                     <li>
                                         <a href="/word-details/1085/249.html"><?php echo $v['name']?></a>
 
-                                        <p class="ellipsis tode"><?php echo $v['abstract']?></p>
+                                        <p class="ellipsis-2 tode"><?php echo $v['abstract']?></p>
                                     </li>
                                 <?php
                                 }
                                 ?>
+
                             </ol>
 
                         </div>
@@ -1029,6 +1031,13 @@
         <!--        </div>-->
         <!--    </div>-->
 </section>
+<!--中间弹窗-->
+<div class="m-tc">
+    <div class="ic-wrap">
+        <div class="ic-close"></div>
+        <a href="/word-details/1349/178,105,118.html"><img src="/cn/images/b-ic.png" alt=""></a>
+    </div>
+</div>
 <!--footer 底部-->
 <!--<footer>-->
 <!--    <div class="w10">-->
@@ -1255,6 +1264,23 @@ else{
 <?php //LeftSuspensionWidget::end();?>
 </body>
 <script>
+    window.onload=function(){
+        setTimeout(function(){
+            $('.m-tc').fadeOut(300);
+        },3000)
+    };
+    var H = $(window).height();
+    mh = (H - 322) / 2;
+
+    $('.ic-close').click(function(){
+
+
+
+        $('.m-tc').fadeOut(300);
+    });
+    $(".ic-wrap").css({
+        "margin-top": mh + "px"
+    });
     $(function(){
         $(window).scroll(function(){
             var top= $(window).scrollTop();

@@ -249,12 +249,15 @@ input.search {
     overflow: hidden;
     position: absolute;
     left: 50%;
+    margin-left: -150px;
     bottom: 15px;
     z-index: 10;
 }
 
 .slideBox .hd li {
     opacity: 0.5;
+
+
     width: 70px;
     height: 4px;
     float: left;
@@ -785,7 +788,8 @@ height: 290px;
 .topic-list li {
     /*padding: 4px 0;*/
     width: 275px;
-    height: 65px;
+    height: 70px;
+    margin-bottom: 5px;
 }
 /*.topic-list li:nth-child(even){*/
     /*float: right;*/
@@ -812,7 +816,7 @@ height: 290px;
     font-size: 12px;
     margin-top: 3px;
     padding-left: 3px;
-    line-height: 20px;
+    line-height: 16px;
 }
 
 .topic-more {
@@ -1471,4 +1475,27 @@ h1.abroad-tit {
 
 .abroad-slide li.on {
     background: #ffffff;
+}
+/*中间弹窗*/
+.m-tc{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.53);
+}
+.ic-wrap{
+    position: relative;
+    width: 521px;
+    height: 322px;
+    margin: 0 auto;
+}
+.ic-close{
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    width: 30px;
+    height: 30px;
 }

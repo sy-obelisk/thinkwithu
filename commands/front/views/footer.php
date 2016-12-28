@@ -4,19 +4,19 @@
         <ul>
             <li>
                 <ol class="olTwo">
-                    <li><a href="/USA.html">美&nbsp;&nbsp;&nbsp;&nbsp;国</a></li>
-                    <li><a href="/UK.html">英&nbsp;&nbsp;&nbsp;&nbsp;国</a></li>
-                    <li><a href="/HK.html">香&nbsp;&nbsp;&nbsp;&nbsp;港</a></li>
-                    <li><a href="/AUS.html">澳&nbsp;&nbsp;&nbsp;&nbsp;洲</a></li>
-                    <li><a href="/COUNTRY.html">其&nbsp;&nbsp;&nbsp;&nbsp;他</a></li>
+                    <li><a href="/USA.html">美国留学</a></li>
+                    <li><a href="/UK.html">英国留学</a></li>
+                    <li><a href="/HK.html">香港留学</a></li>
+                    <li><a href="/AUS.html">澳洲留学</a></li>
+                    <li class="tm"><a href="/COUNTRY.html">其他</a></li>
                 </ol>
             </li>
             <li>
-                <ol class="olTwo twoDiff">
+                <ol class="olTwo twoDiff tm">
                     <li><a href="/public-class.html">GMAT课堂</a></li>
-                    <li><a href="/gmatsheet.html">GMAT开班查询</a></li>
-                    <li><a href="/public-class.html">托福公开课</a></li>
-                    <li><a href="/toeflsheet.html ">托福开班查询</a></li>
+                    <li><a href="/gmatsheet.html">GMAT培训</a></li>
+                    <li><a href="/gmatsheet.html">GMAT课程</a></li>
+                    <li><a href="/toefl/assistance.html">托福培训</a></li>
                     <li><a href="/case.html">高分案例</a></li>
                 </ol>
             </li>
@@ -36,11 +36,11 @@
                         <a href="/study-aboard/assistance.html" class="mla">留学方案</a>
                     </li>
                     <li>
-                        <a href="/problem.html">每日一题</a>
-                        <a href="/public-class.html" class="mla">申友课堂</a>
+                        <a style="font-size: 12px" href="/problem.html">GMAT题库</a>
+                        <a style="margin-left: 22px" href="/public-class.html" class="mla">申友课堂</a>
                     </li>
                     <li>
-                        <a href="/mentor.html">Mentor&nbsp;&nbsp;</a>
+                        <a href="/mentor.html">留学顾问</a>
                         <a href="/practices.html" class="mla">实习资源</a>
                     </li>
                     <li>
@@ -204,7 +204,10 @@
         </ul>
     </div>
 </div>
+
+
 <script>
+
     $(".close-wrap").click(function(){
         $("#right-wrap").hide();
         $(".rightLayer_two").fadeIn();
