@@ -1264,13 +1264,11 @@ else{
 <?php //LeftSuspensionWidget::end();?>
 </body>
 <script>
-    window.onload=function(){
-        setTimeout(function(){
-            $('.m-tc').fadeOut(300);
-        },3000)
-    };
     var H = $(window).height();
     mh = (H - 322) / 2;
+    setTimeout(function(){
+        $('.m-tc').fadeOut(300);
+    },3000);
 
     $('.ic-close').click(function(){
 
