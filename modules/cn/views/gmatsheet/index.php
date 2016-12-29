@@ -329,10 +329,10 @@
         <h2><a href="/teachers.html" target="_blank">国际范儿<span>GMAT名师团队</span>联袂授课</a></h2>
         <div class="toggleSummer">
             <div class="summerHd hd">
-                <a href="javascript:void(0);" class="prev">
+                <a href="javascript:;" class="prev">
                     <img src="/cn/images/practice_prevTrangle.png" alt="左边箭头图标">
                 </a>
-                <a href="javascript:void(0);" class="next">
+                <a href="javascript:;" class="next">
                     <img src="/cn/images/practice_nextTrangle.png" alt="右边箭头图标">
                 </a>
             </div>
@@ -374,10 +374,10 @@
     <h2>关于申友GMAT，他们有话说</h2>
     <div class="aboutTSlide">
         <div class="aboutTHd hd">
-            <a href="javascript:void(0);" class="next">
+            <a href="javascript:;" class="next">
                 <i class="fa fa-angle-right"></i>
             </a>
-            <a href="javascript:void(0);" class="prev">
+            <a href="javascript:;" class="prev">
                 <i class="fa fa-angle-left"></i>
             </a>
         </div>
@@ -456,7 +456,7 @@
                     if (!empty($v['url'])) { ?>
                         <a class="classBtn diffColor01" href="/public-class/back/<?php echo $v['id'] ?>.html" target="_blank">课程回放</a>
                     <?php } else { ?>
-                        <a href="javascript:void(0);" onclick="addCollect(<?php echo $v['id'] ?>)"
+                        <a href="javascript:;" onclick="addCollect(<?php echo $v['id'] ?>)"
                            class="classBtn diffColor01">报名</a>
                     <?php } ?>
                     <a href="/public-class/<?php echo $v['id'] ?>.html" class="classBtn diffColor02" target="_blank">详情</a>
@@ -652,7 +652,7 @@
             <input type="button" onclick="onlineCode(this)" value="获取验证码"/>
         </li>
         <li>
-            <a href="javescript:void(0);" onclick="onlineSub(this)">点击提交 &gt;</a>
+            <a href="javascript:void(0);" onclick="onlineSub(this)">点击提交 &gt;</a>
         </li>
     </ul>
 
@@ -670,10 +670,6 @@
             var school = $(_this).closest('li').prev().prev().prev().find('input').val();
             var name = $(_this).closest('li').prev().prev().prev().prev().find('input').val();
             var code = $(_this).closest('li').prev().find('input').val();
-            alert(phone);
-            alert(school);
-            alert(name);
-            alert(code);
             if(phone == ''){
                 alert('留下您的联系方式');
                 return false;
