@@ -716,7 +716,7 @@
                                 foreach($two as $v) {
                                     ?>
                                     <li>
-                                        <a href="/word-details/1085/249.html"><?php echo $v['name']?></a>
+                                        <a href="/word-details/<?php echo $v['id'] ?>/249.html"><?php echo $v['name']?></a>
 
                                         <p class="ellipsis-2 tode"><?php echo $v['abstract']?></p>
                                     </li>
@@ -810,8 +810,7 @@
                                 <p class="stu-intro ellipsis-3">
                                     <?php echo $v['abstract'] ?>
                                 </p>
-                                <div class="tr"><a class="show-btn" target="_blank"
-                                                   href="/word-details/<?php echo $v['id'] ?>/index,102.html">查看详情</a>
+                                <div class="tr"><a class="show-btn" target="_blank" href="/word-details/<?php echo $v['id'] ?>/index,102.html">查看详情</a>
                                 </div>
                             </div>
                         </div>
