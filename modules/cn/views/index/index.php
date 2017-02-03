@@ -297,9 +297,11 @@
             </select>
             <p class="info-tit">我计划出国的时间：</p>
             <select class="info-select" name="data" id="data">
+                <option value="2018年入学">2018年入学</option>
                 <option value="2017年春季入学">2017年春季入学</option>
                 <option value="2017年秋季入学">2017年秋季入学</option>
-                <option value="2018年入学">2018年入学</option>
+                <option value="2018年春季入学">2018年春季入学</option>
+
             </select>
             <h1 onclick="lxfa()" class="info-btn tm">获取我定制专属方案</h1>
         </div>
@@ -1031,12 +1033,12 @@
         <!--    </div>-->
 </section>
 <!--中间弹窗-->
-<div class="m-tc">
-    <div class="ic-wrap">
-        <div class="ic-close"></div>
-        <a href="/word-details/1349/178,105,118.html"><img src="/cn/images/b-ic.png" alt=""></a>
-    </div>
-</div>
+<!--<div class="m-tc">-->
+<!--    <div class="ic-wrap">-->
+<!--        <div class="ic-close"></div>-->
+<!--        <a href="/word-details/1349/178,105,118.html"><img src="/cn/images/b-ic.png" alt=""></a>-->
+<!--    </div>-->
+<!--</div>-->
 <!--footer 底部-->
 <!--<footer>-->
 <!--    <div class="w10">-->
