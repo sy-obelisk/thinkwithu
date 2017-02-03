@@ -142,7 +142,7 @@
     ?>
 </div>
 <script type="text/javascript">
-    jQuery(".classBanner").slide({mainCell: ".classB-bd ul", autoPlay: true, mouseOverStop: false});
+    jQuery(".classBanner").slide({mainCell: ".classB-bd ul", effect:"left",autoPlay: true, mouseOverStop: false});
 </script>
 
 <div class="open-commonTitle">
