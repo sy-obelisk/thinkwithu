@@ -1,4 +1,4 @@
-<div class="bottomInfo">
+<!--<div class="bottomInfo">
     <a href="/" title="申友"><img src="/cn/images/index_newLogo.jpg" alt="申友logo" width="136"></a>
     <ul>
         <li><img src="/cn/images/index_smallIcon01.png" alt="本科留学"><a href="/Undergraduate.html" target="_blank">本科留学</a></li>
@@ -10,4 +10,4 @@
         <li><img src="/cn/images/index_smallIcon07.png" alt="名师云集"><a href="/teachers.html" target="_blank">名师云集</a></li>
         <li><img src="/cn/images/index_smallIcon08.png" alt="留学评估"><a href="/evaluation.html" target="_blank">留学评估</a></li>
     </ul>
-</div>
+</div>-->

@@ -8,6 +8,8 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="keywords" content="<?php echo $seo['keywords'] ?>">
     <meta name="description" content="<?php echo $seo['description'] ?>">
+    <link rel="stylesheet" href="/cn/Hirsi/css/reset.css">
+    <link rel="stylesheet" href="/cn/Hirsi/css/index.css">
     <link rel="stylesheet" href="/cn/css/openClass.css">
     <link rel="stylesheet" href="/cn/css/open-public.css"/>
     <link rel="stylesheet" href="/cn/css/fonts/font-awesome/css/font-awesome.min.css">
@@ -17,10 +19,30 @@
     <script type="text/javascript" src="/cn/js/jquery.SuperSlide.2.1.1.js"></script>
 </head>
 <body><!--公开课的页面都是有左右两边的组件的，我就不加了哈-->
+	<!--头部搜索栏-->
+<header class="sy-header">
+    <div class="w10 clearfix">
+        <img src="/cn/Hirsi/images/sy-text.png" style="margin-right: 55px" alt="高分成就梦想名校改变人生">
+        <img src="/cn/Hirsi/images/sy-tel.png" alt="400-600-1123">
+        <a class="refer-btn"
+           href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="
+           target="_blank">在线咨询</a>
+        <!--登录&注册-->
+        <div class="login-wrap fr" style="display: none;">
+            <span class="on">登录</span>
+            <span>注册</span>
+        </div>
+        <!--搜索-->
+        <div class="search-wrap fr">
+            <input class="search" type="search" placeholder="请输入关键词">
+            <img src="/cn/Hirsi/images/search-icon.png" style="margin-left: -1px;cursor: pointer;" alt="搜索">
+        </div>
+    </div>
+</header>
 <!--公开课头部-->
-<?php use app\commands\front\ClassHeadWidget; ?>
-<?php ClassHeadWidget::begin(); ?>
-<?php ClassHeadWidget::end(); ?>
+<?php use app\commands\front\classHeadWidget;?>
+<?php classHeadWidget::begin(); ?>
+<?php classHeadWidget::end(); ?>
 <!--轮播-->
 <div class="classBanner">
     <div class="classB-hd hd">
@@ -274,4 +296,36 @@
     </div>
 </div>
 </body>
+<!--导航栏JS-->
+<script type="text/javascript">
+	//导航栏hover效果
+    $(".nav-list a.nav1-link").hover(function () {
+        $(this).addClass("on");
+        $(this).parent().siblings("li").find("a.nav1-link").removeClass("on");
+    }, function () {
+        $("a.on-hover").addClass("on");
+        $(this).not("on-hover").removeClass("on")
+    });
+    $(".nav-list li:nth-child(2) .nav2-wrap").hover(function(){
+    	$(this).siblings("a").addClass("on");
+    	 $(this).parent().siblings("li").find("a.nav1-link").removeClass("on");
+    },function(){
+    	$(this).siblings("a").removeClass("on");
+    	 $("a.on-hover").addClass("on");
+    });
+	$(function(){
+        $(window).scroll(function(){
+            var top= $(window).scrollTop();
+            if (top>45){
+                $(".nav-wrap").addClass("nav-flexd");
+                $(".nav-list li a").addClass("a-fiexd");
+                $(".logo").attr("src","/cn/Hirsi/images/sy-logo2.png")
+            }else {
+                $(".nav-wrap").removeClass("nav-flexd");
+                $(".nav-list li a").removeClass("a-fiexd");
+                $(".logo").attr("src","/cn/Hirsi/images/sy-logo.png")
+            }
+        })
+    })
+</script>
 </html>

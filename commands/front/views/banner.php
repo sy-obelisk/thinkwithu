@@ -1,140 +1,50 @@
-<div class="waiHnav">
-    <div class="headNav">
-        <ul>
-            <!--<li class="backg"><a href="javascript:;">留学</a></li>-->
-            <li>
-                <a href="/USA.html" target="_blank">美国留学 <i class="fa fa-angle-down"></i></a>
-                <div class="america">
-                    <div class="amerLeft">
-                        <ul>
-                            <li><a href="/USA.html#course" target="_blank">本科</a></li>
-                            <li><a href="/USA.html#master" target="_blank">硕士</a></li>
-                            <li><a href="/USA.html#doctor" target="_blank">博士</a></li><br/>
-                            <li><a href="/schools.html" target="_blank">金融</a></li>
-                            <li><a href="/schools.html" target="_blank">会计</a></li>
-                            <li><a href="/schools.html" target="_blank">MBA</a></li><br/>
-                            <li><a href="/schools.html" target="_blank">工管</a></li>
-                            <li><a href="/schools.html" target="_blank">数学</a></li>
-                        </ul>
-                        <div style="clear: both"></div>
-                        <a href="/USA.html" class="mores moreL" target="_blank">更多 <i class="fa fa-angle-double-right"></i></a>
-                    </div>
-                    <div class="amerRight">
-                        <ul>
-                            <li  class="rightBorder"><a href="/schools.html" target="_blank">院校排名</a></li>
-                            <li class="rightBorder"><a href="/study-aboard/assistance.html" target="_blank">留学方案</a></li>
-                            <li><a href="/problem.html" target="_blank">每日一题</a></li> <br/>
-                            <li class="rightBorder"><a href="/public-class.html" target="_blank">申友课堂</a></li>
-                            <li class="rightBorder"><a href="/mentor.html" target="_blank">Mentor</a></li>
-                            <li><a href="/question.html" target="_blank">留学问答</a></li> <br/>
-                            <li class="rightBorder"><a href="/teachers.html" target="_blank">明星团队</a></li>
-                            <li class="rightBorder"><a href="/case.html" target="_blank">留学案例</a></li>
-                            <li><a href="/evaluation.html" target="_blank">留学评估</a></li>
-                        </ul>
-                        <div style="clear: both"></div>
-
-                    </div>
-                </div>
-            </li>
-            <li>
-                <a href="/UK.html" target="_blank">英国留学 <i class="fa fa-angle-down"></i></a>
-                <div class="america">
-                    <div class="amerLeft">
-                        <ul>
-                            <li><a href="/UK.html#course" target="_blank">本科</a></li>
-                            <li><a href="/UK.html#master" target="_blank">硕士</a></li>
-                            <li><a href="/UK.html#doctor" target="_blank">博士</a></li><br/>
-                            <li><a href="/schools.html" target="_blank">金融</a></li>
-                            <li><a href="/schools.html" target="_blank">会计</a></li>
-                            <li><a href="/schools.html" target="_blank">MBA</a></li><br/>
-                            <li><a href="/schools.html" target="_blank">工管</a></li>
-                            <li><a href="/schools.html" target="_blank">数学</a></li>
-                        </ul>
-                        <div style="clear: both"></div>
-                        <a href="/UK.html" class="mores moreL" target="_blank">更多 <i class="fa fa-angle-double-right"></i></a>
-                    </div>
-                    <div class="amerRight">
-                        <ul>
-                            <li  class="rightBorder"><a href="/schools.html" target="_blank">院校排名</a></li>
-                            <li class="rightBorder"><a href="/study-aboard/assistance.html" target="_blank">留学方案</a></li>
-                            <li><a href="/problem.html" target="_blank">每日一题</a></li> <br/>
-                            <li class="rightBorder"><a href="/public-class.html" target="_blank">申友课堂</a></li>
-<!--                            <li class="rightBorder"><a href="/list/89,129.html">签证指导</a></li>-->
-                            <li class="rightBorder"><a href="/mentor.html" target="_blank">Mentor</a></li>
-                            <li><a href="/question.html" target="_blank">留学问答</a></li> <br/>
-                            <li class="rightBorder"><a href="/teachers.html" target="_blank">明星团队</a></li>
-                            <li class="rightBorder"><a href="/case.html" target="_blank">留学案例</a></li>
-                            <li><a href="/evaluation.html" target="_blank">留学评估</a></li>
-                        </ul>
-                        <div style="clear: both"></div>
-
+<nav class="nav-wrap">
+    <div class="w10" style="overflow: inherit;">
+        <a href="/"><img class="logo" src="/cn/Hirsi/images/sy-logo.png" alt=""></a>
+        <ul class="inb nav-list clearfix">
+            <li><a class="on on-hover nav1-link" href="/">首页</a></li>
+            <li><a class="nav1-link" href="/study-aboard/assistance.html">留学服务</a>
+                <div class="nav2-wrap">
+                    <div class="nav2-list">
+                        <div class="inb nav2-left-wrap">
+                            <div class="nav2-left">
+                                <div class="inb nav2-name">我要申请</div>
+                                <div class="inb nav2-mid1">
+                                    <a href="/Undergraduate.html">本科</a>
+                                    <a href="/Postgraduate.html">硕士</a>
+                                    <a href="/Doctor.html">博士</a>
+                                    <a href="/picture-details/127/index,111.html">MBA</a>
+                                    <br>
+                                    <a href="/USA.html">美国</a>
+                                    <a href="/UK.html">英国</a>
+                                    <a href="/HK.html">香港</a>
+                                    <a href="/AUS.html">澳洲</a>
+                                    <a href="/COUNTRY.html">其他</a>
+                                </div>
+                            </div>
+                            <div class="nav2-left">
+                                <div class="inb nav2-name">推荐服务</div>
+                                <div class="inb nav2-mid">
+                                    <a href="/picture-details/111/index,110.html">文书定制</a>
+                                    <a href="/picture-details/116/index,110.html">签证服务</a>
+                                    <a href="/picture-details/115/index,110.html">面试辅导</a>
+                                    <br>
+                                    <a href="/practices.html">实习</a>
+                                    <a href="/picture-details/118/index,110.html">Summer school</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </li>
-
-            <li>
-                <a href="/AUS.html" target="_blank">澳洲留学 <i class="fa fa-angle-down"></i></a>
-                <div class="america">
-                    <div class="amerLeft">
-                        <ul>
-                            <li><a href="/AUS.html#course" target="_blank">本科</a></li>
-                            <li><a href="/AUS.html#master" target="_blank">硕士</a></li>
-                            <li><a href="/AUS.html#doctor" target="_blank">博士</a></li><br/>
-                            <li><a href="/schools.html" target="_blank">金融</a></li>
-                            <li><a href="/schools.html" target="_blank">会计</a></li>
-                            <li><a href="/schools.html" target="_blank">MBA</a></li><br/>
-                            <li><a href="/schools.html" target="_blank">工管</a></li>
-                            <li><a href="/schools.html" target="_blank">数学</a></li>
-                        </ul>
-                        <div style="clear: both"></div>
-                        <a href="/AUS.html" class="mores moreL" target="_blank">更多 <i class="fa fa-angle-double-right"></i></a>
-                    </div>
-                    <div class="amerRight">
-                        <ul>
-                            <li  class="rightBorder"><a href="/schools.html" target="_blank">院校排名</a></li>
-                            <li class="rightBorder"><a href="/study-aboard/assistance.html" target="_blank">留学方案</a></li>
-                            <li><a href="/problem.html" target="_blank">每日一题</a></li> <br/>
-                            <li class="rightBorder"><a href="/public-class.html" target="_blank">申友课堂</a></li>
-                            <li class="rightBorder"><a href="/mentor.html" target="_blank">Mentor</a></li>
-                            <li><a href="/question.html" target="_blank">留学问答</a></li> <br/>
-                            <li class="rightBorder"><a href="/teachers.html" target="_blank">明星团队</a></li>
-                            <li class="rightBorder"><a href="/case.html" target="_blank">留学案例</a></li>
-                            <li><a href="/evaluation.html" target="_blank">留学评估</a></li>
-                        </ul>
-                        <div style="clear: both"></div>
-
-                    </div>
-                </div>
-            </li>
-            <li>
-                <a href="/COUNTRY.html" target="_blank">其他留学 <i class="fa fa-angle-down"></i></a>
-                <div class="otherCountry">
-                    <ul>
-                        <li><a href="/COUNTRY/CAN.html" target="_blank">加拿大留学</a></li>
-                        <li><a href="/COUNTRY/SGP.html" target="_blank">新加坡留学</a></li>
-                        <li><a href="/HK.html" target="_blank">香港留学</a></li>
-                        <li><a href="/COUNTRY/DEU-FRA.html" target="_blank">法国留学</a></li>
-                        <li><a href="/COUNTRY/NE.html" target="_blank">北欧留学</a></li>
-                        <li><a href="/COUNTRY/NZL.html" target="_blank">新西兰留学</a></li>
-                    </ul>
-                    <div style="clear: both"></div>
-                    <a href="/COUNTRY.html" class="mores" target="_blank">更多 <i class="fa fa-angle-double-right"></i></a>
-                </div>
-            </li>
-            <!--<li class="backg"><a href="javascript:;">考试</a></li>-->
-            <li>
-                <a href="/gmatsheet.html" target="_blank">GMAT培训</a>
-            </li>
-            <li>
-                <a href="/toefl/assistance.html" target="_blank">托福培训</a>
-            </li>
-            <li>
-                <a href="/public-class.html" target="_blank">申友课堂</a>
-            </li>
-            <li>
-                <a href="/practices.html" target="_blank">游学实习</a>
-            </li>
+            <li><a class="nav1-link" href="/gmatsheet.html">GMAT培训</a></li>
+            <li><a class="nav1-link" href="/toefl/assistance.html">托福培训</a></li>
+            <li><a class="nav1-link" href="/ieltssheet.html">雅思培训</a></li>
+            <li><a class="nav1-link" href="/public-class.html">申友讲堂</a></li>
+            <li><a class="nav1-link" href="http://bbs.gmatonline.cn/forum.php">申友社区</a></li>
+            <li><a class="nav1-link" href="/teachers.html">名师云集</a></li>
+            <li><a class="nav1-link" href="/case.html">成功案例</a></li>
+            <li><a class="nav1-link" href="/schools.html">院校库</a></li>
         </ul>
-
     </div>
-</div>
+</nav>

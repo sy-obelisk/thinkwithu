@@ -2,7 +2,6 @@
     <link rel="stylesheet" href="/cn/css/studyAbroad.css"/>
 
     <script type="text/javascript" src="/cn/js/studyAbroad.js"></script>
-
 <div class="abroadNav">
     <div class="abNavHd hd">
         <p class="bac02"></p>

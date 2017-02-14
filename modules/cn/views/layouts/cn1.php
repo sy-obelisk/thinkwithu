@@ -152,6 +152,7 @@
 <?php
 //}
 //?>
+
 <!-----------------------------头部end------------------------------>
 <?php //use app\commands\front\BottomWidget;?>
 <?php //BottomWidget::begin();?>

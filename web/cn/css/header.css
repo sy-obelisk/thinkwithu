@@ -81,14 +81,14 @@
 .FocusPicture img{
     width: 100%;
 }
-.FocusPicture02{
+/*.FocusPicture02{
     width: 1001px;
     margin: 0 auto;
     overflow: hidden;
 }
 .FocusPicture02 img{
     width: 100%;
-}
+}*/
 .headSearch{
     width: 1001px;
     margin: 0 auto;
@@ -163,7 +163,8 @@
     color: #292929;
     vertical-align: middle;
 }
-.waiHnav{
+/*导航栏*/
+/*.waiHnav{
     width: 100%;
     height: 30px;
     position: relative;
@@ -202,7 +203,6 @@
     border-right: 1px #a15aaa solid;
 }
 .headNav>ul>li:not(.backg){
-    /*padding: 0 20px;*/
     position: relative;
 }
 .headNav>ul>li:not(.backg):hover{
@@ -318,7 +318,6 @@
 }
 .amerRight{
     width: 55%;
-    /*height: 100%;*/
     float: left;
     padding-left: 40px;
     box-sizing: border-box;
@@ -340,4 +339,4 @@
 }
 .amerRight>ul>li.rightBorder{
     border-right: 1px white solid;
-}
+}*/

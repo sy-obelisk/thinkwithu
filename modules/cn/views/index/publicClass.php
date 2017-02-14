@@ -22,9 +22,9 @@
 <?php use app\commands\front\NavWidget;?>
 <?php NavWidget::begin();?>
 <?php NavWidget::end();?>
-<div class="FocusPicture02">
+<!--<div class="FocusPicture02">
     <a href="javascript:void(0);"><img src="/cn/images/index_foucusI02.jpg" alt="图片"/></a>
-</div>
+</div>-->
 <!-----------------------------头部end------------------------------>
 <?php use app\commands\front\BottomWidget;?>
 <?php BottomWidget::begin();?>

@@ -50,7 +50,24 @@ $(function(){
         $(this).parent().parent().siblings("span").html($(this).html());
         $(this).parent().parent().slideUp();
     });
-//    日历调用函数
+
+	//导航栏hover效果
+    $(".nav-list a.nav1-link").hover(function () {
+        $(this).addClass("on");
+        $(this).parent().siblings("li").find("a.nav1-link").removeClass("on");
+    }, function () {
+        $("a.on-hover").addClass("on");
+        $(this).not("on-hover").removeClass("on");
+    });
+  
+    //导航栏下拉菜单hover效果
+    $(".nav-list li:nth-child(2) .nav2-wrap").hover(function(){
+    	$(this).siblings("a").addClass("on");
+    	 $(this).parent().siblings("li").find("a.nav1-link").removeClass("on");
+    },function(){
+    	$(this).siblings("a").removeClass("on");
+    	 $("a.on-hover").addClass("on");
+    });
 });
 //    悬浮窗随滚动条滚动
 //$(document).ready(function () {
@@ -140,3 +157,19 @@ function closeRefer(){
 function referTop(){
     $("html,body").animate({scrollTop:0},800);
 }
+
+//导航栏固定在顶部
+$(function(){
+    $(window).scroll(function(){
+    	var top= $(window).scrollTop();
+    	if (top>45){
+       	 	$(".nav-wrap").addClass("nav-flexd");
+        	$(".nav-list li a").addClass("a-fiexd");
+        	$(".logo").attr("src","/cn/Hirsi/images/sy-logo2.png")
+    	}else {
+        	$(".nav-wrap").removeClass("nav-flexd");
+        	$(".nav-list li a").removeClass("a-fiexd");
+        	$(".logo").attr("src","/cn/Hirsi/images/sy-logo.png")
+    	}
+    })
+})

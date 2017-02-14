@@ -137,119 +137,9 @@
     </div>
 </header>
 <!--nav 导航栏-->
-<nav class="nav-wrap">
-    <div class="w10" style="overflow: inherit;">
-        <a href="/"><img class="logo" src="/cn/Hirsi/images/sy-logo.png" alt=""></a>
-        <ul class="inb nav-list clearfix">
-            <li><a class="on on-hover nav1-link" href="/">首页</a></li>
-            <li><a class="nav1-link" href="/study-aboard/assistance.html">留学服务</a>
-                <div class="nav2-wrap">
-                    <div class="nav2-list">
-                        <div class="inb nav2-left-wrap">
-                            <div class="nav2-left">
-                                <div class="inb nav2-name">我要申请</div>
-                                <div class="inb nav2-mid1">
-                                    <a href="/Undergraduate.html">本科</a>
-                                    <a href="/Postgraduate.html">硕士</a>
-                                    <a href="/Doctor.html">博士</a>
-                                    <a href="/picture-details/127/index,111.html">MBA</a>
-                                    <br>
-                                    <a href="/USA.html">美国</a>
-                                    <a href="/UK.html">英国</a>
-                                    <a href="/HK.html">香港</a>
-                                    <a href="/AUS.html">澳洲</a>
-                                    <a href="/COUNTRY.html">其他</a>
-                                </div>
-                            </div>
-                            <div class="nav2-left">
-                                <div class="inb nav2-name">推荐方案</div>
-                                <div class="inb nav2-mid">
-                                    <a href="/picture-details/100/index,113.html">A类-卓越菁英</a>
-                                    <a href="/picture-details/104/index,113.html">C类-名校直通车</a>
-                                    <br>
-                                    <a href="/picture-details/102/index,113.html">B类-梦想起航</a>
-                                    <a href="/picture-details/106/index,113.html">D类-助力传奇</a>
-                                </div>
-                            </div>
-                            <div class="nav2-left">
-                                <div class="inb nav2-name">推荐服务</div>
-                                <div class="inb nav2-mid">
-                                    <a href="/picture-details/111/index,110.html">文书定制</a>
-                                    <a href="/picture-details/116/index,110.html">签证服务</a>
-                                    <a href="/picture-details/115/index,110.html">面试辅导</a>
-                                    <br>
-                                    <a href="/practices.html">实习</a>
-                                    <a href="/picture-details/118/index,110.html">Summer school</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="inb nav2-right">
-                            <ul class="">
-                                <li><a href="/schools.html">院校库</a></li>
-                                <li><a href="/schools.html">院校排名</a></li>
-                                <li><a href="/teachers.html">顾问团队</a></li>
-                                <br>
-                                <li><a href="/case.html">成功案例</a></li>
-                                <li><a href="/public-class/abroad.html">留学公开课</a></li>
-                                <li><a href="/question.html">留学问题</a></li>
-                                <br>
-                                <li><a href="/evaluation.html">概率评估</a></li>
-                                <li><a href="/evaluation.html">留学评估</a></li>
-                                <li><a href="/teachers.html">Mentor</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-            </li>
-
-            <li>
-                <a class="nav1-link" href="/gmatsheet.html">GMAT培训</a>
-                <div class="nav2-wrap">
-                    <div class="nav2-list">
-                        <div class="inb nav2-left">
-                            <div class="inb nav2-name">推荐课程</div>
-                            <div class="inb nav2-mid">
-                                <ul class="clearfix">
-                                    <li><a href="/picture-details/161/index,109,162,115.html">周末班</a></li>
-                                    <li><a href="/picture-details/160/index,161,115.html">PRE</a></li>
-                                    <li><a href="/picture-details/163/index,109,162,115.html">VIR 一对一课程</a></li>
-                                    <br>
-                                    <li><a href="/picture-details/167/index,109,163,115.html">全日制课程</a></li>
-                                    <li><a href="/picture-details/167/index,109,163,115.html">高分增值课程</a></li>
-                                    <li><a href="/picture-details/169/index,109,163,115.html">机经冲刺课程</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="inb nav2-right">
-                            <ul class="clearfix">
-                                <li><a href="/list/115,118.html">考试动态</a></li>
-                                <li><a href="/problem.html#toggle">机经下载</a></li>
-                                <li><a href="/problem.html">每日一题</a></li>
-                                <br>
-                                <li><a href="/list/115,165.html">提分技巧</a></li>
-                                <li><a href="http://www.gmatonline.cn/practise/index.html">在线做题</a></li>
-                                <li><a href="/public-class.html">公共课</a></li>
-                                <br>
-                                <li><a href="/list/115,125.html">研究报告</a></li>
-                                <li><a href="http://www.gmatonline.cn/test/index.html">智能模考</a></li>
-                                <li><a href="/teachers.html">名师团队</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li><a class="nav1-link" href="/toefl/assistance.html">托福培训</a></li>
-            <li><a class="nav1-link" href="/ieltssheet.html">雅思培训</a></li>
-            <li><a class="nav1-link" href="/public-class.html">申友讲堂</a></li>
-            <li><a class="nav1-link" href="http://bbs.gmatonline.cn/forum.php">申友社区</a></li>
-            <li><a class="nav1-link" href="/teachers.html">名师云集</a></li>
-            <li><a class="nav1-link" href="/case.html">成功案例</a></li>
-            <li><a class="nav1-link" href="/schools.html">院校库</a></li>
-        </ul>
-    </div>
-</nav>
+<?php use app\commands\front\BannerWidget;?>
+<?php BannerWidget::begin();?>
+<?php BannerWidget::end();?>
 <!--Banner-->
 <section class="banner-wrap">
     <div class="slideBox">
@@ -1115,14 +1005,7 @@
 <!--    <div class="copyRight-text"><span>Copyright © 2015 All Right Reserved 申友教育 版权所有 京ICP备16000003号</span></div>-->
 <!--</section>-->
 <script>
-    $(".nav-list a.nav1-link").hover(function () {
-        $(this).addClass("on");
-        $(this).parent().siblings("li").find("a.nav1-link").removeClass("on");
-    }, function () {
-        $("a.on-hover").addClass("on");
-        $(this).not("on-hover").removeClass("on")
 
-    });
     //    banner 轮播
     jQuery(".slideBox").slide({
         mainCell: ".banner",
@@ -1272,29 +1155,10 @@ else{
     },3000);
 
     $('.ic-close').click(function(){
-
-
-
         $('.m-tc').fadeOut(300);
     });
     $(".ic-wrap").css({
         "margin-top": mh + "px"
     });
-    $(function(){
-        $(window).scroll(function(){
-            var top= $(window).scrollTop();
-            if (top>45){
-                $(".nav-wrap").addClass("nav-flexd");
-                $(".nav-list li a").addClass("a-fiexd");
-                $(".logo").attr("src","/cn/Hirsi/images/sy-logo2.png")
-            }else {
-                $(".nav-wrap").removeClass("nav-flexd");
-                $(".nav-list li a").removeClass("a-fiexd");
-                $(".logo").attr("src","/cn/Hirsi/images/sy-logo.png")
-            }
-
-        })
-
-    })
 </script>
 </html>

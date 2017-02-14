@@ -48,10 +48,26 @@
 <?php NavWidget::begin();?>
 <?php NavWidget::end();?>
 <!-----------------------------头部------------------------------>
+<header class="sy-header">
+    <div class="w10 clearfix">
+        <img src="/cn/Hirsi/images/sy-text.png" style="margin-right: 55px" alt="高分成就梦想名校改变人生">
+        <img src="/cn/Hirsi/images/sy-tel.png" alt="400-600-1123">
+        <a class="refer-btn"
+           href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="
+           target="_blank">在线咨询</a>
+        <!--登录&注册-->
+        <div class="login-wrap fr" style="display: none;">
+            <span class="on">登录</span>
+            <span>注册</span>
+        </div>
+        <!--搜索-->
+        <div class="search-wrap fr">
+            <input class="search" type="search" placeholder="请输入关键词">
+            <img src="/cn/Hirsi/images/search-icon.png" style="margin-left: -1px;cursor: pointer;" alt="搜索">
+        </div>
+    </div>
+</header>
 <!-----------------------------头部end------------------------------>
-<?php use app\commands\front\BottomWidget;?>
-<?php BottomWidget::begin();?>
-<?php BottomWidget::end();?>
 <?php use app\commands\front\BannerWidget;?>
 <?php BannerWidget::begin();?>
 <?php BannerWidget::end();?>
