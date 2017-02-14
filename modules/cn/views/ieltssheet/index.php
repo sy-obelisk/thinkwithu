@@ -95,7 +95,7 @@
 
 <div class="header" style="margin-top: -10px">
     <div class="h-wrap relative">
-        <img src="/cn/ielts/images/h3.png" alt="">
+        <img src="/cn/ielts/images/h3-ietl.png" alt="">
         <div class="h1-select">
             <a target="_blank" href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">雅思冲6计划</a>
             <a target="_blank" href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">雅思冲6.5计划</a>
