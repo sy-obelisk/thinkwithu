@@ -779,10 +779,10 @@ footer .footer-list:last-child {
 }
 
 /*信息输入*/
-.info-wrap {
+/*.info-wrap {
     padding: 60px 0 40px;
     background: #ffffff;
-}
+}*/
 
 .info-int-wrap {
     height: 255px;
@@ -793,14 +793,14 @@ footer .footer-list:last-child {
     background-size: cover;
 }
 
-.info-tit {
+/*.info-tit {
     padding: 30px 0 0;
     font-size: 30px;
 }
 
 .info-int {
     margin: 30px auto;
-}
+}*/
 
 .info-int label {
     margin-right: 15px;

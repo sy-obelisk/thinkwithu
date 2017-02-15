@@ -1,11 +1,9 @@
-<form method="post" action="/evaluation.html" onsubmit="return check()">
+<!--<form method="post" action="/evaluation.html" onsubmit="return check()">
 <img src="/cn/images/public_leftBtn.png" alt="缩小后显示图片" class="shrink" onclick="leftSuspen(this)"/>
 <div class="leftFloatW">
     <i class="fa">×</i>
     <img src="/cn/images/left_xfcTittle.png" alt="左边悬浮窗图标" style="vertical-align: bottom"/>
     <div class="abroadPG">
-<!--        <h3>留学评估</h3>-->
-<!--        <span>Assesment</span>-->
             <?php
             foreach($extendData as $k => $v) {
                 if ($k == 4) {
@@ -16,9 +14,9 @@
                 <div class="default defa01">
                     <span class="spanValue"><span style="color: red;">*</span><?php echo $v['name']?></span>
                     <input name="extendValue[]" class="value" type="hidden" value="" />
-                    <div class="clickBac clickBac01" onclick="selectInfo(this)"></div>
+                    <div class="clickBac clickBac01" onclick="selectInfo(this)"></div>-->
                     <!--文字-->
-                    <div class="secFont secFont01">
+                    <!--<div class="secFont secFont01">
                         <ul>
                             <?php foreach($typeValue as $val) { ?>
                                 <li><?php echo $val?></li>
@@ -170,4 +168,67 @@
         var collagen = Math.ceil(all/3)
         $('#collagens').val(collagen);
     }
-</script>
+</script>-->
+
+<div class="w10 info-wrap">
+        <div class="text-wrap">
+            <h1 class="info-tit">我的留学方案</h1>
+            <div class="user-info clearfix">
+                <div class="fl">
+                    <p class="info-tit">姓名：</p>
+                    <input class="info-int" id="username" type="text" placeholder="">
+                </div>
+                <div class="fr" style="margin-right: 5px;">
+                    <p class="info-tit">联系电话：</p>
+                    <input class="info-int" id="tel" type="text" placeholder="">
+                </div>
+            </div>
+            <p class="info-tit">我想去的国家：</p>
+            <select class="info-select" name="country" id="country">
+                <option value="美国">美国</option>
+                <option value="加拿大">加拿大</option>
+                <option value="英国">英国</option>
+                <option value="澳洲">澳洲</option>
+                <option value="香港">香港</option>
+                <option value="其他">其他</option>
+            </select>
+            <p class="info-tit">我完成的阶段：</p>
+            <select class="info-select" name="stage" id="stage">
+                <option value="本科">本科</option>
+                <option value="硕士">硕士</option>
+                <option value="博士">博士</option>
+            </select>
+            <p class="info-tit">我计划出国的时间：</p>
+            <select class="info-select" name="data" id="data">
+                <option value="2018年入学">2018年入学</option>
+                <option value="2017年春季入学">2017年春季入学</option>
+                <option value="2017年秋季入学">2017年秋季入学</option>
+                <option value="2018年春季入学">2018年春季入学</option>
+            </select>
+            <h1 onclick="lxfa()" class="info-btn tm">获取方案</h1>
+        </div>
+
+    </div>
+    <script type="text/javascript">
+        function lxfa() {
+            var name = $("#username").val();
+            var phone = $("#tel").val();
+            var country = $("#country").val();
+            var stage = $("#stage").val();
+            var data = $("#data").val();
+            if (name==''||phone==''){
+                alert("请输入姓名/电话");
+            }else {
+                $.post('/cn/api/smart', {
+                    name: name,
+                    country: country,
+                    phone: phone,
+                    stage: stage,
+                    data: data
+                }, function (re) {
+                    alert(re.message);
+                }, "json")
+            }
+
+        }
+    </script>
