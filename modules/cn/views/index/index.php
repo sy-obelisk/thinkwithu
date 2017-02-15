@@ -157,7 +157,7 @@
             ?>
         </ul>
     </div>
-    <div class="w10 info-wrap">
+    <!--<div class="w10 info-wrap">
         <div class="text-wrap">
             <h1 class="info-tit">我的留学方案</h1>
             <div class="user-info clearfix">
@@ -191,9 +191,8 @@
                 <option value="2017年春季入学">2017年春季入学</option>
                 <option value="2017年秋季入学">2017年秋季入学</option>
                 <option value="2018年春季入学">2018年春季入学</option>
-
             </select>
-            <h1 onclick="lxfa()" class="info-btn tm">获取我定制专属方案</h1>
+            <h1 onclick="lxfa()" class="info-btn tm">获取方案</h1>
         </div>
 
     </div>
@@ -219,7 +218,11 @@
             }
 
         }
-    </script>
+    </script>-->
+    <!---------------------------左边悬浮窗---------------------------------->
+    <?php use app\commands\front\LeftSuspensionWidget;?>
+	<?php LeftSuspensionWidget::begin();?>
+	<?php LeftSuspensionWidget::end();?>
 </section>
 <!--推荐-->
 <section>

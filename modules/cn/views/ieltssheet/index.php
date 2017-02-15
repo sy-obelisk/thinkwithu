@@ -72,6 +72,10 @@
 <?php BannerWidget::begin();?>
 <?php BannerWidget::end();?>
 <div style="clear: both;margin-bottom: 10px;"></div>
+<!---------------------------左边悬浮窗---------------------------------->
+    <?php use app\commands\front\LeftSuspensionWidget;?>
+	<?php LeftSuspensionWidget::begin();?>
+	<?php LeftSuspensionWidget::end();?>
 
 <!--侧边栏-->
 <!--<div class="sidebar-wrap tm">-->

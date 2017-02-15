@@ -198,90 +198,73 @@ input.search {
 }
 
 .info-wrap {
-    position: absolute;
-    background: transparent;
-    left: 50%;
-    width: 300px;
-    margin-left: -500px;
-    top: 0;
-    z-index: 10;
+   position: fixed;
+   width: 10%;
+   top: 50%;
+   margin-top: -150px;
+   z-index: 10;
 }
-
 .text-wrap {
-    margin-top: 14px;
-    padding: 12px 27px;
-    background: rgba(51, 80, 159, 0.45);
-    border-radius: 15px;
-    width: 245px;
+	padding: 5px 10px;
+	background: rgba(51, 80, 159, 0.6);
+	border-radius: 10px;
 }
-
 .info-tit {
-    font-weight: normal;
-    font-size: 14px;
-    padding-left: 5px;
-    color: #ffffff;
-    padding-bottom: 10px;
+	color: white;
+	font-size: 12px;
+	margin: 5px 0 3px 0;
 }
-
 h1.info-tit {
-    font-weight: bold;
-    font-size: 24px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #ffffff;
+	font-size: 20px;
+	text-align: center;
 }
-
 .info-select {
-    border: none;
-    outline: none;
-    padding: 0 10px;
-    height: 28px;
-    width: 235px;
-    margin-left: 5px;
-    line-height: 28px;
-    font-size: 12px;
-    color: #999999;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    font-family: 微软雅黑, \u5fae\u8f6f\u96c5\u9ed1, "Microsoft YaHei UI";
-    background: url("../images/tri-1.png") no-repeat 205px center, #ffffff;
-    -moz-appearance: none;
+ 	width: 92%;
+ 	font-size: 12px;
+ 	border: none;
+ 	outline: none;
+ 	padding: 0 10px;
+ 	background: url("../images/tri-1.png") no-repeat 92% center, #ffffff;
+	background-size: 9px 5px;
+	-moz-appearance: none;
+	border-radius: 5px;
+	font-family: 微软雅黑, u5faeu8f6fu96c5u9ed1, "Microsoft YaHei UI";
 }
-
 .info-int {
-    border: none;
-    outline: none;
-    padding: 0 10px;
-    height: 30px;
-    margin-left: 5px;
-    line-height: 30px;
-    font-size: 14px;
-    color: #999999;
-    border-radius: 5px;
-    margin-bottom: 10px;
+	border: none;
+	outline: none;
+	width: 82%;
+	border-radius: 5px;
+	padding: 0 10px;
 }
-
-#username {
-    width: 60px;
-}
-
-#tel {
-    width: 90px;
-}
-
 .info-btn {
-    cursor: pointer;
-    font-size: 20px;
-    color: #ffffff;
-    line-height: 40px;
-    margin-top: 5px;
-    border: 1px solid #ffffff;
-    font-weight: bold;
-    background: #35CD69;
-    border-radius: 30px;
+	width: 91%;
+	font-size: 15px;
+	text-align: center;
+	cursor: pointer;
+	margin: 10px 0 5px 0;
+	color: #fff;
+	background-color: #35CD69;
+	border: 1px solid #fff;
+	border-radius: 20px;
+	line-height: 25px;
 }
-
 .info-btn:hover {
     background: #29a351;
+}
+@media screen and (min-width: 1600px){
+	.info-tit{
+		font-size: 14px;
+	}
+	.info-select,.info-int{
+		height: 20px;
+		line-height: 20px;
+	}	
+	.info-btn{
+		font-size: 18px;
+		height: 30px;
+		line-height: 30px;
+	}
 }
 
 /*******************推荐**********************/
