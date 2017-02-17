@@ -183,8 +183,6 @@ input.search {
 
 .slideBox .hd li {
     opacity: 0.5;
-
-
     width: 70px;
     height: 4px;
     float: left;
@@ -201,7 +199,7 @@ input.search {
    position: fixed;
    width: 10%;
    top: 50%;
-   margin-top: -150px;
+   margin-top: -250px;
    z-index: 10;
 }
 .text-wrap {
@@ -233,7 +231,7 @@ h1.info-tit {
 .info-int {
 	border: none;
 	outline: none;
-	width: 82%;
+	width: 81%;
 	border-radius: 5px;
 	padding: 0 10px;
 }
@@ -253,6 +251,7 @@ h1.info-tit {
     background: #29a351;
 }
 @media screen and (min-width: 1600px){
+	
 	.info-tit{
 		font-size: 14px;
 	}
@@ -264,6 +263,11 @@ h1.info-tit {
 		font-size: 18px;
 		height: 30px;
 		line-height: 30px;
+	}
+}
+@media only screen and (max-width: 1600px) {
+	.info-wrap {
+	   width: 155px;
 	}
 }
 

@@ -174,11 +174,11 @@
         <div class="text-wrap">
             <h1 class="info-tit">我的留学方案</h1>
             <div class="user-info clearfix">
-                <div class="fl">
+                <div>
                     <p class="info-tit">姓名：</p>
                     <input class="info-int" id="username" type="text" placeholder="">
                 </div>
-                <div class="fr" style="margin-right: 5px;">
+                <div>
                     <p class="info-tit">联系电话：</p>
                     <input class="info-int" id="tel" type="text" placeholder="">
                 </div>
