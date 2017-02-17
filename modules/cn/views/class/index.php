@@ -40,9 +40,9 @@
     </div>
 </header>
 <!--公开课头部-->
-<?php use app\commands\front\classHeadWidget;?>
-<?php classHeadWidget::begin(); ?>
-<?php classHeadWidget::end(); ?>
+<?php use app\commands\front\ClassHeadWidget;?>
+<?php ClassHeadWidget::begin(); ?>
+<?php ClassHeadWidget::end(); ?>
 <!--轮播-->
 <div class="classBanner">
     <div class="classB-hd hd">
