@@ -748,7 +748,7 @@
         <div class="slideBox-1 relative">
             <div class="banner2 ">
                 <?php
-                $data = \app\modules\cn\models\Content::getContent(['fields' => 'abstract，smallPhoto,job,description', 'category' => "140", 'pageSize' => 100]);
+                $data = \app\modules\cn\models\Content::getContent(['type' =>1,'fields' => 'abstract，smallPhoto,job,description', 'category' => "139,140", 'pageSize' => 100]);
                 $count = count($data) / 4;
                 for ($i = 0; $i < $count; $i++) {
                     ?>
