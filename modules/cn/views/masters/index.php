@@ -1,11 +1,10 @@
 
-    <link rel="stylesheet" href="/cn/css/MastersGathered.css"/>
-
-
+<link rel="stylesheet" href="/cn/css/MastersGathered.css"/>
 
 <div class="gatheredImg">
     <img src="/cn/images/masterGathered_bigImg.jpg" alt="大图"/>
 </div>
+<!--名师云集-->
 <div class="masterGather" id="teacher">
     <div class="gatherLeft">
         <div class="galeftHd hd">
@@ -307,13 +306,14 @@
 
     <div style="clear: both"></div>
 </div>
+<!--产品专区-->
 <div class="ProductMenu">
     <div class="productHd hd">
         <h2>
             产品专区
             <span>PRODUCT AREA</span>
         </h2>
-        <b>我们只申请名校&nbsp;&nbsp;&nbsp;&nbsp;培养高分学员  <img src="/cn/images/studentsCase_titlePerson.png" alt="标题人"/></b>
+        <b><img src="/cn/images/studentsCase_titlePerson.png" alt="标题人"/></b>
         <ul>
             <li><a href="/cn/study/abroad-products"><span>留学产品</span></a></li>
             <li><span>培训产品</span></li>

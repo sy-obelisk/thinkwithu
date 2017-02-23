@@ -1428,107 +1428,65 @@ a:hover{
 .abroadProduct{
     width: 100%;
     margin-top: 33px;
-    /*font-size: 18px;*/
 }
 .product01,.product02,.product03,.product04,.product05,.product06,.product07:hover span{
     font-weight: bold;
 }
+.product01,.product02,.product03,.product04{
+	width: 170px;
+	height: 87px;
+	margin-right: 10px;
+	padding: 25px 0 0 17px;
+	position: relative;
+	float: left;
+	 box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
 .product01{
-    width: 181px;
-    height: 87px;
     background:url("../images/masterGathered_product01.png") no-repeat center;
     background-size: 100% 100%;
-    float: left;
-    padding: 46px 0 0 20px;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    position: relative;
 }
 .product02{
-    width: 148px;
-    height: 87px;
     background:url("../images/masterGathered_product02.png") no-repeat center;
     background-size: 100% 100%;
-    float: left;
-    padding: 5px 0 0 5px;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    position: relative;
-    margin-left: 12px;
 }
 .product03{
-    width: 136px;
-    height: 87px;
     background:url("../images/masterGathered_product03.png") no-repeat center;
     background-size: 100% 100%;
-    float: left;
-    /*padding: 40px 0 0 12px;*/
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    position: relative;
-    margin-left:12px;
 }
 .product04{
-    width: 214px;
-    height: 87px;
     background:url("../images/masterGathered_product04.png") no-repeat center;
     background-size: 100% 100%;
-    float: left;
-    padding: 13px 0 0 17px;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    position: relative;
-    margin-left: 12px;
+    margin-right: 0;
 }
-.product05{
-    width: 264px;
-    height: 126px;
-    background:url("../images/masterGathered_product05.png") no-repeat center;
-    background-size: 100% 100%;
-    float: left;
-    padding: 80px 5px 0 0;
-    box-sizing: border-box;
+.product05,.product06,.product07{
+	width: 230px;
+	margin-right: 12px;
+	height: 126px;
+	padding: 22px 0 0 0;
+	box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     position: relative;
     margin-top: 11px;
     color: #000000;
-    text-align: right;
+    text-align: center;
+     float: left;
+     font-size: 20px;
+}
+.product05{
+    background:url("../images/masterGathered_product05.png") no-repeat center;
+    background-size: 100% 100%;
 }
 .product06{
-    width: 223px;
-    height: 126px;
     background:url("../images/masterGathered_product06.png") no-repeat center;
     background-size: 100% 100%;
-    float: left;
-    padding: 80px 0 0 0;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    position: relative;
-    margin-top: 11px;
-    text-align: center;
-    margin-left: 20px;
 }
 .product07{
-    width: 188px;
-    height: 126px;
     background:url("../images/masterGathered_product07.png") no-repeat center;
     background-size: 100% 100%;
-    float: left;
-    text-align: center;
-    position: relative;
-    margin-top: 11px;
-    text-align: center;
-    margin-left: 20px;
-    padding: 7px 0 0 0;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+    margin-right: 0;
 }
 .product01,.product02,.product03,.product04,.product05,.product06,.product07:hover{
     cursor: pointer;
@@ -1539,7 +1497,7 @@ a:hover{
     position: absolute;
     left: 0;
     top: 0;
-    background: rgba(220, 220, 220, 0.43);
+    background: rgba(220, 220, 220, 0.3);
 }
 
 /*首页名师寄语和申友教材公用样式*/
