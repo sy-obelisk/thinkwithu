@@ -1,72 +1,130 @@
 
 .toefl-banner{
     width: 100%;
-    height: 428px;
     margin: 0 auto;
-    background: url("../images/toefl_topBanner.jpg") no-repeat;
-    background-size: 100% 100%;
+    position: relative;
 }
-.toefl-banner div{
-    width: 850px;
-    margin: 0 auto;
-    padding-top: 325px;
-    text-align: right;
+.toefl-banner a{
+	position: absolute;
+   left: 50%;
+   margin-left: -170px;
+   bottom: 10.09%;
+   padding: 10px 79px;
+   font-size: 24px;
+   color: #fff;
+   background-color: rgba(51,51,47,.6);
+   box-shadow:0 0 7px rgb(150,115,78) inset;
+  border: 3px solid rgb(150,115,78);
+  border-radius: 10px;
 }
-.toefl-banner div a{
-    padding: 5px 29px;
-    background: #ffff02;
-    font-size: 20px;
+.toefl-banner a:hover{
+	background-color: rgba(51,51,47,.9)
 }
+@media screen and (max-width: 1600px) {
+	.toefl-banner a{
+		padding: 7px 59px;
+		margin-left: -134px;
+	}
+}
+/*申友托福精品课程*/
 .excellent{
-    width: 994px;
-    padding: 32px 0 27px 0;
+    width: 1000px;
+    padding: 46px 0 43px 0;
     margin: 0 auto;
-}
-.titleBtn{
-    float: right;
-    margin-right: 200px;
-    margin-top: -50px;
-    padding: 10px 20px 5px 20px;
-    background: #ffff02;
-    font-size: 18px;
 }
 .excellent h4{
-    color: #205698;
+   	color: #000;
     font-size: 35px;
     text-align: center;
 }
 .excellent p{
     text-align: center;
-    font-size: 16px;
+    font-size: 24px;
+    margin-top: 19px;
+    color: #5b5b5b;
 }
 .excel-in{
     width: 100%;
-    margin-top: 18px;
+   margin-top: 60px;
 }
 .excel-in ul li{
     float: left;
-    width: 172px;
-    margin-right: 33px;
+   	width: 190px;
+    margin-right: 10px;
+    border: 1px solid rgb(224,224,224);
 }
 .excel-in ul li:last-child{
     margin-right: 0;
 }
-.excel-in ul li.on .excel-top{
-    background: #03519c;
-
+.excel-in ul .excel-top1 .eT-circle{
+	background-color: #F5C815;
+}
+.excel-in ul .excel-top2 .eT-circle{
+	background-color: #99CC67;
+}
+.excel-in ul .excel-top3 .eT-circle{
+	background-color: #FF6666;
+}
+.excel-in ul .excel-top4 .eT-circle{
+	background-color: #66CDCC;
+}
+.excel-in ul .excel-top5 .eT-circle{
+	background-color: #54BCF1;
+}
+.excel-in ul li.on .excel-top1{
+    background-color: #F5C815;
+}
+.excel-in ul li.on .excel-top2{
+   background-color: #99CC67;
+}
+.excel-in ul li.on .excel-top3{
+   background-color: #FF6666;
+}
+.excel-in ul li.on .excel-top4{
+    background-color: #66CDCC;
+}
+.excel-in ul li.on .excel-top5{
+    background-color: #54BCF1;
+}
+.excel-in ul li.on .eT-circle{
+	background-color: #fff;
 }
 .excel-in ul li.on .excel-top h5{
     color: white;
 }
-.excel-in ul li.on .excel-bottom>a{
-    background: #fdfc45;
-    border: 1px #fdfc45 solid;
-    color: #000000;
+.excel-in ul li.on .excel-top .inFonts p{
+    color: white;
+}
+.excel-in ul .excel-top .excel-det{
+	font-size: 12px;
+	 border: 1px solid #fff;
+	 padding: 3px 8px;
+	 border-radius: 10px;
+	 color: #fff;
+}
+.excel-in ul .excel-top1 .excel-det{
+	 background-color: #F5C815;
+}
+.excel-in ul .excel-top2 .excel-det{
+	 background-color: #99CC67;
+}
+.excel-in ul .excel-top3 .excel-det{
+	 background-color: #FF6666;
+}
+.excel-in ul .excel-top4 .excel-det{
+	  background-color: #66CDCC;
+}
+.excel-in ul .excel-top5 .excel-det{
+	 background-color: #54BCF1;
+}
+.excel-in ul li.on .excel-top .excel-det{
+	background-color: #fff;
+	color: #000;
 }
 .excel-top{
     width: 100%;
-    height: 172px;
-    background: #c9f6fc;
+   	height: 330px;
+   	background-color: #fff;
     padding-top: 25px;
     text-align: center;
     box-sizing: border-box;
@@ -74,12 +132,12 @@
     -webkit-box-sizing: border-box;
 }
 .eT-circle{
-    width: 78px;
-    height: 78px;
+   width: 84px;
+   height: 84px;
     border-radius: 50%;
-    background: white;
     margin: 0 auto;
     text-align: center;
+    line-height: 84px;
 }
 .eT-circle a{
     width: 100%;
@@ -96,42 +154,17 @@
 }
 .excel-top h5{
     font-size: 20px;
-    color: #4e4e4e;
-    margin-top: 13px;
+   color: #000;
+   margin-top: 40px;
 }
 .excel-in ul:after{
     display:block;clear:both;content:"";visibility:hidden;height:0;
-}
-.excel-bottom{
-    width: 100%;
-    height: 109px;
-    background: #ebebeb;
-    position: relative;
-    text-align: center;
-}
-.excel-bottom>a{
-   border: 1px #3a3a3a solid;
-    color: #3a3a3a;
-    padding: 0 5px;
-    border-radius: 3px;
-}
-.excel-bottom .sj{
-    width: 0;
-    height: 0;
-    display: block;
-    border-left: 15px transparent solid;
-    border-right: 15px transparent solid;
-    border-bottom: 15px #ebebeb solid;
-    position: absolute;
-    top: -15px;
-    left: 50%;
-    margin-left: -15px;
 }
 .inFonts{
     width: 100%;
     height: 65px;
     display: table;
-    margin-bottom: 8px;
+    margin: 21px 0 8px 0;
 }
 .inFonts p{
     display: table-cell;
@@ -149,45 +182,36 @@
 }
 .moreUpload a{
     display: block;
-    text-decoration: underline;
     font-size: 25px;
-    color: #03519c;
+    color: #000;
 }
+.moreUpload a:hover{
+	color: #663399;
+}
+/*超值服务系统*/
 .serviceSystem{
     width: 100%;
-    padding: 52px 0 67px 0;
-    background: #ebebeb;
+    padding: 62px 0 44px 0;
+   background-color: #FF8259;
+   height: 622px;
 }
 .serviceSystem h2{
     font-size: 35px;
     font-weight: normal;
     text-align: center;
+    color: #fff;
 }
 .serviceUl{
-    width: 989px;
+    width: 1000px;
     margin: 0 auto;
-    margin-top: 36px;
-}
-.topBg{
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.botBg{
-    position: absolute;
-    bottom: -6px;
-    left: 2px;
+    margin-top: 82px;
 }
 .serviceUl>ul>li{
-    width: 185px;
+    width: 186px;
     height: 289px;
     position: relative;
     float: left;
     margin-right: 16px;
-    background: white;
-}
-.serviceUl>ul>li:hover{
-    background:#dcdcdc;
 }
 .serviceUl>ul:after{
     display:block;clear:both;content:"";visibility:hidden;height:0;
@@ -197,64 +221,59 @@
 }
 .serviceTop{
     width: 100%;
-    height: 63px;
-    line-height: 63px;
-    background: #23bdd5;
     text-align: center;
-    color: white;
-    font-size: 25px;
 }
 .serviceTop img{
     position: relative;
     top: 3px;
 }
-.oneSort{
-    width: 100%;
+.serviceSort{
+	width: 100%;
     text-align: center;
     margin-top: 14px;
     font-size: 12px;
+    background-color: rgba(255,255,255,.3);
+    height: 297px;
+}
+.serviceSort:hover{
+	background-color: rgba(255,255,255,.5)
+}
+.serviceSort ul li{
+   margin-bottom: 15px;
+   color: #fff;
 }
 .oneSort ul li{
-    margin-bottom: 25px;
-}
-.twoSort{
-    width: 100%;
-    text-align: center;
-    margin-top: 14px;
-    font-size: 12px;
-}
-.twoSort ul li{
-    margin-bottom: 17px;
-}
-.threeSort{
-    width: 100%;
-    text-align: center;
-    margin-top: 14px;
-    font-size: 12px;
+	margin-bottom: 20px;
 }
 .threeSort ul li{
-    margin-bottom: 8px;
+	margin-bottom: 8px;
 }
-.fourSort{
-    width: 100%;
-    text-align: center;
-    margin-top: 14px;
-    font-size: 12px;
+.serviceSort .serviceTitle{
+	font-size: 22px;
+	width: 95px;
+	padding: 26px 0 17px 0;
+	text-align: center;
+	margin: 0 auto;	
+}
+.serviceSort .serviceTitle p{
+	color: #fff;
+}
+.serviceSort .serviceTitle i{
+	display:block;
+	border-bottom: 2px solid #fff;
+	margin-top: 8px;
 }
 .fourSort>a{
     width: 137px;
     height: 32px;
     line-height: 32px;
     display: block;
-    background: #fff002;
+   background-color: #fff;
     border-radius: 20px;
     text-align: center;
     margin: 0 auto;
-    font-size: 18px;
-}
-.fourSort>a img{
-    position: relative;
-    top: 3px;
+    color: #ff6666;
+   font-size: 14px;
 }
 .fourSort ul li{
     margin-bottom: 12px;
@@ -262,125 +281,128 @@
 .fourSort ul li:last-child{
     margin-bottom: 27px;
 }
+/*中外托福名师团队*/
 .toefl-teacher{
     width: 100%;
-    height: 461px;
-    margin: 0 auto;
-    background: url("../images/toefl_teacherBG.jpg") no-repeat;
-    background-size: 100% 100%;
+   	height:710px;
+	background-color:#E9F1FF;
 }
 .inTeacher{
-    width: 965px;
+    width: 1000px;
     margin: 0 auto;
     padding-top: 45px;
     text-align: center;
 }
-.inTeacher>a.subscribe{
-    width: 128px;
-    height: 27px;
-    background: #ffff02;
-    border-radius: 20px;
-    display: block;
-    margin: 0 auto;
-    margin-top: 18px;
-}
-.inTeacher>a img{
-    position: relative;
-    top: 2px;
-}
 .inTeacher h2{
     font-size: 35px;
+    margin-bottom: 10px;
 }
 .inTeacher h2 a{
-    color: white;
+   color: #000;
 }
 .inTeacher>span{
-    color: #81accc;
+    color: #494544;
     font-size: 18px;
 }
 .toggleSummer{
     width: 100%;
-    margin-top: 52px;
+    margin-top: 30px;
     position: relative;
 }
+/*箭头*/
 .summerHd{
-    width: 100%;
+   	width: 90px;
+    position: absolute;
+    bottom: -30px;
+    right: 28px;
 }
 .summerHd a{
-    position: absolute;
-    top: 50%;
-    margin-top: -21px;
-}
-.summerHd a img{
-    width: 32px;
+	position: absolute;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #FFA234;
+    line-height: 34px;
+    text-align: center;
+	font: 400 30px/34px simsun; 	
+	background-color: #E9F1FF;
 }
 .summerHd a.prev{
-    left: 0;
+   left: 0;
 }
 .summerHd a.next{
     right: 0;
 }
+.summerHd a:hover{
+	background-color: #dfdfdf;
+}
+/*老师介绍*/
+.summerBd{
+	width: 100%;
+	height: 492px;
+	overflow: hidden;
+}
 .summerBd ul li{
-    width: 140px;
+  	width: 290px;
     text-align: center;
     float: left;
-    margin-right: 27px;
+    margin: 0 21px;
+    background-color: #F2F5FA;
+    padding-bottom:20px ;
 }
-
-.summerBd ul li>span{
-    font-size: 16px;
+.summerBd ul li:hover a{
+	background-color: #FFA234;
+	color: #E9F1FF;	
 }
-.summerTop{
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    border: 2px white solid;
-    overflow: hidden;
-    margin-bottom: 10px;
-    position: relative;
+.summerBd .summer-title{
+	width: 200px;
+	border-bottom: 1px solid #ccc;
+	padding: 14px 0 5px 0;
+	margin: 0 auto;
 }
-.summerTop>img{
-    height: 100%;
+.summerBd .summer-title p{
+	font-size: 14px;
+	color: #E6953E;
+	text-align: center;
 }
-.summerBd{
-    width: 850px;
-    overflow: hidden;
-    margin: 0 auto;
-    color: white;
+.summerBd .summer-title p:first-child{
+	font-size: 24px;
+	color: #000;
+	margin-bottom: 7px;
 }
-.summerBd ul{
-    padding: 20px 0 0 20px!important;
-    /*border: 1px red solid;*/
+.summerBd li .summer-cent{
+	height: 120px;
+	overflow: hidden;
+	padding: 0 13px;
+	line-height: 23px;
+	margin: 10px 0 20px 0;
+	text-align: left;
+}
+.summerBd li .summer-cent:hover{
+	overflow-y: scroll;
+}
+.summerBd li .summer-cent:after{
+	content: "...";
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.summerBd li a{
+	display: block;
+	border: 1px solid #FFA234;
+	font-size: 16px;
+	margin:0 auto;
+	width: 105px;
+	border-radius: 10px;
+}
+.summerBd ul li img{
+	width: 100%;
+	height: 222px;
+	overflow: hidden;
 }
 .summerBd:after{
     display:block;clear:both;content:"";visibility:hidden;height:0;
 }
-.summer-mask{
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    position: absolute;
-    left: 0;
-    top: 0;
-    color: white;
-    display: none;
-}
-.summer-mask h4{
-    font-size: 30px;
-    margin-top: 60px;
-}
-.summer-mask p{
-    font-size: 20px;
-    margin-top: 75px;
-}
-.summer-mask a{
-    width: 100%;
-    height: 100%;
-    display: block;
-    color: #fbf92c;
-}
-
-
+/*关于申友托福，他们有话说*/
 .aboutToefl{
     width: 983px;
     padding: 49px 0 33px 0;
@@ -392,7 +414,6 @@
     text-align: center;
 }
 /*改版后css*/
-
 .aboutTSlide{
     width: 986px;
     height: 326px;
