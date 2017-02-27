@@ -1,6 +1,6 @@
 $(function(){
     //联系方式
-    $(".conBd ul li").eq(2).addClass("on");
+//  $(".conBd ul li").eq(2).addClass("on");
     $(".conBd ul li").bind({
         "mouseenter":function(){
             if($(this).hasClass("on")){
@@ -16,11 +16,11 @@ $(function(){
 $(".excel-in ul li").bind({
     "mouseenter":function(){
         $(this).addClass("on").siblings().removeClass("on");
-        $(this).find(".eT-circle img").attr("src","/cn/images/toefl_icon00"+($(this).index()+1)+".png");//修改图片路径, 套程序后需要修改一下前面的路径
+        $(this).find(".eT-circle img").attr("src","/cn/images/toefl_icon0"+($(this).index()+1)+".png");//修改图片路径, 套程序后需要修改一下前面的路径
     },
     "mouseleave":function(){
         $(this).removeClass("on");
-        $(this).find(".eT-circle img").attr("src","/cn/images/toefl_icon0"+($(this).index()+1)+".png");//修改图片路径
+        $(this).find(".eT-circle img").attr("src","/cn/images/toefl_icon00"+($(this).index()+1)+".png");//修改图片路径
     }
 });
 

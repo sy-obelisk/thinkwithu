@@ -253,13 +253,13 @@
     font-size: 25px;
     display: block;
 }
+/*申友GMAT课程特色服务*/
 .gmat-special{
     width: 100%;
-    height: 671px;
-    margin: 0 auto;
-    background: url("../images/gmat_specialBG.jpg") no-repeat;
-    background-size: 100% auto;
-    padding-top: 24px;
+    height: 715px;
+    background: url("../images/gmat_specialBG.png") no-repeat;
+    background-size: 100% 100%;
+    padding-top: 55px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -271,160 +271,207 @@
     font-weight: normal;
 }
 .in-special{
-    width: 871px;
-    height: 574px;
-    margin: 0 auto;
-    margin-top: 26px;
-    position: relative;
-    /*border: 1px red solid;*/
+	width: 1000px;
+	height: 556px;
+	background: url('../images/gmat-inBg.png') no-repeat;
+	background-size: 100% 100%;
+	margin: 38px auto 0;
 }
-.bigBG{
-    width: 189px;
-    height: 196px;
-    /*border: 1px #008000 solid;*/
+.in-special .gmat-cent{
+	padding: 77px 67px;
+}
+.gmat-cent .gmat-centLeft{
+	float: left;
+}
+.gmat-cent .gmat-centRight{
+	float: right;
+	text-align: right;
+}
+.gmat-cent ul li{
+	margin-bottom: 50px;
+}
+.gmat-cent ul li span{
+	display: block;
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	text-align: center;	
+	font: 18px/55px bold;
+	color: #fff;
+}
+.gmat-cent ul li div{
+	font-size: 13px;
+	color: #1A1A1A;
+}
+.gmat-cent ul li div h4{
+	font-size: 18px;
+}
+.gmat-cent ul li div p{
+	margin-top: 4px;
+}
+.gmat-cent .gmat-centLeft li span{
+	float: left;
+}
+.gmat-cent .gmat-centRight li span{
+	float: right;
+}
+.gmat-cent ul li:first-child span{
+	background-color: #015993;
+}
+.gmat-cent ul li:nth-child(2) span{
+	background-color: #FF5961;
+}
+.gmat-cent ul li:nth-child(3) span{
+	background-color: #FBC900;
+}
+.gmat-cent ul li:nth-child(4) span{
+	background-color: #76D2C9;
+}
+.gmat-cent ul li:first-child h4{
+	color: #015993;
+}
+.gmat-cent ul li:nth-child(2) h4{
+	color: #FF5961;
+}
+.gmat-cent ul li:nth-child(3) h4{
+	color: #FBC900;
+}
+.gmat-cent ul li:nth-child(4) h4{
+	color: #76D2C9;
+}
+.gmat-cent .gmat-centLeft li div{
+	border-left: 1px solid #000;
+	margin-left: 69px;
+	padding-left: 24px;	
+}
+.gmat-cent .gmat-centRight li div{
+	border-right: 1px solid #000;
+	margin-right: 69px;
+	padding-right: 24px;
 }
 
-.backGround01{
-    background: url("../images/gmat_circleIcon01.png") no-repeat 2px 2px;
+/*国际范名师团队*/
+.toefl-teacher{
+    width: 100%;
+   	height:710px;
+	background-color:#E9F1FF;
 }
-.backGround001{
-    display: none;
-    background: url("../images/gmat_circleIcon001.png") no-repeat 2px 2px;
-}
-.backGround02{
-    background: url("../images/gmat_circleIcon02.png") no-repeat -2px -2px;
-}
-.backGround002{
-    display: none;
-    background: url("../images/gmat_circleIcon002.png") no-repeat -2px -2px;
-}
-.backGround03{
-    background: url("../images/gmat_circleIcon03.png") no-repeat -2px -2px;
-}
-.backGround003{
-    display: none;
-    background: url("../images/gmat_circleIcon003.png") no-repeat -2px -2px;
-}
-.backGround04{
-    background: url("../images/gmat_circleIcon04.png") no-repeat;
-}
-.backGround004{
-    display: none;
-    background: url("../images/gmat_circleIcon004.png") no-repeat;
-}
-.backGround05{
-    background: url("../images/gmat_circleIcon05.png") no-repeat 2px 2px;
-}
-.backGround005{
-    display: none;
-    background: url("../images/gmat_circleIcon005.png") no-repeat 2px 2px;
-}
-.backGround06{
-    background: url("../images/gmat_circleIcon06.png") no-repeat 7px 7px;
-}
-.backGround006{
-    display: none;
-    background: url("../images/gmat_circleIcon006.png") no-repeat 7px 7px;
-}
-.backGround07{
-    background: url("../images/gmat_circleIcon07.png") no-repeat -2px 2px;
-}
-.backGround007{
-    display: none;
-    background: url("../images/gmat_circleIcon007.png") no-repeat -2px 2px;
-}
-.backGround08{
-    background: url("../images/gmat_circleIcon08.png") no-repeat ;
-}
-.backGround008{
-    display: none;
-    background: url("../images/gmat_circleIcon008.png") no-repeat ;
-}
-.pos01{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-.pos02{
-    position: absolute;
-    bottom: 173px;
-    left: 9px;
-}
-.pos03{
-    position: absolute;
-    top: 41px;
-    left: 107px;
-}
-.pos04{
-    position: absolute;
-    top: 0;
-    left: 292px;
-}
-.pos05{
-    position: absolute;
-    top: 17px;
-    right: 210px;
-}
-.pos06{
-    position: absolute;
-    top: 68px;
-    right: 40px;
-}
-.pos07{
-    position: absolute;
-    bottom: 155px;
-    right: 0;
-}
-.pos08{
-    position: absolute;
-    bottom: -20px;
-    right: 23px;
-}
-.circles{
-    width: 166px;
-    height: 166px;
-    border-radius: 50%;
-    /*border: 1px red solid;*/
-    display: table;
-}
-.inCircles{
-    display:table-cell;
-    vertical-align: middle;
+.inTeacher{
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 45px;
     text-align: center;
 }
-.flT{
-    margin-left: 26px;
+.inTeacher h2{
+    font-size: 35px;
+    margin-bottom: 10px;
 }
-.flT02{
-    margin-left: 10px;
+.inTeacher h2 a{
+   color: #000;
 }
-.flT03{
-    margin-left: 2px;
-    margin-top: 2px;
+.inTeacher>span{
+    color: #494544;
+    font-size: 18px;
 }
-.flT04{
-    margin-left: 4px;
-    margin-top: 4px;
+.toggleSummer{
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
 }
-.inCircles h5{
-    font-size: 20px;
-    color: #000000;
-    font-weight: normal;
-}
-.inCircles h4{
-    color: #7642a3;
-    font-size: 16px;
-}
-.inCircles{
-    color: #424242;
-    font-size: 12px;
-}
-.centerP{
+/*箭头*/
+.summerHd{
+   	width: 90px;
     position: absolute;
-    bottom: 0;
-    left: 210px;
+    bottom: -30px;
+    right: 28px;
 }
-.toefl-teacher{
+.summerHd a{
+	position: absolute;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #FFA234;
+    line-height: 34px;
+    text-align: center;
+	font: 400 30px/34px simsun; 	
+	background-color: #E9F1FF;
+}
+.summerHd a.prev{
+   left: 0;
+}
+.summerHd a.next{
+    right: 0;
+}
+.summerHd a:hover{
+	background-color: #dfdfdf;
+}
+/*老师介绍*/
+.summerBd{
+	width: 100%;
+	height: 492px;
+	overflow: hidden;
+}
+.summerBd ul li{
+  	width: 290px;
+    text-align: center;
+    float: left;
+    margin: 0 21px;
+    background-color: #F2F5FA;
+    padding-bottom:20px ;
+}
+.summerBd ul li:hover a{
+	background-color: #FFA234;
+	color: #E9F1FF;	
+}
+.summerBd .summer-title{
+	width: 200px;
+	border-bottom: 1px solid #ccc;
+	padding: 14px 0 5px 0;
+	margin: 0 auto;
+}
+.summerBd .summer-title p{
+	font-size: 14px;
+	color: #E6953E;
+	text-align: center;
+}
+.summerBd .summer-title p:first-child{
+	font-size: 24px;
+	color: #000;
+	margin-bottom: 7px;
+}
+.summerBd li .summer-cent{
+	height: 120px;
+	overflow: hidden;
+	padding: 0 13px;
+	line-height: 23px;
+	margin: 10px 0 20px 0;
+	text-align: left;
+}
+.summerBd li .summer-cent:hover{
+	overflow-y: scroll;
+}
+.summerBd li .summer-cent:after{
+	content: "...";
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.summerBd li a{
+	display: block;
+	border: 1px solid #FFA234;
+	font-size: 16px;
+	margin:0 auto;
+	width: 105px;
+	border-radius: 10px;
+}
+.summerBd ul li img{
+	width: 100%;
+	height: 222px;
+	overflow: hidden;
+}
+.summerBd:after{
+    display:block;clear:both;content:"";visibility:hidden;height:0;
+}
+/*.toefl-teacher{
     width: 100%;
     height: 406px;
     margin: 0 auto;
@@ -522,7 +569,6 @@
 }
 .summerBd ul{
     padding: 20px 0 0 20px!important;
-    /*border: 1px red solid;*/
 }
 .summerBd:after{
     display:block;clear:both;content:"";visibility:hidden;height:0;
@@ -553,8 +599,8 @@
 }
 .summer-mask a{
     color: #fbf92c;
-}
-
+}*/
+/*关于申友托福*/
 .aboutToefl{
     width: 983px;
     padding: 49px 0 33px 0;
@@ -566,7 +612,6 @@
     text-align: center;
 }
 /*改版后css*/
-
 .aboutTSlide{
     width: 986px;
     height: 326px;
