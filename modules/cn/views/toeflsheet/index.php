@@ -1,10 +1,6 @@
 
     <link rel="stylesheet" href="/cn/css/toeflSheet.css"/>
-    <!--<link rel="stylesheet" href="/cn/ielts/css/main.css">-->
-
     <script type="text/javascript" src="/cn/js/toeflSheet.js"></script>
-
-
 <div class="toefl-banner">
 	<img src="/cn/images/toefl-topBanner.png"/>
     <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">提分课程咨询</a>
@@ -279,31 +275,6 @@
         <script type="text/javascript">
 			jQuery(".toggleSummer").slide({ mainCell:".summerBd ul", effect:"leftLoop",vis:3, autoPlay:false});
         </script>
-        <!--<div class="summerBd">
-                <ul>
-                    <?php
-                    $data = \app\modules\cn\models\Content::getContent(['fields' => 'job','category' => "138,141",'pageSize'=>20,'order'=>'sort']);
-                    foreach($data as $v) {
-                        ?>
-                        <li>
-                            <div class="summerTop">
-                                <img src="<?php echo $v['image']?>" alt="图片">-->
-                                <!--遮罩-->
-                                <!--<div class="summer-mask">
-                                    <a href="/teachers/<?php echo $v['name']?>/<?php echo $v['id']?>.html" target="_blank">
-                                        <p><?php echo $v['name']?></p>
-                                        <span><?php echo $v['job']?></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <span><?php echo $v['name']?></span>
-                            <p><?php echo $v['job']?></p>
-                        </li>
-                    <?php
-                    }
-                    ?>
-                </ul>
-            </div>-->
     </div>
 </div>
 <!--<section>

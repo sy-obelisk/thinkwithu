@@ -75,6 +75,7 @@
 .listB-Bd ul li{
     height: 20px;
     margin-top: 5px;
+    overflow:hidden;
 }
 .listB-Bd ul li i{
     margin-left: 5px;
