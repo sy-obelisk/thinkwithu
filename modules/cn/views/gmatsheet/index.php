@@ -1,140 +1,127 @@
 
     <link rel="stylesheet" href="/cn/css/gmatSheet.css"/>
-
     <script type="text/javascript" src="/cn/js/gmatSheet.js"></script>
 
 <div style="clear: both"></div>
 <div class="gmat-topImg">
-    <h1>申友GMAT，老牌实力机构</h1>
-    <img src="/cn/images/gmat-title.png" alt="图片"/>
+    <img src="/cn/images/gmat_bigBG.png"/>
     <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">在线咨询GMAT</a>
 </div>
 <!--申友GMAT精品课程-->
-<div class="gmat-class">
+<section class="gmat-class">
     <h2>申友GMAT精品课程</h2>
     <ul>
-        <li>
-            <div class="oneClass">
-                <div class="oneC-top">基础课程</div>
-                 <div class="oneC-bottom">
-                       <div class="inBottom">
-                           <h4>
-                               <a href="/picture-details/160/index,161,115.html" target="_blank">
-                                   GMAT PRE适合人群
-                               </a>
-                           </h4>
-                           <ul>
-                               <li>
-                                   1、英语基础较弱，CET-4/6成绩不高，没有雅思、托福考试经验或者成绩不理想的学员
-                               </li>
-                               <li>2、希望在名师指导下短时间内获得GMAT基础
-                                   提高训练，偏好小班上课，追求VIP服务体验的学员</li>
-                               <li>3、GMAT零基础客户</li>
-                           </ul>
-                           <h4>
-                               <a href="/picture-details/160/index,161,115.html" target="_blank">
-                                   GMAT PRE授课内容
-                               </a>
-                           </h4>
-                           <p>GMAT考试简介，词汇，长难句，语法基础，阅读，数学基础等</p>
-                           <a href="/picture-details/160/index,161,115.html" target="_blank"><i class="fa fa-search"></i>了解详情</a>
-                       </div>
-                 </div>
-            </div>
-        </li>
-        <li>
-            <div class="twoClass">
-                <div class="twoC-top">增值课程</div>
-                <div class="twoC-bottom">
-                    <div class="two-inBottom">
-                        <h4>
-                            <a href="/picture-details/167/index,109,163,115.html" target="_blank">
-                                GMAT 700+培训适合人群
-                            </a>
-                        </h4>
-                        <ul>
-                            <li>
-                                1、考试目标明确，希望获得高分的学员
-                            </li>
-                            <li>2、GMAT高分强化班入学条件</li>
-                            <li>3、参与申友GMAT入学测试，取得规定分数以上的成绩</li>
-                        </ul>
-                        <h4>
-                            <a href="/picture-details/167/index,109,163,115.html" target="_blank">
-                                GMAT 700+培训授课内容
-                            </a>
-                        </h4>
-                        <p>申友GMAT高分强化班全新升级，通过全方位解析考题和考官的意图，
-                            引导学生的思维，教授简单有效的解题技巧。从课前到课后，全程个性化的监督辅导</p>
-                        <a href="/picture-details/167/index,109,163,115.html" target="_blank"><i class="fa fa-search"></i>了解详情</a>
-
-                    </div>
-                </div>
-            </div>
-        </li>
-        <li>
-            <div class="oneClass">
-                <div class="oneC-top">强化课程</div>
-                <div class="oneC-bottom">
-                    <div class="inBottom threeSpe">
-                        <h4>
-                            <a href="/picture-details/161/index,109,162,115.html" target="_blank">
-                                GMAT 周末班适合人群
-                            </a>
-                        </h4>
-                        <ul>
-                            <li>
-                                有强化基础需求的大学生或在职人士，适合周末上课
-                            </li>
-
-                        </ul>
-                        <h4>
-                            <a href="/picture-details/161/index,109,162,115.html" target="_blank">
-                            GMAT 周末班授课内容
-                             </a>
-                        </h4>
-                        <div>
-                            <p style="text-align: center">逻辑+语法+阅读</p>
-                            GMAT周末班课程是链接申友高分系列课程的重要课程。引导学生积极思维，
-                            短期内有效提高学员基础水平，是申友GMAT周末班课程所倡导的教学理念</div>
-                        <a href="/picture-details/161/index,109,162,115.html" target="_blank"><i class="fa fa-search"></i>了解详情</a>
-                    </div>
-                </div>
-            </div>
-        </li>
+    	<li>
+    		<div class="class-img">
+    			<img src="/cn/images/gmat_class1.png"/>  			
+    		</div>
+    		<i class="class-left"></i>
+    		<div class="class-cont">
+    			<div>
+					<h4>
+						<a href="/picture-details/160/index,161,115.html" target="_blank">GMAT PRE适合人群</a>
+					</h4>
+					<p>1、英语基础较弱，CET-4/6成绩不高，没有雅思、托福考试经验或者成绩不理想的学员</p>
+					<p>2、希望在名师指导下短时间内获得GMAT基础提高训练，偏好小班上课，追求VIP服务体验的学员</p>
+					<p>3、GMAT零基础客户</p>
+				</div>
+				<div>
+					<h4>
+						<a href="/picture-details/160/index,161,115.html" target="_blank"> GMAT PRE授课内容</a>
+					</h4>
+					<p>GMAT考试简介，词汇，长难句，语法基础，阅读，数学基础等</p>
+				</div>
+				<div class="class-btn">
+					<a href="/picture-details/160/index,161,115.html" target="_blank">了解详情</a>
+					<h3>基础课程</h3>
+				</div>
+    		</div>
+    	</li>
+    	<li>
+    		<div class="class-imgRight">
+    			<img src="/cn/images/gmat_class2.png"/>  	
+    		</div>
+    		<i class="class-right"></i>
+    		<div class="class-cont">
+    			<div>
+					<h4>
+						<a href="/picture-details/160/index,161,115.html" target="_blank">GMAT 700+培训适合人群</a>
+					</h4>
+					<p>1、考试目标明确，希望获得高分的学员</p>
+					<p>2、GMAT高分强化班入学条件</p>
+					<p>3、参与申友GMAT入学测试，取得规定分数以上的成绩</p>
+				</div>
+				<div>
+					<h4>
+						<a href="/picture-details/160/index,161,115.html" target="_blank"> GMAT 700+培训授课内容</a>
+					</h4>
+					<p>申友GMAT高分强化班全新升级，通过全方位解析考题和考官的意图， 引导学生的思维，教授简单有效的解题技巧。从课前到课后，全程个性化的监督辅导</p>
+				</div>
+				<div class="class-btn">
+					<a href="/picture-details/160/index,161,115.html" target="_blank">了解详情</a>
+					<h3>强化课程</h3>
+				</div>
+    		</div>
+    	</li>
+    	<li>
+    		<div class="class-img">
+    			<img src="/cn/images/gmat_class3.png"/>   			
+    		</div>
+    		<i class="class-left"></i>
+    		<div class="class-cont">
+    			<div>
+					<h4>
+						<a href="/picture-details/160/index,161,115.html" target="_blank">GMAT 周末班适合人群</a>
+					</h4>
+					<p>有强化基础需求的大学生或在职人士，适合周末上课</p>
+				</div>
+				<div>
+					<h4>
+						<a href="/picture-details/160/index,161,115.html" target="_blank"> GMAT 周末班授课内容</a>
+					</h4>
+					<p>GMAT周末班课程是链接申友高分系列课程的重要课程。引导学生积极思维，短期内有效提高学员基础水平，是申友GMAT周末班课程所倡导的教学理念</p>
+				</div>
+				<div class="class-btn">
+					<a href="/picture-details/160/index,161,115.html" target="_blank">了解详情</a>
+					<h3>强化课程</h3>
+				</div>
+    		</div>
+    	</li>
     </ul>
-</div>
+</section>
 <!--近期开班-->
-<div class="openClass">
-     <div class="topTitle">近期开班</div>
-     <table cellspacing="0">
-         <tr>
-             <th>课程类型</th>
-             <th>面授时间</th>
-             <th>主讲老师</th>
-             <th>城市</th>
-             <th></th>
-         </tr>
-         <?php
-         $data = \app\modules\cn\models\Content::getContent(['fields' => 'hot,time,job,place,url','category' => "248",'pageSize'=>6,'order'=>'sort']);
-         foreach($data as $v) {
-         ?>
-         <tr>
-             <td><a href="<?php echo $v['url']?>"><?php echo $v['hot']?></a></td>
-             <td><?php echo $v['time']?></td>
-             <td><?php echo $v['job']?></td>
-             <td><?php echo $v['place']?></td>
-             <td><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank">在线报名 <i class="fa fa-caret-right"></i></a></td>
-         </tr>
-         <?php
-         }
-         ?>
-     </table>
-    <div class="moreClass">
-        <i class="fa fa-caret-down"></i>
-        <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank">更多课程查询</a>
-    </div>
+<section class="gmat-open">
+	<div class="openClass">
+	     <div class="topTitle">近期开班</div>
+	     <table cellspacing="0">
+	         <tr>
+	             <th>课程类型</th>
+	             <th>面授时间</th>
+	             <th>主讲老师</th>
+	             <th>城市</th>
+	             <th></th>
+	         </tr>
+	         <?php
+	         $data = \app\modules\cn\models\Content::getContent(['fields' => 'hot,time,job,place,url','category' => "248",'pageSize'=>6,'order'=>'sort']);
+	         foreach($data as $v) {
+	         ?>
+	         <tr>
+	             <td><a href="<?php echo $v['url']?>"><?php echo $v['hot']?></a></td>
+	             <td><?php echo $v['time']?></td>
+	             <td><?php echo $v['job']?></td>
+	             <td><?php echo $v['place']?></td>
+	             <td class="open-apply"><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank">在线报名 </a></td>
+	         </tr>
+	         <?php
+	         }
+	         ?>
+	     </table>
+	    <div class="moreClass">
+	        <i class="fa fa-caret-down"></i>
+	        <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank">更多课程查询</a>
+	    </div>
 </div>
+</section>
 <!--申友GMAT课程特色服务-->
 <div class="gmat-special">
 	<h2>申友GMAT课程服务特色</h2>
@@ -280,30 +267,6 @@
             		</li>
             	</ul>
             </div>
-            <!--<div class="summerBd">
-                <ul>
-                    <?php
-                    $data = \app\modules\cn\models\Content::getContent(['fields' => 'job','category' => "138,139",'pageSize'=>20,'order'=>'sort']);
-                    foreach($data as $v) {
-                        ?>
-                        <li>
-                            <div class="summerTop">
-                                <img src="<?php echo $v['image']?>" alt="图片">
-                                <div class="summer-mask">
-                                    <a href="/teachers/<?php echo $v['name']?>/<?php echo $v['id']?>.html" target="_blank">
-                                        <p><?php echo $v['name']?></p>
-                                        <span><?php echo $v['job']?></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <span><?php echo $v['name']?></span>
-                            <p><?php echo $v['job']?></p>
-                        </li>
-                    <?php
-                    }
-                    ?>
-                </ul>
-            </div>-->
         </div>
         <script type="text/javascript">
            jQuery(".toggleSummer").slide({ mainCell:".summerBd ul", effect:"leftLoop",vis:3, autoPlay:false});
