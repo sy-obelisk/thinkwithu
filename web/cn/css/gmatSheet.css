@@ -1,224 +1,188 @@
 
 .gmat-topImg{
     width: 100%;
-    height: 381px;
     margin: 0 auto;
-    text-align: center;
-    background: url("../images/gmat_bigBG.jpg") no-repeat;
-    background-size: 100% 100%;
-    padding-top: 60px;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-}
-.gmat-topImg h1{
-    color: white;
-    font-weight: normal;
-    font-style: italic;
-    font-size: 50px;
-    margin-bottom: 10px;
+   position: relative;
 }
 .gmat-topImg a{
-    width: 277px;
-    height: 55px;
-    line-height: 55px;
-    margin: 0 auto;
+	position: absolute;
+    width: 420px;
+    height: 46px;
+    line-height: 46px;
+    top: 55%;
+    left: 50%;
+    margin-left: -210px;
     text-align: center;
     display: block;
-    background: #ffff02;
     font-size: 28px;
-    margin-top: 40px;
+    border: 1px solid #000;
+    border-radius: 30px;
 }
+/*申友Gmat精品课程*/
 .gmat-class{
-    width: 992px;
-    padding-top: 32px;
-    /*height: 478px;*/
+    width: 1000px;
+    padding: 40px 0 40px 0;
     margin: 0 auto;
-    /*border: 1px red solid;*/
 }
 .gmat-class h2{
     font-size: 35px;
     font-weight: normal;
     text-align: center;
+    margin-bottom: 50px;
 }
 .gmat-class ul li{
-    float: left;
-    margin-right: 15px;
+	margin-bottom: 69px;
 }
 .gmat-class ul li:last-child{
-    margin-right: 0;
+	margin-bottom: 30px;
 }
-.gmat-class ul:after{
-    display:block;clear:both;content:"";visibility:hidden;height:0;
+.gmat-class ul li:after{
+	content: "";
+	display: block;
+	clear: both;
 }
-.oneClass{
-    width: 304px;
-    height: 370px;
-    margin-top: 38px;
+.gmat-class div{
+	float: left;
 }
-.oneC-top{
-    width:100%;
-    height: 54px;
-    line-height: 54px;
-    background: #7440a2;
-    color: white;
-    text-align: center;
-    font-size: 25px;
-    position: relative;
-    z-index: 11;
+.gmat-class .class-cont>div{
+	width: 255px;
+	font-size: 12px;
+	margin-left: 30px;
 }
-.oneC-bottom{
-    width: 100%;
-    height: 315px;
-    margin-left: -1px;
-    margin-top: -10px;
-    background: #f4f4f4;
-    border-left: 1px #7440a2 solid;
-    border-right: 1px #7440a2 solid;
-    border-bottom: 1px #7440a2 solid;
+.gmat-class .class-cont>div p{
+	line-height: 18px;
 }
-.inBottom{
-    width: 279px;
-    margin: 0 auto;
-    padding-top: 21px;
+.gmat-class .class-cont div h4{
+	padding-bottom: 8px;
 }
-.threeSpe ul li{
-    margin-bottom: 50px!important;
+.gmat-class .class-cont>div h4 a{
+	font-size: 18px;
+	color: #EBB06D;
 }
-.threeSpe a{
-    margin-top: 55px!important;
+.gmat-class .class-cont .class-btn{text-align: center;}
+.gmat-class .class-cont .class-btn a{
+	display: block;
+	width: 148px;
+	height: 30px;
+	border-radius: 30px;
+	font-size: 17px;
+	line-height: 30px;
+	text-align: center;
+	background-color: #FF6666;
+	color: #fff;
 }
-.inBottom>a{
-    width: 136px;
-    height: 25px;
-    line-height: 25px;
-    display: block;
-    border-radius: 15px;
-    text-align: center;
-    font-size: 12px;
-    border: 1px #3e3e3e solid;
-    margin: 0 auto;
-    margin-top: 20px;
+.gmat-class li:hover .class-btn a{
+	background-color: #ccc;
+	color: #FF6666;
 }
-.inBottom>a:hover{
-    color: white;
-    background: #7440a2;
-    border: 1px #7440a2 solid;
+.gmat-class .class-cont .class-btn h3{
+	width: 148px;
+	font-size: 24px;
+	margin-top: 62px;
 }
-.inBottom ul li{
-    margin-bottom: 16px;
-    font-size: 12px;
+.gmat-class .class-left{
+	display: block;
+	width: 730px;
+	height: 2px;
+	background-color: #737272;
+	position: relative;
+	left:121px;
+	top: 154px;
 }
-.inBottom div{
-    font-size: 12px;
+.gmat-class .class-left:before{
+	content: "";
+	position: absolute;
+	width: 48.3px;
+	height: 2px;
+	background-color: #737272;
+	transform: rotateZ(50deg);
+	left: -40px;
+	top: -17px;
 }
-.inBottom h4{
-    font-weight: normal;
-    font-size: 16px;
-    text-decoration: underline;
-    color: #7440a2;
-    text-align: center;
-    margin-bottom: 10px;
+.gmat-class .class-left:after{
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #FF6666;
+	right: -10px;
+	top: -5px;
 }
-.inBottom h4 a{
-    color: #7440a2;
+.gmat-class li:nth-child(2) div{
+	float: right;
 }
-.twoClass{
-    width: 351px;
-    height: 389px;
-    margin-top: 24px;
+.gmat-class li:nth-child(2) .class-cont div{
+	margin-right: 30px;
+	margin-left: 0;
 }
-.twoC-top{
-    width: 100%;
-    height: 56px;
-    line-height: 56px;
-    background: #343434;
-    color: white;
-    text-align: center;
-    font-size: 25px;
-    position: relative;
-    z-index: 11;
+.gmat-class li:nth-child(2) .class-btn{
+	width: 148px;
 }
-.twoC-bottom{
-    width: 100%;
-    height: 334px;
-    margin-left: -1px;
-    margin-top: -16px;
-    border-left: 1px #a2a2a2 solid;
-    border-right: 1px #a2a2a2 solid;
-    border-bottom: 1px #a2a2a2 solid;
+.gmat-class .class-right{
+	display: block;
+	width: 730px;
+	height: 2px;
+	background-color: #737272;
+	top: 154px;
+	position: relative;
+	right: -150px;
 }
-.two-inBottom>a{
-    width: 136px;
-    height: 25px;
-    line-height: 25px;
-    display: block;
-    border-radius: 15px;
-    text-align: center;
-    font-size: 12px;
-    border: 1px #3e3e3e solid;
-    margin: 0 auto;
-    margin-top: 20px;
+.gmat-class .class-right:after{
+	content: "";
+	position: absolute;
+	width: 48.3px;
+	height: 2px;
+	background-color: #737272;
+	transform: rotateZ(-50deg);
+	right: -40px;
+	top: -17px;
 }
-.two-inBottom>a:hover{
-    color: white;
-    background: #7440a2;
-    border: 1px #7440a2 solid;
+.gmat-class .class-right:before{
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #FF6666;
+	left: -10px;
+	top: -5px;
 }
-.two-inBottom{
-    width: 311px;
-    margin: 0 auto;
-    padding-top: 33px;
-}
-.two-inBottom h4{
-    font-weight: normal;
-    font-size: 16px;
-    text-decoration: underline;
-    color: #7440a2;
-    text-align: center;
-    margin-bottom: 10px;
-}
-.two-inBottom h4 a{
-    color: #7440a2;
-}
-.two-inBottom  ul li{
-    margin-bottom: 25px;
-    font-size: 12px;
-}
-.two-inBottom  p{
-    font-size: 12px;
+/*近期开班*/
+.gmat-open{
+	background-color: #E9F1FF;
 }
 .openClass{
-    width: 992px;
+    width: 1000px;
     margin: 0 auto;
-    padding: 22px 0 53px 0;
-    /*border: 1px red solid;*/
+    padding: 40px 0 53px 0;   
 }
 .topTitle{
-    width: 100%;
-    height: 49px;
-    line-height: 49px;
     text-align: center;
-    color: white;
-    background: #7440a2;
     font-size: 25px;
+    margin-bottom: 30px;
 }
 .openClass table{
     width: 100%;
-    border: 1px #a3a3a3 solid;
+    border: 1px #E9F1FF solid;
 }
-.openClass table tr:nth-child(2n){
-    background: #f2e7fd;
+.openClass table tr{
+	background-color: #fff;
 }
-.openClass table tr:nth-child(2n+1){
-    background: #f4f4f4;
+.openClass table tr:first-child{
+	background-color: #FFA234;
+	height: 53px;
+	line-height: 53px;
+	font-size: 20px;	
+}
+.openClass table tr:first-child th{
+	color: #fff;
 }
 .openClass table tr th{
-    color: #7440a2;
     text-align: left;
 }
 .openClass table tr td,.openClass table tr th{
-    padding: 10px 0;
+    padding: 15px 0;
 }
 .openClass table tr td:first-child,.openClass table tr th:first-child{
     padding-left: 40px;
@@ -227,7 +191,7 @@
     color: #696766;
 }
 .openClass table tr td a{
-    color: #7440a2;
+   color: #696766;
     font-weight: bold;
 }
 .openClass table tr td a:hover{
@@ -237,7 +201,22 @@
     width: 100px;
 }
 .openClass table tr td:nth-child(5){
-    width: 106px;
+    width: 169px;
+}
+.openClass table tr td:nth-child(5) a{
+	display: block;
+	width: 129px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	border: 1px solid #FFA234;
+	font-size: 14px;
+	color: #FFA234;
+	border-radius: 30px;
+}
+.openClass table tr:hover .open-apply a{
+	background-color: #FFA234;
+	color: #fff;
 }
 .moreClass{
     width: 100%;
@@ -248,10 +227,12 @@
     color: #818181;
 }
 .moreClass a{
-    color: #81318b;
-    text-decoration: underline;
+    color: #696766;
     font-size: 25px;
     display: block;
+}
+.moreClass a:hover{
+	color: #FFA234;
 }
 /*申友GMAT课程特色服务*/
 .gmat-special{
