@@ -148,7 +148,7 @@
 					<span>03</span>
 					<div>
 						<h4>机经冲刺</h4>
-						<p>考前冲刺&nbsp;&nbsp;助力高</p>
+						<p>考前冲刺&nbsp;&nbsp;助力高分</p>
 						<p>论坛答疑</p>
 					</div>
 				</li>
