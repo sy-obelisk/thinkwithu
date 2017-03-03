@@ -214,7 +214,7 @@
             			<img src="/cn/images/gmat_zora.jpg" alt="老师照片"/>     			
             			<div class="summer-title">
             				<p>Zora</p>
-            				<p>主讲：Gmat语法</p>
+            				<p>主讲：Gmat逻辑、数学、SC、IR</p>
             			</div>
             			<p class="summer-cent">著作：参编《牡丹江主要旅游景点中英文对照翻译》（东北林业大学出版社）
             				<br />
@@ -226,7 +226,7 @@
             			<img src="/cn/images/gmat_natasha.jpg" alt="老师照片"/>
             			<div class="summer-title">
             				<p>Natasha</p>
-            				<p>主讲：Gmat阅读、写作</p>
+            				<p>主讲：Gmat阅读、写作、逻辑、数学、IR</p>
             			</div>
             			<p class="summer-cent">GMAT团队阅读名师，英语师范专业毕业，专业八级。拥有丰富的教育培训行业经验，善于把握重难点，预测常考语言特征及其推理方向；提出“错误特征排除，正确特征验证”的做题方法，和适用于阅读推断题的“就近推理法”，在实践教学中帮助学生拓宽思维、加深理解，提高正确率。</p>
 					    <a class="btn-2" target="_blank"
@@ -236,14 +236,14 @@
             			<img src="/cn/images/gmat_portia.jpg" alt="教师照片"/>
             			<div class="summer-title">
             				<p>Portia</p>
-            				<p>主讲：Gmat数学、语法</p>
+            				<p>主讲：Gmat数学、SC、IR</p>
             			</div>
             			<p class="summer-cent">善于挖掘学生学习的盲点，并能及时满足学生学习所需，对GMAT、SAT数学研究深入，针对基础、中等、高分三段不同程度的学生有独特的教学方案，拥有独特的数学学习构架，难点部分讲解深入易懂；GMAT句子改错讲解细致，对题目分析透彻，善于总结做题技巧，深受学生喜爱。</p>
 					    <a class="btn-2" target="_blank"
                    href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">约课</a>
             		</li>
             		<li>
-            			<img src="/cn/images/studyA_teacher04.png" alt="老师照片"/>
+            			<img src="/cn/images/gmat_julie.png" alt="老师照片"/>
             			<div class="summer-title">
             				<p>Julie</p>
             				<p>主讲：Gmat阅读、数学、逻辑</p>

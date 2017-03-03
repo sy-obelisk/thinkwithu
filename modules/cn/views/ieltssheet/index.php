@@ -260,10 +260,10 @@
                    href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">约课</a>
             </li>
             <li>
-                <div><img src="/cn/ielts/images/c5.png" alt=""></div>
-                <p class="c4-name">Vicky Jiang</p>
+                <div><img src="/cn/ielts/images/Gary.png" alt=""></div>
+                <p class="c4-name">Gary</p>
                 <p class="c4-de">
-                    英国南安普顿大学硕士，国内英专毕业，在国外学习期间对英语思维及表达方式建立了浓厚的兴趣和深刻的了解，对雅思口语和听力的独到见解让人印象深刻，上课风格活泼，教学幽默，深受学生喜爱。主讲雅思口语和听力。
+                    毕业于上海外国语大学，教授雅思阅读、写作；多年的海内外教学经历、理论加实践的复合型学习使自己对于雅思写作的把控有着深刻与独到的见解，培养了无数高分甚至满分学员。才华与颜值兼并的长腿欧巴，教学风格激情、负责、幽默，深受广大学生喜欢。
                 </p>
                 <a class="btn-2" target="_blank"
                    href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">约课</a>

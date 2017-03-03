@@ -213,7 +213,7 @@
             <div class="summerBd">
             	<ul>
             		<li>
-            			<img src="/cn/images/products_teacher08.jpg" alt="老师照片"/>     			
+            			<img src="/cn/images/toefl_bob.png" alt="老师照片"/>     			
             			<div class="summer-title">
             				<p>Bob</p>
             				<p>主讲：托福听力</p>

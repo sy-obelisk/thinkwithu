@@ -404,13 +404,13 @@
 	color: #E9F1FF;	
 }
 .summerBd .summer-title{
-	width: 200px;
+	/*width: 200px;*/
 	border-bottom: 1px solid #ccc;
 	padding: 14px 0 5px 0;
 	margin: 0 auto;
 }
 .summerBd .summer-title p{
-	font-size: 14px;
+	font-size: 13px;
 	color: #E6953E;
 	text-align: center;
 }
@@ -452,7 +452,10 @@
 .summerBd:after{
     display:block;clear:both;content:"";visibility:hidden;height:0;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> aaron
 /*关于申友托福*/
 .aboutToefl{
     width: 983px;
