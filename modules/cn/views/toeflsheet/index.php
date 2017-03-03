@@ -1,7 +1,5 @@
 
     <link rel="stylesheet" href="/cn/css/toeflSheet.css"/>
-    <!--<link rel="stylesheet" href="/cn/ielts/css/main.css">-->
-
     <script type="text/javascript" src="/cn/js/toeflSheet.js"></script>
 
 
@@ -217,7 +215,7 @@
             <div class="summerBd">
             	<ul>
             		<li>
-            			<img src="/cn/images/products_teacher08.jpg" alt="老师照片"/>     			
+            			<img src="/cn/images/toefl_bob.png" alt="老师照片"/>     			
             			<div class="summer-title">
             				<p>Bob</p>
             				<p>主讲：托福听力</p>

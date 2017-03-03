@@ -404,13 +404,13 @@
 	color: #E9F1FF;	
 }
 .summerBd .summer-title{
-	width: 200px;
+	/*width: 200px;*/
 	border-bottom: 1px solid #ccc;
 	padding: 14px 0 5px 0;
 	margin: 0 auto;
 }
 .summerBd .summer-title p{
-	font-size: 14px;
+	font-size: 13px;
 	color: #E6953E;
 	text-align: center;
 }
@@ -452,135 +452,6 @@
 .summerBd:after{
     display:block;clear:both;content:"";visibility:hidden;height:0;
 }
-/*.toefl-teacher{
-    width: 100%;
-    height: 406px;
-    margin: 0 auto;
-    background: url("../images/gmat_teacherBG.jpg") no-repeat;
-    background-size: 100% 100%;
-}
-.inTeacher{
-    width: 965px;
-    margin: 0 auto;
-    padding-top: 45px;
-    text-align: center;
-}
-.inTeacher>a.subscribe{
-    width: 128px;
-    height: 27px;
-    background: white;
-    border-radius: 20px;
-    display: block;
-    margin: 0 auto;
-    margin-top: 18px;
-}
-.inTeacher>a img{
-    position: relative;
-    top: 2px;
-}
-.inTeacher h2{
-    font-size: 35px;
-    font-weight: normal;
-    text-decoration: underline;
-}
-.inTeacher h2 a{
-    color: white;
-}
-.inTeacher h2 a span{
-    color: #ffff67;
-    text-decoration: underline;
-}
-.inTeacher>span{
-    color: #81accc;
-    font-size: 18px;
-}
-.toggleSummer{
-    width: 100%;
-    margin-top: 29px;
-    position: relative;
-}
-.summerHd{
-    width: 100%;
-}
-.summerHd a{
-    position: absolute;
-    top: 50%;
-    margin-top: -21px;
-}
-.summerHd a img{
-    width: 32px;
-}
-.summerHd a.prev{
-    left: 0;
-}
-.summerHd a.next{
-    right: 0;
-}
-.summerBd ul li{
-    width: 140px;
-    text-align: center;
-    float: left;
-    margin-right: 27px;
-}
-
-.summerBd ul li>span{
-    color: #ffffff;
-    font-size: 16px;
-}
-.summerBd ul li>p{
-    color: #ffffff;
-}
-.summerTop{
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    border: 2px white solid;
-    overflow: hidden;
-    margin-bottom: 10px;
-    position: relative;
-}
-.summerTop>img{
-    height: 100%;
-}
-.summerBd{
-    width: 850px;
-    overflow: hidden;
-    margin: 0 auto;
-    color: white;
-}
-.summerBd ul{
-    padding: 20px 0 0 20px!important;
-}
-.summerBd:after{
-    display:block;clear:both;content:"";visibility:hidden;height:0;
-}
-.summer-mask{
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    position: absolute;
-    left: 0;
-    top: 0;
-    color: white;
-    display: none;
-}
-.summer-mask a{
-    width: 100%;
-    height: 100%;
-    display: block;
-}
-.summer-mask h4{
-    font-size: 30px;
-    margin-top: 60px;
-}
-.summer-mask p{
-    color: #ffffff;
-    font-size: 20px;
-    margin-top: 75px;
-}
-.summer-mask a{
-    color: #fbf92c;
-}*/
 /*关于申友托福*/
 .aboutToefl{
     width: 983px;
