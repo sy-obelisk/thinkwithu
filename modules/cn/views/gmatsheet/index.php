@@ -59,7 +59,7 @@
 				</div>
 				<div class="class-btn">
 					<a href="/picture-details/160/index,161,115.html" target="_blank">了解详情</a>
-					<h3>强化课程</h3>
+					<h3>增值课程</h3>
 				</div>
     		</div>
     	</li>
