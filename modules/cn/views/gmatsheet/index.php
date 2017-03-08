@@ -4,7 +4,7 @@
 
 <div style="clear: both"></div>
 <div class="gmat-topImg">
-    <img src="/cn/images/gmat_bigBG.png"/>
+    <img src="/cn/images/gmat_bigBG.jpg"/>
     <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">在线咨询GMAT</a>
 </div>
 <!--申友GMAT精品课程-->
@@ -45,7 +45,7 @@
     		<div class="class-cont">
     			<div>
 					<h4>
-						<a href="/picture-details/160/index,161,115.html" target="_blank">GMAT 700+培训适合人群</a>
+						<a href="/picture-details/167/index,109,163,115.html" target="_blank">GMAT 700+培训适合人群</a>
 					</h4>
 					<p>1、考试目标明确，希望获得高分的学员</p>
 					<p>2、GMAT高分强化班入学条件</p>
@@ -53,12 +53,12 @@
 				</div>
 				<div>
 					<h4>
-						<a href="/picture-details/160/index,161,115.html" target="_blank"> GMAT 700+培训授课内容</a>
+						<a href="/picture-details/167/index,109,163,115.html" target="_blank"> GMAT 700+培训授课内容</a>
 					</h4>
 					<p>申友GMAT高分强化班全新升级，通过全方位解析考题和考官的意图， 引导学生的思维，教授简单有效的解题技巧。从课前到课后，全程个性化的监督辅导</p>
 				</div>
 				<div class="class-btn">
-					<a href="/picture-details/160/index,161,115.html" target="_blank">了解详情</a>
+					<a href="/picture-details/167/index,109,163,115.html" target="_blank">了解详情</a>
 					<h3>增值课程</h3>
 				</div>
     		</div>
@@ -71,18 +71,18 @@
     		<div class="class-cont">
     			<div>
 					<h4>
-						<a href="/picture-details/160/index,161,115.html" target="_blank">GMAT 周末班适合人群</a>
+						<a href="/picture-details/161/index,109,162,115.html" target="_blank">GMAT 周末班适合人群</a>
 					</h4>
 					<p>有强化基础需求的大学生或在职人士，适合周末上课</p>
 				</div>
 				<div>
 					<h4>
-						<a href="/picture-details/160/index,161,115.html" target="_blank"> GMAT 周末班授课内容</a>
+						<a href="/picture-details/161/index,109,162,115.html" target="_blank"> GMAT 周末班授课内容</a>
 					</h4>
 					<p>GMAT周末班课程是链接申友高分系列课程的重要课程。引导学生积极思维，短期内有效提高学员基础水平，是申友GMAT周末班课程所倡导的教学理念</p>
 				</div>
 				<div class="class-btn">
-					<a href="/picture-details/160/index,161,115.html" target="_blank">了解详情</a>
+					<a href="/picture-details/161/index,109,162,115.html" target="_blank">了解详情</a>
 					<h3>强化课程</h3>
 				</div>
     		</div>
@@ -131,17 +131,18 @@
 				<li>
 					<span>01</span>
 					<div>
-						<h4>名师答疑</h4>
-						<p>1对1VIP强化</p>
-						<p>论坛答疑</p>
+						<h4>核心课程</h4>
+						<p>逻辑、语法、阅读</p>
+						<p>作文、数学全方位解析</p>
 					</div>
 				</li>
 				<li>
 					<span>02</span>
 					<div>
-						<h4>学习社区</h4>
-						<p>全方位解决各种疑惑</p>
-						<p>学习资料便捷下载</p>
+						<h4>真题讲解</h4>
+						<p>训练解题思维</p>
+						<p>逐渐分析解题方法</p>
+						<p>真题解析</p>
 					</div>
 				</li>
 				<li>
@@ -165,18 +166,17 @@
 				<li>
 					<span>05</span>
 					<div>
-						<h4>核心课程</h4>
-						<p>逻辑、语法、阅读</p>
-						<p>作文、数学全方位解析</p>
+						<h4>名师答疑</h4>
+						<p>1对1VIP强化</p>
+						<p>论坛答疑</p>
 					</div>
 				</li>
 				<li>
 					<span>06</span>
 					<div>
-						<h4>真题讲解</h4>
-						<p>训练解题思维</p>
-						<p>逐渐分析解题方法</p>
-						<!--<p>真题解析</p>-->
+						<h4>学习社区</h4>
+						<p>全方位解决各种疑惑</p>
+						<p>学习资料便捷下载</p>
 					</div>
 				</li>
 				<li>
@@ -211,10 +211,43 @@
             <div class="summerBd">
             	<ul>
             		<li>
+            			<img src="/cn/images/gmat_kevin.png" alt="老师照片"/>
+            			<div class="summer-title">
+            				<p>Kevin</p>
+            				<p>主讲：GMAT逻辑、语法、数学、IR</p>
+            			</div>
+            			<p class="summer-cent">英文名Kevin，学生赠名“雷哥”。多年来，曾受邀到全国数十所著名高校巡回讲座，如中国人民大学、上海交大、浙江大学、西安交大、四川大学、西南财经大学、南京大学等。毕业于西安交通大学，留美访问学者，从业经历丰富，早年独立创业，后留母校工作。资深留学英语名师，国内早批新托福教师，培养托福教师、雅思教师、GMAT讲师数人。长期专注海外留学规划和出国考试研究，培养留学学生过万，遍布世界名校。
+留学考试学术成果：GMAT逻辑靶向图、GMAT逻辑本质论、GMAT语法优先原则、GMAT必要性阅读法、新托福听力阈值训练法、新托福万能口语法、雅思西方批判式作文法等，是留学英语考试的集大成者。在国内新创新托福四化一中心作文法。研发和出版多本留学英语培训教材，并不断优化教学方法，专著有 《Influence--雷哥GMAT逻辑》、 《雅思写作攻略》、 《申友GMAT高分讲义》、 《GMAT真题名师精讲》等。
+	                    </p>
+					    <a class="btn-2" target="_blank"
+                   href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">约课</a>
+            		</li>
+            		<li>
+            			<img src="/cn/images/gmat_gary.png" alt="老师照片"/>
+            			<div class="summer-title">
+            				<p>Gary</p>
+            				<p>主讲：GMAT逻辑、数学</p>
+            			</div>
+            			<p class="summer-cent">上海外国语大学研究生毕业;多年的海内外教学复合型经历、理论加实践的复合型学习以及多语种的学习背景令其对于语言学习及出国类考试有着深刻与独到的见解，培养了无数高分学员。教学风格激情、负责、幽默，深受广大学生喜欢。</p>
+					    <a class="btn-2" target="_blank"
+                   href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">约课</a>
+            		</li>
+            		<li>
+            			<img src="/cn/images/toefl_amanda.png" alt="老师照片"/>
+            			<div class="summer-title">
+            				<p>Amanda</p>
+            				<p>主讲：GMAT阅读、语法</p>
+            			</div>
+            			<p class="summer-cent">申友集团语言教学研发总监，《申友GMAT阅读笔记》主编，《申友GMAT语法笔记》副主编。英国兰卡斯特大学硕士，国内重本英语专业毕业；曾以培训师身份受邀参加GMAC官方举办的亚太峰会。亲历雅思，GMAT考试。国外的几年深造，使她对西方人的思维方式和表达习惯有着深刻的了解;多年教授和研发留学英语课程，尤其是GMAT、TOEFL、SAT阅读和雅思口语，对其有个人的见解;上课风格诙谐活泼，深受学生的喜欢。
+	                    </p>
+					    <a class="btn-2" target="_blank"
+                   href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">约课</a>
+            		</li>
+            		<li>
             			<img src="/cn/images/gmat_zora.jpg" alt="老师照片"/>     			
             			<div class="summer-title">
             				<p>Zora</p>
-            				<p>主讲：Gmat逻辑、数学、SC、IR</p>
+            				<p>主讲：GMAT逻辑、数学、SC、IR</p>
             			</div>
             			<p class="summer-cent">著作：参编《牡丹江主要旅游景点中英文对照翻译》（东北林业大学出版社）
             				<br />
@@ -226,7 +259,7 @@
             			<img src="/cn/images/gmat_natasha.jpg" alt="老师照片"/>
             			<div class="summer-title">
             				<p>Natasha</p>
-            				<p>主讲：Gmat阅读、写作、逻辑、数学、IR</p>
+            				<p>主讲：GMAT阅读、写作、逻辑、数学、IR</p>
             			</div>
             			<p class="summer-cent">GMAT团队阅读名师，英语师范专业毕业，专业八级。拥有丰富的教育培训行业经验，善于把握重难点，预测常考语言特征及其推理方向；提出“错误特征排除，正确特征验证”的做题方法，和适用于阅读推断题的“就近推理法”，在实践教学中帮助学生拓宽思维、加深理解，提高正确率。</p>
 					    <a class="btn-2" target="_blank"
@@ -236,7 +269,7 @@
             			<img src="/cn/images/gmat_portia.jpg" alt="教师照片"/>
             			<div class="summer-title">
             				<p>Portia</p>
-            				<p>主讲：Gmat数学、SC、IR</p>
+            				<p>主讲：GMAT数学、SC、IR</p>
             			</div>
             			<p class="summer-cent">善于挖掘学生学习的盲点，并能及时满足学生学习所需，对GMAT、SAT数学研究深入，针对基础、中等、高分三段不同程度的学生有独特的教学方案，拥有独特的数学学习构架，难点部分讲解深入易懂；GMAT句子改错讲解细致，对题目分析透彻，善于总结做题技巧，深受学生喜爱。</p>
 					    <a class="btn-2" target="_blank"
@@ -246,7 +279,7 @@
             			<img src="/cn/images/gmat_julie.png" alt="老师照片"/>
             			<div class="summer-title">
             				<p>Julie</p>
-            				<p>主讲：Gmat阅读、数学、逻辑</p>
+            				<p>主讲：GMAT阅读、数学、逻辑</p>
             			</div>
             			<p class="summer-cent">美国工学硕士、博士。美国化工协会会员，全奖赴美留学，后留美工作。在美期间，多次参加国际会议，亲历美国文化，游遍美国。本科毕业于西安交通大学，取得双学位(工程/英语)，在校期间以作者身份在英国知名环境类杂志发表论文一篇。在所参加过的各类出国考试中均获得高分，并不断尝试刷新。
  多年GMAT考试培训经验，深谙GMAT阅读、数学考试技法，为广大考生带来福音。以缜密的工科思维和批判式的文科思维穿行于GMAT培训讲堂。目前为申友的GMAT主讲老师之一，并负责教研与教师团队的培训建设。Julie有多年托福授课经验，是国内较早的新托福教师之一，准确把握ETS的出题思路，其研发的口语听力技巧深受学生亲睐。对西方人的思维方式和表达习惯有着深刻理解，能够有效纠正学生学习英语的误区。在留学申请与签证办理，以及海外学习，工作和生活方面有着丰富经验，尤其擅长美国工科硕士申请。
@@ -254,17 +287,7 @@
 					    <a class="btn-2" target="_blank"
                    href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">约课</a>
             		</li>
-            		<li>
-            			<img src="/cn/images/toefl_amanda.png" alt="老师照片"/>
-            			<div class="summer-title">
-            				<p>Amanda</p>
-            				<p>主讲：Gmat阅读、语法</p>
-            			</div>
-            			<p class="summer-cent">申友集团语言教学研发总监，《申友GMAT阅读笔记》主编，《申友GMAT语法笔记》副主编。英国兰卡斯特大学硕士，国内重本英语专业毕业；曾以培训师身份受邀参加GMAC官方举办的亚太峰会。亲历雅思，GMAT考试。国外的几年深造，使她对西方人的思维方式和表达习惯有着深刻的了解;多年教授和研发留学英语课程，尤其是GMAT、TOEFL、SAT阅读和雅思口语，对其有个人的见解;上课风格诙谐活泼，深受学生的喜欢。
-	                    </p>
-					    <a class="btn-2" target="_blank"
-                   href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">约课</a>
-            		</li>
+            		
             	</ul>
             </div>
         </div>

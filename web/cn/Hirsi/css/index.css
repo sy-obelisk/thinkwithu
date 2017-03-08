@@ -72,11 +72,9 @@ input.search {
     width: 100%;
     background: #974694;
 }
-
 .a-fiexd {
     color: #ffffff;
 }
-
 .a-fiexd:hover {
     text-decoration: underline;
 }
@@ -84,11 +82,9 @@ input.search {
 .nav-wrap {
     padding: 10px 0;
 }
-
 .nav-list {
     margin-left: 25px;
 }
-
 .nav-list li {
     float: left;
     position: relative;
@@ -101,16 +97,13 @@ input.search {
     font-size: 16px;
     border-radius: 2px;
 }
-
 .nav-list li a.on {
     color: #ffffff;
     background: #974694;
 }
-
 .nav-list li:nth-child(2):hover .nav2-wrap {
     display: block;
 }
-
 .nav-list li:nth-child(2) .nav2-wrap {
    width: 450px;
    padding: 20px 0 0 0;
