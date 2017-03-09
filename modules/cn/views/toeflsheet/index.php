@@ -103,7 +103,7 @@
         <ul>
             <li>
                 <div class="serviceTop">
-                    <img src="/cn/images/toefl_service01.png" alt="服务图标"/>
+                    <img src="/cn/images/toefl_service001.png" alt="服务图标"/>
                 </div>
                 <div class="serviceSort oneSort">
                 	<div class="serviceTitle">
