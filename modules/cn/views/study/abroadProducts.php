@@ -7,19 +7,25 @@
 <div class="abroadProBig">
     <div class="abroadHead">
         <div class="inAbroad">
-            <img src="/cn/images/abroad_productTitle.png" alt="标题文字图标"/>
+            <div class="abroadAvatar">
+            	<h1>申友留学</h1>
+            	<p>高端留学与GT培训品牌</p>
+            </div>
             <ul>
                 <li>
-                    <h2>留学评估</h2>
-                    <a href="/evaluation.html" target="_blank">点击进入</a>
+                    <p>
+                    	<a href="/evaluation.html" target="_blank">留学评估</a>
+                    </p>
                 </li>
                 <li>
-                    <h2>快速定制留学方案</h2>
-                    <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank">点击进入</a>
+                    <p>
+                    	<a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank">快速定制留学方案</a>
+                    </p>
                 </li>
                 <li>
-                    <h2>背景提升</h2>
-                    <a href="/practices.html" target="_blank">点击进入</a>
+                    <p>
+                    	<a href="/practices.html" target="_blank">背景提升</a>
+                    </p>
                 </li>
             </ul>
         </div>
@@ -200,158 +206,142 @@
             </div>
         </div>
     </div>
-
-    <!--超强服务体系-->
-    <div class="serviceSystem">
-        <div class="serviceS-left">
-            <h1>"六位一体"<br>超强服务体系</h1>
-            <div class="black-div">
-                唯有精细分工,才能实现专才专用。<br>申友留学为保证客户服务质量，强 <br>力打造“六位一体”超强服务体系
-            </div>
-        </div>
-        <div class="serviceS-right">
-            <ul>
-                <li>
-                    <div class="blue-left">
-                        <span>01</span>
-                    </div>
-                    <div class="blue-right">
-                        <h5>客户经理</h5>
-                        <p>由亲和力极强的老师担任，负责签约前的服务讲解和基本问题解答，全程协调跟进团队服务。</p>
-                    </div>
-                    <div style="clear: both"></div>
-                </li>
-                <li>
-                    <div class="blue-left">
-                        <span>04</span>
-                    </div>
-                    <div class="blue-right">
-                        <h5>申请顾问</h5>
-                        <p>由耐心和细心的老师担任，打点申请各个细节，包括网申、寄送材料、签证指导等。</p>
-                    </div>
-                    <div style="clear: both"></div>
-                </li>
-                <li>
-                    <div class="blue-left">
-                        <span>02</span>
-                    </div>
-                    <div class="blue-right">
-                        <h5>留学规划师</h5>
-                        <p>拥有丰富的申请经验，为客户提供背景提升规划，负责客户的选校、定位。</p>
-                    </div>
-                    <div style="clear: both"></div>
-                </li>
-                <li>
-                    <div class="blue-left">
-                        <span>05</span>
-                    </div>
-                    <div class="blue-right">
-                        <h5>高级文书顾问</h5>
-                        <p>留学申请服务答疑解惑，全套文书创作，专注于帮客户完成高质量的核心文书。</p>
-                    </div>
-                    <div style="clear: both"></div>
-                </li>
-                <li>
-                    <div class="blue-left">
-                        <span>03</span>
-                    </div>
-                    <div class="blue-right">
-                        <h5>考试辅导老师</h5>
-                        <p>提供出国考试辅导，给予个性化复习建议和指导，帮助客户达到高分。</p>
-                    </div>
-                    <div style="clear: both"></div>
-                </li>
-                <li>
-                    <div class="blue-left">
-                        <span>06</span>
-                    </div>
-                    <div class="blue-right">
-                        <h5>留学总监</h5>
-                        <p>由申友留学体系中最资深的老师担任，负责整个留学申请项目的进程。</p>
-                    </div>
-                    <div style="clear: both"></div>
-                </li>
-            </ul>
-        </div>
-        <div style="clear: both"></div>
-    </div>
     <!--申友留学七部曲-->
     <div class="lifeMean">
-        <div class="lifeMean-top">
-            <img src="/cn/images/products_flower02.png" alt="花纹图标">
-            <span>申友留学七部曲</span>
-            <img src="/cn/images/products_flower02.png" alt="花纹图标">
-        </div>
-        <div class="lifeMean-bot">
-            <ul>
-                <li>
-                    <div class="numBack">1</div>
-                    <div class="fontInfo">
-                        <h4>时间规划:</h4>
-                        <p>三大申请时间规划方案，明确名校申请计划</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="numBack">2</div>
-                    <div class="fontInfo">
-                        <h4>背景提升:</h4>
-                        <p>专业背景竞争力提升辅导，申请策略指导和执行 </p>
-                    </div>
-                </li>
-                <li>
-                    <div class="numBack">3</div>
-                    <div class="fontInfo">
-                        <h4>专家选校:</h4>
-                        <p>专家选校建议和指导，确立目标名校名单</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="numBack">4</div>
-                    <div class="fontInfo">
-                        <h4>文书设计:</h4>
-                        <p>制作优秀高质量的文书，准备申请材料</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="numBack">5</div>
-                    <div class="fontInfo">
-                        <h4>申请手续:</h4>
-                        <p>完成客户指定目标学校申请，学校联系与"套磁"帮助</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="numBack">6</div>
-                    <div class="fontInfo">
-                        <h4>面试指导:</h4>
-                        <p>精细的面试分析，优质的面试辅导</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="numBack">7</div>
-                    <div class="fontInfo">
-                        <h4>出国签证:</h4>
-                        <p>出国咨询高端服务，圆梦留学海外</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
+    	<div class="lifeWrap">
+    		<h1>留学七部曲</h1>
+    		<div class="lifeContent">
+    			<ul>
+    				<li>
+    					<h2>时间规划</h2>
+    					<p>三大申请时间规划方案，明确名校申请计划</p>
+    				</li>
+    				<li>
+    					<h2>背景提升</h2>
+    					<p>专业背景竞争力提升辅导，申请策略指导和执行</p>
+    				</li>
+    				<li>
+    					<h2>专家选校</h2>
+    					<p>专家选校建议和指导，确立目标名校名单</p>
+    				</li>
+    				<li>
+    					<h2>文书设计</h2>
+    					<p>制作优秀高质量的文书；准备申请材料</p>
+    				</li>
+    				<li>
+    					<h2>申请手续</h2>
+    					<p>完成客户指定目标学校申请，学校联系与"套磁"帮助</p>
+    				</li>
+    				<li>
+    					<h2>面试指导</h2>
+    					<p>精细的面试分析，优质的面试辅导</p>
+    				</li>
+    				<li>
+    					<h2>出国签证</h2>
+    					<p>出国咨询高端服务，圆梦留学海外</p>
+    				</li>
+    			</ul>
+    		</div>
+    	</div>
     </div>
-    <!--申友超强CRM留学系统-->
-    <div class="crm-system">
-        <h2>申友超强CRM留学系统 <span>任何时候、任何地点都可享受服务</span></h2>
-        <div class="curve">
-            <ul>
-                <li>可与所有服务团<br>队所有成员交流</li>
-                <li>上传个人信息、成<br>绩单、推荐人资料<br>申请材料</li>
-                <li>审核咨询项目的<br>服务计划书</li>
-                <li>参加留学考试能<br>力测试</li>
-                <li>查阅申友留学选<br>校内部参数</li>
-                <li>查阅申请文书</li>
-                <li>查阅申请材料<br>追踪申请状态</li>
-            </ul>
-        </div>
-    </div>
-
+    <!--六位一体+CRM留学系统-->
+    <div class="serviceCRM">
+    	<img class="serviceCRM-bg" src="/cn/images/serviceCRM_BG.png"/>
+      	<!--超强服务体系-->
+      	<div class="serviceSystem">
+      		<div class="serviceTitle">
+      			<h1>六位一体</h1>
+      			<p>唯有精细分工,才能实现专才专用。申友留学为保证客户服务质量，强力打造“六位一体”超强服务体系</p>
+      		</div>
+      		<div class="serviceContent">
+      			<ul>
+      				<li>
+      					<h2>客户经理</h2>
+      					<p>由亲和力极强的老师担任，负责签约前的服务讲解和基本问题解答，全程协调跟进团队服务。</p>
+      					<div class="background">
+      						<img src="/cn/images/service_bg01.png"/>
+      					</div>
+      				</li>
+      				<li>
+      					<h2>留学规划师</h2>
+      					<p>拥有丰富的申请经验，为客户提供背景提升规划，负责客户的选校、定位。</p>
+      					<div class="background">
+      						<img src="/cn/images/service_bg02.png"/>
+      					</div>
+      				</li>
+      				<li>
+      					<h2>考试辅导师</h2>
+      					<p>提供出国考试辅导，给予个性化复习建议和指导，帮助客户达到高分。</p>
+      					<div class="background">
+      						<img src="/cn/images/service_bg03.png"/>
+      					</div>
+      				</li>
+      			</ul>
+      			<ul>
+      				<li>
+      					<h2>申请顾问</h2>
+      					<p>由耐心和细心的老师担任，打点申请各个细节，包括网申、寄送材料、签证指导等。</p>
+      					<div class="background">
+      						<img src="/cn/images/service_bg04.png"/>
+      					</div>
+      				</li>
+      				<li>
+      					<h2>高级文书顾问</h2>
+      					<p>留学申请服务答疑解惑，全套文书创作，专注于帮客户完成高质量的核心文书。</p>
+      					<div class="background">
+      						<img src="/cn/images/service_bg05.png"/>
+      					</div>
+      				</li>
+      				<li>
+      					<h2>留学总监</h2>
+      					<p>由申友留学体系中最资深的老师担任，负责整个留学申请项目的进程。</p>
+      					<div class="background">
+      						<img src="/cn/images/service_bg07.png"/>
+      					</div>
+      				</li>
+      			</ul>
+      		</div>     		
+      	</div>
+	    <!--申友超强CRM留学系统-->
+	    <div class="crm-system">
+	    	<div class="crm-title">
+	    		<h2>CRM留学系统</h2>
+	    		<p>任何时候、任何地点都可享受服务</p>
+	    	</div>
+	    	<div class="crm-content">
+	    		<ul>
+	    			<li>
+	    				<img src="/cn/images/product_icon1.png"/>
+	    				<p>可与所有服务团队所有成员交流</p>
+	    			</li>
+	    			<li>
+	    				<img src="/cn/images/product_icon2.png"/>
+	    				<p>上传个人信息、成绩单、推荐人资料申请材料</p>
+	    			</li>
+	    			<li>
+	    				<img src="/cn/images/product_icon3.png"/>
+	    				<p>审核咨询项目的服务计划书</p>
+	    			</li>
+	    			<li>
+	    				<img src="/cn/images/product_icon4.png"/>
+	    				<p>参加留学考试能力测试</p>
+	    			</li>
+	    			<li>
+	    				<img src="/cn/images/product_icon5.png"/>
+	    				<p>查阅申友留学选校内部参数</p>
+	    			</li>
+	    			<li>
+	    				<img src="/cn/images/product_icon6.png"/>
+	    				<p>查阅申请文书</p>
+	    			</li>
+	    			<li>
+	    				<img src="/cn/images/product_icon7.png"/>
+	    				<p>查阅申请材料<br />追踪申请状态</p>
+	    			</li>
+	    		</ul>
+	    	</div>
+	    </div>
+	</div>
     <!---------------申友成功案例------------------->
     <div class="success">
         <div class="success-top">
@@ -381,7 +371,7 @@
 <!--                                <li>成绩：--><?php //echo $v['score']?><!--</li>-->
                                 <li>学校：<?php echo $v['abroadSchool']?></li>
                             </ul>
-                            <a href="/word-details/<?php echo $v['id']?>/102.html">查看详情 <img src="/cn/images/products_rightBtn.png" alt="查看详情"/></a>
+                            <a href="/word-details/<?php echo $v['id']?>/102.html">查看详情 </a>
                         </div>
                     </li>
                     <?php
@@ -393,7 +383,7 @@
                 <div class="succBr-bd">
                     <ul>
                         <?php
-                        $data = \app\modules\cn\models\Content::getContent(['category' => "104,207",'pageSize' => 10]);
+                        $data = \app\modules\cn\models\Content::getContent(['category' => "104,207",'pageSize' => 12]);
                         foreach($data as $v) {
                             ?>
                             <li><i class="fa fa-angle-left"></i><a
@@ -407,7 +397,7 @@
                 </div>
             </div>
             <script type="text/javascript">
-                jQuery(".succB-right").slide({mainCell:".succBr-bd ul",autoPlay:true,effect:"topMarquee",vis:6,interTime:50});
+                jQuery(".succB-right").slide({mainCell:".succBr-bd ul",autoPlay:true,effect:"topMarquee",vis:8,interTime:100});
             </script>
             <div style="clear: both"></div>
         </div>
