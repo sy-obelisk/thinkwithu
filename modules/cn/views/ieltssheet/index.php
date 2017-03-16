@@ -28,7 +28,8 @@
     <link rel="stylesheet" href="/cn/ielts/css/animate.min.css">
     <link rel="stylesheet" href="/cn/ielts/css/reset.css">
     <link rel="stylesheet" href="/cn/ielts/css/main.css">
-    <script src="/cn/ielts/js/jquery-1.12.2.min.js"></script>
+    <!--<script src="/cn/ielts/js/jquery-1.12.2.min.js"></script>-->
+    <script src="/cn/ielts/js/jquery1.42.min.js"></script>
     <script src="/cn/ielts/js/jquery.SuperSlide.2.1.1.js"></script>
     <link rel="stylesheet" href="/cn/css/header.css"/>
     <link rel="stylesheet" href="/cn/css/footer.css"/>
