@@ -538,6 +538,8 @@
 	margin: 0 2% 25px 0;*/
 	width: 24%;
 	float: left;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
 	box-sizing: border-box;
 	margin-right: 1.3%;
 }
@@ -590,10 +592,10 @@
 	cursor:default;
 }
 .bg-cont .bg-font ul{
-	padding-left: 30px;
+	padding-left: 25px;
 }
 .bg-cont .bg-font li{
 	list-style-type:disc;
 	font-size: 13px;
-	margin-bottom: 3px;
+	margin-bottom: 8px;
 }
