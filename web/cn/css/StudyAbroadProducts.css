@@ -238,9 +238,13 @@
 
 
 /*申友成功案例*/
-.success{
-    background: url("../images/products_stuBG.png") center no-repeat;
+.successLife{
+	background: url("../images/products_stuBG.png") center no-repeat;
     background-size: 100% 100%;
+}
+.success{
+    /*background: url("../images/products_stuBG.png") center no-repeat;
+    background-size: 100% 100%;*/
     padding: 50px 0;
 }
 .success-top{
@@ -677,8 +681,8 @@
 /*七部曲*/
 .lifeMean{
     padding: 33px 0 53px 0;
-    background: url("../images/product_smallbg.png") no-repeat;
-    background-size: 100% 100%;
+    /*background: url("../images/product_smallbg.png") no-repeat;
+    background-size: 100% 100%;*/
     overflow: hidden;
 }
 .lifeMean .lifeWrap{
@@ -812,7 +816,7 @@
 	display: inline;
 	font: 200 16px/25px 微软雅黑,\u5fae\u8f6f\u96c5\u9ed1,"Microsoft YaHei UI",黑体,\u9ed1\u4f53,SimHei;
 	background-color: rgb(255,211,71);
-	padding:1px 25px;
+	padding:4px 32px;
 	border-radius: 10px;
 	top: 50%;
 	left: 50%;
