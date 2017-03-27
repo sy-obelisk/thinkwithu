@@ -238,13 +238,13 @@
 
 
 /*申友成功案例*/
-.successLife{
+/*.successLife{
 	background: url("../images/products_stuBG.png") center no-repeat;
     background-size: 100% 100%;
-}
+}*/
 .success{
-    /*background: url("../images/products_stuBG.png") center no-repeat;
-    background-size: 100% 100%;*/
+    background: url("../images/products_stuBG.png") center no-repeat;
+    background-size: 100% 100%;
     padding: 50px 0;
 }
 .success-top{
@@ -681,8 +681,8 @@
 /*七部曲*/
 .lifeMean{
     padding: 33px 0 53px 0;
-    /*background: url("../images/product_smallbg.png") no-repeat;
-    background-size: 100% 100%;*/
+    background: url("../images/product_smallbg.png") no-repeat;
+    background-size: 100% 100%;
     overflow: hidden;
 }
 .lifeMean .lifeWrap{
