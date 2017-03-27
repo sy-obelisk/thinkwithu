@@ -228,145 +228,71 @@
 <section>
     <div class="w10 tm">
         <h1 class="module-tit inb"><em class="line-2">为你</em>推荐</h1>
-        <div class=" list-wrap clearfix">
-            <ul class="fl left-recommend clearfix">
-                <li>
-                    <div class="icon-wrap">
-                        <img src="/cn/Hirsi/images/icon-1.png" alt="">
-                        <p>A卓越菁英<br>（留学计划）</p>
-                    </div>
-                    <div class="hover-wrap">
-                        <div class="hover-text-wrap">
-                            <a href="/picture-details/100/index,113.html">
-                                <p class="hover-text">已经入申请年（就读大三，大四或高三）或者已具备出国升学条件的求学人士。</p>
-                            </a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="icon-wrap">
-                        <img src="/cn/Hirsi/images/icon-2.png" alt="">
-                        <p>B梦想起航<br>（留学计划）</p>
-                    </div>
-                    <div class="hover-wrap">
-                        <div class="hover-text-wrap">
-                            <a href="/picture-details/102/index,113.html">
-                                <p class="hover-text">从大一、大二、高一开始规划留学申请的解决方案</p>
-                            </a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <ul class=" fl mid-recommend clearfix">
-                <li>
-                    <div class="icon-wrap">
-                        <img src="/cn/Hirsi/images/icon-5.png" alt="">
-                        <p>C名校直通车<br>（留学计划）</p>
-                    </div>
-                    <div class="hover-wrap">
-                        <div class="hover-text-wrap">
-                            <a href="/picture-details/104/index,113.html">
-                                <p class="hover-text">以美国USnews综合排名TOP50、英国Times综合排名TOP10以及香港6大名校作为申请目标的申请者。</p>
-                            </a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="icon-wrap">
-                        <img src="/cn/Hirsi/images/icon-8.png" alt="">
-                        <p>MBA申请计划</p>
-                    </div>
-                    <div class="hover-wrap">
-                        <div class="hover-text-wrap">
-                            <a href="/MBA-PHD.html">
-                                <p class="hover-text">有志于申请MBA研究生的商业精英和喜欢MBA教学的学生</p>
-                            </a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="icon-wrap">
-                        <img src="/cn/Hirsi/images/icon-6.png" alt="">
-                        <p>D助力传奇<br>（留学计划）</p>
-                    </div>
-                    <div class="hover-wrap">
-                        <div class="hover-text-wrap">
-                            <a href="/picture-details/106/index,113.html">
-                                <p class="hover-text">
-                                    高端优秀申请者，或对指定学校有强烈要求的Master/MBA/PHD申请者，以期通过优质的申请突破自身局限，获得名校offer的申请者。</p>
-                            </a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="icon-wrap">
-                        <img src="/cn/Hirsi/images/icon-9.png" alt="">
-                        <p>单项留学服务</p>
-                    </div>
-                    <div class="hover-wrap">
-                        <div class="hover-text-wrap">
-                            <a href="/picture-details/111/index,110.html">
-                                <p class="hover-text">文书定制、网申服务、面试辅导、签证服务、Summer school</p>
-                            </a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="icon-wrap">
-                        <img src="/cn/Hirsi/images/icon-7.png" alt="">
-                        <p>PHD申请计划</p>
-                    </div>
-                    <div class="hover-wrap">
-                        <div class="hover-text-wrap">
-                            <a href="/MBA-PHD.html">
-                                <p class="hover-text">有志于申请PHD的学术研究型学生和在职人群</p>
-                            </a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="icon-wrap">
-                        <img src="/cn/Hirsi/images/icon-10.png" alt="">
-                        <p>雅思培训</p>
-                    </div>
-                    <div class="hover-wrap">
-                        <div class="hover-text-wrap">
-                            <a href="/ieltssheet.html">
-                                <p class="hover-text">VIP一对一课程、强化班</p>
-                            </a>
-                        </div>
-                    </div>
-                </li>
-
-            </ul>
-            <ul class="fr left-recommend clearfix">
-                <li>
-                    <div class="icon-wrap">
-                        <img src="/cn/Hirsi/images/icon-3.png" alt="">
-                        <p>GMAT培训</p>
-                    </div>
-                    <div class="hover-wrap">
-                        <div class="hover-text-wrap">
-                            <a href="/gmatsheet.html">
-                                <p class="hover-text">周末班、全日制课程、VIP一对一课程、PRE基课程、高分增值课程、机经冲刺课程</p>
-                            </a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="icon-wrap">
-                        <img src="/cn/Hirsi/images/icon-4.png" alt="">
-                        <p>托福培训</p>
-                    </div>
-                    <div class="hover-wrap">
-                        <div class="hover-text-wrap">
-                            <a href="/toefl/assistance.html">
-                                <p class="hover-text">强化班（线上线下）、高分增值课程、VIP一对一课程、单项模块课程</p>
-                            </a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+        <div class="list-wrap">
+        	<ul class="abroad clearfix">
+  				<li>
+  					<a href="/gmatsheet.html">
+  						<img src="/cn/images/intensive_img01.png"/>
+  						<p>GMAT培训</p>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank">
+  						<img src="/cn/images/intensive_img04.png"/>
+  						<p>SAT培训</p>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="/toefl/assistance.html">
+  						<img src="/cn/images/intensive_img06.png"/>
+  						<p>托福培训</p>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="/ieltssheet.html">
+  						<img src="/cn/images/intensive_img07.png"/>
+  						<p>雅思培训</p>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="/practices.html">
+  						<img src="/cn/images/intensive_img08.png"/>
+  						<p>背景提升</p>
+  					</a>
+  				</li>
+  			</ul>
+        	<ul class="train clearfix">
+        		<li>
+        			<a href="/USA.html">
+        				<img src="/cn/images/usa.png" alt="" />
+        				<p>美国留学</p>
+        			</a>
+        		</li>
+        		<li>
+        			<a href="/UK.html">
+        				<img src="/cn/images/uk.png"/>
+        				<p>英国留学</p>
+        			</a>
+        		</li>
+        		<li>
+        			<a href="/AUS.html">
+        				<img src="/cn/images/australia.png"/>
+        				<p>澳洲留学</p>
+        			</a>
+        		</li>
+        		<li>
+        			<a href="/COUNTRY.html">
+        				<img src="/cn/images/canada.png"/>
+        				<p>加拿大留学</p>
+        			</a>
+        		</li>
+        		<li>
+        			<a href="/HK.html">
+        				<img src="/cn/images/hk.png"/>
+        				<p>香港留学</p>
+        			</a>
+        		</li>
+        	</ul>
         </div>
     </div>
 </section>

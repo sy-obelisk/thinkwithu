@@ -269,7 +269,6 @@ h1.info-tit {
     padding-top: 35px;
     font-size: 32px;
     color: #1A1A1A;
-    /*padding-bottom: 15px;*/
     font-weight: normal;
     border-bottom: 2px solid #FF0000;
 }
@@ -285,95 +284,51 @@ h1.info-tit {
     padding: 30px 0 20px;
 }
 
-.mid-recommend {
-    width: 480px;
-    margin-left: 27px;
+.list-wrap ul{
+	margin-bottom: 25px;
 }
-
-.mid-recommend li {
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    width: 230px;
-    height: 110px;
-    margin-bottom: 24px;
-    border: 1px solid #d1dae8;
+.list-wrap li{
+	float: left;
+	width: 182px;
+	height: 104px;
+	margin-right: 22px;
+	position: relative;
+	overflow: hidden;
 }
-
-.mid-recommend li:nth-child(even) {
-    float: right;
+.list-wrap img{
+	width: 100%;
+	height: 100%;
+	transition: all .5s;
+	-webkit-transition: all .5s;
 }
-
-.mid-recommend li:nth-child(odd) {
-    float: left;
+.list-wrap .train li:last-child{
+	margin-right: 0;
 }
-
-.mid-recommend li:hover .hover-wrap {
-    transform: translateY(110px);
-    -webkit-transform: translateY(110px);
+.list-wrap .abroad li:last-child{
+	margin-right: 0;
 }
-
-.left-recommend li {
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    width: 230px;
-    height: 175px;
-    margin-bottom: 27px;
-    border: 1px solid #d1dae8;
+.list-wrap p{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,.6);
+	color: #fff;
+	font-size: 20px;
+	letter-spacing: 3px;
+	line-height: 104px;
+	transition: all .3s;
+	-webkit-transition: all .3s;
 }
-
-.left-recommend li:hover .hover-wrap {
-    transform: translateY(175px);
-    -webkit-transform: translateY(175px);
+.list-wrap li:hover img{
+	transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
 }
-
-.left-recommend .icon-wrap {
-    margin-top: 45px;
-}
-
-.mid-recommend .icon-wrap {
-    margin-top: 20px;
-}
-
-.icon-wrap {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.icon-wrap p {
-    margin-top: 10px;
-    font-size: 18px;
-    color: #1A1A1A;
-}
-
-.hover-wrap {
-    position: absolute;
-    left: 0;
-    top: -175px;
-    width: 100%;
-    height: 100%;
-    line-height: 170px;
-    background: #CC66CC;
-    transition: all ease-out 0.4s;
-}
-
-.mid-recommend .hover-wrap {
-    line-height: 105px;
-    top: -110px;
-}
-
-.hover-text-wrap {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.hover-text {
-    padding: 0 7px;
-    text-align: left;
-    font-size: 14px;
-    line-height: 22px;
-    color: #ffffff;
+.list-wrap li:hover p{
+	background-color: rgba(0,0,0,.3);
+	line-height: 80px;
 }
 
 /******************留学服务***************/

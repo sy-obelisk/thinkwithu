@@ -43,6 +43,132 @@
 	</div>
 </div>
 
+<!--金融实习-->
+<div class="bg-promote">
+	<div class="bg-wrap">
+		<h2>申友全球金融实习</h2>
+		<div class="bg-row">
+			<div class="bg-cont">
+				<a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" class="bg-img">
+					<div class="bg-overplay"></div>
+					<img src="/cn/images/174.jpg" class="bg-img-responsive" alt="" />
+				</a>
+				<div class="bg-font">
+					<h4>华尔街海龟交易实训</h4>
+					<ul>
+						<li>走进全球金融中心——华尔街 </li>
+						<li>名师出高徒，成为金融大鳄的门徒</li>
+						<li>进入IG金融集团实战内训</li>
+						<li>深入了解中央交易系统</li>
+						<li>获悉金融市场的本质及交易商机制</li>
+					</ul>
+				</div>
+			</div>
+			<div class="bg-cont">
+				<a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" class="bg-img">
+					<div class="bg-overplay"></div>
+					<img src="/cn/images/329.jpg" class="bg-img-responsive" alt="" />
+				</a>
+				<div class="bg-font">
+					<h4>华尔街精品投行长期实习</h4>
+					<ul>
+						<li>提供华尔街顶级投行实战资源 </li>
+						<li>24小时全程辅导</li>
+						<li>有机会成为纽约office的正式员工</li>
+						<li>提供投行官方高含金量证书</li>
+						<li>每天感受真实的金融氛围</li>
+					</ul>
+				</div>
+			</div>
+			<div class="bg-cont">
+				<a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" class="bg-img">
+					<div class="bg-overplay"></div>
+					<img src="/cn/images/226.jpg" class="bg-img-responsive" alt="" />
+				</a>
+				<div class="bg-font">
+					<h4>伦敦外汇交易商长期实习</h4>
+					<ul>
+						<li>长达4周的丰富职业履历</li>
+						<li>全球最大的货币市场交易员的训练</li>
+						<li>获得专业金融市场投资与交易能力</li>
+						<li>交易为生，掌握金融核心岗位技能</li>
+					</ul>
+				</div>
+			</div>
+			<div class="bg-cont">
+				<a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" class="bg-img">
+					<div class="bg-overplay"></div>
+					<img src="/cn/images/204.jpg" class="bg-img-responsive" alt="" />
+				</a>
+				<div class="bg-font">
+					<h4>香港基金管理实训</h4>
+					<ul>
+						<li>香港铜锣湾核心商业区 </li>
+						<li>500强纽交所上市企业安达集团</li>
+						<li>参访法巴\首域\瑞士信贷权威基金 </li>
+						<li>全球基金资产配置与财富管理训练 </li>
+						<li>行业专业导师一对一授课 </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--SUMMER SCHOOL-->
+<div class="summer">
+	<div class="inSummer">
+		<h2>SUMMER SCHOOL</h2>
+		<div class="toggleSummer">
+			<div class="summerHd hd">
+				<a href="javascript:void(0);" class="prev">
+					<img src="/cn/images/practice_prevTrangle.png" alt="左边箭头图标">
+				</a>
+				<a href="javascript:void(0);" class="next">
+					<img src="/cn/images/practice_nextTrangle.png" alt="右边箭头图标">
+				</a>
+				<!--<span class="arrow left">&lt;</span>
+				<span class="arrow right">&gt;</span>-->
+			</div>
+			<div class="summerBd">
+				<ul>
+					<?php
+                     $data = \app\modules\cn\models\Content::getContent(['fields' => 'id,image,name,time,synopsis','category' => "241",'pageSize'=>5]);
+                     foreach($data as $v) {
+                         ?>
+						<li>
+							<div class="summerTop">
+								<img src="<?php echo $v['image']?>" alt="图片">
+								<!--遮罩-->
+								<div class="summer-mask">
+									<a href="/practices/<?php echo $v['id']?>.html" target="_blank">
+										<h4><?php echo date("Y-m-d",strtotime($v['time']))?></h4>
+										<div>
+											<?php echo html_entity_decode($v['synopsis'])?>
+										</div>
+										<b>查看详细介绍 <img src="/cn/images/practice_yellowJ.png" alt="箭头图标"></b>
+									</a>
+								</div>
+							</div>
+							<span><?php echo $v['name']?></span>
+						</li>
+						<?php
+                     }
+                     ?>
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript">
+			jQuery(".toggleSummer").slide({
+				mainCell: ".summerBd ul",
+				vis: 4,
+				scroll: 4,
+				effect: "leftLoop",
+				interTime: 50,
+				autoPage: true
+			});
+		</script>
+	</div>
+</div>
 <!--实习项目-->
 <div class="blackPro">
 	<div class="program program_black">
@@ -110,162 +236,6 @@
 		});
 	</script>
 </div>
-<!--金融实习-->
-<div class="bg-promote">
-	<div class="bg-wrap">
-		<h2>申友全球金融实习</h2>
-		<div class="bg-row">
-			<div class="bg-cont">
-				<a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" class="bg-img">
-					<div class="bg-overplay"></div>
-					<img src="/cn/images/174.jpg" class="bg-img-responsive" alt="" />
-				</a>
-				<div class="bg-font">
-					<h4>GTT华尔街海龟交易实训</h4>
-					<ul>
-						<li>走进全球金融中心——华尔街 </li>
-						<li>名师出高徒，成为金融大鳄的门徒</li>
-						<li>进入IG金融集团实战内训</li>
-						<li>深入了解中央交易系统</li>
-						<li>获悉金融市场的本质及交易商机制</li>
-					</ul>
-				</div>
-			</div>
-			<div class="bg-cont">
-				<a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" class="bg-img">
-					<div class="bg-overplay"></div>
-					<img src="/cn/images/329.jpg" class="bg-img-responsive" alt="" />
-				</a>
-				<div class="bg-font">
-					<h4>BIB华尔街精品投行长期实习</h4>
-					<ul>
-						<li>提供华尔街顶级投行实战资源 </li>
-						<li>24小时全程辅导</li>
-						<li>有机会成为纽约office的正式员工</li>
-						<li>提供投行官方高含金量证书</li>
-						<li>每天感受真实的金融氛围</li>
-					</ul>
-				</div>
-			</div>
-			<div class="bg-cont">
-				<a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" class="bg-img">
-					<div class="bg-overplay"></div>
-					<img src="/cn/images/226.jpg" class="bg-img-responsive" alt="" />
-				</a>
-				<div class="bg-font">
-					<h4>LCT伦敦外汇交易商长期实习</h4>
-					<ul>
-						<li>长达4周的丰富职业履历</li>
-						<li>全球最大的货币市场交易员的训练</li>
-						<li>获得专业金融市场投资与交易能力</li>
-						<li>交易为生，掌握金融核心岗位技能</li>
-					</ul>
-				</div>
-			</div>
-			<div class="bg-cont">
-				<a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" class="bg-img">
-					<div class="bg-overplay"></div>
-					<img src="/cn/images/366.jpg" class="bg-img-responsive" alt="" />
-				</a>
-				<div class="bg-font">
-					<h4>WOF香港基金管理实训</h4>
-					<ul>
-						<li>香港铜锣湾核心商业区 </li>
-						<li>500强纽交所上市企业安达集团</li>
-						<li>参访法巴\首域\瑞士信贷权威基金 </li>
-						<li>全球基金资产配置与财富管理训练 </li>
-						<li>行业专业导师一对一授课 </li>
-					</ul>
-				</div>
-			</div>
-			<div class="bg-cont">
-				<a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" class="bg-img">
-					<div class="bg-overplay"></div>
-					<img src="/cn/images/277.jpg" class="bg-img-responsive" alt="" />
-				</a>
-				<div class="bg-font">
-					<h4>GHF香港对冲基金实训</h4>
-					<ul>
-						<li>全球外汇交易商-FXCM亚洲总部 </li>
-						<li>与国际顶尖交易大师论道</li>
-						<li>深入对冲基金行业</li>
-						<li>塑造最专业的对冲基金运营能力 </li>
-						<li>亲身实战，直指金融行业巅峰</li>
-					</ul>
-				</div>
-			</div>
-			<div class="bg-cont">
-				<a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" class="bg-img">
-					<div class="bg-overplay"></div>
-					<img src="/cn/images/204.jpg" class="bg-img-responsive" alt="" />
-				</a>
-				<div class="bg-font">
-					<h4>TSU上海初级交易员实训</h4>
-					<ul>
-						<li>世界顶级金融集团FXCM </li>
-						<li>职业引领，师徒制忠实学习指南</li>
-						<li>24小时关注市场动态并实操练习 </li>
-						<li>有机会荣获“最佳分析师”称号 </li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!--SUMMER SCHOOL-->
-<div class="summer">
-	<div class="inSummer">
-		<h2>SUMMER SCHOOL</h2>
-		<div class="toggleSummer">
-			<div class="summerHd hd">
-				<a href="javascript:void(0);" class="prev">
-					<img src="/cn/images/practice_prevTrangle.png" alt="左边箭头图标">
-				</a>
-				<a href="javascript:void(0);" class="next">
-					<img src="/cn/images/practice_nextTrangle.png" alt="右边箭头图标">
-				</a>
-			</div>
-			<div class="summerBd">
-				<ul>
-					<?php
-                     $data = \app\modules\cn\models\Content::getContent(['fields' => 'id,image,name,time,synopsis','category' => "241",'pageSize'=>5]);
-                     foreach($data as $v) {
-                         ?>
-						<li>
-							<div class="summerTop">
-								<img src="<?php echo $v['image']?>" alt="图片">
-								<!--遮罩-->
-								<div class="summer-mask">
-									<a href="/practices/<?php echo $v['id']?>.html" target="_blank">
-										<h4><?php echo date("Y-m-d",strtotime($v['time']))?></h4>
-										<div>
-											<?php echo html_entity_decode($v['synopsis'])?>
-										</div>
-										<b>查看详细介绍 <img src="/cn/images/practice_yellowJ.png" alt="箭头图标"></b>
-									</a>
-								</div>
-							</div>
-							<span><?php echo $v['name']?></span>
-						</li>
-						<?php
-                     }
-                     ?>
-				</ul>
-			</div>
-		</div>
-		<script type="text/javascript">
-			jQuery(".toggleSummer").slide({
-				mainCell: ".summerBd ul",
-				vis: 4,
-				scroll: 4,
-				effect: "leftLoop",
-				interTime: 50,
-				autoPage: true
-			});
-		</script>
-	</div>
-</div>
-
 <!--申友游学，六大品牌优势-->
 <div class="brandAdvantage">
 	<h2>申友游学，六大品牌优势</h2>
