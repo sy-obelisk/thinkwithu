@@ -238,6 +238,10 @@
 
 
 /*申友成功案例*/
+/*.successLife{
+	background: url("../images/products_stuBG.png") center no-repeat;
+    background-size: 100% 100%;
+}*/
 .success{
     background: url("../images/products_stuBG.png") center no-repeat;
     background-size: 100% 100%;
@@ -812,7 +816,7 @@
 	display: inline;
 	font: 200 16px/25px 微软雅黑,\u5fae\u8f6f\u96c5\u9ed1,"Microsoft YaHei UI",黑体,\u9ed1\u4f53,SimHei;
 	background-color: rgb(255,211,71);
-	padding:1px 25px;
+	padding:4px 32px;
 	border-radius: 10px;
 	top: 50%;
 	left: 50%;
