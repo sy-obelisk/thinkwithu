@@ -204,6 +204,21 @@ class ApiController extends ThinkUApiControl {
         die(json_encode($res));
     }
 
+    /**
+     *wap游学报名
+     * @Obelisk
+     */
+    public function actionWapPractice(){
+        $phone = Yii::$app->request->post('phone');
+        $name = Yii::$app->request->post('name');
+        $extendVal = Yii::$app->request->post('extendVal');
+        $contentModel = new Content();
+        $contentModel->addContent(258,$phone,$name,$extendVal);
+        $res['code'] = 1;
+        $res['message'] = '我们的工作人员将于1-2个工作日内跟你联系';
+        die(json_encode($res));
+    }
+
 
     /**
      * 点击获取验证码
