@@ -14,6 +14,8 @@ use app\modules\cn\models\Collect;
 use app\modules\cn\models\Login;
 use app\libs\Sms;
 use app\libs\VerificationCode;
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Headers: X-Requested-With');
 class ApiController extends ThinkUApiControl {
     public $enableCsrfValidation = false;
     public function actionGetJoin(){
@@ -184,6 +186,21 @@ class ApiController extends ThinkUApiControl {
                 $res['message'] = '我们的工作人员将于1-2个工作日内跟你联系';
             }
         }
+        die(json_encode($res));
+    }
+
+    /**
+     *评估信息存储
+     * @Obelisk
+     */
+    public function actionWapAssess(){
+        $phone = Yii::$app->request->post('phone');
+        $name = Yii::$app->request->post('name');
+        $extendVal = Yii::$app->request->post('extendVal');
+        $contentModel = new Content();
+        $contentModel->addContent(257,$phone,$name,$extendVal);
+        $res['code'] = 1;
+        $res['message'] = '我们的工作人员将于1-2个工作日内跟你联系';
         die(json_encode($res));
     }
 
