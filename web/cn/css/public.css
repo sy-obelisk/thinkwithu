@@ -68,7 +68,7 @@ a:hover{
 }
 .abNavHd ul li a img{
     position: relative;
-    top: 5px;
+    /*top: 5px;*/
 }
 .purpleBG{
     width: 91px;

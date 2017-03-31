@@ -4,7 +4,7 @@
         <ul class="inb nav-list clearfix">
             <li><a class="on on-hover nav1-link" href="/">首页</a></li>
             <li><a class="nav1-link" href="/study-aboard/assistance.html">留学服务</a>
-                <div class="nav2-wrap">
+                <!--<div class="nav2-wrap">
                     <div class="nav2-list">
                         <div class="inb nav2-left-wrap">
                             <div class="nav2-left">
@@ -35,7 +35,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
             </li>
             <li><a class="nav1-link" href="/gmatsheet.html">GMAT培训</a></li>
             <li><a class="nav1-link" href="/toefl/assistance.html">托福培训</a></li>

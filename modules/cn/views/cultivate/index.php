@@ -4,6 +4,10 @@
 
     <script type="text/javascript" src="/cn/js/studyAbroad.js"></script>
 
+<!--nav 导航栏-->
+<?php use app\commands\front\BannerWidget;?>
+<?php BannerWidget::begin();?>
+<?php BannerWidget::end();?>
 <!-----------------------------培训导航------------------------------>
 <div class="curltivateNav">
     <ul>
