@@ -88,7 +88,7 @@
     if ($action != 'word-details' && $action != 'picture-details') {
         ?>
         <meta name="description" content="<?php echo $seo['description'] ?>">
-    <?php
+        <?php
     }
     ?>
     <script>
@@ -152,7 +152,7 @@
                 <li><a href="<?php echo $v['url'] ?>" target="_blank"
                        style="background: url('<?php echo $v['image'] ?>') no-repeat center;background-size: auto 100%;"></a>
                 </li>
-            <?php
+                <?php
             }
             ?>
         </ul>
@@ -221,78 +221,78 @@
     </script>-->
     <!---------------------------左边悬浮窗---------------------------------->
     <?php use app\commands\front\LeftSuspensionWidget;?>
-	<?php LeftSuspensionWidget::begin();?>
-	<?php LeftSuspensionWidget::end();?>
+    <?php LeftSuspensionWidget::begin();?>
+    <?php LeftSuspensionWidget::end();?>
 </section>
 <!--推荐-->
 <section>
     <div class="w10 tm">
         <h1 class="module-tit inb"><em class="line-2">为你</em>推荐</h1>
         <div class="list-wrap">
-        	<ul class="abroad clearfix">
-  				<li>
-  					<a href="/gmatsheet.html">
-  						<img src="/cn/images/intensive_img01.png"/>
-  						<p>GMAT培训</p>
-  					</a>
-  				</li>
-  				<li>
-  					<a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank">
-  						<img src="/cn/images/intensive_img04.png"/>
-  						<p>SAT培训</p>
-  					</a>
-  				</li>
-  				<li>
-  					<a href="/toefl/assistance.html">
-  						<img src="/cn/images/intensive_img06.png"/>
-  						<p>托福培训</p>
-  					</a>
-  				</li>
-  				<li>
-  					<a href="/ieltssheet.html">
-  						<img src="/cn/images/intensive_img07.png"/>
-  						<p>雅思培训</p>
-  					</a>
-  				</li>
-  				<li>
-  					<a href="/practices.html">
-  						<img src="/cn/images/intensive_img08.png"/>
-  						<p>背景提升</p>
-  					</a>
-  				</li>
-  			</ul>
-        	<ul class="train clearfix">
-        		<li>
-        			<a href="/USA.html">
-        				<img src="/cn/images/usa.png" alt="" />
-        				<p>美国留学</p>
-        			</a>
-        		</li>
-        		<li>
-        			<a href="/UK.html">
-        				<img src="/cn/images/uk.png"/>
-        				<p>英国留学</p>
-        			</a>
-        		</li>
-        		<li>
-        			<a href="/AUS.html">
-        				<img src="/cn/images/australia.png"/>
-        				<p>澳洲留学</p>
-        			</a>
-        		</li>
-        		<li>
-        			<a href="/COUNTRY.html">
-        				<img src="/cn/images/canada.png"/>
-        				<p>加拿大留学</p>
-        			</a>
-        		</li>
-        		<li>
-        			<a href="/HK.html">
-        				<img src="/cn/images/hk.png"/>
-        				<p>香港留学</p>
-        			</a>
-        		</li>
-        	</ul>
+            <ul class="abroad clearfix">
+                <li>
+                    <a href="/gmatsheet.html">
+                        <img src="/cn/images/intensive_img01.png"/>
+                        <p>GMAT培训</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank">
+                        <img src="/cn/images/intensive_img04.png"/>
+                        <p>SAT培训</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/toefl/assistance.html">
+                        <img src="/cn/images/intensive_img06.png"/>
+                        <p>托福培训</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/ieltssheet.html">
+                        <img src="/cn/images/intensive_img07.png"/>
+                        <p>雅思培训</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/practices.html">
+                        <img src="/cn/images/intensive_img08.png"/>
+                        <p>背景提升</p>
+                    </a>
+                </li>
+            </ul>
+            <ul class="train clearfix">
+                <li>
+                    <a href="/USA.html">
+                        <img src="/cn/images/usa.png" alt="" />
+                        <p>美国留学</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/UK.html">
+                        <img src="/cn/images/uk.png"/>
+                        <p>英国留学</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/AUS.html">
+                        <img src="/cn/images/australia.png"/>
+                        <p>澳洲留学</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/COUNTRY.html">
+                        <img src="/cn/images/canada.png"/>
+                        <p>加拿大留学</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/HK.html">
+                        <img src="/cn/images/hk.png"/>
+                        <p>香港留学</p>
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 </section>
@@ -369,7 +369,7 @@
                         <dt>
                             <a href="/word-details/<?php echo $v['id'] ?>/index,178,125.html"><?php echo $v['name'] ?></a>
                         </dt>
-                    <?php
+                        <?php
                     }
                     ?>
                 </dl>
@@ -390,7 +390,7 @@
                         <dt>
                             <a href="/word-details/<?php echo $v['id'] ?>/index,178,121.html"><?php echo $v['name'] ?></a>
                         </dt>
-                    <?php
+                        <?php
                     }
                     ?>
                 </dl>
@@ -411,7 +411,7 @@
                         ?>
                         <dt><a href="/public-class/<?php echo $v['id'] ?>.html"><?php echo $k + 1 ?>
                                 .<?php echo $v['name'] ?></a></dt>
-                    <?php
+                        <?php
                     }
                     ?>
 
@@ -507,23 +507,23 @@
                             $two[] = $v;
                         }
                     }
-                        ?>
+                    ?>
 
 
                     <div class="slide-f1 fl">
                         <div class="topicBd">
                             <ol class="topic-list">
                                 <?php
-                                    foreach($one as $v) {
-                                        ?>
-                                        <li>
+                                foreach($one as $v) {
+                                    ?>
+                                    <li>
 
                                         <a href="/word-details/<?php echo $v['id'] ?>/249.html"><?php echo $v['name']?></a>
 
-                                            <p class="ellipsis-2 tode"><?php echo $v['abstract']?></p>
-                                        </li>
+                                        <p class="ellipsis-2 tode"><?php echo $v['abstract']?></p>
+                                    </li>
                                     <?php
-                                    }
+                                }
                                 ?>
                             </ol>
 
@@ -541,7 +541,7 @@
 
                                         <p class="ellipsis-2 tode"><?php echo $v['abstract']?></p>
                                     </li>
-                                <?php
+                                    <?php
                                 }
                                 ?>
 
@@ -636,7 +636,7 @@
                             </div>
                         </div>
                     </li>
-                <?php
+                    <?php
                 }
                 ?>
             </ul>
@@ -658,7 +658,7 @@
                                     </p>
                                 </div>
                             </li>
-                        <?php
+                            <?php
                         }
                         ?>
                     </ul>
@@ -710,7 +710,7 @@
                         }
                         ?>
                     </ul>
-                <?php
+                    <?php
                 }
                 ?>
             </div>
@@ -741,7 +741,7 @@
                         </div>
                         <div class="abroad-img"><a href="#"><img src="<?php echo $v['image'] ?>" alt=""></a></div>
                     </li>
-                <?php
+                    <?php
                 }
                 ?>
             </ul>
@@ -762,7 +762,7 @@
                         ?>
                         <li><a href="/materials.html"><span></span><img src="<?php echo $v['image'] ?>" alt="教材"></a>
                         </li>
-                    <?php
+                        <?php
                     }
                     ?>
                 </ul>
@@ -1034,7 +1034,7 @@
                                 <div style="clear: both"></div>
                             </div>
                         </li>
-                    <?php
+                        <?php
                     }
                     ?>
                 </ul>
@@ -1048,7 +1048,7 @@
 } elseif ($url == '/practices.html' || strstr($url, '/practices/')) {
     ?>
 
-<?php
+    <?php
 }
 else{
 ?>
@@ -1058,7 +1058,7 @@ else{
     <script type="text/javascript">
         jQuery(".connection").slide({mainCell: ".connectBd", trigger: "mouseover"});
     </script>
-<?php
+    <?php
 }
 ?>
 

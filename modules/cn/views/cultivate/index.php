@@ -236,6 +236,7 @@
                 <ul>
                     <li><a href="/case.html#admission">GMAT高分榜单</a></li>
                     <li><a href="/case.html#admission">托福高分榜单</a></li>
+
                 </ul>
             </div>
             <div style="clear: both"></div>
@@ -246,7 +247,8 @@
                             <div class="highS-outBd">
                                 <ul>
                                     <?php
-                                    $data = \app\modules\cn\models\Content::getContent(['category' => "104,115","pageSize" => 15]);
+                                    $data = \app\modules\cn\models\Content::getContent(['category' => "104","pageSize" => 15]);
+//                                    var_dump($data);exit;
                                     foreach($data as $v) {
                                         ?>
                                         <li><img src="/cn/images/cultivate_jiangbei.png" alt="奖杯图标"/>

@@ -213,6 +213,7 @@
             </ul>
         </div>
     </div>
+
     <div class="content-right">
         <?php
         $studyInSpeech = \app\modules\cn\models\Content::getContent(['fields' => 'abstract,smallPhoto','category' => "$countryId,$degreeId,102,178",'pageSize' => 8,'order' => "c.viewCount DESC"]);

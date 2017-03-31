@@ -51,29 +51,30 @@
         <img src="/cn/images/index_bannerLeft02.png" alt="2014-2015录取榜"/>
     </div>
     <div class="bannerCenter">
-        <div class="bannerHd hd">
-            <ul>
-                <?php
-                $data = \app\modules\cn\models\Content::getContent(['category' => '190,92','pageSize' => '5']);
-                foreach($data as $v){
-                    ?>
-                    <li></li>
-                <?php
-                }
-                ?>
-            </ul>
-        </div>
+<!--        <div class="bannerHd hd">-->
+<!--            <ul>-->
+<!--                --><?php
+//                $data = \app\modules\cn\models\Content::getContent(['category' => '190,92','pageSize' => '5']);
+//                foreach($data as $v){
+//                    ?>
+<!--                    <li>--><?php //echo $v['name'] ?><!--</li>-->
+<!--                --><?php
+//                }
+//                ?>
+<!--            </ul>-->
+<!--        </div>-->
         <div class="bannerBd">
             <ul>
                 <?php
-                    $data = \app\modules\cn\models\Content::getContent(['fields' => 'url','category' => '190,92','pageSize' => '5']);
+                    $data = \app\modules\cn\models\Content::getContent(['fields' => 'url','category' => '190','pageSize' => '5']);
+                //var_dump($data);exit;
                 foreach($data as $v){
                     ?>
                     <li><a href="<?php echo $v['url']?>" target="_blank"><img
                                 src="<?php echo $v['image']?>"/></a></li>
                 <?php
                 }
-                ?>
+//                ?>
             </ul>
         </div>
     </div>

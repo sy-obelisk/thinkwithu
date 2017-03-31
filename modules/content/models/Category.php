@@ -32,12 +32,15 @@ class Category extends ActiveRecord {
         if($show != ""){
             $show = " AND isShow = 1";
         }
+        //怎么知道实例化的那张表,表名即是该文件名
         $objData = $this->find()->where("pid=$pid $show")->all();
+        //echo($objData);exit();
         foreach($objData as $k => $v){
             $data[$k] = $v->attributes;
             if(empty($status)){
                 $str = "";
                 foreach($block as $val){
+                    //b的值只是ID，怎么等于字符
                     if($val['value'] == 'content-index'){
                         $str .= '<a href="'.baseUrl.'/content/category/'.$val['value'].'?catId='.$v->id.'">内容管理</a> ';
                     }elseif($val['value'] == 'delete'){
