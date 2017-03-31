@@ -23,7 +23,7 @@
 .curltivateNav ul li{
     height: 35px;
     float: left;
-    margin-right: 231px;
+    margin-right: 223px;
 }
 .curltivateNav ul li:last-child{
     margin-right: 0;
@@ -40,11 +40,12 @@
 }
 .curltivateNav ul li a img{
     position: relative;
-    top: 5px;
+    /*top: 5px;*/
 }
 .curltivateNav ul li a span{
     position: relative;
-    top: -5px;
+    /*top: -5px;*/
+   margin-left: 5px;
 }
 .cultivateTop{
     width: 1001px;
