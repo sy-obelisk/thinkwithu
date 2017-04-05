@@ -31,6 +31,7 @@
     border: 1px #cccccc solid;
     float: left;
     margin-left: 15px;
+    overflow: hidden;
 }
 .docuTrHd{
     overflow: auto;
@@ -53,7 +54,13 @@
 .docuTrBd{
     margin-top: 17px;
 }
+.docuTrBd ul{
+	padding-right: 10px;
+}
 .docuTrBd ul li{
+	height: 20px;
+	overflow: hidden;white-space: nowrap;
+	text-overflow: ellipsis;
     margin-bottom: 15px;
 }
 .docuTrBd ul li:last-child{
@@ -323,7 +330,7 @@
     margin-left: 60px;
 }
 .leftPhone h2{
-    margin-top: -20px;
+    margin-top: -10px;
     font-weight: normal;
 }
 .centerFourBd{

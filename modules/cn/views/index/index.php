@@ -255,9 +255,9 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/practices.html">
+                    <a href="http://www.gmatonline.cn" target="_blank">
                         <img src="/cn/images/intensive_img08.png"/>
-                        <p>背景提升</p>
+                        <p>网络课程</p>
                     </a>
                 </li>
             </ul>
@@ -456,8 +456,8 @@
             <li>
                 <span class="test-name">测</span>
                 <img class="test-img" src="/cn/Hirsi/images/23.png" alt="">
-                <a href="http://www.gmatonline.cn/test/index.html">
-                    <div class="test-de">在线测评</div>
+                <a href="http://www.gmatonline.cn/exam/index.html" target="_blank">
+                    <div class="test-de">模考与测评</div>
                 </a>
             </li>
             <li>

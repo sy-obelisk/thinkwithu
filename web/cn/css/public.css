@@ -2488,6 +2488,10 @@ a:hover{
     background: url("../images/refer_icon06.png") no-repeat;
     background-size: 100% 100%;
 }
+.refer_con ul li:hover .diffBG07{
+    background: url("../images/refer_icon07.png") no-repeat;
+    background-size: 100% 100%;
+}
 .diffBG01{
     width: 40%;
     /*height: 32px;*/
@@ -2528,6 +2532,14 @@ a:hover{
 .diffBG06 img{
     width: 100%;
 }
+.diffBG07{
+    width: 40%;
+    height: 25px;
+    margin: 0 auto;
+    background: url("../images/refer_icon007.png") no-repeat;
+    background-size: 100% 100%;
+}
+
 .refer_con ul li:nth-child(2):hover .tanc_mask01{
     display: block;
     -webkit-animation-name:fadeIn;
