@@ -182,6 +182,12 @@
                 <p class="info-tit">联系电话：</p>
                 <input class="info-int" id="tel" type="text" placeholder="">
             </div>
+            <div>
+                <p class="info-tit">验证码：</p>
+                <input type="text"  name="code" class="info-int" id="telver"/>
+                <input type="button" class="code speBtn" onclick="contactCode(this)" value="获取验证码"/>
+            </div>
+
         </div>
         <p class="info-tit">我想去的国家：</p>
         <select class="info-select" name="country" id="country">
@@ -213,11 +219,12 @@
         function lxfa() {
             var name = $("#username").val();
             var phone = $("#tel").val();
+            var ver= $("#telver").val();
             var country = $("#country").val();
             var stage = $("#stage").val();
             var data = $("#data").val();
-            if (name==''||phone==''){
-                alert("请输入姓名/电话");
+            if (name==''||phone==''||ver==''){
+                alert("请输入姓名/电话/验证码");
             }else {
                 $.post('/cn/api/smart', {
                     name: name,
@@ -230,5 +237,11 @@
                 }, "json")
             }
 
+        }
+        function contactCode(_this){
+            var phone = $(_this).parent().prev().find('input').val();
+            $.post('/cn/api/phone-code',{type:2,phoneNum:phone},function(re){
+                alert(re.message);
+            },"json")
         }
     </script>
