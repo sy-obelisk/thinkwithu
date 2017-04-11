@@ -227,6 +227,18 @@ h1.info-tit {
 	width: 81%;
 	border-radius: 5px;
 	padding: 0 10px;
+	font-size: 12px;
+}
+.codeWrap .info-int{
+	width: 25%;
+}
+.codeWrap .codeBtn{
+	border: none;
+	padding: 0 5px;
+	background-color: #35CD69;
+	color: #fff;
+	border-radius: 4px;
+	font-size: 12px;
 }
 .info-btn {
 	width: 91%;

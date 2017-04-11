@@ -182,12 +182,7 @@
                 <p class="info-tit">联系电话：</p>
                 <input class="info-int" id="tel" type="text" placeholder="">
             </div>
-            <div>
-                <p class="info-tit">验证码：</p>
-                <input type="text"  name="code" class="info-int" id="telver"/>
-                <input type="button" class="code speBtn" onclick="contactCode(this)" value="获取验证码"/>
-            </div>
-
+           
         </div>
         <p class="info-tit">我想去的国家：</p>
         <select class="info-select" name="country" id="country">
@@ -211,6 +206,11 @@
             <option value="2017年秋季入学">2017年秋季入学</option>
             <option value="2018年春季入学">2018年春季入学</option>
         </select>
+        <div class="codeWrap">
+            <p class="info-tit">验证码：</p>
+            <input type="text"  name="code" class="info-int" id="telver"/>
+            <button class="codeBtn" onclick="leftCode()">获取验证码</button>
+        </div>
         <h1 onclick="lxfa()" class="info-btn tm">获取方案</h1>
     </div>
 
@@ -234,12 +234,12 @@
                     data: data
                 }, function (re) {
                     alert(re.message);
+                    $('.text-wrap').find('.info-int').val('');
                 }, "json")
             }
-
         }
-        function contactCode(_this){
-            var phone = $(_this).parent().prev().find('input').val();
+        function leftCode(){
+			var phone = $('#tel').val();
             $.post('/cn/api/phone-code',{type:2,phoneNum:phone},function(re){
                 alert(re.message);
             },"json")
