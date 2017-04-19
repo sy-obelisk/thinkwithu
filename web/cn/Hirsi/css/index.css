@@ -90,11 +90,11 @@ input.search {
     position: relative;
 }
 .nav-list li a {
-    padding: 0 9px;
+    padding: 0 7px;
     display: inline-block;
     vertical-align: top;
     line-height: 44px;
-    font-size: 16px;
+    font-size: 15px;
     border-radius: 2px;
 }
 .nav-list li a.on {

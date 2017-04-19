@@ -38,6 +38,7 @@
                 </div>-->
             </li>
             <li><a class="nav1-link" href="/gmatsheet.html">GMAT培训</a></li>
+            <li><a class="nav1-link" href="/satsheet.html">SAT培训</a></li>
             <li><a class="nav1-link" href="/toefl/assistance.html">托福培训</a></li>
             <li><a class="nav1-link" href="/ieltssheet.html">雅思培训</a></li>
             <li><a class="nav1-link" href="/public-class.html">申友讲堂</a></li>
