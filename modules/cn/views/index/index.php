@@ -237,7 +237,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank">
+                    <a href="/satsheet.html">
                         <img src="/cn/images/intensive_img04.png"/>
                         <p>SAT培训</p>
                     </a>

@@ -50,7 +50,7 @@
             <li>
                 <div class="navBdLeft">
                         <img src="<?php echo $v['image']?>" alt="地图"/>
-                        <b><?php echo $v['shortName']?></b>
+                        <!--<b><?php echo $v['shortName']?></b>-->
                 </div>
                 <div class="navBdRight">
                     <ul>
@@ -65,7 +65,7 @@
                         <?php
                         }
                         ?>
-                        <li class="notBG"><b>专注高端名校留学申请</b></li>
+                        <!--<li class="notBG"><b>专注高端名校留学申请</b></li>-->
                     </ul>
                 </div>
                 <div style="clear: both"></div>

@@ -10,9 +10,9 @@
   <--================================================== -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="keywords"
-      content="申友_雅思_IELTS_雷哥雅思_申友雅思在线_雅思备考_雷哥雅思课程_雅思培训_雅思在线课程_雅思网络课程_雅思网课_雅思备考_IELTS资料_IELTS视频课程_IELTS网络课程_备考雅思_考雅思">
-  <meta name="description" content="申友雅思在线|申友IELTS在线培训课程，雅思在线课程，雅思网络课程直播课，大中华区权威一站式雅思学习生态系统">
-  <meta name="title" content="申友雅思在线_雅思备考_雅思培训_雅思网络课程_雅思在线课程_雅思网课_雅思直播课_IELTS申友">
+      content="申友_SAT_雷哥SAT_申友SAT在线_SAT备考_雷哥SAT课程_SAT培训_SAT在线课程_SAT网络课程_SAT网课_SAT备考_SAT资料_SAT视频课程_SAT网络课程_备考SAT_考SAT">
+  <meta name="description" content="申友SAT在线|申友SAT在线培训课程，SAT在线课程，SAT网络课程直播课，大中华区权威一站式SAT学习生态系统">
+  <meta name="title" content="申友SAT在线_SAT备考_SAT培训_SAT网络课程_SAT在线课程_SAT网课_SAT直播课_SAT申友">
   <meta name="author" content="">
   <meta name="Copyright" content="">
   <!-- 让IE浏览器用最高级内核渲染页面 还有用 Chrome 框架的页面用webkit 内核
@@ -25,16 +25,49 @@
   <!-- 让360双核浏览器用webkit内核渲染页面
   <--================================================== -->
   <meta name="renderer" content="webkit">
-  <title>sat</title>
-  <link rel="stylesheet" type="text/css" href="/cn/css/reset.css"/>
+  <title>申友SAT在线_SAT备考_SAT培训SAT网络课程_SAT在线课程_SAT网课_SAT直播课_SAT申友</title>
+  <link rel="stylesheet" href="/cn/css/footer.css"/>
+  <link rel="stylesheet" href="/cn/css/public.css"/>
+  <link rel="stylesheet" href="/cn/Hirsi/css/reset.css">
+  <link rel="stylesheet" href="/cn/Hirsi/css/index.css">
   <link rel="stylesheet" type="text/css" href="/cn/css/sat.css"/>
+   <link rel="stylesheet" href="/cn/css/gmatSheet.css"/>
+  <script src="/cn/ielts/js/jquery1.42.min.js"></script>
+  <script type="text/javascript" src="/cn/js/gmatSheet.js"></script>
+  <script type="text/javascript" src="/cn/js/public.js"></script>
 </head>
 <body>
-  <nav class="sat-nav">
-    这是导航栏
-  </nav>
+	<!-----------------------------头部------------------------------>
+	<header class="sy-header">
+    <div class="w10 clearfix">
+        <img src="/cn/Hirsi/images/sy-text.png" style="margin-right: 55px" alt="高分成就梦想名校改变人生">
+        <img src="/cn/Hirsi/images/sy-tel.png" alt="400-600-1123">
+        <a class="refer-btn"
+           href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="
+           target="_blank">在线咨询</a>
+        <!--登录&注册-->
+        <div class="login-wrap fr" style="display: none;">
+            <span class="on">登录</span>
+            <span>注册</span>
+        </div>
+        <!--搜索-->
+        <div class="search-wrap fr">
+            <input class="search" type="search" placeholder="请输入关键词">
+            <img src="/cn/Hirsi/images/search-icon.png" style="margin-left: -1px;cursor: pointer;" alt="搜索">
+        </div>
+    </div>
+	</header>
+  <?php use app\commands\front\BannerWidget;?>
+	<?php BannerWidget::begin();?>
+	<?php BannerWidget::end();?>
+	<div style="clear: both;margin-bottom: 10px;"></div>
+	<!--导航栏结束-->
+	<!---------------------------左边悬浮窗---------------------------------->
+    <?php use app\commands\front\LeftSuspensionWidget;?>
+		<?php LeftSuspensionWidget::begin();?>
+		<?php LeftSuspensionWidget::end();?>
+		
   <div class="sat-bnr">
-    <!--<img src="images/sat-bg-04.png"/>-->
     <div class="sat-bnr-font">
       <p>Dreams from now on take-off</p>
       <span>梦想起飞</span>
@@ -182,14 +215,14 @@
       <p class="subhead">TEACHER</p>
       <div class="teacher clearfix">
         <div class="class-fl teacher-cnt">
-          <img src="/cn/images/abroadPro_teacher01.png" alt="老师照片">
+          <img src="/cn/images/sat_amanda.png" alt="老师照片">
           <h3>Amanda</h3>
           <p>申友SAT教学研发总监，英国兰卡斯特大学硕士，国内重本英语专业毕业；国外的几年深造，使她对西方人的思维方式和表达习惯有着深刻的了解；上课内容深入浅出，上课风格诙谐活泼，深受学生的喜欢。</p>
           <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="
            target="_blank">约课</a>
         </div>
         <div class="class-fl teacher-cnt">
-          <img src="/cn/images/toefl_christine.png" alt="老师照片">
+          <img src="/cn/images/sat_christine.png" alt="老师照片">
           <h3>Christine</h3>
           <p>申友SAT教学老师，国内重本英语专业毕业，持英语专业八级证书，英语语言扎实，上课细致，逻辑清晰，多年留学考试培训授课经验，有效帮助学生理清思路，提高英语表达。</p>
           <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="
@@ -203,7 +236,7 @@
            target="_blank">约课</a>
         </div>
         <div class="class-fl teacher-cnt">
-          <img src="/cn/images/gmat_portia.jpg" alt="老师照片">
+          <img src="/cn/images/sat_portia.png" alt="老师照片">
           <h3>Portia</h3>
           <p>主讲SAT数学，善于挖掘学生学习的盲点，并能及时满足学生学习所需，对SAT数学研究深入，针对基础、中等、高分三段不同程度的学生有独特的教学方案，拥有独特的数学学习构架，难点部分讲解深入易懂；对题目分析透彻，善于总结做题技巧，深受学生喜爱。</p>
           <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="
@@ -228,7 +261,7 @@
           <div class="hexagon-out">
             <div class="hexagon-middle">
               <div class="hexagon-in">
-                <p>申友SAT课程是怎么 上课的，流程是 怎样？</p>
+                <p>申友SAT课程是怎么 上课的，还有流程是怎样？</p>
                 <i></i>
               </div>
             </div>
@@ -252,7 +285,7 @@
           <div class="hexagon-out">
             <div class="hexagon-middle">
               <div class="hexagon-in">
-                <p>申友SAT课程有什特色？</p>
+                <p>申友SAT课程有什么特色及优势？</p>
                 <i></i>
               </div>
             </div>
@@ -298,5 +331,129 @@
       </div>
     </div>
   </div>
-</body>
+  
+  <!--马上预约享优惠-->
+<div class="favorable">
+    <h2>马上预约享优惠</h2>
+    <ul>
+        <?php
+        foreach($extendData as $k => $v) {
+            ?>
+            <li>
+                <label><span><?php echo $v['required'] == 1?'*':''?></span><?php echo $v['name']?>：</label>
+                <input name="extendValue[]" class="oneWidth"  <?php echo $v['required'] == 1?'class="val"':''?>  type="text"/>
+            </li>
+            <?php
+        }
+        ?>
+        <li>
+            <label>验证码：</label>
+            <input type="text" class="twoWidth" name="code"/>
+            <input type="button" onclick="onlineCode(this)" value="获取验证码"/>
+        </li>
+        <li>
+            <a href="javescript:void(0);" onclick="onlineSub(this)">点击提交 &gt;</a>
+        </li>
+    </ul>
+
+</div>
+	<script type="text/javascript">
+    function onlineCode(_this){
+        var phone = $(_this).closest('li').prev().find('input').val();
+        $.post('/cn/api/phone-code',{type:3,phoneNum:phone},function(re){
+            alert(re.message);
+        },"json")
+    }
+
+    function onlineSub(_this){
+        var phone = $(_this).closest('li').prev().prev().find('input').val();
+        var school = $(_this).closest('li').prev().prev().prev().find('input').val();
+        var name = $(_this).closest('li').prev().prev().prev().prev().find('input').val();
+        var code = $(_this).closest('li').prev().find('input').val();
+        if(phone == ''){
+            alert('留下您的联系方式');
+            return false;
+        }
+        if(code == ''){
+            alert('请输入验证码');
+            return false;
+        }
+        if(name == ''){
+            alert('请输入您的姓名');
+            return false;
+        }
+        $.post('/cn/api/subscribe',{name:name,phone:phone,school:school,code:code},function(re){
+            alert(re.message);
+            window.location.reload()
+        },"json")
+    }
+	</script>
+	<div class="contactWay">
+    <div class="contactHead">联系方式</div>
+    <div class="contactSlide">
+        <div class="conHd hd">
+            <a href="javascript:void(0);" class="prev" onclick="slidePrev()"><img src="/cn/images/mentor_prev.png"
+                                                                                  alt="图标"></a>
+            <a href="javascript:void(0);" class="next" onclick="slideNext()"><img src="/cn/images/mentor_next.png"
+                                                                                  alt="图标"></a>
+        </div>
+        <div class="conBd">
+            <ul>
+                <?php
+                $data = \app\modules\cn\models\Content::getContent(['fields' => "place,phone", 'category' => "210", 'pageSize' => 15, 'order' => 'sort']);
+                foreach ($data as $v) {
+                    ?>
+                    <li>
+                        <div class="smallStyle">
+                            <img src="<?php echo $v['image'] ?>" alt="图片">
+
+                            <div class="city"><?php echo $v['name'] ?></div>
+                        </div>
+                        <div class="bigStyle">
+                            <div class="big-left">
+                                <img src="<?php echo $v['image'] ?>" alt="图片">
+
+                                <div class="big-city"><?php echo $v['name'] ?></div>
+                            </div>
+                            <div class="big-right">
+                                <span>咨询热线：</span>
+
+                                <p class="purpleColor"><?php echo $v['phone'] ?></p>
+                                <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">
+                                    <img src="/cn/images/mentor_personIcon.png" alt="咨询图标">
+                                    <span>免费咨询</span>
+                                </a>
+
+                                <p>地址：<?php echo $v['place'] ?></p>
+                            </div>
+                            <div style="clear: both"></div>
+                        </div>
+                    </li>
+                    <?php
+                }
+                ?>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript">
+        //        jQuery(".contactSlide").slide({mainCell:".conBd ul",effect:"left",vis:5,pnLoop:false});
+    </script>
+	</div>
+  <!-----------------------------尾部------------------------------>
+	<?php use app\commands\front\FooterWidget;?>
+	<?php FooterWidget::begin();?>
+	<?php FooterWidget::end();?>
+	</body>
+	<script type="text/javascript">
+		 //    判断pc端还是移动端 进入对应页面
+    function goPAGE() {
+        if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+            window.location.href = "mob/index.html";
+        }
+        else {
+//            window.location.href="index.html";
+        }
+    }
+    goPAGE();
+	</script>
 </html>

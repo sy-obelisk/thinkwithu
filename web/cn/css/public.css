@@ -50,7 +50,7 @@ a:hover{
     position: relative;
 }
 .abNavHd ul{
-    width: 1001px;
+    width: 1015px;
     margin: 0 auto;
 }
 .abNavHd ul li{
@@ -58,7 +58,7 @@ a:hover{
     color: white;
     text-align: center;
     font-size: 16px;
-    margin-right: 82px;
+    margin-right: 81px;
 }
 .abNavHd ul li:last-child{
     margin-right: 0;
@@ -493,7 +493,7 @@ a:hover{
     margin-top: -3px;
 }
 .connectHd ul li{
-	width: 30px;
+	width: 33px;
 	height: 19px;
 	overflow: hidden;
     float: left;

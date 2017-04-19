@@ -10,38 +10,55 @@
     margin-bottom: 5px;
 }
 .abNavBd ul li .navBdLeft{
-    width: 270px;
-    height: 67px;
+    /*width: 270px;*/
+    width: 200px;
+    height: 71px;
     float: left;
-    padding-left: 27px;
+    /*padding-left: 27px;*/
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
-.abNavBd ul li .navBdLeft b{
+/*.abNavBd ul li .navBdLeft b{
     font-size: 20px;
     position: relative;
     top: -20px;
     left: 15px;
-}
+}*/
 .abNavBd ul li .navBdLeft img{
     height: 100%;
 }
 .abNavBd ul li .navBdRight{
-    width: 731px;
-    height: 71px;
+    /*width: 731px;*/
+    width: 770px;
+    height: 41px;
+    padding: 15px;
     float: left;
     background: #e5e5e5;
 }
 .navBdRight ul{
-    margin-top: 24px;
-    margin-left: 12px;
+    /*margin-top: 24px;
+    margin-left: 12px;*/
 }
 .navBdRight ul li{
     float: left;
+    width: 200px;
+    height: 41px;
+    line-height: 41px;
+    margin-right: 85px;
     font-size: 16px;
+    text-align: center;
 }
-.navBdRight ul li:not(.notBG){
+.navBdRight ul li:last-child {
+  margin-right: 0;
+}
+.navBdRight ul li:hover {
+  background-color: #81318B;
+}
+.navBdRight ul li:hover a{
+  color: #fff;
+}
+/*.navBdRight ul li:not(.notBG){
     width: 98px;
     height: 19px;
     line-height: 19px;
@@ -56,7 +73,7 @@
 }
 .navBdRight ul li:not(.notBG):hover a{
     color: white;
-}
+}*/
 
 .advantage{
     width: 1001px;

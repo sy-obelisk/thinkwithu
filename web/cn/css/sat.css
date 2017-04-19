@@ -80,17 +80,13 @@
 .sat-bnr {
   position: relative;
   height: 689px;
-  background: url(../images/sat-bg001.png) 0 0 no-repeat;
+  background: url(/cn/images/sat-bg01.png) 0 0 no-repeat;
   background-size: 100% 100%;
 }
-/*.sat-bnr img{
-  width: 200px;
-  margin: 0 auto;
-}*/
 .sat-bnr .sat-bnr-font {
   position: absolute;
   width: 750px;
-  height: 170px;
+  height: 250px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%,-50%);
@@ -101,7 +97,7 @@
   color: #fff;
   text-align: center;
 }
-.sat-bnr .sat-bnr-font  span{
+.sat-bnr .sat-bnr-font span{
   display: inline-block;
   font-size: 60px;
   letter-spacing: 10px;
@@ -120,30 +116,45 @@
 .sat-bnr .sat-bnr-font p {
   color: #fff;
   font-size: 33px;
+  margin-top: 15px;
 }
 .sat-bnr a{
   position: absolute;
   left: 50%;
-  bottom: 10%;
+  bottom: 15%;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
-  padding: 5px 10px;
+  padding: 10px 50px;
   background-color: rgba(255,255,255,.6);
   color: #080808;
   -webkit-border-radius: 20px;
   -moz-border-radius: 520px;
   border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 8px;
 }
 .sat-bnr a:hover {
-  background-color: rgba(255,255,255,.8)
+  background-color: rgb(255,97,96);
+  color: #fff;
 }
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1600px) {
 	.sat-bnr {
 	  height: 480px;
 	}
+	.sat-bnr .sat-bnr-font {
+	  height: 180px;
+	}
+	.sat-bnr .sat-bnr-font span{
+    font-size: 50px;
+  }
+  .sat-bnr .sat-bnr-font p {
+    font-size: 20px;
+    margin-top: 10px;
+  }
 }
 /*课程*/
 .sat-class-wrap {
@@ -188,7 +199,7 @@
 }
 .sat-class-wrap tr:hover a{
   color: #fff;
-  background-color: rgb(164,122,183);
+  background-color: rgb(255,97,96);
 }
 /*底部虚线*/
 /*.sat-class-wrap tr:after {
@@ -203,7 +214,7 @@
 /*流程服务*/
 .sat-service-bg {
   height: 625px;
-  background:url(../images/sat-bg02.png) 0 0 no-repeat;
+  background:url(/cn/images/sat-bg02.png) 0 0 no-repeat;
   background-size: 100% 100%;
 }
 .sat-service .title{
@@ -451,7 +462,7 @@
 /*sat问答*/
 .sat-question {
   height: 600px;
-  background: url(../images/sat-bg03.png) 0 0 no-repeat;
+  background: url(/cn/images/sat-bg03.png) 0 0 no-repeat;
   background-size: 100% 100%;
 }
 .sat-question .title{
