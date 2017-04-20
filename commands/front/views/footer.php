@@ -35,9 +35,9 @@
                         <a href="/schools.html">院校搜索</a>
                         <a href="/study-aboard/assistance.html" class="mla">留学方案</a>
                     </li>
-                    <li>
-                        <a style="font-size: 12px" href="/problem.html">GMAT题库</a>
-                        <a style="margin-left: 22px" href="/public-class.html" class="mla">申友课堂</a>
+                    <li class="fontChange">
+                        <a href="/problem.html">GMAT题库</a>
+                        <a href="/public-class.html" class="mla">申友课堂</a>
                     </li>
                     <li>
                         <a href="/mentor.html">留学顾问</a>
@@ -222,6 +222,24 @@
         $(this).hide();
         $("#right-wrap").fadeIn();
     });
+    
+    (function(){
+    	if (navigator.userAgent.indexOf('Safari')>-1&&navigator.userAgent.indexOf('Chrome')<1) {
+    		$('.fontChange a').eq(0).css({
+    			'font-size':'14px'
+    		});
+    		$('.fontChange a').eq(1).css({
+    			'margin-left':'24px'
+    		})
+    	}else {
+    		$('.fontChange a').eq(0).css({
+    			'font-size':'12px'
+    		});
+    		$('.fontChange a').eq(1).css({
+    			'margin-left':'22px'
+    		})
+    	}
+    })();
     
     //百度自动推送工具代码
     (function(){
