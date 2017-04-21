@@ -62,10 +62,6 @@
 	<?php BannerWidget::end();?>
 	<div style="clear: both;margin-bottom: 10px;"></div>
 	<!--导航栏结束-->
-	<!---------------------------左边悬浮窗---------------------------------->
-    <?php use app\commands\front\LeftSuspensionWidget;?>
-		<?php LeftSuspensionWidget::begin();?>
-		<?php LeftSuspensionWidget::end();?>
 		
   <div class="sat-bnr">
     <div class="sat-bnr-font">
