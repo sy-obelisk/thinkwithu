@@ -218,9 +218,9 @@
            target="_blank">约课</a>
         </div>
         <div class="class-fl teacher-cnt">
-          <img src="/cn/images/sat_christine.png" alt="老师照片">
-          <h3>Christine</h3>
-          <p>申友SAT教学老师，国内重本英语专业毕业，持英语专业八级证书，英语语言扎实，上课细致，逻辑清晰，多年留学考试培训授课经验，有效帮助学生理清思路，提高英语表达。</p>
+          <img src="/cn/images/sat_gary.png" alt="老师照片">
+          <h3>Gary</h3>
+          <p>上海外国语大学研究生毕业;多年的海内外教学复合型经历、理论加实践的复合型学习以及多语种的学习背景令其对于语言学习及出国类考试有着深刻与独到的见解，培养了无数高分学员。教学风格激情、负责、幽默，深受广大学生喜欢。</p>
           <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="
            target="_blank">约课</a>
         </div>

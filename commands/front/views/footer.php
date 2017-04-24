@@ -224,7 +224,7 @@
     });
     
     (function(){
-    	if (navigator.userAgent.indexOf('Safari')>-1&&navigator.userAgent.indexOf('Chrome')<1) {
+    	if (navigator.userAgent.indexOf("Safari")>-1&&navigator.userAgent.indexOf('Chrome')<1) {
     		$('.fontChange a').eq(0).css({
     			'font-size':'14px'
     		});
