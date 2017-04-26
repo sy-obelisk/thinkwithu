@@ -22,20 +22,20 @@ class IndexController extends ThinkUController {
     }
 
     public function actionIndex(){
-        $detect = new \Mobile_Detect;
-        $deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') : 'computer');
-        switch ($deviceType){
-            case 'tablet':
-                header('Location: http://m.thinkwithu.com/');die;
-                break;
-
-            case 'phone':
-                header('Location: http://m.thinkwithu.com/');die;
-                break;
-
-            default:
-                break;
-        }
+//        $detect = new \Mobile_Detect;
+//        $deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') : 'computer');
+//        switch ($deviceType){
+//            case 'tablet':
+//                header('Location: http://m.thinkwithu.com/');die;
+//                break;
+//
+//            case 'phone':
+//                header('Location: http://m.thinkwithu.com/');die;
+//                break;
+//
+//            default:
+//                break;
+//        }
         return $this->renderPartial('index');
     }
 
