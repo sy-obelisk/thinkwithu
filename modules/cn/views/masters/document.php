@@ -32,56 +32,30 @@
         </div>
         <div class="docuTrBd">
             <ul>
-                <li>
-                    <i class="fa fa-angle-left"></i>
-                    <a href="#">2015大改革，取消GMAT不会显示C了 <img src="/cn/images/index_hotRed.png" alt="hot图标"></a>
-                </li>
-                <li>
-                    <i class="fa fa-angle-left"></i>
-                    <a href="#">GMAC推出增强版GMAT成绩</a>
-                </li>
-                <li>
-                    <i class="fa fa-angle-left"></i>
-                    <a href="#">2015GMAT考试时间及考位公布通知 解析</a>
-                </li>
-                <li>
-                    <i class="fa fa-angle-left"></i>
-                    <a href="#">原创分享：GMAT机经使用方法</a>
-                </li>
-                <li>
-                    <i class="fa fa-angle-left"></i>
-                    <a href="#">GMAT verbal部分在复习时有什么异同</a>
-                </li>
-                <li>
-                    <i class="fa fa-angle-left"></i>
-                    <a href="#">科学、快速记忆GMAT词汇</a>
-                </li>
+                <?php
+                $data = \app\modules\cn\models\Content::getContent(['category' => '117','pageSize' => 6]);
+                foreach($data as $v) {
+                    ?>
+                    <li>
+                        <i class="fa fa-angle-left"></i>
+                        <a href="/word-details/<?php echo $v['id']?>/125.html"><?php echo $v['name']?><img src="/cn/images/index_hotRed.png" alt="hot图标"></a>
+                    </li>
+                    <?php
+                }
+                ?>
             </ul>
             <ul>
-                <li>
-                    <i class="fa fa-angle-left"></i>
-                    <a href="#">2015大改革，取消GMAT不会显示C了 <img src="/cn/images/index_hotRed.png" alt="hot图标"></a>
-                </li>
-                <li>
-                    <i class="fa fa-angle-left"></i>
-                    <a href="#">GMAC推出增强版GMAT成绩</a>
-                </li>
-                <li>
-                    <i class="fa fa-angle-left"></i>
-                    <a href="#">2015GMAT考试时间及考位公布通知 解析</a>
-                </li>
-                <li>
-                    <i class="fa fa-angle-left"></i>
-                    <a href="#">原创分享：GMAT机经使用方法</a>
-                </li>
-                <li>
-                    <i class="fa fa-angle-left"></i>
-                    <a href="#">GMAT verbal部分在复习时有什么异同</a>
-                </li>
-                <li>
-                    <i class="fa fa-angle-left"></i>
-                    <a href="#">科学、快速记忆GMAT词汇</a>
-                </li>
+                <?php
+                $data = \app\modules\cn\models\Content::getContent(['category' => '166','pageSize' => 6]);
+                foreach($data as $v) {
+                    ?>
+                    <li>
+                        <i class="fa fa-angle-left"></i>
+                        <a href="/word-details/<?php echo $v['id']?>/125.html"><?php echo $v['name']?><img src="/cn/images/index_hotRed.png" alt="hot图标"></a>
+                    </li>
+                    <?php
+                }
+                ?>
             </ul>
             <ul>
                 <?php
