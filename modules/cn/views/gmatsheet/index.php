@@ -479,9 +479,10 @@
                 <ul>
                     <?php
                     $data = \app\modules\cn\models\Content::getContent(['category' => "118,115",'pageSize'=>3,'order'=>'sort']);
-                    foreach($data as $v) {
+//                    var_dump($data);
+					foreach($data as $v) {
                     ?>
-                    <li><a href="/list/115,118.html" target="_blank"><?php echo $v['name']?></a></li>
+                    <li><a href="/word-details/<?php echo $v['id']?>/115,118.html" target="_blank"><?php echo $v['name']?></a></li>
                     <?php
                     }
                     ?>
@@ -501,19 +502,19 @@
                 <img src="/cn/images/toefl_examIcon02.png" alt="图片"/>
             </div>
             <div class="dynamic-right">
-                <h4>名师观点</h4>
+                <h4>研究报告</h4>
                 <ul>
                     <?php
-                    $data = \app\modules\cn\models\Content::getContent(['category' => "105,117,118",'pageSize'=>3,'order'=>'sort']);
-                    foreach($data as $v) {
+                    $data = \app\modules\cn\models\Content::getContent(['category' => "125",'pageSize'=>3,'order'=>'sort']);
+					foreach($data as $v) {
                         ?>
-                        <li><a href="/teachers/interviews.html" target="_blank"><?php echo $v['name']?></a></li>
+                        <li><a href="/word-details/<?php echo $v['id']?>/217.142.html" target="_blank"><?php echo $v['name']?></a></li>
                     <?php
                     }
                     ?>
                 </ul>
                 <div class="moreDiv">
-                    <a href="/teachers/interviews.html" target="_blank">
+                    <a href="list/125.html" target="_blank">
                         <span>MORE+</span>
                         <div><i class="fa fa-angle-right"></i></div>
                     </a>
@@ -533,13 +534,13 @@
                     $data = \app\modules\cn\models\Content::getContent(['category' => "105,117,118",'pageSize'=>3,'order'=>'sort']);
                     foreach($data as $v) {
                         ?>
-                        <li><a href="/thinku-news.html" target="_blank"><?php echo $v['name']?></a></li>
+                        <li><a href="/word-details/<?php echo $v['id']?>/88.118.html" target="_blank"><?php echo $v['name']?></a></li>
                     <?php
                     }
                     ?>
                 </ul>
                 <div class="moreDiv">
-                    <a href="/thinku-news.html" target="_blank">
+                    <a href="/list/105.html" target="_blank">
                         <span>MORE+</span>
                         <div><i class="fa fa-angle-right"></i></div>
                     </a>
