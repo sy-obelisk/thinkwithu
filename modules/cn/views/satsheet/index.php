@@ -93,35 +93,35 @@
         </tr>
         <tr class="even">
           <td>SAT基础班</td>
-          <td>争1200+</td>
+          <td>争1300+</td>
           <td>数学Mock Test正确题量在25题以下 (总题量58道，同考试)</td>
           <td><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="
            target="_blank">我要报名</a></td>
         </tr>
         <tr class="odd">
           <td>SAT强化班</td>
-          <td>争1300+</td>
+          <td>争1400+</td>
           <td>数学Mock Test正确题量在25-30题</td>
           <td><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="
            target="_blank">我要报名</a></td>
         </tr>
         <tr class="even">
           <td>SAT精英班</td>
-          <td>争1400+</td>
+          <td>争1500+</td>
           <td>数学Mock Test正确题量在35题以上</td>
           <td><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="
            target="_blank">我要报名</a></td>
         </tr>
          <tr class="odd">
           <td>SAT词汇班</td>
-          <td>争1000+</td>
+          <td>争1300+</td>
           <td>申友Vocabulary Test低于60分（满分100） 英语基础薄弱，词汇量差，想专门巩固词汇基础 </td>
           <td><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="
            target="_blank">我要报名</a></td>
         </tr>
          <tr class="even">
           <td>SAT冲刺班</td>
-          <td>争1400+</td>
+          <td>满分1600</td>
           <td>即将参加考试，希望考前突击，全套模考训练， 过往真题全方位解析</td>
           <td><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="
            target="_blank">我要报名</a></td>
