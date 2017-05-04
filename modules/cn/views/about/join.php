@@ -1,153 +1,125 @@
 
     <link rel="stylesheet" href="/cn/css/joinUs.css"/>
-    <script type="text/javascript" src="/cn/js/joinUs.js"></script>
+<!--    <script type="text/javascript" src="/cn/js/joinUs.js"></script>-->
 
-
-<div class="joinUs-topImg">
-    <img src="/cn/images/joinUs_headImg.png" alt="内容头部图"/>
-</div>
-<div class="quesAcontent">
-    <div class="contentLeft">
-        <div class="join-left">
-            <h4>职位类别</h4>
-            <div class="leftUl">
-                <ul>
-                    <li>
-                        <div class="diffWH widthH01">
-                            <h5>教学类</h5>
-                            <?php
-                            $data = \app\modules\cn\models\Content::getContent(['fields' => 'place','category' => "213,211"]);
-                            foreach($data as $v) {
-                                ?>
-                                <span data-value="<?php echo $v['id']?>" class="purpleColor"><?php echo $v['name']?></span><br>
-                                <span class="greyColor">[工作地点]<?php echo $v['place']?></span><br>
-                            <?php
-                            }
-                            ?>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="diffWH widthH01">
-                            <h5>销售类</h5>
-                            <?php
-                            $data = \app\modules\cn\models\Content::getContent(['fields' => 'place','category' => "214,211"]);
-                            foreach($data as $v) {
-                                ?>
-                                <span data-value="<?php echo $v['id']?>" class="purpleColor"><?php echo $v['name']?></span><br>
-                                <span class="greyColor">[工作地点]<?php echo $v['place']?></span><br>
-                            <?php
-                            }
-                            ?>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="diffWH widthH01">
-                            <h5>市场类</h5>
-                            <?php
-                            $data = \app\modules\cn\models\Content::getContent(['fields' => 'place','category' => "215,211"]);
-                            foreach($data as $v) {
-                                ?>
-                                <span data-value="<?php echo $v['id']?>" class="purpleColor"><?php echo $v['name']?></span><br>
-                                <span class="greyColor">[工作地点]<?php echo $v['place']?></span><br>
-                            <?php
-                            }
-                            ?>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="diffWH widthH02">
-                            <h5>管理类</h5>
-                            <?php
-                            $data = \app\modules\cn\models\Content::getContent(['fields' => 'place','category' => "216,211"]);
-                            foreach($data as $v) {
-                                ?>
-                                <span data-value="<?php echo $v['id']?>" class="purpleColor"><?php echo $v['name']?></span><br>
-                                <span class="greyColor">[工作地点]<?php echo $v['place']?></span><br>
-                            <?php
-                            }
-                            ?>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="diffWH widthH02">
-                            <h5>咨询类</h5>
-                            <?php
-                            $data = \app\modules\cn\models\Content::getContent(['fields' => 'place','category' => "217,211"]);
-                            foreach($data as $v) {
-                                ?>
-                                <span data-value="<?php echo $v['id']?>" class="purpleColor"><?php echo $v['name']?></span><br>
-                                <span class="greyColor">[工作地点]<?php echo $v['place']?></span><br>
-                            <?php
-                            }
-                            ?>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="diffWH widthH02">
-                            <h5>文服类</h5>
-                            <?php
-                            $data = \app\modules\cn\models\Content::getContent(['fields' => 'place','category' => "218,211"]);
-                            foreach($data as $v) {
-                                ?>
-                                <span data-value="<?php echo $v['id']?>" class="purpleColor"><?php echo $v['name']?></span><br>
-                                <span class="greyColor">[工作地点]<?php echo $v['place']?></span><br>
-                            <?php
-                            }
-                            ?>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="diffWH widthH02">
-                            <h5>IT类</h5>
-                            <?php
-                            $data = \app\modules\cn\models\Content::getContent(['fields' => 'place','category' => "219,211"]);
-                            foreach($data as $v) {
-                                ?>
-                                <span data-value="<?php echo $v['id']?>" class="purpleColor"><?php echo $v['name']?></span><br>
-                                <span class="greyColor">[工作地点]<?php echo $v['place']?></span><br>
-                            <?php
-                            }
-                            ?>
-                        </div>
-                    </li>
-                </ul>
+<div class="join-wrap w10">
+    <div class="join-top-img">
+        <img src="/cn/images/join_01.png" alt="背景图片">
+    </div>
+    <div class="join-about">
+        <img src="/cn/images/join_02.png" alt="关于我们">
+        <h2>企业简介</h2>
+        <div class="about-left">
+            <h4>企业介绍</h4>
+            <p>申友国际教育源于2007年的雷哥创业团队。2012年在北京注册，目前在上海、成都、杭州、武汉、广州、深圳、美国加州等多个城市拥有分支机构，致力于以科技改变教育，专注于高端留学咨询和出国考试培训。其中，申友名校留学咨询，SAT培训、GMAT培训、托福培训、雅思培训、在规模上目前处于国内实力地位。</p>
+            <div>
+                <h4>申友文化<br>
+                    客户——客户中心，诚信专注，做良心事业<br>
+                    公司——持续学习，勇于变革，为发展储力<br>
+                    员工——卓越文化，价值共享，让员工受益<br>
+                </h4>
             </div>
         </div>
-        <div class="join-right">
-            <h4>人才培养</h4>
-            <div class="rBlueC"><img src="/cn/images/joinUs_rightAll.jpg" alt="图片"></div>
+        <div class="about-right">
+            <img src="/cn/images/join_03.png" alt="">
         </div>
-        <!------------弹出层-------------->
-        <div class="zzcAll"></div>
-        <div class="contentTc">
-            <div class="incontentTK">
-                <img src="/cn/images/joinUs_close.png" alt="关闭图标" class="closeJ" onclick="closePos()"/>
+    </div>
+    <div class="join-us">
+        <img src="/cn/images/join_04.png" alt="">
+        <h2>加入我们</h2>
+        <div class="join-cnt">
+            <div class="hd">
                 <ul>
-                    <li><b>一、岗位职责：</b></li>
-                    <li> 1、教授GMAT、SAT、托福等国外考试专项课程；</li>
-                    <li> 2、针对学员情况，有差异的用学生易接受的方法进行教学，认真批改学生作业并予以反馈； </li>
-                    <li> 3、对学生进行专业性的学习指导，保证教学质量； </li>
-                    <li> 4、根据教学需要进行教学研发工作，收集和整理课程编辑所需的原始资料和相关信息； </li>
-                    <li> 5、积极参加集团内部各种讲座、教研、会议等活动，参与教学评估，保证授课质量； </li>
-                    <li> 6、完成上级交办的其他工作。 </li>
-                    <li><b> 二、任职要求： </b></li>
-                    <li> 1、本科及以上学历，有国外留学背景或相关课程授课经验者优先； </li>
-                    <li> 2、英语专八，或GMAT/SAT/托福高分；</li>
-                    <li> 3、熟悉GMAT、SAT、托福考试内容，具备扎实的专业知识与技能；</li>
-                    <li> 4、具备较强的沟通能力与逻辑思维能力；有一定教学技能与课堂管理能力； </li>
-                    <li> 5、有敬业精神，口齿伶俐，中文表达能力强，普通话和英语发音标准；</li>
-                    <li><b> 三、在申友，我们为员工提供各项福利待遇：</b></li>
-                    <li>1、同行业内具有竞争力的优厚薪酬福利； </li>
-                    <li>2、聘用员工享有社保福利（养老保险、医疗保险、生育保险、失业保险、工伤保险） </li>
-                    <li>3、工作8小时制，每周休息2天，法定节假日，带薪婚假/产/年等假期；</li>
-                    <li>4、为了员工身体健康，每年免费为员工提供年体检；</li>
-                    <li>5、每逢节日，享受节日礼金；生日补贴，高温/避寒等各类福利政策。</li>
+                    <li>教育类</li>
+                    <li>营销/市场类</li>
+                    <li>留学顾问类</li>
+                    <li>综合类</li>
                 </ul>
             </div>
+            <div class="bd">
+                <div>
+                    <dl>
+                        <dt>招聘职位:</dt>
+                        <dd>1、<strong>教师：</strong>教授“新托福”，“SAT”“GMAT”等国外考试专项课程</dd>
+                        <dd>2、<strong>学习管理师：</strong>负责建立学员的复习档案，跟踪学员的备考情况；</dd>
+                        <dd>3、<strong>教务：</strong>负责根据教师的上课时间，合理进行课程安排和服务协调</dd>
+                    </dl>
+                    <dl>
+                        <dt>福利：</dt>
+                        <dd>1、定期体检</dd>
+                        <dd>2、节日福利</dd>
+                        <dd>3、五险一金</dd>
+                        <dd>4、完善的员工培养体系</dd>
+                        <dd>5、全面的内部激励系统</dd>
+                    </dl>
+                    <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">跟我们聊聊</a>
+                </div>
+                <div>
+                    <dl>
+                        <dt>招聘职位:</dt>
+                        <dd>1、<strong>营销：</strong>运用各种网络营销手段宣传公司品牌及业务产品</dd>
+                        <dd>2、<strong>市场：</strong>组织策划各类活动，协助市场部负责人做好市场线下推广工作，协助市场经理进行业务拓展和客户关系维护</dd>
+                        <dd>3、<strong>SEO：</strong>负责对网站的一些数据进行分析，优化网站搜索引擎展示</dd>
+                    </dl>
+                    <dl>
+                        <dt>福利：</dt>
+                        <dd>1、定期体检</dd>
+                        <dd>2、节日福利</dd>
+                        <dd>3、五险一金</dd>
+                        <dd>4、完善的员工培养体系</dd>
+                        <dd>5、全面的内部激励系统</dd>
+                    </dl>
+                    <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">跟我们聊聊</a>
+                </div>
+                <div>
+                    <dl>
+                        <dt>招聘职位:</dt>
+                        <dd>1、<strong>留学咨询顾问：</strong>了解公司产品专业知识，严格按照公司及项目规定的工作标准及服务流程，为客户提供留学和教育培训规划的初级咨询服务；</dd>
+                        <dd>2、<strong>留学申请顾问：</strong>负责规划学生整个申请的时间规划及协调和文案的衔接，确保及时了解和掌握客户的个案进程，协助及时解决客户案件处理中遇到的问题，保证客户案件的顺利进行</dd>
+                        <dd>3、<strong>留学规划师：</strong>熟悉公司业务专业知识，严格按照公司规定的工作标准及服务流程，为客户提供留学与培训的咨询服务，客户申请的时间规划与背景指导。</dd>
+                        <dd>4、<strong>高级文书：</strong>根据学生所提供的信息,写作申请所需的一系列文书并按照申请国大学的要求为客户写作或者翻译申请所需的文件</dd>
+                    </dl>
+                    <dl>
+                        <dt>福利：</dt>
+                        <dd>1、定期体检</dd>
+                        <dd>2、节日福利</dd>
+                        <dd>3、五险一金</dd>
+                        <dd>4、完善的员工培养体系</dd>
+                        <dd>5、全面的内部激励系统</dd>
+                    </dl>
+                    <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">跟我们聊聊</a>
+                </div>
+                <div>
+                    <dl>
+                        <dt>招聘职位:</dt>
+                        <dd>1、<strong>行政：</strong>公司内勤管理、来客接待 ，收发材料、文件传真等；</dd>
+                        <dd>2、<strong>人力资源：</strong>协助做好招聘与任用的具体事务工作，包括发放招聘启事，搜集和汇总应聘资料，安排面试人员，跟踪落实面试人员的情况等 </dd>
+                        <dd>3、<strong>财务：</strong>报销各种与现金有关的费用，及时登记现金日记账及库存现金盘点表，定期与银行对账，并保管公司库存现金及负责到银行处理公司相关部门发生的往来票据，包括支票、汇票等，并协调好与银行的业务关系，负责到银行处理公司相关部门发生的往来票据，包括支票、汇票等，并协调好与银行的业务关系</dd>
+                    </dl>
+                    <dl>
+                        <dt>福利：</dt>
+                        <dd>1、定期体检</dd>
+                        <dd>2、节日福利</dd>
+                        <dd>3、五险一金</dd>
+                        <dd>4、完善的员工培养体系</dd>
+                        <dd>5、全面的内部激励系统</dd>
+                    </dl>
+                    <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">跟我们聊聊</a>
+                </div>
+            </div>
         </div>
+        <script type="text/javascript">jQuery(".join-cnt").slide();</script>
     </div>
-    <div class="contentRight">
-        <img src="/cn/images/quesAnswer_phone02.png" alt="联系电话"/>
+    <div class="join-address">
+        <dl>
+            <dt>工作地址：</dt>
+            <dd>总部：上海市杨浦区政学路51号（近大学路五角场）</dd>
+            <dd>北京：北京市海淀区海淀大街38号银科大厦（中关村创业大街）</dd>
+            <dd>成都：成都市锦江区总府路2号时代广场A座</dd>
+            <dd>武汉：武汉市洪山区珞瑜路889号融众国际</dd>
+            <dd>杭州：杭州市下城区庆春路118号嘉德广场</dd>
+        </dl>
+        <p>人力资源部邮箱：hr@thinkwithu.cn</p>
     </div>
-    <div style="clear: both"></div>
 </div>
+
