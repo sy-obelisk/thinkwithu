@@ -40,9 +40,14 @@
                 <div>
                     <dl>
                         <dt>招聘职位:</dt>
-                        <dd>1、<strong>教师：</strong>教授“新托福”，“SAT”“GMAT”等国外考试专项课程</dd>
-                        <dd>2、<strong>学习管理师：</strong>负责建立学员的复习档案，跟踪学员的备考情况；</dd>
-                        <dd>3、<strong>教务：</strong>负责根据教师的上课时间，合理进行课程安排和服务协调</dd>
+                        <?php
+                        $data = \app\modules\cn\models\Content::getContent(['fields' => 'place','category' => "213,211"]);
+//                        var_dump($data);
+//                        die;
+                        foreach($data as $v) {
+                        ?>
+                        <dd><strong><?php echo $v['name']?>：</strong><?php  $id=$v['id']; $data =  \app\modules\cn\models\Content::getContent(['fields' => 'description','where' => "c.id=$id"]);echo($data[0]['description'] ) ;?></dd>
+                        <?php }?>
                     </dl>
                     <dl>
                         <dt>福利：</dt>
@@ -57,9 +62,12 @@
                 <div>
                     <dl>
                         <dt>招聘职位:</dt>
-                        <dd>1、<strong>营销：</strong>运用各种网络营销手段宣传公司品牌及业务产品</dd>
-                        <dd>2、<strong>市场：</strong>组织策划各类活动，协助市场部负责人做好市场线下推广工作，协助市场经理进行业务拓展和客户关系维护</dd>
-                        <dd>3、<strong>SEO：</strong>负责对网站的一些数据进行分析，优化网站搜索引擎展示</dd>
+                        <?php
+                        $data = \app\modules\cn\models\Content::getContent(['fields' => 'place','category' => "215,211"]);
+                        foreach($data as $v) {
+                            ?>
+                            <dd><strong><?php echo $v['name']?>：</strong><?php  $id=$v['id']; $data =  \app\modules\cn\models\Content::getContent(['fields' => 'description','where' => "c.id=$id"]);echo($data[0]['description'] ) ;?></dd>
+                        <?php }?>
                     </dl>
                     <dl>
                         <dt>福利：</dt>
@@ -74,10 +82,13 @@
                 <div>
                     <dl>
                         <dt>招聘职位:</dt>
-                        <dd>1、<strong>留学咨询顾问：</strong>了解公司产品专业知识，严格按照公司及项目规定的工作标准及服务流程，为客户提供留学和教育培训规划的初级咨询服务；</dd>
-                        <dd>2、<strong>留学申请顾问：</strong>负责规划学生整个申请的时间规划及协调和文案的衔接，确保及时了解和掌握客户的个案进程，协助及时解决客户案件处理中遇到的问题，保证客户案件的顺利进行</dd>
-                        <dd>3、<strong>留学规划师：</strong>熟悉公司业务专业知识，严格按照公司规定的工作标准及服务流程，为客户提供留学与培训的咨询服务，客户申请的时间规划与背景指导。</dd>
-                        <dd>4、<strong>高级文书：</strong>根据学生所提供的信息,写作申请所需的一系列文书并按照申请国大学的要求为客户写作或者翻译申请所需的文件</dd>
+                        <?php
+                        $data = \app\modules\cn\models\Content::getContent(['fields' => 'place','category' => "217,211"]);
+                        foreach($data as $v) {
+                            ?>
+                            <dd><strong><?php echo $v['name']?>：</strong><?php  $id=$v['id']; $data =  \app\modules\cn\models\Content::getContent(['fields' => 'description','where' => "c.id=$id"]);echo($data[0]['description'] ) ;?></dd>
+                        <?php }?>
+
                     </dl>
                     <dl>
                         <dt>福利：</dt>
@@ -92,10 +103,12 @@
                 <div>
                     <dl>
                         <dt>招聘职位:</dt>
-                        <dd>1、<strong>行政：</strong>公司内勤管理、来客接待 ，收发材料、文件传真等；</dd>
-                        <dd>2、<strong>人力资源：</strong>协助做好招聘与任用的具体事务工作，包括发放招聘启事，搜集和汇总应聘资料，安排面试人员，跟踪落实面试人员的情况等 </dd>
-                        <dd>3、<strong>财务：</strong>报销各种与现金有关的费用，及时登记现金日记账及库存现金盘点表，定期与银行对账，并保管公司库存现金及负责到银行处理公司相关部门发生的往来票据，包括支票、汇票等，并协调好与银行的业务关系，负责到银行处理公司相关部门发生的往来票据，包括支票、汇票等，并协调好与银行的业务关系</dd>
-                    </dl>
+                        <?php
+                        $data = \app\modules\cn\models\Content::getContent(['fields' => 'place','category' => "216,211"]);
+                        foreach($data as $v) {
+                            ?>
+                            <dd><strong><?php echo $v['name']?>：</strong><?php  $id=$v['id']; $data =  \app\modules\cn\models\Content::getContent(['fields' => 'description','where' => "c.id=$id"]);echo($data[0]['description'] ) ;?></dd>
+                        <?php }?>
                     <dl>
                         <dt>福利：</dt>
                         <dd>1、定期体检</dd>
