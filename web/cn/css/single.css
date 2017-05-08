@@ -1,0 +1,243 @@
+.single-station .single-bg {
+    width: 100%;
+    height: 420px;
+    background: url("../images/single-bg.png") no-repeat;
+    text-align: center;
+    border: 1px solid transparent;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+}
+.single-station .single-bg div {
+    position: relative;
+    width: 630px;
+    height: 170px;
+    margin: 150px auto 0;
+}
+.single-station .single-bg div:before,
+.single-station .single-bg div:after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 10px;
+    height: 10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 20%;
+}
+.single-station .single-bg div:before {
+    left: 0;
+}
+.single-station .single-bg div:after {
+    right: 0;
+}
+.single-station .single-bg h2,
+.single-station .single-bg h3 {
+    color: #fff;
+}
+.single-station .single-bg h3 {
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.single-station .single-bg h2 {
+    font-size: 60px;
+}
+.single-station .single-cnt {
+    width: 1000px;
+    margin: 65px auto 0;
+}
+.single-station .single-cnt .hd {
+    margin-bottom: 45px;
+}
+.single-station .single-cnt .hd li {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: bold;
+    font-size: 24px;
+    border: 1px solid transparent;
+    cursor: default;
+}
+.single-station .single-cnt .hd li.on {
+    border-color: #000;
+}
+.single-station .single-first {
+    width: 100%;
+    height: 256px;
+    background-color: rgb(240,240,240);
+    margin-bottom: 50px;
+}
+.single-station .single-first:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+.single-station .single-first img {
+    float: left;
+    width: 385px;
+}
+.single-station .single-first div {
+    margin-left: 420px;
+    padding: 20px 30px 20px 0;
+}
+.single-station .bd h2 {
+    width: 20px;
+    font-style: italic;
+    color: rgb(184,184,184);
+    border-bottom: 2px solid rgb(24,133,245);
+    margin-bottom: 15px;
+}
+.single-station .single-first h3 {
+    font-size: 20px;
+    color: rgb(24,133,245);
+}
+.single-station .single-first h4 {
+    width: 70px;
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 3px solid rgb(24,133,245);
+    margin-bottom: 35px;
+}
+.single-station .single-first h4 img {
+    width: 23px;
+    margin: -15px 0 0 70px;
+}
+.single-station .single-second {
+    padding: 40px 20px;
+    border-top: 1px dashed rgb(154,154,154);
+    border-bottom: 1px dashed rgb(154,154,154);
+}
+.single-station .single-cnt .single-title {
+    position: relative;
+    padding-bottom: 8px;
+    margin-bottom: 24px;
+    padding-left: 25px;
+}
+.single-station .single-cnt .single-title:after {
+    position: absolute;
+    display: block;
+    content:'';
+    width: 70px;
+    height: 3px;
+    background-color: rgb(24,133,245);
+    bottom: 0;
+    left: 25px;
+}
+.single-station .single-cnt .single-font {
+    padding-left: 25px;
+}
+.single-station .single-cnt p {
+    line-height: 25px;
+}
+.single-station .single-third {
+    padding: 40px 20px;
+}
+.single-write .single-third div:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+.single-write .single-third dl {
+    padding: 20px 20px 40px;
+    border: 1px solid #000;
+    float: left;
+    line-height: 35px;
+}
+.single-write .single-third dl dt {
+    font-weight: bold;
+    font-size: 18px;
+}
+.single-write .single-third dl:first-of-type {
+    width: 380px;
+    margin-right: 40px;
+}
+.single-write .single-third dl:nth-of-type(2) {
+    width: 450px;
+}
+.single-write .single-third dl:last-of-type {
+    width: 95%;
+    margin-top: 20px;
+}
+/*网申服务*/
+.single-online .single-third p {
+    padding-left: 25px;
+    margin-top: 20px;
+}
+.single-online .single-third p strong {
+    font-weight: bold;
+}
+.single-online .single-third img {
+    width: 800px;
+    margin-left: 25px;
+}
+.single-online .single-third table {
+    margin-left: 25px;
+    border-collapse: collapse;
+}
+.single-online .single-third table tr:nth-child(2n) {
+    text-align: center;
+}
+.single-online .single-third table tr:last-of-type {
+    text-align: left;
+}
+.single-online .single-third table tr td:first-child {
+    width: 170px;
+    text-align: center;
+}
+.single-online .single-third table tr td:last-child {
+    width: 700px;
+}
+.single-online .single-third table th {
+    background-color: rgb(255,102,0);
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+}
+.single-online .single-third table td {
+    border: 2px solid rgb(247,208,176);
+    padding: 10px 20px;
+    background-color: rgb(240,240,240);
+}
+.single-online .single-third table li {
+    list-style-type: disc;
+    line-height: 25px;
+}
+.single-online .single-third table p {
+    padding: 0;
+    margin: 0;
+}
+.single-online .single-third table strong {
+    font-weight: bold;
+}
+/*面试辅导*/
+/*签证服务*/
+.single-interview .single-third dl,
+.single-visa .single-third dl {
+    padding: 10px 40px 45px;
+    background-color: rgb(245,245,245);
+    margin-bottom: 20px;
+    -webkit-box-shadow:  0 3px 3px rgb(208,208,208);
+    -moz-box-shadow:  0 3px 3px rgb(208,208,208);
+    box-shadow:  0 3px 3px rgb(208,208,208);
+}
+.single-interview .single-third dl strong ,
+.single-visa .single-third dl strong {
+    font-weight: bold;
+}
+.single-interview .single-third dt,
+.single-visa .single-third dt {
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+.single-interview .single-third dd,
+.single-visa .single-third dd {
+    line-height: 40px;
+}
+.single-interview .single-third p {
+    padding: 5px 20px;
+    color: rgb(167,38,234);
+    border: 1px dashed rgb(23,144,255);
+    margin-bottom: 30px;
+}

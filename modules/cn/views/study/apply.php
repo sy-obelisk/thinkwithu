@@ -1,7 +1,6 @@
 
     <link rel="stylesheet" href="/cn/css/abroadProject.css"/>
 
-
 <div class="project-topImg">
     <img src="/cn/images/project_headImg.png" alt="头部图片"/>
 </div>

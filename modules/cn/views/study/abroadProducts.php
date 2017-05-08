@@ -60,7 +60,7 @@
                 </a>
             </li>
             <li>
-                <a href="javascript:void(0);">
+                <a href="/single.html" target="_blank">
                     <div class="topCircle">
                         <span></span>
                         <img src="/cn/images/abroad_circleIcon04.png" alt="图标"/>

@@ -136,6 +136,14 @@ class StudyController extends ThinkUController {
         return $this->render('masterBusiness');
     }
 
+    /*
+     * 单项服务
+     * */
+    public function actionSingle(){
+        return $this->renderPartial('single');
+    }
+
+
     /**
      * 本科留学
      * @return string
