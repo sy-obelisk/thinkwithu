@@ -233,25 +233,25 @@
                 <li>
                     <a href="/gmatsheet.html">
                         <img src="/cn/images/intensive_img01.png"/>
-                        <p>GMAT培训</p>
+                        <p>GMAT课程</p>
                     </a>
                 </li>
                 <li>
                     <a href="/satsheet.html">
                         <img src="/cn/images/intensive_img04.png"/>
-                        <p>SAT培训</p>
+                        <p>SAT课程</p>
                     </a>
                 </li>
                 <li>
                     <a href="/toefl/assistance.html">
                         <img src="/cn/images/intensive_img06.png"/>
-                        <p>托福培训</p>
+                        <p>托福课程</p>
                     </a>
                 </li>
                 <li>
                     <a href="/ieltssheet.html">
                         <img src="/cn/images/intensive_img07.png"/>
-                        <p>雅思培训</p>
+                        <p>雅思课程</p>
                     </a>
                 </li>
                 <li>
@@ -429,7 +429,7 @@
                 <span class="test-name">课</span>
                 <img class="test-img" src="/cn/Hirsi/images/19.png" alt="">
                 <a href="/training.html">
-                    <div class="test-de">培训课程</div>
+                    <div class="test-de">备考课程</div>
                 </a>
             </li>
             <li>
