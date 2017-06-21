@@ -292,7 +292,6 @@
                 <h4>申友留学“非中介”服务优势</h4>
             </div>
             <div class="common-t">
-<!--                <img src="/cn/images/products_PKicon.png" alt="pk图标">-->
                 <div class="commonT-left">申友留学和传统中介的区别</div>
                 <div class="commonT-right">传统中介</div>
             </div>
@@ -517,7 +516,7 @@
                     }
                     ?>
                 </ul>
-                <div><img src="/cn/images/abroadPro_subject01.png" alt="图标"> 研究报告</div>
+                <div><a href="/list/178,125.html"><img src="/cn/images/abroadPro_subject01.png" alt="图标"> 研究报告</a></div>
             </li>
             <li>
                 <ul>

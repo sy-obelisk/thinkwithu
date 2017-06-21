@@ -452,10 +452,6 @@
 .summerBd:after{
     display:block;clear:both;content:"";visibility:hidden;height:0;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> aaron
 /*关于申友托福*/
 .aboutToefl{
     width: 983px;
@@ -908,7 +904,7 @@
 }
 .dynamic>ul>li{
     width: 318px;
-    height: 144px;
+	height: 340px;
     background: #f5f5f5;
     float: left;
     margin-right: 14px;
@@ -934,8 +930,8 @@
     margin-top: 5px;
 }
 .dynamic-right ul li{
+	line-height: 30px;
     font-size: 12px;
-    margin-bottom: 5px;
     display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
 }
 .dynamic-right h4{
@@ -945,6 +941,9 @@
     margin-bottom: 10px;
 }
 .moreDiv{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
     width: 71px;
     height: 18px;
     background: white;
@@ -952,9 +951,7 @@
     font-size: 12px;
     float: right;
     padding-left: 5px;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+	margin-top: 10px;
 }
 .moreDiv:hover  a div{
     background: #7541a3;

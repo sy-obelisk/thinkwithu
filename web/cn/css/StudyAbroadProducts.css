@@ -541,7 +541,8 @@
     margin-bottom: 18px;
     color: #3b3a38;
 }
-.subject>ul>li>div{
+.subject>ul>li>div,
+.subject>ul>li>div>a {
     width: 100%;
     height: 75px;
     line-height: 75px;
@@ -551,7 +552,11 @@
     font-weight: bold;
     margin-top: 26px;
 }
-.subject>ul>li>div>img{
+.subject>ul>li>div>a:hover {
+    color: #ccc;
+}
+.subject>ul>li>div>img,
+.subject>ul>li>div>a>img{
     height: 44px;
     vertical-align: middle;
 }

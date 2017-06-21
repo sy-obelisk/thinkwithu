@@ -192,9 +192,8 @@
 				<li>
 					<span>08</span>
 					<div>
-						<h4>模考解析</h4>
-						<p>实战演练</p>
-						<p>名师讲解</p>
+						<h4>做题工具</h4>
+						<p>雷哥APP</p>
 					</div>
 				</li>
 			</ul>
@@ -215,7 +214,7 @@
             		<li>
             			<img src="/cn/images/gmat_kevin.png" alt="老师照片"/>
             			<div class="summer-title">
-            				<p>Kevin</p>
+            				<p>雷哥Kevin</p>
             				<p>主讲：GMAT逻辑、语法、数学、IR</p>
             			</div>
             			<p class="summer-cent">Kevin，学生赠名“雷哥”。具有多年GMAT教学经验，曾受邀到全国数十所著名高校巡回讲座。资深留学英语名师，国内早批新托福教师长期专注海外留学规划和出国考试研究，培养留学学生过万，遍布世界名校。留学考试学术成果：GMAT逻辑靶向图、GMAT逻辑本质论、GMAT语法优先原则、GMAT必要性阅读法、是留学英语考试的集大成者。研发和出版多本留学英语培训教材，并不断优化教学方法，专著有《Influence--雷哥GMAT逻辑》、《申友GMAT高分讲义》、《GMAT真题名师精讲》等。 </p>
@@ -225,7 +224,7 @@
             		<li>
             			<img src="/cn/images/gmat_gary.png" alt="老师照片"/>
             			<div class="summer-title">
-            				<p>Gary</p>
+            				<p>阿杜Gary</p>
             				<p>主讲：GMAT逻辑、数学</p>
             			</div>
             			<p class="summer-cent">上海外国语大学研究生毕业;多年的海内外教学复合型经历、理论加实践的复合型学习以及多语种的学习背景令其对于语言学习及出国类考试有着深刻与独到的见解，培养了无数高分学员。教学风格激情、负责、幽默，深受广大学生喜欢。</p>
@@ -235,7 +234,7 @@
             		<li>
             			<img src="/cn/images/toefl_amanda.png" alt="老师照片"/>
             			<div class="summer-title">
-            				<p>Amanda</p>
+            				<p>阿曼Amanda</p>
             				<p>主讲：GMAT阅读、语法</p>
             			</div>
             			<p class="summer-cent">申友集团语言教学研发总监，《申友GMAT阅读笔记》主编，《申友GMAT语法笔记》副主编。英国兰卡斯特大学硕士，国内重本英语专业毕业；曾以培训师身份受邀参加GMAC官方举办的亚太峰会。亲历雅思，GMAT考试。国外的几年深造，使她对西方人的思维方式和表达习惯有着深刻的了解;多年教授和研发留学英语课程，尤其是GMAT、TOEFL、SAT阅读和雅思口语，对其有个人的见解;上课风格诙谐活泼，深受学生的喜欢。
@@ -478,7 +477,7 @@
                 <h4>考试动态</h4>
                 <ul>
                     <?php
-                    $data = \app\modules\cn\models\Content::getContent(['category' => "118,115",'pageSize'=>3,'order'=>'sort']);
+                    $data = \app\modules\cn\models\Content::getContent(['category' => "118,115",'pageSize'=>8,'order'=>'sort']);
 //                    var_dump($data);
 					foreach($data as $v) {
                     ?>
@@ -505,7 +504,7 @@
                 <h4>研究报告</h4>
                 <ul>
                     <?php
-                    $data = \app\modules\cn\models\Content::getContent(['category' => "125",'pageSize'=>3,'order'=>'sort']);
+                    $data = \app\modules\cn\models\Content::getContent(['category' => "125",'pageSize'=>8,'order'=>'sort']);
 					foreach($data as $v) {
                         ?>
                         <li><a href="/word-details/<?php echo $v['id']?>/217.142.html" target="_blank"><?php echo $v['name']?></a></li>
@@ -531,7 +530,7 @@
                 <h4>申友动态</h4>
                 <ul>
                     <?php
-                    $data = \app\modules\cn\models\Content::getContent(['category' => "105,117,118",'pageSize'=>3,'order'=>'sort']);
+                    $data = \app\modules\cn\models\Content::getContent(['category' => "105,117,118",'pageSize'=>8,'order'=>'sort']);
                     foreach($data as $v) {
                         ?>
                         <li><a href="/word-details/<?php echo $v['id']?>/88.118.html" target="_blank"><?php echo $v['name']?></a></li>
