@@ -38,7 +38,7 @@
                 </div>-->
             </li>
             <li><a class="nav1-link" href="/gmatsheet.html">GMAT课程</a></li>
-            <li><a class="nav1-link" href="/satsheet.html">SAT课程</a></li>
+            <li><a class="nav1-link" href="http://sat.thinkuedu.com/" target="_blank">SAT课程</a></li>
             <li><a class="nav1-link" href="/toefl/assistance.html">托福课程</a></li>
             <li><a class="nav1-link" href="/ieltssheet.html">雅思课程</a></li>
             <li><a class="nav1-link" href="/public-class.html">申友讲堂</a></li>

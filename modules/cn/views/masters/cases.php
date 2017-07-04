@@ -122,18 +122,9 @@ $trainingSpeech = \app\modules\cn\models\Content::getContent(['fields' => 'abstr
     <div style="clear: both"></div>
 </div>
 
-
-<?php use app\commands\front\ContactWidget;?>
-<?php ContactWidget::begin();?>
-<?php ContactWidget::end();?>
 <script type="text/javascript">
     jQuery(".connection").slide({mainCell:".connectBd",trigger:"mouseover"});
 </script>
-<!-----------------------------尾部------------------------------>
-<?php use app\commands\front\FooterWidget;?>
-<?php FooterWidget::begin();?>
-<?php FooterWidget::end();?>
-<!-----------------------------尾部end------------------------------>
 <!-------------------------------------------------右边的悬浮窗------------------------------------------->
 <?php use app\commands\front\RightSuspensionWidget;?>
 <?php RightSuspensionWidget::begin();?>

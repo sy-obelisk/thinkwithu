@@ -237,7 +237,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/satsheet.html">
+                    <a href="http://sat.thinkuedu.com/" target="_blank">
                         <img src="/cn/images/intensive_img04.png"/>
                         <p>SAT课程</p>
                     </a>
