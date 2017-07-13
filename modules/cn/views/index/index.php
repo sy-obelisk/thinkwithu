@@ -119,7 +119,7 @@
 <!--header 头部-->
 <header class="sy-header">
     <div class="w10 clearfix">
-        <img src="/cn/Hirsi/images/sy-text.png" style="margin-right: 55px" alt="高分成就梦想名校改变人生">
+        <img src="/cn/Hirsi/images/sy-text.png" style="margin-right: 55px" alt="得高分成就梦想名校改变人生">
         <img src="/cn/Hirsi/images/sy-tel.png" alt="400-600-1123">
         <a class="refer-btn"
            href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="
