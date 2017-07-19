@@ -1,7 +1,7 @@
 /*!
  * UEditor
  * version: ueditor
- * build: Thu May 29 2014 16:47:49 GMT+0800 (中国标准时间)
+ * build: Tue Aug 25 2015 15:23:01 GMT+0800 (CST)
  */
 
 (function(){
@@ -6901,7 +6901,7 @@ var fillCharReg = new RegExp(domUtils.fillChar, 'g');
                     '.view{padding:0;word-wrap:break-word;cursor:text;height:90%;}\n' +
                     //设置默认字体和字号
                     //font-family不能呢随便改，在safari下fillchar会有解析问题
-                    'body{margin:8px;font-family:sans-serif;font-size:12px;}' +
+                    'body{margin:8px;font-family:sans-serif;font-size:16px;}' +
                     //设置段落间距
                     'p{margin:5px 0;}</style>' +
                     ( options.iframeCssUrl ? '<link rel=\'stylesheet\' type=\'text/css\' href=\'' + utils.unhtml(options.iframeCssUrl) + '\'/>' : '' ) +
@@ -9531,6 +9531,7 @@ var htmlparser = UE.htmlparser = function (htmlstr,ignoreBlank) {
     }
     return root;
 };
+
 
 // core/filternode.js
 /**
@@ -19809,6 +19810,7 @@ UE.plugins['video'] = function (){
         }
     }
 })();
+
 
 // plugins/table.action.js
 /**
