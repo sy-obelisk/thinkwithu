@@ -477,7 +477,7 @@
                 <h4>考试动态</h4>
                 <ul>
                     <?php
-                    $data = \app\modules\cn\models\Content::getContent(['category' => "118,115",'pageSize'=>8,'order'=>'sort']);
+                    $data = \app\modules\cn\models\Content::getContent(['category' => "118,115",'pageSize'=>8]);
 //                    var_dump($data);
 					foreach($data as $v) {
                     ?>
