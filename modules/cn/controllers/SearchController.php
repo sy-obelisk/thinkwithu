@@ -20,7 +20,7 @@ class SearchController extends ThinkUController {
         $pagesize = 10;
         $offset   = $pagesize * ($p - 1);
         $data     = Yii::$app->db->createCommand("select DISTINCT c.id,c.name,catId from {{%content}} c left join {{%content_extend}} ce on ce.contentId=c.id left join {{%extend_data}} ed on ed.extendId=ce.id  where c.name like '%$keyword%' order by id desc limit $offset,$pagesize")->queryAll();
-        $count = count(Yii::$app->db->createCommand("select DISTINCT c.id,c.name,catId,ce.value as summary from {{%content}} c left join {{%content_extend}} ce on ce.contentId=c.id left join {{%extend_data}} ed on ed.extendId=ce.id  where c.name like '%$keyword%'")->queryAll());
+        $count = count(Yii::$app->db->createCommand("select DISTINCT c.id,c.name,catId from {{%content}} c left join {{%content_extend}} ce on ce.contentId=c.id left join {{%extend_data}} ed on ed.extendId=ce.id  where c.name like '%$keyword%'")->queryAll());
         $myPage=new P('/search.html?keyword='.$keyword.'&p', $count,$p, $pagesize);
         $str= $myPage->GetPager();
         return $this->renderPartial('index',['data'=>$data,'str'=>$str]);

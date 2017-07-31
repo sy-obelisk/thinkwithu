@@ -58,7 +58,7 @@ class P
 
     public function GetPager()
     {
-        $str='<div class="s-page" aria-label="Page navigation">';
+        $str='<div class="page-list">';
         $str.='<ul class="pagination">';
         $str.="<li><a  href='{$this->pageUrl}=1'>&laquo;</a> </li>";
 //        if ($this->pageIndex == '1'||$this->pageIndex <1) {

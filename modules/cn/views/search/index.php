@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
-  <meta charset="UTF-8">
+  <title>申友官网</title>
   <!--阻止浏览器缓存-->
   <meta http-equiv="pragma" content="no-cache">
   <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
@@ -41,19 +40,6 @@
   <title>申友雅思在线_雅思备考_雅思培训_雅思网络课程_雅思在线课程_雅思网课_雅思直播课_IELTS申友</title>
 </head>
 <body>
-<?php use app\commands\front\NavWidget;?>
-<?php NavWidget::begin();?>
-<?php NavWidget::end();?>
-<!-----------------------------头部------------------------------>
-<!-----------------------------头部end------------------------------>
-<?php use app\commands\front\BannerWidget;?>
-<?php BannerWidget::begin();?>
-<?php BannerWidget::end();?>
-<div style="clear: both;margin-bottom: 10px;"></div>
-<!---------------------------左边悬浮窗---------------------------------->
-<?php use app\commands\front\LeftSuspensionWidget;?>
-<?php LeftSuspensionWidget::begin();?>
-<?php LeftSuspensionWidget::end();?>
 <header class="sy-header">
   <div class="w10 clearfix">
     <img src="/cn/Hirsi/images/sy-text.png" style="margin-right: 55px" alt="高分成就梦想名校改变人生">
@@ -73,6 +59,16 @@
     </div>
   </div>
 </header>
+<!-----------------------------头部------------------------------>
+<?php use app\commands\front\BannerWidget;?>
+<?php BannerWidget::begin();?>
+<?php BannerWidget::end();?>
+<div style="clear: both;margin-bottom: 10px;"></div>
+<!---------------------------左边悬浮窗---------------------------------->
+<?php use app\commands\front\LeftSuspensionWidget;?>
+<?php LeftSuspensionWidget::begin();?>
+<?php LeftSuspensionWidget::end();?>
+
 <section>
   <div class="search-bc">
     <div class="search-wrap fr">
@@ -95,7 +91,6 @@
 <!--      后台输出页码-->
       <?php echo $str?>
   </div>
-  <div class="page-list"> </div>
 
 </section>
 <!-----------------------------尾部------------------------------>
@@ -104,8 +99,8 @@
 <?php FooterWidget::end();?>
 </body>
 <script>
-  $('.page-list').createPage({
-
+  $(function () {
+    $('.search').val("<?php echo Yii::$app->request->get('keyword', '')?>");
   })
 </script>
 </html>

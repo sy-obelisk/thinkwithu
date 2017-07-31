@@ -81,8 +81,6 @@
     </div>
      <!---------------申友成功案例------------------->
      <!--<div class="successLife">-->
-     	
-     
     <div class="success">
         <div class="success-top">
             <img src="/cn/images/products_flower.png" alt="花纹图标"/>
