@@ -68,6 +68,22 @@ $(function(){
     	$(this).siblings("a").removeClass("on");
     	 $("a.on-hover").addClass("on");
     });
+    //导航栏固定在顶部
+    $(function(){
+        $(window).scroll(function(){
+            var top= $(window).scrollTop();
+            if (top>45){
+                $(".nav-wrap").addClass("nav-flexd");
+                $(".nav-list li a").addClass("a-fiexd");
+                $(".logo").attr("src","/cn/Hirsi/images/sy-logo2.png")
+            }else {
+                $(".nav-wrap").removeClass("nav-flexd");
+                $(".nav-list li a").removeClass("a-fiexd");
+                $(".logo").attr("src","/cn/Hirsi/images/sy-logo.png")
+            }
+        })
+    })
+
 });
 //    悬浮窗随滚动条滚动
 //$(document).ready(function () {
@@ -157,19 +173,21 @@ function closeRefer(){
 function referTop(){
     $("html,body").animate({scrollTop:0},800);
 }
+//搜索框事件
+function enterKey(event,obj){
+    if ($(obj).prop('className').indexOf('search1') != -1){
+        $('.search2').val($('.search1').val());
+    } else if($(obj).prop('className').indexOf('search2') != -1){
+        $('.search1').val($('.search2').val());
+    }
+    if(event.keyCode == 13){
+        keySearch();
+    }
+}
+function keySearch() {
+    var k = $('.search-wrap>input').val();
+    console.log(k);
+    location.href="/search.html";
+    //location.href = "/search.html?&keyword=" + encodeURIComponent(k);
+}
 
-//导航栏固定在顶部
-$(function(){
-    $(window).scroll(function(){
-    	var top= $(window).scrollTop();
-    	if (top>45){
-       	 	$(".nav-wrap").addClass("nav-flexd");
-        	$(".nav-list li a").addClass("a-fiexd");
-        	$(".logo").attr("src","/cn/Hirsi/images/sy-logo2.png")
-    	}else {
-        	$(".nav-wrap").removeClass("nav-flexd");
-        	$(".nav-list li a").removeClass("a-fiexd");
-        	$(".logo").attr("src","/cn/Hirsi/images/sy-logo.png")
-    	}
-    })
-})

@@ -116,9 +116,8 @@
     <link rel="stylesheet" href="/cn/Hirsi/css/index.css">
     <link rel="stylesheet" href="/cn/css/fonts/font-awesome/css/font-awesome.min.css"/>
     <link rel="shortcut icon" href="http://www.thinkwithu.com/favicon.ico" />
-    <script type="text/javascript" src="/cn/js/jquery1.42.min.js"></script>
-    <script type="text/javascript" src="/cn/Hirsi/js/jquery-1.12.2.min.js"></script>
-    <script type="text/javascript" src="/cn/Hirsi/js/jquery.SuperSlide.2.1.1.js"></script>
+    <script src="/cn/js/jquery1.42.min.js"></script>
+    <script src="/cn/Hirsi/js/jquery-3.1.0.min.js"></script>
     <script type="text/javascript" src="/cn/js/jquery.SuperSlide.2.1.1.js"></script>
     <script type="text/javascript" src="/cn/js/public.js"></script>
 </head>
@@ -147,8 +146,8 @@
         </div>
         <!--搜索-->
         <div class="search-wrap fr">
-            <input class="search" type="search" placeholder="请输入关键词">
-            <img src="/cn/Hirsi/images/search-icon.png" style="margin-left: -1px;cursor: pointer;" alt="搜索">
+            <input class="search search1" type="search" onkeyup="enterKey(event,this)" placeholder="请输入关键词">
+            <img src="/cn/Hirsi/images/search-icon.png" style="margin-left: -1px;cursor: pointer;" onclick="keySearch()" alt="搜索">
         </div>
     </div>
 </header>

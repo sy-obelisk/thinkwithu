@@ -120,41 +120,6 @@
     </span>
 </div>
 
-<!-----------------------------右边弹窗-------------------------->
-<!--<div class="rightLayer">-->
-<!--    <div class="close_icon" onclick="hideLayer()">×</div>-->
-<!--    <div class="top_ul">-->
-<!--        <ul>-->
-<!--            <li><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">在线咨询</a></li>-->
-<!--            <li><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">GMAT培训</a></li>-->
-<!--            <li><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">托福培训</a></li>-->
-<!--            <li><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">美国留学</a></li>-->
-<!--            <li><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">英国留学</a></li>-->
-<!--            <li><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">其他留学</a></li>-->
-<!--            <li><a href="http://p.qiao.baidu.com/im/index?siteid=605 8744&ucid=3827656&cp=&cr=&cw=">海外咨询</a></li>-->
-<!--            <li><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">留学规划</a></li>-->
-<!--            <li><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">游学与实习</a></li>-->
-<!--        </ul>-->
-<!--    </div>-->
-<!--    <div class="bottom_top" onclick="scroll_Top();"></div>-->
-<!--</div>-->
-<!--<div class="rightLayer_two" onclick="showLayer();"></div>-->
-<!--Hrisi --弹窗-->
-<!--<div id="right-wrap" class="right-wrap">-->
-<!--    <div class="img-wrap">-->
-<!--        <div class="wx-wrap">-->
-<!--            <div class="erm-wrap"><img src="/cn/images/erm-1.jpg" alt=""></div>-->
-<!--        </div>-->
-<!--        <div class="tel-wrap2">-->
-<!--            <div class="tel-text2">400-600-1123</div>-->
-<!--        </div>-->
-<!--        <img src="/cn/images/consult.png" alt="">-->
-<!--        <a class="online" href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="></a>-->
-<!--        <div class="close-wrap"></div>-->
-<!--    </div>-->
-<!--</div>-->
-<!--<div class="rightLayer_two" ></div>-->
-<!--Anne --弹窗-->
 <!-------------------咨询框------------------------>
 <div class="referBox">
     <div class="refer_close" onclick="closeRefer()"></div>
