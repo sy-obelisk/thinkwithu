@@ -16,6 +16,8 @@ class SearchController extends ThinkUController {
     public $enableCsrfValidation = false;
     public function actionIndex(){
         $keyword  = Yii::$app->request->get('keyword', '');
+        $keyword  =addslashes($keyword);
+        $keyword  =strip_tags($keyword);
         $p        = Yii::$app->request->get('p', '1');
         $pagesize = 10;
         $offset   = $pagesize * ($p - 1);

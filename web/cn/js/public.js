@@ -186,6 +186,6 @@ function enterKey(event,obj){
 }
 function keySearch() {
     var k = $('.search-wrap>input').val();
-    location.href = "/search.html?keyword=" + encodeURI(k)+"&p="+$('.page-list .active a').html();
+    location.href = "/search.html?keyword=" + encodeURI(k);
 }
 
