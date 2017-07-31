@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
-  <link rel="stylesheet" href="/cn/css/search.css">
   <meta charset="UTF-8">
   <!--阻止浏览器缓存-->
   <meta http-equiv="pragma" content="no-cache">
@@ -36,6 +35,7 @@
 
   <link rel="stylesheet" href="/cn/Hirsi/css/reset.css">
   <link rel="stylesheet" href="/cn/Hirsi/css/index.css">
+  <link rel="stylesheet" href="/cn/css/search.css">
   <script type="text/javascript" src="/cn/js/public.js"></script>
   <script src="/cn/js/jqPage.js"></script>
   <title>申友雅思在线_雅思备考_雅思培训_雅思网络课程_雅思在线课程_雅思网课_雅思直播课_IELTS申友</title>
@@ -82,24 +82,21 @@
   </div>
   <div class="search-cnt search-subject">
     <ul>
+      <?php foreach($data as $v) {?>
         <li class="search-list">
           <h2>
-           <a href="#">2017-2018年SAT将在考试后两周公布成绩考试后两周公布成绩考试后两周公布成绩</a>
+           <a href="/word-details/<?php echo $v['id']?>/<?php echo $v['catId']?>.html"><?php echo $v['name']?></a>
           </h2>
-          <div>
-            <p>2016年改革后新SAT总分共1600分，分为阅读、文法和数学三部分，写作改为选考,由ETS承担其命题及阅卷工作。但是SAT只是录取学生时参考的材料之一，不像高考一样起完全决定性的因不像高考一样起完全决定性的因</p>
-          </div>
+<!--          <div>-->
+<!--            <p>--><?php //echo $v['summary']?><!--</p>-->
+<!--          </div>-->
         </li>
-      <li class="search-list">
-        <h2>
-          <a href="#">2017-2018年SAT将在考试后两周公布成绩考试后两周公布成绩考试后两周公布成绩</a>
-        </h2>
-        <div>
-          <p>2016年改革后新SAT总分共1600分，分为阅读、文法和数学三部分，写作改为选考,由ETS承担其命题及阅卷工作。但是SAT只是录取学生时参考的材料之一，不像高考一样起完全决定性的因不像高考一样起完全决定性的因</p>
-        </div>
-      </li>
+      <?php }?>
+<!--      后台输出页码-->
+      <?php echo $str?>
   </div>
-  <div class="page-list"></div>
+  <div class="page-list"> </div>
+
 </section>
 <!-----------------------------尾部------------------------------>
 <?php use app\commands\front\FooterWidget;?>
