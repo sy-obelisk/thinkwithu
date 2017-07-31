@@ -4,6 +4,7 @@
   background: url("/cn/images/search.jpg") 0 0 no-repeat;
 }
 .search-bc .search-wrap {
+  width: 600px;
   position: relative;
   float: none;
   top: 200px;
@@ -62,16 +63,19 @@
   margin: 30px auto;
   text-align: left;
 }
-.page-list .current {
+.page-lsit>ul {
+  font-size: 0;
+}
+.page-list>ul li {
+  display: inline-block;
+}
+.page-list>ul li.active a {
   background-color: #974694;
   color: #fff;
 }
-.page-list>span,
-.page-list>a {
+.page-list>ul li a {
   padding: 5px 10px;
   margin-right: 3px;
   border: 1px solid #974694;
-}
-.page-list>span {
-  cursor: not-allowed;
+  font-size: 14px;
 }
