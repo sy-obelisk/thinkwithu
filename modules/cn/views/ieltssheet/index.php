@@ -61,10 +61,9 @@
             <span class="on">登录</span>
             <span>注册</span>
         </div>
-        <!--搜索-->
         <div class="search-wrap fr">
-            <input class="search" type="search" placeholder="请输入关键词">
-            <img src="/cn/Hirsi/images/search-icon.png" style="margin-left: -1px;cursor: pointer;" alt="搜索">
+            <input class="search search1" type="search" onkeyup="enterKey(event,this)" placeholder="请输入关键词">
+            <img src="/cn/Hirsi/images/search-icon.png" style="margin-left: -1px;cursor: pointer;" onclick="keySearch()" alt="搜索">
         </div>
     </div>
 </header>

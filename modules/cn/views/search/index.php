@@ -82,16 +82,16 @@
   </div>
   <div class="search-cnt search-subject">
     <ul>
-      <?php foreach($data as $v) {?>
+      <?php  if($data==false){echo '无搜索结果';}else{ $keyword = Yii::$app->request->get('keyword', '');foreach($data as $v) {?>
         <li class="search-list">
           <h2>
-           <a href="/word-details/<?php echo $v['id']?>/<?php echo $v['catId']?>.html"><?php echo $v['name']?></a>
+           <a href="/word-details/<?php echo $v['id']?>/<?php echo $v['catId']?>.html"><?php echo str_replace($keyword,'<span style="color:red;">'.$keyword.'</span>',$v['name'])?></a>
           </h2>
 <!--          <div>-->
 <!--            <p>--><?php //echo $v['summary']?><!--</p>-->
 <!--          </div>-->
         </li>
-      <?php }?>
+      <?php }}?>
 <!--      后台输出页码-->
       <?php echo $str?>
   </div>

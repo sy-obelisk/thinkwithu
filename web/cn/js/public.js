@@ -188,6 +188,6 @@ function keySearch() {
     var k = $('.search-wrap>input').val();
     console.log(k);
     //location.href="/search.html";
-    location.href = "/search.html?keyword=" + encodeURIComponent(k)+"&=p"+$('.page-list .current').html();
+    location.href = "/search.html?keyword=" + encodeURIComponent(k)+"&p="+$('.page-list .current').html();
 }
 
