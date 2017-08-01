@@ -19,7 +19,7 @@ class SearchController extends ThinkUController {
         $keyword  =addslashes($keyword);
         $keyword  =strip_tags($keyword);
         $p        = Yii::$app->request->get('p', '1');
-        $pagesize = 10;
+        $pagesize = 20;
         $offset   = $pagesize * ($p - 1);
         $data     = Yii::$app->db->createCommand("select DISTINCT c.id,c.name,catId from {{%content}} c left join {{%content_extend}} ce on ce.contentId=c.id left join {{%extend_data}} ed on ed.extendId=ce.id  where c.name like '%$keyword%' order by id desc limit $offset,$pagesize")->queryAll();
         $count = count(Yii::$app->db->createCommand("select DISTINCT c.id,c.name,catId from {{%content}} c left join {{%content_extend}} ce on ce.contentId=c.id left join {{%extend_data}} ed on ed.extendId=ce.id  where c.name like '%$keyword%'")->queryAll());

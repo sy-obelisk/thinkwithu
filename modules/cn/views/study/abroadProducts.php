@@ -1,9 +1,5 @@
-
-    <link rel="stylesheet" href="/cn/css/StudyAbroadProducts.css"/>
-
-    <script type="text/javascript" src="/cn/js/index.js"></script>
-
-
+<link rel="stylesheet" href="/cn/css/StudyAbroadProducts.css"/>
+<script type="text/javascript" src="/cn/js/index.js"></script>
 <div class="abroadProBig">
     <div class="abroadHead">
         <div class="inAbroad">

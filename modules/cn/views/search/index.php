@@ -36,7 +36,6 @@
   <link rel="stylesheet" href="/cn/Hirsi/css/index.css">
   <link rel="stylesheet" href="/cn/css/search.css">
   <script type="text/javascript" src="/cn/js/public.js"></script>
-  <script src="/cn/js/jqPage.js"></script>
   <title>申友雅思在线_雅思备考_雅思培训_雅思网络课程_雅思在线课程_雅思网课_雅思直播课_IELTS申友</title>
 </head>
 <body>
@@ -75,6 +74,17 @@
       <input class="search search2" type="search" onkeyup="enterKey(event,this)" placeholder="请输入关键词">
       <img src="/cn/Hirsi/images/search-icon.png" style="margin-left: -1px;cursor: pointer;" onclick="keySearch()" alt="搜索">
     </div>
+    <div class="search-hot">
+      <dl>
+        <dt>热搜词：</dt>
+        <dd>GMAT</dd>
+        <dd>托福</dd>
+        <dd>留学</dd>
+        <dd>雅思</dd>
+        <dd>美国</dd>
+        <dd>案例</dd>
+      </dl>
+    </div>
   </div>
   <div class="search-cnt search-subject">
     <ul>
@@ -91,7 +101,6 @@
 <!--      后台输出页码-->
       <?php echo $str?>
   </div>
-
 </section>
 <!-----------------------------尾部------------------------------>
 <?php use app\commands\front\FooterWidget;?>
@@ -101,6 +110,7 @@
 <script>
   $(function () {
     $('.search').val("<?php echo Yii::$app->request->get('keyword', '')?>");
+
   })
 </script>
 </html>

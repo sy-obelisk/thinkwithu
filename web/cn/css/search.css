@@ -17,6 +17,31 @@
 .search-bc .search-wrap>img {
   height: 50px;
 }
+/*热搜词*/
+.search-hot {
+  width: 700px;
+  position: relative;
+  left: 30%;
+  top: 45%;
+}
+.search-hot>dl {
+  font-size: 0;
+}
+.search-hot>dl dt,
+.search-hot>dl dd {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 14px;
+  color: #000;
+  cursor: pointer;
+}
+.search-hot>dl dd:hover {
+  color: red;
+}
+.search-hot>dl dt {
+  font-size: 16px;
+  font-weight: bold;
+}
 /*搜索结果*/
 .search-cnt {
   width: 1000px;
