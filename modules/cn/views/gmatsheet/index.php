@@ -504,7 +504,7 @@
                 <h4>研究报告</h4>
                 <ul>
                     <?php
-                    $data = \app\modules\cn\models\Content::getContent(['category' => "125",'pageSize'=>8,'order'=>'sort']);
+                    $data = \app\modules\cn\models\Content::getContent(['category' => "125",'pageSize'=>8]);
 					foreach($data as $v) {
                         ?>
                         <li><a href="/word-details/<?php echo $v['id']?>/217.142.html" target="_blank"><?php echo $v['name']?></a></li>
@@ -530,7 +530,7 @@
                 <h4>申友动态</h4>
                 <ul>
                     <?php
-                    $data = \app\modules\cn\models\Content::getContent(['category' => "105,117,118",'pageSize'=>8,'order'=>'sort']);
+                    $data = \app\modules\cn\models\Content::getContent(['category' => "105,117,118",'pageSize'=>8]);
                     foreach($data as $v) {
                         ?>
                         <li><a href="/word-details/<?php echo $v['id']?>/88.118.html" target="_blank"><?php echo $v['name']?></a></li>

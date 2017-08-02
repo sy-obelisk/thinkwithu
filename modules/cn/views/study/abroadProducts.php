@@ -523,7 +523,7 @@
                     }
                     ?>
                 </ul>
-                <div><img src="/cn/images/abroadPro_subject02.png" alt="图标"> 找专业</div>
+                <div><a href="/list/143.html"><img src="/cn/images/abroadPro_subject02.png" alt="图标"> 找专业 </a></div>
             </li>
             <li>
                 <ul>
@@ -536,7 +536,7 @@
                     }
                     ?>
                 </ul>
-                <div><img src="/cn/images/abroadPro_subject03.png" alt="图标"> 找学校</div>
+                <div><a href="/list/154.html"><img src="/cn/images/abroadPro_subject03.png" alt="图标"> 找学校</a></div>
             </li>
             <li>
                 <ul>
@@ -549,7 +549,7 @@
                     }
                     ?>
                 </ul>
-                <div><img src="/cn/images/abroadPro_subject04.png" alt="图标"> 找排名</div>
+                <div><a href="/list/175.html "><img src="/cn/images/abroadPro_subject04.png" alt="图标"> 找排名</a></div>
             </li>
         </ul>
     </div>
