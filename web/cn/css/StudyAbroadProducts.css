@@ -372,8 +372,7 @@
     width: 1001px;
     height: 450px;
     margin: 0 auto;
-    background: url("../images/abroadPro_whoUs.jpg") no-repeat;
-    background-size: 100% auto;
+    background-color: #EFD657;
     position: relative;
 }
 .whoUs>ul>li:hover{

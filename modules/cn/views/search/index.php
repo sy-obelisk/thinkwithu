@@ -110,7 +110,6 @@
 <script>
   $(function () {
     $('.search').val("<?php echo Yii::$app->request->get('keyword', '')?>");
-
   })
 </script>
 </html>
