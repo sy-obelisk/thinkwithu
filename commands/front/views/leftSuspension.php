@@ -21,11 +21,12 @@
             <option value="香港">香港</option>
             <option value="其他">其他</option>
         </select>
-        <p class="info-tit">我完成的阶段：</p>
+        <p class="info-tit">我要申请的学位：</p>
         <select class="info-select" name="stage" id="stage">
-            <option value="本科">本科</option>
             <option value="硕士">硕士</option>
+            <option value="本科">本科</option>
             <option value="博士">博士</option>
+            <option value="高中">高中</option>
         </select>
         <p class="info-tit">我计划出国的时间：</p>
         <select class="info-select" name="data" id="data">
