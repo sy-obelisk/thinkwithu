@@ -570,10 +570,10 @@
         var _this = this;
         var page = $(this).attr('data-value');
         var total = $(this).siblings('.total').attr('data-value');
-        if(page <1){
+        if(Number(page) < 1){
             return false;
         }
-        if(page > total){
+        if(Number(page) > Number(total)){
             return false;
         }
         var pageSize = 15;
@@ -604,10 +604,10 @@
         var _this = this;
         var page = $(this).attr('data-value');
         var total = $(this).siblings('.total').attr('data-value');
-        if(page <1){
+        if(Number(page) < 1){
             return false;
         }
-        if(page > total){
+        if(Number(page) > Number(total)){
             return false;
         }
         var pageSize = 6;
@@ -630,10 +630,10 @@
         var _this = this;
         var page = $(this).attr('data-value');
         var total = $(this).siblings('.total').attr('data-value');
-        if(page <1){
+        if(Number(page) < 1){
             return false;
         }
-        if(page > total){
+        if(Number(page) > Number(total)){
             return false;
         }
         var pageSize = 10;
