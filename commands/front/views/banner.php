@@ -5,7 +5,7 @@
             <li><a class="on on-hover nav1-link" href="/">首页</a></li>
             <li><a class="nav1-link" href="/study-aboard/assistance.html">留学服务</a></li>
             <li><a class="nav1-link" href="/gmatsheet.html">GMAT课程</a></li>
-            <li><a class="nav1-link" href="http://sat.viplgw.cn/" target="_blank">SAT课程</a></li>
+            <li><a class="nav1-link" href="/satsheet.html">SAT课程</a></li>
             <li><a class="nav1-link" href="/toefl/assistance.html">托福课程</a></li>
             <li><a class="nav1-link" href="/ieltssheet.html">雅思课程</a></li>
             <li><a class="nav1-link" href="/public-class.html">申友讲堂</a></li>
