@@ -15,7 +15,7 @@
                 <ol class="olTwo twoDiff tm">
                     <li><a href="/public-class.html">GMAT课堂</a></li>
                     <li><a href="/gmatsheet.html">GMAT培训</a></li>
-                    <li><a href="http://sat.viplgw.cn/class.html" target="_blank">SAT课程</a></li>
+                    <li><a href="/satsheet.html">SAT课程</a></li>
                     <li><a href="/toefl/assistance.html">托福培训</a></li>
                     <li><a href="/case.html">高分案例</a></li>
                 </ol>
