@@ -222,12 +222,12 @@
                    href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">约课</a>
             		</li>
             		<li>
-            			<img src="/cn/images/gmat_gary.png" alt="老师照片"/>
+            			<img src="/cn/images/toefl_sharron.jpg" alt="老师照片"/>
             			<div class="summer-title">
-            				<p>阿杜Gary</p>
-            				<p>主讲：GMAT逻辑、数学</p>
+            				<p>Sharron</p>
+            				<p>主讲：GMAT逻辑、阅读</p>
             			</div>
-            			<p class="summer-cent">上海外国语大学研究生毕业;多年的海内外教学复合型经历、理论加实践的复合型学习以及多语种的学习背景令其对于语言学习及出国类考试有着深刻与独到的见解，培养了无数高分学员。教学风格激情、负责、幽默，深受广大学生喜欢。</p>
+            			<p class="summer-cent">英国巴斯大学管理学院硕士，国内重本商务英语专业，持专八证书。对出国留学考试认识深刻，在留学考试中各科均斩获高分。曾数十次参与涉及外籍人员刑事案件的公安提审、律师会见、法院文件传达、该国领事会见等重要口译工作。</p>
 					    <a class="btn-2" target="_blank"
                    href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">约课</a>
             		</li>
