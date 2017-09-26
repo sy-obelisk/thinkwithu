@@ -222,7 +222,7 @@
                    href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">约课</a>
             		</li>
             		<li>
-            			<img src="/cn/images/toefl_sharron.jpg" alt="老师照片"/>
+            			<img src="/cn/images/gmat-sharron.jpg" alt="老师照片"/>
             			<div class="summer-title">
             				<p>Sharron</p>
             				<p>主讲：GMAT逻辑、阅读</p>
