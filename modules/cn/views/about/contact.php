@@ -25,17 +25,14 @@
                                     <h4><?php echo $v['name']?>服务中心</h4>
                                 </div>
                                 <div class="con-rightC">
-                         <ul>
-<li><?php echo $v['phone']?"电话：".$v['phone']:''?></li>
-<li><?php echo $v['email']?"邮箱：".$v['email']:''?></li>
-<li><?php echo $v['place']?"地址：".$v['place']:''?></li>
-<li><?php echo $v['landmark']?"周围地标：".$v['landmark']:''?></li>
-<li><?php echo $v['busRoutes']?"公交路线：<pre>".$v['busRoutes'].'</pre>':''?>
-</li>
-                             <li><?php echo $v['metroRoutes']?"地铁路线：".$v['metroRoutes']:''?></li>
-
-
-                         </ul>
+                                 <ul>
+                                    <li><?php echo $v['phone']?"电话：".$v['phone']:''?></li>
+                                    <li><?php echo $v['email']?"邮箱：".$v['email']:''?></li>
+                                    <li><?php echo $v['place']?"地址：".$v['place']:''?></li>
+                                    <li><?php echo $v['landmark']?"周围地标：".$v['landmark']:''?></li>
+                                    <li><?php echo $v['busRoutes']?"公交路线：<pre>".$v['busRoutes'].'</pre>':''?></li>
+                                     <li><?php echo $v['metroRoutes']?"地铁路线：".$v['metroRoutes']:''?></li>
+                                 </ul>
                                 </div>
                                 <div style="clear: both"></div>
                             </li>

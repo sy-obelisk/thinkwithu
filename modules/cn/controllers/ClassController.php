@@ -60,7 +60,7 @@ class ClassController extends ThinkUController {
         unset($data['count']);
         unset($data['total']);
         unset($data['pageStr']);
-    return $this->renderPartial('list',['count' => $count,'total' => $total,'pageStr' => $pageStr,'data'=>$data,'page' =>$page,'category' => 'abroad']);
+    return $this->renderPartial('list',['count' => $count,'total' => $total,'pageStr' => $pageStr,'data'=>$data,'page' =>$page,'category' => 'syabroad']);
 }
 
     /**
@@ -79,7 +79,7 @@ class ClassController extends ThinkUController {
         unset($data['count']);
         unset($data['total']);
         unset($data['pageStr']);
-        return $this->renderPartial('list',['count' => $count,'total' => $total,'pageStr' => $pageStr,'data'=>$data,'page' =>$page,'category' => 'abroad']);
+        return $this->renderPartial('list',['count' => $count,'total' => $total,'pageStr' => $pageStr,'data'=>$data,'page' =>$page,'category' => 'syabroad']);
     }
 
     /**
