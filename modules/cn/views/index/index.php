@@ -167,38 +167,6 @@
     <div class="w10 tm">
         <h1 class="module-tit inb"><em class="line-2">为你</em>推荐</h1>
         <div class="list-wrap">
-            <ul class="abroad clearfix">
-                <li>
-                    <a href="/gmatsheet.html">
-                        <img src="/cn/images/intensive_img01.png"/>
-                        <p>GMAT课程</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://sat.viplgw.cn/" target="_blank">
-                        <img src="/cn/images/intensive_img04.png"/>
-                        <p>SAT课程</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="/toefl/assistance.html">
-                        <img src="/cn/images/intensive_img06.png"/>
-                        <p>托福课程</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="/ieltssheet.html">
-                        <img src="/cn/images/intensive_img07.png"/>
-                        <p>雅思课程</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://www.gmatonline.cn" target="_blank">
-                        <img src="/cn/images/intensive_img08.png"/>
-                        <p>网络课程</p>
-                    </a>
-                </li>
-            </ul>
             <ul class="train clearfix">
                 <li>
                     <a href="/USA.html">
@@ -228,6 +196,38 @@
                     <a href="/HK.html">
                         <img src="/cn/images/hk.png"/>
                         <p>香港留学</p>
+                    </a>
+                </li>
+            </ul>
+            <ul class="abroad clearfix">
+                <li>
+                    <a href="/gmatsheet.html">
+                        <img src="/cn/images/intensive_img01.png"/>
+                        <p>GMAT课程</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://sat.viplgw.cn/" target="_blank">
+                        <img src="/cn/images/intensive_img04.png"/>
+                        <p>SAT课程</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/toefl/assistance.html">
+                        <img src="/cn/images/intensive_img06.png"/>
+                        <p>托福课程</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/ieltssheet.html">
+                        <img src="/cn/images/intensive_img07.png"/>
+                        <p>雅思课程</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.gmatonline.cn" target="_blank">
+                        <img src="/cn/images/intensive_img08.png"/>
+                        <p>网络课程</p>
                     </a>
                 </li>
             </ul>
