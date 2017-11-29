@@ -1,156 +1,191 @@
+/*
+	公共样式
+*/
+/*头部*/
+.pub-title {
+	position: relative;
+	display: inline-block;
+	left: 50%;
+	padding-bottom: 10px;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	font-size: 24px;
+	border-bottom: 1px solid #681d72;
+	color: #681d72;
+}
+.pub-title:before,
+.pub-title:after {
+	position: absolute;
+	display: block;
+	content: '';
+	width: 5px;
+	height: 5px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background-color: #681d72;
+	bottom: -2.5px;
+}
+.pub-title:before {
+	left: 0;
+}
+.pub-title:after {
+	right: 0;
+}
+/*公共更多课程样式*/
+.pub-more {
+	width: 264px;
+	height: 45px;
+	line-height: 45px;
+	margin: 20px auto 0;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	text-align: center;
+	background-color: #fff;
+	border: 2px solid #681d72;
+}
+.pub-more:hover{
+	background-color: #681d72;
+	color: #fff;
+}
+.pub-more:hover a {
+	color: #fff;
+}
+
 
 .gmat-topImg{
-    width: 100%;
-    margin: 0 auto;
-   position: relative;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
 }
 .gmat-topImg a{
 	position: absolute;
-    width: 420px;
-    height: 46px;
-    line-height: 46px;
-    top: 55%;
-    left: 50%;
-    margin-left: -210px;
-    text-align: center;
-    display: block;
-    font-size: 28px;
-    border: 1px solid #000;
-    border-radius: 30px;
+	width: 420px;
+	height: 46px;
+	line-height: 46px;
+	bottom: 95px;
+	left: 50%;
+	margin-left: -210px;
+	text-align: center;
+	display: block;
+	font-size: 28px;
+	border: 2px solid #681d72;
+	border-radius: 30px;
+	background-color: #fff;
+	color: #681d72;
 }
-/*申友Gmat精品课程*/
+.gmat-topImg a:hover {
+	background-color: #681d72;
+	color: #fff;
+}
+/*
+*	申友Gmat精品课程
+*/
 .gmat-class{
     width: 1000px;
     padding: 40px 0 40px 0;
     margin: 0 auto;
 }
-.gmat-class h2{
-    font-size: 35px;
-    font-weight: normal;
-    text-align: center;
-    margin-bottom: 50px;
+.gmat-class .gmat-box {
+	display: table;
+	margin-bottom: 15px;
 }
-.gmat-class ul li{
-	margin-bottom: 69px;
+.gmat-class .gmat-box>div {
+	display: table-cell;
+	vertical-align: middle;
 }
-.gmat-class ul li:last-child{
-	margin-bottom: 30px;
+.gmat-class .img-box {
+	width: 270px;
+	overflow: hidden;
 }
-.gmat-class ul li:after{
-	content: "";
-	display: block;
-	clear: both;
+.gmat-class .img-box img {
+	width: 100%;
 }
-.gmat-class div{
-	float: left;
+.gmat-class .gmat-box .cnt-box {
+	width: 900px;
+	position: relative;
 }
-.gmat-class .class-cont>div{
-	width: 255px;
-	font-size: 12px;
-	margin-left: 30px;
-}
-.gmat-class .class-cont>div p{
-	line-height: 18px;
-}
-.gmat-class .class-cont div h4{
-	padding-bottom: 8px;
-}
-.gmat-class .class-cont>div h4 a{
-	font-size: 18px;
-	color: #EBB06D;
-}
-.gmat-class .class-cont .class-btn{text-align: center;}
-.gmat-class .class-cont .class-btn a{
-	display: block;
-	width: 148px;
-	height: 30px;
-	border-radius: 30px;
-	font-size: 17px;
-	line-height: 30px;
+.gmat-class .gmat-box .cnt-box>a {
+	position: absolute;
+	width: 88px;
+	height: 88px;
+	top: 50%;
+	line-height: 88px;
+	margin-top: -44px;
 	text-align: center;
-	background-color: #FF6666;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	border: 2px solid #fb9c36;
+	background-color: #fff;
+	color: #fb9c36;
+	font-size: 18px;
+}
+.gmat-class .left .cnt-box>a {
+	left: 0;
+	margin-left: -44px;
+}
+.gmat-class .right .cnt-box>a {
+	right: 0;
+	margin-right: -44px;
+}
+.gmat-class .gmat-box:nth-child(1) .cnt-box:hover>a{
+	color: #fff;
+	background-color: #fb9c36;
+}
+.gmat-class .gmat-box:nth-child(2) .cnt-box>a {
+	color: #f6db24;
+	border-color: #f6db24;
+}
+.gmat-class .gmat-box:nth-child(2) .cnt-box:hover>a {
+	background-color: #f6db24;
 	color: #fff;
 }
-.gmat-class li:hover .class-btn a{
-	background-color: #ccc;
-	color: #FF6666;
+.gmat-class .gmat-box:nth-child(3) .cnt-box>a {
+	color: #2bf6f5;
+	border-color: #2bf6f5;
 }
-.gmat-class .class-cont .class-btn h3{
-	width: 148px;
+.gmat-class .gmat-box:nth-child(3) .cnt-box:hover>a {
+	color: #fff;
+	background-color: #2bf6f5;
+}
+.gmat-class .gmat-box:nth-child(4) .cnt-box>a {
+	color: #f348d9;
+	border-color: #f348d9;
+}
+.gmat-class .gmat-box:nth-child(4) .cnt-box:hover>a {
+	color: #fff;
+	background-color: #f348d9;
+}
+.gmat-class .gmat-box .cnt-text {
+	padding: 20px 65px 20px 70px;
+	-webkit-box-shadow: 0 0 5px #999;
+	-moz-box-shadow: 0 0 5px #999;
+	box-shadow: 0 0 5px #999;
+	font-size: 16px;
+}
+.gmat-class .gmat-box .cnt-box h2 {
+	margin-bottom: 15px;
 	font-size: 24px;
-	margin-top: 62px;
 }
-.gmat-class .class-left{
-	display: block;
-	width: 730px;
-	height: 2px;
-	background-color: #737272;
-	position: relative;
-	left:121px;
-	top: 154px;
+.gmat-class .gmat-box .cnt-text>div {
+	line-height: 24px;
 }
-.gmat-class .class-left:before{
-	content: "";
-	position: absolute;
-	width: 48.3px;
-	height: 2px;
-	background-color: #737272;
-	transform: rotateZ(50deg);
-	left: -40px;
-	top: -17px;
+.gmat-class .gmat-box .cnt-text div span {
+	float: left;
 }
-.gmat-class .class-left:after{
-	content: "";
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	border-radius: 50%;
-	background-color: #FF6666;
-	right: -10px;
-	top: -5px;
+.gmat-class .gmat-box .cnt-text div p  {
+	overflow: hidden;
 }
-.gmat-class li:nth-child(2) div{
-	float: right;
-}
-.gmat-class li:nth-child(2) .class-cont div{
-	margin-right: 30px;
-	margin-left: 0;
-}
-.gmat-class li:nth-child(2) .class-btn{
-	width: 148px;
-}
-.gmat-class .class-right{
-	display: block;
-	width: 730px;
-	height: 2px;
-	background-color: #737272;
-	top: 154px;
-	position: relative;
-	right: -150px;
-}
-.gmat-class .class-right:after{
-	content: "";
-	position: absolute;
-	width: 48.3px;
-	height: 2px;
-	background-color: #737272;
-	transform: rotateZ(-50deg);
-	right: -40px;
-	top: -17px;
-}
-.gmat-class .class-right:before{
-	content: "";
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	border-radius: 50%;
-	background-color: #FF6666;
-	left: -10px;
-	top: -5px;
-}
-/*近期开班*/
-.gmat-open{
-	background-color: #E9F1FF;
+/*
+*	近期开班
+*/
+.gmat-open>h2 {
+	margin-top: 20px;
 }
 .openClass{
     width: 1000px;
@@ -163,14 +198,12 @@
     margin-bottom: 30px;
 }
 .openClass table{
-    width: 100%;
-    border: 1px #E9F1FF solid;
-}
-.openClass table tr{
-	background-color: #fff;
+	width: 100%;
+	border: 1px #E9F1FF solid;
+	background-color: #f5f0f6;
 }
 .openClass table tr:first-child{
-	background-color: #FFA234;
+	background-color: #681d72;
 	height: 53px;
 	line-height: 53px;
 	font-size: 20px;	
@@ -209,138 +242,128 @@
 	height: 32px;
 	line-height: 32px;
 	text-align: center;
-	border: 1px solid #FFA234;
+	border: 1px solid #681d72;
 	font-size: 14px;
-	color: #FFA234;
+	color: #681d72;
 	border-radius: 30px;
 }
 .openClass table tr:hover .open-apply a{
-	background-color: #FFA234;
+	background-color: #681d72;
 	color: #fff;
 }
-.moreClass{
-    width: 100%;
-    text-align: center;
-}
-.moreClass i{
-    font-size: 45px;
-    color: #818181;
-}
-.moreClass a{
-    color: #696766;
-    font-size: 25px;
-    display: block;
-}
-.moreClass a:hover{
-	color: #FFA234;
-}
-/*申友GMAT课程特色服务*/
+/*
+*	申友GMAT课程特色服务
+*/
 .gmat-special{
-    width: 100%;
-    height: 715px;
-    background: url("../images/gmat_specialBG.png") no-repeat;
-    background-size: 100% 100%;
-    padding-top: 55px;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+	width: 100%;
+	height: 780px;
+	background: url("../images/gmat_specialBG.png") no-repeat;
+	background-size: 100% 100%;
+	padding-top: 55px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 }
 .gmat-special h2{
-    color: white;
-    text-align: center;
-    font-size: 35px;
-    font-weight: normal;
+	color: white;
+	border-bottom-color: #fff;
 }
-.in-special{
+.gmat-special h2:after,
+.gmat-special h2:before {
+	background-color: #fff;
+}
+.gmat-special .in-special {
 	width: 1000px;
-	height: 556px;
-	background: url('../images/gmat-inBg.png') no-repeat;
-	background-size: 100% 100%;
-	margin: 38px auto 0;
+	margin: 0 auto;
 }
-.in-special .gmat-cent{
-	padding: 77px 67px;
-}
-.gmat-cent .gmat-centLeft{
-	float: left;
-}
-.gmat-cent .gmat-centRight{
-	float: right;
-	text-align: right;
-}
-.gmat-cent ul li{
-	margin-bottom: 50px;
-}
-.gmat-cent ul li span{
+.gmat-special .in-special:after {
 	display: block;
-	width: 55px;
-	height: 55px;
-	border-radius: 50%;
-	text-align: center;	
-	font: 18px/55px bold;
+	content: '';
+	clear: both;
+}
+.gmat-special .in-special .list {
+	position: relative;
+	float: left;
+	background-color: #fff;
+	width: 300px;
+	height: 80px;
+	margin: 40px 16px 0 16px;
+	padding-top: 20px;
+	text-align: center;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.gmat-special .in-special .list p{
+	line-height: 24px;
+}
+.gmat-special .in-special .list:nth-child(4) p {
+	line-height: 20px;
+}
+.gmat-special .in-special .list div {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 250px;
+	height: 40px;
+	line-height: 40px;
+	margin-left: -125px;
+	margin-bottom: -20px;
+	background-color: #2686be;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 	color: #fff;
 }
-.gmat-cent ul li div{
-	font-size: 13px;
-	color: #1A1A1A;
+.gmat-special .in-special .list:nth-child(2) div {
+	background-color: #dba030;
 }
-.gmat-cent ul li div h4{
-	font-size: 18px;
+.gmat-special .in-special .list:nth-child(3) div {
+	background-color: #2b4b73;
 }
-.gmat-cent ul li div p{
-	margin-top: 4px;
+.gmat-special .in-special .list:nth-child(4) div {
+	background-color: #cf687b;
 }
-.gmat-cent .gmat-centLeft li span{
-	float: left;
+.gmat-special .in-special .list:nth-child(5) div {
+	background-color: #90933c;
 }
-.gmat-cent .gmat-centRight li span{
-	float: right;
+.gmat-special .in-special .list:nth-child(6) div {
+	background-color: #9b54b9;
 }
-.gmat-cent ul li:first-child span{
-	background-color: #015993;
+.gmat-special .in-special .list:nth-child(7) div {
+	background-color: #64a4a3;
 }
-.gmat-cent ul li:nth-child(2) span{
-	background-color: #FF5961;
+.gmat-special .in-special .list:nth-child(8) div {
+	background-color: #2686be;
 }
-.gmat-cent ul li:nth-child(3) span{
-	background-color: #FBC900;
+.gmat-special .in-special .list:nth-child(9) div {
+	background-color: #dba030;
 }
-.gmat-cent ul li:nth-child(4) span{
-	background-color: #76D2C9;
+.gmat-special .in-special .list:nth-child(10) div {
+	background-color: #9b54b9;
 }
-.gmat-cent ul li:first-child h4{
-	color: #015993;
+.gmat-special .in-special .list:nth-child(11) div {
+	background-color: #2b4b73;
 }
-.gmat-cent ul li:nth-child(2) h4{
-	color: #FF5961;
+.gmat-special .in-special .list:nth-child(12) div {
+	background-color: #cf687b;
 }
-.gmat-cent ul li:nth-child(3) h4{
-	color: #FBC900;
+.gmat-special .pub-more {
+	margin-top: 40px;
 }
-.gmat-cent ul li:nth-child(4) h4{
-	color: #76D2C9;
-}
-.gmat-cent .gmat-centLeft li div{
-	border-left: 1px solid #000;
-	margin-left: 69px;
-	padding-left: 24px;	
-}
-.gmat-cent .gmat-centRight li div{
-	border-right: 1px solid #000;
-	margin-right: 69px;
-	padding-right: 24px;
-}
-
-/*国际范名师团队*/
+/*
+*	国际范名师团队
+*/
 .toefl-teacher{
-    width: 100%;
-   	height:710px;
-	background-color:#E9F1FF;
+	width: 100%;
+	height:710px;
+}
+.toefl-teacher>h2 {
+	margin-top: 40px;
 }
 .inTeacher{
     width: 1000px;
     margin: 0 auto;
-    padding-top: 45px;
     text-align: center;
 }
 .inTeacher h2{
@@ -361,20 +384,19 @@
 }
 /*箭头*/
 .summerHd{
-   	width: 90px;
-    position: absolute;
-    bottom: -30px;
-    right: 28px;
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	margin-top: -35px;
 }
 .summerHd a{
 	position: absolute;
-    width: 34px;
-    height: 34px;
-    border: 1px solid #FFA234;
-    line-height: 34px;
-    text-align: center;
-	font: 400 30px/34px simsun; 	
-	background-color: #E9F1FF;
+	width: 34px;
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	font: 400 50px/70px simsun;
+	background-color: #fff;
 }
 .summerHd a.prev{
    left: 0;
@@ -387,31 +409,31 @@
 }
 /*老师介绍*/
 .summerBd{
-	width: 100%;
+	width: 90%;
+	margin: 0 auto;
 	height: 492px;
 	overflow: hidden;
 }
 .summerBd ul li{
-  	width: 290px;
-    text-align: center;
-    float: left;
-    margin: 0 21px;
-    background-color: #F2F5FA;
-    padding-bottom:20px ;
+	width: 30%;
+	text-align: center;
+	float: left;
+	margin: 0 15px;
+	background-color: #F2F5FA;
+	padding-bottom:20px ;
 }
 .summerBd ul li:hover a{
-	background-color: #FFA234;
+	background-color: #681d72;
 	color: #E9F1FF;	
 }
 .summerBd .summer-title{
-	/*width: 200px;*/
 	border-bottom: 1px solid #ccc;
 	padding: 14px 0 5px 0;
 	margin: 0 auto;
 }
 .summerBd .summer-title p{
 	font-size: 13px;
-	color: #E6953E;
+	color: #681d72;
 	text-align: center;
 }
 .summerBd .summer-title p:first-child{
@@ -438,7 +460,7 @@
 }
 .summerBd li a{
 	display: block;
-	border: 1px solid #FFA234;
+	border: 1px solid #681d72;
 	font-size: 16px;
 	margin:0 auto;
 	width: 105px;
@@ -458,11 +480,6 @@
     padding: 49px 0 33px 0;
     margin: 0 auto;
 }
-.aboutToefl h2{
-    font-size: 35px;
-    font-weight: normal;
-    text-align: center;
-}
 /*改版后css*/
 .aboutTSlide{
     width: 986px;
@@ -472,21 +489,19 @@
     position: relative;
 }
 .aboutTHd{
-    width: 100%;
-    position: absolute;
-    right: 0;
-    bottom: 0;
+	width: 100%;
+	margin-top: 15px;
+	text-align: center;
 }
 .aboutTHd a{
     width: 27px;
     height: 24px;
     line-height: 24px;
     color: white;
-    display: block;
+    display: inline-block;
     text-align: center;
-    font-size: 25px;
+    font-size: 16px;
     background: #7440a2;
-    float: right;
 }
 .aboutTHd a.prevStop{
     background: #b6b6b7;
@@ -497,6 +512,11 @@
 
 .aboutTBd{
     width: 100%;
+}
+.aboutTBd ul:after {
+	display: block;
+	content: '';
+	clear: both;
 }
 .aboutTBd ul li{
     width: 484px;
@@ -662,11 +682,6 @@
     padding: 27px 0 46px 0;
     background: #e6e6e6;
 }
-.shenYou-class h2{
-    font-weight: normal;
-    font-size: 35px;
-    text-align: center;
-}
 .shenYou-class>ul{
     width: 984px;
     margin: 0 auto;
@@ -784,47 +799,37 @@
     background: #7440a2;
     color: white;
 }
+/*
+*	申友研究中心
+*/
 .researchCenter{
     width: 100%;
-    height: 467px;
     margin: 0 auto;
-    background: url("../images/toeflresearchBG_.jpg") no-repeat;
-    background-size: 100% 100%;
 }
 .inResearch{
     width: 989px;
-    margin: 0 auto;
-    padding-top: 19px;
+    margin: 0 auto 30px;
+    padding-top: 20px;
 }
 .inResearch h2{
-    color: white;
     font-weight: normal;
     font-size: 35px;
     text-align: center;
 }
-.research-top{
-    width: 100%;
-    margin-top: 40px;
-}
-.research-top ul:after{
-    display:block;clear:both;content:"";visibility:hidden;height:0;
-}
-.research-top ul li{
-    margin-right: 33px;
-    float: left;
-}
-.research-top ul li:last-child{
-    margin-right: 0;
-}
 .research-bottom{
-    width: 895px;
+    width: 1000px;
     margin: 0 auto;
-    margin-top: 38px;
+    margin-top: 20px;
+}
+.research-bottom ul:after {
+	display: block;
+	content: '';
+	clear: both;
 }
 .research-bottom ul li{
-    width: 114px;
+    width: 190px;
     float: left;
-    margin-right: 38px;
+    margin-right: 12px;
     text-align: center;
 }
 .research-bottom ul li:last-child{
@@ -834,150 +839,123 @@
     width: 100%;
     height: 100%;
     display: block;
-    color: white;
+    color: #000;
 }
 .reseT-img{
-    width: 114px;
-    height: 114px;
-    border-radius: 50%;
-    border: 2px white solid;
-    overflow: hidden;
-    margin: 0 auto;
-    margin-bottom: 10px;
+	width: 100%;
+	height: 230px;
+	overflow: hidden;
+	perspective: 1000px;
+	margin-bottom: 10px;
 }
 .reseT-img img{
-    width: 100%;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	transform: rotateY(-20deg);
+	-webkit-transform: rotateY(-20deg);
+	-moz-transform: rotateY(-20deg);
+	-ms-transform: rotateY(-20deg);
+	-o-transform: rotateY(-20deg);
 }
-.researchT-left{
-    width: 123px;
-    height: 141px;
-    float: left;
-    border: 1px white solid;
-    text-align: center;
-    padding: 5px;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-}
-.researchT-left img{
-    width: 100%;
-}
-.researchT-right{
-    width: 340px;
-    float: left;
-    margin-left: 7px;
-}
-.researchT-right h5{
-    color: white;
-    font-size: 16px;
-}
-.researchT-right h5 a{
-    color: white;
-}
-.whiteRes{
-    width: 100%;
-    height: 111px;
-    background: white;
-    padding: 16px 16px 0 10px;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    margin-top: 10px;
-    font-size: 12px;
-
-}
-.whiteRes p{
-    text-overflow: ellipsis;
-    overflow: hidden;
-    display: -webkit-box;
-    display: -moz-box;
-    -webkit-line-clamp: 5;
-    -moz-line-clamp: 5;
-    -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;
-    height: 80px;
-}
+/*
+*	动态
+*/
 .dynamic{
-    width: 990px;
-    padding: 28px 0;
-    margin: 0 auto;
-}
-.dynamic>ul>li{
-    width: 318px;
-	height: 340px;
-    background: #f5f5f5;
-    float: left;
-    margin-right: 14px;
-    padding-top: 13px;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+	width: 990px;
+	padding: 28px 0;
+	margin: 0 auto;
 }
 .dynamic>ul:after{
-    display:block;clear:both;content:"";visibility:hidden;height:0;
+	display:block;
+	clear:both;
+	content:"";
 }
-.dynamic>ul>li:last-child{
-    margin-right: 0;
-}
-.dynamic-left{
-    width: 36px;
-    float: left;
-    margin-left: 24px;
-}
-.dynamic-right{
-    width: 248px;
-    float: left;
-    margin-top: 5px;
-}
-.dynamic-right ul li{
-	line-height: 30px;
-    font-size: 12px;
-    display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
-}
-.dynamic-right h4{
-    color: #7440a2;
-    font-weight: normal;
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-.moreDiv{
+.dynamic>ul>li{
+	width: 318px;
+	height: 340px;
+	float: left;
+	margin-right: 14px;
+	padding-top: 13px;
+	background: url("/cn/images/gmat-info.png") 0 0 no-repeat;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-    width: 71px;
-    height: 18px;
-    background: white;
-    text-align: center;
-    font-size: 12px;
-    float: right;
-    padding-left: 5px;
-	margin-top: 10px;
 }
-.moreDiv:hover  a div{
-    background: #7541a3;
+.dynamic>ul>li:last-child{
+	margin-right: 0;
 }
-.moreDiv:hover  a{
-    color: #7541a3;
+.dynamic-right{
+	width: 100%;
+	margin-top: 5px;
 }
-.moreDiv a{
-    width: 100%;
-    height: 100%;
-    display: block;
-    color: #878787;
+.dynamic-title {
+	width: 100%;
+	padding: 0 5%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-bottom: 1px solid #e69a37;
 }
-.moreDiv a span{
-    float: left;
+.dynamic-title:after {
+	display: block;
+	content: '';
+	clear: both;
 }
-.moreDiv a div{
-    width: 17px;
-    height: 17px;
-    line-height: 17px;
-    background: #676767;
-    color: white;
-    text-align: center;
-    font-size: 18px;
-    float: right;
+.dynamic-title h4{
+	float: left;
+	color: #e69a37;
+	font-weight: normal;
+	font-size: 20px;
+	margin-bottom: 10px;
 }
+.dynamic-title a {
+	float: right;
+	color: #e69a37;
+}
+.dynamic>ul>li:nth-child(2) .dynamic-title h4,
+.dynamic>ul>li:nth-child(2) .dynamic-title a {
+	color: #19af60;
+}
+.dynamic>ul>li:nth-child(2) .dynamic-title{
+	border-bottom-color: #19af60;
+}
+.dynamic>ul>li:nth-child(3) .dynamic-title h4,
+.dynamic>ul>li:nth-child(3) .dynamic-title a {
+	color: #f6617d;
+}
+.dynamic>ul>li:nth-child(3) .dynamic-title{
+	border-bottom-color: #f6617d;
+}
+.dynamic-right ul {
+	width: 90%;
+	margin: 10px auto 0;
+}
+.dynamic-right ul li{
+	line-height: 30px;
+	font-size: 12px;
+	display:block;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	color: #fff;
+}
+.dynamic-right ul li a {
+	color: #fff;
+	font-size: 14px;
+}
+.dynamic-right ul li a:hover {
+	color: #e69a37;
+}
+.dynamic>ul>li:nth-child(2) .dynamic-right ul li a:hover {
+	color: #19af60;
+}
+.dynamic>ul>li:nth-child(3) .dynamic-right ul li a:hover {
+	color: #f6617d;
+}
+/*
+*	预约享优惠
+*/
 .favorable{
     width: 992px;
     height: 261px;
