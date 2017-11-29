@@ -211,6 +211,12 @@
 .openClass table tr:first-child th{
 	color: #fff;
 }
+.openClass table tr i {
+	display: none;
+}
+.openClass table tr:nth-child(2) i{
+	display: inline;
+}
 .openClass table tr th{
     text-align: left;
 }
@@ -538,6 +544,7 @@
     height: 100%;
 }
 .aboutTBd-right{
+	position: relative;
     width: 338px;
     height: 100%;
     background: #fffced;
@@ -548,33 +555,22 @@
     -webkit-box-sizing: border-box;
 }
 .aboutTBd-right h4{
+	margin-bottom: 20px;
     font-weight: normal;
     font-size: 20px;
-    display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
-}
-.aboutTBd-right h5{
-    color: #7440a2;
-    font-size: 20px;
-    font-weight: normal;
     display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
 }
 .aboutTBd-right p{
-    line-height: 15px;
+	line-height: 15px;
+	white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
 }
-.aboutTBd-right>a{
-    width: 95px;
-    height: 29px;
-    line-height: 29px;
-    display: block;
-    text-align: center;
-    background: #ffffff;
-    color: #7440a2;
-    float: right;
-    margin-top: 5px;
+.aboutTBd-right>div {
+	width: 90%;
+	position: absolute;
+	bottom: 10%;
 }
-.aboutTBd-right>a:hover{
-    background: #7440a2;
-    color: white;
+.aboutTBd-right>div a {
+	float: right;
 }
 /*改版后css end*/
 .about-center{

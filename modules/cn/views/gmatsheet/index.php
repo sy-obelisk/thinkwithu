@@ -82,7 +82,7 @@
          foreach($data as $k=>$v) {
          ?>
          <tr>
-             <td><a href="<?php echo $v['url']?>"><?php echo $v['hot']?></a></td>
+             <td><a href="<?php echo $v['url']?>"><?php echo $v['hot']?></a><i class="fa fa-fire" style="color: red;"></i></td>
              <td><?php echo $v['time']?></td>
              <td><?php echo $v['job']?></td>
              <td><?php echo $v['place']?></td>
@@ -194,18 +194,7 @@
                   <p>主讲：GMAT逻辑、语法、数学、IR</p>
                 </div>
                 <p class="summer-cent">Kevin，学生赠名“雷哥”。具有多年GMAT教学经验，曾受邀到全国数十所著名高校巡回讲座。资深留学英语名师，国内早批新托福教师长期专注海外留学规划和出国考试研究，培养留学学生过万，遍布世界名校。留学考试学术成果：GMAT逻辑靶向图、GMAT逻辑本质论、GMAT语法优先原则、GMAT必要性阅读法、是留学英语考试的集大成者。研发和出版多本留学英语培训教材，并不断优化教学方法，专著有《Influence--雷哥GMAT逻辑》、《申友GMAT高分讲义》、《GMAT真题名师精讲》等。 </p>
-            <a class="btn-2" target="_blank"
-                 href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">约课</a>
-              </li>
-              <li>
-                <img src="/cn/images/gmat-sharron.jpg" alt="老师照片"/>
-                <div class="summer-title">
-                  <p>Sharron</p>
-                  <p>主讲：GMAT逻辑、阅读</p>
-                </div>
-                <p class="summer-cent">英国巴斯大学管理学院硕士，国内重本商务英语专业，持专八证书。对出国留学考试认识深刻，在留学考试中各科均斩获高分。曾数十次参与涉及外籍人员刑事案件的公安提审、律师会见、法院文件传达、该国领事会见等重要口译工作。</p>
-            <a class="btn-2" target="_blank"
-                 href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">约课</a>
+                <a class="btn-2" target="_blank" href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">约课</a>
               </li>
               <li>
                 <img src="/cn/images/toefl_amanda.png" alt="老师照片"/>
@@ -213,10 +202,8 @@
                   <p>阿曼Amanda</p>
                   <p>主讲：GMAT阅读、语法</p>
                 </div>
-                <p class="summer-cent">申友集团语言教学研发总监，《申友GMAT阅读笔记》主编，《申友GMAT语法笔记》副主编。英国兰卡斯特大学硕士，国内重本英语专业毕业；曾以培训师身份受邀参加GMAC官方举办的亚太峰会。亲历雅思，GMAT考试。国外的几年深造，使她对西方人的思维方式和表达习惯有着深刻的了解;多年教授和研发留学英语课程，尤其是GMAT、TOEFL、SAT阅读和雅思口语，对其有个人的见解;上课风格诙谐活泼，深受学生的喜欢。
-                    </p>
-            <a class="btn-2" target="_blank"
-                 href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">约课</a>
+                <p class="summer-cent">申友集团语言教学研发总监，《申友GMAT阅读笔记》主编，《申友GMAT语法笔记》副主编。英国兰卡斯特大学硕士，国内重本英语专业毕业；曾以培训师身份受邀参加GMAC官方举办的亚太峰会。亲历雅思，GMAT考试。国外的几年深造，使她对西方人的思维方式和表达习惯有着深刻的了解;多年教授和研发留学英语课程，尤其是GMAT、TOEFL、SAT阅读和雅思口语，对其有个人的见解;上课风格诙谐活泼，深受学生的喜欢。</p>
+                <a class="btn-2" target="_blank"  href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">约课</a>
               </li>
               <li>
                 <img src="/cn/images/gmat_zora.jpg" alt="老师照片"/>
@@ -226,11 +213,19 @@
                 </div>
                 <p class="summer-cent">著作：参编《牡丹江主要旅游景点中英文对照翻译》（东北林业大学出版社）
                   <br />
-学术成果：申友教育总部教师，GMAT句子改错“解析王”，不仅对GMAT教学有独到见解，更在专八、BEC高级、雅思等多项重量级考试中获取高分；第十四届中国澳大利亚研究国际学术研讨会外事接待组组长；曾作为东北地区渤海靺鞨秀详细资料、澳大利亚吉拉德政府外交政策以及澳大利亚女作家伊丽莎白•乔利小说《果园窃贼》等多个翻译项目的翻译骨干，参与第十四届中澳研讨会前期项目；普通话水平一级乙等，“东北话水平八级”；教学风格另类幽默，深受学生喜爱。</p>
-            <a class="btn-2" target="_blank"
-                 href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">约课</a>
+                  学术成果：申友教育总部教师，GMAT句子改错“解析王”，不仅对GMAT教学有独到见解，更在专八、BEC高级、雅思等多项重量级考试中获取高分；第十四届中国澳大利亚研究国际学术研讨会外事接待组组长；曾作为东北地区渤海靺鞨秀详细资料、澳大利亚吉拉德政府外交政策以及澳大利亚女作家伊丽莎白•乔利小说《果园窃贼》等多个翻译项目的翻译骨干，参与第十四届中澳研讨会前期项目；普通话水平一级乙等，“东北话水平八级”；教学风格另类幽默，深受学生喜爱。</p>
+                <a class="btn-2" target="_blank"
+                   href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">约课</a>
               </li>
-
+              <li>
+                <img src="/cn/images/gmat-sharron.jpg" alt="老师照片"/>
+                <div class="summer-title">
+                  <p>Sharron</p>
+                  <p>主讲：GMAT逻辑、阅读</p>
+                </div>
+                <p class="summer-cent">英国巴斯大学管理学院硕士，国内重本商务英语专业，持专八证书。对出国留学考试认识深刻，在留学考试中各科均斩获高分。曾数十次参与涉及外籍人员刑事案件的公安提审、律师会见、法院文件传达、该国领事会见等重要口译工作。</p>
+                <a class="btn-2" target="_blank" href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">约课</a>
+              </li>
               <li>
                 <img src="/cn/images/gmat_portia.jpg" alt="教师照片"/>
                 <div class="summer-title">
@@ -238,8 +233,7 @@
                   <p>主讲：GMAT数学、SC、IR</p>
                 </div>
                 <p class="summer-cent">善于挖掘学生学习的盲点，并能及时满足学生学习所需，对GMAT、SAT数学研究深入，针对基础、中等、高分三段不同程度的学生有独特的教学方案，拥有独特的数学学习构架，难点部分讲解深入易懂；GMAT句子改错讲解细致，对题目分析透彻，善于总结做题技巧，深受学生喜爱。</p>
-            <a class="btn-2" target="_blank"
-                 href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">约课</a>
+                <a class="btn-2" target="_blank" href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">约课</a>
               </li>
               <li>
                 <img src="/cn/images/gmat_julie.png" alt="老师照片"/>
@@ -250,10 +244,8 @@
                 <p class="summer-cent">美国工学硕士、博士。美国化工协会会员，全奖赴美留学，后留美工作。在美期间，多次参加国际会议，亲历美国文化，游遍美国。本科毕业于西安交通大学，取得双学位(工程/英语)，在校期间以作者身份在英国知名环境类杂志发表论文一篇。在所参加过的各类出国考试中均获得高分，并不断尝试刷新。
 多年GMAT考试培训经验，深谙GMAT阅读、数学考试技法，为广大考生带来福音。以缜密的工科思维和批判式的文科思维穿行于GMAT培训讲堂。目前为申友的GMAT主讲老师之一，并负责教研与教师团队的培训建设。Julie有多年托福授课经验，是国内较早的新托福教师之一，准确把握ETS的出题思路，其研发的口语听力技巧深受学生亲睐。对西方人的思维方式和表达习惯有着深刻理解，能够有效纠正学生学习英语的误区。在留学申请与签证办理，以及海外学习，工作和生活方面有着丰富经验，尤其擅长美国工科硕士申请。
                     </p>
-            <a class="btn-2" target="_blank"
-                 href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">约课</a>
+                <a class="btn-2" target="_blank" href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">约课</a>
               </li>
-
             </ul>
           </div>
       </div>
@@ -296,7 +288,7 @@
     </ul>
   </div>
   <div class="pub-more">
-    <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank">
+    <a href="/public-class.html" target="_blank">
       <span>更多课程查询</span>
       <i class="fa fa-caret-down"></i>
     </a>
@@ -320,8 +312,11 @@
                     </div>
                     <div class="aboutTBd-right">
                         <h4><?php echo $v['name']?></h4>
-                        <p><?php echo $v['title']?></p>
-                        <a href="/word-details/<?php echo $v['id']?>/102.html">查看详情 &gt;</a>
+                        <p title="<?php echo $v['title']?>"><?php echo $v['title']?></p>
+                        <div>
+                          <span>Total:710分（Q51,V34）</span>
+                          <a href="/word-details/<?php echo $v['id']?>/102.html">查看详情 &gt;</a>
+                        </div>
                     </div>
                     <div style="clear: both"></div>
                 </li>
@@ -343,7 +338,10 @@
                     <div class="aboutTBd-right">
                         <h4><?php echo $v['name']?></h4>
                         <p><?php echo $v['title']?></p>
+                      <div>
+                        <span>Total:710分（Q51,V34）</span>
                         <a href="/word-details/<?php echo $v['id']?>/102.html">查看详情 &gt;</a>
+                      </div>
                     </div>
                     <div style="clear: both"></div>
                 </li>
