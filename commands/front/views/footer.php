@@ -68,19 +68,19 @@
             <li>
                 <div class="left-ewm">
 
-                    <img src="/cn/images/index_erweima01.jpg" alt="申友GMAT"/>
+                    <img src="/cn/images/index_erweima02.jpg" alt="申友留学"/>
                 </div>
                 <div class="right-font">
-                    <span>申友GMAT</span>
+                    <span>申友留学</span>
                 </div>
             </li>
             <li>
                 <div class="left-ewm">
 
-                    <img src="/cn/images/index_erweima02.jpg" alt="申友留学"/>
+                    <img src="/cn/images/index_erweima01.jpg" alt="申友GMAT"/>
                 </div>
                 <div class="right-font">
-                    <span>申友留学</span>
+                    <span>申友GMAT</span>
                 </div>
             </li>
             <li>
