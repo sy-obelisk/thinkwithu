@@ -314,7 +314,7 @@
                         <h4><?php echo $v['name']?></h4>
                         <p title="<?php echo $v['title']?>"><?php echo $v['title']?></p>
                         <div>
-                          <span>Total:710分（Q51,V34）</span>
+                          <span>Total:<?php echo $v['score']?>分</span>
                           <a href="/word-details/<?php echo $v['id']?>/102.html">查看详情 &gt;</a>
                         </div>
                     </div>
