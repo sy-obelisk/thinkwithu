@@ -143,11 +143,11 @@
                 <a href="javascript:void(0);">
                     <div class="diffBG02"></div>
                     <p>微信</p>
-                    <div class="tanc_mask01 animated"><img src="/cn/images/thinku_ewm.jpg" alt="二维码图片"></div>
+                    <div class="tanc_mask01 animated"><img src="/cn/images/erweima.jpg" alt="二维码图片"></div>
                 </a>
             </li>
             <li>
-                <a href="tencent://message/?uin=2265835386&amp;Site=www.cnclcy&amp;Menu=yes" target="_blank">
+                <a href="tencent://message/?uin=2250281936&amp;Site=www.cnclcy&amp;Menu=yes" target="_blank">
                     <div class="diffBG03"></div>
                     <p>QQ</p>
                 </a>
@@ -167,7 +167,7 @@
             </li>
             <li>
                 <a href="javascript:void(0);" onclick="referTop();">
-                    <div class="diffBG06 animated">
+                    <div class="diffBG06">
 <!--                        <img src="/cn/images/refer_icon06.png" alt="回到顶部图标"/>-->
                     </div>
                 </a>
@@ -179,14 +179,26 @@
 
 <script>
 
+  $(function () {
     $(".close-wrap").click(function(){
-        $("#right-wrap").hide();
-        $(".rightLayer_two").fadeIn();
+      $("#right-wrap").hide();
+      $(".rightLayer_two").fadeIn();
     });
+
     $(".rightLayer_two").click(function(){
-        $(this).hide();
-        $("#right-wrap").fadeIn();
+      $(this).hide();
+      $("#right-wrap").fadeIn();
     });
+
+    $('.refer_con ul li').mouseover(function() {
+      console.log('aa');
+      $(this).children().children('.animated').show();
+    });
+    $('.refer_con ul li').mouseout(function () {
+      $('.animated').hide();
+    })
+  })
+
     
     (function(){
     	if (navigator.userAgent.indexOf("Safari")>-1&&navigator.userAgent.indexOf('Chrome')<1) {
