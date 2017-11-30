@@ -52,7 +52,7 @@
                     <?php
                     }else {
                         ?>
-                        <a onclick="addCollect(<?php echo $data[0]['id']?>)" href="javascript:;">报名</a>
+                        <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank" href="javascript:;">报名</a>
                     <?php
                     }
                 ?>

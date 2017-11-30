@@ -277,7 +277,7 @@
           if (!empty($v['url'])) { ?>
             <a class="classBtn diffColor01" href="/public-class/back/<?php echo $v['id'] ?>.html" target="_blank">课程回放</a>
           <?php } else { ?>
-            <a href="javascript:;" onclick="addCollect(<?php echo $v['id'] ?>)"
+            <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank"
                class="classBtn diffColor01">报名</a>
           <?php } ?>
           <a href="/public-class/<?php echo $v['id'] ?>.html" class="classBtn diffColor02" target="_blank">详情</a>
@@ -301,12 +301,12 @@
         <div class="aboutTBd">
             <ul>
                 <?php
-                $data = \app\modules\cn\models\Content::getContent(['fields' => 'score','category' => "102,115",'pageSize'=>4,'order'=>'sort desc']);
-                foreach($data as $v) {
+                $data = \app\modules\cn\models\Content::getContent(['fields' => 'score','category' => "102,115",'pageSize'=>4,'order'=>'c.sort desc,c.id DESC']);
+                foreach($data as $k=>$v) {if($k<4){
                     ?>
                 <li>
                     <div class="aboutTBd-left">
-                        <a href="#">
+                        <a href="/word-details/<?php echo $v['id']?>/102.html">
                             <img src="<?php echo $v['image']?>" alt="学员头像"/>
                         </a>
                     </div>
@@ -314,24 +314,24 @@
                         <h4><?php echo $v['name']?></h4>
                         <p title="<?php echo $v['title']?>"><?php echo $v['title']?></p>
                         <div>
-                          <span>Total:<?php echo $v['score']?>分</span>
+                          <span>Total:<?php echo $v['score']?></span>
                           <a href="/word-details/<?php echo $v['id']?>/102.html">查看详情 &gt;</a>
                         </div>
                     </div>
                     <div style="clear: both"></div>
                 </li>
                 <?php
-                }
+                }}
                 ?>
             </ul>
             <ul>
                 <?php
-                $data = \app\modules\cn\models\Content::getContent(['fields' => 'score','category' => "102",'pageSize'=>4,'order'=>'sort']);
-                foreach($data as $v) {
+                $data = \app\modules\cn\models\Content::getContent(['fields' => 'score','category' => "102,115",'pageSize'=>8,'order'=>'c.sort desc,c.id DESC']);
+                foreach($data as $k=>$v) {if(3<$k&&$k<8){
                 ?>
                 <li>
                     <div class="aboutTBd-left">
-                        <a href="#">
+                        <a href="/word-details/<?php echo $v['id']?>/102.html">
                             <img src="<?php echo $v['image']?>" alt="学员头像"/>
                         </a>
                     </div>
@@ -339,14 +339,14 @@
                         <h4><?php echo $v['name']?></h4>
                         <p><?php echo $v['title']?></p>
                       <div>
-                        <span>Total:710分（Q51,V34）</span>
+                        <span>Total:<?php echo $v['score']?></span>
                         <a href="/word-details/<?php echo $v['id']?>/102.html">查看详情 &gt;</a>
                       </div>
                     </div>
                     <div style="clear: both"></div>
                 </li>
                 <?php
-                }
+                }}
                 ?>
             </ul>
         </div>
