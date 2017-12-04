@@ -114,7 +114,7 @@ class SchoolsController extends ThinkUController {
 
     public function actionTeacher(){
         $pageNumber = Yii::$app->request->post('pageNumber');//分类ID
-        $result = Content::getContent(['pageStr' =>'1','fields' => "job,abstract",'category' => "139",'pageSize' => 5,'page' => $pageNumber]);
+        $result = Content::getContent(['pageStr' =>'1','fields' => "job,abstract",'category' => "140",'pageSize' => 5,'page' => $pageNumber]);
         unset($result['count']);
         unset($result['total']);
         unset($result['pageStr']);
