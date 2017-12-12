@@ -84,10 +84,10 @@ $(function(){
         })
     })
     //搜索点击热搜
-    $('.search-hot').on('click','dd',function(){
+    $('.search-hot dl').on('click','dd',function(){
         $('.search').val($(this).html());
         keySearch();
-    })
+    });
 
 });
 //    悬浮窗随滚动条滚动
