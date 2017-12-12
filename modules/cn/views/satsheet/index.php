@@ -216,7 +216,7 @@
           <h3><?php echo $v['name']?></h3>
           <p><?php echo $v['description']?></p>
           <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="
-           target="_blank">约课</a>
+             target="_blank">约课</a>
         </div>
           <?php }?>
 <!--        <div class="class-fl teacher-cnt">-->
