@@ -242,10 +242,10 @@
            href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">约课</a>
       </li>
       <li>
-        <div><img src="/cn/ielts/images/Gary.png" alt=""></div>
-        <p class="c4-name">Gary</p>
+        <div><img src="/cn/ielts/images/sharron.png" alt=""></div>
+        <p class="c4-name">Sharron</p>
         <p class="c4-de">
-          毕业于上海外国语大学，教授雅思阅读、写作；多年的海内外教学经历、理论加实践的复合型学习使自己对于雅思写作的把控有着深刻与独到的见解，培养了无数高分甚至满分学员。才华与颜值兼并的长腿欧巴，教学风格激情、负责、幽默，深受广大学生喜欢。
+          巴斯大学商学院硕士，雅思和托福高分获得者，国内重本商务英语专业，持专八证书。对出国留学考试认识深刻，曾数十次参与涉外刑事案件提审、律师会见、法院文件传达、该国领事会见等重要口译工作。亲历考试与留学生活使其在出国考试口语和听力有独到见解，善于引导学生多方面扩展内容、理顺结构，对想表达的内容进行"解码"，用已有词汇准确道地表达。
         </p>
         <a class="btn-2" target="_blank"
            href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">约课</a>
