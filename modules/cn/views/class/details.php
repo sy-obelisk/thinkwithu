@@ -52,7 +52,7 @@
                     <?php
                     }else {
                         ?>
-                        <a onclick="addCollect(<?php echo $data[0]['id']?>)" href="javascript:;">报名</a>
+                        <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank">报名</a>
                     <?php
                     }
                 ?>
@@ -98,7 +98,7 @@
                             <?php
                             }else {
                                 ?>
-                                <a onclick="addCollect(<?php echo $v['id']?>)" href="javascript:;" class="classBtn diffColor01">报名</a>
+                                <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank" class="classBtn diffColor01">报名</a>
                             <?php
                             }
                             ?>
