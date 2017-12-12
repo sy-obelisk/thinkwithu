@@ -24,7 +24,7 @@ class ToeflsheetController extends ThinkUController {
      */
     public function actionIndex(){
         $extendData = CategoryExtend::find()->where("catId=247 AND belong='content'")->orderBy('id ASC')->all();
-        $teacher = Content::getContent(['fields' => "smallPhoto,speaker,abstract,description",'category' => "141",'pageSize' => 5]);
+        $teacher = Content::getContent(['fields' => "speaker,abstract,description",'category' => "141",'pageSize' => 5]);
         return $this->render('index',['extendData' => $extendData,'teacher'=>$teacher]);
     }
 }

@@ -214,12 +214,12 @@
             	<ul>
                     <?php foreach($teacher as $k=>$v){?>
             		<li>
-            			<img src="<?php echo $v['smallPhoto']?>" alt="老师照片"/>
+            			<img src="<?php echo $v['image']?>" alt="老师照片"/>
             			<div class="summer-title">
             				<p><?php echo $v['name']?></p>
             				<p>主讲：<?php echo $v['speaker']?></p>
             			</div>
-            			<p class="summer-cent"><?php echo $v['abstract']?>
+            			<p class="summer-cent"><?php echo strip_tags($v['description'])?>
 	                    </p>
 					    <a class="btn-2" target="_blank"
                    href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">约课</a>          
