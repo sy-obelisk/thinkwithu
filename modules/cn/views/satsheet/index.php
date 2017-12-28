@@ -210,34 +210,36 @@
       </h2>
       <p class="subhead">TEACHER</p>
       <div class="teacher clearfix">
+          <?php foreach($teacher as $k=>$v){?>
         <div class="class-fl teacher-cnt">
-          <img src="/cn/images/sat_amanda.png" alt="老师照片">
-          <h3>Amanda</h3>
-          <p>申友SAT教学研发总监，英国兰卡斯特大学硕士，国内重本英语专业毕业；国外的几年深造，使她对西方人的思维方式和表达习惯有着深刻的了解；上课内容深入浅出，上课风格诙谐活泼，深受学生的喜欢。</p>
-          <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="
-           target="_blank">约课</a>
-        </div>
-        <div class="class-fl teacher-cnt">
-          <img src="/cn/images/gmat_zora.jpg" alt="老师照片">
-          <h3>Zora</h3>
-          <p>主讲SAT文法，SAT“野兽派”名师，句子改错“解析王”，逻辑“简化大师”，具有丰富的教育培训经验，是专八、BEC高级、雅思等多项重量级考试全能高分获得者，曾担任第十四届中国澳大利亚研究国际学术研讨会外事接待组组长，对教学有深刻独到的见解，强调句子改错“正确的语感源于深入的解析”；在逻辑科目上，擅长站在学生的角度以深入浅出的方式将复杂问题简单化，提出的“归类简化筛选法”通常让所教学生有一种醍醐灌顶的感受，教学风格幽默，深受学生喜爱。</p>
-          <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="
-           target="_blank">约课</a>
-        </div>
-        <div class="class-fl teacher-cnt">
-          <img src="/cn/images/sat_portia.png" alt="老师照片">
-          <h3>Portia</h3>
-          <p>主讲SAT数学，善于挖掘学生学习的盲点，并能及时满足学生学习所需，对SAT数学研究深入，针对基础、中等、高分三段不同程度的学生有独特的教学方案，拥有独特的数学学习构架，难点部分讲解深入易懂；对题目分析透彻，善于总结做题技巧，深受学生喜爱。</p>
+          <img src="<?php echo $v['smallPhoto']?>" alt="老师照片">
+          <h3><?php echo $v['name']?></h3>
+          <p><?php echo $v['description']?></p>
           <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="
              target="_blank">约课</a>
         </div>
-        <div class="class-fl teacher-cnt">
-          <img src="/cn/images/toefl_christine.png" alt="老师照片">
-          <h3>Christine</h3>
-          <p>主讲SAT阅读，英语专业毕业，持专业八级证书，英语基础扎实，对各类出国留学考试的阅读部分题型和解题技巧研究透彻，专攻SAT阅读教研和教学，让学员在轻松教学氛围下高效考出高分，受到众多家长和学员的高度认可。</p>
-          <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="
-           target="_blank">约课</a>
-        </div>
+          <?php }?>
+<!--        <div class="class-fl teacher-cnt">-->
+<!--          <img src="/cn/images/sat_gary.png" alt="老师照片">-->
+<!--          <h3>Gary</h3>-->
+<!--          <p>上海外国语大学研究生毕业;多年的海内外教学复合型经历、理论加实践的复合型学习以及多语种的学习背景令其对于语言学习及出国类考试有着深刻与独到的见解，培养了无数高分学员。教学风格激情、负责、幽默，深受广大学生喜欢。</p>-->
+<!--          <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="-->
+<!--           target="_blank">约课</a>-->
+<!--        </div>-->
+<!--        <div class="class-fl teacher-cnt">-->
+<!--          <img src="/cn/images/phoebe.jpg" alt="老师照片">-->
+<!--          <h3>Phoebe</h3>-->
+<!--          <p>主讲：SAT文法，英语专业毕业，持专业八级证书，上海高级口译证书，有扎实的英语语言功底。真诚随和，有责任感，热心于出国留学考试培训课程教研教学工作，坚持精益求精。授课去繁就简，直击考点，对症下药，擅长引导学生积极思考。</p>-->
+<!--          <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="-->
+<!--           target="_blank">约课</a>-->
+<!--        </div>-->
+<!--        <div class="class-fl teacher-cnt">-->
+<!--          <img src="/cn/images/sat_portia.png" alt="老师照片">-->
+<!--          <h3>Portia</h3>-->
+<!--          <p>主讲SAT数学，善于挖掘学生学习的盲点，并能及时满足学生学习所需，对SAT数学研究深入，针对基础、中等、高分三段不同程度的学生有独特的教学方案，拥有独特的数学学习构架，难点部分讲解深入易懂；对题目分析透彻，善于总结做题技巧，深受学生喜爱。</p>-->
+<!--          <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="-->
+<!--           target="_blank">约课</a>-->
+<!--        </div>-->
       </div>
     </div>
   </div>

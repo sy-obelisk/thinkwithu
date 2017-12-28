@@ -212,63 +212,19 @@
             </div>
             <div class="summerBd">
             	<ul>
+                    <?php foreach($teacher as $k=>$v){?>
             		<li>
-            			<img src="/cn/images/toefl_bob.png" alt="老师照片"/>     			
+            			<img src="<?php echo $v['image']?>" alt="老师照片"/>
             			<div class="summer-title">
-            				<p>Bob</p>
-            				<p>主讲：托福听力</p>
+            				<p><?php echo $v['name']?></p>
+            				<p>主讲：<?php echo $v['speaker']?></p>
             			</div>
-            			<p class="summer-cent">多年的海外留学经历，使得其深谙美国文化。丰富的托福考场实践经验，托福听力多次取得近满分的成绩。对于托福的听力与GMAT阅读的把控有着深刻与独到的见解。教学风格幽默诙谐，思路慎密，深受广大学生的喜爱。
+            			<p class="summer-cent"><?php echo strip_tags($v['description'])?>
 	                    </p>
 					    <a class="btn-2" target="_blank"
                    href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">约课</a>          
             		</li>
-            		<li>
-            			<img src="/cn/images/toefl_shirley.jpg" alt="老师照片"/>
-            			<div class="summer-title">
-            				<p>Shirley Xu</p>
-            				<p>主讲：托福口语</p>
-            			</div>
-            			<p class="summer-cent">加拿大出生，美国迈阿密大学毕业, 对于国外的教育体系和文化国情了如指掌。 英语的口语、写作、阅读都是母语水平。在托福课程中，可以给予学生国最地道的英语口语以及任何相关的信息。多年来，受到海外教育的熏陶、独立生活的经历、以及世界500强外企的工作经验，使得Shirley本人在英语教育以及留学申请指导工作之外，也能为留学生提供专业的海外求职与职业发展建议。</p>
-					    <a class="btn-2" target="_blank"
-                   href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">约课</a>
-            		</li>           		
-            		<li>
-            			<img src="/cn/images/toefl_sharron.jpg" alt="amanda"/>
-            			<div class="summer-title">
-            				<p>Sharron</p>
-            				<p>主讲：托福口语</p>
-            			</div>
-            			<p class="summer-cent">申友教育总部教师，托福口语讲师。
-英国巴斯大学管理学院硕士，国内重本商务英语专业，持专八证书。对出国留学考试认识深刻，在留学考试中各科均斩获高分。曾数十次参与涉及外籍人员刑事案件的公安提审、律师会见、法院文件传达、该国领事会见等重要口译工作。亲历考试与留学生活使其在出国考试听说部分有独到的见解，善于引导学生开口说英语、扩展内容，帮助学生对想表达的内容进行“解码”，用已有的词汇准确地道地表达自己。
-	                    </p>
-					    <a class="btn-2" target="_blank"
-                   href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">约课</a>
-            		</li>
-            		<li>
-            			<img src="/cn/images/toefl_christine.png" alt="教师照片"/>
-            			<div class="summer-title">
-            				<p>Christine</p>
-            				<p>主讲：托福写作、阅读</p>
-            			</div>
-            			<p class="summer-cent">申友托福教学老师，国内重本英语专业毕业，持英语专业八级证书，英语语言扎实，上课细致，逻辑清晰，多年留学考试培训授课经验，主讲托福写作、阅读，有效帮助学生理清思路，提高英语表达。
-
-	                    </p>
-					    <a class="btn-2" target="_blank"
-                   href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">约课</a>
-            		</li>
-            		<li>
-            			<img src="/cn/images/toefl_elsa.jpg" alt="amanda"/>
-            			<div class="summer-title">
-            				<p>Elsa</p>
-            				<p>主讲：托福听力、写作</p>
-            			</div>
-            			<p class="summer-cent">英国兰卡斯特大学语言学硕士，雅思托福听力满分王，国际英语教师认证TESOL Advanced Certification持证者。曾任国内重本外语系教师，研究方向为英语实用语法、英语测试学、翻译学、英语听力与口语研究，教授英语专业精读，翻译理论与研究，听力以及外事理论。多次参加外研社精英教师培养年会，兼任国际关系学院留学生任课教师。国家卓越医师培养计划骨干教师，负责口语与听力教学，担任中国核心期刊《医学信息》英文编辑。
-    善于钻研教材，积极开拓教学思路，将教学方法与现代教学手段灵活运用于课堂教学中，善于培养学生的合作交流、自主探究、勇于创新的能力，深得学生的喜欢和信任。
-	                    </p>
-					    <a class="btn-2" target="_blank"
-                   href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">约课</a>
-            		</li>
+                    <?php }?>
             	</ul>
             </div>
         </div>
