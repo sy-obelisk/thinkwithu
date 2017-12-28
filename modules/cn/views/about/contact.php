@@ -10,7 +10,7 @@
             <div class="con-top">
           		<p>全国免费咨询热线：400-600-1123</p>
          		<p>服务维权通道邮箱: service.us@thinkwithu.com</p>
-         		<p>服务维权热线: 021-52986736  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;维权公众号:申友留学（mingxiaoliuxue）</p>
+         		<p>服务维权热线: 021-52986736  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
              	<p>(公司全称：北京慧申教育科技有限公司)</p>
             </div>
             <div class="con-boc">
