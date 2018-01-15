@@ -11,6 +11,7 @@ use yii;
 use app\libs\ThinkUApiControl;
 use app\modules\cn\models\Content;
 use app\modules\cn\models\Collect;
+use app\modules\cn\models\CategoryExtend;
 use app\modules\cn\models\Login;
 use app\libs\Sms;
 use app\libs\VerificationCode;
@@ -1141,4 +1142,17 @@ class ApiController extends ThinkUApiControl {
         $res['message'] = '我们的工作人员将于1-2个工作日内跟你联系';
         die(json_encode($res));
     }
+
+    /**
+     * gmat最新开课
+     * @return string
+     * @yoyo
+     */
+    public function actionStartClass(){
+        $source=Yii::$app->request->get('source');
+        $data = \app\modules\cn\models\Content::getContent(['fields' => 'hot,time,job,place,url','category' => "248",'pageSize'=>6,'order'=>'sort']);
+        die(json_encode($data));
+    }
+
+
 }
