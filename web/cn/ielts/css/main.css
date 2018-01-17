@@ -646,9 +646,28 @@
     background-size: cover;
 }
 .h-wrap{
-    width: 1095px;
+    width: 1150px;
     height: 395px;
     margin: 110px auto 0;
+}
+.h-wrap .h-cnt>img,
+.h-wrap .h-cnt>div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.h-wrap .h-cnt>div {
+    width: 200px;
+    overflow: hidden;
+}
+.h-wrap .h-cnt>div h2 {
+    line-height: 60px;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+}
+.h-wrap .h-cnt>div img {
+    width: 100%;
 }
 .h1-select{
     text-align: left;
