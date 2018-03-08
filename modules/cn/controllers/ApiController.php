@@ -1154,5 +1154,24 @@ class ApiController extends ThinkUApiControl {
         die(json_encode($data));
     }
 
+    /**
+     * 社区报offer
+     * @return string
+     * @yoyo
+     */
+    public function actionOffer(){
+        $data = \app\modules\cn\models\Content::getContent(['fields' => 'score,abroadSchool','category' => "178,102",'limit'=>15]);
+        die(json_encode($data));
+    }
 
+
+    /**
+     * 社区报高分
+     * @return string
+     * @yoyo
+     */
+    public function actionScore(){
+        $data = \app\modules\cn\models\Content::getContent(['fields' => 'score,abroadSchool','category' => "115,102",'limit'=>15]);
+        die(json_encode($data));
+    }
 }
