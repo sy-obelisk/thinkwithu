@@ -1174,4 +1174,23 @@ class ApiController extends ThinkUApiControl {
         $data = \app\modules\cn\models\Content::getContent(['fields' => 'score,abroadSchool','category' => "115,102",'limit'=>15]);
         die(json_encode($data));
     }
+
+    public function actionList(){
+        $category = Yii::$app->request->get('category');
+        if(!$category){
+            $re['code']=0;
+            $re['message']='请求参数错误';
+        }else{
+            $contentData = Content::getContent(['fields' => 'abstract,keywords','category' => $category,'limit' => 15]);
+            die(json_encode([ 'category' => $category,'contentData' => $contentData]));
+        }
+    }
+
+    public function actionQuestion()
+    {
+        $data = Content::getContent(['fields' => 'abstract,keywords','category' => 121,'limit' => 15]);
+        die(json_encode(['data' => $data]));
+
+    }
+
 }
