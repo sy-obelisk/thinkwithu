@@ -1195,7 +1195,7 @@ class ApiController extends ThinkUApiControl {
 
     public function actionPublicClass()
     {
-        $data = \app\modules\cn\models\Content::getContent(['fields' => 'url,place,time', 'category' => '107', 'order'=>'c.id','limit' => 3]);
+        $data = \app\modules\cn\models\Content::getContent(['fields' => 'url,place,time', 'category' => '107', 'order'=>'c.id desc','limit' => 3]);
         die(json_encode(['data' => $data]));
     }
 }
