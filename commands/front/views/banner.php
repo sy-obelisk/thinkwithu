@@ -13,6 +13,7 @@
             <li><a class="nav1-link" href="/teachers.html">名师云集</a></li>
             <li><a class="nav1-link" href="/case.html">成功案例</a></li>
             <li><a class="nav1-link" href="/schools.html">院校库</a></li>
+            <li><a class="nav1-link" href="http://bbs.thinkwithu.com/" target="_blank">论坛</a></li>
         </ul>
     </div>
 </nav>
