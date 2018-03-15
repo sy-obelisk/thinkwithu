@@ -1154,5 +1154,48 @@ class ApiController extends ThinkUApiControl {
         die(json_encode($data));
     }
 
+    /**
+     * 社区报offer
+     * @return string
+     * @yoyo
+     */
+    public function actionOffer(){
+        $data = \app\modules\cn\models\Content::getContent(['fields' => 'score,abroadSchool','category' => "178,102",'limit'=>15]);
+        die(json_encode($data));
+    }
 
+
+    /**
+     * 社区报高分
+     * @return string
+     * @yoyo
+     */
+    public function actionScore(){
+        $data = \app\modules\cn\models\Content::getContent(['fields' => 'score,abroadSchool','category' => "115,102",'limit'=>15]);
+        die(json_encode($data));
+    }
+
+    public function actionList(){
+        $category = Yii::$app->request->get('category');
+        if(!$category){
+            $re['code']=0;
+            $re['message']='请求参数错误';
+        }else{
+            $contentData = Content::getContent(['fields' => 'abstract,keywords','category' => $category,'limit' => 15]);
+            die(json_encode([ 'category' => $category,'contentData' => $contentData]));
+        }
+    }
+
+    public function actionQuestion()
+    {
+        $data = Content::getContent(['fields' => 'abstract,keywords','category' => 121,'limit' => 15]);
+        die(json_encode(['data' => $data]));
+
+    }
+
+    public function actionPublicClass()
+    {
+        $data = \app\modules\cn\models\Content::getContent(['fields' => 'url,place,time', 'category' => '107', 'order'=>'c.id desc','limit' => 3]);
+        die(json_encode(['data' => $data]));
+    }
 }
