@@ -1,6 +1,6 @@
 .w10 {
     position: relative;
-    width: 1000px;
+    width: 1020px;
     margin: 0 auto;
     height: 100%;
     overflow: hidden;
@@ -83,7 +83,7 @@ input.search {
     padding: 10px 0;
 }
 .nav-list {
-    margin-left: 25px;
+    /*margin-left: 25px;*/
 }
 .nav-list li {
     float: left;
