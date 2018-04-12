@@ -207,7 +207,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="http://sat.viplgw.cn/" target="_blank">
+                    <a href="/satsheet.html" target="_blank">
                         <img src="/cn/images/intensive_img04.png"/>
                         <p>SAT课程</p>
                     </a>
@@ -225,7 +225,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="http://www.gmatonline.cn" target="_blank">
+                    <a href="http://www.viplgw.cn" target="_blank">
                         <img src="/cn/images/intensive_img08.png"/>
                         <p>网络课程</p>
                     </a>

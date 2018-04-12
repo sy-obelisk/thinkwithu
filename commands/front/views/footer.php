@@ -147,7 +147,7 @@
                 </a>
             </li>
             <li>
-                <a href="tencent://message/?uin=2250281936&amp;Site=www.cnclcy&amp;Menu=yes" target="_blank">
+                <a href="tencent://message/?uin=3176627895&amp;Site=www.cnclcy&amp;Menu=yes" target="_blank">
                     <div class="diffBG03"></div>
                     <p>QQ</p>
                 </a>
