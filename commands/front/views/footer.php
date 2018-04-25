@@ -133,12 +133,12 @@
                     <p>在线咨询</p>
                 </a>
             </li>
-        	<li>
-            	<a href="http://www.gmatonline.cn" target="_blank">
-            		<div class="diffBG07"></div>
-            		<p>网络课程</p>
-            	</a>
-        	</li>
+<!--        	<li>-->
+<!--            	<a href="http://www.gmatonline.cn" target="_blank">-->
+<!--            		<div class="diffBG07"></div>-->
+<!--            		<p>网络课程</p>-->
+<!--            	</a>-->
+<!--        	</li>-->
             <li>
                 <a href="javascript:void(0);">
                     <div class="diffBG02"></div>
