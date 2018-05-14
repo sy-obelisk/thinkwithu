@@ -9,6 +9,7 @@
 	class ClassHeadWidget extends Widget  {
         public $userData;
         public $userId;
+        public $controller;
         /**
          * 定义函数
          * */
@@ -16,13 +17,14 @@
         {
             $this->userData = Yii::$app->session->get('userData');
             $this->userId = Yii::$app->session->get('userId');
+            $this->controller = Yii::$app->controller->id;
         }
 
         /**
          * 运行覆盖程序
          * */
         public function run(){
-            return $this->render('classHead',['userData' => $this->userData,'userId' => $this->userId]);
+            return $this->render('classHead',['userData' => $this->userData,'userId' => $this->userId,'controller'=>$this->controller]);
         }
 	}
 ?>
