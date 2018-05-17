@@ -75,11 +75,11 @@ $(function(){
             if (top>45){
                 $(".nav-wrap").addClass("nav-flexd");
                 $(".nav-list li a").addClass("a-fiexd");
-                $(".logo").attr("src","/cn/Hirsi/images/sy-logo2.png")
+                $(".logo").attr("src","/cn/Hirsi/images/shenyoulg2.png")
             }else {
                 $(".nav-wrap").removeClass("nav-flexd");
                 $(".nav-list li a").removeClass("a-fiexd");
-                $(".logo").attr("src","/cn/Hirsi/images/sy-logo.png")
+                $(".logo").attr("src","/cn/Hirsi/images/sy-logo3.png")
             }
         })
     })
