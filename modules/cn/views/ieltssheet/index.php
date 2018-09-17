@@ -83,10 +83,10 @@
   <div class="h-wrap relative">
     <div class="h-cnt">
       <img src="/cn/ielts/images/h3.png" style="width: 912px;" alt="图片">
-      <div>
-        <h2>微信咨询</h2>
-        <img src="/cn/ielts/images/index-code.jpg" alt="二维码">
-      </div>
+<!--      <div>-->
+<!--        <h2>微信咨询</h2>-->
+<!--        <img src="/cn/ielts/images/index-code.jpg" alt="二维码">-->
+<!--      </div>-->
       <div style="clear: both"></div>
     </div>
     <div class="h1-select">
