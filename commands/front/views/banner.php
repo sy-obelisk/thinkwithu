@@ -4,9 +4,9 @@
         <ul class="inb nav-list clearfix">
             <li><a class="<?php echo $controller == 'index' ? 'on on-hover' : '' ?>  nav1-link" href="/">首页</a></li>
             <li><a class="nav1-link <?php echo $controller == 'study' ? 'on on-hover' : '' ?>" href="/study-aboard/assistance.html">留学服务</a></li>
-            <li><a class="nav1-link <?php echo $controller == 'gmatsheet' ? 'on on-hover' : '' ?>" href="/gmatsheet.html">GMAT课程</a></li>
-            <li><a class="nav1-link <?php echo $controller == 'gresheet' ? 'on on-hover' : '' ?>" href="/gresheet.html">GRE课程</a></li>
-            <li><a class="nav1-link <?php echo $controller == 'wordssheet' ? 'on on-hover' : '' ?>" href="/wordssheet.html">单词课程</a></li>
+            <li><a class="nav1-link <?php echo $controller == 'gmat' ? 'on on-hover' : '' ?>" href="/gmat.html">GMAT课程</a></li>
+            <li><a class="nav1-link <?php echo $controller == 'gre' ? 'on on-hover' : '' ?>" href="/gre.html">GRE课程</a></li>
+            <li><a class="nav1-link <?php echo $controller == 'words' ? 'on on-hover' : '' ?>" href="/words.html">单词课程</a></li>
             <li><a class="nav1-link <?php echo $controller == 'satsheet' ? 'on on-hover' : '' ?>" href="/satsheet.html">SAT课程</a></li>
             <li><a class="nav1-link <?php echo $controller == 'toeflsheet' ? 'on on-hover' : '' ?>" href="/toefl/assistance.html">托福课程</a></li>
             <li><a class="nav1-link <?php echo $controller == 'ieltssheet' ? 'on on-hover' : '' ?>" href="/ieltssheet.html">雅思课程</a></li>
