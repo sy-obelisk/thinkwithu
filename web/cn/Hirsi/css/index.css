@@ -63,6 +63,7 @@ input.search {
     background: #ffffff;
 }
 
+
 /***************导航栏******************/
 .nav-flexd {
     position: fixed;
@@ -256,14 +257,14 @@ h1.info-tit {
     background: #29a351;
 }
 @media screen and (min-width: 1600px){
-	
+
 	.info-tit{
 		font-size: 14px;
 	}
 	.info-select,.info-int{
 		height: 20px;
 		line-height: 20px;
-	}	
+	}
 	.info-btn{
 		font-size: 18px;
 		height: 30px;
