@@ -7,8 +7,6 @@ namespace app\modules\cn\controllers;
 use app\libs\Method;
 use app\libs\ThinkUController;
 
-header('Access-Control-Allow-Origin: *');
-header('Access-Control-Allow-Headers: X-Requested-With');
 class WordsController extends ThinkUController {
     public $enableCsrfValidation = false;
     public $layout = 'cn';
