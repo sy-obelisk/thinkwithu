@@ -12,7 +12,10 @@
     padding: 10px 0;
     background: #974694;
 }
-
+.nav-top{
+    display: flex;
+    display: -webkit-flex;
+}
 .refer-btn {
     margin-left: 20px;
     margin-top: 4px;
