@@ -4,7 +4,7 @@
         <ul class="inb nav-list clearfix">
             <li><a class="<?php echo $controller == 'index' ? 'on on-hover' : '' ?>  nav1-link" href="/">首页</a></li>
             <li><a class="nav1-link <?php echo $controller == 'study' ? 'on on-hover' : '' ?>" href="/study-aboard/assistance.html">留学服务</a></li>
-            <li><a class="nav1-link <?php echo $controller == 'gmat' ? 'on on-hover' : '' ?>" href="/gmat.html">GMAT课程</a></li>
+            <li><a class="nav1-link <?php echo $controller == 'gmatheet' ? 'on on-hover' : '' ?>" href="/gmatsheet.html">GMAT课程</a></li>
             <li><a class="nav1-link <?php echo $controller == 'gre' ? 'on on-hover' : '' ?>" href="/gre.html">GRE课程</a></li>
             <li><a class="nav1-link <?php echo $controller == 'words' ? 'on on-hover' : '' ?>" href="/words.html">单词课程</a></li>
             <li><a class="nav1-link <?php echo $controller == 'satsheet' ? 'on on-hover' : '' ?>" href="/satsheet.html">SAT课程</a></li>
