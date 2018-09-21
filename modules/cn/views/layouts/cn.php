@@ -174,7 +174,7 @@ if($url == '/training.html') {
 ?>
 <?= $content ?>
 
-<?if($url == '/gmatsheet.html' || $url == '/mentor.html' || $url== '/toeflsheet.html') {?>
+<?php if($url == '/gmatsheet.html' || $url == '/mentor.html' || $url== '/toeflsheet.html') {?>
     <div class="contactWay">
         <div class="contactHead">联系方式</div>
         <div class="contactSlide">
