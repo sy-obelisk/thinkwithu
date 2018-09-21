@@ -24,4 +24,13 @@ class GmatsheetController extends ThinkUController {
         $extendData = CategoryExtend::find()->where("catId=247 AND belong='content'")->orderBy('id ASC')->all();
         return $this->render('index',['extendData' => $extendData]);
     }
+
+    /**
+     * gmat 课程
+     * cy
+     */
+    public function actionGmatCourse(){
+
+        return $this->renderPartial('course');
+    }
 }
