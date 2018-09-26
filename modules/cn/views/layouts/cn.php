@@ -8,6 +8,9 @@
     $action = Yii::$app->controller->action->id;
     $controller = Yii::$app->controller->id;
     $url = Yii::$app->request->getUrl();
+    if(strpos($url,'?tdsourcetag=s_pcqq_aiomsg')){
+        $url=str_replace('?tdsourcetag=s_pcqq_aiomsg','',$url);
+    }
     if($url == '/VisaInterview.html'){
         $seo['title'] = '签证面试';
         $seo['keywords'] = '';
@@ -84,6 +87,9 @@
             }
             else{
                 $data = \app\modules\cn\models\UrlSeo::find()->where("url='$url'")->one();
+            }
+            if((!isset($data['seoId']))||$data['seoId']==false){
+                $data['seoId']=223;
             }
             $seo = \app\modules\cn\models\Category::getSeoInfo($data['seoId']);
         }
@@ -174,7 +180,7 @@ if($url == '/training.html') {
 ?>
 <?= $content ?>
 
-<?if($url == '/gmatsheet.html' || $url == '/mentor.html' || $url== '/toeflsheet.html') {?>
+<?php if($url == '/gmatsheet.html' || $url == '/mentor.html' || $url== '/toeflsheet.html') {?>
     <div class="contactWay">
         <div class="contactHead">联系方式</div>
         <div class="contactSlide">

@@ -163,6 +163,86 @@
     color: #292929;
     vertical-align: middle;
 }
+
+/*app下载*/
+
+.appDownload{
+    float: right;
+    height: 100%;
+    padding: 0 30px;
+    position: relative;
+    /*right: 400px;*/
+    margin-right: 10px;
+}
+.appDownload:hover{
+    cursor: pointer;
+    background: #f3f7f7;
+}
+.appDownload:hover span.tit_t{
+    color: #000000;
+}
+.appDownload:hover span.tit_t b{
+    border-top: 5px #000000 solid;
+}
+.appDownload span.tit_t{
+    color: white;
+}
+.appDownload span.tit_t b{
+    width: 0;
+    height: 0;
+    display:inline-block;
+    border-top: 5px white solid;
+    border-left: 5px transparent solid;
+    border-right: 5px transparent solid;
+}
+.appDownload:hover .pull_down{
+    display:block;
+}
+.pull_down{
+    width: 140px;
+    position: absolute;
+    left: 0;
+    top: 42px;
+    z-index: 9999;
+    background: #f3f7f7;
+    display: none;
+
+
+}
+.pull_down ul li{
+    line-height: 40px;
+    position: relative;
+}
+.pull_down ul li:hover .code_box{
+    display: block;
+}
+.pull_down ul li:hover{
+    background: #3e3e3e;
+    color: white;
+}
+.pull_down ul li:hover a{
+    color: white;
+}
+.pull_down ul li:hover span{
+    color: white;
+}
+.first_layer{
+    font-size: 12px;
+}
+.first_layer img{
+    width: 20px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.code_box{
+    position: absolute;
+    right: -100px;
+    top: 0;
+    display: none;
+}
+.code_box img{
+    width: 100px;
+}
 /*导航栏*/
 /*.waiHnav{
     width: 100%;

@@ -12,7 +12,10 @@
     padding: 10px 0;
     background: #974694;
 }
-
+.nav-top{
+    display: flex;
+    display: -webkit-flex;
+}
 .refer-btn {
     margin-left: 20px;
     margin-top: 4px;
@@ -62,6 +65,7 @@ input.search {
     color: #974694;
     background: #ffffff;
 }
+
 
 /***************导航栏******************/
 .nav-flexd {
@@ -256,14 +260,14 @@ h1.info-tit {
     background: #29a351;
 }
 @media screen and (min-width: 1600px){
-	
+
 	.info-tit{
 		font-size: 14px;
 	}
 	.info-select,.info-int{
 		height: 20px;
 		line-height: 20px;
-	}	
+	}
 	.info-btn{
 		font-size: 18px;
 		height: 30px;

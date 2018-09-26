@@ -7,6 +7,9 @@
     $action = Yii::$app->controller->action->id;
     $controller = Yii::$app->controller->id;
     $url = Yii::$app->request->getUrl();
+    if(strpos($url,'?tdsourcetag=s_pcqq_aiomsg')){
+        $url=str_replace('?tdsourcetag=s_pcqq_aiomsg','',$url);
+    }
     if ($url == '/VisaInterview.html') {
         $seo['title'] = '签证面试';
         $seo['keywords'] = '';
@@ -77,6 +80,9 @@
             } else {
                 $data = \app\modules\cn\models\UrlSeo::find()->where("url='$url'")->one();
             }
+            if((!isset($data['seoId']))||$data['seoId']==false){
+                $data['seoId']=223;
+            }
             $seo = \app\modules\cn\models\Category::getSeoInfo($data['seoId']);
         }
     }
@@ -129,11 +135,110 @@
             <span class="on">登录</span>
             <span>注册</span>
         </div>
+
         <!--搜索-->
         <div class="search-wrap fr">
             <input class="search search1" type="search" onkeyup="enterKey(event,this)" placeholder="请输入关键词">
             <img src="/cn/Hirsi/images/search-icon.png" style="margin-left: -1px;cursor: pointer;" onclick="keySearch()" alt="搜索">
         </div>
+        <!--        app下载-->
+        <div class="appDownload">
+            <span title="app下载" class="tit_t">APP <b></b></span>
+            <div class="pull_down">
+                <ul>
+                    <li>
+                        <a href="http://www.gmatonline.cn/DownloadApp.html">
+                            <div class="first_layer">
+                                <img src="/cn/Hirsi/images/gmatapp_logo.jpg" alt="app logo图标"/>
+                                <span>雷哥GMAT苹果版</span>
+                            </div>
+                        </a>
+                        <div class="code_box">
+                            <img src="/cn/Hirsi/images/leigeQrCode.png" alt="app二维码图片"/>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="http://www.gmatonline.cn/DownloadApp.html">
+                            <div class="first_layer">
+                                <img src="/cn/Hirsi/images/gmatapp_logo.jpg" alt="app logo图标"/>
+                                <span>雷哥GMAT安卓版</span>
+                            </div>
+                        </a>
+                        <div class="code_box">
+                            <img src="/cn/Hirsi/images/leige-android.png" alt="app二维码图片"/>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="http://www.toeflonline.cn/toefl_app.html">
+                            <div class="first_layer">
+                                <img src="/cn/Hirsi/images/toeflapp_logo.jpg" alt="app logo图标"/>
+                                <span>雷哥托福苹果版</span>
+                            </div>
+                        </a>
+                        <div class="code_box">
+                            <img src="http://www.toeflonline.cn/cn/images/app-ios.png" alt="app二维码图片"/>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="http://www.toeflonline.cn/toefl_app.html">
+                            <div class="first_layer">
+                                <img src="/cn/Hirsi/images/toeflapp_logo.jpg" alt="app logo图标"/>
+                                <span>雷哥托福安卓版</span>
+                            </div>
+                        </a>
+                        <div class="code_box">
+                            <img src="http://www.toeflonline.cn/cn/images/app-android.png" alt="app二维码图片"/>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="http://www.smartapply.cn/app.html">
+                            <div class="first_layer">
+                                <img src="http://www.smartapply.cn/cn/images/smart-appLogo.png" alt="app logo图标"/>
+                                <span>雷哥选校苹果版</span>
+                            </div>
+                        </a>
+                        <div class="code_box">
+                            <img src="http://www.smartapply.cn/cn/images/smart-erweima.png" alt="app二维码图片"/>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="http://www.smartapply.cn/app.html">
+                            <div class="first_layer">
+                                <img src="http://www.smartapply.cn/cn/images/smart-appLogo.png" alt="app logo图标"/>
+                                <span>雷哥选校安卓版</span>
+                            </div>
+                        </a>
+                        <div class="code_box">
+                            <img src="http://www.smartapply.cn/cn/images/anroid-smartapp.png" alt="app二维码图片"/>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="http://words.viplgw.cn/" target="_blank">
+                            <div class="first_layer">
+                                <img src="/cn/Hirsi/images/words-iosLogo.jpg" alt="app logo图标"/>
+                                <span>雷哥单词苹果版</span>
+                            </div>
+                        </a>
+                        <div class="code_box">
+                            <img src="/cn/Hirsi/images/words-ios.png" alt="app二维码图片"/>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="http://words.viplgw.cn/" target="_blank">
+                            <div class="first_layer">
+                                <img src="http://www.gmatonline.cn/app/web_core/styles/images/words-iosLogo.jpg" alt="app logo图标"/>
+                                <span>雷哥单词安卓版</span>
+                            </div>
+                        </a>
+                        <div class="code_box">
+                            <img src="http://www.greonline.cn/cn/images/word_android.png" alt="app二维码图片"/>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--        app下载 end-->
+                <div class="clearBr"></div>
     </div>
 </header>
 <!--nav 导航栏-->
@@ -207,9 +312,9 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/satsheet.html" target="_blank">
+                    <a href="/gmatsheet.html">
                         <img src="/cn/images/intensive_img04.png"/>
-                        <p>SAT课程</p>
+                        <p>GRE课程</p>
                     </a>
                 </li>
                 <li>
@@ -930,7 +1035,7 @@
         trigger: "click"
     });
 </script>
-<? if ($url == '/gmatsheet.html' || $url == '/mentor.html' || $url == '/toeflsheet.html') { ?>
+<?php if ($url == '/gmatsheet.html' || $url == '/mentor.html' || $url == '/toeflsheet.html') { ?>
     <div class="contactWay">
         <div class="contactHead">联系方式</div>
         <div class="contactSlide">
