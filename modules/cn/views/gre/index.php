@@ -25,18 +25,20 @@
     <!-- 让360双核浏览器用webkit内核渲染页面
     <--================================================== -->
     <meta name="renderer" content="webkit">
-    <script src="/cn/ielts/js/jquery-1.12.2.min.js"></script>
-    <!--  <script src="/cn/ielts/js/jquery1.42.min.js"></script>-->
-    <script src="/cn/ielts/js/jquery.SuperSlide.2.1.1.js"></script>
+    <link rel="stylesheet" href="/cn/gre/css/reset.css">
     <link rel="stylesheet" href="/cn/css/header.css"/>
     <link rel="stylesheet" href="/cn/css/footer.css"/>
     <link rel="stylesheet" href="/cn/css/public.css"/>
     <link rel="stylesheet" href="/cn/gre/css/gre_index.css">
-    <link rel="stylesheet" href="/cn/Hirsi/css/reset.css">
+    <link rel="stylesheet" href="/cn/gre/css/index.css">
     <link rel="stylesheet" href="/cn/css/fonts/font-awesome/css/font-awesome.min.css"/>
     <link rel="shortcut icon" href="http://www.thinkwithu.com/favicon.ico"/>
     <script type="text/javascript" src="/cn/js/public.js"></script>
     <title>GRE培训|GRE考试|GRE在线课程|GRE网课|GRE机经真题</title>
+    <script src="/cn/words/js/jquery-1.12.2.min.js"></script>
+    <script src="/cn/gre/js/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="/cn/js/public.js"></script>
+
 </head>
 <body>
 <?php use app\commands\front\NavWidget; ?>
@@ -73,27 +75,57 @@
 <?php LeftSuspensionWidget::end(); ?>
 
 <!--banner-->
-<div class="banner-wrap" style="background: url('/cn/images/gre_index/greLogo_bg.png')no-repeat center center;">
-    <div class="w12 slideBox-1 relative">
-        <div class="b1-hd ani">
-            <ul></ul>
+<div class="banner-wrap" style="background: url('/cn/gre/images/greLogo_bg.png')no-repeat center center;">
+    <div class="w12 slideBox-1 relative" style="margin-top:-5px">
+        <div class="b1-bd">
+            <ul>
+                <li>
+                    <a href="http://words.viplgw.cn/" target="_blank">
+                     <img style="height: 100%;" src="http://www.greonline.cn//files/attach/images/20180531/1527732987884417.png" alt="banner图"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="" target="_blank">
+                    <img style="height: 100%;" src="http://www.greonline.cn//files/attach/images/20180829/1535532214229847.png" alt="banner图"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="" target="_blank">
+                    <img style="height: 100%;" src="http://www.greonline.cn//files/attach/images/20180827/1535338478535151.png" alt="banner图"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="" target="_blank">
+                    <img style="height: 100%;" src="http://www.greonline.cn//files/attach/images/20180408/1523179876612251.png" alt="banner图"/>
+                    </a>
+                </li>
+            </ul>
         </div>
-
-
         <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
-        <a class="prev" href="javascript:void(0)"></a>
-        <a class="next ani" href="javascript:void(0)"><img
-                    src="http://www.gmatonline.cn/app/web_core/styles/images-3/crow-4.png" alt=""></a>
+<!--        <a class="prev" href="javascript:void(0)"></a>-->
+<!--        <a class="next ani" href="javascript:void(0)"><img-->
+<!--                    src="http://www.gmatonline.cn/app/web_core/styles/images-3/crow-4.png" alt=""></a>-->
     </div>
     <script>
-        //        轮播
-        $(".slideBox-1").slide({
-            mainCell: ".b1-bd ul",
-            titCell: ".b1-hd ul",
-            effect: "leftLoop",
-            autoPlay: true,
-            autoPage: "<li></li>"
+
+        $(".b1-bd ul").animate({ 'left': '-50px' }, 300, function () {
+            $(".slideBox-1").slide({
+                mainCell: ".b1-bd ul",
+                titCell: ".b1-bd ul li",
+                effect: "leftLoop",
+                trigger: "click",
+                autoPlay: true,
+                easing: "easeInOutQuint",
+                delayTime: 3000,
+                interTime: 3000,
+                defaultPlay: true,
+                vis: 1,
+            });
         });
+        //让banner背景左右透明
+        var wid = $(".b1-bd li:first").width();
+        var wind = $(window).width();
+
     </script>
 </div>
 <section id="index" class="clearfix relative">
@@ -103,29 +135,29 @@
                 <ul class="m1_list flex-container-center tm" style="justify-content: space-between;">
                     <li>
                         <div class="list_info clearfix">
-                            <div class="inm lof_img"><img src="/cn/images/gre_index/list_icon_1.png" alt=""></div>
+                            <div class="inm lof_img"><img src="/cn/gre/images/list_icon_1.png" alt=""></div>
                             <div class="inm lof_text">
                                 <p class="list_name">做题</p>
                                 <p class="view_num"><?php echo $numQuestions+1020; ?>人正在做题 </p>
                                 <div class="m1_btn"><a href="http://www.greonline.cn/practice.html" target="_blank">立即进入</a></div>
                             </div>
                         </div>
-                        <img src="/cn/images/gre_index/color_line.png" alt="">
+                        <img src="/cn/gre/images/color_line.png" alt="">
                     </li>
                     <li>
                         <div class="list_info clearfix">
-                            <div class="inm lof_img"><img src="/cn/images/gre_index/list_icon_2.png" alt=""></div>
+                            <div class="inm lof_img"><img src="/cn/gre/images/list_icon_2.png" alt=""></div>
                             <div class="inm lof_text">
                                 <p class="list_name">搜题</p>
-                                <p class="view_num"><?php echo $numSearchs+1020; ?>人正在搜题 </p>
+                                <p class="view_num"><?php echo $numSearchs['viewCount']+1020; ?>人正在搜题 </p>
                                 <div class="m1_btn"><a href="http://www.greonline.cn/search.html" target="_blank">立即进入</a></div>
                             </div>
                         </div>
-                        <img src="/cn/images/gre_index/color_line.png" alt="">
+                        <img src="/cn/gre/images/color_line.png" alt="">
                     </li>
                     <li>
                         <div class="list_info clearfix">
-                            <div class="inm lof_img"><img src="/cn/images/gre_index/list_icon_3.png" alt=""></div>
+                            <div class="inm lof_img"><img src="/cn/gre/images/list_icon_3.png" alt=""></div>
                             <div class="inm lof_text">
                                 <p class="list_name">备考</p>
                                 <p class="view_num"><?php echo $viewNum ?>人正在学习 </p>
@@ -201,7 +233,7 @@
                 <div class="bkItem_wrap">
                     <ul class="list_1 flexList tl">
                         <?php
-                        foreach ($hots as $v) {
+                        foreach ($hot as $v) {
                             ?>
                             <li>
                                 <div class="small_img"><img src="http://www.greonline.cn/<?php echo $v['image'] ?>"
@@ -228,12 +260,11 @@
                 <div class="bkItem_wrap">
                     <div class="flexList">
                         <?php
-                        foreach ($words['imageMessage'] as $v) {
+                        foreach ($word['imageMessage'] as $v) {
                             ?>
                             <div class="m3_img fl">
                                 <a href="/beikao/d-538-<?php echo $v['id'] ?>.html" target="_blank">
                                     <img src="<?php echo $v['image'] ?>" alt="">
-
                                     <p class="ellipsis m3_img_tit"><?php echo $v['name'] ?></p>
                                 </a>
                             </div>
@@ -242,7 +273,7 @@
                         ?>
                         <ul class="common_list3 flexList">
                             <?php
-                            foreach ($words['contents'] as $v) {
+                            foreach ($word['contents'] as $v) {
                                 ?>
                                 <li>
                                     <a class="inm bk_tit ellipsis" href="/beikao/d-538-<?php echo $v['id'] ?>.html"
@@ -252,7 +283,6 @@
                                 <?php
                             }
                             ?>
-
                         </ul>
                     </div>
                 </div>
@@ -389,7 +419,7 @@
     <div class="commonTopic">
         <div class="topic-left">
             <div class="common-back back02">
-                <img src="/cn/images/index_newIcon04.png" alt="图标"/>
+                <img src="/cn/gre/images/index_newIcon04.png" alt="图标"/>
                 <p>雷哥GRE<br>最新更新题目</p>
             </div>
             <a href="/search.html">查看更多+</a>
@@ -454,10 +484,10 @@
     </div>
     <div class="model_2 relative">
         <div class="w12 relative">
-            <div class="tm relative" style="z-index: 15;">
+            <div class="tm relative" style="z-index: 15;margin-top:-45px">
                 <h1 class="model2_h1">名师方法+在线刷题<br>六大功能与服务，助你预见高分！</h1>
-                <div><img src="/cn/images/gre_index/icon_item.png" alt=""></div>
-                <div style="margin-top: -30px;"><img src="/cn/images/gre_index/item_hj.png" alt=""></div>
+                <div><img src="/cn/gre/images/icon_item.png" alt=""></div>
+                <div style="margin-top: -30px;"><img src="/cn/gre/images/item_hj.png" alt=""></div>
             </div>
             <canvas id="GRE_ani" width="685" height="520"></canvas>
         </div>
@@ -465,7 +495,7 @@
     <div class="model_4">
         <div class="w12">
             <div class="register_enter flex-container-center clearfix">
-                <div class="fl" style="margin-right: 70px"><img src="/cn/images/gre_index/gre_1.png" alt=""></div>
+                <div class="fl" style="margin-right: 70px"><img src="/cn/gre/images/gre_1.png" alt=""></div>
                 <div class="fr tm">
                     <h1 class="bold_gre">来雷哥，我们帮你拿高分 </h1>
                     <p class="gre_de">全球已有<strong>10000+</strong>你的小伙伴加入雷哥GRE</p>
@@ -482,17 +512,17 @@
     <div class="five-m-in">
         <!--        关闭-->
         <div class="five-m-close" onclick="closeFiveSecond()">
-            <img src="/cn/images/gre-maskClosk.png" alt="关闭图标"/>
+            <img src="/cn/gre/images/gre-maskClosk.png" alt="关闭图标"/>
             <span>关闭 ( <b id="five-s">5</b>s )</span>
         </div>
         <!--        右侧图片-->
         <div class="f-m-rimg">
-            <img src="/cn/images/gre-maskCom.png" alt="文字图片"/>
+            <img src="/cn/gre/images/gre-maskCom.png" alt="文字图片"/>
         </div>
         <div class="five-content">
             <div class="f-c-title">离330更近一步！</div>
             <div>
-                <img src="/cn/images/gre-maskTitle.png" alt="文字图片" width="470"/>
+                <img src="/cn/gre/images/gre-maskTitle.png" alt="文字图片" width="470"/>
             </div>
             <div class="f-c-info">
                 <ul>
@@ -542,6 +572,54 @@
 <?php //LeftSuspensionWidget::begin();?>
 <?php //LeftSuspensionWidget::end();?>
 </body>
-
-
 </html>
+<script>
+    $(function () {
+        $('.bkTab li').click(function () {
+            var num = $(this).index();
+            $(this).addClass('on').siblings('li').removeClass('on');
+            $('.newModel_wrap .bkItem_wrap').eq(num).show().siblings('.bkItem_wrap').hide();
+        });
+        var fNum=localStorage.getItem("fiveMask");
+        if(!fNum){
+            setTimeout(function () {
+                localStorage.setItem("fiveMask","true");
+                $(".fiveSecond-mask").fadeIn();
+                //        5秒关闭弹窗
+                var s=$("#five-s").html();
+                var timer=setInterval(function () {
+                    s--;
+                    $("#five-s").html(s);
+                    if(s<1){
+                        clearInterval(timer);
+                        closeFiveSecond();
+                        return false;
+                    }
+                },1000);
+            },1000);
+        }
+    });
+    var canvas = document.getElementById("GRE_ani");
+    var ctx = canvas.getContext("2d");
+    var img = new Image();
+    img.src = "/cn/gre/images/canvas_img.png";
+    img.onload = function () {
+        setInterval(function () {
+            rotate(ctx)
+        }, 100)
+    };
+
+    function rotate(ctx) {
+        var x = canvas.width / 2; //画布宽度的一半
+        var y = canvas.height / 2;//画布高度的一半
+        ctx.clearRect(0, 0, canvas.width, canvas.height);//先清掉画布上的内容
+        ctx.translate(x, y);//将绘图原点移到画布中点
+        ctx.rotate(Math.PI / 360);//旋转角度
+        ctx.translate(-x, -y);//将画布原点移动
+        ctx.drawImage(img, 90, 10);//绘制图片
+    }
+
+    function closeFiveSecond() {
+        $(".fiveSecond-mask").fadeOut();
+    }
+</script>

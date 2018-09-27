@@ -19,26 +19,25 @@
     <!-- 让360双核浏览器用webkit内核渲染页面-->
     <!-- ================================================== -->
     <meta name="renderer" content="webkit">
+    <title>雷哥单词APP，一款只为出国留学考生准备的应试词汇APP！</title>
     <!-- Mobile Specific Metas
    ================================================== -->
     <!-- !!!注意 minimal-ui 是IOS7.1的新属性，最小化浏览器UI -->
-        <link rel="stylesheet" href="/cn/words/css/globle.css">
-        <link rel="stylesheet" href="/cn/words/css/animate.min.css">
-        <link rel="stylesheet" href="/cn/words/css/index.css">
-        <link rel="stylesheet" href="http://www.viplgw.cn/cn/css/public.css"/>
-        <script src="/cn/words/js/jquery-1.12.2.min.js"></script>
-        <script type="text/javascript" src="/cn/words/js/num.js"></script>
-    <title>雷哥单词APP，一款只为出国留学考生准备的应试词汇APP！</title>
-    <script src="/cn/ielts/js/jquery.SuperSlide.2.1.1.js"></script>
+    <link rel="stylesheet" href="/cn/words/css/globle.css">
+    <link rel="stylesheet" href="/cn/words/css/animate.min.css">
+    <link rel="stylesheet" href="/cn/words/css/index.css">
+<!--    <link rel="stylesheet" href="http://www.viplgw.cn/cn/css/public.css"/>-->
+    <link rel="stylesheet" href="/cn/gre/css/reset.css">
     <link rel="stylesheet" href="/cn/css/header.css"/>
     <link rel="stylesheet" href="/cn/css/footer.css"/>
-    <link rel="stylesheet" href="/cn/css/public.css"/>
-    <link rel="stylesheet" href="/cn/css/gmatSheet.css"/>
-    <script type="text/javascript" src="/cn/js/gmatSheet.js"></script>
-    <link rel="stylesheet" href="/cn/Hirsi/css/reset.css">
-    <link rel="stylesheet" href="/cn/Hirsi/css/index.css">
-    <link rel="stylesheet" href="/cn/css/fonts/font-awesome/css/font-awesome.min.css"/>
+
+    <link rel="stylesheet" href="/cn/gre/css/index.css">
     <link rel="shortcut icon" href="http://www.thinkwithu.com/favicon.ico"/>
+    <script type="text/javascript" src="/cn/js/public.js"></script>
+    <script src="/cn/gre/js/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="/cn/words/js/num.js"></script>
+    <link rel="stylesheet" href="/cn/css/public.css"/>
+    <script src="/cn/words/js/jquery-1.12.2.min.js"></script>
     <script type="text/javascript" src="/cn/js/public.js"></script>
 </head>
 <body>
@@ -527,7 +526,7 @@
             return false;
         }else{
             $.ajax({
-                url:"/cn/index/word-search",
+                url:"http://words.viplgw.cn/cn/index/word-search",
                 type:"post",
                 data:{
                     content:content
@@ -564,7 +563,6 @@
 
         var id=$(".a-s-top input[type='text']").attr("data-id");
         var con=$(".a-s-top input[type='text']").val();
-        console.log(id)
 
         console.log(con)
         if(!id){
@@ -587,7 +585,7 @@
         }
 
         $.ajax({
-            url:"/cn/index/word-message",
+            url:"http://words.viplgw.cn/cn/index/word-message",
             type:"post",
             data:{
                 id:id

@@ -191,5 +191,5 @@ function enterKey(event,obj){
 }
 function keySearch() {
     var k = $('.search-wrap>input').val();
-    location.href = "/search.html?keyword=" + encodeURI(k);
+    location.href = "http://words.viplgw.cn/search.html?keyword=" + encodeURI(k);
 }
