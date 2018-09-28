@@ -27,18 +27,18 @@
     <link rel="stylesheet" href="/cn/words/css/animate.min.css">
     <link rel="stylesheet" href="/cn/words/css/index.css">
 <!--    <link rel="stylesheet" href="http://www.viplgw.cn/cn/css/public.css"/>-->
+    <link rel="stylesheet" href="/cn/css/public.css"/>
     <link rel="stylesheet" href="/cn/gre/css/reset.css">
     <link rel="stylesheet" href="/cn/css/header.css"/>
     <link rel="stylesheet" href="/cn/css/footer.css"/>
-
     <link rel="stylesheet" href="/cn/gre/css/index.css">
     <link rel="shortcut icon" href="http://www.thinkwithu.com/favicon.ico"/>
-    <script type="text/javascript" src="/cn/js/public.js"></script>
+
+    <script src="/cn/words/js/jquery-1.12.2.min.js"></script>
     <script src="/cn/gre/js/jquery.SuperSlide.2.1.1.js"></script>
     <script type="text/javascript" src="/cn/words/js/num.js"></script>
-    <link rel="stylesheet" href="/cn/css/public.css"/>
-    <script src="/cn/words/js/jquery-1.12.2.min.js"></script>
     <script type="text/javascript" src="/cn/js/public.js"></script>
+
 </head>
 <body>
 <!--顶部第一栏导航-->
