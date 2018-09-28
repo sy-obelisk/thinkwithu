@@ -12,10 +12,9 @@ class GreController extends ThinkUController {
     public $enableCsrfValidation = false;
     public $layout = 'cn';
     public function actionIndex(){
-        $greContents = Method::post("http://www.greonline.cn/cn/api/gre-index");
+        $greContents = file_get_contents("http://www.greonline.cn/cn/api/gre-index");
         $greContents = json_decode($greContents,true);
         $contents = $greContents['data'];
-        var_dump($contents);die;
         return $this->renderPartial('index',$contents);
     }
 }
