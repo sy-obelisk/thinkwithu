@@ -272,7 +272,7 @@
             <div class="tm model_name_wrap" style="padding-top: 0;padding-bottom: 15px;">
                 <h1 class="new_model_name">直播课程</h1>
             </div>
-            <div class="tr zb_more"><a href="/course.html" target="_blank">MORE</a></div>
+            <div class="tr zb_more"><a href="http://www.greonline.cn/course.html" target="_blank">MORE</a></div>
             <div class="live_list_wrap relative picScroll-left">
                 <div class="bd">
                     <ul class="live_list clearfix">
@@ -280,9 +280,9 @@
                         foreach ($course as $v) {
                             ?>
                             <li>
-                                <a href="/course/<?php echo $v['id'] ?>.html" target="_blank">
+                                <a href="http://www.greonline.cn/course/<?php echo $v['id'] ?>.html" target="_blank">
                                     <div class="live_sub_img">
-                                        <img src="<?php echo $v['image'] ?>" alt="">
+                                        <img src="http://www.greonline.cn/<?php echo $v['image'] ?>" alt="">
                                         <p class="live_date"><?php echo $v['commencement'] ?></p>
                                     </div>
                                     <div class="live_text_wrap">
@@ -341,7 +341,7 @@
                                                             alt=""></div>
                                 <div class="small_info_wrap">
                                     <h1 class="small_h1"><a class="ellipsis"
-                                                            href="/beikao/d-537-<?php echo $v['id'] ?>.html"><?php echo $v['name'] ?></a>
+                                                            href="http://www.greonline.cn/beikao/d-537-<?php echo $v['id'] ?>.html"><?php echo $v['name'] ?></a>
                                     </h1>
 
                                     <p class="ellipsis small_de"><?php echo $v['answer'] ?></p>
@@ -365,7 +365,7 @@
                             ?>
                             <div class="m3_img fl">
                                 <a href="/beikao/d-538-<?php echo $v['id'] ?>.html" target="_blank">
-                                    <img src="<?php echo $v['image'] ?>" alt="">
+                                    <img src="http://www.greonline.cn/<?php echo $v['image'] ?>" alt="">
                                     <p class="ellipsis m3_img_tit"><?php echo $v['name'] ?></p>
                                 </a>
                             </div>
@@ -377,7 +377,7 @@
                             foreach ($word['contents'] as $v) {
                                 ?>
                                 <li>
-                                    <a class="inm bk_tit ellipsis" href="/beikao/d-538-<?php echo $v['id'] ?>.html"
+                                    <a class="inm bk_tit ellipsis" href="http://www.greonline.cn/beikao/d-538-<?php echo $v['id'] ?>.html"
                                        target="_blank"><?php echo $v['name'] ?></a>
                                     <span class="bk_date inm"><?php echo date("Y-m-d", strtotime($v['alternatives'])) ?></span>
                                 </li>
@@ -393,8 +393,8 @@
                         foreach ($read['imageMessage'] as $v) {
                             ?>
                             <div class="m3_img fl">
-                                <a href="/beikao/d-540-<?php echo $v['id'] ?>.html" target="_blank">
-                                    <img src="<?php echo $v['image'] ?>" alt="">
+                                <a href="http://www.greonline.cn/beikao/d-540-<?php echo $v['id'] ?>.html" target="_blank">
+                                    <img src="http://www.greonline.cn/<?php echo $v['image'] ?>" alt="">
 
                                     <p class="ellipsis m3_img_tit"><?php echo $v['name'] ?></p>
                                 </a>
@@ -407,7 +407,7 @@
                             foreach ($read['contents'] as $v) {
                                 ?>
                                 <li>
-                                    <a class="inm bk_tit ellipsis" href="/beikao/d-540-<?php echo $v['id'] ?>.html"
+                                    <a class="inm bk_tit ellipsis" href="http://www.greonline.cn/beikao/d-540-<?php echo $v['id'] ?>.html"
                                        target="_blank"><?php echo $v['name'] ?></a>
                                     <span class="bk_date inm"><?php echo date("Y-m-d", strtotime($v['alternatives'])) ?></span>
                                 </li>
@@ -423,8 +423,8 @@
                         foreach ($blank['imageMessage'] as $v) {
                             ?>
                             <div class="m3_img fl">
-                                <a href="/beikao/d-539-<?php echo $v['id'] ?>.html" target="_blank">
-                                    <img src="<?php echo $v['image'] ?>" alt="">
+                                <a href="http://www.greonline.cn/beikao/d-539-<?php echo $v['id'] ?>.html" target="_blank">
+                                    <img src="http://www.greonline.cn/<?php echo $v['image'] ?>" alt="">
 
                                     <p class="ellipsis m3_img_tit"><?php echo $v['name'] ?></p>
                                 </a>
@@ -437,7 +437,7 @@
                             foreach ($blank['contents'] as $v) {
                                 ?>
                                 <li>
-                                    <a class="inm bk_tit ellipsis" href="/beikao/d-539-<?php echo $v['id'] ?>.html"
+                                    <a class="inm bk_tit ellipsis" href="http://www.greonline.cn/beikao/d-539-<?php echo $v['id'] ?>.html"
                                        target="_blank"><?php echo $v['name'] ?></a>
                                     <span class="bk_date inm"><?php echo date("Y-m-d", strtotime($v['alternatives'])) ?></span>
                                 </li>
@@ -453,8 +453,8 @@
                         foreach ($math['imageMessage'] as $v) {
                             ?>
                             <div class="m3_img fl">
-                                <a href="/beikao/d-541-<?php echo $v['id'] ?>.html" target="_blank">
-                                    <img src="<?php echo $v['image'] ?>" alt="">
+                                <a href="http://www.greonline.cn/beikao/d-541-<?php echo $v['id'] ?>.html" target="_blank">
+                                    <img src="http://www.greonline.cn/<?php echo $v['image'] ?>" alt="">
                                     <p class="ellipsis m3_img_tit"><?php echo $v['name'] ?></p>
                                 </a>
                             </div>
@@ -466,7 +466,7 @@
                             foreach ($math['contents'] as $v) {
                                 ?>
                                 <li>
-                                    <a class="inm bk_tit ellipsis" href="/beikao/d-541-<?php echo $v['id'] ?>.html"
+                                    <a class="inm bk_tit ellipsis" href="http://www.greonline.cn/beikao/d-541-<?php echo $v['id'] ?>.html"
                                        target="_blank"><?php echo $v['name'] ?></a>
                                     <span class="bk_date inm"><?php echo date("Y-m-d", strtotime($v['alternatives'])) ?></span>
                                 </li>
@@ -482,8 +482,8 @@
                         foreach ($write['imageMessage'] as $v) {
                             ?>
                             <div class="m3_img">
-                                <a href="/beikao/d-542-<?php echo $v['id'] ?>.html" target="_blank">
-                                    <img src="<?php echo $v['image'] ?>" alt="">
+                                <a href="http://www.greonline.cn/beikao/d-542-<?php echo $v['id'] ?>.html" target="_blank">
+                                    <img src="http://www.greonline.cn/<?php echo $v['image'] ?>" alt="">
 
                                     <p class="ellipsis m3_img_tit"><?php echo $v['name'] ?></p>
                                 </a>
@@ -496,7 +496,7 @@
                             foreach ($write['contents'] as $v) {
                                 ?>
                                 <li>
-                                    <a class="inm bk_tit ellipsis" href="/beikao/d-542-<?php echo $v['id'] ?>.html"
+                                    <a class="inm bk_tit ellipsis" href="http://www.greonline.cn/beikao/d-542-<?php echo $v['id'] ?>.html"
                                        target="_blank"><?php echo $v['name'] ?></a>
                                     <span class="bk_date inm"><?php echo date("Y-m-d", strtotime($v['alternatives'])) ?></span>
                                 </li>
@@ -523,7 +523,7 @@
                 <img src="/cn/gre/images/index_newIcon04.png" alt="图标"/>
                 <p>雷哥GRE<br>最新更新题目</p>
             </div>
-            <a href="/search.html">查看更多+</a>
+            <a href="http://www.greonline.cn/search.html">查看更多+</a>
         </div>
         <div class="topic-right">
             <h4>网络最新GRE题目，及时<span><b>了解新题考点</b></span></h4>
@@ -535,7 +535,7 @@
                             if ($k < 10) {
                                 ?>
                                 <li>
-                                    <a href="/question/<?php echo $v['id'] ?>.html">
+                                    <a href="http://www.greonline.cn/question/<?php echo $v['id'] ?>.html">
                                         <div class="topic-title">
                                             【<?php echo $v['section'] ?>】-<?php echo $v['source']['alias'] ?>
                                             -<?php echo $v['id'] ?>
@@ -561,7 +561,7 @@
                             if ($k > 10) {
                                 ?>
                                 <li>
-                                    <a href="/question/<?php echo $v['id'] ?>.html">
+                                    <a href="http://www.greonline.cn/question/<?php echo $v['id'] ?>.html">
                                         <div class="topic-title">
                                             【<?php echo $v['section'] ?>】-<?php echo $v['source']['alias'] ?>
                                             -<?php echo $v['id'] ?>
@@ -654,7 +654,7 @@
                 </ul>
             </div>
             <div class="zuoti-btn">
-                <a href="/practice.html">开始做题</a>
+                <a href="http://www.greonline.cn/practice.html">开始做题</a>
             </div>
         </div>
     </div>
