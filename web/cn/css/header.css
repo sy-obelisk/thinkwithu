@@ -168,6 +168,7 @@
 .appDownload {
     float: right;
     padding: 0 30px;
+    box-sizing: border-box;
     position: relative;
     margin-right: 10px;
 
@@ -190,8 +191,10 @@
 }
 
 .appDownload span.tit_t {
+    display: inline-block;
     color: white;
     font-size: 16px;
+    margin-bottom: 10px;
 }
 
 .appDownload span.tit_t b {
@@ -212,10 +215,14 @@
     width: 140px;
     position: absolute;
     left: 0;
-    top: 20px;
+    /*top: 20px;*/
     z-index: 9999;
     background: #f3f7f7;
     display: none;
+    /*margin-top: 5px;*/
+}
+.pull_down ul{
+    /*margin-top:16px;*/
 }
 
 .pull_down ul li {
