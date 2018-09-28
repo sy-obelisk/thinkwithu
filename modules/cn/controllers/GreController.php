@@ -15,6 +15,7 @@ class GreController extends ThinkUController {
         $greContents = Method::post("http://www.greonline.cn/cn/api/gre-index");
         $greContents = json_decode($greContents,true);
         $contents = $greContents['data'];
+        var_dump($contents);die;
         return $this->renderPartial('index',$contents);
     }
 }
