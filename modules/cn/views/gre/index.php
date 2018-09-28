@@ -62,6 +62,107 @@
             <img src="/cn/Hirsi/images/search-icon.png" style="margin-left: -1px;cursor: pointer;" onclick="keySearch()"
                  alt="搜索">
         </div>
+        <div class="appDownload">
+            <span title="app下载" class="tit_t">APP <b></b></span>
+            <div class="pull_down">
+                <ul>
+                    <li>
+                        <a href="http://www.gmatonline.cn/DownloadApp.html">
+                            <div class="first_layer">
+                                <img src="http://www.gmatonline.cn/app/web_core/styles/images-3/gmatapp_logo.jpg"
+                                     alt="app logo图标"/>
+                                <span>雷哥GMAT苹果版</span>
+                            </div>
+                        </a>
+                        <div class="code_box">
+                            <img src="http://www.gmatonline.cn/app/web_core/styles/images-3/leigeQrCode.png"
+                                 alt="app二维码图片"/>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="http://www.gmatonline.cn/DownloadApp.html">
+                            <div class="first_layer">
+                                <img src="http://www.gmatonline.cn/app/web_core/styles/images-3/gmatapp_logo.jpg"
+                                     alt="app logo图标"/>
+                                <span>雷哥GMAT安卓版</span>
+                            </div>
+                        </a>
+                        <div class="code_box">
+                            <img src="http://www.gmatonline.cn/app/web_core/styles/images-3/leige-android.png"
+                                 alt="app二维码图片"/>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="http://www.toeflonline.cn/toefl_app.html">
+                            <div class="first_layer">
+                                <img src="http://www.toeflonline.cn/cn/images/toeflapp_logo.jpg" alt="app logo图标"/>
+                                <span>雷哥托福苹果版</span>
+                            </div>
+                        </a>
+                        <div class="code_box">
+                            <img src="http://www.toeflonline.cn/cn/images/app-ios.png" alt="app二维码图片"/>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="http://www.toeflonline.cn/toefl_app.html">
+                            <div class="first_layer">
+                                <img src="http://www.toeflonline.cn/cn/images/toeflapp_logo.jpg" alt="app logo图标"/>
+                                <span>雷哥托福安卓版</span>
+                            </div>
+                        </a>
+                        <div class="code_box">
+                            <img src="http://www.toeflonline.cn/cn/images/app-android.png" alt="app二维码图片"/>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="http://www.smartapply.cn/app.html">
+                            <div class="first_layer">
+                                <img src="http://www.smartapply.cn/cn/images/smart-appLogo.png" alt="app logo图标"/>
+                                <span>雷哥选校苹果版</span>
+                            </div>
+                        </a>
+                        <div class="code_box">
+                            <img src="http://www.smartapply.cn/cn/images/smart-erweima.png" alt="app二维码图片"/>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="http://www.smartapply.cn/app.html">
+                            <div class="first_layer">
+                                <img src="http://www.smartapply.cn/cn/images/smart-appLogo.png" alt="app logo图标"/>
+                                <span>雷哥选校安卓版</span>
+                            </div>
+                        </a>
+                        <div class="code_box">
+                            <img src="http://www.smartapply.cn/cn/images/anroid-smartapp.png" alt="app二维码图片"/>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="http://words.viplgw.cn/" target="_blank">
+                            <div class="first_layer">
+                                <img src="http://www.gmatonline.cn/app/web_core/styles/images/words-iosLogo.jpg" alt="app logo图标"/>
+                                <span>雷哥单词苹果版</span>
+                            </div>
+                        </a>
+                        <div class="code_box">
+                            <img src="http://www.gmatonline.cn/app/web_core/styles/images/words-ios.png" alt="app二维码图片"/>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="http://words.viplgw.cn/" target="_blank">
+                            <div class="first_layer">
+                                <img src="http://www.gmatonline.cn/app/web_core/styles/images/words-iosLogo.jpg" alt="app logo图标"/>
+                                <span>雷哥单词安卓版</span>
+                            </div>
+                        </a>
+                        <div class="code_box">
+                            <img src="/cn/images/word_android.png" alt="app二维码图片"/>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--        app下载 end-->
+        <div class="clearBr"></div>
     </div>
 </header>
 <!-----------------------------头部end------------------------------>
@@ -85,17 +186,17 @@
                     </a>
                 </li>
                 <li>
-                    <a href="" target="_blank">
+                    <a href="http://www.greonline.cn/activity/a-3422.html" target="_blank">
                     <img style="height: 100%;" src="http://www.greonline.cn//files/attach/images/20180829/1535532214229847.png" alt="banner图"/>
                     </a>
                 </li>
                 <li>
-                    <a href="" target="_blank">
+                    <a href="http://www.greonline.cn/course/7772.html" target="_blank">
                     <img style="height: 100%;" src="http://www.greonline.cn//files/attach/images/20180827/1535338478535151.png" alt="banner图"/>
                     </a>
                 </li>
                 <li>
-                    <a href="" target="_blank">
+                    <a href="http://www.greonline.cn/course/7755.html" target="_blank">
                     <img style="height: 100%;" src="http://www.greonline.cn//files/attach/images/20180408/1523179876612251.png" alt="banner图"/>
                     </a>
                 </li>
@@ -116,8 +217,8 @@
                 trigger: "click",
                 autoPlay: true,
                 easing: "easeInOutQuint",
-                delayTime: 3000,
-                interTime: 3000,
+                delayTime: 2000,
+                interTime: 2000,
                 defaultPlay: true,
                 vis: 1,
             });

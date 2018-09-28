@@ -149,29 +149,33 @@
                     <li>
                         <a href="http://www.gmatonline.cn/DownloadApp.html">
                             <div class="first_layer">
-                                <img src="/cn/Hirsi/images/gmatapp_logo.jpg" alt="app logo图标"/>
+                                <img src="http://www.gmatonline.cn/app/web_core/styles/images-3/gmatapp_logo.jpg"
+                                     alt="app logo图标"/>
                                 <span>雷哥GMAT苹果版</span>
                             </div>
                         </a>
                         <div class="code_box">
-                            <img src="/cn/Hirsi/images/leigeQrCode.png" alt="app二维码图片"/>
+                            <img src="http://www.gmatonline.cn/app/web_core/styles/images-3/leigeQrCode.png"
+                                 alt="app二维码图片"/>
                         </div>
                     </li>
                     <li>
                         <a href="http://www.gmatonline.cn/DownloadApp.html">
                             <div class="first_layer">
-                                <img src="/cn/Hirsi/images/gmatapp_logo.jpg" alt="app logo图标"/>
+                                <img src="http://www.gmatonline.cn/app/web_core/styles/images-3/gmatapp_logo.jpg"
+                                     alt="app logo图标"/>
                                 <span>雷哥GMAT安卓版</span>
                             </div>
                         </a>
                         <div class="code_box">
-                            <img src="/cn/Hirsi/images/leige-android.png" alt="app二维码图片"/>
+                            <img src="http://www.gmatonline.cn/app/web_core/styles/images-3/leige-android.png"
+                                 alt="app二维码图片"/>
                         </div>
                     </li>
                     <li>
                         <a href="http://www.toeflonline.cn/toefl_app.html">
                             <div class="first_layer">
-                                <img src="/cn/Hirsi/images/toeflapp_logo.jpg" alt="app logo图标"/>
+                                <img src="http://www.toeflonline.cn/cn/images/toeflapp_logo.jpg" alt="app logo图标"/>
                                 <span>雷哥托福苹果版</span>
                             </div>
                         </a>
@@ -182,7 +186,7 @@
                     <li>
                         <a href="http://www.toeflonline.cn/toefl_app.html">
                             <div class="first_layer">
-                                <img src="/cn/Hirsi/images/toeflapp_logo.jpg" alt="app logo图标"/>
+                                <img src="http://www.toeflonline.cn/cn/images/toeflapp_logo.jpg" alt="app logo图标"/>
                                 <span>雷哥托福安卓版</span>
                             </div>
                         </a>
@@ -215,12 +219,12 @@
                     <li>
                         <a href="http://words.viplgw.cn/" target="_blank">
                             <div class="first_layer">
-                                <img src="/cn/Hirsi/images/words-iosLogo.jpg" alt="app logo图标"/>
+                                <img src="http://www.gmatonline.cn/app/web_core/styles/images/words-iosLogo.jpg" alt="app logo图标"/>
                                 <span>雷哥单词苹果版</span>
                             </div>
                         </a>
                         <div class="code_box">
-                            <img src="/cn/Hirsi/images/words-ios.png" alt="app二维码图片"/>
+                            <img src="http://www.gmatonline.cn/app/web_core/styles/images/words-ios.png" alt="app二维码图片"/>
                         </div>
                     </li>
                     <li>
@@ -231,14 +235,14 @@
                             </div>
                         </a>
                         <div class="code_box">
-                            <img src="http://www.greonline.cn/cn/images/word_android.png" alt="app二维码图片"/>
+                            <img src="/cn/images/word_android.png" alt="app二维码图片"/>
                         </div>
                     </li>
                 </ul>
             </div>
         </div>
         <!--        app下载 end-->
-                <div class="clearBr"></div>
+        <div class="clearBr"></div>
     </div>
 </header>
 <!--nav 导航栏-->
