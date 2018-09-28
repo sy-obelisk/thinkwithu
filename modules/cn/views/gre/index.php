@@ -217,8 +217,8 @@
                 trigger: "click",
                 autoPlay: true,
                 easing: "easeInOutQuint",
-                delayTime: 2000,
-                interTime: 2000,
+                delayTime: 3000,
+                interTime: 5000,
                 defaultPlay: true,
                 vis: 1,
             });
