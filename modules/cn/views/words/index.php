@@ -19,26 +19,25 @@
     <!-- 让360双核浏览器用webkit内核渲染页面-->
     <!-- ================================================== -->
     <meta name="renderer" content="webkit">
+    <title>雷哥单词APP，一款只为出国留学考生准备的应试词汇APP！</title>
     <!-- Mobile Specific Metas
    ================================================== -->
     <!-- !!!注意 minimal-ui 是IOS7.1的新属性，最小化浏览器UI -->
-        <link rel="stylesheet" href="/cn/words/css/globle.css">
-        <link rel="stylesheet" href="/cn/words/css/animate.min.css">
-        <link rel="stylesheet" href="/cn/words/css/index.css">
-        <link rel="stylesheet" href="http://www.viplgw.cn/cn/css/public.css"/>
-        <script src="/cn/words/js/jquery-1.12.2.min.js"></script>
-        <script type="text/javascript" src="/cn/words/js/num.js"></script>
-    <title>雷哥单词APP，一款只为出国留学考生准备的应试词汇APP！</title>
-    <script src="/cn/ielts/js/jquery.SuperSlide.2.1.1.js"></script>
+    <link rel="stylesheet" href="/cn/words/css/globle.css">
+    <link rel="stylesheet" href="/cn/words/css/animate.min.css">
+    <link rel="stylesheet" href="/cn/words/css/index.css">
+<!--    <link rel="stylesheet" href="http://www.viplgw.cn/cn/css/public.css"/>-->
+    <link rel="stylesheet" href="/cn/gre/css/reset.css">
     <link rel="stylesheet" href="/cn/css/header.css"/>
     <link rel="stylesheet" href="/cn/css/footer.css"/>
-    <link rel="stylesheet" href="/cn/css/public.css"/>
-    <link rel="stylesheet" href="/cn/css/gmatSheet.css"/>
-    <script type="text/javascript" src="/cn/js/gmatSheet.js"></script>
-    <link rel="stylesheet" href="/cn/Hirsi/css/reset.css">
-    <link rel="stylesheet" href="/cn/Hirsi/css/index.css">
-    <link rel="stylesheet" href="/cn/css/fonts/font-awesome/css/font-awesome.min.css"/>
+
+    <link rel="stylesheet" href="/cn/gre/css/index.css">
     <link rel="shortcut icon" href="http://www.thinkwithu.com/favicon.ico"/>
+    <script type="text/javascript" src="/cn/js/public.js"></script>
+    <script src="/cn/gre/js/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="/cn/words/js/num.js"></script>
+    <link rel="stylesheet" href="/cn/css/public.css"/>
+    <script src="/cn/words/js/jquery-1.12.2.min.js"></script>
     <script type="text/javascript" src="/cn/js/public.js"></script>
 </head>
 <body>
@@ -64,6 +63,107 @@
             <img src="/cn/Hirsi/images/search-icon.png" style="margin-left: -1px;cursor: pointer;" onclick="keySearch()"
                  alt="搜索">
         </div>
+        <div class="appDownload">
+            <span title="app下载" class="tit_t">APP <b></b></span>
+            <div class="pull_down">
+                <ul>
+                    <li>
+                        <a href="http://www.gmatonline.cn/DownloadApp.html">
+                            <div class="first_layer">
+                                <img src="http://www.gmatonline.cn/app/web_core/styles/images-3/gmatapp_logo.jpg"
+                                     alt="app logo图标"/>
+                                <span>雷哥GMAT苹果版</span>
+                            </div>
+                        </a>
+                        <div class="code_box">
+                            <img src="http://www.gmatonline.cn/app/web_core/styles/images-3/leigeQrCode.png"
+                                 alt="app二维码图片"/>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="http://www.gmatonline.cn/DownloadApp.html">
+                            <div class="first_layer">
+                                <img src="http://www.gmatonline.cn/app/web_core/styles/images-3/gmatapp_logo.jpg"
+                                     alt="app logo图标"/>
+                                <span>雷哥GMAT安卓版</span>
+                            </div>
+                        </a>
+                        <div class="code_box">
+                            <img src="http://www.gmatonline.cn/app/web_core/styles/images-3/leige-android.png"
+                                 alt="app二维码图片"/>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="http://www.toeflonline.cn/toefl_app.html">
+                            <div class="first_layer">
+                                <img src="http://www.toeflonline.cn/cn/images/toeflapp_logo.jpg" alt="app logo图标"/>
+                                <span>雷哥托福苹果版</span>
+                            </div>
+                        </a>
+                        <div class="code_box">
+                            <img src="http://www.toeflonline.cn/cn/images/app-ios.png" alt="app二维码图片"/>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="http://www.toeflonline.cn/toefl_app.html">
+                            <div class="first_layer">
+                                <img src="http://www.toeflonline.cn/cn/images/toeflapp_logo.jpg" alt="app logo图标"/>
+                                <span>雷哥托福安卓版</span>
+                            </div>
+                        </a>
+                        <div class="code_box">
+                            <img src="http://www.toeflonline.cn/cn/images/app-android.png" alt="app二维码图片"/>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="http://www.smartapply.cn/app.html">
+                            <div class="first_layer">
+                                <img src="http://www.smartapply.cn/cn/images/smart-appLogo.png" alt="app logo图标"/>
+                                <span>雷哥选校苹果版</span>
+                            </div>
+                        </a>
+                        <div class="code_box">
+                            <img src="http://www.smartapply.cn/cn/images/smart-erweima.png" alt="app二维码图片"/>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="http://www.smartapply.cn/app.html">
+                            <div class="first_layer">
+                                <img src="http://www.smartapply.cn/cn/images/smart-appLogo.png" alt="app logo图标"/>
+                                <span>雷哥选校安卓版</span>
+                            </div>
+                        </a>
+                        <div class="code_box">
+                            <img src="http://www.smartapply.cn/cn/images/anroid-smartapp.png" alt="app二维码图片"/>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="http://words.viplgw.cn/" target="_blank">
+                            <div class="first_layer">
+                                <img src="http://www.gmatonline.cn/app/web_core/styles/images/words-iosLogo.jpg" alt="app logo图标"/>
+                                <span>雷哥单词苹果版</span>
+                            </div>
+                        </a>
+                        <div class="code_box">
+                            <img src="http://www.gmatonline.cn/app/web_core/styles/images/words-ios.png" alt="app二维码图片"/>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="http://words.viplgw.cn/" target="_blank">
+                            <div class="first_layer">
+                                <img src="http://www.gmatonline.cn/app/web_core/styles/images/words-iosLogo.jpg" alt="app logo图标"/>
+                                <span>雷哥单词安卓版</span>
+                            </div>
+                        </a>
+                        <div class="code_box">
+                            <img src="/cn/images/word_android.png" alt="app二维码图片"/>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--        app下载 end-->
+        <div class="clearBr"></div>
     </div>
 </header>
 <!-----------------------------头部end------------------------------>
@@ -527,7 +627,7 @@
             return false;
         }else{
             $.ajax({
-                url:"/cn/index/word-search",
+                url:"http://words.viplgw.cn/cn/index/word-search",
                 type:"post",
                 data:{
                     content:content
@@ -564,7 +664,6 @@
 
         var id=$(".a-s-top input[type='text']").attr("data-id");
         var con=$(".a-s-top input[type='text']").val();
-        console.log(id)
 
         console.log(con)
         if(!id){
@@ -587,7 +686,7 @@
         }
 
         $.ajax({
-            url:"/cn/index/word-message",
+            url:"http://words.viplgw.cn/cn/index/word-message",
             type:"post",
             data:{
                 id:id

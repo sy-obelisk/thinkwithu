@@ -76,7 +76,7 @@
     width: 1001px;
     height:448px;
     margin: 0 auto;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 .FocusPicture img{
     width: 100%;
@@ -165,75 +165,94 @@
 }
 
 /*app下载*/
-
-.appDownload{
+.appDownload {
     float: right;
-    height: 100%;
     padding: 0 30px;
     position: relative;
-    /*right: 400px;*/
     margin-right: 10px;
+
 }
-.appDownload:hover{
+
+.appDownload:hover {
     cursor: pointer;
+    height: 100%;
     background: #f3f7f7;
+    /*box-sizing: border-box;*/
+    /*padding:10px;*/
 }
-.appDownload:hover span.tit_t{
+
+.appDownload:hover span.tit_t {
     color: #000000;
 }
-.appDownload:hover span.tit_t b{
+
+.appDownload:hover span.tit_t b {
     border-top: 5px #000000 solid;
 }
-.appDownload span.tit_t{
+
+.appDownload span.tit_t {
     color: white;
+    font-size: 16px;
 }
-.appDownload span.tit_t b{
+
+.appDownload span.tit_t b {
     width: 0;
     height: 0;
-    display:inline-block;
+    display: inline-block;
     border-top: 5px white solid;
     border-left: 5px transparent solid;
     border-right: 5px transparent solid;
 }
-.appDownload:hover .pull_down{
-    display:block;
+
+.appDownload:hover .pull_down {
+    display: block;
+    /*display: inline-block;*/
 }
-.pull_down{
+
+.pull_down {
     width: 140px;
     position: absolute;
     left: 0;
-    top: 42px;
+    top: 20px;
     z-index: 9999;
     background: #f3f7f7;
     display: none;
-
-
 }
-.pull_down ul li{
-    line-height: 40px;
+
+.pull_down ul li {
     position: relative;
+    padding:10px;
+    width: 140px;
+    box-sizing: border-box;
+
 }
-.pull_down ul li:hover .code_box{
+
+.pull_down ul li:hover .code_box {
     display: block;
 }
-.pull_down ul li:hover{
+
+.pull_down ul li:hover {
     background: #3e3e3e;
+    padding:10px;
+    width: 140px;
+    box-sizing: border-box;
+
     color: white;
 }
-.pull_down ul li:hover a{
+
+.pull_down ul li:hover span {
     color: white;
 }
-.pull_down ul li:hover span{
-    color: white;
-}
-.first_layer{
+
+.first_layer {
     font-size: 12px;
 }
-.first_layer img{
+
+.first_layer img {
     width: 20px;
-    margin-left: 10px;
+    /*margin-left: 10px;*/
     vertical-align: middle;
 }
+
 .code_box{
     position: absolute;
     right: -100px;
