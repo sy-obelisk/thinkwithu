@@ -65,7 +65,7 @@
         <div class="appDownload">
             <span title="app下载" class="tit_t">APP <b></b></span>
             <div class="pull_down">
-                <ul>
+                <ul >
                     <li>
                         <a href="http://www.gmatonline.cn/DownloadApp.html">
                             <div class="first_layer">
