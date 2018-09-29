@@ -180,11 +180,11 @@
     <div class="w12 slideBox-1 relative" style="margin-top:-5px">
         <div class="b1-bd">
             <ul>
-                <li>
-                    <a href="http://words.viplgw.cn/" target="_blank">
-                     <img style="height: 100%;" src="http://www.greonline.cn//files/attach/images/20180531/1527732987884417.png" alt="banner图"/>
-                    </a>
-                </li>
+<!--                <li>-->
+<!--                    <a href="http://words.viplgw.cn/" target="_blank">-->
+<!--                     <img style="height: 100%;" src="http://www.greonline.cn//files/attach/images/20180531/1527732987884417.png" alt="banner图"/>-->
+<!--                    </a>-->
+<!--                </li>-->
                 <li>
                     <a href="http://www.greonline.cn/activity/a-3422.html" target="_blank">
                     <img style="height: 100%;" src="http://www.greonline.cn//files/attach/images/20180829/1535532214229847.png" alt="banner图"/>
