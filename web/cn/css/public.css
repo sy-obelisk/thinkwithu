@@ -17,6 +17,14 @@ body{
     font-family: '微软雅黑';
     font-size: 14px;
 }
+@font-face {
+    font-family: 'iconfont';  /* project id 864853 */
+    src: url('//at.alicdn.com/t/font_864853_x51cdv17cq.eot');
+    src: url('//at.alicdn.com/t/font_864853_x51cdv17cq.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_864853_x51cdv17cq.woff') format('woff'),
+    url('//at.alicdn.com/t/font_864853_x51cdv17cq.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_864853_x51cdv17cq.svg#iconfont') format('svg');
+}
 img{
     border: 0 none;
 }
@@ -2589,3 +2597,82 @@ a:hover{
     display: none;
 }
 /*zxk end*/
+/*trump start 头部共用css*/
+/*顶部*/
+.headTop{
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    background: rgb(248,248,248);
+    box-shadow:2px 2px 4px rgb(242,242,242) ;
+}
+.headTopContent{
+    width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+.img_left{
+    float: left;
+}
+.img_right{
+    float: right;
+}
+.phone_index,.phoneNum_index{
+    color: rgb(153,153,153);
+    vertical-align: middle;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+.consultation_index{
+    display: inline-block;
+    background: rgb(153,68,153);
+    border-radius: 10px;
+    color: white;
+    padding: 2px 10px ;
+}
+/*搜索框*/
+.seach_input{
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+    overflow: hidden;
+}
+.seachInputContent{
+    width: 1200px ;
+    margin: auto;
+    overflow: hidden;
+}
+.logo-new{
+    float: left;
+}
+.search_div{
+    width: 400px;
+    margin: auto;
+    border-radius: 20px;
+    border: 1px solid rgb(153,68,153);
+    padding: 10px;
+    position: relative;
+    margin-top: 6px;
+}
+.seach_index{
+    color: rgb(153,153,153);
+    vertical-align: middle;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+.input_seach{
+    border: none;
+    width: 330px;
+}
+.seach_word{
+    background: rgb(153,68,153);
+    color: white;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    width: 60px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    cursor: pointer;
+}
