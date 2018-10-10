@@ -1,5 +1,5 @@
 <nav class="nav-wrap">
-    <div class="w10 nav-top" style="overflow: inherit;">
+    <div class="w10 nav-top w12" style="overflow: inherit;">
         <a href="/"><img class="logo" src="/cn/Hirsi/images/sy-logo3.png" alt=""></a>
         <ul class="inb nav-list clearfix" style="margin-top: 6px">
             <li><a class="<?php echo $controller == 'index' ? 'on on-hover' : '' ?>  nav1-link" href="/">首页</a></li>

@@ -233,10 +233,10 @@
 <!--</div>-->
 <!--搜索出来的内容显示-->
 <div class="w_threeSort anne-flex">
-    <div class="w_t_left animated">
+    <div class="w_t_left ">
         <img src="/cn/words/images/word-iphoneSearch.png" alt="图片"/>
     </div>
-    <div class="w_t_right animated">
+    <div class="w_t_right ">
         <h4>hypothesis  假设</h4>
         <span>
              <span class="small_font">英  [haɪ'pɒθɪsɪs]</span>
@@ -665,7 +665,6 @@
         var id=$(".a-s-top input[type='text']").attr("data-id");
         var con=$(".a-s-top input[type='text']").val();
 
-        console.log(con)
         if(!id){
             if(con){//手动输入完整单词而没有选择下拉单词时的id
                 $(".words-xiala ul li").each(function () {
