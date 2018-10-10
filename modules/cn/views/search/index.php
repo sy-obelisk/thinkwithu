@@ -33,7 +33,7 @@
   <link rel="stylesheet" href="/cn/css/public.css"/>
 
   <link rel="stylesheet" href="/cn/Hirsi/css/reset.css">
-  <link rel="stylesheet" href="/cn/Hirsi/css/index.css">
+<!--  <link rel="stylesheet" href="/cn/Hirsi/css/index.css">-->
   <link rel="stylesheet" href="/cn/css/search.css">
   <script type="text/javascript" src="/cn/js/public.js"></script>
   <title>申友雅思在线_雅思备考_雅思培训_雅思网络课程_雅思在线课程_雅思网课_雅思直播课_IELTS申友</title>

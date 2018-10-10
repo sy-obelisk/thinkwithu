@@ -111,7 +111,7 @@
     <link rel="stylesheet" href="/cn/css/footer.css"/>
     <link rel="stylesheet" href="/cn/css/public.css"/>
     <link rel="stylesheet" href="/cn/Hirsi/css/reset.css">
-    <link rel="stylesheet" href="/cn/Hirsi/css/index.css?v=1.1">
+    <link rel="stylesheet" href="/cn/Hirsi/css/index.css">
     <link rel="stylesheet" type="text/css" href="/cn/css/iconfont.css">
     <link rel="stylesheet" href="/cn/css/fonts/font-awesome/css/font-awesome.min.css"/>
     <link rel="shortcut icon" href="http://www.thinkwithu.com/favicon.ico"/>
@@ -120,38 +120,167 @@
     <script type="text/javascript" src="/cn/js/public.js"></script>
 </head>
 <body>
-<?php use app\commands\front\ContactWidget; ?>
-<!--header 头部-->
-<!--<div class="headTop">-->
-<!--    <div class="headTopContent">-->
-<!--        <div class="img_left">-->
-<!--            <img src="/cn/Hirsi/images/sy-text-new.png" alt="">-->
-<!--        </div>-->
-<!--        <div class="img_right">-->
-<!--            <i class="iconfont phone_index">&#xe6df;</i>-->
-<!--            <span class="phoneNum_index">400-600-1123</span>-->
-<!--            <span class="consultation_index">在线咨询>></span>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
-<!--<div class="seach_input">-->
-<!--    <div class="seachInputContent">-->
-<!--        <a href="/"><img class="logo-new" src="/cn/Hirsi/images/sy-logo3.png" alt=""></a>-->
-<!--        <div class="search_div">-->
-<!--            <i class="iconfont seach_index">&#xe6bc;</i>-->
-<!--            <input type="text" placeholder="关键词" class="input_seach">-->
-<!--            <div class="seach_word">搜索</div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
-<!--nav 导航栏-->
-<?php use app\commands\front\BannerWidget;?>
-<?php BannerWidget::begin();?>
-<?php BannerWidget::end();?>
-<!---------------------------左边悬浮窗---------------------------------->
-<?php use app\commands\front\LeftSuspensionWidget;?>
-<?php LeftSuspensionWidget::begin();?>
-<?php LeftSuspensionWidget::end();?>
+<!--banner-->
+<section class="bannerWrap">
+    <div class="banner banner_head" style="overflow: hidden;max-height: 460px">
+        <div class="hd_banner hd">
+            <ul>
+                <!--            循环li-->
+                <li class=""></li>
+                <li class=""></li>
+                <li class=""></li>
+            </ul>
+        </div>
+        <div class="bd_banner bd" style="width: 100%;overflow: hidden;">
+            <ul>
+                <!--            循环li-->
+                <li>
+                    <a href="" target="_blank"><img src="http://www.thinkwithu.com/files/attach/images/20171019/1508404770815637.jpg" alt="">
+                    </a>
+
+                </li>
+                <li>
+                    <a href="" target="_blank"><img src="http://www.thinkwithu.com/files/attach/images/20171019/1508404770815637.jpg" alt="">
+                    </a>
+
+                </li>
+                <li>
+                    <a href="" target="_blank"><img src="http://www.thinkwithu.com/files/attach/images/20171019/1508404770815637.jpg" alt="">
+                    </a>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</section>
+
+<section class="index_Record">
+    <img class="Record_map" src="/cn/Hirsi/images/map.png" alt="">
+    <!--部分战绩-->
+    <div class="Record_content">
+        <p class="Record_title">部分战绩</p>
+        <p class="Record_title_l">连续五年 , 案列辉煌</p>
+        <div class="ut_logo">
+            <div class="logo_content">
+                <img class="uyLogo" src="/cn/Hirsi/images/stanford.gif" alt="">
+                <div>
+                    <p class="ut_name">Stanford</p>
+                    <p class="ut_num"><span>60</span>例</p>
+                </div>
+            </div>
+            <div class="logo_content">
+                <img class="uyLogo" src="/cn/Hirsi/images/princeton.gif" alt="">
+                <div>
+                    <p class="ut_name">Princeton</p>
+                    <p class="ut_num"><span>25</span>例</p>
+                </div>
+            </div>
+            <div class="logo_content">
+                <img class="uyLogo" src="/cn/Hirsi/images/mit.gif" alt="" style="margin-top: 20px">
+                <div>
+                    <p class="ut_name">MIT</p>
+                    <p class="ut_num"><span>48</span>例</p>
+                </div>
+            </div>
+            <div class="logo_content">
+                <img class="uyLogo" src="/cn/Hirsi/images/berkeley.gif" alt="">
+                <div>
+                    <p class="ut_name">Berkeley</p>
+                    <p class="ut_num"><span>83</span>例</p>
+                </div>
+            </div>
+        </div>
+        <div class="ut_logo">
+            <div class="logo_content">
+                <img class="uyLogo" src="/cn/Hirsi/images/cmu.gif" alt="">
+                <div>
+                    <p class="ut_name">CMU</p>
+                    <p class="ut_num"><span>78</span>例</p>
+                </div>
+            </div>
+            <div class="logo_content">
+                <img class="uyLogo" src="/cn/Hirsi/images/harvard.gif" alt="">
+                <div>
+                    <p class="ut_name">Harvard</p>
+                    <p class="ut_num"><span>39</span>例</p>
+                </div>
+            </div>
+            <div class="logo_content">
+                <img class="uyLogo" src="/cn/Hirsi/images/oxford.gif" alt="">
+                <div>
+                    <p class="ut_name">Oxford</p>
+                    <p class="ut_num"><span>8</span>例</p>
+                </div>
+            </div>
+            <div class="logo_content">
+                <img class="uyLogo" src="/cn/Hirsi/images/cambridge.gif" alt="">
+                <div>
+                    <p class="ut_name">Cambridge</p>
+                    <p class="ut_num"><span>14</span>例</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--留学服务-->
+    <div class="study_service">
+        <p class="Record_title">留学服务</p>
+        <div class="service_line"></div>
+        <div class="first_title"><span>|</span>留学服务</div>
+        <div class="service_list">
+            <!--留学服务轮播  循环li-->
+            <div class="service_bd">
+                <ul>
+                    <li>
+                        <img src="" alt="">
+                        <div class="service_bot">
+                            <p>美国星程计划</p>
+                            <a href="">查看详情</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                        <div class="service_bot">
+                            <p>美国星程计划</p>
+                            <a href="">查看详情</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                        <div class="service_bot">
+                            <p>美国星程计划</p>
+                            <a href="">查看详情</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                        <div class="service_bot">
+                            <p>美国星程计划</p>
+                            <a href="">查看详情</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                        <div class="service_bot">
+                            <p>美国星程计划</p>
+                            <a href="">查看详情</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                        <div class="service_bot">
+                            <p>美国星途计划</p>
+                            <a href="">查看详情</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <a class="next"><i class="iconfont next_icon">&#xe602;</i></a>
+            <a class="prev"><i class="iconfont prev_icon">&#xe601;</i></a>
+        </div>
+
+    </div>
+</section>
 
 <?php if ($url == '/gmatsheet.html' || $url == '/mentor.html' || $url == '/toeflsheet.html') { ?>
     <div class="contactWay">
@@ -213,9 +342,6 @@
 }
 else{
 ?>
-    <!--联系申友-->
-    <?php ContactWidget::begin(); ?>
-    <?php ContactWidget::end(); ?>
     <script type="text/javascript">
         jQuery(".connection").slide({mainCell: ".connectBd", trigger: "mouseover"});
     </script>
@@ -223,21 +349,14 @@ else{
 }
 ?>
 
-<!-----------------------------尾部------------------------------>
-<?php use app\commands\front\FooterWidget; ?>
-<?php FooterWidget::begin(); ?>
-<?php FooterWidget::end(); ?>
-<!-----------------------------尾部end------------------------------>
-<!-------------------------------------------------右边的悬浮窗------------------------------------------->
-<?php //use app\commands\front\RightSuspensionWidget;?>
-<?php //RightSuspensionWidget::begin();?>
-<?php //RightSuspensionWidget::end();?>
-<!----------------------------------------------左边悬浮窗-------------------------------------------------------------->
-<?php //use app\commands\front\LeftSuspensionWidget;?>
-<?php //LeftSuspensionWidget::begin();?>
-<?php //LeftSuspensionWidget::end();?>
+
 </body>
 <script>
+    //首页轮播初始化
+    jQuery(".banner_head").slide({mainCell:".bd ul",effect:"leftLoop",autoPlay:true});
+    //留学服务轮播展示
+    jQuery(".service_list").slide({mainCell:".service_bd ul",autoPage:true,effect:"left",autoPlay:true,vis:5});
+
     var H = $(window).height();
     mh = (H - 322) / 2;
     setTimeout(function(){

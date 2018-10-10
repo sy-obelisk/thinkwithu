@@ -36,7 +36,7 @@ class IndexController extends ThinkUController {
 //            default:
 //                break;
 //        }
-        return $this->renderPartial('index');
+        return $this->render('index');
     }
 
     /**

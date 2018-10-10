@@ -188,7 +188,6 @@
     });
 
     $('.refer_con ul li').mouseover(function () {
-      console.log('aa');
       $(this).children().children('.animated').show();
     });
     $('.refer_con ul li').mouseout(function () {
