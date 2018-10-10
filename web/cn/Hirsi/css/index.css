@@ -1,10 +1,13 @@
 .w10 {
     position: relative;
-    width: 1228px;
+    width: 1000px;
     margin: 0 auto;
     height: 100%;
     /*overflow: hidden;*/
     /*outline: 1px solid red;*/
+}
+.w12{
+    width: 1228px!important;
 }
 
 /************************头部********************/
