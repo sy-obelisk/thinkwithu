@@ -4,7 +4,9 @@
  * by Obelisk
  */
 namespace app\modules\cn\controllers;
+
 use yii;
+use app\libs\Schools;
 use app\modules\cn\models\Content;
 use app\modules\cn\models\Category;
 use app\libs\ThinkUController;
@@ -36,7 +38,25 @@ class IndexController extends ThinkUController {
 //            default:
 //                break;
 //        }
-        return $this->renderPartial('index');
+
+        $banner = Content::getContent(['fields' => 'url', 'category' => "190,223", 'pageSize' => 10]);
+        $abroadPro = Content::getContent(['fields' => 'url', 'category' => "261", 'pageSize' => 10]);
+        $school = new Schools();
+        $university['us'] =  json_decode($school->CurlRequest('school',['keyword'=>'', 'schoolid'=>'', 'type'=>'', 'catid'=>"155", 'pageNumber'=>1, 'pageSize'=>8,'hot'=>'']),TRUE);
+        $university['uk'] =  json_decode($school->CurlRequest('school',['keyword'=>'', 'schoolid'=>'', 'type'=>'', 'catid'=>"156", 'pageNumber'=>1, 'pageSize'=>8,'hot'=>'']),TRUE);
+        $university['canada'] =  json_decode($school->CurlRequest('school',['keyword'=>'', 'schoolid'=>'', 'type'=>'', 'catid'=>"157", 'pageNumber'=>1, 'pageSize'=>8,'hot'=>'']),TRUE);
+        $university['australia'] =  json_decode($school->CurlRequest('school',['keyword'=>'', 'schoolid'=>'', 'type'=>'', 'catid'=>"158", 'pageNumber'=>1, 'pageSize'=>8,'hot'=>'']),TRUE);
+        $university['singapore'] =  json_decode($school->CurlRequest('school',['keyword'=>'', 'schoolid'=>'', 'type'=>'', 'catid'=>"159", 'pageNumber'=>1, 'pageSize'=>8,'hot'=>'']),TRUE);
+        $university['hk'] =  json_decode($school->CurlRequest('school',['keyword'=>'', 'schoolid'=>'', 'type'=>'', 'catid'=>"160", 'pageNumber'=>1, 'pageSize'=>8,'hot'=>'']),TRUE);
+        $university['europe'] =  json_decode($school->CurlRequest('school',['keyword'=>'', 'schoolid'=>'', 'type'=>'', 'catid'=>"520", 'pageNumber'=>1, 'pageSize'=>8,'hot'=>'']),TRUE);
+        $university['asia'] =  json_decode($school->CurlRequest('school',['keyword'=>'', 'schoolid'=>'', 'type'=>'', 'catid'=>"521", 'pageNumber'=>1, 'pageSize'=>8,'hot'=>'']),TRUE);
+//        var_dump($university);die;
+        $news['gmat'] = Content::getContent(['pageStr' => 1,'category' => "115,102",'pageSize'=>15,'order'=>'id desc']);
+        $news['toefl'] = Content::getContent(['pageStr' => 1,'category' => "116,102",'pageSize'=>15,'order'=>'id desc']);
+        $news['gre'] = Content::getContent(['pageStr' => 1,'category' => "171,102",'pageSize'=>15,'order'=>'id desc']);
+        $news['ielts'] = Content::getContent(['pageStr' => 1,'category' => "72,102",'pageSize'=>15,'order'=>'id desc']);
+        $news['sat'] = Content::getContent(['pageStr' => 1,'category' => "173,102",'pageSize'=>15,'order'=>'id desc']);
+        return $this->renderPartial('index',['banner'=>$banner,'abroadPro'=>$abroadPro,'university'=>$university,'news'=>$news]);
     }
 
     /**
