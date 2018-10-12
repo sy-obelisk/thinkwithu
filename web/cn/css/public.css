@@ -2419,7 +2419,7 @@ a:hover{
     position: fixed;
     right: 5px;
     top: 50%;
-    z-index: 55;
+    z-index: 99;
     box-shadow: 0 0 5px #969696;
 }
 .refer_close{
