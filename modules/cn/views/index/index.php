@@ -126,29 +126,21 @@
         <div class="hd_banner hd">
             <ul>
                 <!--            循环li-->
+                <?php foreach($banner as $v){?>
                 <li class=""></li>
-                <li class=""></li>
-                <li class=""></li>
+                <?php }?>
             </ul>
         </div>
         <div class="bd_banner bd" style="width: 100%;overflow: hidden;">
             <ul>
                 <!--            循环li-->
+                <?php foreach($banner as $v){?>
                 <li>
-                    <a href="" target="_blank"><img src="http://www.thinkwithu.com/files/attach/images/20171019/1508404770815637.jpg" alt="">
+                    <a href="<?php echo $v['url']?>" target="_blank">
+                        <img src="http://www.thinkwithu.com/<?php echo $v['image']?>" alt="留学活动">
                     </a>
-
                 </li>
-                <li>
-                    <a href="" target="_blank"><img src="http://www.thinkwithu.com/files/attach/images/20171019/1508404770815637.jpg" alt="">
-                    </a>
-
-                </li>
-                <li>
-                    <a href="" target="_blank"><img src="http://www.thinkwithu.com/files/attach/images/20171019/1508404770815637.jpg" alt="">
-                    </a>
-
-                </li>
+                <?php }?>
             </ul>
         </div>
     </div>
@@ -231,48 +223,15 @@
             <!--留学服务轮播  循环li-->
             <div class="service_bd">
                 <ul>
+                    <?php foreach($abroadPro as $v){?>
                     <li>
-                        <img src="" alt="">
+                        <img src="<?php echo $v['image']?>" alt="">
                         <div class="service_bot">
-                            <p>美国星程计划</p>
-                            <a href="">查看详情</a>
+                            <p><?php echo $v['name']?></p>
+                            <a href="/word-details/<?php echo $v['id']?>/index,261.html">查看详情</a>
                         </div>
                     </li>
-                    <li>
-                        <img src="" alt="">
-                        <div class="service_bot">
-                            <p>美国星程计划</p>
-                            <a href="">查看详情</a>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="" alt="">
-                        <div class="service_bot">
-                            <p>美国星程计划</p>
-                            <a href="">查看详情</a>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="" alt="">
-                        <div class="service_bot">
-                            <p>美国星程计划</p>
-                            <a href="">查看详情</a>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="" alt="">
-                        <div class="service_bot">
-                            <p>美国星程计划</p>
-                            <a href="">查看详情</a>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="" alt="">
-                        <div class="service_bot">
-                            <p>美国星途计划</p>
-                            <a href="">查看详情</a>
-                        </div>
-                    </li>
+                    <?php }?>
                 </ul>
             </div>
             <a class="next"><i class="iconfont next_icon">&#xe602;</i></a>
@@ -394,91 +353,216 @@
                 </div>
                 <div class="encyclopedia_right"><!--循环li-->
                     <ul>
+                        <?php  $school = new app\libs\Schools();
+                        $us= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "155", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
+//                        echo '<pre>';var_dump($us);
+//                        die;
+                        foreach($us['data'] as $k=>$v){
+                            if(is_numeric($k)){
+                        ?>
                         <li class="ency_school">
                             <div class="ency_logo">
-                                <img src="/cn/Hirsi/images/berkeley.gif" alt="">
+                                <img src="http://schools.smartapply.cn/<?php echo $v['image']?>" alt="">
                             </div>
-                            <p class="ency_name">哈佛大学</p>
-                            <p class="ency_name_en">Harvad  University</p>
-                            <p class="ency_rank"><i class="iconfont trophy">&#xe60c;</i> 学校排名: <span>02</span></p>
+                            <p class="ency_name"><?php echo $v['name']?></p>
+                            <p class="ency_name_en"><?php echo $v['title']?></p>
+                            <p class="ency_rank"><i class="iconfont trophy">&#xe60c;</i> 学校排名: <span><?php echo $v['s_rank']?></span></p>
                             <div class="ency_bottom">
                                 <span><a href=""><i class="iconfont people">&#xe74e;</i>推荐导师</a></span>
                                 <span><a href=""><i class="iconfont fire">&#xe614;</i>热门案列</a></span>
                             </div>
                             <div class="ency_mask"><!--鼠标移入的遮罩层-->
                                 <div class="ency_test"><a href="">录取几率测评</a></div>
-                                <div class="ency_look"><a href="">查看学校</a></div>
+                                <div class="ency_look"><a href=" /schools/<?php echo $v['id']?>.html">查看学校</a></div>
                             </div>
                         </li>
-                        <li class="ency_school">
-                            <div class="ency_logo">
-                                <img src="/cn/Hirsi/images/berkeley.gif" alt="">
-                            </div>
-                            <p class="ency_name">哈佛大学</p>
-                            <p class="ency_name_en">Harvad  University</p>
-                            <p class="ency_rank"><i class="iconfont trophy">&#xe60c;</i> 学校排名: <span>02</span></p>
-                            <div class="ency_bottom">
-                                <span><a href=""><i class="iconfont people">&#xe74e;</i>推荐导师</a></span>
-                                <span><a href=""><i class="iconfont fire">&#xe614;</i>热门案列</a></span>
-                            </div>
-                            <div class="ency_mask"><!--鼠标移入的遮罩层-->
-                                <div class="ency_test"><a href="">录取几率测评</a></div>
-                                <div class="ency_look"><a href="">查看学校</a></div>
-                            </div>
-                        </li>
-                        <li class="ency_school">
-                            <div class="ency_logo">
-                                <img src="/cn/Hirsi/images/berkeley.gif" alt="">
-                            </div>
-                            <p class="ency_name">哈佛大学</p>
-                            <p class="ency_name_en">Harvad  University</p>
-                            <p class="ency_rank"><i class="iconfont trophy">&#xe60c;</i> 学校排名: <span>02</span></p>
-                            <div class="ency_bottom">
-                                <span><a href=""><i class="iconfont people">&#xe74e;</i>推荐导师</a></span>
-                                <span><a href=""><i class="iconfont fire">&#xe614;</i>热门案列</a></span>
-                            </div>
-                            <div class="ency_mask"><!--鼠标移入的遮罩层-->
-                                <div class="ency_test"><a href="">录取几率测评</a></div>
-                                <div class="ency_look"><a href="">查看学校</a></div>
-                            </div>
-                        </li>
-                        <li class="ency_school">
-                            <div class="ency_logo">
-                                <img src="/cn/Hirsi/images/berkeley.gif" alt="">
-                            </div>
-                            <p class="ency_name">哈佛大学</p>
-                            <p class="ency_name_en">Harvad  University</p>
-                            <p class="ency_rank"><i class="iconfont trophy">&#xe60c;</i> 学校排名: <span>02</span></p>
-                            <div class="ency_bottom">
-                                <span><a href=""><i class="iconfont people">&#xe74e;</i>推荐导师</a></span>
-                                <span><a href=""><i class="iconfont fire">&#xe614;</i>热门案列</a></span>
-                            </div>
-                            <div class="ency_mask"><!--鼠标移入的遮罩层-->
-                                <div class="ency_test"><a href="">录取几率测评</a></div>
-                                <div class="ency_look"><a href="">查看学校</a></div>
-                            </div>
-                        </li>
-                        <li class="ency_school">
-                            <div class="ency_logo">
-                                <img src="/cn/Hirsi/images/berkeley.gif" alt="">
-                            </div>
-                            <p class="ency_name">哈佛大学</p>
-                            <p class="ency_name_en">Harvad  University</p>
-                            <p class="ency_rank"><i class="iconfont trophy">&#xe60c;</i> 学校排名: <span>02</span></p>
-                            <div class="ency_bottom">
-                                <span><a href=""><i class="iconfont people">&#xe74e;</i>推荐导师</a></span>
-                                <span><a href=""><i class="iconfont fire">&#xe614;</i>热门案列</a></span>
-                            </div>
-                            <div class="ency_mask"><!--鼠标移入的遮罩层-->
-                                <div class="ency_test"><a href="">录取几率测评</a></div>
-                                <div class="ency_look"><a href="">查看学校</a></div>
-                            </div>
-                        </li>
+                        <?php }}?>
                     </ul>
                 </div>
             </ul>
             <ul> <!--对应有几个国家就有几个ul 循环ul-->
-
+                <?php $uk= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "156", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
+                foreach($uk['data'] as $k=>$v){
+                    if(is_numeric($k)){
+                        ?>
+                        <li class="ency_school">
+                            <div class="ency_logo">
+                                <img src="http://schools.smartapply.cn/<?php echo $v['image']?>" alt="">
+                            </div>
+                            <p class="ency_name"><?php echo $v['name']?></p>
+                            <p class="ency_name_en"><?php echo $v['title']?></p>
+                            <p class="ency_rank"><i class="iconfont trophy">&#xe60c;</i> 学校排名: <span><?php echo $v['s_rank']?></span></p>
+                            <div class="ency_bottom">
+                                <span><a href=""><i class="iconfont people">&#xe74e;</i>推荐导师</a></span>
+                                <span><a href=""><i class="iconfont fire">&#xe614;</i>热门案列</a></span>
+                            </div>
+                            <div class="ency_mask"><!--鼠标移入的遮罩层-->
+                                <div class="ency_test"><a href="">录取几率测评</a></div>
+                                <div class="ency_look"><a href=" /schools/<?php echo $v['id']?>.html">查看学校</a></div>
+                            </div>
+                        </li>
+                    <?php }}?>
+            </ul>
+           <ul> <!--对应有几个国家就有几个ul 循环ul-->
+                <?php $uk= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "157", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
+                foreach($uk['data'] as $k=>$v){
+                    if(is_numeric($k)){
+                        ?>
+                        <li class="ency_school">
+                            <div class="ency_logo">
+                                <img src="http://schools.smartapply.cn/<?php echo $v['image']?>" alt="">
+                            </div>
+                            <p class="ency_name"><?php echo $v['name']?></p>
+                            <p class="ency_name_en"><?php echo $v['title']?></p>
+                            <p class="ency_rank"><i class="iconfont trophy">&#xe60c;</i> 学校排名: <span><?php echo $v['s_rank']?></span></p>
+                            <div class="ency_bottom">
+                                <span><a href=""><i class="iconfont people">&#xe74e;</i>推荐导师</a></span>
+                                <span><a href=""><i class="iconfont fire">&#xe614;</i>热门案列</a></span>
+                            </div>
+                            <div class="ency_mask"><!--鼠标移入的遮罩层-->
+                                <div class="ency_test"><a href="">录取几率测评</a></div>
+                                <div class="ency_look"><a href=" /schools/<?php echo $v['id']?>.html">查看学校</a></div>
+                            </div>
+                        </li>
+                    <?php }}?>
+            </ul>
+           <ul> <!--对应有几个国家就有几个ul 循环ul-->
+                <?php $canada= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "158", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
+                foreach($canada['data'] as $k=>$v){
+                    if(is_numeric($k)){
+                        ?>
+                        <li class="ency_school">
+                            <div class="ency_logo">
+                                <img src="http://schools.smartapply.cn/<?php echo $v['image']?>" alt="">
+                            </div>
+                            <p class="ency_name"><?php echo $v['name']?></p>
+                            <p class="ency_name_en"><?php echo $v['title']?></p>
+                            <p class="ency_rank"><i class="iconfont trophy">&#xe60c;</i> 学校排名: <span><?php echo $v['s_rank']?></span></p>
+                            <div class="ency_bottom">
+                                <span><a href=""><i class="iconfont people">&#xe74e;</i>推荐导师</a></span>
+                                <span><a href=""><i class="iconfont fire">&#xe614;</i>热门案列</a></span>
+                            </div>
+                            <div class="ency_mask"><!--鼠标移入的遮罩层-->
+                                <div class="ency_test"><a href="">录取几率测评</a></div>
+                                <div class="ency_look"><a href=" /schools/<?php echo $v['id']?>.html">查看学校</a></div>
+                            </div>
+                        </li>
+                    <?php }}?>
+            </ul>
+           <ul> <!--对应有几个国家就有几个ul 循环ul-->
+                <?php $australia= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "159", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
+                foreach($australia['data'] as $k=>$v){
+                    if(is_numeric($k)){
+                        ?>
+                        <li class="ency_school">
+                            <div class="ency_logo">
+                                <img src="http://schools.smartapply.cn/<?php echo $v['image']?>" alt="">
+                            </div>
+                            <p class="ency_name"><?php echo $v['name']?></p>
+                            <p class="ency_name_en"><?php echo $v['title']?></p>
+                            <p class="ency_rank"><i class="iconfont trophy">&#xe60c;</i> 学校排名: <span><?php echo $v['s_rank']?></span></p>
+                            <div class="ency_bottom">
+                                <span><a href=""><i class="iconfont people">&#xe74e;</i>推荐导师</a></span>
+                                <span><a href=""><i class="iconfont fire">&#xe614;</i>热门案列</a></span>
+                            </div>
+                            <div class="ency_mask"><!--鼠标移入的遮罩层-->
+                                <div class="ency_test"><a href="">录取几率测评</a></div>
+                                <div class="ency_look"><a href=" /schools/<?php echo $v['id']?>.html">查看学校</a></div>
+                            </div>
+                        </li>
+                    <?php }}?>
+            </ul>
+           <ul> <!--对应有几个国家就有几个ul 循环ul-->
+                <?php $singapore= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "160", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
+                foreach($singapore['data'] as $k=>$v){
+                    if(is_numeric($k)){
+                        ?>
+                        <li class="ency_school">
+                            <div class="ency_logo">
+                                <img src="http://schools.smartapply.cn/<?php echo $v['image']?>" alt="">
+                            </div>
+                            <p class="ency_name"><?php echo $v['name']?></p>
+                            <p class="ency_name_en"><?php echo $v['title']?></p>
+                            <p class="ency_rank"><i class="iconfont trophy">&#xe60c;</i> 学校排名: <span><?php echo $v['s_rank']?></span></p>
+                            <div class="ency_bottom">
+                                <span><a href=""><i class="iconfont people">&#xe74e;</i>推荐导师</a></span>
+                                <span><a href=""><i class="iconfont fire">&#xe614;</i>热门案列</a></span>
+                            </div>
+                            <div class="ency_mask"><!--鼠标移入的遮罩层-->
+                                <div class="ency_test"><a href="">录取几率测评</a></div>
+                                <div class="ency_look"><a href=" /schools/<?php echo $v['id']?>.html">查看学校</a></div>
+                            </div>
+                        </li>
+                    <?php }}?>
+            </ul>
+           <ul> <!--对应有几个国家就有几个ul 循环ul-->
+                <?php $hk= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "520", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
+                foreach($hk['data'] as $k=>$v){
+                    if(is_numeric($k)){
+                        ?>
+                        <li class="ency_school">
+                            <div class="ency_logo">
+                                <img src="http://schools.smartapply.cn/<?php echo $v['image']?>" alt="">
+                            </div>
+                            <p class="ency_name"><?php echo $v['name']?></p>
+                            <p class="ency_name_en"><?php echo $v['title']?></p>
+                            <p class="ency_rank"><i class="iconfont trophy">&#xe60c;</i> 学校排名: <span><?php echo $v['s_rank']?></span></p>
+                            <div class="ency_bottom">
+                                <span><a href=""><i class="iconfont people">&#xe74e;</i>推荐导师</a></span>
+                                <span><a href=""><i class="iconfont fire">&#xe614;</i>热门案列</a></span>
+                            </div>
+                            <div class="ency_mask"><!--鼠标移入的遮罩层-->
+                                <div class="ency_test"><a href="">录取几率测评</a></div>
+                                <div class="ency_look"><a href=" /schools/<?php echo $v['id']?>.html">查看学校</a></div>
+                            </div>
+                        </li>
+                    <?php }}?>
+            </ul>
+           <ul> <!--对应有几个国家就有几个ul 循环ul-->
+                <?php $europe= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "521", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
+                foreach($europe['data'] as $k=>$v){
+                    if(is_numeric($k)){
+                        ?>
+                        <li class="ency_school">
+                            <div class="ency_logo">
+                                <img src="http://schools.smartapply.cn/<?php echo $v['image']?>" alt="">
+                            </div>
+                            <p class="ency_name"><?php echo $v['name']?></p>
+                            <p class="ency_name_en"><?php echo $v['title']?></p>
+                            <p class="ency_rank"><i class="iconfont trophy">&#xe60c;</i> 学校排名: <span><?php echo $v['s_rank']?></span></p>
+                            <div class="ency_bottom">
+                                <span><a href=""><i class="iconfont people">&#xe74e;</i>推荐导师</a></span>
+                                <span><a href=""><i class="iconfont fire">&#xe614;</i>热门案列</a></span>
+                            </div>
+                            <div class="ency_mask"><!--鼠标移入的遮罩层-->
+                                <div class="ency_test"><a href="">录取几率测评</a></div>
+                                <div class="ency_look"><a href=" /schools/<?php echo $v['id']?>.html">查看学校</a></div>
+                            </div>
+                        </li>
+                    <?php }}?>
+            </ul>
+           <ul> <!--对应有几个国家就有几个ul 循环ul-->
+                <?php $asia= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "155", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
+                foreach($asia['data'] as $k=>$v){
+                    if(is_numeric($k)){
+                        ?>
+                        <li class="ency_school">
+                            <div class="ency_logo">
+                                <img src="http://schools.smartapply.cn/<?php echo $v['image']?>" alt="">
+                            </div>
+                            <p class="ency_name"><?php echo $v['name']?></p>
+                            <p class="ency_name_en"><?php echo $v['title']?></p>
+                            <p class="ency_rank"><i class="iconfont trophy">&#xe60c;</i> 学校排名: <span><?php echo $v['s_rank']?></span></p>
+                            <div class="ency_bottom">
+                                <span><a href=""><i class="iconfont people">&#xe74e;</i>推荐导师</a></span>
+                                <span><a href=""><i class="iconfont fire">&#xe614;</i>热门案列</a></span>
+                            </div>
+                            <div class="ency_mask"><!--鼠标移入的遮罩层-->
+                                <div class="ency_test"><a href="">录取几率测评</a></div>
+                                <div class="ency_look"><a href=" /schools/<?php echo $v['id']?>.html">查看学校</a></div>
+                            </div>
+                        </li>
+                    <?php }}?>
             </ul>
        </div>
     </div>
@@ -499,95 +583,38 @@
             <div class="ency_center_content content0"><!--对应有几个选项就有几个slideBox 外层循环slideBox -->
                 <div class="ency_center_bd slideBox">
                     <ul><!--每个slideBox 内层循环li -->
+                        <?php foreach($abroad['active'] as $v){?>
                         <li>
-                            <a href=""><span class="Statement">aaaaaaaa</span></a>
+                            <a href="/word-details/<?php echo $v['id']?>/index,178.html"><span class="Statement"><?php echo $v['name']?></span></a>
                         </li>
-                        <li>
-                            <a href=""><span class="Statement">aaaaaaaa</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">aaaaaaaa</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">aaaaaaaa</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">aaaaaaaa</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">aaaaaaaa</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">aaaaaaaa</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">aaaaaaaa</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">aaaaaaaa</span></a>
-                        </li>
+                        <?php }?>
                     </ul>
                 </div>
                 <div class="ency_center_bd slideBox">
                     <ul>
-                        <li>
-                            <a href=""><span class="Statement">wwwwwwwwwwwwww</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">wwwwwwwwwwwwww</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">wwwwwwwwwwwwww</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">wwwwwwwwwwwwww</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">wwwwwwwwwwwwww</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">wwwwwwwwwwwwww</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">wwwwwwwwwwwwww</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">wwwwwwwwwwwwww 循环ul对应有几个选项就有几个ul 循环ul对应有</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">wwwwwwwwwwwwww</span></a>
-                        </li>
+                        <?php foreach($abroad['plan'] as $v){?>
+                            <li>
+                                <a href="/word-details/<?php echo $v['id']?>/index,178.html"><span class="Statement"><?php echo $v['name']?></span></a>
+                            </li>
+                        <?php }?>
                     </ul>
                 </div>
                 <div class="ency_center_bd slideBox">
                     <ul>
-                        <li>
-                            <a href=""><span class="Statement">wwwwwwwwwwwwww</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">wwwwwwwwwwwwww</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">wwwwwwwwwwwwww</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">wwwwwwwwwwwwww</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">wwwwwwwwwwwwww</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">wwwwwwwwwwwwww</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">wwwwwwwwwwwwww</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">wwwwwwwwwwwwww 循环ul对应有几个选项就有几个ul 循环ul对应有</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">wwwwwwwwwwwwww</span></a>
-                        </li>
+                        <?php foreach($abroad['state'] as $v){?>
+                            <li>
+                                <a href="/word-details/<?php echo $v['id']?>/index,178.html"><span class="Statement"><?php echo $v['name']?></span></a>
+                            </li>
+                        <?php }?>
+                    </ul>
+                </div>
+                <div class="ency_center_bd slideBox">
+                    <ul>
+                        <?php foreach($abroad['apply'] as $v){?>
+                            <li>
+                                <a href="/word-details/<?php echo $v['id']?>/index,178.html"><span class="Statement"><?php echo $v['name']?></span></a>
+                            </li>
+                        <?php }?>
                     </ul>
                 </div>
             </div>
@@ -596,11 +623,11 @@
             <div class="ency_recommend"><img src="" alt=""></div>
             <div class="encyctab_right_lb">
                 <ul>
-                    <li class="active"><span>1</span><a href="">留学规划留学规划留学规划</a></li>
-                    <li class="active"><span>2</span><a href="">留学规划留学规划留学规划</a></li>
-                    <li class="active"><span>3</span><a href="">留学规划留学规划留学规划</a></li>
-                    <li class="active"><span>4</span><a href="">留学规划留学规划留学规划</a></li>
-                    <li class="active"><span>5</span><a href="">留学规划留学规划留留学规划留学规划留学规划留学规划留学规划留学规划留学规划留学规划留学规划学规划</a></li>
+                    <?php foreach($abroad['recommend'] as $k=>$v){?>
+                        <li class="active">
+                            <span><?php echo $k+1?></span><a href="/word-details/<?php echo $v['id']?>/index,178.html"><?php echo $v['name']?></a>
+                        </li>
+                    <?php }?>
                 </ul>
             </div>
         </div>
@@ -623,17 +650,14 @@
                 <li>
                     <a href="" target="_blank"><img src="http://www.thinkwithu.com/files/attach/images/20171019/1508404770815637.jpg" alt="">
                     </a>
-
                 </li>
                 <li>
                     <a href="" target="_blank"><img src="http://www.thinkwithu.com/files/attach/images/20171019/1508404770815637.jpg" alt="">
                     </a>
-
                 </li>
                 <li>
                     <a href="" target="_blank"><img src="http://www.thinkwithu.com/files/attach/images/20171019/1508404770815637.jpg" alt="">
                     </a>
-
                 </li>
             </ul>
         </div>
@@ -702,104 +726,57 @@
         <div class="eaxm_center eaxm_center_1"><!--第二个选项卡中间-->
             <div class="eaxm_center_nav">
                 <ul>
-                    <li>留学活动</li>
-                    <li>留学规划</li>
-                    <li>留学国家</li>
-                    <li>留学手续</li>
+                    <li>GMAT</li>
+                    <li>GRE</li>
+                    <li>托福</li>
+                    <li>雅思</li>
+                    <li>SAT</li>
                 </ul>
             </div>
             <div class="eaxm_center_content content0"><!--对应有几个选项就有几个slideBox 外层循环slideBox -->
                 <div class="eaxm_center_bd slideBox">
-                    <ul><!--每个slideBox 内层循环li -->
-                        <li>
-                            <a href=""><span class="Statement">aaaaaaaa</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">aaaaaaaa</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">aaaaaaaa</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">aaaaaaaa</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">aaaaaaaa</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">aaaaaaaa</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">aaaaaaaa</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">aaaaaaaa</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">aaaaaaaa</span></a>
-                        </li>
+                    <ul>
+                        <?php foreach($news['gmat'] as $v){?>
+                            <li>
+                                <a href="/word-details/<?php echo $v['id']?>/index,261.html"><span class="Statement"><?php echo $v['name']?></span></a>
+                            </li>
+                        <?php }?>
                     </ul>
                 </div>
                 <div class="eaxm_center_bd slideBox">
                     <ul>
-                        <li>
-                            <a href=""><span class="Statement">wwwwwwwwwwwwww</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">wwwwwwwwwwwwww</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">wwwwwwwwwwwwww</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">wwwwwwwwwwwwww</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">wwwwwwwwwwwwww</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">wwwwwwwwwwwwww</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">wwwwwwwwwwwwww</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">wwwwwwwwwwwwww 循环ul对应有几个选项就有几个ul 循环ul对应有</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">wwwwwwwwwwwwww</span></a>
-                        </li>
+                        <?php foreach($news['gre'] as $v){?>
+                            <li>
+                                <a href="/word-details/<?php echo $v['id']?>/index,261.html"><span class="Statement"><?php echo $v['name']?></span></a>
+                            </li>
+                        <?php }?>
                     </ul>
                 </div>
                 <div class="eaxm_center_bd slideBox">
                     <ul>
-                        <li>
-                            <a href=""><span class="Statement">wwwwwwwwwwwwww</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">wwwwwwwwwwwwww</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">wwwwwwwwwwwwww</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">wwwwwwwwwwwwww</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">wwwwwwwwwwwwww</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">wwwwwwwwwwwwww</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">wwwwwwwwwwwwww</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">wwwwwwwwwwwwww 循环ul对应有几个选项就有几个ul 循环ul对应有</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="Statement">wwwwwwwwwwwwww</span></a>
-                        </li>
+                        <?php foreach($news['toefl'] as $v){?>
+                            <li>
+                                <a href="/word-details/<?php echo $v['id']?>/index,261.html"><span class="Statement"><?php echo $v['name']?></span></a>
+                            </li>
+                        <?php }?>
+                    </ul>
+                </div>
+                <div class="eaxm_center_bd slideBox">
+                    <ul>
+                        <?php foreach($news['ielts'] as $v){?>
+                            <li>
+                                <a href="/word-details/<?php echo $v['id']?>/index,261.html"><span class="Statement"><?php echo $v['name']?></span></a>
+                            </li>
+                        <?php }?>
+                    </ul>
+                </div>
+                <div class="eaxm_center_bd slideBox">
+                    <ul>
+                        <?php foreach($news['sat'] as $v){?>
+                            <li>
+                                <a href="/word-details/<?php echo $v['id']?>/index,261.html"><span class="Statement"><?php echo $v['name']?></span></a>
+                            </li>
+                        <?php }?>
                     </ul>
                 </div>
             </div>
@@ -808,12 +785,12 @@
             <div class="eaxm_recommend"><img src="" alt=""></div>
             <div class="eaxm_right_lb">
                 <ul>
-                    <li class="active"><span>1</span><a href="">留学规划留学规划留学规划</a></li>
-                    <li class="active"><span>2</span><a href="">留学规划留学规划留学规划</a></li>
-                    <li class="active"><span>3</span><a href="">留学规划留学规划留学规划</a></li>
-                    <li class="active"><span>4</span><a href="">留学规划留学规划留学规划</a></li>
-                    <li class="active"><span>5</span><a href="">留学规划留学规划留留学规划留学规划留学规划留学规划留学规划留学规划留学规划留学规划留学规划学规划</a></li>
-                </ul>
+                    <?php foreach($news['recommend'] as $k=>$v){?>
+                        <li class="active">
+                            <span><?php echo $k+1?></span><a href="/word-details/<?php echo $v['id']?>/index,261.html"><?php echo $v['name']?></a>
+                        </li>
+                    <?php }?>
+                   </ul>
             </div>
         </div>
     </div>
@@ -826,11 +803,12 @@
         <div class="bdCurriculum">
             <ul class="banner"><!--外层循环li-->
                 <li><!--内层层循环div  recommendation-->
+                    <?php foreach($case['gmat'] as $v){?>
                     <div class="recommendation">
                         <div class="recommendation_cover">
                             <div class="reco_img"><img src="" alt=""></div>
                             <div class="reco_iforma">
-                                <p>姓名:trump</p>
+                                <p>姓名:<?php echo $v['name']?></p>
                                 <p>毕业院校:trump</p>
                                 <p>硬件条件:trump</p>
                                 <p>录取学校:trump</p>
@@ -839,52 +817,15 @@
                             <a href=""><div class="zx_btn">咨询高分秘籍</div></a>
                         </div>
                     </div>
-                    <div class="recommendation">
-                        <div class="recommendation_cover">
-                            <div class="reco_img"><img src="" alt=""></div>
-                            <div class="reco_iforma">
-                                <p>姓名:trump</p>
-                                <p>毕业院校:trump</p>
-                                <p>硬件条件:trump</p>
-                                <p>录取学校:trump</p>
-                                <p>录取专业:trump</p>
-                            </div>
-                            <a href=""><div class="zx_btn">咨询高分秘籍</div></a>
-                        </div>
-                    </div>
-                    <div class="recommendation">
-                        <div class="recommendation_cover">
-                            <div class="reco_img"><img src="" alt=""></div>
-                            <div class="reco_iforma">
-                                <p>姓名:trump</p>
-                                <p>毕业院校:trump</p>
-                                <p>硬件条件:trump</p>
-                                <p>录取学校:trump</p>
-                                <p>录取专业:trump</p>
-                            </div>
-                            <a href=""><div class="zx_btn">咨询高分秘籍</div></a>
-                        </div>
-                    </div>
-                    <div class="recommendation">
-                        <div class="recommendation_cover">
-                            <div class="reco_img"><img src="" alt=""></div>
-                            <div class="reco_iforma">
-                                <p>姓名:trump</p>
-                                <p>毕业院校:trump</p>
-                                <p>硬件条件:trump</p>
-                                <p>录取学校:trump</p>
-                                <p>录取专业:trump</p>
-                            </div>
-                            <a href=""><div class="zx_btn">咨询高分秘籍</div></a>
-                        </div>
-                    </div>
+                    <?php }?>
                 </li>
                 <li>
+                    <?php foreach($case['gre'] as $v){?>
                     <div class="recommendation">
                         <div class="recommendation_cover">
                             <div class="reco_img"><img src="" alt=""></div>
                             <div class="reco_iforma">
-                                <p>姓名:trump</p>
+                                <p>姓名:<?php echo $v['name']?></p>
                                 <p>毕业院校:trump</p>
                                 <p>硬件条件:trump</p>
                                 <p>录取学校:trump</p>
@@ -893,39 +834,15 @@
                             <a href=""><div class="zx_btn">咨询高分秘籍</div></a>
                         </div>
                     </div>
-                    <div class="recommendation">
-                        <div class="recommendation_cover">
-                            <div class="reco_img"><img src="" alt=""></div>
-                            <div class="reco_iforma">
-                                <p>姓名:trump</p>
-                                <p>毕业院校:trump</p>
-                                <p>硬件条件:trump</p>
-                                <p>录取学校:trump</p>
-                                <p>录取专业:trump</p>
-                            </div>
-                            <a href=""><div class="zx_btn">咨询高分秘籍</div></a>
-                        </div>
-                    </div>
-                    <div class="recommendation">
-                        <div class="recommendation_cover">
-                            <div class="reco_img"><img src="" alt=""></div>
-                            <div class="reco_iforma">
-                                <p>姓名:trump</p>
-                                <p>毕业院校:trump</p>
-                                <p>硬件条件:trump</p>
-                                <p>录取学校:trump</p>
-                                <p>录取专业:trump</p>
-                            </div>
-                            <a href=""><div class="zx_btn">咨询高分秘籍</div></a>
-                        </div>
-                    </div>
+                    <?php }?>
                 </li>
                 <li>
+                    <?php foreach($case['toefl'] as $v){?>
                     <div class="recommendation">
                         <div class="recommendation_cover">
                             <div class="reco_img"><img src="" alt=""></div>
                             <div class="reco_iforma">
-                                <p>姓名:trump</p>
+                                <p>姓名:<?php echo $v['name']?></p>
                                 <p>毕业院校:trump</p>
                                 <p>硬件条件:trump</p>
                                 <p>录取学校:trump</p>
@@ -934,49 +851,41 @@
                             <a href=""><div class="zx_btn">咨询高分秘籍</div></a>
                         </div>
                     </div>
-                    <div class="recommendation">
-                        <div class="recommendation_cover">
-                            <div class="reco_img"><img src="" alt=""></div>
-                            <div class="reco_iforma">
-                                <p>姓名:trump</p>
-                                <p>毕业院校:trump</p>
-                                <p>硬件条件:trump</p>
-                                <p>录取学校:trump</p>
-                                <p>录取专业:trump</p>
-                            </div>
-                            <a href=""><div class="zx_btn">咨询高分秘籍</div></a>
-                        </div>
-                    </div>
+                    <?php }?>
                 </li>
                 <li>
-                    <div class="recommendation">
-                        <div class="recommendation_cover">
-                            <div class="reco_img"><img src="" alt=""></div>
-                            <div class="reco_iforma">
-                                <p>姓名:trump</p>
-                                <p>毕业院校:trump</p>
-                                <p>硬件条件:trump</p>
-                                <p>录取学校:trump</p>
-                                <p>录取专业:trump</p>
+                    <?php foreach($case['ielts'] as $v){?>
+                        <div class="recommendation">
+                            <div class="recommendation_cover">
+                                <div class="reco_img"><img src="" alt=""></div>
+                                <div class="reco_iforma">
+                                    <p>姓名:trump</p>
+                                    <p>毕业院校:trump</p>
+                                    <p>硬件条件:trump</p>
+                                    <p>录取学校:trump</p>
+                                    <p>录取专业:trump</p>
+                                </div>
+                                <a href=""><div class="zx_btn">咨询高分秘籍</div></a>
                             </div>
-                            <a href=""><div class="zx_btn">咨询高分秘籍</div></a>
                         </div>
-                    </div>
+                    <?php }?>
                 </li>
                 <li>
-                    <div class="recommendation">
-                        <div class="recommendation_cover">
-                            <div class="reco_img"><img src="" alt=""></div>
-                            <div class="reco_iforma">
-                                <p>姓名:trump</p>
-                                <p>毕业院校:trump</p>
-                                <p>硬件条件:trump</p>
-                                <p>录取学校:trump</p>
-                                <p>录取专业:trump</p>
+                    <?php foreach($case['abroad'] as $v){?>
+                        <div class="recommendation">
+                            <div class="recommendation_cover">
+                                <div class="reco_img"><img src="" alt=""></div>
+                                <div class="reco_iforma">
+                                    <p>姓名:trump</p>
+                                    <p>毕业院校:trump</p>
+                                    <p>硬件条件:trump</p>
+                                    <p>录取学校:trump</p>
+                                    <p>录取专业:trump</p>
+                                </div>
+                                <a href=""><div class="zx_btn">咨询高分秘籍</div></a>
                             </div>
-                            <a href=""><div class="zx_btn">咨询高分秘籍</div></a>
                         </div>
-                    </div>
+                    <?php }?>
                 </li>
             </ul>
         </div>
@@ -986,7 +895,7 @@
                 <li><p>GRE</p></li>
                 <li><p>托福</p></li>
                 <li><p>雅思</p></li>
-                <li><p>留学</p></li>
+                <li><p>名校秘籍</p></li>
             </ul>
         </div>
         <div style="clear: both"></div>
@@ -1000,27 +909,11 @@
         <!--留学服务轮播  循环li-->
         <div class="Results_bd">
             <ul>
+                <?php foreach($book as $v){?>
                 <li>
-                    <img src="" alt="">
+                    <img src="http://www.thinkwithu.com<?php echo $v['image']?>" alt="<?php echo $v['name']?>">
                 </li>
-                <li>
-                    <img src="" alt="">
-                </li>
-                <li>
-                    <img src="" alt="">
-                </li>
-                <li>
-                    <img src="" alt="">
-                </li>
-                <li>
-                    <img src="" alt="">
-                </li>
-                <li>
-                    <img src="" alt="">
-                </li>
-                <li>
-                    <img src="" alt="">
-                </li>
+                <?php }?>
             </ul>
         </div>
         <a class="next"><i class="iconfont next_icon">&#xe602;</i></a>
