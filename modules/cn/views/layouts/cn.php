@@ -232,8 +232,8 @@ if($url == '/training.html') {
 }else{
 ?>
     <!--联系申友-->
-<!--    --><?php //ContactWidget::begin();?>
-<!--    --><?php //ContactWidget::end();?>
+    <?php ContactWidget::begin();?>
+    <?php ContactWidget::end();?>
     <script type="text/javascript">
         jQuery(".connection").slide({mainCell:".connectBd",trigger:"mouseover"});
     </script>
