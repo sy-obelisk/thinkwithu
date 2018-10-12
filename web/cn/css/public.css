@@ -3062,10 +3062,13 @@ h1.info-tit {
 .eaxm-list{
     position: absolute;
     z-index: 1000;
+    top:55px;
+    padding-top: 10px;
+    display: none;
+}
+.eaxm-list>ul{
     background: rgb(248,248,248);
     border-radius: 5px;
-    top:62px;
-    display: none;
 }
 .eaxm-list li{
     text-align: left;
@@ -3102,6 +3105,6 @@ h1.info-tit {
 .left_jt{
     float: right;
 }
-.eaxm-fiexd{
+.eaxm-fiexd>ul{
     background:rgb(153,68,153)!important;
 }

@@ -389,8 +389,8 @@
        <div class="encyclopediaBd bd">
             <ul><!--对应有几个国家就有几个ul 循环ul-->
                 <div class="encyclopedia_left">
-                    <img src="" alt="">
-                    <div class="encyclopedia_left_words"><p>最热留学院校</p></div>
+                    <img src="/cn/Hirsi/images/hot-school.png" alt="">
+<!--                    <div class="encyclopedia_left_words"><p>最热留学院校</p></div>-->
                 </div>
                 <div class="encyclopedia_right"><!--循环li-->
                     <ul>
@@ -484,8 +484,8 @@
     </div>
     <div class="encyclopedia_tab"><!--第二个选项卡-->
         <div class="encyclopedia_left"><!--第二个选项卡左边-->
-            <img src="" alt="">
-            <div class="encyclopedia_left_tab"><span>2018</span><p>年申请攻略</p></div>
+            <img src="/cn/Hirsi/images/reply.png" alt="">
+<!--            <div class="encyclopedia_left_tab"><span>2018</span><p>年申请攻略</p></div>-->
         </div>
         <div class="encyclopedia_center encyclopedia_center_1"><!--第二个选项卡中间-->
             <div class="ency_center_nav">
@@ -593,7 +593,11 @@
             </div>
         </div>
         <div class="encyctab_right"><!--第二个选项卡右边-->
-            <div class="ency_recommend"><img src="" alt=""></div>
+            <div class="ency_recommend">
+                <img class="recommend_img" src="/cn/Hirsi/images/commend.png" alt="">
+                <img style="width: 100%" src="" alt="">
+                <div class="ency_bot_words"><p>商科研究生留学申请全攻略商科研究生留学申请全攻略</p></div>
+            </div>
             <div class="encyctab_right_lb">
                 <ul>
                     <li class="active"><span>1</span><a href="">留学规划留学规划留学规划</a></li>
@@ -648,64 +652,58 @@
         <div class="eaxm_bd">
             <ul>
                 <li>
-                    <img src="" alt="">
+                    <img src="/cn/Hirsi/images/test-1.png" alt="">
                     <div class="eaxm_bot">
                         <p>GMAT</p>
                         <a href="">查看详情</a>
                     </div>
                 </li>
                 <li>
-                    <img src="" alt="">
+                    <img src="/cn/Hirsi/images/test-2.png" alt="">
                     <div class="eaxm_bot">
                         <p>GRE</p>
                         <a href="">查看详情</a>
                     </div>
                 </li>
                 <li>
-                    <img src="" alt="">
+                    <img src="/cn/Hirsi/images/test-3.png" alt="">
                     <div class="eaxm_bot">
                         <p>托福</p>
                         <a href="">查看详情</a>
                     </div>
                 </li>
                 <li>
-                    <img src="" alt="">
+                    <img src="/cn/Hirsi/images/test-4.png" alt="">
                     <div class="eaxm_bot">
                         <p>雅思</p>
                         <a href="">查看详情</a>
                     </div>
                 </li>
                 <li>
-                    <img src="" alt="">
+                    <img src="/cn/Hirsi/images/test-5.png" alt="">
                     <div class="eaxm_bot">
                         <p>SAT</p>
                         <a href="">查看详情</a>
                     </div>
                 </li>
-                <li>
-                    <img src="" alt="">
-                    <div class="eaxm_bot">
-                        <p>留学</p>
-                        <a href="">查看详情</a>
-                    </div>
-                </li>
             </ul>
         </div>
-        <a class="next"><i class="iconfont next_icon">&#xe602;</i></a>
-        <a class="prev"><i class="iconfont prev_icon">&#xe601;</i></a>
+<!--        <a class="next"><i class="iconfont next_icon">&#xe602;</i></a>-->
+<!--        <a class="prev"><i class="iconfont prev_icon">&#xe601;</i></a>-->
     </div>
     <div class="eaxm_tab"><!--考试服务选项卡-->
         <div class="eaxm_left"><!--考试服务选项卡左边-->
-            <img src="" alt="">
-            <div class="eaxm_left_tab"><span>2018</span><p>年<span>GMAT</span>考务查询</p></div>
+            <img src="/cn/Hirsi/images/reply.png" alt="">
+<!--            <div class="eaxm_left_tab"><span>2018</span><p>年<span>GMAT</span>考务查询</p></div>-->
         </div>
         <div class="eaxm_center eaxm_center_1"><!--第二个选项卡中间-->
             <div class="eaxm_center_nav">
                 <ul>
-                    <li>留学活动</li>
-                    <li>留学规划</li>
-                    <li>留学国家</li>
-                    <li>留学手续</li>
+                    <li>GMAT</li>
+                    <li>GRE</li>
+                    <li>托福</li>
+                    <li>雅思</li>
+                    <li>SAT</li>
                 </ul>
             </div>
             <div class="eaxm_center_content content0"><!--对应有几个选项就有几个slideBox 外层循环slideBox -->
@@ -805,7 +803,10 @@
             </div>
         </div>
         <div class="eaxm_right"><!--第二个选项卡右边-->
-            <div class="eaxm_recommend"><img src="" alt=""></div>
+            <div class="eaxm_recommend">
+                <img style="width: 100%" src="" alt="">
+                <div class="ency_bot_words"><p>商科研究生留学申请全攻略商科研究生留学申请全攻略</p></div>
+            </div>
             <div class="eaxm_right_lb">
                 <ul>
                     <li class="active"><span>1</span><a href="">留学规划留学规划留学规划</a></li>
@@ -992,6 +993,10 @@
         <div style="clear: both"></div>
     </div>
 </section>
+<!--名师团队-->
+<section class="teacherTeam">
+
+</section>
 <!--研发成果-->
 <section class="rdResults">
     <p class="Record_title">研发成果</p>
@@ -1120,7 +1125,7 @@ else{
     //中间轮播广告
     jQuery(".carousel_head").slide({mainCell:".bd ul",effect:"leftLoop",autoPlay:true});
     //考试服务轮播展示
-    jQuery(".eaxm_list").slide({mainCell:".eaxm_bd ul",autoPage:true,effect:"left",autoPlay:true,vis:5});
+    // jQuery(".eaxm_list").slide({mainCell:".eaxm_bd ul",autoPage:true,effect:"left",autoPlay:true,vis:5});
     //考试服务选项卡2上下轮播
     jQuery(".eaxm_center .slideBox").slide({ mainCell:"ul",vis:9,prevCell:".sPrev",nextCell:".sNext",effect:"topMarquee",interTime:50,autoPlay:true,trigger:"click"});
     //考试服务选项卡2切换

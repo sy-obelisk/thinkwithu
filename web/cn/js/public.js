@@ -52,13 +52,14 @@ $(function(){
     });
 
 	//导航栏hover效果
-    $(".nav-list a.nav1-link").hover(function () {
-        $(this).addClass("on");
-        $(this).parent().siblings("li").find("a.nav1-link").removeClass("on");
-        $(this).parent().find('.eaxm-list').show();
+    $(".nav-list li").hover(function () {
+        $(this).find("a.nav1-link").addClass("on");
+        $(this).siblings("li").find("a.nav1-link").removeClass("on");
+        $(this).find('.eaxm-list').show();
     }, function () {
         $("a.on-hover").addClass("on");
         $(this).not("on-hover").removeClass("on");
+        $(this).find('.eaxm-list').hide();
     });
     $('.eaxm-list').hover(function () {
 
@@ -77,6 +78,8 @@ $(function(){
     });
     $('.forYou').mouseover(function () {
         $('.recommend-list').show();
+    }).mouseout(function () {
+        $('.recommend-list').hide();
     });
     //导航栏下拉菜单hover效果
     $(".nav-list li:nth-child(2) .nav2-wrap").hover(function(){

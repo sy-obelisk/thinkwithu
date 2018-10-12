@@ -447,9 +447,13 @@ input.search {
 .encyclopedia_left{
     float: left;
     width: 304px;
-    height: 485px;
-    background: goldenrod;
+    /*height: 485px;*/
     position: relative;
+}
+.recommend_img{
+    position: absolute;
+    left: 30px;
+    top: 0;
 }
 .encyclopedia_left_words{
     position: absolute;
@@ -481,7 +485,7 @@ input.search {
 }
 .ency_school{
     width: 234px;
-    height: 236px;
+    height: 224px;
     background: white;
     float: left;
     margin-left: 10px;
@@ -516,7 +520,7 @@ input.search {
     color: gold;
 }
 .ency_bottom{
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 10px 0px;
     border-top:1px solid rgb(248,248,248) ;
 }
@@ -537,7 +541,7 @@ input.search {
     top: 0;
     background: rgba(0,0,0,.7);
     width: 100%;
-    height: 198px;
+    height: 188px;
     display: none;
 }
 .ency_test{
@@ -650,7 +654,7 @@ input.search {
     font-size: 14px;
 }
 .ency_center_content{
-    height:420px ;
+    height:343px ;
     display: none;
 }
 .ency_center_content ul li{
@@ -666,15 +670,36 @@ input.search {
 }
 .ency_recommend{
     width: 100%;
-    height: 200px;
+    height: 193px;
     background: goldenrod;
+    position:relative;
+
+}
+.ency_bot_words{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    height: 40px;
+    text-indent: 20px;
+    line-height: 40px;
+    color: white;
+    font-size: 16px;
+}
+.ency_bot_words p{
+    width: 90%;
+    color: white;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
 }
 .encyctab_right_lb{
     width: 100%;
     margin: auto;
 }
 .encyctab_right_lb ul li{
-    padding: 15px;
+    padding: 10px;
 }
 .encyctab_right_lb a{
     width: 90%;
@@ -762,13 +787,17 @@ input.search {
     margin-right: 10px;
 }
 .eaxm_bd ul li{
-    width: 230px;
-    height: 310px;
+    width: 215px;
+    /*height: 310px;*/
     background: black;
     margin-right: 10px;
-    border-radius: 5px;
+    /*border-radius: 5px;*/
     position: relative;
     overflow: hidden;
+    float: left;
+}
+.eaxm_bd ul li:last-child{
+    margin-right: 0px!important;
 }
 .eaxm_bd{
     max-height: 310px;
@@ -802,10 +831,9 @@ input.search {
     background: rgb(153,68,153);
 }
 .eaxm_list{
-    margin-top: 30px;
     position: relative;
-    width: 1200px;
-    margin: auto;
+    width: 1120px;
+    margin:30px auto 0;
 }
 .next{
     display: inline-block;
@@ -844,8 +872,8 @@ input.search {
 .eaxm_left {
     float: left;
     width: 304px;
-    height: 485px;
-    background: goldenrod;
+    /*height: 485px;*/
+    /*background: goldenrod;*/
     position: relative;
 }
 .eaxm_left_tab{
@@ -948,7 +976,7 @@ input.search {
     font-size: 14px;
 }
 .eaxm_center_content{
-    height:420px ;
+    height:343px ;
     display: none;
 }
 .eaxm_center_content ul li{
@@ -966,13 +994,14 @@ input.search {
     width: 100%;
     height: 200px;
     background: goldenrod;
+    position: relative;
 }
 .eaxm_right_lb{
     width: 100%;
     margin: auto;
 }
 .eaxm_right_lb ul li{
-    padding: 15px;
+    padding: 10px;
 }
 .eaxm_right_lb a{
     width: 90%;
