@@ -506,9 +506,13 @@ input.search {
     font-size: 16px;
 }
 .ency_name_en{
+    width: 100%;
     text-align: center;
     color:rgb(204,204,204);
     font-size: 15px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
 }
 .ency_rank{
     text-align: center;
@@ -721,6 +725,7 @@ input.search {
     text-align: center;
     line-height: 15px;
     margin-right: 10px;
+    font-size: 12px;
 }
 /*****************************中间轮播*********************/
 .center_carousel{
@@ -1023,6 +1028,7 @@ input.search {
     text-align: center;
     line-height: 15px;
     margin-right: 10px;
+    font-size: 12px;
 }
 /*****************************成功案列*********************/
 .success_case{

@@ -4,7 +4,9 @@
  * by Obelisk
  */
 namespace app\modules\cn\controllers;
+
 use yii;
+use app\libs\Schools;
 use app\modules\cn\models\Content;
 use app\modules\cn\models\Category;
 use app\libs\ThinkUController;
@@ -36,7 +38,29 @@ class IndexController extends ThinkUController {
 //            default:
 //                break;
 //        }
-        return $this->render('index');
+        $banner = Content::getContent(['fields' => 'url', 'category' => "190,223", 'pageSize' => 10]);
+        $abroadPro = Content::getContent(['fields' => 'url', 'category' => "261", 'pageSize' => 10]);
+        $news['gmat'] = Content::getContent(['category' => "115,118", 'pageSize' => 15, 'order' => 'c.id desc']);
+        $news['toefl'] = Content::getContent(['category' => "116,118", 'pageSize' => 15, 'order' => 'c.id desc']);
+        $news['gre'] = Content::getContent(['category' => "171,118", 'pageSize' => 15, 'order' => 'c.id desc']);
+        $news['ielts'] = Content::getContent(['category' => "72,118", 'pageSize' => 15, 'order' => 'c.id desc']);
+        $news['sat'] = Content::getContent(['category' => "173,118", 'pageSize' => 15, 'order' => 'c.id desc']);
+        $news['recommend'] = Content::getContent(['category' => "169,109", 'pageSize' => 15, 'order' => 'c.id desc']);
+        $abroad['active'] = Content::getContent(['category' => "117,118", 'pageSize' => 15, 'order' => 'c.id desc']);
+        $abroad['plan'] = Content::getContent(['category' => "117,119", 'pageSize' => 15, 'order' => 'c.id desc']);
+        $abroad['state'] = Content::getContent(['category' => "118,87", 'pageSize' => 15, 'order' => 'c.id desc']);
+        $abroad['apply'] = Content::getContent(['category' => "120,117", 'pageSize' => 15, 'order' => 'c.id desc']);
+        $abroad['recommend'] = Content::getContent(['category' => "117", 'pageSize' => 15, 'order' => 'c.id desc']);
+        $case['gmat'] = Content::getContent(['fields' => 'abstract','category' => "115,102", 'pageSize' => 4,'where'=>'c.sort>0', 'order' => 'c.sort asc,c.id desc']);
+//        $case['gmat'] = Content::getContent(['fields' => 'abstract','category' => "115,206", 'pageSize' => 4,'where'=>'c.sort>0', 'order' => 'c.sort asc,c.id desc']);
+        $case['gre'] = Content::getContent(['fields' => 'abstract','category' => "171,206", 'pageSize' => 4, 'where'=>'c.sort>0','order' => 'c.sort asc,c.id desc']);
+        $case['toefl'] = Content::getContent(['fields' => 'abstract','category' => "116,206", 'pageSize' => 4,'where'=>'c.sort>0', 'order' => 'c.sort asc,c.id desc']);
+        $case['ielts'] = Content::getContent(['fields' => 'abstract','category' => "172,206", 'pageSize' => 4,'where'=>'c.sort>0', 'order' => 'c.sort asc,c.id desc']);
+        $case['abroad'] = Content::getContent(['category' => "178,206", 'pageSize' => 4, 'where'=>'c.sort>0','order' => 'c.sort asc,c.id desc']);
+        $teacher = Content::getContent(['fields' => 'speaker,keywords,description', 'category' => "138,139", 'pageSize' => 15, 'order' => 'c.sort asc,c.id desc']);
+        $book = Content::getContent(['fields' => 'speaker,keywords,description', 'category' => "109,108", 'pageSize' => 15, 'order' => 'c.sort asc,c.id desc']);
+//        echo '<pre>';var_dump($case);die;
+        return $this->render('index',['banner'=>$banner,'abroadPro'=>$abroadPro,'news'=>$news,'teacher'=>$teacher,'abroad'=>$abroad,'case'=>$case,'book'=>$book]);
     }
 
     /**
