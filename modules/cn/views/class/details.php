@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/cn/css/open-details.css">
     <link rel="stylesheet" href="/cn/css/open-public.css"/>
     <link rel="stylesheet" href="/cn/Hirsi/css/reset.css">
-    <link rel="stylesheet" href="/cn/Hirsi/css/index.css">
+<!--    <link rel="stylesheet" href="/cn/Hirsi/css/index.css">-->
     <link rel="stylesheet" href="/cn/css/fonts/font-awesome/css/font-awesome.min.css">
     <script type="text/javascript" src="/cn/js/jquery1.42.min.js"></script>
     <script type="text/javascript" src="/cn/js/jquery.SuperSlide.2.1.1.js"></script>

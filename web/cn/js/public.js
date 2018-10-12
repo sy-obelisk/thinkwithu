@@ -55,11 +55,29 @@ $(function(){
     $(".nav-list a.nav1-link").hover(function () {
         $(this).addClass("on");
         $(this).parent().siblings("li").find("a.nav1-link").removeClass("on");
+        $(this).parent().find('.eaxm-list').show();
     }, function () {
         $("a.on-hover").addClass("on");
         $(this).not("on-hover").removeClass("on");
     });
-  
+    $('.eaxm-list').hover(function () {
+
+    },function () {
+        $(this).hide();
+    });
+    $('.recommend-list').hover(function () {
+
+    },function () {
+        $('.recommend-list').hide();
+    });
+    $('.recommend-list li').hover(function () {
+        $(this).css( 'background','rgba(0,0,0,.5)')
+    },function () {
+        $(this).css( 'background','rgba(0,0,0,0)')
+    });
+    $('.forYou').mouseover(function () {
+        $('.recommend-list').show();
+    });
     //导航栏下拉菜单hover效果
     $(".nav-list li:nth-child(2) .nav2-wrap").hover(function(){
     	$(this).siblings("a").addClass("on");
@@ -75,10 +93,12 @@ $(function(){
             if (top>45){
                 $(".nav-wrap").addClass("nav-flexd");
                 $(".nav-list li a").addClass("a-fiexd");
+                $(".nav-list .eaxm-list").addClass("eaxm-fiexd");
                 $(".logo").attr("src","/cn/Hirsi/images/shenyoulg2.png")
             }else {
                 $(".nav-wrap").removeClass("nav-flexd");
                 $(".nav-list li a").removeClass("a-fiexd");
+                $(".nav-list .eaxm-list").removeClass("eaxm-fiexd");
                 $(".logo").attr("src","/cn/Hirsi/images/sy-logo3.png")
             }
         })

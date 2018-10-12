@@ -38,7 +38,6 @@ class IndexController extends ThinkUController {
 //            default:
 //                break;
 //        }
-
         $banner = Content::getContent(['fields' => 'url', 'category' => "190,223", 'pageSize' => 10]);
         $abroadPro = Content::getContent(['fields' => 'url', 'category' => "261", 'pageSize' => 10]);
         $school = new Schools();
@@ -56,7 +55,9 @@ class IndexController extends ThinkUController {
         $news['gre'] = Content::getContent(['pageStr' => 1,'category' => "171,102",'pageSize'=>15,'order'=>'id desc']);
         $news['ielts'] = Content::getContent(['pageStr' => 1,'category' => "72,102",'pageSize'=>15,'order'=>'id desc']);
         $news['sat'] = Content::getContent(['pageStr' => 1,'category' => "173,102",'pageSize'=>15,'order'=>'id desc']);
-        return $this->renderPartial('index',['banner'=>$banner,'abroadPro'=>$abroadPro,'university'=>$university,'news'=>$news]);
+//        return $this->renderPartial('index',['banner'=>$banner,'abroadPro'=>$abroadPro,'university'=>$university,'news'=>$news]);
+
+        return $this->render('index');
     }
 
     /**

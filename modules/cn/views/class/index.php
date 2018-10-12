@@ -9,7 +9,7 @@
     <meta name="keywords" content="<?php echo $seo['keywords'] ?>">
     <meta name="description" content="<?php echo $seo['description'] ?>">
     <link rel="stylesheet" href="/cn/Hirsi/css/reset.css">
-    <link rel="stylesheet" href="/cn/Hirsi/css/index.css">
+<!--    <link rel="stylesheet" href="/cn/Hirsi/css/index.css">-->
     <link rel="stylesheet" href="/cn/css/openClass.css">
     <link rel="stylesheet" href="/cn/css/open-public.css"/>
     <link rel="stylesheet" href="/cn/css/fonts/font-awesome/css/font-awesome.min.css">

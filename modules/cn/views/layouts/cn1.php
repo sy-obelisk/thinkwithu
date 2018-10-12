@@ -120,7 +120,7 @@
     <link rel="stylesheet" href="/cn/css/footer.css"/>
     <link rel="stylesheet" href="/cn/css/public.css"/>
     <link rel="stylesheet" href="/cn/Hirsi/css/reset.css">
-    <link rel="stylesheet" href="/cn/Hirsi/css/index.css">
+<!--    <link rel="stylesheet" href="/cn/Hirsi/css/index.css">-->
     <link rel="stylesheet" href="/cn/css/fonts/font-awesome/css/font-awesome.min.css"/>
     <link rel="shortcut icon" href="http://www.thinkwithu.com/favicon.ico" />
     <script type="text/javascript" src="/cn/js/jquery1.42.min.js"></script>

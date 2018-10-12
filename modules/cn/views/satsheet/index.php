@@ -29,7 +29,7 @@
   <link rel="stylesheet" href="/cn/css/footer.css"/>
   <link rel="stylesheet" href="/cn/css/public.css"/>
   <link rel="stylesheet" href="/cn/Hirsi/css/reset.css">
-  <link rel="stylesheet" href="/cn/Hirsi/css/index.css">
+<!--  <link rel="stylesheet" href="/cn/Hirsi/css/index.css">-->
   <link rel="stylesheet" type="text/css" href="/cn/css/sat.css"/>
    <link rel="stylesheet" href="/cn/css/gmatSheet.css"/>
   <script src="/cn/ielts/js/jquery1.42.min.js"></script>

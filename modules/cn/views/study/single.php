@@ -5,7 +5,7 @@
     <title>单项服务加油站</title>
     <link rel="stylesheet" href="/cn/css/reset.css">
     <link rel="stylesheet" href="/cn/css/public.css">
-    <link rel="stylesheet" href="/cn/Hirsi/css/index.css">
+<!--    <link rel="stylesheet" href="/cn/Hirsi/css/index.css">-->
     <link rel="stylesheet" href="/cn/css/header.css"/>
     <link rel="stylesheet" href="/cn/css/footer.css"/>
     <link rel="stylesheet" href="/cn/css/gmatSheet.css"/>
