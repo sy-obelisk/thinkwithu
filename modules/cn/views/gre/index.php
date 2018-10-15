@@ -25,12 +25,11 @@
     <!-- 让360双核浏览器用webkit内核渲染页面
     <--================================================== -->
     <meta name="renderer" content="webkit">
-    <link rel="stylesheet" href="/cn/gre/css/reset.css">
+    <link rel="stylesheet" href="/cn/gre/css/reset.css">s
     <link rel="stylesheet" href="/cn/css/header.css"/>
     <link rel="stylesheet" href="/cn/css/footer.css"/>
     <link rel="stylesheet" href="/cn/css/public.css"/>
     <link rel="stylesheet" href="/cn/gre/css/gre_index.css">
-    <link rel="stylesheet" href="/cn/gre/css/index.css">
     <link rel="stylesheet" href="/cn/css/fonts/font-awesome/css/font-awesome.min.css"/>
     <link rel="shortcut icon" href="http://www.thinkwithu.com/favicon.ico"/>
     <script type="text/javascript" src="/cn/js/public.js"></script>
@@ -44,131 +43,8 @@
 <?php use app\commands\front\NavWidget; ?>
 <?php NavWidget::begin(); ?>
 <?php NavWidget::end(); ?>
-<!-----------------------------头部------------------------------>
-<header class="sy-header">
-    <div class="w10 clearfix">
-        <img src="/cn/Hirsi/images/sy-text.png" style="margin-right: 55px" alt="高分成就梦想名校改变人生">
-        <img src="/cn/Hirsi/images/sy-tel.png" alt="400-600-1123">
-        <a class="refer-btn"
-           href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="
-           target="_blank">在线咨询</a>
-        <!--登录&注册-->
-        <div class="login-wrap fr" style="display: none;">
-            <span class="on">登录</span>
-            <span>注册</span>
-        </div>
-        <div class="search-wrap fr">
-            <input class="search search1" type="search" onkeyup="enterKey(event,this)" placeholder="请输入关键词">
-            <img src="/cn/Hirsi/images/search-icon.png" style="margin-left: -1px;cursor: pointer;" onclick="keySearch()"
-                 alt="搜索">
-        </div>
-        <div class="appDownload">
-            <span title="app下载" class="tit_t">APP <b></b></span>
-            <div class="pull_down">
-                <ul >
-                    <li>
-                        <a href="http://www.gmatonline.cn/DownloadApp.html">
-                            <div class="first_layer">
-                                <img src="http://www.gmatonline.cn/app/web_core/styles/images-3/gmatapp_logo.jpg"
-                                     alt="app logo图标"/>
-                                <span>雷哥GMAT苹果版</span>
-                            </div>
-                        </a>
-                        <div class="code_box">
-                            <img src="http://www.gmatonline.cn/app/web_core/styles/images-3/leigeQrCode.png"
-                                 alt="app二维码图片"/>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="http://www.gmatonline.cn/DownloadApp.html">
-                            <div class="first_layer">
-                                <img src="http://www.gmatonline.cn/app/web_core/styles/images-3/gmatapp_logo.jpg"
-                                     alt="app logo图标"/>
-                                <span>雷哥GMAT安卓版</span>
-                            </div>
-                        </a>
-                        <div class="code_box">
-                            <img src="http://www.gmatonline.cn/app/web_core/styles/images-3/leige-android.png"
-                                 alt="app二维码图片"/>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="http://www.toeflonline.cn/toefl_app.html">
-                            <div class="first_layer">
-                                <img src="http://www.toeflonline.cn/cn/images/toeflapp_logo.jpg" alt="app logo图标"/>
-                                <span>雷哥托福苹果版</span>
-                            </div>
-                        </a>
-                        <div class="code_box">
-                            <img src="http://www.toeflonline.cn/cn/images/app-ios.png" alt="app二维码图片"/>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="http://www.toeflonline.cn/toefl_app.html">
-                            <div class="first_layer">
-                                <img src="http://www.toeflonline.cn/cn/images/toeflapp_logo.jpg" alt="app logo图标"/>
-                                <span>雷哥托福安卓版</span>
-                            </div>
-                        </a>
-                        <div class="code_box">
-                            <img src="http://www.toeflonline.cn/cn/images/app-android.png" alt="app二维码图片"/>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="http://www.smartapply.cn/app.html">
-                            <div class="first_layer">
-                                <img src="http://www.smartapply.cn/cn/images/smart-appLogo.png" alt="app logo图标"/>
-                                <span>雷哥选校苹果版</span>
-                            </div>
-                        </a>
-                        <div class="code_box">
-                            <img src="http://www.smartapply.cn/cn/images/smart-erweima.png" alt="app二维码图片"/>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="http://www.smartapply.cn/app.html">
-                            <div class="first_layer">
-                                <img src="http://www.smartapply.cn/cn/images/smart-appLogo.png" alt="app logo图标"/>
-                                <span>雷哥选校安卓版</span>
-                            </div>
-                        </a>
-                        <div class="code_box">
-                            <img src="http://www.smartapply.cn/cn/images/anroid-smartapp.png" alt="app二维码图片"/>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="http://words.viplgw.cn/" target="_blank">
-                            <div class="first_layer">
-                                <img src="http://www.gmatonline.cn/app/web_core/styles/images/words-iosLogo.jpg" alt="app logo图标"/>
-                                <span>雷哥单词苹果版</span>
-                            </div>
-                        </a>
-                        <div class="code_box">
-                            <img src="http://www.gmatonline.cn/app/web_core/styles/images/words-ios.png" alt="app二维码图片"/>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="http://words.viplgw.cn/" target="_blank">
-                            <div class="first_layer">
-                                <img src="http://www.gmatonline.cn/app/web_core/styles/images/words-iosLogo.jpg" alt="app logo图标"/>
-                                <span>雷哥单词安卓版</span>
-                            </div>
-                        </a>
-                        <div class="code_box">
-                            <img src="/cn/images/word_android.png" alt="app二维码图片"/>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!--        app下载 end-->
-        <div class="clearBr"></div>
-    </div>
-</header>
 <!-----------------------------头部end------------------------------>
-<?php use app\commands\front\BannerWidget; ?>
-<?php BannerWidget::begin(); ?>
-<?php BannerWidget::end(); ?>
+
 <div style="clear: both;margin-bottom: 10px;"></div>
 <!---------------------------左边悬浮窗---------------------------------->
 <?php use app\commands\front\LeftSuspensionWidget; ?>
