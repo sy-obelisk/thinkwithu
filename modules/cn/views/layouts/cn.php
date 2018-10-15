@@ -147,8 +147,8 @@
         <a href="/"><img class="logo-new" src="/cn/Hirsi/images/sy-logo3.png" alt=""></a>
         <div class="search_div">
             <i class="iconfont seach_index">&#xe6bc;</i>
-            <input type="text" placeholder="关键词" class="input_seach">
-            <div class="seach_word">搜索</div>
+            <input type="search" placeholder="关键词" class="input_seach search search1" onkeyup="enterKey(event,this)">
+            <div class="seach_word" onclick="keySearch()">搜索</div>
         </div>
     </div>
 </div>

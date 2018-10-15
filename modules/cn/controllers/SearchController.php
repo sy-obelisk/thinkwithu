@@ -25,6 +25,6 @@ class SearchController extends ThinkUController {
         $count    = count(Yii::$app->db->createCommand("select DISTINCT c.id,c.name,catId from {{%content}} c left join {{%content_extend}} ce on ce.contentId=c.id left join {{%extend_data}} ed on ed.extendId=ce.id  where c.name like '%$keyword%' and c.catId in (102,104,117,118,121,125,166,178,205,225)")->queryAll());
         $myPage=new P('/search.html?keyword='.$keyword.'&p', $count,$p, $pagesize);
         $str= $myPage->GetPager();
-        return $this->renderPartial('index',['data'=>$data,'str'=>$str]);
+        return $this->render('index',['data'=>$data,'str'=>$str]);
     }
 }

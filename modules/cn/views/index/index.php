@@ -691,11 +691,13 @@
             </div>
         </div>
         <div class="encyctab_right"><!--第二个选项卡右边-->
-            <div class="ency_recommend">
-                <img class="recommend_img" src="/cn/Hirsi/images/recommend.png" alt="">
-                <img style="width: 100%" src="" alt="">
-                <div class="ency_bot_words"><p>商科研究生留学申请全攻略商科研究生留学申请全攻略</p></div>
-            </div>
+            <a href="">
+                <div class="ency_recommend">
+                    <img class="recommend_img" src="/cn/Hirsi/images/recommend.png" alt="">
+                    <img style="width: 100%" src="" alt="">
+                    <div class="ency_bot_words"><p>商科研究生留学申请全攻略商科研究生留学申请全攻略</p></div>
+                </div>
+            </a>
             <div class="encyctab_right_lb">
                 <ul>
                     <?php foreach($abroad['recommend'] as $k=>$v){?>
@@ -850,10 +852,12 @@
             </div>
         </div>
         <div class="eaxm_right"><!--第二个选项卡右边-->
-            <div class="eaxm_recommend">
-                <img style="width: 100%" src="" alt="">
-                <div class="ency_bot_words"><p>商科研究生留学申请全攻略商科研究生留学申请全攻略</p></div>
-            </div>
+            <a href="">
+                <div class="eaxm_recommend">
+                    <img style="width: 100%" src="" alt="">
+                    <div class="ency_bot_words"><p>商科研究生留学申请全攻略商科研究生留学申请全攻略</p></div>
+                </div>
+            </a>
             <div class="eaxm_right_lb">
                 <ul>
                     <?php foreach($news['recommend'] as $k=>$v){?>
@@ -974,7 +978,95 @@
 </section>
 <!--名师团队-->
 <section class="teacherTeam">
-
+    <p class="Record_title">名师团队</p>
+    <div class="service_line"></div>
+    <div class="teamCover teamCover_1">
+        <div class="teamCriclehd hd"><!--小圆点-->
+           <ul>
+               <li class=""></li>
+               <li class=""></li>
+               <li class=""></li>
+           </ul>
+        </div>
+        <div class="teamCoverBd bd" ><!--中间内容-->
+            <ul><!--循环li-->
+                <li class="Bdcotent">
+                    <div class="cotent_img"><!--老师图片-->
+                        <img src="http://toeflonline.cn/files/attach/images/20180118/1516256498707318.png" alt="">
+                    </div>
+                    <div class="teacher_name"><!--老师名字-->
+                        <p>雷哥 Kiven 老师</p>
+                    </div>
+                    <div class="cotent_intro"><!--老师介绍内容-->
+                        <i class="iconfont Trophyicon">&#xe603;</i>
+                        <span class="fir_p">留学英语考试集大成者 国内留学英语名师 培养托福教师数人</span>
+                        <p class="sec_p">个人简介</p>
+                        <p class="th_p">留学英语考试集大成者 国内留学英语名师 培养托福教师数人留学英语考试集大成者 国内留学英语名师 培养托福教师数人留学英语考试集大成者 国内留学英语名师 培养托福教师数人留学英语考试集大成者 国内留学英语名师 培养托福教师数人留学英语考试集大成者 国内留学英语名师 培养托福教师数人留学英语考试集大成者 国内留学英语名师 培养托福教师数人</p>
+                        <p class="four_p">主讲课程</p>
+                        <p class="five_p">主讲课程 主讲课程 主讲课程 主讲课程 主讲课程</p>
+                        <div class="details">
+                            <a href="">查看详情<i class="iconfont cricle_right">&#xe682;</i></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="Bdcotent">
+                    <div class="cotent_img"><!--老师图片-->
+                        <img src="http://toeflonline.cn/files/attach/images/20180118/1516256498707318.png" alt="">
+                    </div>
+                    <div class="teacher_name"><!--老师名字-->
+                        <p>雷哥 Kiven 老师</p>
+                    </div>
+                    <div class="cotent_intro"><!--老师介绍内容-->
+                        <i class="iconfont Trophyicon">&#xe603;</i>
+                        <span class="fir_p">留学英语考试集大成者 国内留学英语名师 培养托福教师数人</span>
+                        <p class="sec_p">个人简介</p>
+                        <p class="th_p">留学英语考试集大成者 国内留学英语名师 培养托福教师数人留学英语考试集大成者 国内留学英语名师 培养托福教师数人留学英语考试集大成者 国内留学英语名师 培养托福教师数人留学英语考试集大成者 国内留学英语名师 培养托福教师数人留学英语考试集大成者 国内留学英语名师 培养托福教师数人留学英语考试集大成者 国内留学英语名师 培养托福教师数人</p>
+                        <p class="four_p">主讲课程</p>
+                        <p class="five_p">主讲课程 主讲课程 主讲课程 主讲课程 主讲课程</p>
+                        <div class="details">
+                            <a href="">查看详情<i class="iconfont cricle_right">&#xe682;</i></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="Bdcotent">
+                    <div class="cotent_img"><!--老师图片-->
+                        <img src="http://toeflonline.cn/files/attach/images/20180118/1516256498707318.png" alt="">
+                    </div>
+                    <div class="teacher_name"><!--老师名字-->
+                        <p>雷哥 Kiven 老师</p>
+                    </div>
+                    <div class="cotent_intro"><!--老师介绍内容-->
+                        <i class="iconfont Trophyicon">&#xe603;</i>
+                        <span class="fir_p">留学英语考试集大成者 国内留学英语名师 培养托福教师数人</span>
+                        <p class="sec_p">个人简介</p>
+                        <p class="th_p">留学英语考试集大成者 国内留学英语名师 培养托福教师数人留学英语考试集大成者 国内留学英语名师 培养托福教师数人留学英语考试集大成者 国内留学英语名师 培养托福教师数人留学英语考试集大成者 国内留学英语名师 培养托福教师数人留学英语考试集大成者 国内留学英语名师 培养托福教师数人留学英语考试集大成者 国内留学英语名师 培养托福教师数人</p>
+                        <p class="four_p">主讲课程</p>
+                        <p class="five_p">主讲课程 主讲课程 主讲课程 主讲课程 主讲课程</p>
+                        <div class="details">
+                            <a href="">查看详情<i class="iconfont cricle_right">&#xe682;</i></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="teamCoverhd"><!--右边列表-->
+            <ul>
+                <li>
+                    <img src="http://toeflonline.cn/files/attach/images/20180118/1516256498707318.png" alt="">
+                    <div class="name_mask">kevin</div>
+                </li>
+                <li>
+                    <div></div>
+                </li>
+                <li>
+                    <div></div>
+                </li>
+                <li>
+                    <div>aaaa</div>
+                </li>
+            </ul>
+        </div>
+    </div>
 </section>
 <!--研发成果-->
 <section class="rdResults">
@@ -1104,6 +1196,9 @@ else{
         interTime: 3000,
         mouseOverStop: true
     });
+    //名师团队
+    jQuery(".teamCover").slide({mainCell:".bd ul",effect:"leftLoop",autoPlay:true});
+    // jQuery(".teamCover_1").slide({mainCell:".teamCoverhd ul",autoPage:true,effect:"top",autoPlay:true,vis:3});
     //研发成果
     jQuery(".Results_list").slide({mainCell:".Results_bd ul",autoPage:true,effect:"left",autoPlay:true,vis:6});
 
