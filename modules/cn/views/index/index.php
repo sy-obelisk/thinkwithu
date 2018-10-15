@@ -352,7 +352,6 @@
            </div>
            <div class="encyclopediaBd bd">
                <ul><!--对应有几个国家就有几个ul 循环ul-->
-
                    <div class="encyclopedia_right"><!--循环li-->
                        <ul>
                            <?php  $school = new app\libs\Schools();

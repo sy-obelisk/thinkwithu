@@ -68,7 +68,8 @@
             }
         }
         function leftCode(){
-			var phone = $('#tel').val();
+			var phone = document.getElementById('tel').value;
+			console.log(phone);
             $.post('/cn/api/phone-code',{type:2,phoneNum:phone},function(re){
                 alert(re.message);
             },"json")
