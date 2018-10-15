@@ -129,7 +129,7 @@
 }
 .Record_title{
     text-align: center;
-    font-size: 28px;
+    font-size: 30px;
 }
 .Record_title_l{
     text-align: center;
@@ -1270,6 +1270,9 @@
     position: relative;
     border: 1px solid rgb(153,68,153);
 }
+.teamCoverhd li.on .name_mask{
+    display: none!important;
+}
 .teamCoverhd li:nth-child(1){
     margin-top: 0px!important;
 }
@@ -1416,6 +1419,7 @@
     line-height: 124px;
     background: rgba(153,68,153,.3);
     color: white;
+    display: block;
 }
 /*****************************研发成果*********************/
 .Results_list{

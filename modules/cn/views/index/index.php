@@ -345,296 +345,274 @@
                <div><a href="">More>></a></div>
            </ul>
        </div>
-       <div class="encyclopediaBd bd">
-            <ul><!--对应有几个国家就有几个ul 循环ul-->
-                <div class="encyclopedia_left">
-                    <img src="/cn/Hirsi/images/hot-school.png" alt="">
-<!--                    <div class="encyclopedia_left_words"><p>最热留学院校</p></div>-->
-                </div>
-                <div class="encyclopedia_right"><!--循环li-->
-                    <ul>
-                        <?php  $school = new app\libs\Schools();
-                        $us= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "155", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
-//                        echo '<pre>';var_dump($us);
-//                        die;
-                        foreach($us['data'] as $k=>$v){
-                            if(is_numeric($k)){
-                        ?>
-                        <li class="ency_school">
-                            <div class="ency_logo">
-                                <img src="http://schools.smartapply.cn/<?php echo $v['image']?>" alt="">
-                            </div>
-                            <p class="ency_name"><?php echo $v['name']?></p>
-                            <p class="ency_name_en"><?php echo $v['title']?></p>
-                            <p class="ency_rank"><i class="iconfont trophy">&#xe60c;</i> 学校排名: <span><?php echo $v['s_rank']?></span></p>
-                            <div class="ency_bottom">
-                                <span><a href=""><i class="iconfont people">&#xe74e;</i>推荐导师</a></span>
-                                <span><a href=""><i class="iconfont fire">&#xe614;</i>热门案列</a></span>
-                            </div>
-                            <div class="ency_mask"><!--鼠标移入的遮罩层-->
-                                <div class="ency_test"><a href="">录取几率测评</a></div>
-                                <div class="ency_look"><a href=" /schools/<?php echo $v['id']?>.html">查看学校</a></div>
-                            </div>
-                        </li>
-                        <?php }}?>
-                    </ul>
-                </div>
-            </ul>
-           <ul>
-               <div class="encyclopedia_left">
-                   <img src="/cn/Hirsi/images/hot-school.png" alt="">
-                   <!--                    <div class="encyclopedia_left_words"><p>最热留学院校</p></div>-->
-               </div>
-               <div class="encyclopedia_right"><!--循环li-->
-               <ul> <!--对应有几个国家就有几个ul 循环ul-->
-                   <?php $uk= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "156", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
-                   foreach($uk['data'] as $k=>$v){
-                       if(is_numeric($k)){
-                           ?>
-                           <li class="ency_school">
-                               <div class="ency_logo">
-                                   <img src="http://schools.smartapply.cn/<?php echo $v['image']?>" alt="">
-                               </div>
-                               <p class="ency_name"><?php echo $v['name']?></p>
-                               <p class="ency_name_en"><?php echo $v['title']?></p>
-                               <p class="ency_rank"><i class="iconfont trophy">&#xe60c;</i> 学校排名: <span><?php echo $v['s_rank']?></span></p>
-                               <div class="ency_bottom">
-                                   <span><a href=""><i class="iconfont people">&#xe74e;</i>推荐导师</a></span>
-                                   <span><a href=""><i class="iconfont fire">&#xe614;</i>热门案列</a></span>
-                               </div>
-                               <div class="ency_mask"><!--鼠标移入的遮罩层-->
-                                   <div class="ency_test"><a href="">录取几率测评</a></div>
-                                   <div class="ency_look"><a href=" /schools/<?php echo $v['id']?>.html">查看学校</a></div>
-                               </div>
-                           </li>
-                       <?php }}?>
+       <div style="width: 100%;overflow: hidden">
+           <div class="encyclopedia_left" style="margin-top: 40px;margin-bottom: 10px">
+               <img src="/cn/Hirsi/images/hot-school.png" alt="">
+               <!--                    <div class="encyclopedia_left_words"><p>最热留学院校</p></div>-->
+           </div>
+           <div class="encyclopediaBd bd">
+               <ul><!--对应有几个国家就有几个ul 循环ul-->
+
+                   <div class="encyclopedia_right"><!--循环li-->
+                       <ul>
+                           <?php  $school = new app\libs\Schools();
+                           $us= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "155", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
+                           //                        echo '<pre>';var_dump($us);
+                           //                        die;
+                           foreach($us['data'] as $k=>$v){
+                               if(is_numeric($k)){
+                                   ?>
+                                   <li class="ency_school">
+                                       <div class="ency_logo">
+                                           <img src="http://schools.smartapply.cn/<?php echo $v['image']?>" alt="">
+                                       </div>
+                                       <p class="ency_name"><?php echo $v['name']?></p>
+                                       <p class="ency_name_en"><?php echo $v['title']?></p>
+                                       <p class="ency_rank"><i class="iconfont trophy">&#xe60c;</i> 学校排名: <span><?php echo $v['s_rank']?></span></p>
+                                       <div class="ency_bottom">
+                                           <span><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="><i class="iconfont people">&#xe74e;</i>推荐导师</a></span>
+                                           <span><a href="/case.html"><i class="iconfont fire">&#xe614;</i>热门案列</a></span>
+                                       </div>
+                                       <div class="ency_mask"><!--鼠标移入的遮罩层-->
+                                           <div class="ency_test"><a href="#">录取几率测评</a></div>
+                                           <div class="ency_look"><a href=" /schools/<?php echo $v['id']?>.html">查看学校</a></div>
+                                       </div>
+                                   </li>
+                               <?php }}?>
+                       </ul>
+                   </div>
                </ul>
-               </div>
-           </ul>
-           <ul>
-               <div class="encyclopedia_left">
-                   <img src="/cn/Hirsi/images/hot-school.png" alt="">
-                   <!--                    <div class="encyclopedia_left_words"><p>最热留学院校</p></div>-->
-               </div>
-               <div class="encyclopedia_right"><!--循环li-->
-                   <ul> <!--对应有几个国家就有几个ul 循环ul-->
-                       <?php $uk= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "157", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
-                       foreach($uk['data'] as $k=>$v){
-                           if(is_numeric($k)){
-                               ?>
-                               <li class="ency_school">
-                                   <div class="ency_logo">
-                                       <img src="http://schools.smartapply.cn/<?php echo $v['image']?>" alt="">
-                                   </div>
-                                   <p class="ency_name"><?php echo $v['name']?></p>
-                                   <p class="ency_name_en"><?php echo $v['title']?></p>
-                                   <p class="ency_rank"><i class="iconfont trophy">&#xe60c;</i> 学校排名: <span><?php echo $v['s_rank']?></span></p>
-                                   <div class="ency_bottom">
-                                       <span><a href=""><i class="iconfont people">&#xe74e;</i>推荐导师</a></span>
-                                       <span><a href=""><i class="iconfont fire">&#xe614;</i>热门案列</a></span>
-                                   </div>
-                                   <div class="ency_mask"><!--鼠标移入的遮罩层-->
-                                       <div class="ency_test"><a href="">录取几率测评</a></div>
-                                       <div class="ency_look"><a href=" /schools/<?php echo $v['id']?>.html">查看学校</a></div>
-                                   </div>
-                               </li>
-                           <?php }}?>
-                   </ul>
-               </div>
-           </ul>
-           <ul>
-               <div class="encyclopedia_left">
-                   <img src="/cn/Hirsi/images/hot-school.png" alt="">
-                   <!--                    <div class="encyclopedia_left_words"><p>最热留学院校</p></div>-->
-               </div>
-               <div class="encyclopedia_right"><!--循环li-->
-                   <ul> <!--对应有几个国家就有几个ul 循环ul-->
-                       <?php $canada= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "158", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
-                       foreach($canada['data'] as $k=>$v){
-                           if(is_numeric($k)){
-                               ?>
-                               <li class="ency_school">
-                                   <div class="ency_logo">
-                                       <img src="http://schools.smartapply.cn/<?php echo $v['image']?>" alt="">
-                                   </div>
-                                   <p class="ency_name"><?php echo $v['name']?></p>
-                                   <p class="ency_name_en"><?php echo $v['title']?></p>
-                                   <p class="ency_rank"><i class="iconfont trophy">&#xe60c;</i> 学校排名: <span><?php echo $v['s_rank']?></span></p>
-                                   <div class="ency_bottom">
-                                       <span><a href=""><i class="iconfont people">&#xe74e;</i>推荐导师</a></span>
-                                       <span><a href=""><i class="iconfont fire">&#xe614;</i>热门案列</a></span>
-                                   </div>
-                                   <div class="ency_mask"><!--鼠标移入的遮罩层-->
-                                       <div class="ency_test"><a href="">录取几率测评</a></div>
-                                       <div class="ency_look"><a href=" /schools/<?php echo $v['id']?>.html">查看学校</a></div>
-                                   </div>
-                               </li>
-                           <?php }}?>
-                   </ul>
-               </div>
+               <ul>
 
-           </ul>
-           <ul>
-               <div class="encyclopedia_left">
-                   <img src="/cn/Hirsi/images/hot-school.png" alt="">
-                   <!--                    <div class="encyclopedia_left_words"><p>最热留学院校</p></div>-->
-               </div>
-               <div class="encyclopedia_right"><!--循环li-->
-                   <ul> <!--对应有几个国家就有几个ul 循环ul-->
-                       <?php $australia= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "159", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
-                       foreach($australia['data'] as $k=>$v){
-                           if(is_numeric($k)){
-                               ?>
-                               <li class="ency_school">
-                                   <div class="ency_logo">
-                                       <img src="http://schools.smartapply.cn/<?php echo $v['image']?>" alt="">
-                                   </div>
-                                   <p class="ency_name"><?php echo $v['name']?></p>
-                                   <p class="ency_name_en"><?php echo $v['title']?></p>
-                                   <p class="ency_rank"><i class="iconfont trophy">&#xe60c;</i> 学校排名: <span><?php echo $v['s_rank']?></span></p>
-                                   <div class="ency_bottom">
-                                       <span><a href=""><i class="iconfont people">&#xe74e;</i>推荐导师</a></span>
-                                       <span><a href=""><i class="iconfont fire">&#xe614;</i>热门案列</a></span>
-                                   </div>
-                                   <div class="ency_mask"><!--鼠标移入的遮罩层-->
-                                       <div class="ency_test"><a href="">录取几率测评</a></div>
-                                       <div class="ency_look"><a href=" /schools/<?php echo $v['id']?>.html">查看学校</a></div>
-                                   </div>
-                               </li>
-                           <?php }}?>
-                   </ul>
-               </div>
+                   <div class="encyclopedia_right"><!--循环li-->
+                       <ul> <!--对应有几个国家就有几个ul 循环ul-->
+                           <?php $uk= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "156", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
+                           foreach($uk['data'] as $k=>$v){
+                               if(is_numeric($k)){
+                                   ?>
+                                   <li class="ency_school">
+                                       <div class="ency_logo">
+                                           <img src="http://schools.smartapply.cn/<?php echo $v['image']?>" alt="">
+                                       </div>
+                                       <p class="ency_name"><?php echo $v['name']?></p>
+                                       <p class="ency_name_en"><?php echo $v['title']?></p>
+                                       <p class="ency_rank"><i class="iconfont trophy">&#xe60c;</i> 学校排名: <span><?php echo $v['s_rank']?></span></p>
+                                       <div class="ency_bottom">
+                                           <span><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="><i class="iconfont people">&#xe74e;</i>推荐导师</a></span>
+                                           <span><a href="/html"><i class="iconfont fire">&#xe614;</i>热门案列</a></span>
+                                       </div>
+                                       <div class="ency_mask"><!--鼠标移入的遮罩层-->
+                                           <div class="ency_test"><a href="">录取几率测评</a></div>
+                                           <div class="ency_look"><a href=" /schools/<?php echo $v['id']?>.html">查看学校</a></div>
+                                       </div>
+                                   </li>
+                               <?php }}?>
+                       </ul>
+                   </div>
+               </ul>
+               <ul>
 
-           </ul>
-           <ul>
-               <div class="encyclopedia_left">
-                   <img src="/cn/Hirsi/images/hot-school.png" alt="">
-                   <!--                    <div class="encyclopedia_left_words"><p>最热留学院校</p></div>-->
-               </div>
-               <div class="encyclopedia_right"><!--循环li-->
-                   <ul> <!--对应有几个国家就有几个ul 循环ul-->
-                       <?php $singapore= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "160", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
-                       foreach($singapore['data'] as $k=>$v){
-                           if(is_numeric($k)){
-                               ?>
-                               <li class="ency_school">
-                                   <div class="ency_logo">
-                                       <img src="http://schools.smartapply.cn/<?php echo $v['image']?>" alt="">
-                                   </div>
-                                   <p class="ency_name"><?php echo $v['name']?></p>
-                                   <p class="ency_name_en"><?php echo $v['title']?></p>
-                                   <p class="ency_rank"><i class="iconfont trophy">&#xe60c;</i> 学校排名: <span><?php echo $v['s_rank']?></span></p>
-                                   <div class="ency_bottom">
-                                       <span><a href=""><i class="iconfont people">&#xe74e;</i>推荐导师</a></span>
-                                       <span><a href=""><i class="iconfont fire">&#xe614;</i>热门案列</a></span>
-                                   </div>
-                                   <div class="ency_mask"><!--鼠标移入的遮罩层-->
-                                       <div class="ency_test"><a href="">录取几率测评</a></div>
-                                       <div class="ency_look"><a href=" /schools/<?php echo $v['id']?>.html">查看学校</a></div>
-                                   </div>
-                               </li>
-                           <?php }}?>
-                   </ul>
-               </div>
+                   <div class="encyclopedia_right"><!--循环li-->
+                       <ul> <!--对应有几个国家就有几个ul 循环ul-->
+                           <?php $uk= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "157", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
+                           foreach($uk['data'] as $k=>$v){
+                               if(is_numeric($k)){
+                                   ?>
+                                   <li class="ency_school">
+                                       <div class="ency_logo">
+                                           <img src="http://schools.smartapply.cn/<?php echo $v['image']?>" alt="">
+                                       </div>
+                                       <p class="ency_name"><?php echo $v['name']?></p>
+                                       <p class="ency_name_en"><?php echo $v['title']?></p>
+                                       <p class="ency_rank"><i class="iconfont trophy">&#xe60c;</i> 学校排名: <span><?php echo $v['s_rank']?></span></p>
+                                       <div class="ency_bottom">
+                                           <span><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="><i class="iconfont people">&#xe74e;</i>推荐导师</a></span>
+                                           <span><a href="/case.html"><i class="iconfont fire">&#xe614;</i>热门案列</a></span>
+                                       </div>
+                                       <div class="ency_mask"><!--鼠标移入的遮罩层-->
+                                           <div class="ency_test"><a href="#">录取几率测评</a></div>
+                                           <div class="ency_look"><a href="/schools/<?php echo $v['id']?>.html">查看学校</a></div>
+                                       </div>
+                                   </li>
+                               <?php }}?>
+                       </ul>
+                   </div>
+               </ul>
+               <ul>
 
-           </ul>
-           <ul>
-               <div class="encyclopedia_left">
-                   <img src="/cn/Hirsi/images/hot-school.png" alt="">
-                   <!--                    <div class="encyclopedia_left_words"><p>最热留学院校</p></div>-->
-               </div>
-               <div class="encyclopedia_right"><!--循环li-->
-                   <ul> <!--对应有几个国家就有几个ul 循环ul-->
-                       <?php $hk= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "520", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
-                       foreach($hk['data'] as $k=>$v){
-                           if(is_numeric($k)){
-                               ?>
-                               <li class="ency_school">
-                                   <div class="ency_logo">
-                                       <img src="http://schools.smartapply.cn/<?php echo $v['image']?>" alt="">
-                                   </div>
-                                   <p class="ency_name"><?php echo $v['name']?></p>
-                                   <p class="ency_name_en"><?php echo $v['title']?></p>
-                                   <p class="ency_rank"><i class="iconfont trophy">&#xe60c;</i> 学校排名: <span><?php echo $v['s_rank']?></span></p>
-                                   <div class="ency_bottom">
-                                       <span><a href=""><i class="iconfont people">&#xe74e;</i>推荐导师</a></span>
-                                       <span><a href=""><i class="iconfont fire">&#xe614;</i>热门案列</a></span>
-                                   </div>
-                                   <div class="ency_mask"><!--鼠标移入的遮罩层-->
-                                       <div class="ency_test"><a href="">录取几率测评</a></div>
-                                       <div class="ency_look"><a href=" /schools/<?php echo $v['id']?>.html">查看学校</a></div>
-                                   </div>
-                               </li>
-                           <?php }}?>
-                   </ul>
-               </div>
+                   <div class="encyclopedia_right"><!--循环li-->
+                       <ul> <!--对应有几个国家就有几个ul 循环ul-->
+                           <?php $canada= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "158", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
+                           foreach($canada['data'] as $k=>$v){
+                               if(is_numeric($k)){
+                                   ?>
+                                   <li class="ency_school">
+                                       <div class="ency_logo">
+                                           <img src="http://schools.smartapply.cn/<?php echo $v['image']?>" alt="">
+                                       </div>
+                                       <p class="ency_name"><?php echo $v['name']?></p>
+                                       <p class="ency_name_en"><?php echo $v['title']?></p>
+                                       <p class="ency_rank"><i class="iconfont trophy">&#xe60c;</i> 学校排名: <span><?php echo $v['s_rank']?></span></p>
+                                       <div class="ency_bottom">
+                                           <span><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="><i class="iconfont people">&#xe74e;</i>推荐导师</a></span>
+                                           <span><a href="/case.html"><i class="iconfont fire">&#xe614;</i>热门案列</a></span>
+                                       </div>
+                                       <div class="ency_mask"><!--鼠标移入的遮罩层-->
+                                           <div class="ency_test"><a href="#">录取几率测评</a></div>
+                                           <div class="ency_look"><a href="/schools/<?php echo $v['id']?>.html">查看学校</a></div>
+                                       </div>
+                                   </li>
+                               <?php }}?>
+                       </ul>
+                   </div>
 
-           </ul>
-           <ul>
-               <div class="encyclopedia_left">
-                   <img src="/cn/Hirsi/images/hot-school.png" alt="">
-                   <!--                    <div class="encyclopedia_left_words"><p>最热留学院校</p></div>-->
-               </div>
-               <div class="encyclopedia_right"><!--循环li-->
-                   <ul> <!--对应有几个国家就有几个ul 循环ul-->
-                       <?php $europe= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "521", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
-                       foreach($europe['data'] as $k=>$v){
-                           if(is_numeric($k)){
-                               ?>
-                               <li class="ency_school">
-                                   <div class="ency_logo">
-                                       <img src="http://schools.smartapply.cn/<?php echo $v['image']?>" alt="">
-                                   </div>
-                                   <p class="ency_name"><?php echo $v['name']?></p>
-                                   <p class="ency_name_en"><?php echo $v['title']?></p>
-                                   <p class="ency_rank"><i class="iconfont trophy">&#xe60c;</i> 学校排名: <span><?php echo $v['s_rank']?></span></p>
-                                   <div class="ency_bottom">
-                                       <span><a href=""><i class="iconfont people">&#xe74e;</i>推荐导师</a></span>
-                                       <span><a href=""><i class="iconfont fire">&#xe614;</i>热门案列</a></span>
-                                   </div>
-                                   <div class="ency_mask"><!--鼠标移入的遮罩层-->
-                                       <div class="ency_test"><a href="">录取几率测评</a></div>
-                                       <div class="ency_look"><a href=" /schools/<?php echo $v['id']?>.html">查看学校</a></div>
-                                   </div>
-                               </li>
-                           <?php }}?>
-                   </ul>
-               </div>
+               </ul>
+               <ul>
 
-           </ul>
-           <ul>
-               <div class="encyclopedia_left">
-                   <img src="/cn/Hirsi/images/hot-school.png" alt="">
-                   <!--                    <div class="encyclopedia_left_words"><p>最热留学院校</p></div>-->
-               </div>
-               <div class="encyclopedia_right"><!--循环li-->
-                   <ul> <!--对应有几个国家就有几个ul 循环ul-->
-                       <?php $asia= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "155", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
-                       foreach($asia['data'] as $k=>$v){
-                           if(is_numeric($k)){
-                               ?>
-                               <li class="ency_school">
-                                   <div class="ency_logo">
-                                       <img src="http://schools.smartapply.cn/<?php echo $v['image']?>" alt="">
-                                   </div>
-                                   <p class="ency_name"><?php echo $v['name']?></p>
-                                   <p class="ency_name_en"><?php echo $v['title']?></p>
-                                   <p class="ency_rank"><i class="iconfont trophy">&#xe60c;</i> 学校排名: <span><?php echo $v['s_rank']?></span></p>
-                                   <div class="ency_bottom">
-                                       <span><a href=""><i class="iconfont people">&#xe74e;</i>推荐导师</a></span>
-                                       <span><a href=""><i class="iconfont fire">&#xe614;</i>热门案列</a></span>
-                                   </div>
-                                   <div class="ency_mask"><!--鼠标移入的遮罩层-->
-                                       <div class="ency_test"><a href="">录取几率测评</a></div>
-                                       <div class="ency_look"><a href=" /schools/<?php echo $v['id']?>.html">查看学校</a></div>
-                                   </div>
-                               </li>
-                           <?php }}?>
-                   </ul>
-               </div>
+                   <div class="encyclopedia_right"><!--循环li-->
+                       <ul> <!--对应有几个国家就有几个ul 循环ul-->
+                           <?php $australia= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "159", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
+                           foreach($australia['data'] as $k=>$v){
+                               if(is_numeric($k)){
+                                   ?>
+                                   <li class="ency_school">
+                                       <div class="ency_logo">
+                                           <img src="http://schools.smartapply.cn/<?php echo $v['image']?>" alt="">
+                                       </div>
+                                       <p class="ency_name"><?php echo $v['name']?></p>
+                                       <p class="ency_name_en"><?php echo $v['title']?></p>
+                                       <p class="ency_rank"><i class="iconfont trophy">&#xe60c;</i> 学校排名: <span><?php echo $v['s_rank']?></span></p>
+                                       <div class="ency_bottom">
+                                           <span><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="><i class="iconfont people">&#xe74e;</i>推荐导师</a></span>
+                                           <span><a href="/case.html"><i class="iconfont fire">&#xe614;</i>热门案列</a></span>
+                                       </div>
+                                       <div class="ency_mask"><!--鼠标移入的遮罩层-->
+                                           <div class="ency_test"><a href="#">录取几率测评</a></div>
+                                           <div class="ency_look"><a href="/schools/<?php echo $v['id']?>.html">查看学校</a></div>
+                                       </div>
+                                   </li>
+                               <?php }}?>
+                       </ul>
+                   </div>
 
-           </ul>
+               </ul>
+               <ul>
 
+                   <div class="encyclopedia_right"><!--循环li-->
+                       <ul> <!--对应有几个国家就有几个ul 循环ul-->
+                           <?php $singapore= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "160", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
+                           foreach($singapore['data'] as $k=>$v){
+                               if(is_numeric($k)){
+                                   ?>
+                                   <li class="ency_school">
+                                       <div class="ency_logo">
+                                           <img src="http://schools.smartapply.cn/<?php echo $v['image']?>" alt="">
+                                       </div>
+                                       <p class="ency_name"><?php echo $v['name']?></p>
+                                       <p class="ency_name_en"><?php echo $v['title']?></p>
+                                       <p class="ency_rank"><i class="iconfont trophy">&#xe60c;</i> 学校排名: <span><?php echo $v['s_rank']?></span></p>
+                                       <div class="ency_bottom">
+                                           <span><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="><i class="iconfont people">&#xe74e;</i>推荐导师</a></span>
+                                           <span><a href="/case.html"><i class="iconfont fire">&#xe614;</i>热门案列</a></span>
+                                       </div>
+                                       <div class="ency_mask"><!--鼠标移入的遮罩层-->
+                                           <div class="ency_test"><a href="#">录取几率测评</a></div>
+                                           <div class="ency_look"><a href=" /schools/<?php echo $v['id']?>.html">查看学校</a></div>
+                                       </div>
+                                   </li>
+                               <?php }}?>
+                       </ul>
+                   </div>
+
+               </ul>
+               <ul>
+
+                   <div class="encyclopedia_right"><!--循环li-->
+                       <ul> <!--对应有几个国家就有几个ul 循环ul-->
+                           <?php $hk= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "520", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
+                           foreach($hk['data'] as $k=>$v){
+                               if(is_numeric($k)){
+                                   ?>
+                                   <li class="ency_school">
+                                       <div class="ency_logo">
+                                           <img src="http://schools.smartapply.cn/<?php echo $v['image']?>" alt="">
+                                       </div>
+                                       <p class="ency_name"><?php echo $v['name']?></p>
+                                       <p class="ency_name_en"><?php echo $v['title']?></p>
+                                       <p class="ency_rank"><i class="iconfont trophy">&#xe60c;</i> 学校排名: <span><?php echo $v['s_rank']?></span></p>
+                                       <div class="ency_bottom">
+                                           <span><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="><i class="iconfont people">&#xe74e;</i>推荐导师</a></span>
+                                           <span><a href="/case.html"><i class="iconfont fire">&#xe614;</i>热门案列</a></span>
+                                       </div>
+                                       <div class="ency_mask"><!--鼠标移入的遮罩层-->
+                                           <div class="ency_test"><a href="#">录取几率测评</a></div>
+                                           <div class="ency_look"><a href="/schools/<?php echo $v['id']?>.html">查看学校</a></div>
+                                       </div>
+                                   </li>
+                               <?php }}?>
+                       </ul>
+                   </div>
+
+               </ul>
+               <ul>
+
+                   <div class="encyclopedia_right"><!--循环li-->
+                       <ul> <!--对应有几个国家就有几个ul 循环ul-->
+                           <?php $europe= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "521", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
+                           foreach($europe['data'] as $k=>$v){
+                               if(is_numeric($k)){
+                                   ?>
+                                   <li class="ency_school">
+                                       <div class="ency_logo">
+                                           <img src="http://schools.smartapply.cn/<?php echo $v['image']?>" alt="">
+                                       </div>
+                                       <p class="ency_name"><?php echo $v['name']?></p>
+                                       <p class="ency_name_en"><?php echo $v['title']?></p>
+                                       <p class="ency_rank"><i class="iconfont trophy">&#xe60c;</i> 学校排名: <span><?php echo $v['s_rank']?></span></p>
+                                       <div class="ency_bottom">
+                                           <span><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="><i class="iconfont people">&#xe74e;</i>推荐导师</a></span>
+                                           <span><a href="/case.html"><i class="iconfont fire">&#xe614;</i>热门案列</a></span>
+                                       </div>
+                                       <div class="ency_mask"><!--鼠标移入的遮罩层-->
+                                           <div class="ency_test"><a href="#">录取几率测评</a></div>
+                                           <div class="ency_look"><a href=" /schools/<?php echo $v['id']?>.html">查看学校</a></div>
+                                       </div>
+                                   </li>
+                               <?php }}?>
+                       </ul>
+                   </div>
+
+               </ul>
+               <ul>
+
+                   <div class="encyclopedia_right"><!--循环li-->
+                       <ul> <!--对应有几个国家就有几个ul 循环ul-->
+                           <?php $asia= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "155", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
+                           foreach($asia['data'] as $k=>$v){
+                               if(is_numeric($k)){
+                                   ?>
+                                   <li class="ency_school">
+                                       <div class="ency_logo">
+                                           <img src="http://schools.smartapply.cn/<?php echo $v['image']?>" alt="">
+                                       </div>
+                                       <p class="ency_name"><?php echo $v['name']?></p>
+                                       <p class="ency_name_en"><?php echo $v['title']?></p>
+                                       <p class="ency_rank"><i class="iconfont trophy">&#xe60c;</i> 学校排名: <span><?php echo $v['s_rank']?></span></p>
+                                       <div class="ency_bottom">
+                                           <span><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="><i class="iconfont people">&#xe74e;</i>推荐导师</a></span>
+                                           <span><a href="/case.html"><i class="iconfont fire">&#xe614;</i>热门案列</a></span>
+                                       </div>
+                                       <div class="ency_mask"><!--鼠标移入的遮罩层-->
+                                           <div class="ency_test"><a href="#">录取几率测评</a></div>
+                                           <div class="ency_look"><a href="/schools/<?php echo $v['id']?>.html">查看学校</a></div>
+                                       </div>
+                                   </li>
+                               <?php }}?>
+                       </ul>
+                   </div>
+
+               </ul>
+           </div>
        </div>
     </div>
     <div class="encyclopedia_tab"><!--第二个选项卡-->
@@ -694,17 +672,18 @@
             <a href="">
                 <div class="ency_recommend">
                     <img class="recommend_img" src="/cn/Hirsi/images/recommend.png" alt="">
-                    <img style="width: 100%" src="" alt="">
-                    <div class="ency_bot_words"><p>商科研究生留学申请全攻略商科研究生留学申请全攻略</p></div>
+                    <img style="width: 100%" src="http://www.thinkwithu.com/<?php echo $abroad['recommend'][0]['image']?>" alt="">
+                    <div class="ency_bot_words"><p><?php echo $abroad['recommend'][0]['name']?></p></div>
                 </div>
             </a>
             <div class="encyctab_right_lb">
                 <ul>
-                    <?php foreach($abroad['recommend'] as $k=>$v){?>
+                    <?php foreach($abroad['recommend'] as $k=>$v){
+                        if($k>0){?>
                         <li class="active">
-                            <span><?php echo $k+1?></span><a href="/word-details/<?php echo $v['id']?>/index,178.html"><?php echo $v['name']?></a>
+                            <span><?php echo $k?></span><a href="/word-details/<?php echo $v['id']?>/index,178.html"><?php echo $v['name']?></a>
                         </li>
-                    <?php }?>
+                    <?php }}?>
                 </ul>
             </div>
         </div>
@@ -752,35 +731,35 @@
                     <img src="/cn/Hirsi/images/test-1.png" alt="">
                     <div class="eaxm_bot">
                         <p>GMAT</p>
-                        <a href="">查看详情</a>
+                        <a href="/gmatsheet.html">查看详情</a>
                     </div>
                 </li>
                 <li>
                     <img src="/cn/Hirsi/images/test-2.png" alt="">
                     <div class="eaxm_bot">
                         <p>GRE</p>
-                        <a href="">查看详情</a>
+                        <a href="/gre.html">查看详情</a>
                     </div>
                 </li>
                 <li>
                     <img src="/cn/Hirsi/images/test-3.png" alt="">
                     <div class="eaxm_bot">
                         <p>托福</p>
-                        <a href="">查看详情</a>
+                        <a href="/toefl/assistance.html">查看详情</a>
                     </div>
                 </li>
                 <li>
                     <img src="/cn/Hirsi/images/test-4.png" alt="">
                     <div class="eaxm_bot">
                         <p>雅思</p>
-                        <a href="">查看详情</a>
+                        <a href="/ieltssheet.html">查看详情</a>
                     </div>
                 </li>
                 <li>
                     <img src="/cn/Hirsi/images/test-5.png" alt="">
                     <div class="eaxm_bot">
                         <p>SAT</p>
-                        <a href="">查看详情</a>
+                        <a href="/satsheet.html">查看详情</a>
                     </div>
                 </li>
             </ul>
@@ -854,17 +833,18 @@
         <div class="eaxm_right"><!--第二个选项卡右边-->
             <a href="">
                 <div class="eaxm_recommend">
-                    <img style="width: 100%" src="" alt="">
-                    <div class="ency_bot_words"><p>商科研究生留学申请全攻略商科研究生留学申请全攻略</p></div>
+                    <img style="width: 100%" src="http://www.thinkwithu.com/<?php echo $news['recommend'][0]['image']?>" alt="">
+                    <div class="ency_bot_words"><p><?php echo $news['recommend'][0]['name']?></p></div>
                 </div>
             </a>
             <div class="eaxm_right_lb">
                 <ul>
-                    <?php foreach($news['recommend'] as $k=>$v){?>
+                    <?php foreach($news['recommend'] as $k=>$v){
+                        if($k>0){?>
                         <li class="active">
-                            <span><?php echo $k+1?></span><a href="/word-details/<?php echo $v['id']?>/index,261.html"><?php echo $v['name']?></a>
+                            <span><?php echo $k?></span><a href="/word-details/<?php echo $v['id']?>/index,261.html"><?php echo $v['name']?></a>
                         </li>
-                    <?php }?>
+                    <?php }}?>
                    </ul>
             </div>
         </div>
@@ -881,15 +861,14 @@
                     <?php foreach($case['gmat'] as $v){?>
                     <div class="recommendation">
                         <div class="recommendation_cover">
-                            <div class="reco_img"><img src="" alt=""></div>
+                            <div class="reco_img"><img src="<?php echo $v['image']?>" alt="申友高分案例"></div>
                             <div class="reco_iforma">
                                 <p>姓名:<?php echo $v['name']?></p>
-                                <p>毕业院校:trump</p>
-                                <p>硬件条件:trump</p>
-                                <p>录取学校:trump</p>
-                                <p>录取专业:trump</p>
+                                <p>分数:<?php echo $v['score']?></p>
+                                <p>出分时间:<?php echo $v['time']?></p>
+                                <p><?php echo $v['title']?></p>
                             </div>
-                            <a href=""><div class="zx_btn">咨询高分秘籍</div></a>
+                            <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank"><div class="zx_btn">咨询高分秘籍</div></a>
                         </div>
                     </div>
                     <?php }?>
@@ -898,15 +877,14 @@
                     <?php foreach($case['gre'] as $v){?>
                     <div class="recommendation">
                         <div class="recommendation_cover">
-                            <div class="reco_img"><img src="" alt=""></div>
+                            <div class="reco_img"><img src="<?php echo $v['image']?>" alt="申友高分案例"></div>
                             <div class="reco_iforma">
                                 <p>姓名:<?php echo $v['name']?></p>
-                                <p>毕业院校:trump</p>
-                                <p>硬件条件:trump</p>
-                                <p>录取学校:trump</p>
-                                <p>录取专业:trump</p>
+                                <p>分数:<?php echo $v['score']?></p>
+                                <p>出分时间:<?php echo $v['time']?></p>
+                                <p><?php echo $v['title']?></p>
                             </div>
-                            <a href=""><div class="zx_btn">咨询高分秘籍</div></a>
+                            <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank"><div class="zx_btn">咨询高分秘籍</div></a>
                         </div>
                     </div>
                     <?php }?>
@@ -915,15 +893,14 @@
                     <?php foreach($case['toefl'] as $v){?>
                     <div class="recommendation">
                         <div class="recommendation_cover">
-                            <div class="reco_img"><img src="" alt=""></div>
+                            <div class="reco_img"><img src="<?php echo $v['image']?>" alt="申友高分案例"></div>
                             <div class="reco_iforma">
                                 <p>姓名:<?php echo $v['name']?></p>
-                                <p>毕业院校:trump</p>
-                                <p>硬件条件:trump</p>
-                                <p>录取学校:trump</p>
-                                <p>录取专业:trump</p>
+                                <p>分数:<?php echo $v['score']?></p>
+                                <p>出分时间:<?php echo $v['time']?></p>
+                                <p><?php echo $v['title']?></p>
                             </div>
-                            <a href=""><div class="zx_btn">咨询高分秘籍</div></a>
+                            <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank"><div class="zx_btn">咨询高分秘籍</div></a>
                         </div>
                     </div>
                     <?php }?>
@@ -932,15 +909,14 @@
                     <?php foreach($case['ielts'] as $v){?>
                         <div class="recommendation">
                             <div class="recommendation_cover">
-                                <div class="reco_img"><img src="" alt=""></div>
+                                <div class="reco_img"><img src="<?php echo $v['image']?>" alt="申友高分案例"></div>
                                 <div class="reco_iforma">
-                                    <p>姓名:trump</p>
-                                    <p>毕业院校:trump</p>
-                                    <p>硬件条件:trump</p>
-                                    <p>录取学校:trump</p>
-                                    <p>录取专业:trump</p>
+                                    <p>姓名:<?php echo $v['name']?></p>
+                                    <p>分数:<?php echo $v['score']?></p>
+                                    <p>出分时间:<?php echo $v['time']?></p>
+                                    <p><?php echo $v['title']?></p>
                                 </div>
-                                <a href=""><div class="zx_btn">咨询高分秘籍</div></a>
+                                <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank"><div class="zx_btn">咨询高分秘籍</div></a>
                             </div>
                         </div>
                     <?php }?>
@@ -949,15 +925,15 @@
                     <?php foreach($case['abroad'] as $v){?>
                         <div class="recommendation">
                             <div class="recommendation_cover">
-                                <div class="reco_img"><img src="" alt=""></div>
+                                <div class="reco_img"><img src="<?php echo $v['image']?>" alt="申友留学案例"></div>
                                 <div class="reco_iforma">
-                                    <p>姓名:trump</p>
-                                    <p>毕业院校:trump</p>
-                                    <p>硬件条件:trump</p>
-                                    <p>录取学校:trump</p>
-                                    <p>录取专业:trump</p>
+                                    <p>姓名:<?php echo $v['name']?></p>
+                                    <p>毕业院校:<?php echo $v['oldSchool']?></p>
+                                    <p>硬件条件:<?php echo $v['score']?></p>
+                                    <p>录取学校:<?php echo $v['abroadSchool']?></p>
+                                    <p>录取专业:<?php echo $v['major']?></p>
                                 </div>
-                                <a href=""><div class="zx_btn">咨询名校秘籍</div></a>
+                                <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank"><div class="zx_btn">咨询名校秘籍</div></a>
                             </div>
                         </div>
                     <?php }?>
@@ -981,89 +957,50 @@
     <p class="Record_title">名师团队</p>
     <div class="service_line"></div>
     <div class="teamCover teamCover_1">
+
 <!--        <div class="teamCriclehd hd"><!--小圆点-->-->
 <!--           <ul>-->
+<!--               --><?php //foreach($teacher as $v){?>
 <!--               <li class=""></li>-->
-<!--               <li class=""></li>-->
-<!--               <li class=""></li>-->
+<!--               --><?php //}?>
+<!---->
 <!--           </ul>-->
 <!--        </div>-->
+
         <div class="teamCoverBd bd" ><!--中间内容-->
             <ul><!--循环li-->
+                <?php foreach($teacher as $v){?>
                 <li class="Bdcotent">
                     <div class="cotent_img"><!--老师图片-->
-                        <img src="http://toeflonline.cn/files/attach/images/20180118/1516256498707318.png" alt="">
+                        <img src="http://www.thinkwithu.com<?php echo $v['image']?>" alt="">
                     </div>
                     <div class="teacher_name"><!--老师名字-->
-                        <p>雷哥 Kiven 老师</p>
+                        <p><?php echo $v['name']?> 老师</p>
                     </div>
                     <div class="cotent_intro"><!--老师介绍内容-->
                         <i class="iconfont Trophyicon">&#xe603;</i>
-                        <span class="fir_p">留学英语考试集大成者 国内留学英语名师 培养托福教师数人</span>
+                        <span class="fir_p"><?php echo $v['abstract']?></span>
                         <p class="sec_p">个人简介</p>
-                        <p class="th_p">留学英语考试集大成者 国内留学英语名师 培养托福教师数人留学英语考试集大成者 国内留学英语名师 培养托福教师数人留学英语考试集大成者 国内留学英语名师 培养托福教师数人留学英语考试集大成者 国内留学英语名师 培养托福教师数人留学英语考试集大成者 国内留学英语名师 培养托福教师数人留学英语考试集大成者 国内留学英语名师 培养托福教师数人</p>
+                        <p class="th_p"><?php echo strip_tags($v['description'])?></p>
                         <p class="four_p">主讲课程</p>
-                        <p class="five_p">主讲课程 主讲课程 主讲课程 主讲课程 主讲课程</p>
+                        <p class="five_p"><?php echo $v['speaker']?></p>
                         <div class="details">
-                            <a href="">查看详情<i class="iconfont cricle_right">&#xe682;</i></a>
+                            <a href="/teachers/<?php echo $v['name']?>/<?php echo $v['id']?>.html">查看详情<i class="iconfont cricle_right">&#xe682;</i></a>
                         </div>
                     </div>
                 </li>
-                <li class="Bdcotent">
-                    <div class="cotent_img"><!--老师图片-->
-                        <img src="http://toeflonline.cn/files/attach/images/20180118/1516256498707318.png" alt="">
-                    </div>
-                    <div class="teacher_name"><!--老师名字-->
-                        <p>雷哥 Kiven 老师</p>
-                    </div>
-                    <div class="cotent_intro"><!--老师介绍内容-->
-                        <i class="iconfont Trophyicon">&#xe603;</i>
-                        <span class="fir_p">留学英语考试集大成者 国内留学英语名师 培养托福教师数人</span>
-                        <p class="sec_p">个人简介</p>
-                        <p class="th_p">留学英语考试集大成者 国内留学英语名师 培养托福教师数人留学英语考试集大成者 国内留学英语名师 培养托福教师数人留学英语考试集大成者 国内留学英语名师 培养托福教师数人留学英语考试集大成者 国内留学英语名师 培养托福教师数人留学英语考试集大成者 国内留学英语名师 培养托福教师数人留学英语考试集大成者 国内留学英语名师 培养托福教师数人</p>
-                        <p class="four_p">主讲课程</p>
-                        <p class="five_p">主讲课程 主讲课程 主讲课程 主讲课程 主讲课程</p>
-                        <div class="details">
-                            <a href="">查看详情<i class="iconfont cricle_right">&#xe682;</i></a>
-                        </div>
-                    </div>
-                </li>
-                <li class="Bdcotent">
-                    <div class="cotent_img"><!--老师图片-->
-                        <img src="http://toeflonline.cn/files/attach/images/20180118/1516256498707318.png" alt="">
-                    </div>
-                    <div class="teacher_name"><!--老师名字-->
-                        <p>雷哥 Kiven 老师</p>
-                    </div>
-                    <div class="cotent_intro"><!--老师介绍内容-->
-                        <i class="iconfont Trophyicon">&#xe603;</i>
-                        <span class="fir_p">留学英语考试集大成者 国内留学英语名师 培养托福教师数人</span>
-                        <p class="sec_p">个人简介</p>
-                        <p class="th_p">留学英语考试集大成者 国内留学英语名师 培养托福教师数人留学英语考试集大成者 国内留学英语名师 培养托福教师数人留学英语考试集大成者 国内留学英语名师 培养托福教师数人留学英语考试集大成者 国内留学英语名师 培养托福教师数人留学英语考试集大成者 国内留学英语名师 培养托福教师数人留学英语考试集大成者 国内留学英语名师 培养托福教师数人</p>
-                        <p class="four_p">主讲课程</p>
-                        <p class="five_p">主讲课程 主讲课程 主讲课程 主讲课程 主讲课程</p>
-                        <div class="details">
-                            <a href="">查看详情<i class="iconfont cricle_right">&#xe682;</i></a>
-                        </div>
-                    </div>
-                </li>
+                <?php }?>
             </ul>
         </div>
         <div class="teamCoverhd hd"><!--右边列表-->
             <ul>
-                <li>
-                    <img src="http://toeflonline.cn/files/attach/images/20180118/1516256498707318.png" alt="">
-                    <div class="name_mask">kevin</div>
-                </li>
-                <li>
-                    <div></div>
-                </li>
-                <li>
-                    <div></div>
-                </li>
-                <li>
-                    <div>aaaa</div>
-                </li>
+                <?php foreach($teacher as $v) { ?>
+                    <li>
+                        <img src="http://www.thinkwithu.com<?php echo $v['image']?>" alt="">
+
+                        <div class="name_mask"><?php echo $v['name']?></div>
+                    </li>
+                <?php }?>
             </ul>
         </div>
     </div>
@@ -1087,7 +1024,6 @@
         <a class="prev"><i class="iconfont prev_icon">&#xe601;</i></a>
     </div>
 </section>
-
 
 <?php if ($url == '/gmatsheet.html' || $url == '/mentor.html' || $url == '/toeflsheet.html') { ?>
     <div class="contactWay">
