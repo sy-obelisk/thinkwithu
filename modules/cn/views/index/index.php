@@ -981,13 +981,13 @@
     <p class="Record_title">名师团队</p>
     <div class="service_line"></div>
     <div class="teamCover teamCover_1">
-        <div class="teamCriclehd hd"><!--小圆点-->
-           <ul>
-               <li class=""></li>
-               <li class=""></li>
-               <li class=""></li>
-           </ul>
-        </div>
+<!--        <div class="teamCriclehd hd"><!--小圆点-->-->
+<!--           <ul>-->
+<!--               <li class=""></li>-->
+<!--               <li class=""></li>-->
+<!--               <li class=""></li>-->
+<!--           </ul>-->
+<!--        </div>-->
         <div class="teamCoverBd bd" ><!--中间内容-->
             <ul><!--循环li-->
                 <li class="Bdcotent">
@@ -1049,7 +1049,7 @@
                 </li>
             </ul>
         </div>
-        <div class="teamCoverhd"><!--右边列表-->
+        <div class="teamCoverhd hd"><!--右边列表-->
             <ul>
                 <li>
                     <img src="http://toeflonline.cn/files/attach/images/20180118/1516256498707318.png" alt="">
@@ -1198,7 +1198,7 @@ else{
     });
     //名师团队
     jQuery(".teamCover").slide({mainCell:".bd ul",effect:"leftLoop",autoPlay:true});
-    // jQuery(".teamCover_1").slide({mainCell:".teamCoverhd ul",autoPage:true,effect:"top",autoPlay:true,vis:3});
+    // jQuery(".teamCover_1").slide({titCell:".hd ul",mainCell:".teamCoverhd ul",autoPage:true,effect:"topLoop",autoPlay:true,vis:3});
     //研发成果
     jQuery(".Results_list").slide({mainCell:".Results_bd ul",autoPage:true,effect:"left",autoPlay:true,vis:6});
 

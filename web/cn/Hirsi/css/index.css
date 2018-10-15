@@ -215,6 +215,7 @@
     width: 100%;
 }
 .service_bot{
+    width: 100%;
     position: absolute;
     bottom: 30px;
     text-align: center;
@@ -1336,7 +1337,7 @@
 .th_p{
     width: 90%;
     margin: 5px auto 15px;
-    color: rgb(204,204,204);
+    color: rgb(170,170,170);
     font-size: 15px;
     overflow : hidden;
     text-overflow: ellipsis;
@@ -1353,7 +1354,7 @@
 .five_p{
     width: 90%;
     margin: 5px auto;
-    color: rgb(204,204,204);
+    color: rgb(170,170,170);
     font-size: 16px;
     overflow: hidden;
     text-overflow:ellipsis;
@@ -1395,12 +1396,13 @@
 .teamCriclehd li{
     display: inline-block;
     vertical-align: middle;
-    width: 20px;
+    width: 15px;
     height: 15px;
-    border-radius: 10px;
+    border-radius: 15px;
     background-color: #fff;
 }
 .teamCriclehd li.on{
+    height: 15px;
     width: 40px;
     background: rgb(153,68,153);
 }
@@ -1413,6 +1415,7 @@
     text-indent: 20px;
     line-height: 124px;
     background: rgba(153,68,153,.3);
+    color: white;
 }
 /*****************************研发成果*********************/
 .Results_list{
