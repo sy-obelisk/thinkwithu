@@ -38,7 +38,7 @@
         <div class="codeWrap">
             <p class="info-tit">验证码：</p>
             <input type="text"  name="code" class="info-int" id="telver"/>
-            <button class="codeBtn" onclick="leftCode()">获取验证码</button>
+            <button class="codeBtn" onclick="leftCode(this)">获取验证码</button>
         </div>
         <h1 onclick="lxfa()" class="info-btn tm">获取方案</h1>
     </div>
@@ -67,11 +67,33 @@
                 }, "json")
             }
         }
-        function leftCode(){
+        function leftCode(o){
+            var countdown=60;
+            var str = 1;
 			var phone = document.getElementById('tel').value;
-			console.log(phone);
             $.post('/cn/api/phone-code',{type:2,phoneNum:phone},function(re){
-                alert(re.message);
-            },"json")
+                if(re.code==1){
+                    alert(re.message);
+                    $(o).attr('disabled',true);
+                    $(o).html(countdown+'秒后重发');
+                    var timer = setInterval(function () {
+                        $(o).html(countdown + "秒后重发");
+                        countdown--;
+                        if (countdown < 0) {
+                            clearInterval(timer);
+                            $(o).removeAttr("disabled");
+                            $(o).html('获取验证码');
+                            if (str == 1) {
+                                //1表示手机短信验证
+                            }
+
+                        }
+                    }, 1000);
+                }else {
+                    alert(re.message);
+                }
+
+            },"json");
+
         }
     </script>
