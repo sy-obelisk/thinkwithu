@@ -382,7 +382,6 @@
                    </div>
                </ul>
                <ul>
-
                    <div class="encyclopedia_right"><!--循环li-->
                        <ul> <!--对应有几个国家就有几个ul 循环ul-->
                            <?php $uk= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "156", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
@@ -410,38 +409,9 @@
                    </div>
                </ul>
                <ul>
-
                    <div class="encyclopedia_right"><!--循环li-->
                        <ul> <!--对应有几个国家就有几个ul 循环ul-->
-                           <?php $uk= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "157", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
-                           foreach($uk['data'] as $k=>$v){
-                               if(is_numeric($k)){
-                                   ?>
-                                   <li class="ency_school">
-                                       <div class="ency_logo">
-                                           <img src="http://schools.smartapply.cn/<?php echo $v['image']?>" alt="">
-                                       </div>
-                                       <p class="ency_name"><?php echo $v['name']?></p>
-                                       <p class="ency_name_en"><?php echo $v['title']?></p>
-                                       <p class="ency_rank"><i class="iconfont trophy">&#xe60c;</i> 学校排名: <span><?php echo $v['s_rank']?></span></p>
-                                       <div class="ency_bottom">
-                                           <span><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="><i class="iconfont people">&#xe74e;</i>推荐导师</a></span>
-                                           <span><a href="/case.html"><i class="iconfont fire">&#xe614;</i>热门案列</a></span>
-                                       </div>
-                                       <div class="ency_mask"><!--鼠标移入的遮罩层-->
-                                           <div class="ency_test"><a href="#">录取几率测评</a></div>
-                                           <div class="ency_look"><a href="/schools/<?php echo $v['id']?>.html">查看学校</a></div>
-                                       </div>
-                                   </li>
-                               <?php }}?>
-                       </ul>
-                   </div>
-               </ul>
-               <ul>
-
-                   <div class="encyclopedia_right"><!--循环li-->
-                       <ul> <!--对应有几个国家就有几个ul 循环ul-->
-                           <?php $canada= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "158", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
+                           <?php $canada= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "157", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
                            foreach($canada['data'] as $k=>$v){
                                if(is_numeric($k)){
                                    ?>
@@ -464,13 +434,11 @@
                                <?php }}?>
                        </ul>
                    </div>
-
                </ul>
                <ul>
-
                    <div class="encyclopedia_right"><!--循环li-->
                        <ul> <!--对应有几个国家就有几个ul 循环ul-->
-                           <?php $australia= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "159", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
+                           <?php $australia= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "158", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
                            foreach($australia['data'] as $k=>$v){
                                if(is_numeric($k)){
                                    ?>
@@ -493,13 +461,12 @@
                                <?php }}?>
                        </ul>
                    </div>
-
                </ul>
                <ul>
 
                    <div class="encyclopedia_right"><!--循环li-->
                        <ul> <!--对应有几个国家就有几个ul 循环ul-->
-                           <?php $singapore= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "160", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
+                           <?php $singapore= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "159", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
                            foreach($singapore['data'] as $k=>$v){
                                if(is_numeric($k)){
                                    ?>
@@ -528,7 +495,7 @@
 
                    <div class="encyclopedia_right"><!--循环li-->
                        <ul> <!--对应有几个国家就有几个ul 循环ul-->
-                           <?php $hk= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "520", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
+                           <?php $hk= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "160", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
                            foreach($hk['data'] as $k=>$v){
                                if(is_numeric($k)){
                                    ?>
@@ -557,7 +524,7 @@
 
                    <div class="encyclopedia_right"><!--循环li-->
                        <ul> <!--对应有几个国家就有几个ul 循环ul-->
-                           <?php $europe= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "521", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
+                           <?php $europe= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "520", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
                            foreach($europe['data'] as $k=>$v){
                                if(is_numeric($k)){
                                    ?>
@@ -586,7 +553,7 @@
 
                    <div class="encyclopedia_right"><!--循环li-->
                        <ul> <!--对应有几个国家就有几个ul 循环ul-->
-                           <?php $asia= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "155", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
+                           <?php $asia= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "521", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
                            foreach($asia['data'] as $k=>$v){
                                if(is_numeric($k)){
                                    ?>
@@ -841,7 +808,7 @@
                     <?php foreach($news['recommend'] as $k=>$v){
                         if($k>0){?>
                         <li class="active">
-                            <span><?php echo $k?></span><a href="/word-details/<?php echo $v['id']?>/index,261.html"><?php echo $v['name']?></a>
+                            <span><?php echo $k?></span><a href="/word-details/<?php echo $v['id']?>/index,261.html" ><?php echo $v['name']?></a>
                         </li>
                     <?php }}?>
                    </ul>
@@ -957,7 +924,7 @@
     <div class="service_line"></div>
     <div class="teamCover teamCover_1">
 
-<!--        <div class="teamCriclehd hd"><!--小圆点-->-->
+<!--        <div class="teamCriclehd hd"><!--小圆点-->
 <!--           <ul>-->
 <!--               --><?php //foreach($teacher as $v){?>
 <!--               <li class=""></li>-->
@@ -1056,7 +1023,7 @@
                                     <span>咨询热线：</span>
 
                                     <p class="purpleColor"><?php echo $v['phone'] ?></p>
-                                    <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">
+                                    <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank">
                                         <img src="/cn/images/mentor_personIcon.png" alt="咨询图标">
                                         <span>免费咨询</span>
                                     </a>

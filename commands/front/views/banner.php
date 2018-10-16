@@ -28,11 +28,11 @@
                 <img src="/cn/Hirsi/images/classify.png" alt="横"><span>为你推荐</span>
                 <div class="recommend-list">
                     <ul>
-                        <li><a href="">美国留学 <i class="iconfont left_jt">&#xe600;</i></a></li>
-                        <li><a href="">英国留学 <i class="iconfont left_jt">&#xe600;</i></a></li>
-                        <li><a href="">澳洲留学 <i class="iconfont left_jt">&#xe600;</i></a></li>
-                        <li><a href="">加拿大留学 <i class="iconfont left_jt">&#xe600;</i></a></li>
-                        <li><a href="">香港留学 <i class="iconfont left_jt">&#xe600;</i></a></li>
+                        <li><a href="/USA.html">美国留学 <i class="iconfont left_jt">&#xe600;</i></a></li>
+                        <li><a href="/UK.html">英国留学 <i class="iconfont left_jt">&#xe600;</i></a></li>
+                        <li><a href="/AUS.html">澳洲留学 <i class="iconfont left_jt">&#xe600;</i></a></li>
+                        <li><a href="/COUNTRY.html">加拿大留学 <i class="iconfont left_jt">&#xe600;</i></a></li>
+                        <li><a href="/HK.html">香港留学 <i class="iconfont left_jt">&#xe600;</i></a></li>
                     </ul>
                 </div>
             </div>
@@ -41,16 +41,16 @@
                 <a class="nav1-link" href="/">考试提分 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
                 <div class="eaxm-list">
                     <ul>
-                        <li><a href="">SAT</a></li>
-                        <li><a href="">托福</a></li>
-                        <li><a href="">雅思</a></li>
-                        <li><a href="">GAMT</a></li>
-                        <li><a href="">GRE</a></li>
+                        <li><a href="/satsheet.html">SAT</a></li>
+                        <li><a href="/assistance.html">托福</a></li>
+                        <li><a href="/ieltssheet.html">雅思</a></li>
+                        <li><a href="/gmatsheet.html">GAMT</a></li>
+                        <li><a href="/gre.html">GRE</a></li>
                     </ul>
                 </div>
             </li>
             <li>
-                <a class="nav1-link" href="/">选校工具 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
+                <a class="nav1-link" href="/evaluation.html">选校工具 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
                 <div class="eaxm-list eaxm-list-1">
                     <ul>
                         <li><a href="">背景测评</a></li>
@@ -60,7 +60,7 @@
                 </div>
             </li>
             <li>
-                <a class="nav1-link" href="/">院校库 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
+                <a class="nav1-link" href="/schools.html">院校库 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
                 <div class="eaxm-list eaxm-list-1">
                     <ul>
                         <li><a href="">院校查询</a></li>
@@ -71,9 +71,9 @@
             </li>
             <li><a class="nav1-link" href="/">留学百科 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a></li>
             <li><a class="nav1-link" href="/">实习活动</a></li>
-            <li><a class="nav1-link" href="/">申友讲堂</a></li>
-            <li><a class="nav1-link" href="/">名校案列</a></li>
-            <li><a class="nav1-link" href="/">名师团队</a></li>
+            <li><a class="nav1-link" href="/public-class.html">申友讲堂</a></li>
+            <li><a class="nav1-link" href="/case.html">名校案列</a></li>
+            <li><a class="nav1-link" href="/teachers.html">名师团队</a></li>
         </ul>
     </div>
 </nav>
