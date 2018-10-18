@@ -42,7 +42,7 @@
                 <div class="eaxm-list">
                     <ul>
                         <li><a href="/satsheet.html">SAT</a></li>
-                        <li><a href="/assistance.html">托福</a></li>
+                        <li><a href="/toefl/assistance.html">托福</a></li>
                         <li><a href="/ieltssheet.html">雅思</a></li>
                         <li><a href="/gmatsheet.html">GAMT</a></li>
                         <li><a href="/gre.html">GRE</a></li>

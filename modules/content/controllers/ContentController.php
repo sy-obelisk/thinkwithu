@@ -62,7 +62,7 @@ class ContentController extends AppControl {
         $page = Yii::$app->request->get('page',1);
         $pageSize = 50;
         $limit = " limit ".($page-1)*$pageSize.",".$pageSize;
-        $order = " order by a.sort ASC,a.id DESC" ;
+        $order = " order by a.id DESC" ;
         $data = Yii::$app->db->createCommand("select a.*,n.caName$fields from {{%content}} a LEFT JOIN (SELECT cc.contentId,GROUP_CONCAT(ca.`name`) caName  FROM {{%category_content}} cc LEFT JOIN {{%category}} ca on ca.id=cc.catId GROUP BY cc.contentId ) n ON n.contentId = a.id WHERE ".$where.$order.$limit)->queryAll();
         $count = count(Yii::$app->db->createCommand("select a.*,n.caName from {{%content}} a LEFT JOIN (SELECT cc.contentId,GROUP_CONCAT(ca.`name`) caName  FROM {{%category_content}} cc LEFT JOIN {{%category}} ca on ca.id=cc.catId GROUP BY cc.contentId ) n ON n.contentId = a.id WHERE ".$where)->queryAll());
         $page = Method::getPagedRows(['count'=>$count,'pageSize'=>$pageSize, 'rows'=>'models']);
