@@ -26,7 +26,6 @@
     </ul>
 </section>
 <!--GMAT出分课程-->
-
 <section class="fraction">
     <div class="fraction_title">
         <h1>99%GMAT 考生出分课程</h1>
@@ -56,71 +55,79 @@
             <div class="content_bd bd">
                 <!--                --><?php // if(isset($course['data']['mainCourse'])){
                 //                    foreach($course['data']['mainCourse'] as $k=>$v){?>
-                <ul><!--外层循环ul  6ge  内部循环li-->
-                    <li>
-                        <div class="fraction_name"><!--课程名称-->
-                            <div class="left_name">课程名称</div>
-                            <div class="couse">GAMT 晚间强化方法课</div>
-                            <div class="couse">GAMT 晚间强化方法课</div>
-                            <div class="couse">GAMT 晚间强化方法课</div>
-                            <div class="couse">GAMT 晚间强化方法课</div>
-                            <div class="couse">GAMT 晚间强化方法课</div>
-                            <div class="couse">GAMT 晚间强化方法课</div>
-                        </div>
-                        <div class="fraction_price"><!--课程价格-->
-                            <div class="left_price">价格</div>
-                            <div>￥9000￥9000￥9000￥9000￥9000</div>
-                            <div>￥9000</div>
-                            <div>￥9000</div>
-                            <div>￥9000</div>
-                            <div>￥9000</div>
-                            <div>￥9000</div>
-                        </div>
-                        <div class="fraction_value"><!--性价比-->
-                            <div class="left_value">性价比</div>
-                            <div>112元/课时112元/课时112元/课时112元/课时</div>
-                            <div>112元/课时</div>
-                            <div>112元/课时</div>
-                            <div>112元/课时</div>
-                            <div>112元/课时</div>
-                            <div>112元/课时</div>
-                        </div>
-                        <div class="fraction_startTime"><!--开课时间-->
-                            <div class="left_startTime">开课时间</div>
-                            <div>7月31日7月31日7月31日7月31日</div>
-                            <div>7月31日7月31日7月31日7月31日</div>
-                            <div>7月31日7月31日7月31日7月31日</div>
-                            <div>7月31日7月31日7月31日7月31日</div>
-                            <div>7月31日7月31日7月31日7月31日</div>
-                            <div>7月31日7月31日7月31日7月31日</div>
-                        </div>
-                        <div class="fraction_Time"><!--课程时长-->
-                            <div class="left_Time">课程时长</div>
-                            <div>30+50课程</div>
-                            <div>30+50课程</div>
-                            <div>30+50课程</div>
-                            <div>30+50课程</div>
-                            <div>30+50课程</div>
-                            <div>30+50课程</div>
-                        </div>
-                        <div class="fraction_try"><!--试听-->
-                            <div class="left_try">试听</div>
-                            <div><a href="" target="_blank">试听</a></div>
-                            <div><a href="" target="_blank">试听</a></div>
-                            <div><a href="" target="_blank">试听</a></div>
-                            <div><a href="" target="_blank">试听</a></div>
-                            <div><a href="" target="_blank">试听</a></div>
-                            <div><a href="" target="_blank">试听</a></div>
-                        </div>
-                        <div class="fraction_sign"><!--报名-->
-                            <div class="left_sign">报名</div>
-                            <div><a href="" target="_blank">立即报名</a></div>
-                            <div><a href="" target="_blank">立即报名</a></div>
-                            <div><a href="" target="_blank">立即报名</a></div>
-                            <div><a href="" target="_blank">立即报名</a></div>
-                            <div><a href="" target="_blank">立即报名</a></div>
-                            <div><a href="" target="_blank">立即报名</a></div>
-                        </div>
+
+                <ul id="panel" class="flex-column">
+                    <li class="flex-cell flex-row course_lm">
+                        <div class="flex-cell flex-row">课程名称</div>
+                        <div class="flex-cell flex-row">价格</div>
+                        <div class="flex-cell flex-row">性价比</div>
+                        <div class="flex-cell flex-row">开课时间</div>
+                        <div class="flex-cell flex-row">课程时长</div>
+                        <div class="flex-cell flex-row">试听</div>
+                        <div class="flex-cell flex-row">报名</div>
+                    </li>
+                    <li class="flex-cell flex-row course_content">
+                        <div class="flex-cell flex-row"><a href=""><p>GAMT 晚间强化方法课</p></a></div>
+                        <div class="flex-cell flex-row course_price"><p>￥9000 ￥9000 ￥9000 ￥9000 ￥9000</p></div>
+                        <div class="flex-cell flex-row course_price"><p>112元/课时 112元/课时 112元/课时 112元/课时</p></div>
+                        <div class="flex-cell flex-row"><p>7月31日 7月31日 7月31日 7月31日</p></div>
+                        <div class="flex-cell flex-row"><p>80课时+文书创作时间+80课时+文书创作时间</p></div>
+                        <div class="flex-cell flex-row course_try"><a href="">试听</a></div>
+                        <div class="flex-cell flex-row course_sign"><a href="">立即报名</a></div>
+                    </li>
+                    <li class="flex-cell flex-row course_content">
+                        <div class="flex-cell flex-row"><a href=""><p>GAMT 晚间强化方法课</p></a></div>
+                        <div class="flex-cell flex-row course_price"><p>￥9000 ￥9000 ￥9000 ￥9000 ￥9000</p></div>
+                        <div class="flex-cell flex-row course_price"><p>112元/课时 112元/课时 112元/课时 112元/课时</p></div>
+                        <div class="flex-cell flex-row"><p>7月31日 7月31日 7月31日 7月31日</p></div>
+                        <div class="flex-cell flex-row"><p>80课时+文书创作时间+80课时+文书创作时间</p></div>
+                        <div class="flex-cell flex-row course_try"><a href="">试听</a></div>
+                        <div class="flex-cell flex-row course_sign"><a href="">立即报名</a></div>
+                    </li>
+                    <li class="flex-cell flex-row course_content">
+                        <div class="flex-cell flex-row"><a href=""><p>GAMT 晚间强化方法课</p></a></div>
+                        <div class="flex-cell flex-row course_price"><p>￥9000 ￥9000 ￥9000 ￥9000 ￥9000</p></div>
+                        <div class="flex-cell flex-row course_price"><p>112元/课时 112元/课时 112元/课时 112元/课时</p></div>
+                        <div class="flex-cell flex-row"><p>7月31日 7月31日 7月31日 7月31日</p></div>
+                        <div class="flex-cell flex-row"><p>80课时+文书创作时间+80课时+文书创作时间</p></div>
+                        <div class="flex-cell flex-row course_try"><a href="">试听</a></div>
+                        <div class="flex-cell flex-row course_sign"><a href="">立即报名</a></div>
+                    </li>
+                    <li class="flex-cell flex-row course_content">
+                        <div class="flex-cell flex-row"><a href=""><p>GAMT 晚间强化方法课</p></a></div>
+                        <div class="flex-cell flex-row course_price"><p>￥9000 ￥9000 ￥9000 ￥9000 ￥9000</p></div>
+                        <div class="flex-cell flex-row course_price"><p>112元/课时 112元/课时 112元/课时 112元/课时</p></div>
+                        <div class="flex-cell flex-row"><p>7月31日 7月31日 7月31日 7月31日</p></div>
+                        <div class="flex-cell flex-row"><p>80课时+文书创作时间+80课时+文书创作时间</p></div>
+                        <div class="flex-cell flex-row course_try"><a href="">试听</a></div>
+                        <div class="flex-cell flex-row course_sign"><a href="">立即报名</a></div>
+                    </li>
+                    <li class="flex-cell flex-row course_content">
+                        <div class="flex-cell flex-row"><a href=""><p>GAMT 晚间强化方法课</p></a></div>
+                        <div class="flex-cell flex-row course_price"><p>￥9000 ￥9000 ￥9000 ￥9000 ￥9000</p></div>
+                        <div class="flex-cell flex-row course_price"><p>112元/课时 112元/课时 112元/课时 112元/课时</p></div>
+                        <div class="flex-cell flex-row"><p>7月31日 7月31日 7月31日 7月31日</p></div>
+                        <div class="flex-cell flex-row"><p>80课时+文书创作时间+80课时+文书创作时间</p></div>
+                        <div class="flex-cell flex-row course_try"><a href="">试听</a></div>
+                        <div class="flex-cell flex-row course_sign"><a href="">立即报名</a></div>
+                    </li>
+                    <li class="flex-cell flex-row course_content">
+                        <div class="flex-cell flex-row"><a href=""><p>GAMT 晚间强化方法课</p></a></div>
+                        <div class="flex-cell flex-row course_price"><p>￥9000 ￥9000 ￥9000 ￥9000 ￥9000</p></div>
+                        <div class="flex-cell flex-row course_price"><p>112元/课时 112元/课时 112元/课时 112元/课时</p></div>
+                        <div class="flex-cell flex-row"><p>7月31日 7月31日 7月31日 7月31日</p></div>
+                        <div class="flex-cell flex-row"><p>80课时+文书创作时间+80课时+文书创作时间</p></div>
+                        <div class="flex-cell flex-row course_try"><a href="">试听</a></div>
+                        <div class="flex-cell flex-row course_sign"><a href="">立即报名</a></div>
+                    </li>
+                    <li class="flex-cell flex-row course_content">
+                        <div class="flex-cell flex-row"><a href=""><p>GAMT 晚间强化方法课</p></a></div>
+                        <div class="flex-cell flex-row course_price"><p>￥9000 ￥9000 ￥9000 ￥9000 ￥9000</p></div>
+                        <div class="flex-cell flex-row course_price"><p>112元/课时 112元/课时 112元/课时 112元/课时</p></div>
+                        <div class="flex-cell flex-row"><p>7月31日 7月31日 7月31日 7月31日</p></div>
+                        <div class="flex-cell flex-row"><p>80课时+文书创作时间+80课时+文书创作时间</p></div>
+                        <div class="flex-cell flex-row course_try"><a href="">试听</a></div>
+                        <div class="flex-cell flex-row course_sign"><a href="">立即报名</a></div>
                     </li>
                 </ul>
                 <!--                    --><?php //}
