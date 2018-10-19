@@ -1011,12 +1011,13 @@
 <!--        </div>-->
 
         <div class="teamCoverBd bd" ><!--中间内容-->
-            <ul><!--循环li-->
+            <ul class="tinter_wrap"><!--循环li-->
                 <?php foreach($teacher as $v){?>
                 <li class="Bdcotent">
                     <div class="cotent_img"><!--老师图片-->
                         <img src="http://www.thinkwithu.com<?php echo $v['image']?>" alt="">
                     </div>
+                    <div class="cotent_imgCover"></div>
                     <div class="teacher_name"><!--老师名字-->
                         <p><?php echo $v['name']?> 老师</p>
                     </div>
@@ -1036,15 +1037,25 @@
             </ul>
         </div>
         <div class="teamCoverhd hd"><!--右边例表-->
-            <ul>
-                <?php foreach($teacher as $v) { ?>
-                    <li>
-                        <img src="http://www.thinkwithu.com<?php echo $v['image']?>" alt="">
 
-                        <div class="name_mask"><?php echo $v['name']?></div>
-                    </li>
-                <?php }?>
-            </ul>
+            <div class="picMarquee-left2">
+                <i class="iconfont prev">&#xe605;</i>
+                <i class="iconfont next">&#xe606;</i>
+                <div class="bd">
+                    <ul>
+                        <?php foreach($teacher as $v) { ?>
+                            <li>
+                                <div class="teamCoverhd_image">
+                                    <img src="http://www.thinkwithu.com<?php echo $v['image']?>" alt="">
+                                </div>
+
+                                <div class="name_mask"><?php echo $v['name']?></div>
+                            </li>
+                        <?php }?>
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
@@ -1176,7 +1187,15 @@ else{
         mouseOverStop: true
     });
     //名师团队
-    jQuery(".teamCover").slide({mainCell:".bd ul",effect:"leftLoop",autoPlay:true});
+    jQuery(".teamCover").slide({mainCell:".tinter_wrap",effect:"leftLoop",autoPlay:true,interTime: 3000});
+
+    jQuery(".picMarquee-left2").slide({
+        mainCell: ".bd ul",
+        autoPlay: true,
+        effect: "topLoop",
+        vis: 3,
+        interTime: 3000,
+    });
     // jQuery(".teamCover_1").slide({titCell:".hd ul",mainCell:".teamCoverhd ul",autoPage:true,effect:"topLoop",autoPlay:true,vis:3});
     //研发成果
     jQuery(".Results_list").slide({mainCell:".Results_bd ul",autoPage:true,effect:"left",autoPlay:true,vis:6});

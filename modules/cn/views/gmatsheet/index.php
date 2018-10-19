@@ -71,8 +71,8 @@
                         <div class="flex-cell flex-row"><a href=""><p><?php echo $v['contenttitle']?></p></a></div>
                         <div class="flex-cell flex-row course_price"><p>￥<?php echo $v['price']?></p></div>
                         <div class="flex-cell flex-row course_price"><p><?php echo $v['cost']?></p></div>
-                        <div class="flex-cell flex-row"><p><?php echo $v['times']?></p></div>
-                        <div class="flex-cell flex-row"><p><?php echo $v['hour']?></p></div>
+                        <div class="flex-cell flex-row f15"><p><?php echo $v['times']?></p></div>
+                        <div class="flex-cell flex-row f15"><p><?php echo $v['hour']?></p></div>
                         <div class="flex-cell flex-row course_try"><a href="<?php echo $v['url']?>">试听</a></div>
                         <div class="flex-cell flex-row course_sign"><a href="<?php echo 'http://www.gmatonline.cn'.$v['detailUrl']?>">立即报名</a></div>
                     </li>
@@ -255,26 +255,13 @@
                         <li>
                             <div class="video-slide anne-flex">
                                 <div class="left-video">
-                                    <img
-                                        src="http://www.thinkwithu.com<?php echo $v['image']?>"
-                                        alt="图片"/>
+                                    <img src="http://www.thinkwithu.com<?php echo $v['image']?>" alt="图片"/>
                                 </div>
                                 <div class="right-vInfo">
-                                    <div class="top-vi">
-                                        <b><?php echo $v['name']?></b>
-                                        <b>分数：<?php echo $v['score']?></b>
-                                    </div>
-                                    <div class="center-bor anne-flex">
-                                        <div>
-<!--                                            <p>出分时间：--><?php //echo $v['time']?><!--</p>-->
-
-                                            <p>班型：<?php echo $v['flag']?></p>
-                                        </div>
-                                        <div>
-                                            <p>出分时间：9月30日</p>
-<!--                                            <p>考试次数：2次</p>-->
-                                        </div>
-                                    </div>
+                                    <p class="vInfo_name"><?php echo $v['name']?></p>
+                                    <p class="vInfo_grads">分数: <?php echo $v['score']?></p>
+                                    <p class="vInfo_time">出分时间:<?php echo $v['time']?></p>
+                                    <p class="vInfo_class">班型: <?php echo $v['flag']?></p>
                                     <div class="bot-last">
                                         <?php echo $v['title']?>
                                     </div>
@@ -321,11 +308,12 @@
                     <?php }?>
                 </ul>
             </div>
-            <div class="hd">
+            <div class="hd hd_repleate">
+                <div class="prev pre_btn"><img src="/cn/images/gmatImages/bk4_crow_left.png" alt=""></div>
+                <div class="next pre_btn"><img src="/cn/images/gmatImages/bk4_crow_right.png" alt=""></div>
                 <div class="picMarquee-left2 relative">
-                    <div class="prev pre_btn"><img src="/cn/images/gmatImages/bk4_crow_left.png" alt=""></div>
-                    <div class="next pre_btn"><img src="/cn/images/gmatImages/bk4_crow_right.png" alt="">
-                    </div>
+<!--                    <div class="prev pre_btn"><img src="/cn/images/gmatImages/bk4_crow_left.png" alt=""></div>-->
+<!--                    <div class="next pre_btn"><img src="/cn/images/gmatImages/bk4_crow_right.png" alt=""></div>-->
                     <div class="bd" style="width: 720px;margin: auto;">
                         <ul class="teacher_index_head_list flex-container"><!--循环li-->
                             <?php foreach($teacher as $v){?>
@@ -427,8 +415,8 @@
     jQuery(".picFocus").slide({
         mainCell: ".tinter_wrap",
         effect: "leftLoop",
-        interTime: 5000,
-//                autoPlay: true,
+        interTime: 3000,
+        autoPlay: true,
         endFun: function (i) { //高度自适应
             var bd = document.getElementById("tabBox1-bd");
             bd.style.height = bd.children[0].children[0].children[i + 1].offsetHeight + 50 + "px";
@@ -441,7 +429,7 @@
         autoPlay: true,
         effect: "leftMarquee",
         vis: 7,
-        interTime: 100
+        interTime: 50
     });
     //课程活动 热门资讯
     jQuery(".txtMarquee-bottom").slide({mainCell:".bd ul",autoPlay:true,effect:"topMarquee",vis:8,interTime:50,trigger:"click"});

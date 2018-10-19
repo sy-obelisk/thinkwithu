@@ -490,10 +490,20 @@
 	width: 415px;
 	height: 345px;
 	border: 1px #e0e0e0 solid;
-	padding: 40px 35px 0 35px;
+	padding: 30px 35px 0 35px;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
+}
+.vInfo_name,.vInfo_grads{
+	font-size: 20px;
+	font-weight: bold;
+	width: 100%;
+	margin-bottom: 15px;
+}
+.vInfo_time,.vInfo_class{
+    font-size: 18px;
+    margin-bottom: 15px;
 }
 .top-vi{
 	margin-bottom: 30px;
@@ -519,6 +529,13 @@
 	font-size: 16px;
 	color: #444444;
 	margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgb(232,222,231);
+	overflow : hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
 }
 .bk-last{
 	width: 1167px;
@@ -593,8 +610,11 @@
 .teacher_index {
 	padding-bottom: 50px;
 	background-color: #f5f5f5;
+	position: relative;
 }
-
+.hd_repleate{
+	position: relative;
+}
 .teacher_index_head_small {
 	width: 80px;
 	height: 80px;
@@ -648,15 +668,15 @@
 }
 
 .prev {
-	left: 0;
+	left: 90px;
 }
 
 .next {
-	right: 0;
+	right: 90px;
 }
 
 .picMarquee-left2 {
-	width: 960px;
+	width: 860px;
 	margin: auto;
 }
 
@@ -1194,7 +1214,7 @@
 	overflow: hidden;
 }
 .flex-cell>p{
-	overflow: hidden;
+	/*overflow: hidden;*/
 	text-overflow: ellipsis;
 }
 .course_lm{
@@ -1202,7 +1222,7 @@
 }
 .course_lm>div{
 	width: 80%;
-	padding:0px 10%;
+	padding:0px 9.5%;
 	border-right: 1px solid rgb(239,239,230);
 	border-bottom: 1px solid rgb(239,239,230);
 	font-family: 宋体;
@@ -1212,17 +1232,24 @@
 }
 .course_lm>div:nth-child(1){
 	border-top: 1px solid rgb(239,239,230);
-	padding: 40px 10%;
+	padding: 20px 10%;
 }
 .course_content>div{
 	width: 80%;
-	padding:0px 10%;
+	padding:20px 9.5%;
 	border-right: 1px solid rgb(239,239,230);
 	border-bottom: 1px solid rgb(239,239,230);
 }
 .course_content>div:nth-child(1){
 	border-top: 1px solid rgb(239,239,230);
-	padding: 40px 10%;
+	padding: 40px 9.5%;
+}
+
+.course_content>div:nth-child(1):hover{
+    background:rgb(151,70,148) ;
+}
+.course_content>div:nth-child(1):hover p{
+   color: white;
 }
 .course_content>div p{
 	color: rgb(85,85,85);
@@ -1252,5 +1279,8 @@
 .course_sign a:hover{
 	color: white;
 	background: rgb(151,70,148);
+}
+.f15 p{
+    font-size: 16px;
 }
 

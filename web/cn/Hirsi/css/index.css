@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'iconfont';  /* project id 864853 */
-    src: url('//at.alicdn.com/t/font_864853_n2cwcyktp0i.eot');
-    src: url('//at.alicdn.com/t/font_864853_n2cwcyktp0i.eot?#iefix') format('embedded-opentype'),
-    url('//at.alicdn.com/t/font_864853_n2cwcyktp0i.woff') format('woff'),
-    url('//at.alicdn.com/t/font_864853_n2cwcyktp0i.ttf') format('truetype'),
-    url('//at.alicdn.com/t/font_864853_n2cwcyktp0i.svg#iconfont') format('svg');
+    src: url('//at.alicdn.com/t/font_864853_7eapsfxiz3a.eot');
+    src: url('//at.alicdn.com/t/font_864853_7eapsfxiz3a.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_864853_7eapsfxiz3a.woff') format('woff'),
+    url('//at.alicdn.com/t/font_864853_7eapsfxiz3a.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_864853_7eapsfxiz3a.svg#iconfont') format('svg');
 }
 *{
     margin: 0;
@@ -244,7 +244,7 @@
     margin-top: 30px;
     position: relative;
 }
-.next{
+.service_list .next{
     display: inline-block;
     position: absolute;
     color: white;
@@ -259,7 +259,7 @@
     margin-top: -20px;
     cursor: pointer;
 }
-.prev{
+.service_list .prev{
     display: inline-block;
     position: absolute;
     color: white;
@@ -843,36 +843,36 @@
     width: 1120px;
     margin:30px auto 0;
 }
-.next{
-    display: inline-block;
-    position: absolute;
-    color: white;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: rgb(238,238,238);
-    text-align: center;
-    line-height: 40px;
-    left: -70px;
-    top: 50%;
-    margin-top: -20px;
-    cursor: pointer;
-}
-.prev{
-    display: inline-block;
-    position: absolute;
-    color: white;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: rgb(238,238,238);
-    text-align: center;
-    line-height: 40px;
-    right: -70px;
-    top: 50%;
-    margin-top: -20px;
-    cursor: pointer;
-}
+/*.next{*/
+    /*display: inline-block;*/
+    /*position: absolute;*/
+    /*color: white;*/
+    /*width: 40px;*/
+    /*height: 40px;*/
+    /*border-radius: 50%;*/
+    /*background: rgb(238,238,238);*/
+    /*text-align: center;*/
+    /*line-height: 40px;*/
+    /*left: -70px;*/
+    /*top: 50%;*/
+    /*margin-top: -20px;*/
+    /*cursor: pointer;*/
+/*}*/
+/*.prev{*/
+    /*display: inline-block;*/
+    /*position: absolute;*/
+    /*color: white;*/
+    /*width: 40px;*/
+    /*height: 40px;*/
+    /*border-radius: 50%;*/
+    /*background: rgb(238,238,238);*/
+    /*text-align: center;*/
+    /*line-height: 40px;*/
+    /*right: -70px;*/
+    /*top: 50%;*/
+    /*margin-top: -20px;*/
+    /*cursor: pointer;*/
+/*}*/
 .eaxm_tab{
     margin-top: 40px;
     overflow: hidden;
@@ -1042,6 +1042,7 @@
     position: relative;
     /* overflow: hidden; */
     padding-top: 20px;
+    max-height: 422px;
 }
 .Curriculum_Broadcast{
     position: relative;
@@ -1146,10 +1147,13 @@
 }
 .hdCurriculum{
     width:60px ;
-    height:310px;
+    height:350px;
     position: absolute;
     top: 20px;
     left: -105px;
+    -webkit-box-shadow:10px 2px 10px 0px rgb(248,248,248);
+    -moz-box-shadow:10px 2px 10px 0px rgb(248,248,248);
+    box-shadow: 10px 2px 10px 0px rgb(248,248,248);
 }
 .hdCurriculum ul li{
     width: 100%;
@@ -1207,6 +1211,9 @@
 }
 .hdCurriculum ul li:last-child{
     /*height: 65px!important;*/
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none!important;
 }
 .hdCurriculum ul li.on{
     color: white;
@@ -1214,6 +1221,10 @@
 }
 .hdCurriculum ul li.on p{
     color: white;
+}
+.bdCurriculum{
+    max-height: 422px;
+    overflow: hidden;
 }
 .bdCurriculum .banner{
     padding-bottom: 60px!important;
@@ -1231,6 +1242,7 @@
 }
 .reco_iforma{
     width: 70%;
+    height: 115px;
     margin: 15px auto 15px;
 }
 .reco_iforma>p{
@@ -1241,12 +1253,32 @@
     margin:5px auto;
 }
 /*****************************名师团队*********************/
+.teamCoverhd .prev{
+    color: rgb(204,204,204);
+    font-size: 40px!important;
+    position: absolute;
+    left: 50%;
+    top: -35px;
+    margin-left: -20px;
+    cursor: pointer;
+}
+.teamCoverhd .next{
+    color: rgb(204,204,204);
+    font-size: 40px!important;
+    position: absolute;
+    left: 50%;
+    bottom: -35px;
+    margin-left: -20px;
+    cursor: pointer;
+}
 .teacherTeam{
     width: 1200px;
     margin: 10px auto;
 }
 .teamCover{
     margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     overflow: hidden;
     position: relative;
 }
@@ -1259,14 +1291,18 @@
 .teamCoverhd{
     width: 200px;
     float: right;
-    overflow: hidden;
+    /*overflow: hidden;*/
     height: 395px;
+    position: relative;
 }
 .teamCoverhd li{
+    padding-bottom: 7px;
+    position: relative;
+}
+.teamCoverhd_image{
     background: url("/cn/Hirsi/images/bg-sm.png")no-repeat center;
-    height:124px ;
+    height:122px ;
     overflow: hidden;
-    margin-top: 7px;
     position: relative;
     border: 1px solid rgb(153,68,153);
 }
@@ -1283,13 +1319,23 @@
     position: relative;
     height: 400px;
 }
+.cotent_imgCover{
+    width: 390px;
+    height: 300px;
+    overflow: hidden;
+    position: absolute;
+    left: 0px;
+    top: 3px;
+    z-index: 9;
+    background: rgb(153,68,153);
+}
 .cotent_img{
     width: 390px;
     height: 300px;
     overflow: hidden;
     background: url("/cn/Hirsi/images/bg-big.png")no-repeat center;
     position: absolute;
-    left: 0;
+    left: 3px;
     top: 0;
     z-index: 10;
 }
@@ -1411,10 +1457,10 @@
 }
 .name_mask{
     width: 100%;
-    height: 100%;
+    height: 124px;
     position: absolute;
     left: 0;
-    top: 0;
+    top:0;
     text-indent: 20px;
     line-height: 124px;
     background: rgba(153,68,153,.3);
