@@ -53,8 +53,8 @@
             <!--                <div class="left_sign">报名</div>-->
             <!--            </div>-->
             <div class="content_bd bd">
-                <!--                --><?php // if(isset($course['data']['mainCourse'])){
-                //                    foreach($course['data']['mainCourse'] as $k=>$v){?>
+                <?php  if(isset($course['data']['mainCourse'])){
+                foreach($course['data']['mainCourse'] as $key=>$val){?>
 
                 <ul id="panel" class="flex-column">
                     <li class="flex-cell flex-row course_lm">
@@ -66,87 +66,89 @@
                         <div class="flex-cell flex-row">试听</div>
                         <div class="flex-cell flex-row">报名</div>
                     </li>
+                    <?php foreach($val['courses'] as $k=>$v){?>
                     <li class="flex-cell flex-row course_content">
-                        <div class="flex-cell flex-row"><a href=""><p>GAMT 晚间强化方法课</p></a></div>
-                        <div class="flex-cell flex-row course_price"><p>￥9000 ￥9000 ￥9000 ￥9000 ￥9000</p></div>
-                        <div class="flex-cell flex-row course_price"><p>112元/课时 112元/课时 112元/课时 112元/课时</p></div>
-                        <div class="flex-cell flex-row"><p>7月31日 7月31日 7月31日 7月31日</p></div>
-                        <div class="flex-cell flex-row"><p>80课时+文书创作时间+80课时+文书创作时间</p></div>
-                        <div class="flex-cell flex-row course_try"><a href="">试听</a></div>
-                        <div class="flex-cell flex-row course_sign"><a href="">立即报名</a></div>
+                        <div class="flex-cell flex-row"><a href=""><p><?php echo $v['contenttitle']?></p></a></div>
+                        <div class="flex-cell flex-row course_price"><p>￥<?php echo $v['price']?></p></div>
+                        <div class="flex-cell flex-row course_price"><p><?php echo $v['cost']?></p></div>
+                        <div class="flex-cell flex-row"><p><?php echo $v['times']?></p></div>
+                        <div class="flex-cell flex-row"><p><?php echo $v['hour']?></p></div>
+                        <div class="flex-cell flex-row course_try"><a href="<?php echo $v['url']?>">试听</a></div>
+                        <div class="flex-cell flex-row course_sign"><a href="<?php echo 'http://www.gmatonline.cn'.$v['detailUrl']?>">立即报名</a></div>
                     </li>
-                    <li class="flex-cell flex-row course_content">
-                        <div class="flex-cell flex-row"><a href=""><p>GAMT 晚间强化方法课</p></a></div>
-                        <div class="flex-cell flex-row course_price"><p>￥9000 ￥9000 ￥9000 ￥9000 ￥9000</p></div>
-                        <div class="flex-cell flex-row course_price"><p>112元/课时 112元/课时 112元/课时 112元/课时</p></div>
-                        <div class="flex-cell flex-row"><p>7月31日 7月31日 7月31日 7月31日</p></div>
-                        <div class="flex-cell flex-row"><p>80课时+文书创作时间+80课时+文书创作时间</p></div>
-                        <div class="flex-cell flex-row course_try"><a href="">试听</a></div>
-                        <div class="flex-cell flex-row course_sign"><a href="">立即报名</a></div>
-                    </li>
-                    <li class="flex-cell flex-row course_content">
-                        <div class="flex-cell flex-row"><a href=""><p>GAMT 晚间强化方法课</p></a></div>
-                        <div class="flex-cell flex-row course_price"><p>￥9000 ￥9000 ￥9000 ￥9000 ￥9000</p></div>
-                        <div class="flex-cell flex-row course_price"><p>112元/课时 112元/课时 112元/课时 112元/课时</p></div>
-                        <div class="flex-cell flex-row"><p>7月31日 7月31日 7月31日 7月31日</p></div>
-                        <div class="flex-cell flex-row"><p>80课时+文书创作时间+80课时+文书创作时间</p></div>
-                        <div class="flex-cell flex-row course_try"><a href="">试听</a></div>
-                        <div class="flex-cell flex-row course_sign"><a href="">立即报名</a></div>
-                    </li>
-                    <li class="flex-cell flex-row course_content">
-                        <div class="flex-cell flex-row"><a href=""><p>GAMT 晚间强化方法课</p></a></div>
-                        <div class="flex-cell flex-row course_price"><p>￥9000 ￥9000 ￥9000 ￥9000 ￥9000</p></div>
-                        <div class="flex-cell flex-row course_price"><p>112元/课时 112元/课时 112元/课时 112元/课时</p></div>
-                        <div class="flex-cell flex-row"><p>7月31日 7月31日 7月31日 7月31日</p></div>
-                        <div class="flex-cell flex-row"><p>80课时+文书创作时间+80课时+文书创作时间</p></div>
-                        <div class="flex-cell flex-row course_try"><a href="">试听</a></div>
-                        <div class="flex-cell flex-row course_sign"><a href="">立即报名</a></div>
-                    </li>
-                    <li class="flex-cell flex-row course_content">
-                        <div class="flex-cell flex-row"><a href=""><p>GAMT 晚间强化方法课</p></a></div>
-                        <div class="flex-cell flex-row course_price"><p>￥9000 ￥9000 ￥9000 ￥9000 ￥9000</p></div>
-                        <div class="flex-cell flex-row course_price"><p>112元/课时 112元/课时 112元/课时 112元/课时</p></div>
-                        <div class="flex-cell flex-row"><p>7月31日 7月31日 7月31日 7月31日</p></div>
-                        <div class="flex-cell flex-row"><p>80课时+文书创作时间+80课时+文书创作时间</p></div>
-                        <div class="flex-cell flex-row course_try"><a href="">试听</a></div>
-                        <div class="flex-cell flex-row course_sign"><a href="">立即报名</a></div>
-                    </li>
-                    <li class="flex-cell flex-row course_content">
-                        <div class="flex-cell flex-row"><a href=""><p>GAMT 晚间强化方法课</p></a></div>
-                        <div class="flex-cell flex-row course_price"><p>￥9000 ￥9000 ￥9000 ￥9000 ￥9000</p></div>
-                        <div class="flex-cell flex-row course_price"><p>112元/课时 112元/课时 112元/课时 112元/课时</p></div>
-                        <div class="flex-cell flex-row"><p>7月31日 7月31日 7月31日 7月31日</p></div>
-                        <div class="flex-cell flex-row"><p>80课时+文书创作时间+80课时+文书创作时间</p></div>
-                        <div class="flex-cell flex-row course_try"><a href="">试听</a></div>
-                        <div class="flex-cell flex-row course_sign"><a href="">立即报名</a></div>
-                    </li>
-                    <li class="flex-cell flex-row course_content">
-                        <div class="flex-cell flex-row"><a href=""><p>GAMT 晚间强化方法课</p></a></div>
-                        <div class="flex-cell flex-row course_price"><p>￥9000 ￥9000 ￥9000 ￥9000 ￥9000</p></div>
-                        <div class="flex-cell flex-row course_price"><p>112元/课时 112元/课时 112元/课时 112元/课时</p></div>
-                        <div class="flex-cell flex-row"><p>7月31日 7月31日 7月31日 7月31日</p></div>
-                        <div class="flex-cell flex-row"><p>80课时+文书创作时间+80课时+文书创作时间</p></div>
-                        <div class="flex-cell flex-row course_try"><a href="">试听</a></div>
-                        <div class="flex-cell flex-row course_sign"><a href="">立即报名</a></div>
-                    </li>
+                        <?php }?>
+<!--                    <li class="flex-cell flex-row course_content">-->
+<!--                        <div class="flex-cell flex-row"><a href=""><p>GAMT 晚间强化方法课</p></a></div>-->
+<!--                        <div class="flex-cell flex-row course_price"><p>￥9000 ￥9000 ￥9000 ￥9000 ￥9000</p></div>-->
+<!--                        <div class="flex-cell flex-row course_price"><p>112元/课时 112元/课时 112元/课时 112元/课时</p></div>-->
+<!--                        <div class="flex-cell flex-row"><p>7月31日 7月31日 7月31日 7月31日</p></div>-->
+<!--                        <div class="flex-cell flex-row"><p>80课时+文书创作时间+80课时+文书创作时间</p></div>-->
+<!--                        <div class="flex-cell flex-row course_try"><a href="">试听</a></div>-->
+<!--                        <div class="flex-cell flex-row course_sign"><a href="">立即报名</a></div>-->
+<!--                    </li>-->
+<!--                    <li class="flex-cell flex-row course_content">-->
+<!--                        <div class="flex-cell flex-row"><a href=""><p>GAMT 晚间强化方法课</p></a></div>-->
+<!--                        <div class="flex-cell flex-row course_price"><p>￥9000 ￥9000 ￥9000 ￥9000 ￥9000</p></div>-->
+<!--                        <div class="flex-cell flex-row course_price"><p>112元/课时 112元/课时 112元/课时 112元/课时</p></div>-->
+<!--                        <div class="flex-cell flex-row"><p>7月31日 7月31日 7月31日 7月31日</p></div>-->
+<!--                        <div class="flex-cell flex-row"><p>80课时+文书创作时间+80课时+文书创作时间</p></div>-->
+<!--                        <div class="flex-cell flex-row course_try"><a href="">试听</a></div>-->
+<!--                        <div class="flex-cell flex-row course_sign"><a href="">立即报名</a></div>-->
+<!--                    </li>-->
+<!--                    <li class="flex-cell flex-row course_content">-->
+<!--                        <div class="flex-cell flex-row"><a href=""><p>GAMT 晚间强化方法课</p></a></div>-->
+<!--                        <div class="flex-cell flex-row course_price"><p>￥9000 ￥9000 ￥9000 ￥9000 ￥9000</p></div>-->
+<!--                        <div class="flex-cell flex-row course_price"><p>112元/课时 112元/课时 112元/课时 112元/课时</p></div>-->
+<!--                        <div class="flex-cell flex-row"><p>7月31日 7月31日 7月31日 7月31日</p></div>-->
+<!--                        <div class="flex-cell flex-row"><p>80课时+文书创作时间+80课时+文书创作时间</p></div>-->
+<!--                        <div class="flex-cell flex-row course_try"><a href="">试听</a></div>-->
+<!--                        <div class="flex-cell flex-row course_sign"><a href="">立即报名</a></div>-->
+<!--                    </li>-->
+<!--                    <li class="flex-cell flex-row course_content">-->
+<!--                        <div class="flex-cell flex-row"><a href=""><p>GAMT 晚间强化方法课</p></a></div>-->
+<!--                        <div class="flex-cell flex-row course_price"><p>￥9000 ￥9000 ￥9000 ￥9000 ￥9000</p></div>-->
+<!--                        <div class="flex-cell flex-row course_price"><p>112元/课时 112元/课时 112元/课时 112元/课时</p></div>-->
+<!--                        <div class="flex-cell flex-row"><p>7月31日 7月31日 7月31日 7月31日</p></div>-->
+<!--                        <div class="flex-cell flex-row"><p>80课时+文书创作时间+80课时+文书创作时间</p></div>-->
+<!--                        <div class="flex-cell flex-row course_try"><a href="">试听</a></div>-->
+<!--                        <div class="flex-cell flex-row course_sign"><a href="">立即报名</a></div>-->
+<!--                    </li>-->
+<!--                    <li class="flex-cell flex-row course_content">-->
+<!--                        <div class="flex-cell flex-row"><a href=""><p>GAMT 晚间强化方法课</p></a></div>-->
+<!--                        <div class="flex-cell flex-row course_price"><p>￥9000 ￥9000 ￥9000 ￥9000 ￥9000</p></div>-->
+<!--                        <div class="flex-cell flex-row course_price"><p>112元/课时 112元/课时 112元/课时 112元/课时</p></div>-->
+<!--                        <div class="flex-cell flex-row"><p>7月31日 7月31日 7月31日 7月31日</p></div>-->
+<!--                        <div class="flex-cell flex-row"><p>80课时+文书创作时间+80课时+文书创作时间</p></div>-->
+<!--                        <div class="flex-cell flex-row course_try"><a href="">试听</a></div>-->
+<!--                        <div class="flex-cell flex-row course_sign"><a href="">立即报名</a></div>-->
+<!--                    </li>-->
+<!--                    <li class="flex-cell flex-row course_content">-->
+<!--                        <div class="flex-cell flex-row"><a href=""><p>GAMT 晚间强化方法课</p></a></div>-->
+<!--                        <div class="flex-cell flex-row course_price"><p>￥9000 ￥9000 ￥9000 ￥9000 ￥9000</p></div>-->
+<!--                        <div class="flex-cell flex-row course_price"><p>112元/课时 112元/课时 112元/课时 112元/课时</p></div>-->
+<!--                        <div class="flex-cell flex-row"><p>7月31日 7月31日 7月31日 7月31日</p></div>-->
+<!--                        <div class="flex-cell flex-row"><p>80课时+文书创作时间+80课时+文书创作时间</p></div>-->
+<!--                        <div class="flex-cell flex-row course_try"><a href="">试听</a></div>-->
+<!--                        <div class="flex-cell flex-row course_sign"><a href="">立即报名</a></div>-->
+<!--                    </li>-->
                 </ul>
-                <!--                    --><?php //}
-                //                }?>
-                <ul>
-                    第2页
-                </ul>
-                <ul>
-                    第3页
-                </ul>
-                <ul>
-                    第4页
-                </ul>
-                <ul>
-                    第5页
-                </ul>
-                <ul>
-                    第6页
-                </ul>
+                                    <?php }
+                                }?>
+<!--                <ul>-->
+<!--                    第2页-->
+<!--                </ul>-->
+<!--                <ul>-->
+<!--                    第3页-->
+<!--                </ul>-->
+<!--                <ul>-->
+<!--                    第4页-->
+<!--                </ul>-->
+<!--                <ul>-->
+<!--                    第5页-->
+<!--                </ul>-->
+<!--                <ul>-->
+<!--                    第6页-->
+<!--                </ul>-->
             </div>
         </div>
     </div>
@@ -242,7 +244,7 @@
     <div class="xueyuan-say">
         <h2>看申友GMAT高分学员如何说</h2>
         <div class="xueyuan-box">
-            <a href="/case/case.html" class="more-x">more>></a>
+            <a href="/case.html" class="more-x">more>></a>
             <div class="xuey-hd">
                 <ul></ul>
             </div>
@@ -294,24 +296,29 @@
         <div class="picFocus">
             <div class="bd" id="tabBox1-bd">
                 <ul class="tinter_wrap"><!--循环li-->
-                    <li class="tout_wrap relative">
-                        <div class="teacher_info_wrap">
-                            <p class="t_name">GMAT新派宗师雷哥Kevin</p>
-                            <div class="teacher_tag">
-                                <span>GMAT</span>
-                                <span>留学</span>
-                                <span>职业规划家</span>
-                                <span>英语教育名家</span>
+                    <?php foreach($teacher as $v){?>
+                        <li class="tout_wrap relative">
+                            <div class="teacher_info_wrap">
+                                <p class="t_name"><?php echo $v['name']?></p>
+                                <div class="teacher_tag">
+<!--                                    <span>GMAT</span>-->
+<!--                                    <span>留学</span>-->
+<!--                                    <span>职业规划家</span>-->
+<!--                                    <span>英语教育名家</span>-->
+                                    <?php echo $v['abstract']?>
+                                </div>
+                                <div class="teacher_cg">
+                                <?php echo $v['description']?>
+                                </div>
+
                             </div>
-
-                            <div class="teacher_cg">
-                                雷哥网联合创始人，留学规划与英语教育名家，GMAT / TOEFL名师。雷哥网联合创始人，中国留学咨询行业领军人物。上海交大EMBA，连续多年亲自深入全球名企名校走访交流，如谷歌、苹果、FACEBOOK，哈佛、沃顿、斯坦福。多年研究英语系国家名校留学，尤其擅长商科申请规划。指导的学生多人获得美英著名商学院录取，如Stanford、MIT、Yale、哥大、JHU、剑桥、LSE、帝国理工等。对文书创作颇有建树，研究名校文书上千篇，洞悉名校录取官喜好和录取倾向。留学考试学术成果：GMAT逻辑靶向图、GMAT逻辑本质论、GMAT语法优先原则、GMAT必要性阅读法、新托福听力阈值训练法、新托福万能口语法、雅思西方批判式作文法等，是留学英语考试的集大成者。在国内新创新托福四化一中心作文法。研发和出版多本留学英语培训教材，并不断优化教学方法，专著有 《Influence--雷哥GMAT逻辑》、 《雅思写作攻略》、 《申友GMAT高分讲义》、 《GMAT真题名师精讲》等。留学规划咨询成果：多年研究英语系国家名校留学，尤其擅长金融、商科和MBA申请规划。所指导的客户多人获得美国、英国著名商学院的录取，如Stanford、MIT、Yale、哥大、JHU、剑桥、LSE、帝国理工、Warwick 、HEC等。对文书创作颇有建树，研究名校文书上千篇，洞悉名校录取官员的喜好和录取倾向。                            </div>
-
-                        </div>
-                        <div class="teacher_index_big_head ani">
-                            <img src="http://www.gmatonline.cn/files/attach/images/content/20150911/14419615925597.jpg" alt="老师照片"/>
-                        </div>
-                    </li>
+                            <div class="teacher_index_big_head ani">
+                                <img
+                                    src="http://www.thinkwithu.com<?php echo $v['image']?>"
+                                    alt="GMAT名师"/>
+                            </div>
+                        </li>
+                    <?php }?>
                 </ul>
             </div>
             <div class="hd">
@@ -321,10 +328,15 @@
                     </div>
                     <div class="bd" style="width: 720px;margin: auto;">
                         <ul class="teacher_index_head_list flex-container"><!--循环li-->
-                            <li>
-                                <div class="teacher_index_head_small"><img src="http://www.gmatonline.cn/files/attach/images/content/20150911/14419615925597.jpg" alt=""></div>
-                            </li>
-
+                            <?php foreach($teacher as $v){?>
+                                <li>
+                                    <div class="teacher_index_head_small">
+                                        <img
+                                            src="http://www.thinkwithu.com<?php echo $v['image']?>"
+                                            alt="GMAT名师">
+                                    </div>
+                                </li>
+                            <?php }?>
                         </ul>
                     </div>
                 </div>
@@ -341,19 +353,19 @@
                 <a href="#" target="_blank">考试工具</a>
             </li>
             <li>
-                <a href="" target="_blank">考试时间</a>
+                <a href="http://www.gmatonline.cn/guide/32.html" target="_blank">考试时间</a>
             </li>
             <li>
-                <a href="" target="_blank">考试地点</a>
+                <a href="http://www.gmatonline.cn/guide/41.html" target="_blank">考试地点</a>
             </li>
             <li>
-                <a href="" target="_blank">考试内容</a>
+                <a href="http://www.gmatonline.cn/guide/42.html" target="_blank">考试内容</a>
             </li>
             <li>
-                <a href="" target="_blank">考试流程</a>
+                <a href="http://www.gmatonline.cn/guide/43.html" target="_blank">考试流程</a>
             </li>
             <li>
-                <a href="" target="_blank">考试费用</a>
+                <a href="http://www.gmatonline.cn/guide/44.html" target="_blank">考试费用</a>
             </li>
         </ul>
     </div>
@@ -366,55 +378,14 @@
         </div>
         <div class="right-zx-info bd">
            <ul><!--循环li-->
+               <?php foreach($active as $v){?>
                <li>
                    <b>•</b>
-                   <a href="" title="GMAT数学易错考点提升营，5天进阶Q51！">GMAT数学易错考点提升营，5天进阶Q51！</a>
-                   <span>2018-10-10</span>
+                   <a href="/word-details/<?php echo $v['id']?>/107.html" title="<?php echo $v['name']?>"><?php echo $v['name']?></a>
+                   <span><?php echo substr($v['createTime'],0,strpos($v['createTime'],' ')+1)?></span>
                    <div class="clearfix"></div>
                </li>
-               <li>
-                   <b>•</b>
-                   <a href="" title="GMAT数学易错考点提升营，5天进阶Q51！">GMAT数学易错考点提升营，5天进阶Q51！</a>
-                   <span>2018-10-10</span>
-                   <div class="clearfix"></div>
-               </li>
-               <li>
-                   <b>•</b>
-                   <a href="" title="GMAT数学易错考点提升营，5天进阶Q51！">GMAT数学易错考点提升营，5天进阶Q51！</a>
-                   <span>2018-10-10</span>
-                   <div class="clearfix"></div>
-               </li>
-               <li>
-                   <b>•</b>
-                   <a href="" title="GMAT数学易错考点提升营，5天进阶Q51！">GMAT数学易错考点提升营，5天进阶Q51！</a>
-                   <span>2018-10-10</span>
-                   <div class="clearfix"></div>
-               </li>
-               <li>
-                   <b>•</b>
-                   <a href="" title="GMAT数学易错考点提升营，5天进阶Q51！">GMAT数学易错考点提升营，5天进阶Q51！</a>
-                   <span>2018-10-10</span>
-                   <div class="clearfix"></div>
-               </li>
-               <li>
-                   <b>•</b>
-                   <a href="" title="GMAT数学易错考点提升营，5天进阶Q51！">GMAT数学易错考点提升营，5天进阶Q51！</a>
-                   <span>2018-10-10</span>
-                   <div class="clearfix"></div>
-               </li>
-               <li>
-                   <b>•</b>
-                   <a href="" title="GMAT数学易错考点提升营，5天进阶Q51！">GMAT数学易错考点提升营，5天进阶Q51！</a>
-                   <span>2018-10-10</span>
-                   <div class="clearfix"></div>
-               </li>
-               <li>
-                   <b>•</b>
-                   <a href="" title="GMAT数学易错考点提升营，5天进阶Q51！">GMAT数学易错考点提升营，5天进阶Q51！</a>
-                   <span>2018-10-10</span>
-                   <div class="clearfix"></div>
-               </li>
-
+               <?php }?>
            </ul>
         </div>
     </div>
@@ -424,61 +395,20 @@
         </div>
         <div class="right-zx-info bd">
             <ul><!--循环li-->
+                <?php foreach($news as $v){?>
                 <li>
                     <b>•</b>
-                    <a href="" title="GMAT数学易错考点提升营，5天进阶Q51！">GMAT数学易错考点提升营，5天进阶Q51！</a>
-                    <span>2018-10-10</span>
+                    <a href="/word-details/<?php echo $v['id']?>/118.html" title="<?php echo $v['name']?>"><?php echo $v['name']?></a>
+                    <span><?php echo substr($v['createTime'],0,strpos($v['createTime'],' ')+1)?></span>
                     <div class="clearfix"></div>
                 </li>
-                <li>
-                    <b>•</b>
-                    <a href="" title="GMAT数学易错考点提升营，5天进阶Q51！">GMAT数学易错考点提升营，5天进阶Q51！</a>
-                    <span>2018-10-10</span>
-                    <div class="clearfix"></div>
-                </li>
-                <li>
-                    <b>•</b>
-                    <a href="" title="GMAT数学易错考点提升营，5天进阶Q51！">GMAT数学易错考点提升营，5天进阶Q51！</a>
-                    <span>2018-10-10</span>
-                    <div class="clearfix"></div>
-                </li>
-                <li>
-                    <b>•</b>
-                    <a href="" title="GMAT数学易错考点提升营，5天进阶Q51！">GMAT数学易错考点提升营，5天进阶Q51！</a>
-                    <span>2018-10-10</span>
-                    <div class="clearfix"></div>
-                </li>
-                <li>
-                    <b>•</b>
-                    <a href="" title="GMAT数学易错考点提升营，5天进阶Q51！">GMAT数学易错考点提升营，5天进阶Q51！</a>
-                    <span>2018-10-10</span>
-                    <div class="clearfix"></div>
-                </li>
-                <li>
-                    <b>•</b>
-                    <a href="" title="GMAT数学易错考点提升营，5天进阶Q51！">GMAT数学易错考点提升营，5天进阶Q51！</a>
-                    <span>2018-10-10</span>
-                    <div class="clearfix"></div>
-                </li>
-                <li>
-                    <b>•</b>
-                    <a href="" title="GMAT数学易错考点提升营，5天进阶Q51！">GMAT数学易错考点提升营，5天进阶Q51！</a>
-                    <span>2018-10-10</span>
-                    <div class="clearfix"></div>
-                </li>
-                <li>
-                    <b>•</b>
-                    <a href="" title="GMAT数学易错考点提升营，5天进阶Q51！">GMAT数学易错考点提升营，5天进阶Q51！</a>
-                    <span>2018-10-10</span>
-                    <div class="clearfix"></div>
-                </li>
-
+                <?php }?>
             </ul>
         </div>
     </div>
 </div>
 <!--查看更多-->
-<div class="konw_more"><a href="">查看更多</a></div>
+<div class="konw_more"><a href="/list/118.html">查看更多</a></div>
 <script>
     //课程板块
     jQuery(".fraction_content").slide({});

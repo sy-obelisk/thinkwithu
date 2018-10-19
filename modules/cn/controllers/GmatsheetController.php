@@ -27,7 +27,9 @@ class GmatsheetController extends ThinkUController {
         $active = Content::getContent(['category' => "115,107",'type'=>1, 'pageSize' => 15,'order' => 'c.id desc']);
         $news = Content::getContent(['category' => "115,118",'type'=>1, 'pageSize' => 15,'order' => 'c.id desc']);
         $course=json_decode(file_get_contents("http://www.gmatonline.cn/index.php?web/webapi/gmatCourse"),true);
+        $teacher = Content::getContent(['fields' => 'speaker,job,description,abstract', 'category' => "138,139", 'pageSize' => 15, 'order' => 'c.sort asc,c.id desc']);
+
 //        echo '<pre>';var_dump($course);die;
-        return $this->render('index',['extendData' => $extendData,'case'=>$case,'news'=>$news,'active'=>$active,'course'=>$course]);
+        return $this->render('index',['extendData' => $extendData,'case'=>$case,'news'=>$news,'active'=>$active,'course'=>$course,'teacher'=>$teacher]);
     }
 }
