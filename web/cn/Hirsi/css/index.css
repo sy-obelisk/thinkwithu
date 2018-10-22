@@ -1468,6 +1468,39 @@
     display: block;
 }
 /*****************************研发成果*********************/
+
+.Results_list .next{
+    display: inline-block;
+    position: absolute;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgb(238,238,238);
+    text-align: center;
+    line-height: 40px;
+    left: -70px;
+    top: 50%;
+    margin-top: -20px;
+    cursor: pointer;
+}
+.Results_list .prev{
+    display: inline-block;
+    position: absolute;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgb(238,238,238);
+    text-align: center;
+    line-height: 40px;
+    right: -70px;
+    top: 50%;
+    margin-top: -20px;
+    cursor: pointer;
+}
+
+
 .Results_list{
     margin-top: 30px;
     position: relative;

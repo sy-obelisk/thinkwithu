@@ -1253,6 +1253,7 @@
 }
 .course_content>div p{
 	color: rgb(85,85,85);
+	word-break: break-all;word-wrap: break-word;
 }
 .course_price>p{
 	font-weight: bold;
