@@ -268,6 +268,193 @@ body{
 .course-cnt .course-icon>li:last-child {
     margin-right: 0;
 }
+.content_hd{
+    background: rgb(151,70,148);
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+.content_hd ul{
+    overflow: hidden;
+}
+.content_hd ul li{
+    padding-bottom: 10px;
+    width: 240px;
+    float: left;
+    text-align: center;
+    padding: 0px 0px 10px 0px;
+    cursor: pointer;
+}
+.content_hd ul li.on{
+    background: white;
+}
+.content_hd ul li.on p{
+    color: rgb(151,70,148);
+    border-left: 0px solid rgb(186,134,184);
+}
+.content_hd ul li p{
+    border-left: 1px solid rgb(186,134,184);
+    padding: 10px 0px 10px 0px;
+    color: white;
+    font-size: 24px;
+    font-family: 宋体;
+    font-weight: bold;
+}
+.content_hd ul li:first-child  p{
+    border-left: 0px!important;
+}
+.fraction_details{
+    overflow: hidden;
+}
+.content_bd_left{
+    width: 200px;
+    float: left;
+    background: rgb(252,231,252);
+}
+.content_bd{
+    /*width:1000px;*/
+    width: 100%;
+    float: left;
+}
+.fraction_name,.fraction_value,.fraction_price,.fraction_startTime,.fraction_Time,.fraction_try,.fraction_sign{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.fraction_name>div{
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 18px;
+    flex: 1;
+    border: 1px solid rgb(239,239,230);
+    /*max-height: 48px;*/
+    overflow: hidden;
+}
+.fraction_name>div{
+    border-left: 0px!important;
+}
+.fraction_price{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.fraction_price>div{
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    flex: 1;
+    border-right: 1px solid rgb(239,239,230);
+    border-bottom: 1px solid rgb(239,239,230);
+    color: rgb(230,85,85);
+    font-weight: bold;
+    /*overflow:hidden;*/
+    /*white-space:nowrap;*/
+    /*text-overflow:ellipsis;*/
+}
+.fraction_value>div{
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    flex: 1;
+    border-right: 1px solid rgb(239,239,230);
+    border-bottom: 1px solid rgb(239,239,230);
+    color: rgb(230,85,85);
+    font-weight: bold;
+    /*overflow:hidden;*/
+    /*white-space:nowrap;*/
+    /*text-overflow:ellipsis;*/
+}
+.fraction_startTime>div{
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 16px;
+    flex: 1;
+    border-right: 1px solid rgb(239,239,230);
+    border-bottom: 1px solid rgb(239,239,230);
+    /*overflow:hidden;*/
+    /*white-space:nowrap;*/
+    /*text-overflow:ellipsis;*/
+}
+.fraction_Time>div{
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 16px;
+    flex: 1;
+    border-right: 1px solid rgb(239,239,230);
+    border-bottom: 1px solid rgb(239,239,230);
+    /*overflow:hidden;*/
+    /*white-space:nowrap;*/
+    /*text-overflow:ellipsis;*/
+}
+.fraction_try>div{
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 16px;
+    flex: 1;
+    border-right: 1px solid rgb(239,239,230);
+    border-bottom: 1px solid rgb(239,239,230);
+}
+.fraction_try>div>a{
+    padding: 5px 32px;
+    border: 1px solid rgb(151,70,148);
+    border-radius: 5px;
+    color: rgb(151,70,148);
+}
+.fraction_try>div>a:hover{
+    color: white;
+    background: rgb(151,70,148);
+}
+.fraction_sign>div{
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 16px;
+    flex: 1;
+    border-right: 1px solid rgb(239,239,230);
+    border-bottom: 1px solid rgb(239,239,230);
+}
+.fraction_sign>div>a{
+    padding: 5px 18px;
+    border: 1px solid rgb(151,70,148);
+    border-radius: 5px;
+    color: rgb(151,70,148);
+}
+.fraction_sign>div>a:hover{
+    color: white;
+    background: rgb(151,70,148);
+}
+.content_bd_left{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+/*.left_name{*/
+/*padding: 40px 20px;*/
+/*text-align: center;*/
+/*font-size: 20px;*/
+/*flex: 1;*/
+/*border: 1px solid rgb(239,239,230);*/
+/*max-height: 48px;*/
+/*overflow: hidden;*/
+/*font-weight: bold;*/
+/*line-height: 48px;*/
+/*color: rgb(85,85,85);*/
+/*}*/
+.left_price,.left_value,.left_startTime,.left_Time,.left_try,.left_sign,.left_name{
+    text-align: center;
+    font-size: 18px;
+    flex: 1;
+    border-right: 1px solid rgb(239,239,230);
+    border-bottom: 1px solid rgb(239,239,230);
+    color: rgb(85,85,85) !important;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    background:rgb(252,231,252)!important; ;
+}
+.couse:hover{
+    background:rgb(151,70,148);
+    color: white;
+}
 /*服务流程*/
 .course-flow {
     margin-top: 60px;

@@ -7,22 +7,22 @@
     <div class="course-bnr">
         <ul class="clearfix">
             <li>
-                <a href="" target="_blank">
+                <a href="http://bjsy.gensee.com/training/site/v/73007567?nickname=XXX" target="_blank">
                     <p>托福听力试听课</p>
                 </a>
             </li>
             <li>
-                <a href="" target="_blank">
+                <a href="http://bjsy.gensee.com/training/site/v/08407218?nickname=XXX" target="_blank">
                     <p>托福阅读试听课</p>
                 </a>
             </li>
             <li>
-                <a href="" target="_blank">
+                <a href="http://bjsy.gensee.com/training/site/v/76717754?nickname=XXX" target="_blank">
                     <p>托福写作试听课</p>
                 </a>
             </li>
             <li>
-                <a href="" target="_blank">
+                <a href="http://bjsy.gensee.com/training/site/v/03507811?nickname=XXX" target="_blank">
                     <p>托福口语试听课</p>
                 </a>
             </li>
@@ -83,67 +83,68 @@
                 <li class=""><p>精讲课程</p></li>
             </ul>
         </div>
-        <div class="fraction_details">
-            <div class="content_bd bd">
-                <!--外层循环ul  内层循环li-->
-                <ul id="panel" class="flex-column" style="display: flex;">
-                    <li class="flex-cell flex-row course_lm">
-                        <div class="flex-cell flex-row">课程名称</div>
-                        <div class="flex-cell flex-row">价格</div>
-                        <div class="flex-cell flex-row">性价比</div>
-                        <div class="flex-cell flex-row">开课时间</div>
-                        <div class="flex-cell flex-row">课程时长</div>
-                        <div class="flex-cell flex-row">试听</div>
-                        <div class="flex-cell flex-row">报名</div>
-                    </li>
-                    <li class="flex-cell flex-row course_content">
-                        <div class="flex-cell flex-row"><a href=""><p>GMAT 晚间强化方法课</p></a></div>
-                        <div class="flex-cell flex-row course_price"><p>￥9000</p></div>
-                        <div class="flex-cell flex-row course_price"><p>112元/课时</p></div>
-                        <div class="flex-cell flex-row f15"><p>10月23日</p></div>
-                        <div class="flex-cell flex-row f15"><p>30+50课时</p></div>
-                        <div class="flex-cell flex-row course_try"><a href="">试听</a></div>
-                        <div class="flex-cell flex-row course_sign"><a href="">立即报名</a></div>
-                    </li>
-                    <li class="flex-cell flex-row course_content">
-                        <div class="flex-cell flex-row"><a href=""><p>GMAT零基础进阶课</p></a></div>
-                        <div class="flex-cell flex-row course_price"><p>￥9800</p></div>
-                        <div class="flex-cell flex-row course_price"><p>94元/课时</p></div>
-                        <div class="flex-cell flex-row f15"><p>周末、晚班滚动开班</p></div>
-                        <div class="flex-cell flex-row f15"><p>24+30+50课时</p></div>
-                        <div class="flex-cell flex-row course_try"><a href="">试听</a></div>
-                        <div class="flex-cell flex-row course_sign"><a href="">立即报名</a></div>
-                    </li>
-                    <li class="flex-cell flex-row course_content">
-                        <div class="flex-cell flex-row"><a href=""><p>GMAT经典强化方法课</p></a></div>
-                        <div class="flex-cell flex-row course_price"><p>￥9000</p></div>
-                        <div class="flex-cell flex-row course_price"><p>112元/课时</p></div>
-                        <div class="flex-cell flex-row f15"><p>10月20日</p></div>
-                        <div class="flex-cell flex-row f15"><p>30+50课时</p></div>
-                        <div class="flex-cell flex-row course_try"><a href="">试听</a></div>
-                        <div class="flex-cell flex-row course_sign"><a href="">立即报名</a></div>
-                    </li>
-                    <li class="flex-cell flex-row course_content">
-                        <div class="flex-cell flex-row"><a href=""><p>GMAT 750分冲刺课</p></a></div>
-                        <div class="flex-cell flex-row course_price"><p>￥14800</p></div>
-                        <div class="flex-cell flex-row course_price"><p>151元/课时</p></div>
-                        <div class="flex-cell flex-row f15"><p>周末、晚班滚动开班</p></div>
-                        <div class="flex-cell flex-row f15"><p>30+50+12课时</p></div>
-                        <div class="flex-cell flex-row course_try"><a href="">试听</a></div>
-                        <div class="flex-cell flex-row course_sign"><a href="">立即报名</a></div>
-                    </li>
-                    <li class="flex-cell flex-row course_content">
-                        <div class="flex-cell flex-row"><a href=""><p>GMAT 750分冲刺课</p></a></div>
-                        <div class="flex-cell flex-row course_price"><p>￥14800</p></div>
-                        <div class="flex-cell flex-row course_price"><p>151元/课时</p></div>
-                        <div class="flex-cell flex-row f15"><p>周末、晚班滚动开班</p></div>
-                        <div class="flex-cell flex-row f15"><p>30+50+12课时</p></div>
-                        <div class="flex-cell flex-row course_try"><a href="">试听</a></div>
-                        <div class="flex-cell flex-row course_sign"><a href="">立即报名</a></div>
-                    </li>
-                </ul>
+        <div class="content_bd bd">
+            <ul>
+                <div class="fraction_details">
+                    <div class="fraction_name"><!--课程名称-->
+                        <div class="left_name">课程名称</div>
+                        <div class="couse">GAMT 晚间强化方法课</div>
+                        <div class="couse">GAMT 晚间强化方法课</div>
+                        <div class="couse">GAMT 晚间强化方法课</div>
+                        <div class="couse">GAMT 晚间强化方法课</div>
+                        <div class="couse">GAMT 晚间强化方法课</div>
+                    </div>
+                    <div class="fraction_price"><!--课程价格-->
+                        <div class="left_price">价格</div>
+                        <div>￥9000 ￥9000 ￥9000 ￥9000 ￥9000</div>
+                        <div>￥9000</div>
+                        <div>￥9000</div>
+                        <div>￥9000</div>
+                        <div>￥9000</div>
+                    </div>
+                    <div class="fraction_value"><!--性价比-->
+                        <div class="left_value">性价比</div>
+                        <div>112元/课时112元/课时112元/课时112元/课时</div>
+                        <div>112元/课时</div>
+                        <div>112元/课时</div>
+                        <div>112元/课时</div>
+                        <div>112元/课时</div>
+                    </div>
+                    <div class="fraction_startTime"><!--开课时间-->
+                        <div class="left_startTime">开课时间</div>
+                        <div>7月31日7月31日7月31日7月31日</div>
+                        <div>7月31日7月31日7月31日7月31日</div>
+                        <div>7月31日7月31日7月31日7月31日</div>
+                        <div>7月31日7月31日7月31日7月31日</div>
+                        <div>7月31日7月31日7月31日7月31日</div>
+                    </div>
+                    <div class="fraction_Time"><!--课程时长-->
+                        <div class="left_Time">课程时长</div>
+                        <div>30+50课程</div>
+                        <div>30+50课程</div>
+                        <div>30+50课程</div>
+                        <div>30+50课程</div>
+                        <div>30+50课程</div>
+                    </div>
+                    <div class="fraction_try"><!--试听-->
+                        <div class="left_try">试听</div>
+                        <div><a href="" target="_blank">试听</a></div>
+                        <div><a href="" target="_blank">试听</a></div>
+                        <div><a href="" target="_blank">试听</a></div>
+                        <div><a href="" target="_blank">试听</a></div>
+                        <div><a href="" target="_blank">试听</a></div>
+                    </div>
+                    <div class="fraction_sign"><!--报名-->
+                        <div class="left_sign">报名</div>
+                        <div><a href="" target="_blank">立即报名</a></div>
+                        <div><a href="" target="_blank">立即报名</a></div>
+                        <div><a href="" target="_blank">立即报名</a></div>
+                        <div><a href="" target="_blank">立即报名</a></div>
+                        <div><a href="" target="_blank">立即报名</a></div>
+                    </div>
+                </div>
+            </ul>
         </div>
-    </div>
         <div class="course-flow">
             <p class="pub-title-h3">服务流程</p>
             <p class="pub-title-h5">雷哥托福F-inspire服务体系，课前-课中-课后三阶段超值服务</p>
@@ -271,50 +272,19 @@
     <p class="pub-title-h3">各种留学考试问题尽在申友网公开课</p>
     <p class="pub-title-h5">在线学习更有效</p>
     <ul class="clearfix">
+        <?php foreach($course['active'] as $v){?>
         <li>
             <div class="img">
-                <img src="http://www.toeflonline.cn/files/attach/images/20181010/1539141329660137.jpg" alt="">
+                <img src="http://www.toeflonline.cn/<?php echo $v['image']?>" alt="">
             </div>
-            <p class="openClassTitle">每天一小时带你解决托福听力三大难题！【雷哥托福】</p>
-            <p class="openClassTime">2018.10.15-2018.10.19</p>
+            <p class="openClassTitle"><?php echo $v['name']?></p>
+            <p class="openClassTime"><?php echo $v['commencement']?></p>
             <div class="open-details">
-                <a class="m15" href="">查看详情</a>
-                <a href="" target="_blank">点击报名</a>
+                <a class="m15" href="<?php echo $v['url']?>">查看详情</a>
+                <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank">点击报名</a>
             </div>
         </li>
-        <li>
-            <div class="img">
-                <img src="http://www.toeflonline.cn/files/attach/images/20181010/1539141329660137.jpg" alt="">
-            </div>
-            <p class="openClassTitle">每天一小时带你解决托福听力三大难题！【雷哥托福】</p>
-            <p class="openClassTime">2018.10.15-2018.10.19</p>
-            <div class="open-details">
-                <a class="m15" href="">查看详情</a>
-                <a href="" target="_blank">点击报名</a>
-            </div>
-        </li>
-        <li>
-            <div class="img">
-                <img src="http://www.toeflonline.cn/files/attach/images/20181010/1539141329660137.jpg" alt="">
-            </div>
-            <p class="openClassTitle">每天一小时带你解决托福听力三大难题！【雷哥托福】</p>
-            <p class="openClassTime">2018.10.15-2018.10.19</p>
-            <div class="open-details">
-                <a class="m15" href="">查看详情</a>
-                <a href="" target="_blank">点击报名</a>
-            </div>
-        </li>
-        <li>
-            <div class="img">
-                <img src="http://www.toeflonline.cn/files/attach/images/20181010/1539141329660137.jpg" alt="">
-            </div>
-            <p class="openClassTitle">每天一小时带你解决托福听力三大难题！【雷哥托福】</p>
-            <p class="openClassTime">2018.10.15-2018.10.19</p>
-            <div class="open-details">
-                <a class="m15" href="">查看详情</a>
-                <a href="" target="_blank">点击报名</a>
-            </div>
-        </li>
+        <?php }?>
     </ul>
 </section>
 <!--名师团队-->
@@ -326,23 +296,27 @@
         <div class="picFocus">
             <div class="bd" id="tabBox1-bd">
                 <ul class="tinter_wrap"><!--循环li-->
+                    <?php foreach($course['teachers'] as $v){?>
                     <li class="tout_wrap relative">
                         <div class="teacher_info_wrap">
-                            <p class="t_name">Simon</p>
+                            <p class="t_name"><?php echo $v['name']?></p>
                             <div class="teacher_tag">
-                                <span>GMAT</span>
-                                <span>留学</span>
-                                <span>职业规划家</span>
-                                <span>英语教育名家</span>
+<!--                                <span>GMAT</span>-->
+<!--                                <span>留学</span>-->
+<!--                                <span>职业规划家</span>-->
+<!--                                <span>英语教育名家</span>-->
+                                <?php echo $v['performance']?>
                             </div>
                             <div class="teacher_cg">
-                                申友联合创始人，留学规划与英语教育名家，GMAT名师。英文名Kevin，学生赠名“雷哥”。多年来，曾受邀到全国数十所著名高校巡回讲座，如中国人民大学、上海交大、浙江大学、西安交大、四川大学、西南财经大学、南京大学等。毕业于西安交通大学，留美访问学者，从业经历丰富，早年独立创业，后留母校工作。留学英语名师，国内较早一批的新托福教师，培养托福教师、雅思教师、GMAT讲师数人。长期专注海外留学规划和出国考试研究，培养留学学生过万，遍布世界名校。　留学考试学术成果：“GMAT逻辑靶向图”、“GMAT逻辑本质论”、“GMAT语法优先原则”、“GMAT必要性阅读法”等，是留学英语考试的集大成者。研发和出版多本留学英语培训教材，并不断优化教学方法，专著有 《Influence--雷哥GMAT逻辑》、 《雅思写作攻略》、 《申友GMAT高分讲义》、 《GMAT真题名师精讲》等。留学规划咨询成果：多年研究英语系国家名校留学，尤其擅长金融、商科和MBA申请规划。所指导的客户多人获得美国、英国著名商学院的录取，如Stanford、MIT、Yale、哥大、JHU、剑桥、LSE、帝国理工、Warwick 、HEC等。对文书创作颇有建树，研究名校文书上千篇，洞悉名校录取官员的喜好和录取倾向。                                                  </div>
+                            <?php echo $v['description']?>
+                            </div>
 
                         </div>
                         <div class="teacher_index_big_head ani">
-                            <img src="http://www.thinkwithu.com/files/attach/images/20170306/1488770855596665.jpg" alt="GMAT名师"/>
+                            <img src="http://www.toeflonline.cn<?php echo $v['image']?>" alt="托福名师"/>
                         </div>
                     </li>
+                    <?php }?>
                 </ul>
             </div>
             <div class="hd hd_repleate">
@@ -351,11 +325,13 @@
                 <div class="picMarquee-left2 relative">
                     <div class="bd" style="width: 720px;margin: auto;">
                         <ul class="teacher_index_head_list flex-container"><!--循环li-->
+                            <?php foreach($course['teachers'] as $v){?>
                                 <li>
                                     <div class="teacher_index_head_small">
-                                        <img src="http://www.thinkwithu.com/files/attach/images/20170306/1488770855596665.jpg" alt="GMAT名师">
+                                        <img src="http://www.toeflonline.cn<?php echo $v['image']?>" alt="托福名师">
                                     </div>
                                 </li>
+                            <?php }?>
                         </ul>
                     </div>
                 </div>
@@ -374,35 +350,35 @@
             </a>
         </li>
         <li>
-            <a href="">
+            <a href="http://www.toeflonline.cn/toeflnews/29705.html" target="_blank">
                 <span class="zero"></span>
                 <span class="one">考试时间</span>
                 <span class="two"></span>
             </a>
         </li>
         <li>
-            <a href="">
+            <a href="http://www.toeflonline.cn/toeflnews/10520.html" target="_blank">
                 <span class="zero"></span>
                 <span class="one">考试地点</span>
                 <span class="two"></span>
             </a>
         </li>
         <li>
-            <a href="">
+            <a href="http://www.toeflonline.cn/toeflnews/10512.html" target="_blank">
                 <span class="zero"></span>
                 <span class="one">考试内容</span>
                 <span class="two"></span>
             </a>
         </li>
         <li>
-            <a href="">
+            <a href="http://www.toeflonline.cn/toeflnews/10515.html" target="_blank">
                 <span class="zero"></span>
                 <span class="one">考试流程</span>
                 <span class="two"></span>
             </a>
         </li>
         <li>
-            <a href="">
+            <a href="http://www.toeflonline.cn/toeflnews/29060.html" target="_blank">
                 <span class="zero"></span>
                 <span class="one">考试费用</span>
             </a>
@@ -419,34 +395,36 @@
         </div>
         <div class="right bd">
             <ul><!--循环li-->
+                <?php foreach($course['active'] as $v){?>
                 <li>
-                    <a href="">
-                        <b>如何突破口语瓶颈【雷哥托福】</b>
-                        <p>托福写作中，大家替换掉一些低级词汇，也可以让我们的作文焕然一新，拿到高分。那么具体的哪些词汇可以被替换呢?雷哥托福网为大家整理了这些替换词汇，供大家参考练习。</p>
+                    <a href="http://www.toeflonline.cn/toeflnews/<?php echo $v['id']?>.html" target="_blank">
+                        <b><?php echo $v['name']?></b>
+<!--                        <p>托福写作中，大家替换掉一些低级词汇，也可以让我们的作文焕然一新，拿到高分。那么具体的哪些词汇可以被替换呢?雷哥托福网为大家整理了这些替换词汇，供大家参考练习。</p>-->
                     </a>
-                    <p>2018-09-13 16:57:52</p>
+                    <p><?php echo $v['createTime']?></p>
                 </li>
-                <li>
-                    <a href="">
-                        <b>如何突破口语瓶颈【雷哥托福】</b>
-                        <p>托福写作中，大家替换掉一些低级词汇，也可以让我们的作文焕然一新，拿到高分。那么具体的哪些词汇可以被替换呢?雷哥托福网为大家整理了这些替换词汇，供大家参考练习。</p>
-                    </a>
-                    <p>2018-09-13 16:57:52</p>
-                </li>
-                <li>
-                    <a href="">
-                        <b>如何突破口语瓶颈【雷哥托福】</b>
-                        <p>托福写作中，大家替换掉一些低级词汇，也可以让我们的作文焕然一新，拿到高分。那么具体的哪些词汇可以被替换呢?雷哥托福网为大家整理了这些替换词汇，供大家参考练习。</p>
-                    </a>
-                    <p>2018-09-13 16:57:52</p>
-                </li>
-                <li>
-                    <a href="">
-                        <b>如何突破口语瓶颈【雷哥托福】</b>
-                        <p>托福写作中，大家替换掉一些低级词汇，也可以让我们的作文焕然一新，拿到高分。那么具体的哪些词汇可以被替换呢?雷哥托福网为大家整理了这些替换词汇，供大家参考练习。</p>
-                    </a>
-                    <p>2018-09-13 16:57:52</p>
-                </li>
+                <?php }?>
+<!--                <li>-->
+<!--                    <a href="">-->
+<!--                        <b>如何突破口语瓶颈【雷哥托福】</b>-->
+<!--                        <p>托福写作中，大家替换掉一些低级词汇，也可以让我们的作文焕然一新，拿到高分。那么具体的哪些词汇可以被替换呢?雷哥托福网为大家整理了这些替换词汇，供大家参考练习。</p>-->
+<!--                    </a>-->
+<!--                    <p>2018-09-13 16:57:52</p>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="">-->
+<!--                        <b>如何突破口语瓶颈【雷哥托福】</b>-->
+<!--                        <p>托福写作中，大家替换掉一些低级词汇，也可以让我们的作文焕然一新，拿到高分。那么具体的哪些词汇可以被替换呢?雷哥托福网为大家整理了这些替换词汇，供大家参考练习。</p>-->
+<!--                    </a>-->
+<!--                    <p>2018-09-13 16:57:52</p>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="">-->
+<!--                        <b>如何突破口语瓶颈【雷哥托福】</b>-->
+<!--                        <p>托福写作中，大家替换掉一些低级词汇，也可以让我们的作文焕然一新，拿到高分。那么具体的哪些词汇可以被替换呢?雷哥托福网为大家整理了这些替换词汇，供大家参考练习。</p>-->
+<!--                    </a>-->
+<!--                    <p>2018-09-13 16:57:52</p>-->
+<!--                </li>-->
             </ul>
         </div>
     </div>

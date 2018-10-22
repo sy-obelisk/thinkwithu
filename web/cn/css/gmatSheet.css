@@ -78,6 +78,7 @@
 .fraction{
 	width: 1200px;
 	margin: 0px auto 0px;
+	overflow: hidden;
 }
 .fraction_title>h1{
 	font-size: 38px;
@@ -173,9 +174,9 @@
 	border-bottom: 1px solid rgb(239,239,230);
 	color: rgb(230,85,85);
 	font-weight: bold;
-	overflow:hidden;
-	white-space:nowrap;
-	text-overflow:ellipsis;
+	/*overflow:hidden;*/
+	/*white-space:nowrap;*/
+	/*text-overflow:ellipsis;*/
 }
 .fraction_value>div{
 	padding: 20px;
@@ -186,9 +187,9 @@
 	border-bottom: 1px solid rgb(239,239,230);
 	color: rgb(230,85,85);
 	font-weight: bold;
-	overflow:hidden;
-	white-space:nowrap;
-	text-overflow:ellipsis;
+	/*overflow:hidden;*/
+	/*white-space:nowrap;*/
+	/*text-overflow:ellipsis;*/
 }
 .fraction_startTime>div{
 	padding: 20px 10px;
@@ -208,9 +209,9 @@
 	flex: 1;
 	border-right: 1px solid rgb(239,239,230);
 	border-bottom: 1px solid rgb(239,239,230);
-	overflow:hidden;
-	white-space:nowrap;
-	text-overflow:ellipsis;
+	/*overflow:hidden;*/
+	/*white-space:nowrap;*/
+	/*text-overflow:ellipsis;*/
 }
 .fraction_try>div{
 	padding: 20px 10px;
@@ -1179,109 +1180,5 @@
 }
 
 
-#panel{
-	/*height:65vh;*/
-	width: 1200px;
-	margin: auto;
-	background:#fff;
-}
 
-#panel text{
-	line-height: 13vh;
-	border-right: 1px solid #ddd;
-	border-bottom: 1px solid #ddd;
-}
-
-.flex-row{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-.flex-column{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: stretch;
-}
-
-.flex-cell{
-	text-align: center;
-	font-size: 18px;
-	flex: 1;
-	/* max-height: 48px; */
-	overflow: hidden;
-}
-.flex-cell>p{
-	/*overflow: hidden;*/
-	text-overflow: ellipsis;
-}
-.course_lm{
-	background: rgb(252,231,252);
-}
-.course_lm>div{
-	width: 80%;
-	padding:0px 9.5%;
-	border-right: 1px solid rgb(239,239,230);
-	border-bottom: 1px solid rgb(239,239,230);
-	font-family: 宋体;
-	font-weight: bold;
-	font-size: 20px;
-	color: rgb(85,85,85);
-}
-.course_lm>div:nth-child(1){
-	border-top: 1px solid rgb(239,239,230);
-	padding: 20px 10%;
-}
-.course_content>div{
-	width: 80%;
-	padding:20px 9.5%;
-	border-right: 1px solid rgb(239,239,230);
-	border-bottom: 1px solid rgb(239,239,230);
-	max-height: 149.5px;
-}
-.course_content>div:nth-child(1){
-	border-top: 1px solid rgb(239,239,230);
-	padding: 40px 9.5%;
-}
-
-.course_content>div:nth-child(1):hover{
-    background:rgb(151,70,148) ;
-}
-.course_content>div:nth-child(1):hover p{
-   color: white;
-}
-.course_content>div p{
-	color: rgb(85,85,85);
-	word-break: break-all;word-wrap: break-word;
-}
-.course_price>p{
-	font-weight: bold;
-	color: rgb(230,85,85) !important;
-}
-.course_try a{
-	padding: 5px 32px;
-	border: 1px solid rgb(151,70,148);
-	border-radius: 5px;
-	font-size: 16px;
-	color: rgb(151,70,148);
-}
-.course_try a:hover{
-	color: white;
-	background: rgb(151,70,148);
-}
-.course_sign a{
-	padding: 5px 18px;
-	border: 1px solid rgb(151,70,148);
-	border-radius: 5px;
-    font-size: 16px;
-	color: rgb(151,70,148);
-}
-.course_sign a:hover{
-	color: white;
-	background: rgb(151,70,148);
-}
-.f15 p{
-    font-size: 16px;
-}
 
