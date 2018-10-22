@@ -27,6 +27,6 @@ class ToeflsheetController extends ThinkUController {
         $teacher = Content::getContent(['fields' => "speaker,abstract,description",'category' => "141",'pageSize' => 5]);
         $course=json_decode(file_get_contents("http://www.toeflonline.cn/cn/class/index?data-type=json"),true);
 //        echo '<pre>';var_dump($course);die;
-        return $this->render('index',['extendData' => $extendData,'teacher'=>$teacher]);
+        return $this->render('index',['extendData' => $extendData,'teacher'=>$teacher,'course'=>$course]);
     }
 }
