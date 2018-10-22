@@ -497,7 +497,6 @@
 }
 .vInfo_name,.vInfo_grads{
 	font-size: 20px;
-	font-weight: bold;
 	width: 100%;
 	margin-bottom: 15px;
 }
@@ -1239,6 +1238,7 @@
 	padding:20px 9.5%;
 	border-right: 1px solid rgb(239,239,230);
 	border-bottom: 1px solid rgb(239,239,230);
+	max-height: 149.5px;
 }
 .course_content>div:nth-child(1){
 	border-top: 1px solid rgb(239,239,230);
