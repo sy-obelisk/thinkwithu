@@ -1001,18 +1001,8 @@
     <div class="service_line"></div>
     <div class="teamCover teamCover_1">
 
-<!--        <div class="teamCriclehd hd"><!--小圆点-->
-<!--           <ul>-->
-<!--               --><?php //foreach($teacher as $v){?>
-<!--               <li class=""></li>-->
-<!--               --><?php //}?>
-<!---->
-<!--           </ul>-->
-<!--        </div>-->
-
-        <div class="teamCoverBd bd" ><!--中间内容-->
-            <ul class="tinter_wrap"><!--循环li-->
-                <?php foreach($teacher as $v){?>
+        <ul class="tinter_wrap"><!--循环li-->
+            <?php foreach($teacher as $v){?>
                 <li class="Bdcotent">
                     <div class="cotent_img"><!--老师图片-->
                         <img src="http://www.thinkwithu.com<?php echo $v['image']?>" alt="">
@@ -1033,30 +1023,28 @@
                         </div>
                     </div>
                 </li>
-                <?php }?>
-            </ul>
-        </div>
-        <div class="teamCoverhd hd"><!--右边例表-->
+            <?php }?>
+        </ul>
 
-            <div class="picMarquee-left2">
-                <i class="iconfont prev">&#xe605;</i>
-                <i class="iconfont next">&#xe606;</i>
-                <div class="bd">
-                    <ul>
-                        <?php foreach($teacher as $v) { ?>
-                            <li>
-                                <div class="teamCoverhd_image">
-                                    <img src="http://www.thinkwithu.com<?php echo $v['image']?>" alt="">
-                                </div>
+        <div class="teamCoverhd">
+            <i class="iconfont prev">&#xe605;</i>
+            <div class="smallImg">
+                <ul>
+                      <?php foreach($teacher as $v) { ?>
+                          <li>
+                              <div class="teamCoverhd_image">
+                                  <img src="http://www.thinkwithu.com<?php echo $v['image']?>" alt="">
+                              </div>
 
-                                <div class="name_mask"><?php echo $v['name']?></div>
-                            </li>
-                        <?php }?>
-                    </ul>
-                </div>
+                              <div class="name_mask"><?php echo $v['name']?></div>
+                          </li>
+                      <?php }?>
+                </ul>
             </div>
-
+            <i class="iconfont next">&#xe606;</i>
         </div>
+
+
     </div>
 </section>
 <!--研发成果-->
@@ -1187,20 +1175,20 @@ else{
         mouseOverStop: true
     });
     //名师团队
-    jQuery(".teamCover").slide({mainCell:".tinter_wrap",effect:"leftLoop",autoPlay:true,interTime: 3000});
-
-    jQuery(".picMarquee-left2").slide({
-        mainCell: ".bd ul",
-        autoPlay: true,
-        effect: "topLoop",
-        vis: 3,
+    jQuery(".teamCover").slide({
+        titCell:".smallImg ul li",
+        mainCell:".tinter_wrap",
+        effect:"fold",
+        autoPlay:true,
         interTime: 3000,
+        mouseOverStop:true
     });
-    // jQuery(".teamCover_1").slide({titCell:".hd ul",mainCell:".teamCoverhd ul",autoPage:true,effect:"topLoop",autoPlay:true,vis:3});
+    jQuery(".teamCover .teamCoverhd").slide({titCell:".tinter_wrap ul li", mainCell:".smallImg ul",interTime: 3000,vis:3,scroll:1,effect:"topLoop",autoPlay:true,});
+
     //研发成果
     jQuery(".Results_list").slide({mainCell:".Results_bd ul",autoPage:true,effect:"left",autoPlay:true,vis:6});
 
-
+    jQuery(".game163").slide({ titCell:".smallImg li", mainCell:".bigImg", effect:"fold", autoPlay:true,delayTime:200,			startFun:function(i,p){				if(i==0){ jQuery(".game163 .sPrev").click() } else if( i%4==0 ){ jQuery(".game163 .sNext").click()}			}		});		jQuery(".game163 .smallScroll").slide({ mainCell:"ul",delayTime:100,vis:4,scroll:4,effect:"left",autoPage:true,prevCell:".sPrev",nextCell:".sNext",pnLoop:false });
 
 
 
