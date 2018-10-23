@@ -1,4 +1,5 @@
 $(function(){
+
     //    咨询框改版自适应2016.12.26
     $(".refer_top").css({
         "height":$(".refer_top").width(),

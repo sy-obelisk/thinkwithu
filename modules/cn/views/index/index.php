@@ -1001,30 +1001,32 @@
     <div class="service_line"></div>
     <div class="teamCover teamCover_1">
 
-        <ul class="tinter_wrap"><!--循环li-->
-            <?php foreach($teacher as $v){?>
-                <li class="Bdcotent">
-                    <div class="cotent_img"><!--老师图片-->
-                        <img src="http://www.thinkwithu.com<?php echo $v['image']?>" alt="">
-                    </div>
-                    <div class="cotent_imgCover"></div>
-                    <div class="teacher_name"><!--老师名字-->
-                        <p><?php echo $v['name']?> 老师</p>
-                    </div>
-                    <div class="cotent_intro"><!--老师介绍内容-->
-                        <i class="iconfont Trophyicon">&#xe603;</i>
-                        <span class="fir_p"><?php echo $v['abstract']?></span>
-                        <p class="sec_p">个人简介</p>
-                        <p class="th_p"><?php echo strip_tags($v['description'])?></p>
-                        <p class="four_p">主讲课程</p>
-                        <p class="five_p"><?php echo $v['speaker']?></p>
-                        <div class="details">
-                            <a href="/teachers/<?php echo $v['name']?>/<?php echo $v['id']?>.html">查看详情<i class="iconfont cricle_right">&#xe682;</i></a>
+        <div style="width: 970px;float: left">
+            <ul class="tinter_wrap"><!--循环li-->
+                <?php foreach($teacher as $v){?>
+                    <li class="Bdcotent">
+                        <div class="cotent_img"><!--老师图片-->
+                            <img src="http://www.thinkwithu.com<?php echo $v['image']?>" alt="">
                         </div>
-                    </div>
-                </li>
-            <?php }?>
-        </ul>
+                        <div class="cotent_imgCover"></div>
+                        <div class="teacher_name"><!--老师名字-->
+                            <p><?php echo $v['name']?> 老师</p>
+                        </div>
+                        <div class="cotent_intro"><!--老师介绍内容-->
+                            <i class="iconfont Trophyicon">&#xe603;</i>
+                            <span class="fir_p"><?php echo $v['abstract']?></span>
+                            <p class="sec_p">个人简介</p>
+                            <p class="th_p"><?php echo strip_tags($v['description'])?></p>
+                            <p class="four_p">主讲课程</p>
+                            <p class="five_p"><?php echo $v['speaker']?></p>
+                            <div class="details">
+                                <a href="/teachers/<?php echo $v['name']?>/<?php echo $v['id']?>.html">查看详情<i class="iconfont cricle_right">&#xe682;</i></a>
+                            </div>
+                        </div>
+                    </li>
+                <?php }?>
+            </ul>
+        </div>
 
         <div class="teamCoverhd">
             <i class="iconfont prev">&#xe605;</i>
@@ -1036,7 +1038,8 @@
                                   <img src="http://www.thinkwithu.com<?php echo $v['image']?>" alt="">
                               </div>
 
-                              <div class="name_mask"><?php echo $v['name']?></div>
+<!--                              <div class="name_mask">--><?php //echo $v['name']?><!--</div>-->
+                              <div class="name_mask"></div>
                           </li>
                       <?php }?>
                 </ul>
@@ -1175,20 +1178,27 @@ else{
         mouseOverStop: true
     });
     //名师团队
+
+
     jQuery(".teamCover").slide({
         titCell:".smallImg ul li",
         mainCell:".tinter_wrap",
         effect:"fold",
         autoPlay:true,
-        interTime: 3000,
-        mouseOverStop:true
+        interTime:3000,
+        mouseOverStop:true,
     });
-    jQuery(".teamCover .teamCoverhd").slide({titCell:".tinter_wrap ul li", mainCell:".smallImg ul",interTime: 3000,vis:3,scroll:1,effect:"topLoop",autoPlay:true,});
-
+    jQuery(".teamCover .teamCoverhd").slide({mainCell:".smallImg ul",interTime: 3000,vis:3,scroll:1,effect:"topLoop", autoPlay:true,});
+    $('.Bdcotent').mouseover(function () {
+        $('.smallImg ul').trigger('mouseover');
+    }).mouseout(function () {
+        $('.smallImg ul').trigger('mouseout');
+    });
+    // $('.smallImg ul li.clone').removeClass('on')
     //研发成果
     jQuery(".Results_list").slide({mainCell:".Results_bd ul",autoPage:true,effect:"left",autoPlay:true,vis:6});
 
-    jQuery(".game163").slide({ titCell:".smallImg li", mainCell:".bigImg", effect:"fold", autoPlay:true,delayTime:200,			startFun:function(i,p){				if(i==0){ jQuery(".game163 .sPrev").click() } else if( i%4==0 ){ jQuery(".game163 .sNext").click()}			}		});		jQuery(".game163 .smallScroll").slide({ mainCell:"ul",delayTime:100,vis:4,scroll:4,effect:"left",autoPage:true,prevCell:".sPrev",nextCell:".sNext",pnLoop:false });
+    // jQuery(".game163").slide({ titCell:".smallImg li", mainCell:".bigImg", effect:"fold", autoPlay:true,delayTime:200,			startFun:function(i,p){				if(i==0){ jQuery(".game163 .sPrev").click() } else if( i%4==0 ){ jQuery(".game163 .sNext").click()}			}		});		jQuery(".game163 .smallScroll").slide({ mainCell:"ul",delayTime:100,vis:4,scroll:4,effect:"left",autoPage:true,prevCell:".sPrev",nextCell:".sNext",pnLoop:false });
 
 
 

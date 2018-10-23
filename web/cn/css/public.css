@@ -476,7 +476,7 @@ a:hover{
 
 /****************联系申友部分相同样式*********************/
 .connection{
-    width: 1001px;
+    width: 1200px;
     /*height: 261px;*/
     margin: 0 auto;
     margin-bottom: 14px;
@@ -527,7 +527,7 @@ a:hover{
 
 }
 .connectBd ul li .conBdLeft{
-    width: 700px;
+    width: 900px;
     float: left;
     margin-top: 32px;
 }
@@ -544,7 +544,7 @@ a:hover{
     color: rgb(85,85,85);
 }
 .conBdLeft .rightR{
-    width: 500px;
+    width: 700px;
     float: left;
     margin-left: 5px;
 }
