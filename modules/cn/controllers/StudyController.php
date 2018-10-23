@@ -217,4 +217,12 @@ class StudyController extends ThinkUController {
     public function actionGo(){
         return $this->render('go');
     }
+    /**
+     * 美国留学申请服务
+     * @return string
+     * @Obelisk
+     */
+    public function actionStudyingAbroad(){
+        return $this->render('abroad');
+    }
 }
