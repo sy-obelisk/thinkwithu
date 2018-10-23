@@ -1288,6 +1288,12 @@
     max-height: 400px;
     overflow: hidden;
 }
+.tinter_wrap{
+    width: 970px;
+    float: left;
+    max-height: 400px;
+    overflow: hidden;
+}
 .teamCoverhd{
     width: 200px;
     float: right;
