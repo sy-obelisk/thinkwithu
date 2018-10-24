@@ -739,7 +739,12 @@ body{
 .listDiv{
     overflow: hidden;
     background: white;
-    padding: 20px 0;
+    padding: 20px 0 70px;
+    position: relative;
+    display: none;
+}
+.listDiv:nth-child(1){
+    display: block;
 }
 .list_show{
     width: 373px;
@@ -772,4 +777,26 @@ body{
     color: white;
     text-align: center;
     font-size: 16px;
+}
+.pageSize{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.pageSize ul li{
+    padding: 2px 10px;
+    border: 1px solid rgb(204,204,204);
+    float: left;
+    color: rgb(85,85,85);
+    margin-left: 5px;
+    cursor: pointer;
+}
+.pageSize ul li.on{
+    background: rgb(153,68,153);
+    color: white!important;
 }

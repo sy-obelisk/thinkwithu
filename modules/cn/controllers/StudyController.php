@@ -222,7 +222,26 @@ class StudyController extends ThinkUController {
      * @return string
      * @Obelisk
      */
-    public function actionStudyingAbroad(){
-        return $this->render('abroad');
+    public function actionStudyingAbroad()
+    {
+        $caseList = Content::getContent(['category' => "104,207", 'pageSize' => 15, 'order' => 'c.id desc']);
+        $banner = Content::getContent(['fields' => 'url','category' => "266", 'pageSize' => 8, 'order' => 'c.id desc']);
+        $news['business'] = Content::getContent(['category' => "144", 'pageSize' => 15, 'order' => 'c.id desc']);
+        $news['science'] = Content::getContent(['category' => "145", 'pageSize' => 15, 'order' => 'c.id desc']);
+        $news['finance'] = Content::getContent(['category' => "149", 'pageSize' => 15, 'order' => 'c.id desc']);
+        $news['arts'] = Content::getContent(['category' => "146", 'pageSize' => 15, 'order' => 'c.id desc']);
+        $news['abroad'] = Content::getContent(['type' => 1, 'category' => "178,118", 'pageSize' => 4, 'where' => 'c.sort>0', 'order' => 'c.sort asc,c.id desc']);
+        $news['major'] = Content::getContent(['type' => 1, 'category' => "143", 'pageSize' => 4, 'where' => 'c.sort>0', 'order' => 'c.sort asc,c.id desc']);
+        $active = Content::getContent(['fields' => 'url', 'category' => '190,107']);
+        $abroadPro = Content::getContent(['fields' => 'url', 'category' => "261", 'pageSize' => 10]);
+        $case = Content::getContent(['type' => 1, 'category' => "178,206", 'pageSize' => 15, 'where' => 'c.sort>0', 'order' => 'c.sort asc,c.id desc']);
+        $teacher = Content::getContent(['fields' => 'speaker,job,description,abstract', 'category' => "138,139", 'pageSize' => 15, 'order' => 'c.sort asc,c.id desc']);
+        $internship['inland'] = Content::getContent(['pageStr' => 1, 'category' => "238,242", 'pageSize' => 15, 'order' => 'c.sort asc,c.id desc']);
+        $internship['foreign'] = Content::getContent(['pageStr' => 1, 'category' => "238,243", 'pageSize' => 15, 'order' => 'c.sort asc,c.id desc']);
+        $internship['internship'] = Content::getContent(['pageStr' => 1, 'category' => "238,239", 'pageSize' => 15, 'order' => 'c.sort asc,c.id desc']);
+        $internship['employment'] = Content::getContent(['pageStr' => 1, 'category' => "238,263", 'pageSize' => 15, 'order' => 'c.sort asc,c.id desc']);
+        $internship['scientific'] = Content::getContent(['pageStr' => 1, 'category' => "238,242", 'pageSize' => 15, 'order' => 'c.sort asc,c.id desc']);
+        $internship['welfare'] = Content::getContent(['pageStr' => 1, 'category' => "238,263", 'pageSize' => 15, 'order' => 'c.sort asc,c.id desc']);
+        return $this->render('abroad', ['banner'=>$banner,'caseList' => $caseList, 'news' => $news, 'active' => $active, 'abroadPro' => $abroadPro, 'case' => $case, 'teacher' => $teacher, 'internship' => $internship]);
     }
 }

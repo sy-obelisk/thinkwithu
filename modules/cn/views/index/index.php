@@ -362,7 +362,7 @@
                                    ?>
                                    <li class="ency_school">
                                        <div class="ency_logo">
-                                           <img src="http://schools.smartapply.cn/<?php echo $v['image'] ?>" alt="">
+                                           <img src="http://schools.smartapply.cn<?php echo $v['image'] ?>" alt="">
                                        </div>
                                        <p class="ency_name"><?php echo $v['name'] ?></p>
 
@@ -399,7 +399,7 @@
                                    ?>
                                    <li class="ency_school">
                                        <div class="ency_logo">
-                                           <img src="http://schools.smartapply.cn/<?php echo $v['image'] ?>" alt="">
+                                           <img src="http://schools.smartapply.cn<?php echo $v['image'] ?>" alt="">
                                        </div>
                                        <p class="ency_name"><?php echo $v['name'] ?></p>
 
@@ -435,7 +435,7 @@
                                    ?>
                                    <li class="ency_school">
                                        <div class="ency_logo">
-                                           <img src="http://schools.smartapply.cn/<?php echo $v['image'] ?>" alt="">
+                                           <img src="http://schools.smartapply.cn<?php echo $v['image'] ?>" alt="">
                                        </div>
                                        <p class="ency_name"><?php echo $v['name'] ?></p>
 
@@ -472,7 +472,7 @@
                                    ?>
                                    <li class="ency_school">
                                        <div class="ency_logo">
-                                           <img src="http://schools.smartapply.cn/<?php echo $v['image'] ?>" alt="">
+                                           <img src="http://schools.smartapply.cn<?php echo $v['image'] ?>" alt="">
                                        </div>
                                        <p class="ency_name"><?php echo $v['name'] ?></p>
 
@@ -510,7 +510,7 @@
                                    ?>
                                    <li class="ency_school">
                                        <div class="ency_logo">
-                                           <img src="http://schools.smartapply.cn/<?php echo $v['image'] ?>" alt="">
+                                           <img src="http://schools.smartapply.cn<?php echo $v['image'] ?>" alt="">
                                        </div>
                                        <p class="ency_name"><?php echo $v['name'] ?></p>
 
@@ -549,7 +549,7 @@
                                    ?>
                                    <li class="ency_school">
                                        <div class="ency_logo">
-                                           <img src="http://schools.smartapply.cn/<?php echo $v['image'] ?>" alt="">
+                                           <img src="http://schools.smartapply.cn<?php echo $v['image'] ?>" alt="">
                                        </div>
                                        <p class="ency_name"><?php echo $v['name'] ?></p>
 
@@ -588,7 +588,7 @@
                                    ?>
                                    <li class="ency_school">
                                        <div class="ency_logo">
-                                           <img src="http://schools.smartapply.cn/<?php echo $v['image'] ?>" alt="">
+                                           <img src="http://schools.smartapply.cn<?php echo $v['image'] ?>" alt="">
                                        </div>
                                        <p class="ency_name"><?php echo $v['name'] ?></p>
 
@@ -627,7 +627,7 @@
                                    ?>
                                    <li class="ency_school">
                                        <div class="ency_logo">
-                                           <img src="http://schools.smartapply.cn/<?php echo $v['image'] ?>" alt="">
+                                           <img src="http://schools.smartapply.cn<?php echo $v['image'] ?>" alt="">
                                        </div>
                                        <p class="ency_name"><?php echo $v['name'] ?></p>
 
