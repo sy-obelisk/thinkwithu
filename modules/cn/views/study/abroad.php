@@ -41,7 +41,7 @@
                 <?php foreach($caseList as $v){?>
                 <li>
                     <b>•</b>
-                    <span><a href=""><?php echo $v['name']?></a></span>
+                    <span><a href="/word-details/<?php echo $v['id']?>/index,178.html"><?php echo $v['name']?></a></span>
                     <div class="clearfix"></div>
                 </li>
                 <?php }?>
@@ -68,7 +68,7 @@
                     <?php foreach($news['business'] as $v){?>
                     <li>
                         <b>•</b>
-                        <span><a href=""><?php echo $v['name']?></a></span>
+                        <span><a href="/word-details/<?php echo $v['id']?>/index,178.html"><?php echo $v['name']?></a></span>
                         <div class="clearfix"></div>
                     </li>
                     <?php }?>
@@ -86,7 +86,7 @@
                     <?php foreach($news['science'] as $v){?>
                         <li>
                             <b>•</b>
-                            <span><a href=""><?php echo $v['name']?></a></span>
+                            <span><a href="/word-details/<?php echo $v['id']?>/index,178.html"><?php echo $v['name']?></a></span>
                             <div class="clearfix"></div>
                         </li>
                     <?php }?>
@@ -103,7 +103,7 @@
                     <?php foreach($news['abroad'] as $v){?>
                     <li>
                         <b>•</b>
-                        <span><a href=""><?php echo $v['name']?></a></span>
+                        <span><a href="/word-details/<?php echo $v['id']?>/index,178.html"><?php echo $v['name']?></a></span>
                         <div class="clearfix"></div>
                     </li>
                     <?php }?>
@@ -114,7 +114,7 @@
                     <?php foreach($news['major'] as $v){?>
                     <li>
                         <b>•</b>
-                        <span><a href=""><?php echo $v['name']?></a></span>
+                        <span><a href="/word-details/<?php echo $v['id']?>/index,178.html"><?php echo $v['name']?></a></span>
                         <div class="clearfix"></div>
                     </li>
                     <?php }?>
@@ -132,7 +132,7 @@
                     <?php foreach($news['finance'] as $v){?>
                         <li>
                             <b>•</b>
-                            <span><a href=""><?php echo $v['name']?></a></span>
+                            <span><a href="/word-details/<?php echo $v['id']?>/index,178.html"><?php echo $v['name']?></a></span>
                             <div class="clearfix"></div>
                         </li>
                     <?php }?>
@@ -150,7 +150,7 @@
                     <?php foreach($news['arts'] as $v){?>
                         <li>
                             <b>•</b>
-                            <span><a href=""><?php echo $v['name']?></a></span>
+                            <span><a href="/word-details/<?php echo $v['id']?>/index,178.html"><?php echo $v['name']?></a></span>
                             <div class="clearfix"></div>
                         </li>
                     <?php }?>
@@ -225,7 +225,7 @@
             <?php foreach($abroadPro as $v){?>
             <li>
                 <img class="hotImg" src="<?php echo $v['image']?>" alt="">
-                <a href=""><?php echo $v['name']?> <span><i class="iconfont">&#xe600;</i></span></a>
+                <a href="/word-details/<?php echo $v['id']?>/index,178.html"><?php echo $v['name']?> <span><i class="iconfont">&#xe600;</i></span></a>
             </li>
             <?php }?>
         </ul>
@@ -250,67 +250,29 @@
             </ul>
         </div>
         <div class="content_list"><!--外层循环 listDiv-->
-            <div class="practice listDiv"><!--国外实习  内层循环div list_show-->
-                <div class="list_show">
-                    <img src="" alt="">
-                    <div class="list_bottom">
-                        <p>国外实习国外实习国外实习国外实习国外实习国外实习国外实习国外实习</p>
-                    </div>
-                </div>
-                <div class="list_show">
-                    <img src="" alt="">
-                    <div class="list_bottom">
-                        <p>国外实习国外实习国外实习国外实习国外实习国外实习国外实习国外实习</p>
-                    </div>
-                </div>
-                <div class="list_show">
-                    <img src="" alt="">
-                    <div class="list_bottom">
-                        <p>国外实习国外实习国外实习国外实习国外实习国外实习国外实习国外实习</p>
-                    </div>
-                </div>
-                <div class="list_show">
-                    <img src="" alt="">
-                    <div class="list_bottom">
-                        <p>国外实习国外实习国外实习国外实习国外实习国外实习国外实习国外实习</p>
-                    </div>
-                </div>
-                <div class="list_show">
-                    <img src="" alt="">
-                    <div class="list_bottom">
-                        <p>国外实习国外实习国外实习国外实习国外实习国外实习国外实习国外实习</p>
-                    </div>
-                </div>
-                <div class="list_show">
-                    <img src="" alt="">
-                    <div class="list_bottom">
-                        <p>国外实习国外实习国外实习国外实习国外实习国外实习国外实习国外实习</p>
-                    </div>
-                </div>
+            <?php foreach($internship as $k=>$v){?>
+            <div class="<?php echo $k=='inland'?'practice ':''?>listDiv"><!--国外实习  内层循环div list_show-->
+                <?php foreach($v as $key=>$val){
+                    if(is_numeric($key)){?>
+                        <a href="/word-details/<?php echo $val['id']?>/index,178.html">
+                            <div class="list_show">
+                                <img src="<?php echo 'http://www.thinkwithu.com'.$val['image']?>" alt="">
+                                <div class="list_bottom">
+                                    <p><?php echo $val['name']?></p>
+                                </div>
+                            </div>
+                        </a>
+                <?php }
+                }?>
                 <!-- 分页-->
                 <div class="pageSize">
                     <ul>
-                        <li class="on">1</li>
-                        <li>2</li>
-                        <li>3</li>
+                        <?php echo $val['pageStr']?>
+                        <li>1</li>
                     </ul>
                 </div>
             </div>
-            <div class="listDiv">
-                第二页
-            </div>
-            <div class="listDiv">
-                第三页
-            </div>
-            <div class="listDiv">
-                第四页
-            </div>
-            <div class="listDiv">
-                第五页
-            </div>
-            <div class="listDiv">
-                第六页
-            </div>
+            <?php }?>
         </div>
     </div>
     <script>
@@ -321,18 +283,32 @@
             $('.listDiv').hide();
             $('.listDiv').eq(index).show();
         });
-        // 分页
+        // 分页数字
         $('.pageSize ul li').click(function () {
             var page = parseInt($(this).html());
             var catid = $('.impro_title').find('.on').attr('data-id');
             var index = $('.impro_title').find('.on').index();
-            var str;
+            var str='';
             $.get('/cn/api/internship',{catId:catid,page:page},function (re) {
                 for(var i in JSON.parse(re).data){
-
+                    if(i<6){
+                        str+='<a href="/word-details/'+ JSON.parse(re).data[i].id +'/index,178.html">';
+                        str+='<div class="list_show">';
+                        str+='<img src="http://www.thinkwithu.com'+JSON.parse(re).data[i].image+'" alt="">';
+                        str+='<div class="list_bottom">';
+                        str+='<p>'+ JSON.parse(re).data[i].name +'</p>';
+                        str+='</div>';
+                        str+='</div>';
+                        str+='</a>';
+                    }
                 }
+                str+='<div class="pageSize"></div>';
+                $('.listDiv').eq(index).html(str);
             })
         })
+        //分页下一页
+
+        //分页上一页
     </script>
 </section>
 <!--美国留学成功案例-->
@@ -342,33 +318,40 @@
     <div class="case_content">
         <div class="casebd">
             <ul><!--外层循环li 内层循环div case_cover-->
-                    <?php $i=0;$n=count($case)!=false?ceil(count($case)/6):0;for($i;$i++;$i<$n) { ?>
-                        <li class="case_cover">
-                            <?php foreach ($case as $k => $v) {?>
-                            <div>
-                                <div class="case_tx"><img src="" alt=""></div>
-                                <p class="case_name"><?php echo $v['name']?></p>
-                                <p class="case_intro"><?php echo $v['title']?></p>
-                                <p class="case_school">录取院校:商学院</p>
-                            </div>
-                            <?php }?>
-                        </li>
-                    <?php } ?>
+                <?php
+                $i = 0;
+                $n = count($case) != false ? ceil(count($case) / 6) : 0;
+                for ($i;$i < $n; $i++) { ?>
+                    <li>
+                        <div  class="case_cover">
+                        <?php $j=0;for ($j;$j < 6; $j++) {
+                            if ($i < $n - 1 || ($i == $n && $j < count($case) % 6)) {
+                                ?>
+                                <div>
+                                    <div class="case_tx"><img src="<?php echo 'http://www.thinkwithu.com'.$case[$i * 6 + $j]['image']?>" alt=""></div>
+                                    <p class="case_name"><?php echo $case[$i * 6 + $j]['name'] ?></p>
+                                    <p class="case_intro"><a href=""><?php echo $case[$i * 6 + $j]['title'] ?></a></p>
+                                    <!--                                    <p class="case_school">录取院校:商学院</p>-->
+                                </div>
+                            <?php }
+                        } ?>
+                        </div>
+                    </li>
+                <?php } ?>
             </ul>
         </div>
         <div class="casehd">
             <ul><!--循环li-->
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
+                <?php  for ($i=0;$i <ceil(count($case)/6);$i++) { ?>
+                <li><?php echo $i+1?></li>
+                <?php }?>
             </ul>
             <i class="prev iconfont">&#xe608;</i>
             <i class="next iconfont">&#xe607;</i>
         </div>
     </div>
     <script>
-        jQuery(".case_content").slide({titCell:'.casehd ul li',mainCell:".casebd ul",effect:"leftLoop",autoPlay:false});
+        jQuery(".case_content").slide({titCell:'.casehd ul li',mainCell:".casebd ul",effect:"left",autoPlay:false});
     </script>
 </section>
 <!--美国留学考试提分课程-->
@@ -406,61 +389,19 @@
     <div class="service_line"></div>
     <div class="teacher_content">
         <ul>
+            <?php foreach($teacher as $v){?>
             <li>
-                <div class="teacher_img"><img src="" alt=""></div>
-                <p class="teacher_name">sharron</p>
+                <div class="teacher_img"><img src="<?php echo 'http://www.thinkwithu.com'.$v['image']?>" alt=""></div>
+                <p class="teacher_name"><?php echo $v['name']?></p>
                 <div class="teacher_intro">
-                    申友留学王牌名师申友留学王牌名师申友留学王牌名师申友留学王牌名师申友留学王牌名师申友留学王牌名师申友留学王牌名师申友留学王牌名师申友留学王牌名师申友留学王牌名师
+                    <?php echo $v['description']?>
                 </div>
                 <div class="btn">
-                    <a href="" class="yy">立即预约</a>
-                    <a href="" class="sq">申请案例</a>
+                    <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="  target="_blank" class="yy">立即预约</a>
+                    <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank" class="sq">申请案例</a>
                 </div>
             </li>
-            <li>
-                <div class="teacher_img"><img src="" alt=""></div>
-                <p class="teacher_name">sharron</p>
-                <div class="teacher_intro">
-                    申友留学王牌名师申友留学王牌名师申友留学王牌名师申友留学王牌名师申友留学王牌名师申友留学王牌名师申友留学王牌名师申友留学王牌名师申友留学王牌名师申友留学王牌名师
-                </div>
-                <div class="btn">
-                    <a href="" class="yy">立即预约</a>
-                    <a href="" class="sq">申请案例</a>
-                </div>
-            </li>
-            <li>
-                <div class="teacher_img"><img src="" alt=""></div>
-                <p class="teacher_name">sharron</p>
-                <div class="teacher_intro">
-                    申友留学王牌名师申友留学王牌名师申友留学王牌名师申友留学王牌名师申友留学王牌名师申友留学王牌名师申友留学王牌名师申友留学王牌名师申友留学王牌名师申友留学王牌名师
-                </div>
-                <div class="btn">
-                    <a href="" class="yy">立即预约</a>
-                    <a href="" class="sq">申请案例</a>
-                </div>
-            </li>
-            <li>
-                <div class="teacher_img"><img src="" alt=""></div>
-                <p class="teacher_name">sharron</p>
-                <div class="teacher_intro">
-                    申友留学王牌名师申友留学王牌名师申友留学王牌名师申友留学王牌名师申友留学王牌名师申友留学王牌名师申友留学王牌名师申友留学王牌名师申友留学王牌名师申友留学王牌名师
-                </div>
-                <div class="btn">
-                    <a href="" class="yy">立即预约</a>
-                    <a href="" class="sq">申请案例</a>
-                </div>
-            </li>
-            <li>
-                <div class="teacher_img"><img src="" alt=""></div>
-                <p class="teacher_name">sharron</p>
-                <div class="teacher_intro">
-                    申友留学王牌名师申友留学王牌名师申友留学王牌名师申友留学王牌名师申友留学王牌名师申友留学王牌名师申友留学王牌名师申友留学王牌名师申友留学王牌名师申友留学王牌名师
-                </div>
-                <div class="btn">
-                    <a href="" class="yy">立即预约</a>
-                    <a href="" class="sq">申请案例</a>
-                </div>
-            </li>
+            <?php }?>
         </ul>
         <a class="next"><i class="iconfont next_icon">&#xe602;</i></a>
         <a class="prev"><i class="iconfont prev_icon">&#xe601;</i></a>

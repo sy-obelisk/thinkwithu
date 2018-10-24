@@ -454,7 +454,6 @@ body{
 .hot_content ul li{
     width: 280px;
     height: 300px;
-    background: yellowgreen;
     margin-right: 40px;
     float: left;
     position: relative;
@@ -514,8 +513,7 @@ body{
     height: 70px;
     border-radius: 50%;
     margin:30px auto 20px;
-    background: yellowgreen;
-
+    overflow: hidden;
 }
 .case_tx img{
     width: 100%;
@@ -527,10 +525,18 @@ body{
 .case_intro,.case_school{
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
+    width: 80%;
+    margin: auto;
     color: rgb(173,173,173);
     text-align: center;
     margin-top: 5px;
+}
+.case_intro a{
+    color: rgb(173,173,173);
+}
+.case_intro a:hover{
+    color: rgb(153,68,153);
 }
 .casehd{
     padding: 0px 20px;
@@ -640,8 +646,8 @@ body{
     height: 110px;
     border-radius: 50%;
     margin: 30px auto;
-    background: yellowgreen;
     border: 1px solid rgb(153,68,153);
+    overflow: hidden;
 }
 .teacher_img img{
     width: 100%;
@@ -690,7 +696,7 @@ body{
     background: white;
     text-align: center;
     line-height: 40px;
-    right: -70px;
+    right: -85px;
     top: 50%;
     margin-top: -20px;
     cursor: pointer;
@@ -749,11 +755,11 @@ body{
 .list_show{
     width: 373px;
     height: 215px;
-    background: yellowgreen;
     margin-left: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
     float: left;
+    overflow: hidden;
     position: relative;
 }
 .list_show img{
