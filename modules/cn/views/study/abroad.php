@@ -505,15 +505,62 @@
     <div class="impro_content">
         <div class="impro_title">
             <ul>
-                <li class="on">国外实习</li>
-                <li>国内实习</li>
-                <li>海外就业</li>
-                <li>国外游学</li>
-                <li>科研实习</li>
-                <li>公益项目</li>
+                <li class="title_btn on">国外实习</li>
+                <li class="title_btn">国内实习</li>
+                <li class="title_btn">海外就业</li>
+                <li class="title_btn">国外游学</li>
+                <li class="title_btn">科研实习</li>
+                <li class="title_btn">公益项目</li>
             </ul>
         </div>
+        <div class="content_list"><!--外层循环 listDiv-->
+            <div class="practice listDiv"><!--国外实习  内层循环div list_show-->
+                <div class="list_show">
+                    <img src="" alt="">
+                    <div class="list_bottom">
+                        <p>国外实习国外实习国外实习国外实习国外实习国外实习国外实习国外实习</p>
+                    </div>
+                </div>
+                <div class="list_show">
+                    <img src="" alt="">
+                    <div class="list_bottom">
+                        <p>国外实习国外实习国外实习国外实习国外实习国外实习国外实习国外实习</p>
+                    </div>
+                </div>
+                <div class="list_show">
+                    <img src="" alt="">
+                    <div class="list_bottom">
+                        <p>国外实习国外实习国外实习国外实习国外实习国外实习国外实习国外实习</p>
+                    </div>
+                </div>
+                <div class="list_show">
+                    <img src="" alt="">
+                    <div class="list_bottom">
+                        <p>国外实习国外实习国外实习国外实习国外实习国外实习国外实习国外实习</p>
+                    </div>
+                </div>
+                <div class="list_show">
+                    <img src="" alt="">
+                    <div class="list_bottom">
+                        <p>国外实习国外实习国外实习国外实习国外实习国外实习国外实习国外实习</p>
+                    </div>
+                </div>
+                <div class="list_show">
+                    <img src="" alt="">
+                    <div class="list_bottom">
+                        <p>国外实习国外实习国外实习国外实习国外实习国外实习国外实习国外实习</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <script>
+        $('.title_btn').click(function () {
+            var index = $(this).index();
+            $('.title_btn').removeClass('on');
+            $(this).addClass('on');
+        });
+    </script>
 </section>
 <!--美国留学成功案例-->
 <section class="successCase">

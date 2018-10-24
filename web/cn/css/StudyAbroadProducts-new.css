@@ -727,6 +727,7 @@ body{
     text-align: center;
     font-size: 18px;
     padding:15px 0;
+    cursor: pointer;
 }
 .impro_title ul li:last-child{
     border-right: 0px!important;
@@ -734,4 +735,41 @@ body{
 .impro_title ul li.on{
     border-top: 2px solid rgb(153,68,153);
     background: white!important;
+}
+.listDiv{
+    overflow: hidden;
+    background: white;
+    padding: 20px 0;
+}
+.list_show{
+    width: 373px;
+    height: 215px;
+    background: yellowgreen;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+    position: relative;
+}
+.list_show img{
+    width: 100%;
+}
+.list_bottom{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 10px 0;
+    background: rgb(153,68,153);
+    border-top-right-radius: 35px;
+}
+.list_bottom p{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: white;
+    text-align: center;
+    font-size: 16px;
 }
