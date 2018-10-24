@@ -5,12 +5,11 @@
     <div class="banner_left">
         <div class="banner_slide">
             <ul><!--循环li-->
+                <?php foreach($banner as $v){?>
                 <li>
-                    <img src="http://www.thinkwithu.com//files/attach/images/20170221/1487645147756190.png" alt="">
+                    <img src="<?php echo $v['image']?>" alt="<?php echo $v['name']?>">
                 </li>
-                <li>
-                    <img src="http://www.thinkwithu.com//files/attach/images/20170217/1487326158184993.png" alt="">
-                </li>
+                <?php }?>
             </ul>
         </div>
         <i class="prev iconfont">&#xe608;</i>
@@ -39,51 +38,13 @@
         <span class="shu">|</span> <div class="right_title"> <span>留学录取优秀案例</span></div>
         <div class="right_slide">
             <ul><!--循环li-->
+                <?php foreach($caseList as $v){?>
                 <li>
                     <b>•</b>
-                    <span>李同学被哈佛大学录取李同学被哈佛大学录取</span>
+                    <span><?php echo $v['name']?></span>
                     <div class="clearfix"></div>
                 </li>
-                <li>
-                    <b>•</b>
-                    <span>李同学被哈佛大学录取</span>
-                    <div class="clearfix"></div>
-                </li>
-                <li>
-                    <b>•</b>
-                    <span>李同学被哈佛大学录取</span>
-                    <div class="clearfix"></div>
-                </li>
-                <li>
-                    <b>•</b>
-                    <span>李同学被哈佛大学录取</span>
-                    <div class="clearfix"></div>
-                </li>
-                <li>
-                    <b>•</b>
-                    <span>李同学被哈佛大学录取</span>
-                    <div class="clearfix"></div>
-                </li>
-                <li>
-                    <b>•</b>
-                    <span>李同学被哈佛大学录取</span>
-                    <div class="clearfix"></div>
-                </li>
-                <li>
-                    <b>•</b>
-                    <span>李同学被哈佛大学录取</span>
-                    <div class="clearfix"></div>
-                </li>
-                <li>
-                    <b>•</b>
-                    <span>李同学被哈佛大学录取</span>
-                    <div class="clearfix"></div>
-                </li>
-                <li>
-                    <b>•</b>
-                    <span>李同学被哈佛大学录取</span>
-                    <div class="clearfix"></div>
-                </li>
+                <?php }?>
             </ul>
         </div>
     </div>
@@ -104,46 +65,13 @@
             </div>
             <div class="content_right">
                 <ul><!--循环li-->
+                    <?php foreach($news['business'] as $v){?>
                     <li>
                         <b>•</b>
-                        <span>李同学被哈佛大学录取李同学被哈佛大学录取李同学被哈佛大学录取</span>
+                        <span><?php echo $v['name']?></span>
                         <div class="clearfix"></div>
                     </li>
-                    <li>
-                        <b>•</b>
-                        <span>李同学被哈佛大学录取</span>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <span>李同学被哈佛大学录取</span>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <span>李同学被哈佛大学录取</span>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <span>李同学被哈佛大学录取</span>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <span>李同学被哈佛大学录取</span>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <span>李同学被哈佛大学录取</span>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <span>李同学被哈佛大学录取</span>
-                        <div class="clearfix"></div>
-                    </li>
+                    <?php }?>
                 </ul>
             </div>
         </div>
@@ -155,46 +83,13 @@
             </div>
             <div class="content_right">
                 <ul><!--循环li-->
-                    <li>
-                        <b>•</b>
-                        <span>李同学被哈佛大学录取李同学被哈佛大学录取李同学被哈佛大学录取</span>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <span>李同学被哈佛大学录取</span>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <span>李同学被哈佛大学录取</span>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <span>李同学被哈佛大学录取</span>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <span>李同学被哈佛大学录取</span>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <span>李同学被哈佛大学录取</span>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <span>李同学被哈佛大学录取</span>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <span>李同学被哈佛大学录取</span>
-                        <div class="clearfix"></div>
-                    </li>
+                    <?php foreach($news['science'] as $v){?>
+                        <li>
+                            <b>•</b>
+                            <span><?php echo $v['name']?></span>
+                            <div class="clearfix"></div>
+                        </li>
+                    <?php }?>
                 </ul>
             </div>
         </div>
@@ -205,131 +100,42 @@
             </div>
             <div class="abroad_stu_slide slideshow"><!--留学动态-->
                 <ul><!--循环li-->
+                    <?php foreach($news['abroad'] as $v){?>
                     <li>
                         <b>•</b>
-                        <span>李同学被哈佛大学录取李同学被哈佛大学录取李同学被哈佛大学录取</span>
+                        <span><?php echo $v['name']?></span>
                         <div class="clearfix"></div>
                     </li>
-                    <li>
-                        <b>•</b>
-                        <span>李同学被哈佛大学录取</span>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <span>李同学被哈佛大学录取</span>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <span>李同学被哈佛大学录取</span>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <span>李同学被哈佛大学录取</span>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <span>李同学被哈佛大学录取</span>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <span>李同学被哈佛大学录取</span>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <span>李同学被哈佛大学录取</span>
-                        <div class="clearfix"></div>
-                    </li>
+                    <?php }?>
                 </ul>
             </div>
             <div class="abroad_stu_slide_1 slideshow"><!--专业解析-->
                 <ul><!--循环li-->
+                    <?php foreach($news['major'] as $v){?>
                     <li>
                         <b>•</b>
-                        <span>trumpl trumpl trumpl trumpl trumpl</span>
+                        <span><?php echo $v['name']?></span>
                         <div class="clearfix"></div>
                     </li>
-                    <li>
-                        <b>•</b>
-                        <span>trumpl trumpl trumpl trumpl trumpl</span>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <span>trumpl trumpl trumpl trumpl trumpl</span>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <span>trumpl trumpl trumpl trumpl trumpl</span>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <span>trumpl trumpl trumpl trumpl trumpl</span>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <span>trumpl trumpl trumpl trumpl trumpl</span>
-                        <div class="clearfix"></div>
-                    </li>
+                    <?php }?>
                 </ul>
             </div>
         </div>
         <div class="science profession m20"><!--工科-->
             <div class="content_left">
-                <span class="pro_name">工科</span>
+                <span class="pro_name">金融</span>
                 <div class="pro_icon"></div>
                 <div class="pro_st"><a href="">定制攻略</a></div>
             </div>
             <div class="content_right">
                 <ul><!--循环li-->
-                    <li>
-                        <b>•</b>
-                        <span>李同学被哈佛大学录取李同学被哈佛大学录取李同学被哈佛大学录取</span>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <span>李同学被哈佛大学录取</span>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <span>李同学被哈佛大学录取</span>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <span>李同学被哈佛大学录取</span>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <span>李同学被哈佛大学录取</span>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <span>李同学被哈佛大学录取</span>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <span>李同学被哈佛大学录取</span>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <span>李同学被哈佛大学录取</span>
-                        <div class="clearfix"></div>
-                    </li>
+                    <?php foreach($news['finance'] as $v){?>
+                        <li>
+                            <b>•</b>
+                            <span><?php echo $v['name']?></span>
+                            <div class="clearfix"></div>
+                        </li>
+                    <?php }?>
                 </ul>
             </div>
         </div>
@@ -341,46 +147,13 @@
             </div>
             <div class="content_right">
                 <ul><!--循环li-->
-                    <li>
-                        <b>•</b>
-                        <span>李同学被哈佛大学录取李同学被哈佛大学录取李同学被哈佛大学录取</span>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <span>李同学被哈佛大学录取</span>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <span>李同学被哈佛大学录取</span>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <span>李同学被哈佛大学录取</span>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <span>李同学被哈佛大学录取</span>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <span>李同学被哈佛大学录取</span>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <span>李同学被哈佛大学录取</span>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <span>李同学被哈佛大学录取</span>
-                        <div class="clearfix"></div>
-                    </li>
+                    <?php foreach($news['arts'] as $v){?>
+                        <li>
+                            <b>•</b>
+                            <span><?php echo $v['name']?></span>
+                            <div class="clearfix"></div>
+                        </li>
+                    <?php }?>
                 </ul>
             </div>
         </div>
@@ -429,51 +202,17 @@
     <div class="service_line"></div>
     <div class="ac_content">
         <ul><!--循环li-->
+            <?php foreach($active as $v){?>
             <li>
                 <img src="" alt="">
                 <div class="ac_intro">
                     <p class="offer">< 重大优惠 ></p>
-                    <p class="words">凡是报名申友留学服务即可享受1000元优惠凡是报名申友留学服务即可享受1000元优惠</p>
+                    <p class="words"><?php echo $v['name']?></p>
                     <a href="">查看详情</a>
                     <a href="" class="m0">立即报名</a>
                 </div>
             </li>
-            <li>
-                <img src="" alt="">
-                <div class="ac_intro">
-                    <p class="offer">< 重大优惠 ></p>
-                    <p class="words">凡是报名申友留学服务即可享受1000元优惠凡是报名申友留学服务即可享受1000元优惠</p>
-                    <a href="">查看详情</a>
-                    <a href="" class="m0">立即报名</a>
-                </div>
-            </li>
-            <li>
-                <img src="" alt="">
-                <div class="ac_intro">
-                    <p class="offer">< 重大优惠 ></p>
-                    <p class="words">凡是报名申友留学服务即可享受1000元优惠凡是报名申友留学服务即可享受1000元优惠</p>
-                    <a href="">查看详情</a>
-                    <a href="" class="m0">立即报名</a>
-                </div>
-            </li>
-            <li>
-                <img src="" alt="">
-                <div class="ac_intro">
-                    <p class="offer">< 重大优惠 ></p>
-                    <p class="words">凡是报名申友留学服务即可享受1000元优惠凡是报名申友留学服务即可享受1000元优惠</p>
-                    <a href="">查看详情</a>
-                    <a href="" class="m0">立即报名</a>
-                </div>
-            </li>
-            <li>
-                <img src="" alt="">
-                <div class="ac_intro">
-                    <p class="offer">< 重大优惠 ></p>
-                    <p class="words">凡是报名申友留学服务即可享受1000元优惠凡是报名申友留学服务即可享受1000元优惠</p>
-                    <a href="">查看详情</a>
-                    <a href="" class="m0">立即报名</a>
-                </div>
-            </li>
+            <?php }?>
         </ul>
     </div>
 </section>
@@ -483,18 +222,12 @@
     <div class="service_line"></div>
     <div class="hot_content">
         <ul>
+            <?php foreach($abroadPro as $v){?>
             <li>
-                <img class="hotImg" src="" alt="">
-                <a href="">美国星程计划 <span><i class="iconfont">&#xe600;</i></span></a>
+                <img class="hotImg" src="http://www.thinkwithu.com<?php echo $v['image']?>" alt="">
+                <a href=""><?php echo $v['name']?> <span><i class="iconfont">&#xe600;</i></span></a>
             </li>
-            <li>
-                <img class="hotImg" src="" alt="">
-                <a href="">美国星途计划 <span><i class="iconfont">&#xe600;</i></span></a>
-            </li>
-            <li>
-                <img class="hotImg" src="" alt="">
-                <a href="">MBA 精英计划 <span><i class="iconfont">&#xe600;</i></span></a>
-            </li>
+            <?php }?>
         </ul>
     </div>
 </section>

@@ -264,7 +264,7 @@
         <?php foreach($course['active'] as $v){?>
         <li>
             <div class="img">
-                <img src="http://www.toeflonline.cn/<?php echo $v['image']?>" alt="">
+                <img src="http://www.toeflonline.cn<?php echo $v['image']?>" alt="">
             </div>
             <p class="openClassTitle"><?php echo $v['name']?></p>
             <p class="openClassTime"><?php echo $v['commencement']?></p>
