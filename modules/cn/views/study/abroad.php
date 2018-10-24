@@ -61,7 +61,7 @@
             <div class="content_left">
                 <span class="pro_name">商科</span>
                 <div class="pro_icon"></div>
-                <div class="pro_st"><a href="">定制攻略</a></div>
+                <div class="pro_st"><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">定制攻略</a></div>
             </div>
             <div class="content_right">
                 <ul><!--循环li-->
@@ -77,9 +77,9 @@
         </div>
         <div class="science profession"><!--理科-->
             <div class="content_left">
-                <span class="pro_name">理科</span>
+                <span class="pro_name">理工科</span>
                 <div class="pro_icon"></div>
-                <div class="pro_st"><a href="">定制攻略</a></div>
+                <div class="pro_st"><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">定制攻略</a></div>
             </div>
             <div class="content_right">
                 <ul><!--循环li-->
@@ -125,7 +125,7 @@
             <div class="content_left">
                 <span class="pro_name">金融</span>
                 <div class="pro_icon"></div>
-                <div class="pro_st"><a href="">定制攻略</a></div>
+                <div class="pro_st"><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">定制攻略</a></div>
             </div>
             <div class="content_right">
                 <ul><!--循环li-->
@@ -143,7 +143,7 @@
             <div class="content_left">
                 <span class="pro_name">文科</span>
                 <div class="pro_icon"></div>
-                <div class="pro_st"><a href="">定制攻略</a></div>
+                <div class="pro_st"><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">定制攻略</a></div>
             </div>
             <div class="content_right">
                 <ul><!--循环li-->
@@ -264,8 +264,13 @@
                 }?>
                 <!-- 分页-->
                 <div class="pageSize">
-                    <ul>
-                        <?php echo $val['pageStr']?>
+                    <ul><?php if($v['count']!=false){?>
+                        <li data-value="0" class="num"><a href="javascript:;">&#60;</a></li>
+                        <?php for($i=1;$i<$v['total']+1;$i++){?>
+                        <li data-value="<?php echo $i?>" class="num on"><a href="javascript:;"><?php echo $i?></a></li>
+                        <?php }?>
+                        <li data-value="2" class="num"><a href="javascript:;">&#62;</a></li>
+                    <?php }?>
                     </ul>
                 </div>
             </div>
@@ -329,23 +334,23 @@
         <p class="Record_title">美国留学考试提分课程</p>
         <div class="service_line"></div>
         <div class="scoring_course">
-            <a href="">
+            <a href="http://www.gmatonline.cn/gmatcourses/397.html" target="_blank">
                 <p>GMAT 700 分</p>
                 <p>冲刺课程</p>
             </a>
-            <a href="">
+            <a href="http://www.greonline.cn/course/7778.html" target="_blank">
                 <p>GRE 330 分</p>
                 <p>冲刺课程</p>
             </a>
-            <a href="">
+            <a href="http://toefl.viplgw.cn/toeflcourses/18534.html" target="_blank">
                 <p>托福 110 分</p>
                 <p>冲刺课程</p>
             </a>
-            <a href="">
+            <a href="http://www.thinkusat.com/class_details/1.html" target="_blank">
                 <p>SAT 精品</p>
                 <p>冲刺课程</p>
             </a>
-            <a href="">
+            <a href="http://ielts.viplgw.cn/cn/course/detail-2299.html" target="_blank">
                 <p>雅思一对一</p>
                 <p>精品课</p>
             </a>
