@@ -43,73 +43,54 @@
             </ul>
         </div>
         <div class="content_bd bd">
-           <ul>
+            <?php foreach($course['data']['mainCourse'] as $key=> $val){?>
+            <ul>
                <div class="fraction_details">
                    <div class="fraction_name"><!--课程名称-->
                        <div class="left_name">课程名称</div>
-                       <div class="couse">GAMT 晚间强化方法课</div>
-                       <div class="couse">GAMT 晚间强化方法课</div>
-                       <div class="couse">GAMT 晚间强化方法课</div>
-                       <div class="couse">GAMT 晚间强化方法课</div>
-                       <div class="couse">GAMT 晚间强化方法课</div>
-                       <div class="couse">GAMT 晚间强化方法课</div>
+                       <?php foreach($val['courses'] as $v){?>
+                           <div class="couse"><?php echo $v['contenttitle']?></div>
+                       <?php }?>
                    </div>
                    <div class="fraction_price"><!--课程价格-->
                        <div class="left_price">价格</div>
-                       <div>￥9000 ￥9000 ￥9000 ￥9000 ￥9000</div>
-                       <div>￥9000</div>
-                       <div>￥9000</div>
-                       <div>￥9000</div>
-                       <div>￥9000</div>
-                       <div>￥9000</div>
+                       <?php foreach($val['courses'] as $v){?>
+                           <div><?php echo $v['price']?></div>
+                       <?php }?>
                    </div>
                    <div class="fraction_value"><!--性价比-->
                        <div class="left_value">性价比</div>
-                       <div>112元/课时112元/课时112元/课时112元/课时</div>
-                       <div>112元/课时</div>
-                       <div>112元/课时</div>
-                       <div>112元/课时</div>
-                       <div>112元/课时</div>
-                       <div>112元/课时</div>
+                       <?php foreach($val['courses'] as $v){?>
+                           <div><?php echo $v['cost']?></div>
+                       <?php }?>
                    </div>
                    <div class="fraction_startTime"><!--开课时间-->
                        <div class="left_startTime">开课时间</div>
-                       <div>7月31日7月31日7月31日7月31日</div>
-                       <div>7月31日7月31日7月31日7月31日</div>
-                       <div>7月31日7月31日7月31日7月31日</div>
-                       <div>7月31日7月31日7月31日7月31日</div>
-                       <div>7月31日7月31日7月31日7月31日</div>
-                       <div>7月31日7月31日7月31日7月31日</div>
+                       <?php foreach($val['courses'] as $v){?>
+                           <div><?php echo $v['times']?></div>
+                       <?php }?>
                    </div>
                    <div class="fraction_Time"><!--课程时长-->
                        <div class="left_Time">课程时长</div>
-                       <div>30+50课程</div>
-                       <div>30+50课程</div>
-                       <div>30+50课程</div>
-                       <div>30+50课程</div>
-                       <div>30+50课程</div>
-                       <div>30+50课程</div>
+                       <?php foreach($val['courses'] as $v){?>
+                           <div><?php echo $v['hour']?></div>
+                       <?php }?>
                    </div>
                    <div class="fraction_try"><!--试听-->
                        <div class="left_try">试听</div>
-                       <div><a href="" target="_blank">试听</a></div>
-                       <div><a href="" target="_blank">试听</a></div>
-                       <div><a href="" target="_blank">试听</a></div>
-                       <div><a href="" target="_blank">试听</a></div>
-                       <div><a href="" target="_blank">试听</a></div>
-                       <div><a href="" target="_blank">试听</a></div>
+                       <?php foreach($val['courses'] as $v){?>
+                           <div><a href="<?php echo $v['url']?>" target="_blank">试听</a></div>
+                       <?php }?>
                    </div>
                    <div class="fraction_sign"><!--报名-->
                        <div class="left_sign">报名</div>
-                       <div><a href="" target="_blank">立即报名</a></div>
-                       <div><a href="" target="_blank">立即报名</a></div>
-                       <div><a href="" target="_blank">立即报名</a></div>
-                       <div><a href="" target="_blank">立即报名</a></div>
-                       <div><a href="" target="_blank">立即报名</a></div>
-                       <div><a href="" target="_blank">立即报名</a></div>
+                       <?php foreach($val['courses'] as $v){?>
+                           <div><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank">立即报名</a></div>
+                       <?php }?>
                    </div>
                </div>
            </ul>
+            <?php }?>
         </div>
     </div>
 </section>

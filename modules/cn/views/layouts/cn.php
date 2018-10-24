@@ -95,9 +95,9 @@
         }
     }
     ?>
-    <title><?php echo $seo['title']?>-申友网</title>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta name="keywords" content="<?php echo $seo['keywords']?>">
+<!--    <title>--><?php //echo $seo['title']?><!---申友网</title>-->
+<!--    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">-->
+<!--    <meta name="keywords" content="--><?php //echo $seo['keywords']?><!--">-->
     <?php
     if($action != 'word-details' && $action != 'picture-details' ) {
         ?>

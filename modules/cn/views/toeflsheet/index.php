@@ -1,8 +1,9 @@
 
 <link rel="stylesheet" href="/cn/css/toeflSheet.css"/>
 <script type="text/javascript" src="/cn/js/toeflSheet.js"></script>
-
-
+<title>tuofu11111-申友网</title>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta name="keywords" content="tuofutuofu">
 <div>
     <div class="course-bnr">
         <ul class="clearfix">
@@ -84,70 +85,58 @@
             </ul>
         </div>
         <div class="content_bd bd">
+            <?php foreach($course['dataCourse'] as $key=> $val){?>
             <ul>
                 <div class="fraction_details">
                     <div class="fraction_name"><!--课程名称-->
                         <div class="left_name">课程名称</div>
-                        <div class="couse">GAMT 晚间强化方法课</div>
-                        <div class="couse">GAMT 晚间强化方法课</div>
-                        <div class="couse">GAMT 晚间强化方法课</div>
-                        <div class="couse">GAMT 晚间强化方法课</div>
-                        <div class="couse">GAMT 晚间强化方法课</div>
+                        <?php foreach($val as $v){?>
+                        <div class="couse"><?php echo $v['name']?></div>
+                        <?php }?>
                     </div>
                     <div class="fraction_price"><!--课程价格-->
                         <div class="left_price">价格</div>
-                        <div>￥9000 ￥9000 ￥9000 ￥9000 ￥9000</div>
-                        <div>￥9000</div>
-                        <div>￥9000</div>
-                        <div>￥9000</div>
-                        <div>￥9000</div>
+                        <?php foreach($val as $v){?>
+                            <div><?php echo (isset($v['price'])&&is_numeric($v['price'])&&$v['price']!=false)?$v['price']:'咨询详情'?></div>
+                        <?php }?>
                     </div>
                     <div class="fraction_value"><!--性价比-->
                         <div class="left_value">性价比</div>
-                        <div>112元/课时112元/课时112元/课时112元/课时</div>
-                        <div>112元/课时</div>
-                        <div>112元/课时</div>
-                        <div>112元/课时</div>
-                        <div>112元/课时</div>
+                        <?php foreach($val as $v){?>
+                            <div><?php echo (isset($v['duration'])&&(int)$v['duration']!=false&&isset($v['price'])&&is_numeric($v['price']))?ceil($v['price']/(int)$v['duration']).'元/课时':'咨询详情'?></div>
+                        <?php }?>
                     </div>
                     <div class="fraction_startTime"><!--开课时间-->
                         <div class="left_startTime">开课时间</div>
-                        <div>7月31日7月31日7月31日7月31日</div>
-                        <div>7月31日7月31日7月31日7月31日</div>
-                        <div>7月31日7月31日7月31日7月31日</div>
-                        <div>7月31日7月31日7月31日7月31日</div>
-                        <div>7月31日7月31日7月31日7月31日</div>
+                        <?php foreach($val as $v){?>
+                            <div><?php echo (isset($v['commencement'])&&$v['commencement']!=false)?$v['commencement']:'咨询详情'?></div>
+                        <?php }?>
                     </div>
                     <div class="fraction_Time"><!--课程时长-->
                         <div class="left_Time">课程时长</div>
-                        <div>30+50课程</div>
-                        <div>30+50课程</div>
-                        <div>30+50课程</div>
-                        <div>30+50课程</div>
-                        <div>30+50课程</div>
+                        <?php foreach($val as $v){?>
+                            <div><?php echo isset($v['duration'])?$v['duration']:'咨询详情'?></div>
+                        <?php }?>
                     </div>
                     <div class="fraction_try"><!--试听-->
                         <div class="left_try">试听</div>
-                        <div><a href="" target="_blank">试听</a></div>
-                        <div><a href="" target="_blank">试听</a></div>
-                        <div><a href="" target="_blank">试听</a></div>
-                        <div><a href="" target="_blank">试听</a></div>
-                        <div><a href="" target="_blank">试听</a></div>
+                        <?php foreach($val as $v){?>
+                            <div><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank">试听</a></div>
+                        <?php }?>
                     </div>
                     <div class="fraction_sign"><!--报名-->
                         <div class="left_sign">报名</div>
-                        <div><a href="" target="_blank">立即报名</a></div>
-                        <div><a href="" target="_blank">立即报名</a></div>
-                        <div><a href="" target="_blank">立即报名</a></div>
-                        <div><a href="" target="_blank">立即报名</a></div>
-                        <div><a href="" target="_blank">立即报名</a></div>
+                        <?php foreach($val as $v){?>
+                            <div><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank">立即报名</a></div>
+                        <?php }?>
                     </div>
                 </div>
             </ul>
+            <?php }?>
         </div>
         <div class="course-flow">
             <p class="pub-title-h3">服务流程</p>
-            <p class="pub-title-h5">雷哥托福F-inspire服务体系，课前-课中-课后三阶段超值服务</p>
+            <p class="pub-title-h5">申友托福F-inspire服务体系，课前-课中-课后三阶段超值服务</p>
             <ul class="cnt clearfix">
                 <li>
                     <p>课前</p>
@@ -160,7 +149,7 @@
                 <li>
                     <p>课中</p>
                     <div>
-                        <p>1.雷哥托福名师，精品小班/VIP授课</p>
+                        <p>1.申友托福名师，精品小班/VIP授课</p>
                         <p>2.复习方案私人制定，阶段作业检测</p>
                         <p>3.建立学员档案，每周回访备考情况</p>
                     </div>
@@ -197,7 +186,7 @@
                 </div>
                 <div class="study-font clearfix">
                     <h3>个性化课程规划</h3>
-                    <p>根据测试结果，雷哥托福教师1对1面谈，科学配置课程，
+                    <p>根据测试结果，申友托福教师1对1面谈，科学配置课程，
                         定制预习和考试方案。</p>
                 </div>
             </li>
@@ -207,7 +196,7 @@
                 </div>
                 <div class="study-font clearfix">
                     <h3>专业化托福名师团队</h3>
-                    <p>雷哥托福拥有海内外名校名师团队，专注托福教研体系
+                    <p>申友托福拥有海内外名校名师团队，专注托福教研体系
                         搭建，教学体系优化，为学生提供系统化知识结构，提
                         高答题技巧和语言能力。</p>
                 </div>
@@ -218,7 +207,7 @@
                 </div>
                 <div class="study-font clearfix">
                     <h3>课程体系完善,O2O授课模式</h3>
-                    <p>雷哥托福课程有基础班、强化班、冲刺班、VIP课等多种
+                    <p>申友托福课程有基础班、强化班、冲刺班、VIP课等多种
                         班型；免费试听、小班面授，VIP提分、直播课，录播课，
                         免费公开课多层次课程。</p>
                 </div>
@@ -251,7 +240,7 @@
                 </div>
                 <div class="study-font clearfix">
                     <h3>托福在线做题,模考平台</h3>
-                    <p>雷哥托福一站式在线学习平台，PC+WAP+APP智能组合，提供托福TPO在线仿真模考、听说读写分科练习，智能测评，资料下载等学习服务，帮助考生集中有效时间，利用碎片时间，随时随地备考托福。</p>
+                    <p>申友托福一站式在线学习平台，PC+WAP+APP智能组合，提供托福TPO在线仿真模考、听说读写分科练习，智能测评，资料下载等学习服务，帮助考生集中有效时间，利用碎片时间，随时随地备考托福。</p>
                 </div>
             </li>
             <li>
@@ -261,7 +250,7 @@
                 <div class="study-font clearfix">
                     <h3>自主研发专业教材</h3>
                     <p>
-                        雷哥托福拥有强大的学术研究与教学服务中心，雷哥Kevin领携海内外一线托福名师团队，自主研发托福系列高分教材，如《雷哥托福高分培训教材》《写作精批手册》《听力满分笔记》等，迎合ETS改革，有效指导学员高分备考。</p>
+                        申友托福拥有强大的学术研究与教学服务中心，雷哥Kevin领携海内外一线托福名师团队，自主研发托福系列高分教材，如《雷哥托福高分培训教材》《写作精批手册》《听力满分笔记》等，迎合ETS改革，有效指导学员高分备考。</p>
                 </div>
             </li>
         </ul>

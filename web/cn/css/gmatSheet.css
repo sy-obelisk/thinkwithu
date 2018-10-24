@@ -1097,6 +1097,8 @@
 	height: 215px;
 	float: left;
 	background-color: white;
+	-webkit-box-shadow:  0 0 20px #d6d6d6;
+	-moz-box-shadow:  0 0 20px #d6d6d6;
 	box-shadow: 0 0 20px #d6d6d6;
 	padding-top: 15px;
 	box-sizing: border-box;

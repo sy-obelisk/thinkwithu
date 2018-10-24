@@ -1194,7 +1194,7 @@ else{
     }).mouseout(function () {
         $('.smallImg ul').trigger('mouseout');
     });
-    // $('.smallImg ul li.clone').removeClass('on')
+    $('.smallImg ul li.clone').removeClass('on')
     //研发成果
     jQuery(".Results_list").slide({mainCell:".Results_bd ul",autoPage:true,effect:"left",autoPlay:true,vis:6});
 

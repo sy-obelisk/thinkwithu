@@ -99,7 +99,6 @@ body{
 .content_bd{
     /*width:1000px;*/
     width: 100%;
-    float: left;
 }
 
 #panel{
@@ -313,7 +312,6 @@ body{
 .content_bd{
     /*width:1000px;*/
     width: 100%;
-    float: left;
 }
 .fraction_name,.fraction_value,.fraction_price,.fraction_startTime,.fraction_Time,.fraction_try,.fraction_sign{
     display: flex;
