@@ -224,7 +224,7 @@
         <ul>
             <?php foreach($abroadPro as $v){?>
             <li>
-                <img class="hotImg" src="http://www.thinkwithu.com<?php echo $v['image']?>" alt="">
+                <img class="hotImg" src="<?php echo $v['image']?>" alt="">
                 <a href=""><?php echo $v['name']?> <span><i class="iconfont">&#xe600;</i></span></a>
             </li>
             <?php }?>
@@ -241,12 +241,12 @@
     <div class="impro_content">
         <div class="impro_title">
             <ul>
-                <li class="title_btn on">国外实习</li>
-                <li class="title_btn">国内实习</li>
-                <li class="title_btn">海外就业</li>
-                <li class="title_btn">国外游学</li>
-                <li class="title_btn">科研实习</li>
-                <li class="title_btn">公益项目</li>
+                <li class="title_btn on" data-id="243">国外实习</li>
+                <li class="title_btn" data-id="242">国内实习</li>
+                <li class="title_btn" data-id="262">海外就业</li>
+                <li class="title_btn" data-id="239">国外游学</li>
+                <li class="title_btn" data-id="263">科研实习</li>
+                <li class="title_btn" data-id="264">公益项目</li>
             </ul>
         </div>
         <div class="content_list"><!--外层循环 listDiv-->
@@ -322,7 +322,17 @@
             $('.listDiv').eq(index).show();
         });
         // 分页
+        $('.pageSize ul li').click(function () {
+            var page = parseInt($(this).html());
+            var catid = $('.impro_title').find('.on').attr('data-id');
+            var index = $('.impro_title').find('.on').index();
+            var str;
+            $.get('/cn/api/internship',{catId:catid,page:page},function (re) {
+                for(var i in JSON.parse(re).data){
 
+                }
+            })
+        })
     </script>
 </section>
 <!--美国留学成功案例-->
@@ -332,158 +342,18 @@
     <div class="case_content">
         <div class="casebd">
             <ul><!--外层循环li 内层循环div case_cover-->
-                <li class="case_cover">
-                    <div>
-                        <div class="case_tx"><img src="" alt=""></div>
-                        <p class="case_name">成都朱同学</p>
-                        <p class="case_intro">斩获商学院MBA</p>
-                        <p class="case_school">录取院校:商学院</p>
-                    </div>
-                    <div>
-                        <div class="case_tx"><img src="" alt=""></div>
-                        <p class="case_name">成都朱同学</p>
-                        <p class="case_intro">斩获商学院MBA</p>
-                        <p class="case_school">录取院校:商学院</p>
-                    </div>
-                    <div>
-                        <div class="case_tx"><img src="" alt=""></div>
-                        <p class="case_name">成都朱同学</p>
-                        <p class="case_intro">斩获商学院MBA</p>
-                        <p class="case_school">录取院校:商学院</p>
-                    </div>
-                    <div>
-                        <div class="case_tx"><img src="" alt=""></div>
-                        <p class="case_name">成都朱同学</p>
-                        <p class="case_intro">斩获商学院MBA</p>
-                        <p class="case_school">录取院校:商学院</p>
-                    </div>
-                    <div>
-                        <div class="case_tx"><img src="" alt=""></div>
-                        <p class="case_name">成都朱同学</p>
-                        <p class="case_intro">斩获商学院MBA</p>
-                        <p class="case_school">录取院校:商学院</p>
-                    </div>
-                    <div>
-                        <div class="case_tx"><img src="" alt=""></div>
-                        <p class="case_name">成都朱同学</p>
-                        <p class="case_intro">斩获商学院MBA</p>
-                        <p class="case_school">录取院校:商学院</p>
-                    </div>
-                </li>
-                <li class="case_cover">
-                    <div>
-                        <div class="case_tx"></div>
-                        <p class="case_name">成都朱同学</p>
-                        <p class="case_intro">斩获商学院MBA</p>
-                        <p class="case_school">录取院校:商学院</p>
-                    </div>
-                    <div>
-                        <div class="case_tx"></div>
-                        <p class="case_name">成都朱同学</p>
-                        <p class="case_intro">斩获商学院MBA</p>
-                        <p class="case_school">录取院校:商学院</p>
-                    </div>
-                    <div>
-                        <div class="case_tx"></div>
-                        <p class="case_name">成都朱同学</p>
-                        <p class="case_intro">斩获商学院MBA</p>
-                        <p class="case_school">录取院校:商学院</p>
-                    </div>
-                    <div>
-                        <div class="case_tx"></div>
-                        <p class="case_name">成都朱同学</p>
-                        <p class="case_intro">斩获商学院MBA</p>
-                        <p class="case_school">录取院校:商学院</p>
-                    </div>
-                    <div>
-                        <div class="case_tx"></div>
-                        <p class="case_name">成都朱同学</p>
-                        <p class="case_intro">斩获商学院MBA</p>
-                        <p class="case_school">录取院校:商学院</p>
-                    </div>
-                    <div>
-                        <div class="case_tx"></div>
-                        <p class="case_name">成都朱同学</p>
-                        <p class="case_intro">斩获商学院MBA</p>
-                        <p class="case_school">录取院校:商学院</p>
-                    </div>
-                </li>
-                <li class="case_cover">
-                    <div>
-                        <div class="case_tx"></div>
-                        <p class="case_name">成都朱同学</p>
-                        <p class="case_intro">斩获商学院MBA</p>
-                        <p class="case_school">录取院校:商学院</p>
-                    </div>
-                    <div>
-                        <div class="case_tx"></div>
-                        <p class="case_name">成都朱同学</p>
-                        <p class="case_intro">斩获商学院MBA</p>
-                        <p class="case_school">录取院校:商学院</p>
-                    </div>
-                    <div>
-                        <div class="case_tx"></div>
-                        <p class="case_name">成都朱同学</p>
-                        <p class="case_intro">斩获商学院MBA</p>
-                        <p class="case_school">录取院校:商学院</p>
-                    </div>
-                    <div>
-                        <div class="case_tx"></div>
-                        <p class="case_name">成都朱同学</p>
-                        <p class="case_intro">斩获商学院MBA</p>
-                        <p class="case_school">录取院校:商学院</p>
-                    </div>
-                    <div>
-                        <div class="case_tx"></div>
-                        <p class="case_name">成都朱同学</p>
-                        <p class="case_intro">斩获商学院MBA</p>
-                        <p class="case_school">录取院校:商学院</p>
-                    </div>
-                    <div>
-                        <div class="case_tx"></div>
-                        <p class="case_name">成都朱同学</p>
-                        <p class="case_intro">斩获商学院MBA</p>
-                        <p class="case_school">录取院校:商学院</p>
-                    </div>
-                </li>
-                <li class="case_cover">
-                    <div>
-                        <div class="case_tx"></div>
-                        <p class="case_name">成都朱同学</p>
-                        <p class="case_intro">斩获商学院MBA</p>
-                        <p class="case_school">录取院校:商学院</p>
-                    </div>
-                    <div>
-                        <div class="case_tx"></div>
-                        <p class="case_name">成都朱同学</p>
-                        <p class="case_intro">斩获商学院MBA</p>
-                        <p class="case_school">录取院校:商学院</p>
-                    </div>
-                    <div>
-                        <div class="case_tx"></div>
-                        <p class="case_name">成都朱同学</p>
-                        <p class="case_intro">斩获商学院MBA</p>
-                        <p class="case_school">录取院校:商学院</p>
-                    </div>
-                    <div>
-                        <div class="case_tx"></div>
-                        <p class="case_name">成都朱同学</p>
-                        <p class="case_intro">斩获商学院MBA</p>
-                        <p class="case_school">录取院校:商学院</p>
-                    </div>
-                    <div>
-                        <div class="case_tx"></div>
-                        <p class="case_name">成都朱同学</p>
-                        <p class="case_intro">斩获商学院MBA</p>
-                        <p class="case_school">录取院校:商学院</p>
-                    </div>
-                    <div>
-                        <div class="case_tx"></div>
-                        <p class="case_name">成都朱同学</p>
-                        <p class="case_intro">斩获商学院MBA</p>
-                        <p class="case_school">录取院校:商学院</p>
-                    </div>
-                </li>
+                    <?php $i=0;$n=count($case)!=false?ceil(count($case)/6):0;for($i;$i++;$i<$n) { ?>
+                        <li class="case_cover">
+                            <?php foreach ($case as $k => $v) {?>
+                            <div>
+                                <div class="case_tx"><img src="" alt=""></div>
+                                <p class="case_name"><?php echo $v['name']?></p>
+                                <p class="case_intro"><?php echo $v['title']?></p>
+                                <p class="case_school">录取院校:商学院</p>
+                            </div>
+                            <?php }?>
+                        </li>
+                    <?php } ?>
             </ul>
         </div>
         <div class="casehd">
