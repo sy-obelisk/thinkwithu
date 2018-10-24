@@ -239,10 +239,10 @@ class StudyController extends ThinkUController {
         $internship['inland'] = Content::getContent(['pageStr' => 1, 'category' => "238,242", 'pageSize' => 6, 'order' => 'c.sort asc,c.id desc']);
         $internship['foreign'] = Content::getContent(['pageStr' => 1, 'category' => "238,243", 'pageSize' => 6, 'order' => 'c.sort asc,c.id desc']);
         $internship['internship'] = Content::getContent(['pageStr' => 1, 'category' => "238,239", 'pageSize' => 6, 'order' => 'c.sort asc,c.id desc']);
-        $internship['employment'] = Content::getContent(['pageStr' => 1, 'category' => "238,263", 'pageSize' => 6, 'order' => 'c.sort asc,c.id desc']);
-        $internship['scientific'] = Content::getContent(['pageStr' => 1, 'category' => "238,242", 'pageSize' => 6, 'order' => 'c.sort asc,c.id desc']);
-        $internship['welfare'] = Content::getContent(['pageStr' => 1, 'category' => "238,263", 'pageSize' => 6, 'order' => 'c.sort asc,c.id desc']);
-//        var_dump($case);die;
+        $internship['employment'] = Content::getContent(['pageStr' => 1, 'category' => "238,262", 'pageSize' => 6, 'order' => 'c.sort asc,c.id desc']);
+        $internship['scientific'] = Content::getContent(['pageStr' => 1, 'category' => "238,263", 'pageSize' => 6, 'order' => 'c.sort asc,c.id desc']);
+        $internship['welfare'] = Content::getContent(['pageStr' => 1, 'category' => "238,264", 'pageSize' => 6, 'order' => 'c.sort asc,c.id desc']);
+//        echo '<pre>';var_dump($internship);die;
         return $this->render('abroad', ['banner'=>$banner,'caseList' => $caseList, 'news' => $news, 'active' => $active, 'abroadPro' => $abroadPro, 'case' => $case, 'teacher' => $teacher, 'internship' => $internship]);
     }
 }
