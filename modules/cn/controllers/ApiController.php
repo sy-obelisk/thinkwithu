@@ -1198,4 +1198,11 @@ class ApiController extends ThinkUApiControl {
         $data = \app\modules\cn\models\Content::getContent(['fields' => 'url,place,time', 'category' => '107', 'order'=>'c.id desc','limit' => 3]);
         die(json_encode(['data' => $data]));
     }
+
+    public function actionInternship(){
+        $catId = Yii::$app->request->get('catId');
+        $page = Yii::$app->request->get('page',1);
+        $data = Content::getContent(['type' => 1,'page'=>$page,'category' => "238,$catId", 'pageSize' => 6, 'order' => 'c.sort asc,c.id desc']);
+        die(json_encode(['data' => $data]));
+    }
 }
