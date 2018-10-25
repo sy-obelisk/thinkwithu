@@ -54,7 +54,18 @@
 </section>
 <!--申请攻略-->
 <section class="Apca_strategy">
-    <p class="Record_title">美国留学热门专业申请攻略</p>
+    <p class="Record_title">
+        <?php $country = Yii::$app->request->get('country','USA'); if($country=='USA'){
+            echo '美国';
+        }elseif($country=='UK'){
+            echo '英国';
+        }elseif($country=='HK'){
+            echo '香港';
+        }elseif($country=='AUS'){
+            echo '澳大利亚';
+        }elseif($country=='Canada'){
+            echo '加拿大';
+        }?>留学热门专业申请攻略</p>
     <div class="service_line"></div>
     <div class="strategy_content">
         <div class="business profession"><!--商科-->
@@ -158,24 +169,27 @@
             </div>
         </div>
         <div class="united m20"><!--美国留学专业推荐-->
-            <div class="united_title"><span>|</span> 美国留学专业推荐</div>
+            <div class="united_title"><span>|</span>
+                <?php $country = Yii::$app->request->get('country','USA'); if($country=='USA'){
+                    echo '美国';
+                }elseif($country=='UK'){
+                    echo '英国';
+                }elseif($country=='HK'){
+                    echo '香港';
+                }elseif($country=='AUS'){
+                    echo '澳大利亚';
+                }elseif($country=='Canada'){
+                    echo '加拿大';
+                }?>留学专业推荐</div>
             <div class="united_slide">
                 <ul>
+                    <?php foreach($recommend as $v){?>
                     <li>
-                        <div class="unitedImg"><img src="/cn/images/ceshi.png" alt=""></div>
-                        <p>专业介绍:<span>美国留学如何成功申请心理学科目等等等你的歌</span></p>
-                        <p>推荐理由:<span>美国留学如何成功申请心理学科目等等等你的歌</span></p>
+                        <div class="unitedImg"><img src="<?php echo $v['image']!=false?'http://www.thinkwithu.com'.$v['image']:'/cn/images/ceshi.png'?>" alt=""></div>
+                        <p>专业介绍:<span><?php echo $v['name']?></span></p>
+<!--                        <p>推荐理由:<span>美国留学如何成功申请心理学科目等等等你的歌</span></p>-->
                     </li>
-                    <li>
-                        <div class="unitedImg"><img src="/cn/images/ceshi.png" alt=""></div>
-                        <p>专业介绍:<span>嘻嘻哈哈</span></p>
-                        <p>推荐理由:<span>美国留学如何成功申请心理学科目等等等你的歌</span></p>
-                    </li>
-                    <li>
-                        <div class="unitedImg"><img src="/cn/images/ceshi.png" alt=""></div>
-                        <p>专业介绍:<span>每天起床第一句 先为自己打个气</span></p>
-                        <p>推荐理由:<span>美国留学如何成功申请心理学科目等等等你的歌</span></p>
-                    </li>
+                    <?php }?>
                 </ul>
             </div>
             <i class="prev iconfont">&#xe608;</i>
@@ -218,7 +232,18 @@
 </section>
 <!--美国留学热门项目-->
 <section class="hot_items">
-    <p class="Record_title">美国留学热门项目</p>
+    <p class="Record_title">
+        <?php $country = Yii::$app->request->get('country','USA'); if($country=='USA'){
+            echo '美国';
+        }elseif($country=='UK'){
+            echo '英国';
+        }elseif($country=='HK'){
+            echo '香港';
+        }elseif($country=='AUS'){
+            echo '澳大利亚';
+        }elseif($country=='Canada'){
+            echo '加拿大';
+        }?>留学热门项目</p>
     <div class="service_line"></div>
     <div class="hot_content">
         <ul>
@@ -289,7 +314,18 @@
 </section>
 <!--美国留学成功案例-->
 <section class="successCase">
-    <p class="Record_title">美国留学成功案例</p>
+    <p class="Record_title">
+        <?php $country = Yii::$app->request->get('country','USA'); if($country=='USA'){
+            echo '美国';
+        }elseif($country=='UK'){
+            echo '英国';
+        }elseif($country=='HK'){
+            echo '香港';
+        }elseif($country=='AUS'){
+            echo '澳大利亚';
+        }elseif($country=='Canada'){
+            echo '加拿大';
+        }?>留学成功案例</p>
     <div class="service_line"></div>
     <div class="case_content">
         <div class="casebd">
@@ -331,7 +367,18 @@
 <!--美国留学考试提分课程-->
 <section class="scoring">
     <div class="scoring_content">
-        <p class="Record_title">美国留学考试提分课程</p>
+        <p class="Record_title">
+            <?php $country = Yii::$app->request->get('country','USA'); if($country=='USA'){
+                echo '美国';
+            }elseif($country=='UK'){
+                echo '英国';
+            }elseif($country=='HK'){
+                echo '香港';
+            }elseif($country=='AUS'){
+                echo '澳大利亚';
+            }elseif($country=='Canada'){
+                echo '加拿大';
+            }?>留学考试提分课程</p>
         <div class="service_line"></div>
         <div class="scoring_course">
             <a href="http://www.gmatonline.cn/gmatcourses/397.html" target="_blank">
