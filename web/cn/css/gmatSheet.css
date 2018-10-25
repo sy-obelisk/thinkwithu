@@ -778,6 +778,7 @@
 	top: -1px;
 	z-index: 99;
 	overflow: hidden;
+    background: url("/cn/images/gmatImages/gmat-bg.png")no-repeat center;
 }
 
 .teacher_index_big_head img{

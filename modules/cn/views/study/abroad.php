@@ -17,15 +17,15 @@
         <div class="bannerCenter">
             <ul>
                 <li>
-                    <a href=""><div></div></a>
+                    <a href=""><div class="bak_c"></div></a>
                     <span>背景测评</span>
                 </li>
                 <li>
-                    <a href=""><div></div></a>
+                    <a href=""><div class="choose_c"></div></a>
                     <span>选校测评</span>
                 </li>
                 <li>
-                    <a href=""><div></div></a>
+                    <a href=""><div class="choose_t"></div></a>
                     <span>选校推荐</span>
                 </li>
             </ul>
@@ -89,7 +89,7 @@
         <div class="science profession"><!--理科-->
             <div class="content_left">
                 <span class="pro_name">理工科</span>
-                <div class="pro_icon"></div>
+                <div class="pro_icon lg_icon"></div>
                 <div class="pro_st"><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">定制攻略</a></div>
             </div>
             <div class="content_right">
@@ -135,7 +135,7 @@
         <div class="science profession m20"><!--工科-->
             <div class="content_left">
                 <span class="pro_name">金融</span>
-                <div class="pro_icon"></div>
+                <div class="pro_icon jr_icon"></div>
                 <div class="pro_st"><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">定制攻略</a></div>
             </div>
             <div class="content_right">
@@ -153,7 +153,7 @@
         <div class="science profession m20"><!--文科-->
             <div class="content_left">
                 <span class="pro_name">文科</span>
-                <div class="pro_icon"></div>
+                <div class="pro_icon wk_icon"></div>
                 <div class="pro_st"><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">定制攻略</a></div>
             </div>
             <div class="content_right">
@@ -216,19 +216,72 @@
     <div class="service_line"></div>
     <div class="ac_content">
         <ul><!--循环li-->
-            <?php foreach($active as $v){?>
-            <li>
-                <img src="" alt="">
-                <div class="ac_intro">
-                    <p class="offer">< 重大优惠 ></p>
-                    <p class="words"><?php echo $v['name']?></p>
-                    <a href="">查看详情</a>
-                    <a href="" class="m0">立即报名</a>
+            <li class="Brushing">
+                <div class="Brushing_img"><img src="http://toefl.viplgw.cn/files/attach/images/20181023/1540264318540926.jpg" alt=""></div>
+                <div class="Brushing_cover">
+                    <p class="Brushing_title">美国留学申请如何脱颖而出</p>
+                    <div class="Brushing_teacher">老师:<p>Bella</p></div>
+                    <p class="Brushing_time">时间:<span>10月26日15:00-16：:00</span></p>
+                    <div class="Brushing_sign">
+                        <a href=""><div class="Brushing_details">查看详情</div></a>
+                        <a href=""><div class="Brushing_click">点击报名</div></a>
+                    </div>
                 </div>
             </li>
-            <?php }?>
+            <li class="Brushing">
+                <div class="Brushing_img"><img src="http://toefl.viplgw.cn/files/attach/images/20181023/1540264318540926.jpg" alt=""></div>
+                <div class="Brushing_cover">
+                    <p class="Brushing_title">美国留学申请如何脱颖而出</p>
+                    <div class="Brushing_teacher">老师:<p>Bella</p></div>
+                    <p class="Brushing_time">时间:<span>10月26日15:00-16：:00</span></p>
+                    <div class="Brushing_sign">
+                        <a href=""><div class="Brushing_details">查看详情</div></a>
+                        <a href=""><div class="Brushing_click">点击报名</div></a>
+                    </div>
+                </div>
+            </li>
+            <li class="Brushing">
+                <div class="Brushing_img"><img src="http://toefl.viplgw.cn/files/attach/images/20181023/1540264318540926.jpg" alt=""></div>
+                <div class="Brushing_cover">
+                    <p class="Brushing_title">美国留学申请如何脱颖而出</p>
+                    <div class="Brushing_teacher">老师:<p>Bella</p></div>
+                    <p class="Brushing_time">时间:<span>10月26日15:00-16：:00</span></p>
+                    <div class="Brushing_sign">
+                        <a href=""><div class="Brushing_details">查看详情</div></a>
+                        <a href=""><div class="Brushing_click">点击报名</div></a>
+                    </div>
+                </div>
+            </li>
+            <li class="Brushing">
+                <div class="Brushing_img"><img src="http://toefl.viplgw.cn/files/attach/images/20181023/1540264318540926.jpg" alt=""></div>
+                <div class="Brushing_cover">
+                    <p class="Brushing_title">美国留学申请如何脱颖而出</p>
+                    <div class="Brushing_teacher">老师:<p>Bella</p></div>
+                    <p class="Brushing_time">时间:<span>10月26日15:00-16：:00</span></p>
+                    <div class="Brushing_sign">
+                        <a href=""><div class="Brushing_details">查看详情</div></a>
+                        <a href=""><div class="Brushing_click">点击报名</div></a>
+                    </div>
+                </div>
+            </li>
+            <li class="Brushing">
+                <div class="Brushing_img"><img src="http://toefl.viplgw.cn/files/attach/images/20181023/1540264318540926.jpg" alt=""></div>
+                <div class="Brushing_cover">
+                    <p class="Brushing_title">美国留学申请如何脱颖而出</p>
+                    <div class="Brushing_teacher">老师:<p>Bella</p></div>
+                    <p class="Brushing_time">时间:<span>10月26日15:00-16：:00</span></p>
+                    <div class="Brushing_sign">
+                        <a href=""><div class="Brushing_details">查看详情</div></a>
+                        <a href=""><div class="Brushing_click">点击报名</div></a>
+                    </div>
+                </div>
+            </li>
+
         </ul>
     </div>
+    <script>
+        jQuery(".latest_ac").slide({mainCell:".ac_content ul",effect:"leftLoop",autoPlay:true,vis:4});
+    </script>
 </section>
 <!--美国留学热门项目-->
 <section class="hot_items">
@@ -266,35 +319,39 @@
     <div class="impro_content">
         <div class="impro_title">
             <ul>
-                <li class="title_btn on">国外实习</li>
-                <li class="title_btn">国内实习</li>
-                <li class="title_btn">海外就业</li>
-                <li class="title_btn">国外游学</li>
-                <li class="title_btn">科研实习</li>
-                <li class="title_btn">公益项目</li>
+                <li class="title_btn on" data-id="243">国外实习</li>
+                <li class="title_btn" data-id="242">国内实习</li>
+                <li class="title_btn" data-id="262">海外就业</li>
+                <li class="title_btn" data-id="239">国外游学</li>
+                <li class="title_btn" data-id="263">科研实习</li>
+                <li class="title_btn" data-id="264">公益项目</li>
             </ul>
         </div>
         <div class="content_list"><!--外层循环 listDiv-->
             <?php foreach($internship as $k=>$v){?>
             <div class="<?php echo $k=='inland'?'practice ':''?>listDiv"><!--国外实习  内层循环div list_show-->
-                <?php foreach($v as $key=>$val){
-                    if(is_numeric($key)){?>
-                        <div class="list_show">
-                            <img src="<?php echo 'http://www.thinkwithu.com'.$val['image']?>" alt="">
-                            <div class="list_bottom">
-                                <p><?php echo $val['name']?></p>
-                            </div>
-                        </div>
-                <?php }
-                }?>
+                <div class="listDivCover">
+                    <?php foreach($v as $key=>$val){
+                        if(is_numeric($key)){?>
+                            <a href="/word-details/<?php echo $val['id']?>/index,178.html">
+                                <div class="list_show">
+                                    <img src="<?php echo 'http://www.thinkwithu.com'.$val['image']?>" alt="">
+                                    <div class="list_bottom">
+                                        <p><?php echo $val['name']?></p>
+                                    </div>
+                                </div>
+                            </a>
+                        <?php }
+                    }?>
+                </div>
                 <!-- 分页-->
                 <div class="pageSize">
                     <ul><?php if($v['count']!=false){?>
-                        <li data-value="0" class="num"><a href="javascript:;">&#60;</a></li>
+                        <li class="prevbtn"><a href="javascript:;">&#60;</a></li>
                         <?php for($i=1;$i<$v['total']+1;$i++){?>
-                        <li data-value="<?php echo $i?>" class="num on"><a href="javascript:;"><?php echo $i?></a></li>
+                        <li class="num on"><?php echo $i?></li>
                         <?php }?>
-                        <li data-value="2" class="num"><a href="javascript:;">&#62;</a></li>
+                        <li class="nextbtn"><a href="javascript:;">&#62;</a></li>
                     <?php }?>
                     </ul>
                 </div>
@@ -309,6 +366,51 @@
             $(this).addClass('on');
             $('.listDiv').hide();
             $('.listDiv').eq(index).show();
+        });
+        function getContent(catid,page,index) {
+            var str='';
+            $.get('/cn/api/internship',{catId:catid,page:page},function (re) {
+                for(var i in JSON.parse(re).data){
+                    if(i<6){
+                        str+='<a href="/word-details/'+ JSON.parse(re).data[i].id +'/index,178.html">';
+                        str+='<div class="list_show">';
+                        str+='<img src="http://www.thinkwithu.com'+JSON.parse(re).data[i].image+'" alt="">';
+                        str+='<div class="list_bottom">';
+                        str+='<p>'+ JSON.parse(re).data[i].name +'</p>';
+                        str+='</div>';
+                        str+='</div>';
+                        str+='</a>';
+                    }
+                }
+                $('.listDiv').eq(index).find('.listDivCover').html(str);
+                $('.listDiv').eq(index).find('.num').removeClass('on');
+                $('.listDiv').eq(index).find('.num').eq(JSON.parse(re).data.page-1).addClass('on');
+            })
+        }
+        // 分页数字
+        $('.num').click(function () {
+            var page = parseInt($(this).html());
+            var catid = $('.impro_title').find('.on').attr('data-id');
+            var index = $('.impro_title').find('.on').index();
+            getContent(catid,page,index);
+        });
+        //分页下一页
+        $('.nextbtn').click(function () {
+            var page = parseInt($(this).parent().find('.on').next().html());
+            var catid = $('.impro_title').find('.on').attr('data-id');
+            var index = $('.impro_title').find('.on').index();
+            if(page){
+                getContent(catid,page,index);
+            }
+        });
+        //分页上一页
+        $('.prevbtn').click(function () {
+            var page = parseInt($(this).parent().find('.on').prev().html());
+            var catid = $('.impro_title').find('.on').attr('data-id');
+            var index = $('.impro_title').find('.on').index();
+            if(page){
+                getContent(catid,page,index);
+            }
         });
     </script>
 </section>
@@ -334,18 +436,20 @@
                 $i = 0;
                 $n = count($case) != false ? ceil(count($case) / 6) : 0;
                 for ($i;$i < $n; $i++) { ?>
-                    <li class="case_cover">
+                    <li>
+                        <div  class="case_cover">
                         <?php $j=0;for ($j;$j < 6; $j++) {
                             if ($i < $n - 1 || ($i == $n && $j < count($case) % 6)) {
                                 ?>
                                 <div>
                                     <div class="case_tx"><img src="<?php echo 'http://www.thinkwithu.com'.$case[$i * 6 + $j]['image']?>" alt=""></div>
                                     <p class="case_name"><?php echo $case[$i * 6 + $j]['name'] ?></p>
-                                    <p class="case_intro"><?php echo $case[$i * 6 + $j]['title'] ?></p>
-<!--                                    <p class="case_school">录取院校:商学院</p>-->
+                                    <p class="case_intro"><a href=""><?php echo $case[$i * 6 + $j]['title'] ?></a></p>
+                                    <!--                                    <p class="case_school">录取院校:商学院</p>-->
                                 </div>
                             <?php }
                         } ?>
+                        </div>
                     </li>
                 <?php } ?>
             </ul>
@@ -361,7 +465,7 @@
         </div>
     </div>
     <script>
-        jQuery(".case_content").slide({titCell:'.casehd ul li',mainCell:".casebd ul",effect:"leftLoop",autoPlay:false});
+        jQuery(".case_content").slide({titCell:'.casehd ul li',mainCell:".casebd ul",effect:"left",autoPlay:false});
     </script>
 </section>
 <!--美国留学考试提分课程-->

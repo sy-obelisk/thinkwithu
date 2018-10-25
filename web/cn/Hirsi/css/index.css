@@ -1401,6 +1401,7 @@
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+    max-height: 63px;
 }
 .four_p{
     width: 90%;
