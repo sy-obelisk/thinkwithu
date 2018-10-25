@@ -1203,6 +1203,7 @@ class ApiController extends ThinkUApiControl {
         $catId = Yii::$app->request->get('catId');
         $page = Yii::$app->request->get('page',1);
         $data = Content::getContent(['type' => 1,'page'=>$page,'category' => "238,$catId", 'pageSize' => 6, 'order' => 'c.sort asc,c.id desc']);
+        $data['page'] = $page;
         die(json_encode(['data' => $data]));
     }
 }

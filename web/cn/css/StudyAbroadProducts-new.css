@@ -139,10 +139,18 @@ body{
     height: 35px;
     margin: auto;
     border-radius: 50%;
-    background: blue;
 }
 .bannerCenter ul li:last-child{
     border: none!important;
+}
+.bak_c{
+    background: url("/cn/images/abroad/bg-t.png") no-repeat center;
+}
+.choose_c{
+    background: url("/cn/images/abroad/school-t.png") no-repeat center;
+}
+.choose_t{
+    background: url("/cn/images/abroad/school-r.png") no-repeat center;
 }
 /*申请攻略*/
 .Apca_strategy{
@@ -175,6 +183,7 @@ body{
     box-shadow:  4px 4px 10px rgb(210,210,213);
     margin-right: 20px;
     overflow: hidden;
+    background: url('/cn/images/abroad/sub-bg.png')no-repeat center;
 }
 .content_left{
     width: 160px;
@@ -186,9 +195,19 @@ body{
 }
 .pro_icon{
     height: 60px;
-    width: 60px;
+    width: 56px;
     margin:20px auto;
-    background: blue;
+    background: url("/cn/images/abroad/usa-img.png") 4px 5px no-repeat;
+}
+.lg_icon{
+    width: 60px!important;
+    background: url("/cn/images/abroad/usa-img.png") -55px 5px no-repeat;
+}
+.jr_icon{
+    background: url("/cn/images/abroad/usa-img.png") -117.5px 5px no-repeat;
+}
+.wk_icon{
+    background: url("/cn/images/abroad/usa-img.png") -175.5px 0px no-repeat ;
 }
 .pro_st{
     width: 90px;
@@ -389,23 +408,85 @@ body{
     width: 1200px;
     margin: 40px auto;
 }
-.ac_content ul{
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
+.ac_content{
+    overflow: hidden;
 }
-.ac_content ul li{
-    flex: 1;
-    height: 265px;
-    margin-left: 20px;
-    background: yellowgreen;
-    position: relative;
-}
+/*.ac_content ul{*/
+    /*display: flex;*/
+    /*flex-wrap: nowrap;*/
+    /*flex-direction: row;*/
+/*}*/
+/*.ac_content ul li{*/
+    /*flex: 1;*/
+    /*height: 265px;*/
+    /*margin-left: 20px;*/
+    /*background: yellowgreen;*/
+    /*position: relative;*/
+/*}*/
 .ac_content ul li:nth-child(1){
     margin-left: 0px;
 }
 .ac_content ul li img{
     width: 100%;
+}
+.Brushing {
+    width: 274px;
+    float: left;
+    background: white;
+    margin-right: 30px;
+}
+.Brushing_img {
+    width: 274px;
+    height: 158px;
+    overflow: hidden;
+}
+.Brushing_img>img {
+    width: 100%;
+}
+.Brushing_cover {
+    width: 274px;
+    /*height: 150px;*/
+    color: rgb(83,83,83);
+}
+.Brushing_title {
+    font-size: 18px;
+    height: 42px;
+    padding: 10px;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+}
+.Brushing_teacher, .Brushing_time {
+    padding: 0px 10px 5px;
+    color: rgb(85,85,85);
+}
+.Brushing_teacher>p {
+    width: 85%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    float: right;
+    color: rgb(85,85,85);
+}
+.Brushing_sign {
+    overflow: hidden;
+}
+.Brushing_sign>a>div {
+    float: left;
+    width: 49%;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    border: 1px solid rgb(153,68,153);
+}
+.Brushing_details {
+    color: rgb(153,68,153);
+}
+.Brushing_click{
+    background:rgb(153,68,153);
+    color: white;
 }
 .ac_intro{
     position: absolute;
@@ -578,9 +659,9 @@ body{
 }
 /*留学考试提分课程*/
 .scoring{
-    width: 100%;
+    width: 1200px;
     height: 600px;
-    background: yellowgreen;
+    background: url("/cn/images/abroad/us-map.png") 0 40px no-repeat ;
     margin: 50px auto;
     overflow: hidden;
 }
@@ -597,6 +678,7 @@ body{
     background: white;
     text-align: center;
     border-radius: 10px;
+    background: url("/cn/images/abroad/class-bg.png")  no-repeat center;
 }
 .scoring_course>a:nth-child(3){
     margin-right: 0px;
@@ -749,6 +831,9 @@ body{
     position: relative;
     display: none;
 }
+.listDivCover{
+    overflow: hidden;
+}
 .listDiv:nth-child(1){
     display: block;
 }
@@ -804,5 +889,8 @@ body{
 }
 .pageSize ul li.on{
     background: rgb(153,68,153);
+    color: white!important;
+}
+.pageSize ul li.on a{
     color: white!important;
 }

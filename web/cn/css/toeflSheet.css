@@ -17,11 +17,11 @@ body{
     width: 900px;
     bottom: 60px;
     left: 50%;
-    -webkit-transform: translateX(-255px);
-    -moz-transform: translateX(-255px);
-    -ms-transform: translateX(-255px);
-    -o-transform: translateX(-255px);
-    transform: translateX(-255px);
+    -webkit-transform: translateX(-450px);
+    -moz-transform: translateX(-450px);
+    -ms-transform: translateX(-450px);
+    -o-transform: translateX(-450px);
+    transform: translateX(-450px);
 }
 .course-bnr>ul li {
     float: left;

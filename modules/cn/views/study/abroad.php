@@ -17,15 +17,15 @@
         <div class="bannerCenter">
             <ul>
                 <li>
-                    <a href=""><div></div></a>
+                    <a href=""><div class="bak_c"></div></a>
                     <span>背景测评</span>
                 </li>
                 <li>
-                    <a href=""><div></div></a>
+                    <a href=""><div class="choose_c"></div></a>
                     <span>选校测评</span>
                 </li>
                 <li>
-                    <a href=""><div></div></a>
+                    <a href=""><div class="choose_t"></div></a>
                     <span>选校推荐</span>
                 </li>
             </ul>
@@ -61,7 +61,7 @@
             <div class="content_left">
                 <span class="pro_name">商科</span>
                 <div class="pro_icon"></div>
-                <div class="pro_st"><a href="">定制攻略</a></div>
+                <div class="pro_st"><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">定制攻略</a></div>
             </div>
             <div class="content_right">
                 <ul><!--循环li-->
@@ -77,9 +77,9 @@
         </div>
         <div class="science profession"><!--理科-->
             <div class="content_left">
-                <span class="pro_name">理科</span>
-                <div class="pro_icon"></div>
-                <div class="pro_st"><a href="">定制攻略</a></div>
+                <span class="pro_name">理工科</span>
+                <div class="pro_icon lg_icon"></div>
+                <div class="pro_st"><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">定制攻略</a></div>
             </div>
             <div class="content_right">
                 <ul><!--循环li-->
@@ -124,8 +124,8 @@
         <div class="science profession m20"><!--工科-->
             <div class="content_left">
                 <span class="pro_name">金融</span>
-                <div class="pro_icon"></div>
-                <div class="pro_st"><a href="">定制攻略</a></div>
+                <div class="pro_icon jr_icon"></div>
+                <div class="pro_st"><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">定制攻略</a></div>
             </div>
             <div class="content_right">
                 <ul><!--循环li-->
@@ -142,8 +142,8 @@
         <div class="science profession m20"><!--文科-->
             <div class="content_left">
                 <span class="pro_name">文科</span>
-                <div class="pro_icon"></div>
-                <div class="pro_st"><a href="">定制攻略</a></div>
+                <div class="pro_icon wk_icon"></div>
+                <div class="pro_st"><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">定制攻略</a></div>
             </div>
             <div class="content_right">
                 <ul><!--循环li-->
@@ -202,19 +202,72 @@
     <div class="service_line"></div>
     <div class="ac_content">
         <ul><!--循环li-->
-            <?php foreach($active as $v){?>
-            <li>
-                <img src="" alt="">
-                <div class="ac_intro">
-                    <p class="offer">< 重大优惠 ></p>
-                    <p class="words"><?php echo $v['name']?></p>
-                    <a href="">查看详情</a>
-                    <a href="" class="m0">立即报名</a>
+            <li class="Brushing">
+                <div class="Brushing_img"><img src="http://toefl.viplgw.cn/files/attach/images/20181023/1540264318540926.jpg" alt=""></div>
+                <div class="Brushing_cover">
+                    <p class="Brushing_title">美国留学申请如何脱颖而出</p>
+                    <div class="Brushing_teacher">老师:<p>Bella</p></div>
+                    <p class="Brushing_time">时间:<span>10月26日15:00-16：:00</span></p>
+                    <div class="Brushing_sign">
+                        <a href=""><div class="Brushing_details">查看详情</div></a>
+                        <a href=""><div class="Brushing_click">点击报名</div></a>
+                    </div>
                 </div>
             </li>
-            <?php }?>
+            <li class="Brushing">
+                <div class="Brushing_img"><img src="http://toefl.viplgw.cn/files/attach/images/20181023/1540264318540926.jpg" alt=""></div>
+                <div class="Brushing_cover">
+                    <p class="Brushing_title">美国留学申请如何脱颖而出</p>
+                    <div class="Brushing_teacher">老师:<p>Bella</p></div>
+                    <p class="Brushing_time">时间:<span>10月26日15:00-16：:00</span></p>
+                    <div class="Brushing_sign">
+                        <a href=""><div class="Brushing_details">查看详情</div></a>
+                        <a href=""><div class="Brushing_click">点击报名</div></a>
+                    </div>
+                </div>
+            </li>
+            <li class="Brushing">
+                <div class="Brushing_img"><img src="http://toefl.viplgw.cn/files/attach/images/20181023/1540264318540926.jpg" alt=""></div>
+                <div class="Brushing_cover">
+                    <p class="Brushing_title">美国留学申请如何脱颖而出</p>
+                    <div class="Brushing_teacher">老师:<p>Bella</p></div>
+                    <p class="Brushing_time">时间:<span>10月26日15:00-16：:00</span></p>
+                    <div class="Brushing_sign">
+                        <a href=""><div class="Brushing_details">查看详情</div></a>
+                        <a href=""><div class="Brushing_click">点击报名</div></a>
+                    </div>
+                </div>
+            </li>
+            <li class="Brushing">
+                <div class="Brushing_img"><img src="http://toefl.viplgw.cn/files/attach/images/20181023/1540264318540926.jpg" alt=""></div>
+                <div class="Brushing_cover">
+                    <p class="Brushing_title">美国留学申请如何脱颖而出</p>
+                    <div class="Brushing_teacher">老师:<p>Bella</p></div>
+                    <p class="Brushing_time">时间:<span>10月26日15:00-16：:00</span></p>
+                    <div class="Brushing_sign">
+                        <a href=""><div class="Brushing_details">查看详情</div></a>
+                        <a href=""><div class="Brushing_click">点击报名</div></a>
+                    </div>
+                </div>
+            </li>
+            <li class="Brushing">
+                <div class="Brushing_img"><img src="http://toefl.viplgw.cn/files/attach/images/20181023/1540264318540926.jpg" alt=""></div>
+                <div class="Brushing_cover">
+                    <p class="Brushing_title">美国留学申请如何脱颖而出</p>
+                    <div class="Brushing_teacher">老师:<p>Bella</p></div>
+                    <p class="Brushing_time">时间:<span>10月26日15:00-16：:00</span></p>
+                    <div class="Brushing_sign">
+                        <a href=""><div class="Brushing_details">查看详情</div></a>
+                        <a href=""><div class="Brushing_click">点击报名</div></a>
+                    </div>
+                </div>
+            </li>
+
         </ul>
     </div>
+    <script>
+        jQuery(".latest_ac").slide({mainCell:".ac_content ul",effect:"leftLoop",autoPlay:true,vis:4});
+    </script>
 </section>
 <!--美国留学热门项目-->
 <section class="hot_items">
@@ -252,23 +305,29 @@
         <div class="content_list"><!--外层循环 listDiv-->
             <?php foreach($internship as $k=>$v){?>
             <div class="<?php echo $k=='inland'?'practice ':''?>listDiv"><!--国外实习  内层循环div list_show-->
-                <?php foreach($v as $key=>$val){
-                    if(is_numeric($key)){?>
-                        <a href="/word-details/<?php echo $val['id']?>/index,178.html">
-                            <div class="list_show">
-                                <img src="<?php echo 'http://www.thinkwithu.com'.$val['image']?>" alt="">
-                                <div class="list_bottom">
-                                    <p><?php echo $val['name']?></p>
+                <div class="listDivCover">
+                    <?php foreach($v as $key=>$val){
+                        if(is_numeric($key)){?>
+                            <a href="/word-details/<?php echo $val['id']?>/index,178.html">
+                                <div class="list_show">
+                                    <img src="<?php echo 'http://www.thinkwithu.com'.$val['image']?>" alt="">
+                                    <div class="list_bottom">
+                                        <p><?php echo $val['name']?></p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                <?php }
-                }?>
+                            </a>
+                        <?php }
+                    }?>
+                </div>
                 <!-- 分页-->
                 <div class="pageSize">
-                    <ul>
-                        <?php echo $val['pageStr']?>
-                        <li>1</li>
+                    <ul><?php if($v['count']!=false){?>
+                        <li class="prevbtn"><a href="javascript:;">&#60;</a></li>
+                        <?php for($i=1;$i<$v['total']+1;$i++){?>
+                        <li class="num on"><?php echo $i?></li>
+                        <?php }?>
+                        <li class="nextbtn"><a href="javascript:;">&#62;</a></li>
+                    <?php }?>
                     </ul>
                 </div>
             </div>
@@ -283,11 +342,7 @@
             $('.listDiv').hide();
             $('.listDiv').eq(index).show();
         });
-        // 分页数字
-        $('.pageSize ul li').click(function () {
-            var page = parseInt($(this).html());
-            var catid = $('.impro_title').find('.on').attr('data-id');
-            var index = $('.impro_title').find('.on').index();
+        function getContent(catid,page,index) {
             var str='';
             $.get('/cn/api/internship',{catId:catid,page:page},function (re) {
                 for(var i in JSON.parse(re).data){
@@ -302,13 +357,36 @@
                         str+='</a>';
                     }
                 }
-                str+='<div class="pageSize"></div>';
-                $('.listDiv').eq(index).html(str);
+                $('.listDiv').eq(index).find('.listDivCover').html(str);
+                $('.listDiv').eq(index).find('.num').removeClass('on');
+                $('.listDiv').eq(index).find('.num').eq(JSON.parse(re).data.page-1).addClass('on');
             })
-        })
+        }
+        // 分页数字
+        $('.num').click(function () {
+            var page = parseInt($(this).html());
+            var catid = $('.impro_title').find('.on').attr('data-id');
+            var index = $('.impro_title').find('.on').index();
+            getContent(catid,page,index);
+        });
         //分页下一页
-
+        $('.nextbtn').click(function () {
+            var page = parseInt($(this).parent().find('.on').next().html());
+            var catid = $('.impro_title').find('.on').attr('data-id');
+            var index = $('.impro_title').find('.on').index();
+            if(page){
+                getContent(catid,page,index);
+            }
+        });
         //分页上一页
+        $('.prevbtn').click(function () {
+            var page = parseInt($(this).parent().find('.on').prev().html());
+            var catid = $('.impro_title').find('.on').attr('data-id');
+            var index = $('.impro_title').find('.on').index();
+            if(page){
+                getContent(catid,page,index);
+            }
+        });
     </script>
 </section>
 <!--美国留学成功案例-->
@@ -360,23 +438,23 @@
         <p class="Record_title">美国留学考试提分课程</p>
         <div class="service_line"></div>
         <div class="scoring_course">
-            <a href="">
+            <a href="http://www.gmatonline.cn/gmatcourses/397.html" target="_blank">
                 <p>GMAT 700 分</p>
                 <p>冲刺课程</p>
             </a>
-            <a href="">
+            <a href="http://www.greonline.cn/course/7778.html" target="_blank">
                 <p>GRE 330 分</p>
                 <p>冲刺课程</p>
             </a>
-            <a href="">
+            <a href="http://toefl.viplgw.cn/toeflcourses/18534.html" target="_blank">
                 <p>托福 110 分</p>
                 <p>冲刺课程</p>
             </a>
-            <a href="">
+            <a href="http://www.thinkusat.com/class_details/1.html" target="_blank">
                 <p>SAT 精品</p>
                 <p>冲刺课程</p>
             </a>
-            <a href="">
+            <a href="http://ielts.viplgw.cn/cn/course/detail-2299.html" target="_blank">
                 <p>雅思一对一</p>
                 <p>精品课</p>
             </a>
