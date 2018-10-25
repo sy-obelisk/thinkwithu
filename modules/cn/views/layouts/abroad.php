@@ -70,21 +70,72 @@
 <!-----------------------------头部end------------------------------>
 
 <?php use app\commands\front\ContactWidget;?>
-<?php use app\commands\front\BannerWidget;?>
+<?php //use app\commands\front\BannerWidget;?>
 <!-----------------------------导航------------------------------>
-<?php
-//删掉了($controller=='study' && $action == 'index') ||
-if($url == '/training.html') {
-    ?>
 
-    <?php
-}else {
-    ?>
-    <?php BannerWidget::begin();?>
-    <?php BannerWidget::end();?>
-    <?php
-}
-?>
+
+<nav class="nav-wrap">
+    <div class="w10 nav-top" style="overflow: inherit;">
+        <ul class="inb nav-list clearfix">
+            <div class="forYou">
+
+
+                <?php
+                $country = Yii::$app->request->get('country','USA'); if($country=='USA'){
+
+                }elseif($country=='UK'){
+
+                }elseif($country=='HK'){
+
+                }elseif($country=='AUS'){
+
+                }elseif($country=='Canada'){
+
+                }?>
+
+            </div>
+            <li><a class="nav1-link <?php echo $controller == 'index' ? 'on on-hover' : '' ?>" href="/">首页</a></li>
+            <li>
+                <a class="nav1-link" href="/">考试提分 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
+                <div class="eaxm-list">
+                    <ul>
+                        <li><a href="/satsheet.html">SAT</a></li>
+                        <li><a href="/toefl/assistance.html">托福</a></li>
+                        <li><a href="/ieltssheet.html">雅思</a></li>
+                        <li><a href="/gmatsheet.html">GAMT</a></li>
+                        <li><a href="/gre.html">GRE</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a class="nav1-link" href="/evaluation.html">选校工具 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
+                <div class="eaxm-list eaxm-list-1">
+                    <ul>
+                        <li><a href="">背景测评</a></li>
+                        <li><a href="">选校测评</a></li>
+                        <li><a href="">录取测评</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a class="nav1-link" href="/schools.html">院校库 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
+                <div class="eaxm-list eaxm-list-1">
+                    <ul>
+                        <li><a href="">院校查询</a></li>
+                        <li><a href="">专业排名</a></li>
+                        <li><a href="">大学排名</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a class="nav1-link" href="/">留学百科 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a></li>
+            <li><a class="nav1-link" href="/">实习活动</a></li>
+            <li><a class="nav1-link" href="/public-class.html">申友讲堂</a></li>
+            <li><a class="nav1-link" href="/case.html">名校案列</a></li>
+            <li><a class="nav1-link" href="/teachers.html">名师团队</a></li>
+        </ul>
+    </div>
+</nav>
+
 <?= $content ?>
 
 <?php if($url == '/mentor.html' || $url== '/toeflsheet.html') {?>
