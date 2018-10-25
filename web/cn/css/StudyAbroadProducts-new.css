@@ -678,7 +678,11 @@ body{
     background: white;
     text-align: center;
     border-radius: 10px;
-    background: url("/cn/images/abroad/class-bg.png")  no-repeat center;
+    background: url("/cn/images/abroad/class-bg.png")  no-repeat ;
+    background-size: cover;
+    -webkit-box-shadow:  2px 2px 10px rgb(210,210,213);
+    -moz-box-shadow:  2px 2px 10px rgb(210,210,213);
+    box-shadow:  2px 2px 10px rgb(210,210,213);
 }
 .scoring_course>a:nth-child(3){
     margin-right: 0px;
