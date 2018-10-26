@@ -77,20 +77,75 @@
 <nav class="nav-wrap">
     <div class="w10 nav-top" style="overflow: inherit;">
         <ul class="inb nav-list clearfix">
-            <div class="forYou">
+            <div class="forYou" style="width: 190px!important;">
 
 
                 <?php
                 $country = Yii::$app->request->get('country','USA'); if($country=='USA'){
-
+                    echo '<img src="/cn/Hirsi/images/classify.png" alt="横">
+                           <span>美国留学申请服务</span>
+                           <div class="recommend-list" style="width: 210px!important;">
+                                <ul>
+                                    <li><a href="" class=""><b>•</b>美国星程计划</a></li>
+                                    <li><a href="" class=""><b>•</b>美国星途计划</a></li>
+                                    <li><a href="" class=""><b>•</b>MBA精英计划</a></li>
+                                    <li><a href="" class=""><b>•</b>美国本科留学服务 </a></li>
+                                    <li><a href="" class=""><b>•</b>留学考试提分方案 </a></li>
+                                    <li><a href="" class=""><b>•</b>美国留学DIY论坛 </a></li>
+                                </ul>
+                           </div> ';
                 }elseif($country=='UK'){
-
+                    echo '<img src="/cn/Hirsi/images/classify.png" alt="横">
+                           <span>英国留学申请服务</span>
+                           <div class="recommend-list" style="width: 210px!important;">
+                                <ul>
+                                    <li><a href="" class=""><b>•</b>英国星程计划</a></li>
+                                    <li><a href="" class=""><b>•</b>英国星途计划</a></li>
+                                    <li><a href="" class=""><b>•</b>英国MBA精英计划</a></li>
+                                    <li><a href="" class=""><b>•</b>英国本科留学服务 </a></li>
+                                    <li><a href="" class=""><b>•</b>英国留学考试提分方案 </a></li>
+                                    <li><a href="" class=""><b>•</b>英国留学DIY论坛 </a></li>
+                                </ul>
+                           </div> ';
                 }elseif($country=='HK'){
-
+                    echo '<img src="/cn/Hirsi/images/classify.png" alt="横">
+                           <span>香港留学申请服务</span>
+                           <div class="recommend-list" style="width: 210px!important;">
+                                <ul>
+                                    <li><a href="" class=""><b>•</b>香港星程计划</a></li>
+                                    <li><a href="" class=""><b>•</b>香港星途计划</a></li>
+                                    <li><a href="" class=""><b>•</b>香港MBA精英计划</a></li>
+                                    <li><a href="" class=""><b>•</b>香港本科留学服务 </a></li>
+                                    <li><a href="" class=""><b>•</b>香港留学考试提分方案 </a></li>
+                                    <li><a href="" class=""><b>•</b>香港留学DIY论坛 </a></li>
+                                </ul>
+                           </div> ';
                 }elseif($country=='AUS'){
-
+                    echo '<img src="/cn/Hirsi/images/classify.png" alt="横">
+                           <span>澳大利亚留学申请服务</span>
+                           <div class="recommend-list" style="width: 210px!important;">
+                                <ul>
+                                    <li><a href="" class=""><b>•</b>香港星程计划</a></li>
+                                    <li><a href="" class=""><b>•</b>香港星途计划</a></li>
+                                    <li><a href="" class=""><b>•</b>香港MBA精英计划</a></li>
+                                    <li><a href="" class=""><b>•</b>香港本科留学服务 </a></li>
+                                    <li><a href="" class=""><b>•</b>香港留学考试提分方案 </a></li>
+                                    <li><a href="" class=""><b>•</b>香港留学DIY论坛 </a></li>
+                                </ul>
+                           </div> ';
                 }elseif($country=='Canada'){
-
+                    echo '<img src="/cn/Hirsi/images/classify.png" alt="横">
+                           <span>加拿大留学申请服务</span>
+                           <div class="recommend-list" style="width: 210px!important;">
+                                <ul>
+                                    <li><a href="" class=""><b>•</b>香港星程计划</a></li>
+                                    <li><a href="" class=""><b>•</b>香港星途计划</a></li>
+                                    <li><a href="" class=""><b>•</b>香港MBA精英计划</a></li>
+                                    <li><a href="" class=""><b>•</b>香港本科留学服务 </a></li>
+                                    <li><a href="" class=""><b>•</b>香港留学考试提分方案 </a></li>
+                                    <li><a href="" class=""><b>•</b>香港留学DIY论坛 </a></li>
+                                </ul>
+                           </div> ';
                 }?>
 
             </div>
