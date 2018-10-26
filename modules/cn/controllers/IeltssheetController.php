@@ -20,7 +20,7 @@ class IeltssheetController extends ThinkUController {
      */
     public function actionIndex(){
         $extendData = CategoryExtend::find()->where("catId=247 AND belong='content'")->orderBy('id ASC')->all();
-        return $this->renderPartial('index',['extendData' => $extendData]);
+        return $this->render('index',['extendData' => $extendData]);
 //        return $this->renderPartial('index');
     }
 }

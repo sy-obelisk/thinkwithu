@@ -54,7 +54,18 @@
 </section>
 <!--申请攻略-->
 <section class="Apca_strategy">
-    <p class="Record_title">美国留学热门专业申请攻略</p>
+    <p class="Record_title">
+        <?php $country = Yii::$app->request->get('country','USA'); if($country=='USA'){
+            echo '美国';
+        }elseif($country=='UK'){
+            echo '英国';
+        }elseif($country=='HK'){
+            echo '香港';
+        }elseif($country=='AUS'){
+            echo '澳大利亚';
+        }elseif($country=='Canada'){
+            echo '加拿大';
+        }?>留学热门专业申请攻略</p>
     <div class="service_line"></div>
     <div class="strategy_content">
         <div class="business profession"><!--商科-->
@@ -158,24 +169,27 @@
             </div>
         </div>
         <div class="united m20"><!--美国留学专业推荐-->
-            <div class="united_title"><span>|</span> 美国留学专业推荐</div>
+            <div class="united_title"><span>|</span>
+                <?php $country = Yii::$app->request->get('country','USA'); if($country=='USA'){
+                    echo '美国';
+                }elseif($country=='UK'){
+                    echo '英国';
+                }elseif($country=='HK'){
+                    echo '香港';
+                }elseif($country=='AUS'){
+                    echo '澳大利亚';
+                }elseif($country=='Canada'){
+                    echo '加拿大';
+                }?>留学专业推荐</div>
             <div class="united_slide">
                 <ul>
+                    <?php foreach($recommend as $v){?>
                     <li>
-                        <div class="unitedImg"><img src="/cn/images/ceshi.png" alt=""></div>
-                        <p>专业介绍:<span>美国留学如何成功申请心理学科目等等等你的歌</span></p>
-                        <p>推荐理由:<span>美国留学如何成功申请心理学科目等等等你的歌</span></p>
+                        <div class="unitedImg"><img src="<?php echo $v['image']!=false?'http://www.thinkwithu.com'.$v['image']:'/cn/images/ceshi.png'?>" alt=""></div>
+                        <p>专业介绍:<span><?php echo $v['name']?></span></p>
+<!--                        <p>推荐理由:<span>美国留学如何成功申请心理学科目等等等你的歌</span></p>-->
                     </li>
-                    <li>
-                        <div class="unitedImg"><img src="/cn/images/ceshi.png" alt=""></div>
-                        <p>专业介绍:<span>嘻嘻哈哈</span></p>
-                        <p>推荐理由:<span>美国留学如何成功申请心理学科目等等等你的歌</span></p>
-                    </li>
-                    <li>
-                        <div class="unitedImg"><img src="/cn/images/ceshi.png" alt=""></div>
-                        <p>专业介绍:<span>每天起床第一句 先为自己打个气</span></p>
-                        <p>推荐理由:<span>美国留学如何成功申请心理学科目等等等你的歌</span></p>
-                    </li>
+                    <?php }?>
                 </ul>
             </div>
             <i class="prev iconfont">&#xe608;</i>
@@ -202,67 +216,20 @@
     <div class="service_line"></div>
     <div class="ac_content">
         <ul><!--循环li-->
+            <?php foreach($active as $v){?>
             <li class="Brushing">
-                <div class="Brushing_img"><img src="http://toefl.viplgw.cn/files/attach/images/20181023/1540264318540926.jpg" alt=""></div>
+                <div class="Brushing_img"><img src="http://www.thinkwithu.com<?php echo $v['image']?>" alt=""></div>
                 <div class="Brushing_cover">
-                    <p class="Brushing_title">美国留学申请如何脱颖而出</p>
-                    <div class="Brushing_teacher">老师:<p>Bella</p></div>
-                    <p class="Brushing_time">时间:<span>10月26日15:00-16：:00</span></p>
+                    <p class="Brushing_title"><?php echo $v['name']?></p>
+                    <div class="Brushing_teacher">老师:<p><?php echo $v['speaker']?></p></div>
+                    <p class="Brushing_time">时间:<span><?php echo $v['time']?></span></p>
                     <div class="Brushing_sign">
-                        <a href=""><div class="Brushing_details">查看详情</div></a>
-                        <a href=""><div class="Brushing_click">点击报名</div></a>
+                        <a href="/public-class/<?php echo $v['id']?>.html"><div class="Brushing_details">查看详情</div></a>
+                        <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="><div class="Brushing_click">点击报名</div></a>
                     </div>
                 </div>
             </li>
-            <li class="Brushing">
-                <div class="Brushing_img"><img src="http://toefl.viplgw.cn/files/attach/images/20181023/1540264318540926.jpg" alt=""></div>
-                <div class="Brushing_cover">
-                    <p class="Brushing_title">美国留学申请如何脱颖而出</p>
-                    <div class="Brushing_teacher">老师:<p>Bella</p></div>
-                    <p class="Brushing_time">时间:<span>10月26日15:00-16：:00</span></p>
-                    <div class="Brushing_sign">
-                        <a href=""><div class="Brushing_details">查看详情</div></a>
-                        <a href=""><div class="Brushing_click">点击报名</div></a>
-                    </div>
-                </div>
-            </li>
-            <li class="Brushing">
-                <div class="Brushing_img"><img src="http://toefl.viplgw.cn/files/attach/images/20181023/1540264318540926.jpg" alt=""></div>
-                <div class="Brushing_cover">
-                    <p class="Brushing_title">美国留学申请如何脱颖而出</p>
-                    <div class="Brushing_teacher">老师:<p>Bella</p></div>
-                    <p class="Brushing_time">时间:<span>10月26日15:00-16：:00</span></p>
-                    <div class="Brushing_sign">
-                        <a href=""><div class="Brushing_details">查看详情</div></a>
-                        <a href=""><div class="Brushing_click">点击报名</div></a>
-                    </div>
-                </div>
-            </li>
-            <li class="Brushing">
-                <div class="Brushing_img"><img src="http://toefl.viplgw.cn/files/attach/images/20181023/1540264318540926.jpg" alt=""></div>
-                <div class="Brushing_cover">
-                    <p class="Brushing_title">美国留学申请如何脱颖而出</p>
-                    <div class="Brushing_teacher">老师:<p>Bella</p></div>
-                    <p class="Brushing_time">时间:<span>10月26日15:00-16：:00</span></p>
-                    <div class="Brushing_sign">
-                        <a href=""><div class="Brushing_details">查看详情</div></a>
-                        <a href=""><div class="Brushing_click">点击报名</div></a>
-                    </div>
-                </div>
-            </li>
-            <li class="Brushing">
-                <div class="Brushing_img"><img src="http://toefl.viplgw.cn/files/attach/images/20181023/1540264318540926.jpg" alt=""></div>
-                <div class="Brushing_cover">
-                    <p class="Brushing_title">美国留学申请如何脱颖而出</p>
-                    <div class="Brushing_teacher">老师:<p>Bella</p></div>
-                    <p class="Brushing_time">时间:<span>10月26日15:00-16：:00</span></p>
-                    <div class="Brushing_sign">
-                        <a href=""><div class="Brushing_details">查看详情</div></a>
-                        <a href=""><div class="Brushing_click">点击报名</div></a>
-                    </div>
-                </div>
-            </li>
-
+            <?php }?>
         </ul>
     </div>
     <script>
@@ -271,7 +238,18 @@
 </section>
 <!--美国留学热门项目-->
 <section class="hot_items">
-    <p class="Record_title">美国留学热门项目</p>
+    <p class="Record_title">
+        <?php $country = Yii::$app->request->get('country','USA'); if($country=='USA'){
+            echo '美国';
+        }elseif($country=='UK'){
+            echo '英国';
+        }elseif($country=='HK'){
+            echo '香港';
+        }elseif($country=='AUS'){
+            echo '澳大利亚';
+        }elseif($country=='Canada'){
+            echo '加拿大';
+        }?>留学热门项目</p>
     <div class="service_line"></div>
     <div class="hot_content">
         <ul>
@@ -391,24 +369,36 @@
 </section>
 <!--美国留学成功案例-->
 <section class="successCase">
-    <p class="Record_title">美国留学成功案例</p>
+    <p class="Record_title">
+        <?php $country = Yii::$app->request->get('country','USA'); if($country=='USA'){
+            echo '美国';
+        }elseif($country=='UK'){
+            echo '英国';
+        }elseif($country=='HK'){
+            echo '香港';
+        }elseif($country=='AUS'){
+            echo '澳大利亚';
+        }elseif($country=='Canada'){
+            echo '加拿大';
+        }?>留学成功案例</p>
     <div class="service_line"></div>
     <div class="case_content">
         <div class="casebd">
             <ul><!--外层循环li 内层循环div case_cover-->
                 <?php
-                $i = 0;
+                $i = 1;
                 $n = count($case) != false ? ceil(count($case) / 6) : 0;
-                for ($i;$i < $n; $i++) { ?>
+                for ($i;$i <=$n; $i++) { ?>
                     <li>
                         <div  class="case_cover">
                         <?php $j=0;for ($j;$j < 6; $j++) {
-                            if ($i < $n - 1 || ($i == $n && $j < count($case) % 6)) {
+                            if ($i < $n  || (($i == $n) && $j <count($case) % 6)) {
+
                                 ?>
                                 <div>
-                                    <div class="case_tx"><img src="<?php echo 'http://www.thinkwithu.com'.$case[$i * 6 + $j]['image']?>" alt=""></div>
-                                    <p class="case_name"><?php echo $case[$i * 6 + $j]['name'] ?></p>
-                                    <p class="case_intro"><a href=""><?php echo $case[$i * 6 + $j]['title'] ?></a></p>
+                                    <div class="case_tx"><img src="<?php echo 'http://www.thinkwithu.com'.$case[($i-1) * 6 + $j]['image']?>" alt=""></div>
+                                    <p class="case_name"><?php echo $case[($i-1) * 6 + $j]['name'] ?></p>
+                                    <p class="case_intro"><a href="/word-details/<?php echo $case[($i-1) * 6 + $j]['id']?>/index,178.html"><?php echo $case[($i-1) * 6 + $j]['title'] ?></a></p>
                                     <!--                                    <p class="case_school">录取院校:商学院</p>-->
                                 </div>
                             <?php }
@@ -435,7 +425,18 @@
 <!--美国留学考试提分课程-->
 <section class="scoring">
     <div class="scoring_content">
-        <p class="Record_title">美国留学考试提分课程</p>
+        <p class="Record_title">
+            <?php $country = Yii::$app->request->get('country','USA'); if($country=='USA'){
+                echo '美国';
+            }elseif($country=='UK'){
+                echo '英国';
+            }elseif($country=='HK'){
+                echo '香港';
+            }elseif($country=='AUS'){
+                echo '澳大利亚';
+            }elseif($country=='Canada'){
+                echo '加拿大';
+            }?>留学考试提分课程</p>
         <div class="service_line"></div>
         <div class="scoring_course">
             <a href="http://www.gmatonline.cn/gmatcourses/397.html" target="_blank">

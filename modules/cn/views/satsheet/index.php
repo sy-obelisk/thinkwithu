@@ -32,35 +32,13 @@
 <!--  <link rel="stylesheet" href="/cn/Hirsi/css/index.css">-->
   <link rel="stylesheet" type="text/css" href="/cn/css/sat.css"/>
    <link rel="stylesheet" href="/cn/css/gmatSheet.css"/>
-  <script src="/cn/ielts/js/jquery1.42.min.js"></script>
+<!--  <script src="/cn/ielts/js/jquery1.42.min.js"></script>-->
   <script type="text/javascript" src="/cn/js/gmatSheet.js"></script>
   <script type="text/javascript" src="/cn/js/public.js"></script>
 </head>
 <body>
 	<!-----------------------------头部------------------------------>
-	<header class="sy-header">
-    <div class="w10 clearfix">
-        <img src="/cn/Hirsi/images/sy-text.png" style="margin-right: 55px" alt="高分成就梦想名校改变人生">
-        <img src="/cn/Hirsi/images/sy-tel.png" alt="400-600-1123">
-        <a class="refer-btn"
-           href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="
-           target="_blank">在线咨询</a>
-        <!--登录&注册-->
-        <div class="login-wrap fr" style="display: none;">
-            <span class="on">登录</span>
-            <span>注册</span>
-        </div>
-        <!--搜索-->
-        <div class="search-wrap fr">
-            <input class="search" type="search" placeholder="请输入关键词">
-            <img src="/cn/Hirsi/images/search-icon.png" style="margin-left: -1px;cursor: pointer;" alt="搜索">
-        </div>
-    </div>
-	</header>
-  <?php use app\commands\front\BannerWidget;?>
-	<?php BannerWidget::begin();?>
-	<?php BannerWidget::end();?>
-	<div style="clear: both;margin-bottom: 10px;"></div>
+
 	<!--导航栏结束-->
 		
   <div class="sat-bnr">
@@ -331,31 +309,34 @@
   </div>
   
   <!--马上预约享优惠-->
-<div class="favorable">
-    <h2>马上预约享优惠</h2>
-    <ul>
-        <?php
-        foreach($extendData as $k => $v) {
-            ?>
-            <li>
-                <label><span><?php echo $v['required'] == 1?'*':''?></span><?php echo $v['name']?>：</label>
-                <input name="extendValue[]" class="oneWidth"  <?php echo $v['required'] == 1?'class="val"':''?>  type="text"/>
-            </li>
-            <?php
-        }
-        ?>
-        <li>
-            <label>验证码：</label>
-            <input type="text" class="twoWidth" name="code"/>
-            <input type="button" onclick="onlineCode(this)" value="获取验证码"/>
-        </li>
-        <li>
-            <a href="javescript:void(0);" onclick="onlineSub(this)">点击提交 &gt;</a>
-        </li>
-    </ul>
-
-</div>
+<!--<div class="favorable">-->
+<!--    <h2>马上预约享优惠</h2>-->
+<!--    <ul>-->
+<!--        --><?php
+//        foreach($extendData as $k => $v) {
+//            ?>
+<!--            <li>-->
+<!--                <label><span>--><?php //echo $v['required'] == 1?'*':''?><!--</span>--><?php //echo $v['name']?><!--：</label>-->
+<!--                <input name="extendValue[]" class="oneWidth"  --><?php //echo $v['required'] == 1?'class="val"':''?><!--  type="text"/>-->
+<!--            </li>-->
+<!--            --><?php
+//        }
+//        ?>
+<!--        <li>-->
+<!--            <label>验证码：</label>-->
+<!--            <input type="text" class="twoWidth" name="code"/>-->
+<!--            <input type="button" onclick="onlineCode(this)" value="获取验证码"/>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--            <a href="javescript:void(0);" onclick="onlineSub(this)">点击提交 &gt;</a>-->
+<!--        </li>-->
+<!--    </ul>-->
+<!---->
+<!--</div>-->
 	<script type="text/javascript">
+
+        jQuery(".connection").slide({mainCell: ".connectBd", trigger: "mouseover"});
+
     function onlineCode(_this){
         var phone = $(_this).closest('li').prev().find('input').val();
         $.post('/cn/api/phone-code',{type:3,phoneNum:phone},function(re){
@@ -386,61 +367,8 @@
         },"json")
     }
 	</script>
-	<div class="contactWay">
-    <div class="contactHead">联系方式</div>
-    <div class="contactSlide">
-        <div class="conHd hd">
-            <a href="javascript:void(0);" class="prev" onclick="slidePrev()"><img src="/cn/images/mentor_prev.png"
-                                                                                  alt="图标"></a>
-            <a href="javascript:void(0);" class="next" onclick="slideNext()"><img src="/cn/images/mentor_next.png"
-                                                                                  alt="图标"></a>
-        </div>
-        <div class="conBd">
-            <ul>
-                <?php
-                $data = \app\modules\cn\models\Content::getContent(['fields' => "place,phone", 'category' => "210", 'pageSize' => 15, 'order' => 'sort']);
-                foreach ($data as $v) {
-                    ?>
-                    <li>
-                        <div class="smallStyle">
-                            <img src="<?php echo $v['image'] ?>" alt="图片">
 
-                            <div class="city"><?php echo $v['name'] ?></div>
-                        </div>
-                        <div class="bigStyle">
-                            <div class="big-left">
-                                <img src="<?php echo $v['image'] ?>" alt="图片">
 
-                                <div class="big-city"><?php echo $v['name'] ?></div>
-                            </div>
-                            <div class="big-right">
-                                <span>咨询热线：</span>
-
-                                <p class="purpleColor"><?php echo $v['phone'] ?></p>
-                                <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">
-                                    <img src="/cn/images/mentor_personIcon.png" alt="咨询图标">
-                                    <span>免费咨询</span>
-                                </a>
-
-                                <p>地址：<?php echo $v['place'] ?></p>
-                            </div>
-                            <div style="clear: both"></div>
-                        </div>
-                    </li>
-                    <?php
-                }
-                ?>
-            </ul>
-        </div>
-    </div>
-    <script type="text/javascript">
-        //        jQuery(".contactSlide").slide({mainCell:".conBd ul",effect:"left",vis:5,pnLoop:false});
-    </script>
-	</div>
-  <!-----------------------------尾部------------------------------>
-	<?php use app\commands\front\FooterWidget;?>
-	<?php FooterWidget::begin();?>
-	<?php FooterWidget::end();?>
 	</body>
 	<script type="text/javascript">
 		 //    判断pc端还是移动端 进入对应页面

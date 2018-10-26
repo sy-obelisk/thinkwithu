@@ -43,36 +43,17 @@
   <link rel="shortcut icon" href="http://www.thinkwithu.com/favicon.ico"/>
   <script type="text/javascript" src="/cn/js/public.js"></script>
   <title>申友雅思在线_雅思备考_雅思培训_雅思网络课程_雅思在线课程_雅思网课_雅思直播课_IELTS申友</title>
+    <style>
+        .connectHd ul{
+            margin-top: -3px;
+        }
+    </style>
 </head>
 <body>
 <?php use app\commands\front\NavWidget; ?>
 <?php NavWidget::begin(); ?>
 <?php NavWidget::end(); ?>
-<!-----------------------------头部------------------------------>
-<header class="sy-header">
-  <div class="w10 clearfix">
-    <img src="/cn/Hirsi/images/sy-text.png" style="margin-right: 55px" alt="高分成就梦想名校改变人生">
-    <img src="/cn/Hirsi/images/sy-tel.png" alt="400-600-1123">
-    <a class="refer-btn"
-       href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="
-       target="_blank">在线咨询</a>
-    <!--登录&注册-->
-    <div class="login-wrap fr" style="display: none;">
-      <span class="on">登录</span>
-      <span>注册</span>
-    </div>
-    <div class="search-wrap fr">
-      <input class="search search1" type="search" onkeyup="enterKey(event,this)" placeholder="请输入关键词">
-      <img src="/cn/Hirsi/images/search-icon.png" style="margin-left: -1px;cursor: pointer;" onclick="keySearch()"
-           alt="搜索">
-    </div>
-  </div>
-</header>
 <!-----------------------------头部end------------------------------>
-<?php use app\commands\front\BannerWidget; ?>
-<?php BannerWidget::begin(); ?>
-<?php BannerWidget::end(); ?>
-<div style="clear: both;margin-bottom: 10px;"></div>
 <!---------------------------左边悬浮窗---------------------------------->
 <?php use app\commands\front\LeftSuspensionWidget; ?>
 <?php LeftSuspensionWidget::begin(); ?>
@@ -299,31 +280,31 @@
 </section>
 
 <!--马上预约享优惠-->
-<div class="favorable">
-  <h2>马上预约享优惠</h2>
-  <ul>
-    <?php
-    foreach ($extendData as $k => $v) {
-      ?>
-      <li>
-        <label><span><?php echo $v['required'] == 1 ? '*' : '' ?></span><?php echo $v['name'] ?>：</label>
-        <input name="extendValue[]" class="oneWidth" <?php echo $v['required'] == 1 ? 'class="val"' : '' ?>
-               type="text"/>
-      </li>
-      <?php
-    }
-    ?>
-    <li>
-      <label>验证码：</label>
-      <input type="text" class="twoWidth" name="code"/>
-      <input type="button" onclick="onlineCode(this)" value="获取验证码"/>
-    </li>
-    <li>
-      <a href="javescript:void(0);" onclick="onlineSub(this)">点击提交 &gt;</a>
-    </li>
-  </ul>
-
-</div>
+<!--<div class="favorable">-->
+<!--  <h2>马上预约享优惠</h2>-->
+<!--  <ul>-->
+<!--    --><?php
+//    foreach ($extendData as $k => $v) {
+//      ?>
+<!--      <li>-->
+<!--        <label><span>--><?php //echo $v['required'] == 1 ? '*' : '' ?><!--</span>--><?php //echo $v['name'] ?><!--：</label>-->
+<!--        <input name="extendValue[]" class="oneWidth" --><?php //echo $v['required'] == 1 ? 'class="val"' : '' ?>
+<!--               type="text"/>-->
+<!--      </li>-->
+<!--      --><?php
+//    }
+//    ?>
+<!--    <li>-->
+<!--      <label>验证码：</label>-->
+<!--      <input type="text" class="twoWidth" name="code"/>-->
+<!--      <input type="button" onclick="onlineCode(this)" value="获取验证码"/>-->
+<!--    </li>-->
+<!--    <li>-->
+<!--      <a href="javescript:void(0);" onclick="onlineSub(this)">点击提交 &gt;</a>-->
+<!--    </li>-->
+<!--  </ul>-->
+<!---->
+<!--</div>-->
 <script type="text/javascript">
   function onlineCode(_this) {
     var phone = $(_this).closest('li').prev().find('input').val();
@@ -359,61 +340,59 @@
     }, "json")
   }
 </script>
-<div class="contactWay">
-  <div class="contactHead">联系方式</div>
-  <div class="contactSlide">
-    <div class="conHd hd">
-      <a href="javascript:void(0);" class="prev" onclick="slidePrev()"><img src="/cn/images/mentor_prev.png"
-                                                                            alt="图标"></a>
-      <a href="javascript:void(0);" class="next" onclick="slideNext()"><img src="/cn/images/mentor_next.png"
-                                                                            alt="图标"></a>
-    </div>
-    <div class="conBd">
-      <ul>
-        <?php
-        $data = \app\modules\cn\models\Content::getContent(['fields' => "place,phone", 'category' => "210", 'pageSize' => 15, 'order' => 'sort']);
-        foreach ($data as $v) {
-          ?>
-          <li>
-            <div class="smallStyle">
-              <img src="<?php echo $v['image'] ?>" alt="图片">
-
-              <div class="city"><?php echo $v['name'] ?></div>
-            </div>
-            <div class="bigStyle">
-              <div class="big-left">
-                <img src="<?php echo $v['image'] ?>" alt="图片">
-
-                <div class="big-city"><?php echo $v['name'] ?></div>
-              </div>
-              <div class="big-right">
-                <span>咨询热线：</span>
-
-                <p class="purpleColor"><?php echo $v['phone'] ?></p>
-                <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">
-                  <img src="/cn/images/mentor_personIcon.png" alt="咨询图标">
-                  <span>免费咨询</span>
-                </a>
-
-                <p>地址：<?php echo $v['place'] ?></p>
-              </div>
-              <div style="clear: both"></div>
-            </div>
-          </li>
-          <?php
-        }
-        ?>
-      </ul>
-    </div>
-  </div>
-  <script type="text/javascript">
-    //        jQuery(".contactSlide").slide({mainCell:".conBd ul",effect:"left",vis:5,pnLoop:false});
-  </script>
-</div>
+<!--<div class="contactWay">-->
+<!--  <div class="contactHead">联系方式</div>-->
+<!--  <div class="contactSlide">-->
+<!--    <div class="conHd hd">-->
+<!--      <a href="javascript:void(0);" class="prev" onclick="slidePrev()"><img src="/cn/images/mentor_prev.png"-->
+<!--                                                                            alt="图标"></a>-->
+<!--      <a href="javascript:void(0);" class="next" onclick="slideNext()"><img src="/cn/images/mentor_next.png"-->
+<!--                                                                            alt="图标"></a>-->
+<!--    </div>-->
+<!--    <div class="conBd">-->
+<!--      <ul>-->
+<!--        --><?php
+//        $data = \app\modules\cn\models\Content::getContent(['fields' => "place,phone", 'category' => "210", 'pageSize' => 15, 'order' => 'sort']);
+//        foreach ($data as $v) {
+//          ?>
+<!--          <li>-->
+<!--            <div class="smallStyle">-->
+<!--              <img src="--><?php //echo $v['image'] ?><!--" alt="图片">-->
+<!---->
+<!--              <div class="city">--><?php //echo $v['name'] ?><!--</div>-->
+<!--            </div>-->
+<!--            <div class="bigStyle">-->
+<!--              <div class="big-left">-->
+<!--                <img src="--><?php //echo $v['image'] ?><!--" alt="图片">-->
+<!---->
+<!--                <div class="big-city">--><?php //echo $v['name'] ?><!--</div>-->
+<!--              </div>-->
+<!--              <div class="big-right">-->
+<!--                <span>咨询热线：</span>-->
+<!---->
+<!--                <p class="purpleColor">--><?php //echo $v['phone'] ?><!--</p>-->
+<!--                <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">-->
+<!--                  <img src="/cn/images/mentor_personIcon.png" alt="咨询图标">-->
+<!--                  <span>免费咨询</span>-->
+<!--                </a>-->
+<!---->
+<!--                <p>地址：--><?php //echo $v['place'] ?><!--</p>-->
+<!--              </div>-->
+<!--              <div style="clear: both"></div>-->
+<!--            </div>-->
+<!--          </li>-->
+<!--          --><?php
+//        }
+//        ?>
+<!--      </ul>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <script type="text/javascript">-->
+<!--    //        jQuery(".contactSlide").slide({mainCell:".conBd ul",effect:"left",vis:5,pnLoop:false});-->
+<!--  </script>-->
+<!--</div>-->
 <!-----------------------------尾部------------------------------>
-<?php use app\commands\front\FooterWidget; ?>
-<?php FooterWidget::begin(); ?>
-<?php FooterWidget::end(); ?>
+
 <!--单页尾部固定部分-->
 <div class="addShenYou">
   <i onclick="closeZX(this)">×</i>
