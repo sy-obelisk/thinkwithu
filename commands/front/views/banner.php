@@ -28,11 +28,11 @@
                 <img src="/cn/Hirsi/images/classify.png" alt="横"><span>为你推荐</span>
                 <div class="recommend-list">
                     <ul>
-                        <li><a href="/USA.html">美国留学 <i class="iconfont left_jt">&#xe600;</i></a></li>
-                        <li><a href="/UK.html">英国留学 <i class="iconfont left_jt">&#xe600;</i></a></li>
-                        <li><a href="/AUS.html">澳洲留学 <i class="iconfont left_jt">&#xe600;</i></a></li>
-                        <li><a href="/COUNTRY.html">加拿大留学 <i class="iconfont left_jt">&#xe600;</i></a></li>
-                        <li><a href="/HK.html">香港留学 <i class="iconfont left_jt">&#xe600;</i></a></li>
+                        <li><a href="/studying-USA.html">美国留学 <i class="iconfont left_jt">&#xe600;</i></a></li>
+                        <li><a href="/studying-UK.html">英国留学 <i class="iconfont left_jt">&#xe600;</i></a></li>
+                        <li><a href="/studying-AUS.html">澳洲留学 <i class="iconfont left_jt">&#xe600;</i></a></li>
+                        <li><a href="/studying-Canada.html">加拿大留学 <i class="iconfont left_jt">&#xe600;</i></a></li>
+                        <li><a href="/studying-HK.html">香港留学 <i class="iconfont left_jt">&#xe600;</i></a></li>
                     </ul>
                 </div>
             </div>
