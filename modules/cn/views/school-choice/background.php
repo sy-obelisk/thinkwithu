@@ -76,7 +76,7 @@
                        </label>
                        <ul class="check_ul">
                            <li>
-                               <input type="checkbox" name="emphases[]" id="fuwu" value="服务流程">
+                               <input type="checkbox" name="emphases[]" id="fuwu" value="1">
                                <label for="fuwu">服务流程</label>
                            </li>
                            <li>
