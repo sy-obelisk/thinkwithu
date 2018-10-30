@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 16px;
+}
+.enrollCover{
+    width: 100%;
+    padding: 70px 0;
+    background: url("/cn/images/school/school-test.png")no-repeat;
+    background-attachment:fixed;
+    background-position:center;
+}

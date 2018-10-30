@@ -55,7 +55,7 @@
                     <ul>
                         <li><a href="/background-test.html">背景测评</a></li>
                         <li><a href="">选校测评</a></li>
-                        <li><a href="">录取测评</a></li>
+                        <li><a href="/percentages-test.html">录取测评</a></li>
                     </ul>
                 </div>
             </li>
