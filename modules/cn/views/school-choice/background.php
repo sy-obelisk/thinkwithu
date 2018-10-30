@@ -80,31 +80,31 @@
                                <label for="fuwu">服务流程</label>
                            </li>
                            <li>
-                               <input type="checkbox" name="emphases[]" id="chuguo" value="出国考试课程">
+                               <input type="checkbox" name="emphases[]" id="chuguo" value="2">
                                <label for="chuguo">出国考试课程</label>
                            </li>
                            <li>
-                               <input type="checkbox" name="emphases[]" id="xuanxiao" value="选校定位">
+                               <input type="checkbox" name="emphases[]" id="xuanxiao" value="3">
                                <label for="xuanxiao">选校定位</label>
                            </li>
                            <li>
-                               <input type="checkbox" name="emphases[]" id="guwen" value="推荐顾问">
+                               <input type="checkbox" name="emphases[]" id="guwen" value="4">
                                <label for="guwen">推荐顾问</label>
                            </li>
                            <li>
-                               <input type="checkbox" name="emphases[]" id="buzou" value="申请步骤">
+                               <input type="checkbox" name="emphases[]" id="buzou" value="5">
                                <label for="buzou">申请步骤</label>
                            </li>
                            <li>
-                               <input type="checkbox" name="emphases[]" id="feiyong" value="申请费用">
+                               <input type="checkbox" name="emphases[]" id="feiyong" value="6">
                                <label for="feiyong">申请费用</label>
                            </li>
                            <li>
-                               <input type="checkbox" name="emphases[]" id="jiangxuej" value="奖学金">
+                               <input type="checkbox" name="emphases[]" id="jiangxuej" value="7">
                                <label for="jiangxuej">奖学金</label>
                            </li>
                            <li>
-                               <input type="checkbox" name="emphases[]" id="other" value="其他">
+                               <input type="checkbox" name="emphases[]" id="other" value="8">
                                <label for="other">其他</label>
                            </li>
                        </ul>
@@ -129,23 +129,23 @@
                         <label><b>*</b><span>11.感兴趣的留学服务</span></label>
                         <ul class="check_ul last">
                             <li>
-                                <input type="checkbox" name="interest[]" id="diy" value="半DIY">
+                                <input type="checkbox" name="interest[]" id="diy" value="1">
                                 <label for="diy">半DIY</label>
                             </li>
                             <li>
-                                <input type="checkbox" name="interest[]" id="jinxiu" value="文书写作与精修">
+                                <input type="checkbox" name="interest[]" id="jinxiu" value="2">
                                 <label for="jinxiu">文书写作与精修</label>
                             </li>
                             <li>
-                                <input type="checkbox" name="interest[]" id="xuejie" value="学长学姐选校指导">
+                                <input type="checkbox" name="interest[]" id="xuejie" value="3">
                                 <label for="xuejie">学长学姐选校指导</label>
                             </li>
                             <li>
-                                <input type="checkbox" name="interest[]" id="quantao" value="全套留学服务">
+                                <input type="checkbox" name="interest[]" id="quantao" value="4">
                                 <label for="quantao">全套留学服务</label>
                             </li>
                             <li>
-                                <input type="checkbox" name="interest[]" id="zhongjie" value="已找中介">
+                                <input type="checkbox" name="interest[]" id="zhongjie" value="5">
                                 <label for="zhongjie">已找中介</label>
                             </li>
                         </ul>
