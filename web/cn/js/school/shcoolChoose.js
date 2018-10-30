@@ -46,13 +46,13 @@ function bcNextPage(){
         }
     }
 
-    $(".secondPage").slideDown();
-    $(".firstPage").slideUp();
+    $(".secondPage").fadeIn();
+    $(".firstPage").hide();
 }
 
 function  bcPrevPage(){
-    $(".secondPage").slideUp();
-    $(".firstPage").slideDown();
+    $(".secondPage").hide();
+    $(".firstPage").fadeIn();
 }
 
 function subBackground(){
