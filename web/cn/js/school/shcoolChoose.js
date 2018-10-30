@@ -66,7 +66,7 @@ function subBackground(){
     var weChat=$("#n-wechat").val();//微信
     var buchong=$("#buchong").val();//补充了解（非必填）
     var len= $(".check_ul.last li input:checked").length;//感兴趣的留学服务
-    if(!time || !country || !major || !qustion || !name || !phone || !weChat ){/*|| len<=0*/
+    if(!time || !country || !major || !qustion || !name || !phone || !weChat ){
         alert("请将必填项填写完整！*为必填选项");
         return false;
     }else if(!reg.test(phone)){
@@ -74,6 +74,7 @@ function subBackground(){
         return false;
     }
     else{
+        console.log(1111);
         $("#backForm").submit();
     }
 }

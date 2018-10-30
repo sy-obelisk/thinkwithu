@@ -8,7 +8,7 @@
             <p>"我该如何合理规划申请时间？"  1分钟完成专业测评,</p>
             <p>即可获得留学评估师提供的全面专业留学评估报告与方案建议,为你指点迷津</p>
         </div>
-        <form action="" method="" id="backFrom">
+        <form action="/background-test.html" method="post" id="backFrom">
             <div class="page-1 firstPage">
                 <ul>
                     <li>

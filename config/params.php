@@ -20,4 +20,22 @@ return [
     'categoryUrl' => 'http://schools.smartapply.cn/cn/api/cats',
     'contentUrl' => 'http://schools.smartapply.cn/cn/api/content',
     'schoolConnect' => 'http://schools.smartapply.cn',
+    'question' => [
+        1=>'服务流程',
+        2=>'出国考试课程',
+        3=>'选校定位',
+        4=>'推荐顾问',
+        5=>'服务流程',
+        6=>'申请步骤',
+        7=>'申请费用',
+        8=>'奖学金',
+        9=>'其他',
+    ],
+    'service' => [
+        1=>'半div',
+        2=>'文书写作与精修',
+        3=>'学长学姐选校指导',
+        4=>'全套留学服务',
+        5=>'已找中介',
+    ],
 ];
