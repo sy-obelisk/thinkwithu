@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 16px;
+}
+.schoolCover{
+    width: 100%;
+    padding: 70px 0;
+    background: yellowgreen;
+}
+.school_content{
+    width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 50px 0 50px 0;
+    border-radius: 10px;
+    -webkit-box-shadow: #666 0px 0px 10px;
+    -moz-box-shadow: #666 0px 0px 10px;
+    box-shadow: #666 0px 0px 10px;
+}
+.backTitle{
+    text-align: center;
+}
+.backTitle>h1{
+    font-size: 30px;
+    color: rgb(51,45,40);
+    padding-bottom: 20px;
+}
+.backTitle p{
+    color: rgb(173,173,173);
+    font-size: 15px;
+}
+.page-1{
+    width: 600px;
+    margin:40px auto 0;
+}
+.page-1>ul>li{
+    margin: 20px 0;
+}
+.page-1>ul>li>label b{
+    vertical-align: middle;
+    color: rgb(153,68,153);
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.page-1>ul>li>label span{
+    display: inline-block;
+    min-width: 120px;
+    margin-right: 30px;
+}
+.page-1>ul>li>input[type='text']{
+    width: 320px;
+    height: 40px;
+    border: 1px #cccccc solid;
+    border-radius: 5px;
+    text-indent: 20px;
+    font-size: 16px;
+    background: white;
+}
+#no,#yes{
+    margin-left: 20px;
+}
+.page-1 ul li ul li{
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.page-1 ul li ul li label {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+}
+.page-1 ul li ul li input[type='text']{
+    width: 370px;
+    height: 40px;
+    border: 1px #cccccc solid;
+    border-radius: 5px;
+    text-indent: 20px;
+    font-size: 16px;
+}
+.page-1 ul li textarea {
+    width: 100%;
+    height: 110px;
+    border: 1px #cccccc solid;
+    margin-top: 21px;
+    padding: 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-radius: 5px;
+}
+#no02{
+    margin-left: 20px;
+}
+#yes02{
+    margin-left:40px;
+}
+.nextBtn {
+    width: 148px;
+    height: 33px;
+    margin: 0 auto;
+    margin-top: 61px;
+    line-height: 33px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(153,68,153);
+    color: white;
+    font-size: 16px;
+    display: block;
+    border: none;
+}
+/*第二页*/
+.secondPage {
+    display: none;
+}
+.check_ul{
+    overflow: hidden;
+}
+.check_ul li {
+    min-width: 100px;
+    float: left;
+    margin-left: 10px!important;
+}
+.secondPage ul li ul li label {
+    font-weight: normal;
+    font-size: 15px;
+    text-align: left;
+}
+.check_ul li input[type='checkbox'] {
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.last li label{
+    width: auto!important;
+}
+.secondPage .nextBtn:first-child {
+    margin-left: 120px;
+}
+.secondPage .nextBtn {
+    float: left;
+    margin-right: 48px;
+}
