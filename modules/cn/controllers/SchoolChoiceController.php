@@ -17,9 +17,9 @@ class SchoolChoiceController extends ThinkUController
 
     public function actionBackground()
     {
-        if(!$_POST){
+        if (!$_POST) {
             return $this->render('background');
-        }else{
+        } else {
             $data['planTime'] = Yii::$app->request->post('planTime', '');  //计划出国时间
             $data['country'] = Yii::$app->request->post('country', '');    //意向国家
             $data['major'] = Yii::$app->request->post('major', '');         //意向专业
@@ -36,12 +36,18 @@ class SchoolChoiceController extends ThinkUController
             if (preg_match("/1[34578]{1}\d{9}$/", $data['phone'])) {
                 $showtime = date("Y-m-d H:i:s");
                 $yesterday = date("Y-m-d H:i:s", strtotime("-1 day"));
-                $check = UserBackground::find()->asArray()->where("c.createTime between '" . $yesterday . "' and '" . $showtime . "' and phone=" . $data['phone'])->one();
+                $check = UserBackground::find()->asArray()->where("createTime between '" . $yesterday . "' and '" . $showtime . "' and phone=" . $data['phone'])->one();
                 if ($check) {
                     $res['code'] = 0;
                     $res['message'] = '今天已经提交过了，请24小时后再试';
                 } else {
-                    Yii::$app->db->createCommand()->insert("{{%user_background}}", $data);
+                    $re = Yii::$app->db->createCommand()->insert("{{%user_background}}", $data);
+                    if ($re) {
+                        $res['code'] = 1;
+                    } else {
+                        $res['code'] = 0;
+                        $res['message'] = '数据库操作错误！';
+                    }
                 }
             } else {
                 $res['code'] = 0;
