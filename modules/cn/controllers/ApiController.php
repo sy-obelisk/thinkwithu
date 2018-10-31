@@ -1204,7 +1204,7 @@ class ApiController extends ThinkUApiControl {
      * ncrm 短信请求接口
      * @sjeam
      */
-     public function actionNcrmphoneCode()
+     public function actionNcrmphonecode()
      {
          $session = Yii::$app->session;
          $sms = new Sms();
