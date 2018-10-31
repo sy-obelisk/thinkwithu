@@ -1198,4 +1198,31 @@ class ApiController extends ThinkUApiControl {
         $data = \app\modules\cn\models\Content::getContent(['fields' => 'url,place,time', 'category' => '107', 'order'=>'c.id desc','limit' => 3]);
         die(json_encode(['data' => $data]));
     }
+
+
+    /**
+     * ncrm 短信请求接口
+     * @sjeam
+     */
+     public function actionNcrmphoneCode()
+     {
+         $session = Yii::$app->session;
+         $sms = new Sms();
+         $phoneNum = Yii::$app->request->get('phoneNum');
+         if (!empty($phoneNum)) {
+             $phoneCode = mt_rand(100000, 999999);
+             $session->set($phoneNum.'phoneCode',$phoneCode);
+             $session->set('phoneTime',time());
+             $content = 'ncrm修改密码，验证码：' . $phoneCode . '（10分钟有效），';
+             $sms->send($phoneNum, $content, $ext = '', $stime = '', $rrid = '');
+             $res['code'] = 1;
+             $res['phonecode']=$phoneCode;
+             $res['message'] = '短信发送成功！';
+         } else {
+             $res['code'] = 0;
+             $res['message'] = '发送失败!手机号码为空！';
+         }
+         die(json_encode($res));
+     }
+
 }
