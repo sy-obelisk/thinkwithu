@@ -1204,12 +1204,10 @@ class ApiController extends ThinkUApiControl {
      * ncrm 短信请求接口
      * @sjeam
      */
-     public function actionNcrmphonecode()
+     public function actionNcrmphoneCode()
      {
          $session = Yii::$app->session;
          $sms = new Sms();
-
-         var_dump(111);die;
          $phoneNum = Yii::$app->request->get('phoneNum');
          if (!empty($phoneNum)) {
              $phoneCode = mt_rand(100000, 999999);
