@@ -1225,4 +1225,36 @@ class ApiController extends ThinkUApiControl {
          die(json_encode($res));
      }
 
+
+
+    /**
+
+     * 发送邮箱
+
+     * @sjeam
+
+     */
+
+    public function actionNcrmemailCode(){
+        $emailcode = mt_rand(100000, 999999);
+        $email = Yii::$app->request->post('email');
+        // $email="359824901@qq.com";
+        $mail= Yii::$app->mailer->compose();
+        $mail->setTo($email);
+        $mail->setSubject("【ncrm(登录验证)】邮件验证码");
+        $mail->setHtmlBody('验证码：' . $emailcode . '(10分钟有效)'
+        );    //发布可以带html标签的文本
+
+        if($mail->send()) {
+            $res['code'] = 1;
+            $res['emailcode'] = $emailcode;
+            $res['message'] = '邮件发送成功！';
+        }else {
+            $res['code'] = 0;
+            $res['message'] = '邮件发送失败！';
+        }
+        die(json_encode($res));
+
+    }
+
 }
