@@ -1208,6 +1208,8 @@ class ApiController extends ThinkUApiControl {
      {
          $session = Yii::$app->session;
          $sms = new Sms();
+
+         var_dump(111);die;
          $phoneNum = Yii::$app->request->get('phoneNum');
          if (!empty($phoneNum)) {
              $phoneCode = mt_rand(100000, 999999);
