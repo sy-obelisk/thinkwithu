@@ -54,7 +54,7 @@
                 <div class="eaxm-list eaxm-list-1">
                     <ul>
                         <li><a href="/background-test.html">背景测评</a></li>
-                        <li><a href="">选校测评</a></li>
+                        <li><a href="/choice-test.html">选校测评</a></li>
                         <li><a href="/percentages-test.html">录取测评</a></li>
                     </ul>
                 </div>

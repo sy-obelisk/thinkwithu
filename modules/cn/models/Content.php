@@ -312,4 +312,239 @@ class Content extends ActiveRecord {
         return ['activity' => $re,'activityDate' => $date];
     }
 
+    public function gpaScore($country, $gpa)
+    {
+        if ($country == 'USA') {
+            if ($gpa <= 62.5) {
+                return 5;
+            } else {
+                return $gpa > 87.5 ? 16 : ceil(($gpa - 62.5) / 2.5) + 5;
+            }
+        } else {
+            if ($gpa <= 61) {
+                return 5;
+            } else {
+                return $gpa >= 93 ? 22 : ceil(($gpa - 61) / 2);
+            }
+
+        }
+    }
+
+    public function gmatScore($country, $gmat, $gre)
+    {
+        if ($country == 'USA') {
+            if ($gmat) {
+                if ($gmat <= 600) {
+                    return 5;
+                } else {
+                    return $gmat > 700 ? 16 : floor(($gmat - 600) / 10) + 5;
+                }
+            }
+            if ($gre) {
+                if ($gre <= 290) {
+                    return 6;
+                } else {
+                    return $gre >= 335 ? 15 : floor(($gre - 290) / 5) + 6;
+                }
+            }
+        } else {
+            if ($gmat) {
+                if ($gmat <= 600) {
+                    return 5;
+                } else {
+                    return $gmat > 710 ? 15 : floor(($gmat - 600) / 20) + 5;
+                }
+            }
+            if ($gre) {
+                if ($gre <= 290) {
+                    return 4;
+                } else {
+                    return $gre > 320 ? 15 : floor(($gre - 290) / 5) + 4;
+                }
+            }
+
+        }
+    }
+
+    public function toeflScore($country, $toefl, $ielts)
+    {
+        if ($country == 'USA') {
+            if ($toefl) {
+                if ($toefl <= 80) {
+                    return 6;
+                } else {
+                    return $toefl >= 120 ? 16 : floor(($toefl - 80) / 4) + 6;
+                }
+            }
+            if ($ielts) {
+                if ($ielts <= 5) {
+                    return 8;
+                } else {
+                    return $ielts >= 9 ? 16 : floor(($ielts - 5) / 0.5) + 8;
+                }
+            }
+        } else {
+            if ($toefl) {
+                if ($toefl <= 80) {
+                    return 12;
+                } else {
+                    return $toefl >= 116 ? 22 : floor(($toefl - 80) / 4) + 12;
+                }
+            }
+            if ($ielts) {
+                if ($ielts <= 5) {
+                    return 11;
+                } else {
+                    return $ielts >= 8 ? 22 : floor(($ielts - 5) / 0.5 * 2) + 11;
+                }
+            }
+
+        }
+    }
+
+    public function schoolScore($country, $school)
+    {
+        if ($country == 'USA') {
+            switch ($school) {
+                case $school == 1:
+                    return 15;
+                    break;
+                case $school == 2:
+                    return 12;
+                    break;
+                case $school == 3:
+                    return 10;
+                    break;
+                case $school == 4:
+                    return 8;
+                    break;
+                default:
+                    return 5;
+                    break;
+            }
+        } else {
+            switch ($school) {
+                case $school == 1:
+                    return 20;
+                    break;
+                case $school == 2:
+                    return 16;
+                    break;
+                case $school == 3:
+                    return 13;
+                    break;
+                case $school == 4:
+                    return 10;
+                    break;
+                default:
+                    return 8;
+                    break;
+            }
+
+        }
+    }
+
+    //实习经历
+    public function fieldworkScore($country, $company, $num)
+    {
+        if ($country == 'USA') {
+            if ($company == 1 || $company == 2) {
+                if ($num == 1) {
+                    return 18;
+                } elseif ($num >= 2) {
+                    return 20;
+                }
+            } elseif ($company == 3) {
+                if ($num == 1) {
+                    return 15;
+                } elseif ($num == 2) {
+                    return 18;
+                } elseif ($num >= 3) {
+                    return 20;
+                }
+            } elseif ($company == 4) {
+                if ($num == 1) {
+                    return 12;
+                } elseif ($num == 2) {
+                    return 15;
+                } elseif ($num >= 3) {
+                    return 18;
+                }
+            } elseif ($company == 5) {
+                if ($num == 1) {
+                    return 10;
+                } elseif ($num == 2) {
+                    return 12;
+                } elseif ($num >= 3) {
+                    return 18;
+                }
+            }
+
+        } else {
+            if ($company == 1 || $company == 2) {
+                if ($num == 1) {
+                    return 8;
+                } elseif ($num >= 2) {
+                    return 10;
+                }
+            } elseif ($company == 3) {
+                if ($num == 1) {
+                    return 6;
+                } elseif ($num == 2) {
+                    return 8;
+                } elseif ($num >= 3) {
+                    return 10;
+                }
+            } elseif ($company == 4) {
+                if ($num == 1) {
+                    return 5;
+                } elseif ($num == 2) {
+                    return 7;
+                } elseif ($num >= 3) {
+                    return 9;
+                }
+            } elseif ($company == 5) {
+                if ($num == 1) {
+                    return 3;
+                } elseif ($num == 2) {
+                    return 5;
+                } elseif ($num >= 3) {
+                    return 7;
+                }
+            }
+        }
+    }
+
+    public function school($score,$country)
+    {
+        if($country=='USA') {
+            if($score>80){
+                return 163;
+            }elseif($score>69){
+                return 164;
+            }elseif($score>59){
+                return 165;
+            }elseif($score>49){
+                return 515;
+            }
+        }elseif($country=='UK'){
+            if($score>55){
+                return 163;
+            }elseif($score>69){
+                return 164;
+            }elseif($score>59){
+                return 165;
+            }elseif($score>49){
+                return 515;
+            }
+        } elseif($country=='HK'){
+
+        } elseif($country=='AUS'){
+
+        } elseif($country=='Canada'){
+
+        } elseif($country=='Singapore'){
+
+        }
+    }
 }

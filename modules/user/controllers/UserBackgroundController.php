@@ -21,42 +21,30 @@ class UserBackgroundController extends AppControl {
     public function actionIndex()
     {
         $page = Yii::$app->request->get('page',1);
-        $beginTime = strtotime(Yii::$app->request->get('beginTime',''));
-        $endTime = strtotime(Yii::$app->request->get('endTime',''));
-        $id  = Yii::$app->request->get('id','');
         $phone  = Yii::$app->request->get('phone','');
-        $email  = Yii::$app->request->get('email','');
-        $userName  = Yii::$app->request->get('userName','');
-        $nickname  = Yii::$app->request->get('nickname','');
+        $uName  = Yii::$app->request->get('uName','');
+        $country  = Yii::$app->request->get('country','');
+        $userId  = Yii::$app->request->get('userId','');
         $where="1=1";
-        if($beginTime){
-            $where .= " AND createTime>=$beginTime";
-        }
-        if($endTime){
-            $where .= " AND createTime<=$endTime";
-        }
-        if($id){
-            $where .= " AND id = $id";
+        if($userId){
+            $where .= " AND userId = $userId";
         }
         if($phone){
             $where .= " AND phone = '$phone'";
         }
-        if($email){
-            $where .= " AND email = '$email'";
+        if($uName){
+            $where .= " AND uName = '$uName'";
         }
-        if($userName){
-            $where .= " AND userName = '$userName'";
+        if($country){
+            $where .= " AND country = '$country'";
         }
-        if($nickname){
-            $where .= " AND nickname = '$nickname'";
-        }
-        $model = new User();
         $pageSize=15;
         $limit = "limit ".($page-1)*$pageSize.",$pageSize";
         $data = \Yii::$app->db->createCommand("SELECT * from {{%user_background}} where ".$where." order by createTime DESC ".$limit)->queryAll();
+        $count=  \Yii::$app->db->createCommand("SELECT id from {{%user_background}} where ".$where." order by createTime DESC ")->queryAll();
 
-        $page = Method::getPagedRows(['count'=>$data['count'],'pageSize'=>$pageSize, 'rows'=>'models']);
-        return $this->render('index',['page' => $page,'data' => $data['data'],'block' => $this->block]);
+        $page = Method::getPagedRows(['count'=>$count,'pageSize'=>$pageSize, 'rows'=>'models']);
+        return $this->render('index',['page' => $page,'data' => $data,'block' => $this->block]);
     }
 
 

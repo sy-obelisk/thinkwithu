@@ -2,6 +2,8 @@
 namespace app\libs;
 use yii;
 use yii\data\Pagination;
+use app\modules\cn\models\SchoolTest;
+
 class Method
 {
     /**
@@ -82,5 +84,198 @@ class Method
 
         return $file_contents;
 
+    }
+
+    public static function score($res){
+        $gpa = $res['gpa'];
+        $gmat = $res['gmat'];
+        $toefl = $res['toefl'];
+        $school = $res['schoolGrade'];
+        $work = $res['most'];
+        if($gpa>10){
+            $num1 = SchoolTest::find()->where("gpa<$gpa AND gpa>10")->count();
+            $sign = round($gpa/100*4, 1);
+            $num2 = SchoolTest::find()->where("gpa<$gpa")->count();
+            $num = $num1+$num2;
+            $gpa = $sign;
+        }else{
+            $num1 = SchoolTest::find()->where("gpa<$gpa")->count();
+            $sign = ceil($gpa/4*100);
+            $num2 = SchoolTest::find()->where("gpa<$gpa")->count();
+            $num = $num1+$num2;
+        }
+        if($gpa>=3.5){
+            $gpa = [
+                'score' => $gpa,
+                'num' => $num+2330,
+                'type' => 1,
+                'name' => 'GPA'
+            ];
+        }elseif($gpa>=3.0){
+            $gpa1 = "GPA $gpa";
+            $gpa = null;
+        }else{
+            $gpa = [
+                'score' => $gpa,
+                'num' => $num+117,
+                'type' => 0,
+                'name' => 'GPA'
+            ];
+        }
+
+        if(!empty($gmat)){
+            if($gmat<360){
+                $num = SchoolTest::find()->where("gmat<$gmat")->count();
+                if($gmat>=325){
+                    $gmat = [
+                        'score' => $gmat,
+                        'num' => $num+2330,
+                        'type' => 1,
+                        'name' => 'GRE'
+                    ];
+                }elseif($gmat>=310){
+                    $gmat1 = "GRE $gmat";
+                    $gmat = null;
+                }else{
+                    $gmat = [
+                        'score' => $gmat,
+                        'num' => $num+117,
+                        'type' => 0,
+                        'name' => 'GRE'
+                    ];
+                }
+            }else{
+                $num = SchoolTest::find()->where("gmat<$gmat AND gmat>360")->count();
+                if($gmat>=720){
+                    $gmat = [
+                        'score' => $gmat,
+                        'num' => $num+2330,
+                        'type' => 1,
+                        'name' => 'GMAT'
+                    ];
+                }elseif($gmat>=650){
+                    $gmat1 = "GMAT $gmat";
+                    $gmat = null;
+                }else{
+                    $gmat = [
+                        'score' => $gmat,
+                        'num' => $num+117,
+                        'type' => 0,
+                        'name' => 'GMAT'
+                    ];
+                }
+            }
+        }else{
+            $gmat =null;
+        }
+
+        if($toefl<15){
+            $num = SchoolTest::find()->where("toefl<$toefl")->count();
+            if($toefl>=7){
+                $toefl = [
+                    'score' => $toefl,
+                    'num' => $num+2330,
+                    'type' => 1,
+                    'name' => '雅思'
+                ];
+            }elseif($toefl>=6){
+                $toefl1 = "IELTS $toefl";
+                $toefl = null;
+            }else{
+                $toefl = [
+                    'score' => $toefl,
+                    'num' => $num+117,
+                    'type' => 0,
+                    'name' => '雅思'
+                ];
+            }
+        }else{
+            $num = SchoolTest::find()->where("toefl<$toefl AND toefl>15")->count();
+            if($toefl>=110){
+                $toefl = [
+                    'score' => $toefl,
+                    'num' => $num+2330,
+                    'type' => 1,
+                    'name' => '托福'
+                ];
+            }elseif($toefl>=95){
+                $toefl1 = "TOEFL $toefl";
+                $toefl = null;
+            }else{
+                $toefl = [
+                    'score' => $toefl,
+                    'num' => $num+117,
+                    'type' => 0,
+                    'name' => '托福'
+                ];
+            }
+        }
+
+        $num = SchoolTest::find()->where("schoolGrade>$school")->count();
+        if($school <=2){
+            $school = [
+                'name' => $res['attendSchool'],
+                'num' => $num+2330,
+                'type' => 1
+            ];
+        }elseif($school<=3){
+            $school1 = "211 院校";
+            $school = null;
+        }else{
+            $school = [
+                'name' => $res['attendSchool'],
+                'num' => $num+117,
+                'type' => 0
+            ];
+        }
+        if($work == 6){
+            $work = null;
+            $work1 = "没有 工作经验";
+        }else{
+            $num = SchoolTest::find()->where("most>$work")->count();
+            switch($work){
+                case 1:$workName = '四大/500强';break;
+                case 2:$workName = '四大/500强';break;
+                case 3:$workName = '外企';break;
+                case 4:$workName = '国企';break;
+                case 5:$workName = '私企';break;
+            }
+            if($work <=2){
+                $work = [
+                    'name' => $workName,
+                    'num' => $num+2330,
+                    'type' => 1
+                ];
+            }elseif($work<=4){
+                $work1 = "$workName 工作经验";
+                $work = null;
+            }else{
+                $work = [
+                    'name' => $workName,
+                    'num' => $num+117,
+                    'type' => 0
+                ];
+            }
+        }
+        $data = array();
+        if(!$gpa && !$gmat && !$toefl && !$school &&! $work){
+            $data['advantage'] = [$gpa1,$gmat1,$toefl1,$school1,$work1];
+        }
+        if($gpa){
+            $data['gpa'] = $gpa;
+        }
+        if($gmat){
+            $data['gmat'] = $gmat;
+        }
+        if($toefl){
+            $data['toefl'] = $toefl;
+        }
+        if($school){
+            $data['school'] = $school;
+        }
+        if($work){
+            $data['work'] = $work;
+        }
+        return $data;
     }
 }

@@ -113,4 +113,10 @@ class SchoolChoiceController extends ThinkUController
         }
 
     }
+
+    public function actionChoice(){
+        if (!$_POST) {
+            return $this->render('choice');
+        }
+    }
 }
