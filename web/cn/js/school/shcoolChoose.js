@@ -76,5 +76,6 @@ function subBackground(){
     else{
         console.log(1111);
         $("#backForm").submit();
+        alert('提交成功')
     }
 }
