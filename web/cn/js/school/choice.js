@@ -210,6 +210,7 @@ function showMajorC(o,quNum){
 function sureMajor(){
     var num=$(".t-major-mask").attr("qufen");
     var h=$(".second_page ul li.on").html();
+    // var h=$(".first-ul li.on span").html();
     $(".t-major-mask").hide();
     if(num==2){
         $("#major-input").val(h);
@@ -226,5 +227,8 @@ function chooseSub(){
         alert("请注意必填项！");
         return false;
     }
-    $("#chooseSchool").submit();
+    var x=$("#chooseSchool").serializeArray();
+    var x_1 = JSON.stringify(x);
+    console.log(x_1);
+    // $("#chooseSchool").submit();
 }
