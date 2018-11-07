@@ -1,0 +1,425 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /*font-size: 16px;*/
+}
+.school_choice{
+    width: 100%;
+    padding: 70px 0;
+    background: url("/cn/images/school/school-test.png")no-repeat;
+    background-attachment:fixed;
+    background-position:center;
+}
+.enrollSlider{
+    width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px 0;
+    overflow: hidden;
+}
+.enrollBd ul li{
+    /*width: 400px;*/
+    width: auto!important;
+    color: rgb(173,173,173);
+    padding-right: 100px;
+    float: left;
+    font-size: 16px;
+}
+.enrollBd .tempWrap{
+    width: 100%!important;
+}
+.choose-auto{
+    width: 900px;
+    margin: 40px auto;
+    padding: 40px 0 40px 0;
+    background-color: white;
+}
+.choose-auto h2 {
+    font-size: 30px;
+    color: rgb(51,45,40);
+    padding-bottom: 20px;
+    text-align: center;
+}
+.top-info-c {
+    width: 450px;
+    margin: 0 auto;
+    color: rgb(173,173,173);
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 110px;
+}
+.choose-step {
+    width: 700px;
+    margin: 0 auto;
+}
+.choose-step ul li.on {
+    background-color: #A84DA6;
+}
+.choose-step ul li {
+    width: 175px;
+    height: 5px;
+    float: left;
+    background-color: rgb(243,243,243);
+    position: relative;
+    text-align: center;
+}
+.choose-step ul li.on .font-box {
+    color: #A84DA6;
+}
+.choose-step ul li .font-box {
+    font-size: 16px;
+    color: #333333;
+    margin-top: -35px;
+}
+.choose-step ul li.on .num-box {
+    background-color: #A84DA6;
+    color: rgb(243,243,243);
+}
+.choose-step ul li .num-box {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 50%;
+    background-color: rgb(243,243,243);
+    color: #333333;
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+    top: 50%;
+    margin-top: -10px;
+}
+/*第一步*/
+.step-1 {
+    width: 700px;
+    margin: 0 auto;
+    padding-top: 46px;
+    position: relative;
+}
+.step-1 ul li {
+    width: 90%;
+    margin: 20px auto 0;
+}
+.step-1>ul li label b {
+    vertical-align: middle;
+    color: #A84DA6;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.step-1>ul li label span {
+    display: inline-block;
+    min-width: 100px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+.step-1 ul li input {
+    width: 280px;
+    height: 40px;
+    border: 1px #cccccc solid;
+    border-radius: 5px;
+    text-indent: 20px;
+    font-size: 16px;
+    background: white;
+}
+.tishi-yu {
+    color: grey;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.bot-btn-group {
+    text-align: center;
+    margin-top: 46px;
+}
+.bot-btn-group input {
+    width: 147px;
+    height: 33px;
+    border: none;
+    background-color: #A84DA6;
+    color: white;
+    border-radius: 5px;
+}
+/*第二步*/
+.common-step {
+    width: 700px;
+    margin: 0 auto;
+    padding-top: 46px;
+    position: relative;
+}
+.common-step>ul>li {
+    width: 90%;
+    margin: 20px auto 0;
+}
+.common-step ul li span {
+    font-size: 16px;
+    color: #333333;
+}
+.common-step>ul>li ul {
+    display: inline-block;
+    position: relative;
+    top: 5px;
+}
+.common-step>ul>li ul li {
+    float: left;
+    margin-left: 23px;
+    font-size: 16px;
+}
+.common-step>ul>li ul li label {
+    font-weight: normal;
+    font-size: 16px;
+    color: #333333;
+}
+.common-step ul li b {
+    vertical-align: middle;
+    color: rgb(153,68,153);
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.common-step>ul li label span {
+    font-size: 16px;
+    display: inline-block;
+    min-width: 100px;
+    margin-right: 10px;
+}
+select#biye {
+    margin-left: 10px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 280px;
+    height: 40px;
+    border: 1px #cccccc solid;
+    border-radius: 5px;
+    text-indent: 20px;
+    font-size: 16px;
+    background: white;
+}
+.common-step ul li input.com-input {
+    width: 280px;
+    height: 40px;
+    border: 1px #cccccc solid;
+    border-radius: 5px;
+    text-indent: 20px;
+    font-size: 16px;
+    background: white;
+    margin-left: 10px;
+}
+.bot-btn-group input.mr {
+    margin-right: 56px;
+}
+select#biye::-ms-expand { display: block;}
+.step-2, .step-3, .step-4 {
+    display: none;
+}
+/*第三步*/
+.step-3{
+    width: 700px;
+    margin:0 auto ;
+    padding-top: 46px;
+    overflow: hidden;
+}
+.yearTime{
+    display: none;
+}
+.common-box{
+    width:100%;
+}
+.common-box h4{
+    color: #A84DA6;
+    font-size: 16px;
+    margin: 13px 0;
+    font-weight: bold;
+}
+.common-box h4 b{
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.common-box ul:after{
+    content: '';
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}
+.common-box ul li{
+    float: left;
+    margin-right: 10px;
+    color: #333333;
+    font-size: 15px;
+}
+.common-box ul{
+    width: 90%;
+    margin: 10px auto;
+    /*margin-bottom: 5px;*/
+}
+.common-box ul li label{
+    font-weight: normal;
+}
+.common-box ul li label:hover{
+    cursor: pointer;
+}
+.common-box textarea{
+    width: 100%;
+    height: 98px;
+    border: 1px #cccccc solid;
+    padding: 10px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-size: 12px;
+    resize: none;
+}
+.jixu-add{
+    width: 139px;
+    height: 29px;
+    line-height: 25px;
+    border: 1px #cccccc solid;
+    border-radius: 50px;
+    text-align: center;
+    color: #333333;
+    font-size: 14px;
+    margin-top: 13px;
+    background-color: white;
+}
+.jixu-add:hover{
+    cursor: pointer;
+}
+.warn-info{
+    width: 100%;
+    margin-top: 46px;
+}
+.warn-left{
+    float: left;
+}
+.warn-right{
+    width: 660px;
+    float: left;
+    font-size: 15px;
+    margin-left: 8px;
+    color: rgb(173,173,173);
+}
+.warn-right p{
+    color: rgb(173,173,173);
+}
+#xinqu>li{
+    margin-top: 10px;
+}
+/*专业显示遮罩层*/
+.t-major-mask{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index:999;
+    display: none;
+}
+.t-m-in{
+    width: 800px;
+    height: 400px;
+    background-color: white;
+    padding: 20px 0;
+    position: fixed;
+    left: 50%;
+    margin-left: -400px;
+    top: 50%;
+    margin-top: -200px;
+}
+.t-m-close{
+    font-size: 30px;
+    color: #827f7f;
+    position: absolute;
+    top: -5px;
+    right: 5px;
+}
+.t-m-close:hover{
+    cursor: pointer;
+}
+.t-m-in h4{
+    font-size: 15px;
+    font-weight: bold;
+    color: #A84DA6;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.t-m-in ul{
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.t-m-in ul:after{
+    content: '';
+    height: 0;
+    overflow: hidden;
+    display: block;
+    clear: both;
+}
+.t-m-in ul li{
+    float: left;
+    text-align: center;
+    color: #333333;
+    font-size: 16px;
+    padding: 3px 0;
+    margin-bottom: 5px;
+}
+.t-m-in ul li:hover{
+    cursor: pointer;
+}
+.t-m-in ul.first-ul{
+    margin-left: 10px;
+}
+.t-m-in ul.first-ul li{
+    width: 120px;
+}
+.t-m-in ul.first-ul li:hover{
+    color: white;
+    background-color:rgb(153,68,153);
+}
+.t-m-in ul.second-ul{
+    margin-left: 20px;
+}
+.t-m-in ul.second-ul li{
+    width: 110px;
+}
+.t-m-in ul.second-ul li.diffw{
+    width: 120px;
+}
+.t-m-in ul li.on{
+    color: white;
+    background-color: #A84DA6;
+}
+.t-m-btn{
+    margin-top: 260px;
+    text-align: center;
+}
+.t-m-btn input{
+    width: 88px;
+    height: 27px;
+    border: none;
+    background-color: #A84DA6;
+    color: white;
+}
+.t-m-btn input.mr{
+    margin-right: 30px;
+}
+.second_page{
+    width: 100%;
+    height: 200px;
+    overflow: auto;
+    position: absolute;
+    left: 0;
+    display: none;
+    background-color:beige;
+    padding: 20px;
+}
+.t-m-in ul li:hover .second_page{
+    display: block;
+}

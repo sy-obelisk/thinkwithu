@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    font-size: 16px;
+    /*font-size: 16px;*/
 }
 .enrollCover{
     width: 100%;
@@ -25,6 +25,7 @@ body{
     color: rgb(173,173,173);
     padding-right: 100px;
     float: left;
+    font-size: 16px;
 }
 .enrollBd .tempWrap{
     width: 100%!important;
