@@ -7,14 +7,10 @@
     <div class="enrollSlider">
         <div class="enrollBd">
             <ul>
-                <li>雷哥网会员 neon 2018-10-29 10:49:28-获得一份录取报告</li>
-                <li>雷哥网会员 1 2018-10-29 10:49:28-获得一份录取报告</li>
-                <li>雷哥网会员 2 2018-10-29 10:49:28-获得一份录取报告</li>
-                <li>雷哥网会员 ne3on 2018-10-29 10:49:28-获得一份录取报告</li>
-                <li>雷哥网会员 4 2018-10-29 10:49:28-获得一份录取报告</li>
-                <li>雷哥网会员 5 2018-10-29 10:49:28-获得一份录取报告</li>
-                <li>雷哥网会员 6 2018-10-29 10:49:28-获得一份录取报告</li>
-                <li>雷哥网会员 7 2018-10-29 10:49:28-获得一份录取报告</li>
+                <?php foreach($data as $v){?>
+                <li>申友网用户 <?php echo $v['userName'].' '.date('Y-m-d H:i:s')?> -获得一份录取报告</li>
+                <?php }?>
+
             </ul>
         </div>
         <script>
@@ -23,7 +19,7 @@
     </div>
     <!--录取内容-->
     <div class="enrollContent">
-        <form action="" method="post" id="luquForm">
+        <form action="/cn/api/probability-storage" method="post" id="luquForm">
             <div class="backTitle">
                 <h1>学校录取测评</h1>
                 <p>欢迎使用申友网学校录取测评工具。被自己的 Dream School 录取 </p>

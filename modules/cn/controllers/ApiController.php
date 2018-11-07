@@ -5,14 +5,14 @@
  * User: obelisk
  */
 namespace app\modules\cn\controllers;
-use app\modules\cn\models\HistoryRecord;
+//use app\modules\cn\models\HistoryRecord;
 use app\modules\content\models\Category;
 use yii;
 use app\libs\ThinkUApiControl;
 use app\modules\cn\models\Content;
 use app\modules\cn\models\SchoolTest;
 use app\modules\cn\models\Collect;
-use app\modules\cn\models\CategoryExtend;
+use app\modules\cn\models\ProbabilityTest;
 use app\modules\cn\models\Login;
 use app\libs\Sms;
 use app\libs\Method;
@@ -1223,31 +1223,31 @@ class ApiController extends ThinkUApiControl {
         $education = $apps->post('education');  /*目前学历*/
         $result['school_rank'] = $apps->post('school');  /*获取就读学校等级*/
         $attendSchool = $apps->post('schoolName');  /*目前学校*/
-        $nowMajor = $apps->post('major_name1');  /*目前专业名*/
+        $nowMajor = $apps->post('nowMajor');  /*目前专业名*/
         $result['major_top'] = $apps->post('major_top');  /*详细专业*/
         $result['school_major'] = $apps->post('school_major');/*专业方向*/
-        $result['result_work'] = json_decode($apps->post('work'), true);  /*工作企业*/
-        $result['year'] = json_decode($apps->post('year'), true); /*工作年限*/
-        $workDetail = json_decode($apps->post('live'), true);  /*工作经验详情*/
-        $result['item_suffer'] = json_decode($apps->post('project'), true);  /*项目经验*/
+        $result['result_work'] = $apps->post('work');  /*工作企业*/
+        $result['year'] = $apps->post('year'); /*工作年限*/
+        $workDetail = $apps->post('live');  /*工作经验详情*/
+        $result['item_suffer'] = $apps->post('project');  /*项目经验*/
         foreach ($result['item_suffer'] as $key => $v) {
             if (!$v) {
                 unset($result['item_suffer'][$key]);
             }
         }
-        $result['you_xue'] = json_decode($apps->post('studyTour'), true);          /*海外游学*/
+        $result['you_xue'] = $apps->post('studyTour');          /*海外游学*/
         foreach ($result['you_xue'] as $key => $v) {
             if (!$v) {
                 unset($result['you_xue'][$key]);
             }
         }
-        $result['gong_yi'] = json_decode($apps->post('active'), true);     /*海外游学*/
+        $result['gong_yi'] = $apps->post('active');     /*海外游学*/
         foreach ($result['gong_yi'] as $key => $v) {
             if (!$v) {
                 unset($result['gong_yi'][$key]);
             }
         }
-        $result['huo_j'] = json_decode($apps->post('price'), true);      /*海外游学*/
+        $result['huo_j'] = $apps->post('price');      /*海外游学*/
         foreach ($result['huo_j'] as $key => $v) {
             if (!$v) {
                 unset($result['huo_j'][$key]);
@@ -1255,7 +1255,7 @@ class ApiController extends ThinkUApiControl {
         }
         $result['state'] = $apps->post('destination');    /*申请国家*/
         $result['major'] = $apps->post('major');   /*申请专业id*/
-        $majorName = $apps->post('major_name2');   /*专业名*/
+        $majorName = $apps->post('major02');   /*专业名*/
         $data = Method::post("http://schools.smartapply.cn/cn/api/school-choice", ['result' => $result]);
         $school = json_decode($data, true);
         $most = 6;
@@ -1271,7 +1271,7 @@ class ApiController extends ThinkUApiControl {
             $work = array();
         }
         $model = new SchoolTest();
-        $userId = Yii::$app->session->userId();
+        $userId = Yii::$app->session->get('userId',7898);
         $model->userId = $userId;
         $model->gpa = $result['result_gpa'];
         $model->gmat = $result['result_gmat'];
@@ -1292,7 +1292,7 @@ class ApiController extends ThinkUApiControl {
         $model->applyMajor = $result['major'];/*申请专业id*/
         $model->majorName = $majorName; /*专业名*/
         $model->score = $school['score'];
-        $model->source = 'iosApp';
+        $model->source = '申友pc';
         $model->result = serialize($result);
         $model->createTime = time();
         $model->most = $most;
@@ -1300,224 +1300,158 @@ class ApiController extends ThinkUApiControl {
         die(json_encode(['code' => 1, 'data' => $school]));
 
     }
+
     /**
-     * 选校结果
-     * by yoyo
+     * 录取测评结果
+     * by  yoyo
      */
-    public function actionSchoolResult()
-    {
-        $id = Yii::$app->request->post('id');
-        $res = SchoolTest::find()->asArray()->where("id={$id}")->one();
-        $result = unserialize($res['result']);
-        $data = Method::post("http://schools.smartapply.cn/cn/api/school-choice", ['result' => $result]);
-        $school = json_decode($data, true);
-        if ($res['schoolGrade'] == 1) {
-            $schoolGrade = "清北复交浙大";
-        } elseif ($res['schoolGrade'] == 2) {
-            $schoolGrade = "985学校";
-        } elseif ($res['schoolGrade'] == 3) {
-            $schoolGrade = "211学校";
-        } elseif ($res['schoolGrade'] == 4) {
-            $schoolGrade = "非211本科";
+    public function actionProbabilityStorage(){
+
+        $schoolRank = Yii::$app->request->post('schoolRank', 0);  //院校排名
+        $country = Yii::$app->request->post('country', 0);    //国家
+
+        $schoolName = Yii::$app->request->post('schoolName', '');  //申请院校名
+        $majorName = Yii::$app->request->post('majorName', '');   //申请专业名
+        $gpa = round(Yii::$app->request->post('gpa', ''), 2);   // 3.64;
+        $gmat = Yii::$app->request->post('gmat', '');
+        $toefl = round(Yii::$app->request->post('toefl', ''), 2);
+        $education = Yii::$app->request->post('education', '');   //学历
+        $school = Yii::$app->request->post('school', '');        //学校等级
+        $major = Yii::$app->request->post('major', '');          //专业名
+        $attendSchool = Yii::$app->request->post('attendSchool', '');        //当前在读学校
+        $bigFour = Yii::$app->request->post('bigFour', '');        //四大
+        $foreignCompany = Yii::$app->request->post('foreignCompany', '');        //外企
+        $enterprises = Yii::$app->request->post('enterprises', '');        //国企
+        $privateEnterprise = Yii::$app->request->post('privateEnterprise', '');        //私企
+        $project = Yii::$app->request->post('project', '');        //项目
+        $study = Yii::$app->request->post('study', '');        //游学
+        $publicBenefit = Yii::$app->request->post('publicBenefit', '');        //公益
+        $awards = Yii::$app->request->post('awards', '');        //得奖
+        $userName = Yii::$app->request->post('userName', '');        //得奖
+
+        $workScore = 0;
+        $model = new Content();
+        if ($country == 1 || $country == 3) {
+            $score = $model->score($gpa, $gmat, $toefl, $school,$country);
+            if ($bigFour) {
+                $workScore = 18;
+            }
+            if ($foreignCompany) {
+                if ($workScore != 0) {
+                    $workScore += 3;
+                } else {
+                    $workScore = 15;
+                }
+            }
+            if ($enterprises) {
+                if ($workScore != 0) {
+                    $workScore += 3;
+                } else {
+                    $workScore = 12;
+                }
+            }
+            if ($privateEnterprise) {
+                if ($workScore != 0) {
+                    $workScore += 3;
+                } else {
+                    $workScore = 10;
+                }
+            }
+            if ($workScore > 20) {
+                $workScore = 20;
+            }
+            if ($workScore == 0) {
+                $workScore = 10;
+            }
+            $experienceScore = 0;
+            if ($project) {
+                $experienceScore += 3;
+            }
+            if ($study) {
+                $experienceScore += 3;
+            }
+            if ($publicBenefit) {
+                $experienceScore += 3;
+            }
+            if ($awards) {
+                $experienceScore += 3;
+            }
         } else {
-            $schoolGrade = "专科";
+            $score =  $model->score($gpa, $gmat, $toefl, $school,$country);
+            if ($bigFour) {
+                $workScore = 8;
+            }
+            if ($foreignCompany) {
+                if ($workScore != 0) {
+                    $workScore += 2;
+                } else {
+                    $workScore = 6;
+                }
+            }
+            if ($enterprises) {
+                if ($workScore != 0) {
+                    $workScore += 2;
+                } else {
+                    $workScore = 5;
+                }
+            }
+            if ($privateEnterprise) {
+                if ($workScore != 0) {
+                    $workScore += 2;
+                } else {
+                    $workScore = 3;
+                }
+            }
+            if ($workScore > 10) {
+                $workScore = 10;
+            }
+            $experienceScore = 0;
+            if ($project) {
+                $experienceScore += 3;
+            }
+            if ($study) {
+                $experienceScore += 3;
+            }
+            if ($publicBenefit) {
+                $experienceScore += 2;
+            }
+            if ($awards) {
+                $experienceScore += 2;
+            }
         }
-        $score = Method::score($res);
-        die(json_encode(['code' => 1, 'data' => $school, 'score' => $score, 'schoolGrade' => $schoolGrade, 'applyMajor' => $res['majorName'], 'testId' => $res['id']]));
+        $total = $model->getTotalScore($schoolRank, $country);
+        if ($score == false) {
+            die("<script>alert('请检查填写内容是否齐全.......');history.go(-1)</script>");
+        }
+
+        $score = $score + $workScore + $experienceScore;
+        $percent = $score / $total;
+        if ($percent >= 1) {
+            $percent = 100;
+        } else {
+            $percent = ceil($percent * 100);
+        }
+        if ($percent > 96.6) {
+            $percent = 96.6;
+        }
+        $model = new ProbabilityTest();
+        $model->userName = $userName;
+        $model->score = $score;
+        $model->percent = $percent;
+        $model->school = $schoolName;
+        $model->major = $majorName;
+        $model->gpa = $gpa;
+        $model->gmat = $gmat;
+        $model->toefl = $toefl;
+        $model->education = $education;
+        $model->schoolGrade = $school;
+        $model->nowMajor = $major;
+        $model->attendSchool = $attendSchool;
+        $model->createTime = time();
+        $model->source = '申友pc';
+        $model->save();
+
+        die(json_encode(['code' => 1]));
     }
-
-
-    /**
-     * app留学几率储存结果
-//     * by  yanni
-//     */
-//    public function actionProbabilityStorage(){
-//        $uid = Yii::$app->session->get('uid');
-//        if(!$uid){
-//            die(json_encode(['code'=>0,'message'=>'请登录.......']));
-//        } else {
-//            $schoolRank = Yii::$app->request->post('schoolRank',0);  //院校排名
-//            $country = Yii::$app->request->post('country',0);    //国家
-//
-//            $schoolName = Yii::$app->request->post('schoolName','');  //申请院校名
-//            $majorName = Yii::$app->request->post('majorName','');   //申请专业名
-//            $gpa = round(Yii::$app->request->post('gpa',''), 2);   // 3.64;
-//            $gmat = Yii::$app->request->post('gmat','');
-//            $toefl= round(Yii::$app->request->post('toefl',''),2);
-//            $education = Yii::$app->request->post('education','');   //学历
-//            $school = Yii::$app->request->post('school','');        //学校等级
-//            $major = Yii::$app->request->post('major','');          //专业名
-//            $attendSchool = Yii::$app->request->post('attendSchool','');        //当前在读学校
-//            $bigFour = Yii::$app->request->post('bigFour','');        //四大
-//            $foreignCompany = Yii::$app->request->post('foreignCompany','');        //外企
-//            $enterprises = Yii::$app->request->post('enterprises','');        //国企
-//            $privateEnterprise = Yii::$app->request->post('privateEnterprise','');        //私企
-//            $project = Yii::$app->request->post('project','');        //项目
-//            $study = Yii::$app->request->post('study','');        //游学
-//            $publicBenefit = Yii::$app->request->post('publicBenefit','');        //公益
-//            $awards = Yii::$app->request->post('awards','');        //得奖
-//
-//            $workScore = 0;
-//            $computer = new Computer();
-//            if($country == 1 || $country == 3){
-//                $score = $computer->fun1($gpa,$gmat,$toefl,$school);
-//                if($bigFour) {
-//                    $workScore = 18;
-//                }
-//                if($foreignCompany){
-//                    if($workScore != 0){
-//                        $workScore +=3;
-//                    }else{
-//                        $workScore =15;
-//                    }
-//                }
-//                if($enterprises){
-//                    if($workScore != 0){
-//                        $workScore +=3;
-//                    }else{
-//                        $workScore =12;
-//                    }
-//                }
-//                if($privateEnterprise){
-//                    if($workScore != 0){
-//                        $workScore +=3;
-//                    }else{
-//                        $workScore =10;
-//                    }
-//                }
-//                if($workScore > 20){
-//                    $workScore = 20;
-//                }
-//                if($workScore == 0){
-//                    $workScore = 10;
-//                }
-//                $experienceScore = 0;
-//                if($project){
-//                    $experienceScore +=3;
-//                }
-//                if($study){
-//                    $experienceScore +=3;
-//                }
-//                if($publicBenefit){
-//                    $experienceScore +=3;
-//                }
-//                if($awards){
-//                    $experienceScore +=3;
-//                }
-//            }else{
-//                $score = $computer->fun2($gpa,$gmat,$toefl,$school);
-//                if($bigFour) {
-//                    $workScore = 8;
-//                }
-//                if($foreignCompany){
-//                    if($workScore != 0){
-//                        $workScore +=2;
-//                    }else{
-//                        $workScore =6;
-//                    }
-//                }
-//                if($enterprises){
-//                    if($workScore != 0){
-//                        $workScore +=2;
-//                    }else{
-//                        $workScore =5;
-//                    }
-//                }
-//                if($privateEnterprise){
-//                    if($workScore != 0){
-//                        $workScore +=2;
-//                    }else{
-//                        $workScore =3;
-//                    }
-//                }
-//                if($workScore > 10){
-//                    $workScore = 10;
-//                }
-//                $experienceScore = 0;
-//                if($project){
-//                    $experienceScore +=3;
-//                }
-//                if($study){
-//                    $experienceScore +=3;
-//                }
-//                if($publicBenefit){
-//                    $experienceScore +=2;
-//                }
-//                if($awards){
-//                    $experienceScore +=2;
-//                }
-//            }
-//            $total = $computer->getTotalScore($schoolRank,$country);
-//            if($score==false){
-//                die("<script>alert('请检查填写内容是否齐全.......');history.go(-1)</script>");
-//            }
-//
-//            $score = $score+$workScore+$experienceScore;
-//            $percent = $score/$total;
-//            if($percent>=1){
-//                $percent = 100;
-//            }else{
-//                $percent = ceil($percent*100);
-//            }
-//            if($percent>96.6){
-//                $percent = 96.6;
-//            }
-//            $model = new ProbabilityTest();
-//            $model->uid=$uid;
-//            $model->score=$score;
-//            $model->percent=$percent;
-//            $model->school=$schoolName;
-//            $model->major=$majorName;
-//            $model->gpa=$gpa;
-//            $model->gmat=$gmat;
-//            $model->toefl=$toefl;
-//            $model->education=$education;
-//            $model->schoolGrade=$school;
-//            $model->nowMajor=$major;
-//            $model->attendSchool=$attendSchool;
-//            $model->createTime=time();
-//            $model->source='app';
-//            $model->save();
-//        }
-//        die(json_encode(['code'=>1]));
-//    }
-//
-//    /**
-//     * 留学app几率测评结果
-//     * by  yanni
-//     */
-//    public function actionProbabilityResult1(){
-//        $uid = Yii::$app->session->get('uid');
-//        if(!$uid){
-//            die(json_encode(['code'=>0,'message'=>'请登录.......']));
-//        } else {
-//            $id = Yii::$app->request->post('id');
-//            if($id){
-//                $res = ProbabilityTest::find()->asArray()->where("id={$id}")->one();
-//            } else {
-//                $res = ProbabilityTest::find()->asArray()->where("uid={$uid}")->orderBy(" id desc ")->one();
-//            }
-//            $h['gpa'] = $res['gpa'];
-//            $h['gmat'] = $res['gmat'];
-//            $h['toefl'] = $res['toefl'];
-//            $h['schoolGrade'] = $res['schoolGrade'];
-//            $h['attendSchool'] = $res['attendSchool'];
-//            $h['most'] = 6;
-//            $score = Method::score($h);
-//            if($res['schoolGrade'] == 1){
-//                $schoolGrade = "清北复交浙大";
-//            } elseif($res['schoolGrade'] == 2){
-//                $schoolGrade = "985学校";
-//            } elseif($res['schoolGrade'] == 3){
-//                $schoolGrade = "211学校";
-//            } elseif($res['schoolGrade'] == 4){
-//                $schoolGrade = "非211本科";
-//            } else{
-//                $schoolGrade = "专科";
-//            }
-//            $data = ['res' => $score,'score'=>$res['score'],'percent' => $res['percent'],'school' => $res['school'],'major' => $res['major'],'schoolGrade'=>$schoolGrade];
-//            die(json_encode(['code'=>1,'data'=>$data]));
-//        }
-//    }
 
 }

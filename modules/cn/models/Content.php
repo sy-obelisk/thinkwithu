@@ -312,9 +312,10 @@ class Content extends ActiveRecord {
         return ['activity' => $re,'activityDate' => $date];
     }
 
+
     public function gpaScore($country, $gpa)
     {
-        if ($country == 'USA') {
+        if ($country == 1||$country == 3) {
             if ($gpa <= 62.5) {
                 return 5;
             } else {
@@ -332,7 +333,7 @@ class Content extends ActiveRecord {
 
     public function gmatScore($country, $gmat, $gre)
     {
-        if ($country == 'USA') {
+        if ($country == 1||$country == 3) {
             if ($gmat) {
                 if ($gmat <= 600) {
                     return 5;
@@ -368,7 +369,7 @@ class Content extends ActiveRecord {
 
     public function toeflScore($country, $toefl, $ielts)
     {
-        if ($country == 'USA') {
+        if ($country == 1||$country == 3) {
             if ($toefl) {
                 if ($toefl <= 80) {
                     return 6;
@@ -404,7 +405,7 @@ class Content extends ActiveRecord {
 
     public function schoolScore($country, $school)
     {
-        if ($country == 'USA') {
+        if ($country == 1||$country == 3) {
             switch ($school) {
                 case $school == 1:
                     return 15;
@@ -447,7 +448,7 @@ class Content extends ActiveRecord {
     //实习经历
     public function fieldworkScore($country, $company, $num)
     {
-        if ($country == 'USA') {
+        if ($country == 1||$country == 3) {
             if ($company == 1 || $company == 2) {
                 if ($num == 1) {
                     return 18;
@@ -515,36 +516,142 @@ class Content extends ActiveRecord {
         }
     }
 
-    public function school($score,$country)
-    {
-        if($country=='USA') {
-            if($score>80){
-                return 163;
-            }elseif($score>69){
-                return 164;
-            }elseif($score>59){
-                return 165;
-            }elseif($score>49){
-                return 515;
-            }
-        }elseif($country=='UK'){
-            if($score>55){
-                return 163;
-            }elseif($score>69){
-                return 164;
-            }elseif($score>59){
-                return 165;
-            }elseif($score>49){
-                return 515;
-            }
-        } elseif($country=='HK'){
+//    public function school($score,$country)
+//    {
+//        if($country == 1||$country == 3) {
+//            if($score>80){
+//                return 163;
+//            }elseif($score>69){
+//                return 164;
+//            }elseif($score>59){
+//                return 165;
+//            }elseif($score>49){
+//                return 515;
+//            }
+//        }elseif($country=='UK'){
+//            if($score>55){
+//                return 163;
+//            }elseif($score>69){
+//                return 164;
+//            }elseif($score>59){
+//                return 165;
+//            }elseif($score>49){
+//                return 515;
+//            }
+//        } elseif($country=='HK'){
+//
+//        } elseif($country=='AUS'){
+//
+//        } elseif($country=='Canada'){
+//
+//        } elseif($country=='Singapore'){
+//
+//        }
+//    }
 
-        } elseif($country=='AUS'){
-
-        } elseif($country=='Canada'){
-
-        } elseif($country=='Singapore'){
-
+    /**
+     * 选校测评学生得分
+     * @return array
+     * @yoyo
+     */
+    public function score($country,$gpa, $gmat, $toefl, $school,$gre='',$ielts=''){
+        if($gmat<400){
+            $gre=$gmat;
+            $gmat='';
         }
+        if($toefl<10){
+            $ielts=$toefl;
+            $toefl='';
+        }
+        $s1 = $this->gpaScore($country, $gpa);
+        $s2 = $this->gmatScore($country, $gmat, $gre);
+        $s3 = $this->toeflScore($country, $toefl, $ielts);
+        $s4 = $this->schoolScore($country, $school);
+        return $s1+$s2+$s3+$s4;
+    }
+
+    /**
+     * 选校测评目标学校的得分
+     * @return array
+     * @Obelisk
+     */
+    public function getTotalScore($schoolRank,$country){
+        //美国
+        if($country == 1){
+            if($schoolRank<=10){
+                $total = 100;
+            }elseif($schoolRank<=20){
+                $total = 94;
+            }elseif($schoolRank<=30){
+                $total = 89;
+            }elseif($schoolRank<=50){
+                $total = 79;
+            }elseif($schoolRank<=60){
+                $total = 69;
+            }elseif($schoolRank<=80){
+                $total = 64;
+            }elseif($schoolRank<=100){
+                $total = 59;
+            }
+            elseif($schoolRank<=120){
+                $total = 54;
+            }
+            elseif($schoolRank<=150){
+                $total = 49;
+            }else{
+                $total = 40;
+            }
+        }
+        //英国
+        if($country == 2){
+            if($schoolRank<=5){
+                $total = 100;
+            }elseif($schoolRank<=12){
+                $total = 80;
+            }elseif($schoolRank<=20){
+                $total = 70;
+            }elseif($schoolRank<=30){
+                $total = 55;
+            }elseif($schoolRank<=50){
+                $total = 45;
+            }else{
+                $total = 40;
+            }
+        }
+        //加拿大
+        if($country == 3){
+            if($schoolRank<=5){
+                $total = 100;
+            }elseif($schoolRank<=10){
+                $total = 70;
+            }else{
+                $total = 54;
+            }
+        }
+        //澳洲
+        if($country == 4){
+            if($schoolRank<=5){
+                $total = 71;
+            }else{
+                $total = 50;
+            }
+        }
+        //新加坡
+        if($country == 5){
+            if($schoolRank<=2){
+                $total = 100;
+            }else{
+                $total = 82;
+            }
+        }
+        //香港
+        if($country == 6){
+            if($schoolRank<=4){
+                $total = 100;
+            }else{
+                $total = 70;
+            }
+        }
+        return $total;
     }
 }

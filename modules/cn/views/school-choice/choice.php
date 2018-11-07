@@ -45,7 +45,7 @@
                 </li>
             </ul>
         </div>
-        <form action="" method="post" id="chooseSchool">
+        <form action="/cn/api/school-storage" method="post" id="chooseSchool">
             <!--第一步-->
             <div class="step-1">
                 <ul>
