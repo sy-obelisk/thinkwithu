@@ -30,7 +30,7 @@
                     用户名：
                 </td>
                 <td>
-                    <input class="input-small" name="uName" size="25" type="text" value="<?php echo isset($_GET['uName'])?$_GET['uName']:''?>"/>
+                    <input class="input-small" name="uName" size="25" type="text" value="<?php echo isset($_GET['userName'])?$_GET['userName']:''?>"/>
                 </td>
             </tr>
             <tr>
@@ -73,7 +73,7 @@
                 <tr>
                     <td><?php echo $v['id']?></td>
                     <td><?php echo $v['userId']?></td>
-                    <td><?php echo $v['uName']?></td>
+                    <td><?php echo $v['userName']?></td>
                     <td><?php echo $v['country']?></td>
                     <td><?php echo $v['phone']?></td>
                     <td><?php echo $v['major']?></td>
