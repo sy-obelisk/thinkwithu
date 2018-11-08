@@ -112,6 +112,10 @@ function subBackground(){
                if(result.code==1){
                     $('.school_content').hide();
                     $('.results_back').fadeIn();
+                    $(window).scrollTop(0);
+               }
+               else {
+                   alert("提交失败！");
                }
             },
             error : function() {
