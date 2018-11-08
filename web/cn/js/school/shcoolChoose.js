@@ -59,13 +59,28 @@ function subBackground(){
     var time=$("#time").val();//出国时间
     var country=$("#country").val();//意向国家
     var major=$("#major").val();//意向专业
-    var qustion=$(".check_ul li input:checked").length;//最关心问题
+    var gmat=$("#gmat").val();//gmat
+    var toefl=$("#toefl").val();//toefl
+    var ielts=$("#ielts").val();//ielts
+    var experience=$("#xuelijl").val();//学习经历
+    var qustion=$(".check_ul_ques li input:checked").length;//最关心问题
+    var obj_qustion=[];
+    var obj = $(".check_ul_ques li input:checked");
+
+    obj.each(function(){
+        obj_qustion.push($(this).val());
+    });
     var name=$("#n-name").val();//姓名
     var phone=$("#n-phone").val();//电话
     var reg=/^1[3|4|5|7|8][0-9]\d{8}$/;
     var weChat=$("#n-wechat").val();//微信
     var buchong=$("#buchong").val();//补充了解（非必填）
     var len= $(".check_ul.last li input:checked").length;//感兴趣的留学服务
+    var obj_len= [];
+    var obj_1 = $(".check_ul.last li input:checked");
+    obj_1.each(function(){
+        obj_len.push($(this).val());
+    });
     if(!time || !country || !major || !qustion || !name || !phone || !weChat ){
         alert("请将必填项填写完整！*为必填选项");
         return false;
@@ -74,8 +89,35 @@ function subBackground(){
         return false;
     }
     else{
-        console.log(1111);
-        $("#backForm").submit();
-        alert('提交成功')
+        $.ajax({
+            type: "POST",
+            dataType: "json",
+            url: "/cn/api/background-storage" ,
+            data:{
+                planTime:time,
+                country:country,
+                major:major,
+                gmat:gmat,
+                toefl:toefl,
+                ielts:ielts,
+                experience:experience,
+                emphases:obj_qustion,
+                supplement:buchong,
+                uName:name,
+                phone:phone,
+                weChat:weChat,
+                interest:obj_len
+            },
+            success: function (result) {
+               if(result.code==1){
+                    $('.school_content').hide();
+                    $('.results_back').fadeIn();
+               }
+            },
+            error : function() {
+                alert("提交失败！");
+            }
+        });
+        // $("#backForm").submit();
     }
 }

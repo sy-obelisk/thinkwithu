@@ -146,5 +146,61 @@ body{
 }
 /*结果页面*/
 .results_back{
-    width: 900px;
+    overflow: hidden;
+    width: 700px;
+    height: 500px;
+    margin: auto;
+    border-radius: 10px;
+    background: white;
+    -webkit-box-shadow: rgb(173,173,173) 0px 0px 10px;
+    -moz-box-shadow: rgb(173,173,173) 0px 0px 10px;
+    box-shadow: rgb(173,173,173) 0px 0px 10px;
+    display: none;
+}
+.results_t{
+    margin: 60px auto;
+    text-align: center;
+}
+.results_t img{
+    width: 80px;
+}
+.results_t span{
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 30px;
+    vertical-align: middle;
+}
+.results_s{
+    font-size: 35px;
+    text-align: center;
+}
+.results_s span{
+    color: #4BC78F;
+}
+.results_h{
+    margin: 50px auto 10px;
+    font-size: 18px;
+    text-align: center;
+}
+.results_l{
+    font-size: 18px;
+    text-align: center;
+}
+.btn_resu{
+    margin-top: 40px;
+    text-align: center;
+}
+.btn_resu a{
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    background: rgb(153,68,153);
+    color: white;
+    font-size: 16px;
+    line-height: 40px;
+    display: inline-block;
+}
+.btn_resu a:nth-child(1){
+    margin-right: 50px;
 }

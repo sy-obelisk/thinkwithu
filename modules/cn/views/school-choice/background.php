@@ -8,7 +8,7 @@
             <p>"我该如何合理规划申请时间？"  1分钟完成专业测评,</p>
             <p>即可获得留学评估师提供的全面专业留学评估报告与方案建议,为你指点迷津</p>
         </div>
-        <form action="/cn/api/background-test" method="post" id="backForm">
+        <form action="/cn/api/background-storage" method="post" id="backForm">
             <div class="page-1 firstPage">
                 <ul>
                     <li>
@@ -74,7 +74,7 @@
                        <label>
                            <b>*</b><span>6.您最关心的问题</span>
                        </label>
-                       <ul class="check_ul">
+                       <ul class="check_ul check_ul_ques">
                            <li>
                                <input type="checkbox" name="emphases[]" id="fuwu" value="1">
                                <label for="fuwu">服务流程</label>
@@ -161,6 +161,13 @@
     </div>
 <!-- 显示提交成功-->
     <div class="results_back">
-
+        <p class="results_t"><img src="/cn/images/school/back-wj.png" alt=""><span>问卷提交成功!</span></p>
+        <p class="results_s">已有<span>1000+</span>同学得到了帮助</p>
+        <p class="results_h">亲爱的同学,申友网已为你安排了资深顾问。</p>
+        <p class="results_l">1个工作日内与你取得联系,解决你申请问题</p>
+        <div class="btn_resu">
+            <a href="http://think.com">返回首页</a>
+            <a href="">继续测评</a>
+        </div>
     </div>
 </section>
