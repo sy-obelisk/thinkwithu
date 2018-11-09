@@ -22,7 +22,7 @@ class SchoolTestController extends AppControl {
     {
         $page = Yii::$app->request->get('page',1);
         $phone  = Yii::$app->request->get('phone','');
-        $uName  = Yii::$app->request->get('uName','');
+        $userName  = Yii::$app->request->get('userName','');
         $country  = Yii::$app->request->get('country','');
         $userId  = Yii::$app->request->get('userId','');
         $where="1=1";
@@ -32,8 +32,8 @@ class SchoolTestController extends AppControl {
         if($phone){
             $where .= " AND phone = '$phone'";
         }
-        if($uName){
-            $where .= " AND uName = '$uName'";
+        if($userName){
+            $where .= " AND uName = '$userName'";
         }
         if($country){
             $where .= " AND country = '$country'";
