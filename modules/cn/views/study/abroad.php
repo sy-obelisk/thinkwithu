@@ -439,26 +439,74 @@
             }?>留学考试提分课程</p>
         <div class="service_line"></div>
         <div class="scoring_course">
-            <a href="http://www.gmatonline.cn/gmatcourses/397.html" target="_blank">
-                <p>GMAT 700 分</p>
-                <p>冲刺课程</p>
-            </a>
-            <a href="http://www.greonline.cn/course/7778.html" target="_blank">
-                <p>GRE 330 分</p>
-                <p>冲刺课程</p>
-            </a>
-            <a href="http://toefl.viplgw.cn/toeflcourses/18534.html" target="_blank">
-                <p>托福 110 分</p>
-                <p>冲刺课程</p>
-            </a>
-            <a href="http://www.thinkusat.com/class_details/1.html" target="_blank">
-                <p>SAT 精品</p>
-                <p>冲刺课程</p>
-            </a>
-            <a href="http://ielts.viplgw.cn/cn/course/detail-2299.html" target="_blank">
-                <p>雅思一对一</p>
-                <p>精品课</p>
-            </a>
+            <?php $country = Yii::$app->request->get('country', 'USA');
+            if ($country == 'USA') { ?>
+                <a href="http://www.gmatonline.cn/gmatcourses/397.html" target="_blank">
+                    <p>GMAT 700 分</p>
+                    <p>冲刺课程</p>
+                </a>
+                <a href="http://www.greonline.cn/course/7778.html" target="_blank">
+                    <p>GRE 330 分</p>
+                    <p>冲刺课程</p>
+                </a>
+                <a href="http://toefl.viplgw.cn/toeflcourses/18534.html" target="_blank">
+                    <p>托福 110 分</p>
+                    <p>冲刺课程</p>
+                </a>
+                <a href="http://www.thinkusat.com/class_details/1.html" target="_blank">
+                    <p>SAT 精品</p>
+                    <p>冲刺课程</p>
+                </a>
+                <a href="http://ielts.viplgw.cn/cn/course/detail-2299.html" target="_blank">
+                    <p>雅思一对一</p>
+                    <p>精品课</p>
+                </a>
+            <?php } elseif ($country == 'UK') { ?>
+                <a href="" target="_blank">
+                    <p>GMAT 700 分</p>
+                    <p>冲刺课程</p>
+                </a>
+                <a href="" target="_blank">
+                    <p>GRE 330 分</p>
+                    <p>冲刺课程</p>
+                </a>
+                <a href="" target="_blank">
+                    <p>雅思一对一</p>
+                    <p>精品课</p>
+                </a>
+            <?php } elseif ($country == 'HK') { ?>
+                <a href="" target="_blank">
+                    <p>GMAT 700 分</p>
+                    <p>冲刺课程</p>
+                </a>
+                <a href="" target="_blank">
+                    <p>GRE 330 分</p>
+                    <p>冲刺课程</p>
+                </a>
+                <a href="" target="_blank">
+                    <p>托福 110 分</p>
+                    <p>冲刺课程</p>
+                </a>
+                <a href="" target="_blank"  style="margin-left: 415px;">
+                    <p>雅思一对一</p>
+                    <p>精品课</p>
+                </a>
+            <?php } elseif ($country == 'AUS') { ?>
+                <a href="" target="_blank">
+                    <p>GMAT 700 分</p>
+                    <p>冲刺课程</p>
+                </a>
+                <a href="" target="_blank">
+                    <p>GRE 330 分</p>
+                    <p>冲刺课程</p>
+                </a>
+                <a href="" target="_blank">
+                    <p>雅思一对一</p>
+                    <p>精品课</p>
+                </a>
+            <?php } elseif ($country == 'Canada') { ?>
+                '加拿大'
+            <?php } ?>
         </div>
     </div>
 </section>

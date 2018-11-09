@@ -166,7 +166,7 @@
         <p class="results_h">亲爱的同学,申友网已为你安排了资深顾问。</p>
         <p class="results_l">1个工作日内与你取得联系,解决你申请问题</p>
         <div class="btn_resu">
-            <a href="http://think.com">返回首页</a>
+            <a href="/">返回首页</a>
             <a href="">继续测评</a>
         </div>
     </div>

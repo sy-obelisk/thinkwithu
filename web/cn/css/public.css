@@ -3083,14 +3083,15 @@ h1.info-tit {
 .forYou{
     background:rgb(153,68,153);
     color: white;
-    width: 160px!important;
+    /*width: 160px!important;*/
     display: inline-block;
     line-height: 44px;
-    padding: 6px 0px 5px 20px;
+    padding: 6px 10px 5px 20px;
     cursor: pointer;
     font-size: 16px;
     float: left;
     position: relative;
+    min-width: 150px;
 }
 .forYou img{
     vertical-align: middle;
@@ -3124,7 +3125,8 @@ h1.info-tit {
     background:rgba(0,0,0,.3);
     left: 0;
     top: 55px;
-    width: 180px;
+    /*width: 180px;*/
+    width:100%;
     display: none;
 }
 .recommend-list li{

@@ -77,14 +77,14 @@
 <nav class="nav-wrap">
     <div class="w10 nav-top" style="overflow: inherit;">
         <ul class="inb nav-list clearfix">
-            <div class="forYou" style="width: 190px!important;">
+            <div class="forYou">
 
 
                 <?php
                 $country = Yii::$app->request->get('country','USA'); if($country=='USA'){
                     echo '<img src="/cn/Hirsi/images/classify.png" alt="横">
                            <span>美国留学申请服务</span>
-                           <div class="recommend-list" style="width: 210px!important;">
+                           <div class="recommend-list">
                                 <ul>
                                     <li><a href="" class=""><b>•</b>美国星程计划</a></li>
                                     <li><a href="" class=""><b>•</b>美国星途计划</a></li>
@@ -97,7 +97,7 @@
                 }elseif($country=='UK'){
                     echo '<img src="/cn/Hirsi/images/classify.png" alt="横">
                            <span>英国留学申请服务</span>
-                           <div class="recommend-list" style="width: 210px!important;">
+                           <div class="recommend-list">
                                 <ul>
                                     <li><a href="" class=""><b>•</b>英国康桥计划</a></li>
                                     <li><a href="" class=""><b>•</b>大本钟计划</a></li>
@@ -107,7 +107,7 @@
                 }elseif($country=='HK'){
                     echo '<img src="/cn/Hirsi/images/classify.png" alt="横">
                            <span>香港留学申请服务</span>
-                           <div class="recommend-list" style="width: 210px!important;">
+                           <div class="recommend-list">
                                 <ul>
                                     <li><a href="" class=""><b>•</b>紫荆花计划</a></li>
                                 </ul>
@@ -115,7 +115,7 @@
                 }elseif($country=='AUS'){
                     echo '<img src="/cn/Hirsi/images/classify.png" alt="横">
                            <span>澳大利亚留学申请服务</span>
-                           <div class="recommend-list" style="width: 210px!important;">
+                           <div class="recommend-list">
                                 <ul>
                                     <li><a href="" class=""><b>•</b>澳世起航计划</a></li>
                                 </ul>
@@ -123,7 +123,7 @@
                 }elseif($country=='Canada'){
                     echo '<img src="/cn/Hirsi/images/classify.png" alt="横">
                            <span>加拿大留学申请服务</span>
-                           <div class="recommend-list" style="width: 210px!important;">
+                           <div class="recommend-list">
                                 <ul>
                                     <li><a href="" class=""><b>•</b>香港星程计划</a></li>
                                 </ul>

@@ -53,7 +53,7 @@
             <thead>
             <tr>
                 <th width="80">ID</th>
-                <th>用户id</th>
+<!--                <th>用户id</th>-->
                 <th>姓名</th>
                 <th>意向国家</th>
                 <th>电话</th>
@@ -72,7 +72,7 @@
                 ?>
                 <tr>
                     <td><?php echo $v['id']?></td>
-                    <td><?php echo $v['userId']?></td>
+<!--                    <td>--><?php //echo $v['userId']?><!--</td>-->
                     <td><?php echo $v['userName']?></td>
                     <td><?php echo $v['country']?></td>
                     <td><?php echo $v['phone']?></td>

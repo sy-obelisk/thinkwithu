@@ -22,7 +22,7 @@ class ProbabilityTestController extends AppControl {
     {
         $page = Yii::$app->request->get('page',1);
         $phone  = Yii::$app->request->get('phone','');
-        $uName  = Yii::$app->request->get('uName','');
+        $userName  = Yii::$app->request->get('userName','');
         $country  = Yii::$app->request->get('country','');
         $userName  = Yii::$app->request->get('userName','');
         $where="1=1";
@@ -31,9 +31,6 @@ class ProbabilityTestController extends AppControl {
         }
         if($phone){
             $where .= " AND phone = '$phone'";
-        }
-        if($uName){
-            $where .= " AND uName = '$uName'";
         }
         if($country){
             $where .= " AND country = '$country'";

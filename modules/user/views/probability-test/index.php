@@ -30,7 +30,7 @@
                     用户名：
                 </td>
                 <td>
-                    <input class="input-small" name="uName" size="25" type="text" value="<?php echo isset($_GET['uName'])?$_GET['uName']:''?>"/>
+                    <input class="input-small" name="userName" size="25" type="text" value="<?php echo isset($_GET['userName'])?$_GET['userName']:''?>"/>
                 </td>
             </tr>
             <tr>
