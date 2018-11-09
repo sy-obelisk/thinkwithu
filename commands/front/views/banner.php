@@ -50,7 +50,7 @@
                 </div>
             </li>
             <li>
-                <a class="nav1-link" href="/evaluation.html">选校工具 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
+                <a class="nav1-link" href="/">选校工具 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
                 <div class="eaxm-list eaxm-list-1">
                     <ul>
                         <li><a href="/background-test.html">背景测评</a></li>

@@ -17,15 +17,15 @@
         <div class="bannerCenter">
             <ul>
                 <li>
-                    <a href=""><div class="bak_c"></div></a>
+                    <a href="/background-test.html"><div class="bak_c"></div></a>
                     <span>背景测评</span>
                 </li>
                 <li>
-                    <a href=""><div class="choose_c"></div></a>
+                    <a href="/choice-test.html"><div class="choose_c"></div></a>
                     <span>选校测评</span>
                 </li>
                 <li>
-                    <a href=""><div class="choose_t"></div></a>
+                    <a href="/percentages-test.html"><div class="choose_t"></div></a>
                     <span>选校推荐</span>
                 </li>
             </ul>
@@ -462,45 +462,45 @@
                     <p>精品课</p>
                 </a>
             <?php } elseif ($country == 'UK') { ?>
-                <a href="" target="_blank">
+                <a href="http://www.gmatonline.cn/gmatcourses/397.html" target="_blank">
                     <p>GMAT 700 分</p>
                     <p>冲刺课程</p>
                 </a>
-                <a href="" target="_blank">
+                <a href="http://www.greonline.cn/course/7778.html" target="_blank">
                     <p>GRE 330 分</p>
                     <p>冲刺课程</p>
                 </a>
-                <a href="" target="_blank">
+                <a href="http://ielts.viplgw.cn/cn/course/detail-2299.html" target="_blank">
                     <p>雅思一对一</p>
                     <p>精品课</p>
                 </a>
             <?php } elseif ($country == 'HK') { ?>
-                <a href="" target="_blank">
+                <a href="http://www.gmatonline.cn/gmatcourses/397.html" target="_blank">
                     <p>GMAT 700 分</p>
                     <p>冲刺课程</p>
                 </a>
-                <a href="" target="_blank">
+                <a href="http://www.greonline.cn/course/7778.html" target="_blank">
                     <p>GRE 330 分</p>
                     <p>冲刺课程</p>
                 </a>
-                <a href="" target="_blank">
+                <a href="http://toefl.viplgw.cn/toeflcourses/18534.html" target="_blank">
                     <p>托福 110 分</p>
                     <p>冲刺课程</p>
                 </a>
-                <a href="" target="_blank"  style="margin-left: 415px;">
+                <a href="http://ielts.viplgw.cn/cn/course/detail-2299.html" target="_blank"  style="margin-left: 415px;">
                     <p>雅思一对一</p>
                     <p>精品课</p>
                 </a>
             <?php } elseif ($country == 'AUS') { ?>
-                <a href="" target="_blank">
+                <a href="http://www.gmatonline.cn/gmatcourses/397.html" target="_blank">
                     <p>GMAT 700 分</p>
                     <p>冲刺课程</p>
                 </a>
-                <a href="" target="_blank">
+                <a href="http://www.greonline.cn/course/7778.html" target="_blank">
                     <p>GRE 330 分</p>
                     <p>冲刺课程</p>
                 </a>
-                <a href="" target="_blank">
+                <a href="http://ielts.viplgw.cn/cn/course/detail-2299.html" target="_blank">
                     <p>雅思一对一</p>
                     <p>精品课</p>
                 </a>

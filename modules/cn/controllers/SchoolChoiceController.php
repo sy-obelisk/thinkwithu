@@ -32,7 +32,8 @@ class SchoolChoiceController extends ThinkUController
 
     public function actionChoice(){
         if (!$_POST) {
-            return $this->render('choice');
+            $data=SchoolTest::find()->asArray()->orderBy("id desc")->limit(15)->all();
+            return $this->render('choice',['data'=>$data]);
         }
     }
 
