@@ -31,7 +31,7 @@
                         <li><a href="/studying-USA.html">美国留学 <i class="iconfont left_jt">&#xe600;</i></a></li>
                         <li><a href="/studying-UK.html">英国留学 <i class="iconfont left_jt">&#xe600;</i></a></li>
                         <li><a href="/studying-AUS.html">澳洲留学 <i class="iconfont left_jt">&#xe600;</i></a></li>
-                        <li><a href="/studying-Canada.html">加拿大留学 <i class="iconfont left_jt">&#xe600;</i></a></li>
+<!--                        <li><a href="/studying-Canada.html">加拿大留学 <i class="iconfont left_jt">&#xe600;</i></a></li>-->
                         <li><a href="/studying-HK.html">香港留学 <i class="iconfont left_jt">&#xe600;</i></a></li>
                     </ul>
                 </div>

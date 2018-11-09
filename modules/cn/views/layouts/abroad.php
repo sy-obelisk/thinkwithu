@@ -99,12 +99,9 @@
                            <span>英国留学申请服务</span>
                            <div class="recommend-list" style="width: 210px!important;">
                                 <ul>
-                                    <li><a href="" class=""><b>•</b>英国星程计划</a></li>
-                                    <li><a href="" class=""><b>•</b>英国星途计划</a></li>
-                                    <li><a href="" class=""><b>•</b>英国MBA精英计划</a></li>
-                                    <li><a href="" class=""><b>•</b>英国本科留学服务 </a></li>
-                                    <li><a href="" class=""><b>•</b>英国留学考试提分方案 </a></li>
-                                    <li><a href="" class=""><b>•</b>英国留学DIY论坛 </a></li>
+                                    <li><a href="" class=""><b>•</b>英国康桥计划</a></li>
+                                    <li><a href="" class=""><b>•</b>大本钟计划</a></li>
+                                    <li><a href="" class=""><b>•</b>日不落计划</a></li>
                                 </ul>
                            </div> ';
                 }elseif($country=='HK'){
@@ -112,12 +109,7 @@
                            <span>香港留学申请服务</span>
                            <div class="recommend-list" style="width: 210px!important;">
                                 <ul>
-                                    <li><a href="" class=""><b>•</b>香港星程计划</a></li>
-                                    <li><a href="" class=""><b>•</b>香港星途计划</a></li>
-                                    <li><a href="" class=""><b>•</b>香港MBA精英计划</a></li>
-                                    <li><a href="" class=""><b>•</b>香港本科留学服务 </a></li>
-                                    <li><a href="" class=""><b>•</b>香港留学考试提分方案 </a></li>
-                                    <li><a href="" class=""><b>•</b>香港留学DIY论坛 </a></li>
+                                    <li><a href="" class=""><b>•</b>紫荆花计划</a></li>
                                 </ul>
                            </div> ';
                 }elseif($country=='AUS'){
@@ -125,12 +117,7 @@
                            <span>澳大利亚留学申请服务</span>
                            <div class="recommend-list" style="width: 210px!important;">
                                 <ul>
-                                    <li><a href="" class=""><b>•</b>香港星程计划</a></li>
-                                    <li><a href="" class=""><b>•</b>香港星途计划</a></li>
-                                    <li><a href="" class=""><b>•</b>香港MBA精英计划</a></li>
-                                    <li><a href="" class=""><b>•</b>香港本科留学服务 </a></li>
-                                    <li><a href="" class=""><b>•</b>香港留学考试提分方案 </a></li>
-                                    <li><a href="" class=""><b>•</b>香港留学DIY论坛 </a></li>
+                                    <li><a href="" class=""><b>•</b>澳世起航计划</a></li>
                                 </ul>
                            </div> ';
                 }elseif($country=='Canada'){
@@ -139,11 +126,6 @@
                            <div class="recommend-list" style="width: 210px!important;">
                                 <ul>
                                     <li><a href="" class=""><b>•</b>香港星程计划</a></li>
-                                    <li><a href="" class=""><b>•</b>香港星途计划</a></li>
-                                    <li><a href="" class=""><b>•</b>香港MBA精英计划</a></li>
-                                    <li><a href="" class=""><b>•</b>香港本科留学服务 </a></li>
-                                    <li><a href="" class=""><b>•</b>香港留学考试提分方案 </a></li>
-                                    <li><a href="" class=""><b>•</b>香港留学DIY论坛 </a></li>
                                 </ul>
                            </div> ';
                 }?>
