@@ -8,7 +8,7 @@ body{
 .enrollCover{
     width: 100%;
     padding: 70px 0;
-    background: url("/cn/images/school/school-test.png")no-repeat;
+    background: url("/cn/images/school/admit-bg.png")no-repeat;
     background-attachment:fixed;
     background-position:center;
 }
@@ -18,6 +18,9 @@ body{
     background: white;
     padding: 20px 0;
     overflow: hidden;
+}
+.enrollBd{
+    height: 21px;
 }
 .enrollBd ul li{
     /*width: 400px;*/
@@ -411,7 +414,8 @@ body{
 .in-b-bot{
     width:100%;
     height: 411px;
-    background: white;
+    background: url("/cn/images/school/choose-bg.png")no-repeat;
+    background-size: cover;
     padding-top: 10px;
 }
 .in-b-bot p.blue{

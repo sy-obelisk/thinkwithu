@@ -144,7 +144,7 @@
 </div>
 <div class="seach_input">
     <div class="seachInputContent">
-        <a href="/"><img class="logo-new" src="/cn/Hirsi/images/sy-logo3.png" alt=""></a>
+        <a href="/"><img class="logo-new" src="/cn/Hirsi/images/sy-logo3.png" alt="" style="width: 172px;"></a>
         <div class="search_div">
             <i class="iconfont seach_index">&#xe6bc;</i>
             <input type="search" placeholder="关键词" class="input_seach search search1" onkeyup="enterKey(event,this)">

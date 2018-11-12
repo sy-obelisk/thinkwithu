@@ -60,7 +60,7 @@
 <?php LeftSuspensionWidget::end(); ?>
 
 
-<div class="header" style="margin-top: -10px">
+<div class="header">
   <div class="h-wrap relative">
     <div class="h-cnt">
       <img src="/cn/ielts/images/h3.png" style="width: 912px;" alt="图片">
