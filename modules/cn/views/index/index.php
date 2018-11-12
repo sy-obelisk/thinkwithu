@@ -379,7 +379,7 @@
                                                        &#xe614;</i>热门案例</a></span>
                                        </div>
                                        <div class="ency_mask"><!--鼠标移入的遮罩层-->
-                                           <div class="ency_test"><a href="#">录取几率测评</a></div>
+                                           <div class="ency_test"><a href="/percentages-test.html">录取几率测评</a></div>
                                            <div class="ency_look"><a
                                                    href=" /schools/<?php echo $v['id'] ?>.html">查看学校</a></div>
                                        </div>
@@ -412,10 +412,10 @@
                                            <span><a
                                                    href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="><i
                                                        class="iconfont people">&#xe74e;</i>推荐导师</a></span>
-                                           <span><a href="/html"><i class="iconfont fire">&#xe614;</i>热门案例</a></span>
+                                           <span><a href="/case.html"><i class="iconfont fire">&#xe614;</i>热门案例</a></span>
                                        </div>
                                        <div class="ency_mask"><!--鼠标移入的遮罩层-->
-                                           <div class="ency_test"><a href="">录取几率测评</a></div>
+                                           <div class="ency_test"><a href="/percentages-test.html">录取几率测评</a></div>
                                            <div class="ency_look"><a
                                                    href=" /schools/<?php echo $v['id'] ?>.html">查看学校</a></div>
                                        </div>
@@ -452,7 +452,7 @@
                                                        &#xe614;</i>热门案例</a></span>
                                        </div>
                                        <div class="ency_mask"><!--鼠标移入的遮罩层-->
-                                           <div class="ency_test"><a href="#">录取几率测评</a></div>
+                                           <div class="ency_test"><a href="/percentages-test.html">录取几率测评</a></div>
                                            <div class="ency_look"><a
                                                    href="/schools/<?php echo $v['id'] ?>.html">查看学校</a></div>
                                        </div>
@@ -489,7 +489,7 @@
                                                        &#xe614;</i>热门案例</a></span>
                                        </div>
                                        <div class="ency_mask"><!--鼠标移入的遮罩层-->
-                                           <div class="ency_test"><a href="#">录取几率测评</a></div>
+                                           <div class="ency_test"><a href="/percentages-test.html">录取几率测评</a></div>
                                            <div class="ency_look"><a
                                                    href="/schools/<?php echo $v['id'] ?>.html">查看学校</a></div>
                                        </div>
@@ -527,7 +527,7 @@
                                                        &#xe614;</i>热门案例</a></span>
                                        </div>
                                        <div class="ency_mask"><!--鼠标移入的遮罩层-->
-                                           <div class="ency_test"><a href="#">录取几率测评</a></div>
+                                           <div class="ency_test"><a href="/percentages-test.html">录取几率测评</a></div>
                                            <div class="ency_look"><a
                                                    href=" /schools/<?php echo $v['id'] ?>.html">查看学校</a></div>
                                        </div>
@@ -566,7 +566,7 @@
                                                        &#xe614;</i>热门案例</a></span>
                                        </div>
                                        <div class="ency_mask"><!--鼠标移入的遮罩层-->
-                                           <div class="ency_test"><a href="#">录取几率测评</a></div>
+                                           <div class="ency_test"><a href="/percentages-test.html">录取几率测评</a></div>
                                            <div class="ency_look"><a
                                                    href="/schools/<?php echo $v['id'] ?>.html">查看学校</a></div>
                                        </div>
@@ -605,7 +605,7 @@
                                                        &#xe614;</i>热门案例</a></span>
                                        </div>
                                        <div class="ency_mask"><!--鼠标移入的遮罩层-->
-                                           <div class="ency_test"><a href="#">录取几率测评</a></div>
+                                           <div class="ency_test"><a href="/percentages-test.html">录取几率测评</a></div>
                                            <div class="ency_look"><a
                                                    href=" /schools/<?php echo $v['id'] ?>.html">查看学校</a></div>
                                        </div>
@@ -644,7 +644,7 @@
                                                        &#xe614;</i>热门案例</a></span>
                                        </div>
                                        <div class="ency_mask"><!--鼠标移入的遮罩层-->
-                                           <div class="ency_test"><a href="#">录取几率测评</a></div>
+                                           <div class="ency_test"><a href="/percentages-test.html">录取几率测评</a></div>
                                            <div class="ency_look"><a
                                                    href="/schools/<?php echo $v['id'] ?>.html">查看学校</a></div>
                                        </div>

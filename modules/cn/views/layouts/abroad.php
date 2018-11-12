@@ -86,8 +86,8 @@
                            <span>美国留学申请服务</span>
                            <div class="recommend-list">
                                 <ul>
-                                    <li><a href="" class=""><b>•</b>美国星程计划</a></li>
-                                    <li><a href="" class=""><b>•</b>美国星途计划</a></li>
+                                    <li><a href="/word-details/2401/index,178.html" class=""><b>•</b>美国星程计划</a></li>
+                                    <li><a href="/word-details/2408/index,178.html" class=""><b>•</b>美国星途计划</a></li>
                                     <li><a href="" class=""><b>•</b>MBA精英计划</a></li>
                                     <li><a href="" class=""><b>•</b>美国本科留学服务 </a></li>
                                     <li><a href="" class=""><b>•</b>留学考试提分方案 </a></li>
@@ -99,8 +99,8 @@
                            <span>英国留学申请服务</span>
                            <div class="recommend-list">
                                 <ul>
-                                    <li><a href="" class=""><b>•</b>英国康桥计划</a></li>
-                                    <li><a href="" class=""><b>•</b>大本钟计划</a></li>
+                                    <li><a href="/word-details/2409/index,178.html" class=""><b>•</b>英国康桥计划</a></li>
+                                    <li><a href="/word-details/2410/index,178.html" class=""><b>•</b>大本钟计划</a></li>
                                     <li><a href="" class=""><b>•</b>日不落计划</a></li>
                                 </ul>
                            </div> ';
@@ -148,9 +148,9 @@
                 <a class="nav1-link" href="/evaluation.html">选校工具 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
                 <div class="eaxm-list eaxm-list-1">
                     <ul>
-                        <li><a href="">背景测评</a></li>
-                        <li><a href="">选校测评</a></li>
-                        <li><a href="">录取测评</a></li>
+                        <li><a href="/background-test.html">背景测评</a></li>
+                        <li><a href="/choice-test.html">选校测评</a></li>
+                        <li><a href="/percentages-test.html">录取测评</a></li>
                     </ul>
                 </div>
             </li>
