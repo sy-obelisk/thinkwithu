@@ -226,7 +226,7 @@ class Method
         $num = SchoolTest::find()->where("schoolGrade>$school")->count();
         if($school <=2){
             $school = [
-                'name' => '所报院校',
+                'name' => '就读院校',
                 'score' => $res['attendSchool'],
                 'num' => $num+2330,
                 'type' => 1

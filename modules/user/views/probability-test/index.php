@@ -54,6 +54,7 @@
             <tr>
                 <th width="80">ID</th>
                 <th>用户名</th>
+                <th>电话</th>
                 <th>gpa/gmat/托福</th>
                 <th>目前学历</th>
                 <th>毕业院校</th>
@@ -72,17 +73,18 @@
                 <tr>
                     <td><?php echo $v['id']?></td>
                     <td><?php echo $v['userName']?></td>
+                    <td><?php echo $v['phone']?></td>
                     <td><?php echo $v['gpa']."/".$v['gmat']."/".$v['toefl']?></td>
                     <td><?php echo $v['education']?></td>
                     <td><?php echo $v['attendSchool']?></td>
                     <td><?php echo $v['nowMajor']?></td>
                     <td><?php echo \Yii::$app->params['school'][$v['schoolGrade']]?></td>
+                    <td><?php echo $v['school']."-".$v['major']?></td>
                     <td>
                         <?php foreach(explode(',',$v['interest']) as $val){
                             echo Yii::$app->params['service'][$val].',';
                         }?>
                     </td>
-                    <td><?php echo $v['school']."-".$v['major']?></td>
                     <td><?php echo $v['score']?></td>
                     <td><?php echo $v['percent']?></td>
                 </tr>

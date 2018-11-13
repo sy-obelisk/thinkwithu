@@ -38,7 +38,7 @@ class SchoolChoiceController extends ThinkUController
     }
 
     public function actionProbabilityResult(){
-        $id = Yii::$app->request->get('id',1);
+        $id = Yii::$app->request->get('id',5);
         $res = ProbabilityTest::find()->asArray()->where("id={$id}")->one();
         $h['gpa'] = $res['gpa'];
         $h['gmat'] = $res['gmat'];

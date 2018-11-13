@@ -1216,7 +1216,6 @@ class ApiController extends ThinkUApiControl {
      */
     public function actionSchoolStorage()
     {
-
         $apps = Yii::$app->request;
         $result['result_gpa'] = strip_tags(round($apps->post('result_gpa'), 2));
         $result['result_gmat'] = strip_tags($apps->post('result_gmat'));
@@ -1231,6 +1230,8 @@ class ApiController extends ThinkUApiControl {
         $result['year'] = $apps->post('year'); /*工作年限*/
         $workDetail = $apps->post('live');  /*工作经验详情*/
         $result['item_suffer'] = $apps->post('project');  /*项目经验*/
+        $interest = Yii::$app->request->post('interest', '');        //感兴趣的服务
+        $phone = Yii::$app->request->post('phone', '');        //感兴趣的服务
         foreach ($result['item_suffer'] as $key => $v) {
             if (!$v) {
                 unset($result['item_suffer'][$key]);
@@ -1289,6 +1290,7 @@ class ApiController extends ThinkUApiControl {
         $model->studyTour = serialize($result['you_xue']); /*海外游学*/
         $model->active = serialize($result['gong_yi']); /*海外公益*/
         $model->winning = serialize($result['huo_j']); /*获奖*/
+        $model->interest = implode(',', $interest); /*获奖*/
         $model->country = $result['state'];  /*申请国家*/
         $model->applyMajor = $result['major'];/*申请专业id*/
         $model->majorName = $majorName; /*专业名*/
@@ -1296,9 +1298,11 @@ class ApiController extends ThinkUApiControl {
         $model->source = '申友pc';
         $model->result = serialize($result);
         $model->createTime = time();
+        $model->phone = $phone;
         $model->most = $most;
         $model->save();
-        die(json_encode(['code' => 1, 'data' => $school]));
+        $id= $model->primaryKey;
+        die(json_encode(['code' => 1, 'id' => $id]));
 
     }
 
@@ -1327,8 +1331,9 @@ class ApiController extends ThinkUApiControl {
         $study = strip_tags(Yii::$app->request->post('study', ''));        //游学
         $publicBenefit = strip_tags(Yii::$app->request->post('publicBenefit', ''));        //公益
         $awards = strip_tags(Yii::$app->request->post('awards', ''));        //得奖
-        $userName = strip_tags(Yii::$app->request->post('userName', ''));        //得奖
-        $interest = Yii::$app->request->post('interest', '');        //得奖
+        $userName = strip_tags(Yii::$app->request->post('userName', ''));        //用户名
+        $interest = Yii::$app->request->post('interest', '');        //感兴趣的服务
+        $phone = Yii::$app->request->post('phone', '');        //感兴趣的服务
         $workScore = 0;
         $model = new Content();
         if ($country == 1 || $country == 3) {
@@ -1450,7 +1455,7 @@ class ApiController extends ThinkUApiControl {
         $model->interest = implode(',', $interest);
         $model->createTime = time();
         $model->source = '申友pc';
-//        var_dump($model);die;
+        $model->phone = $phone;
         $model->save();
         $id= $model->primaryKey;
         die(json_encode(['code' => 1,'id'=>$id]));

@@ -54,6 +54,7 @@
             <tr>
                 <th width="80">ID</th>
                 <th>用户名</th>
+                <th>电话</th>
                 <th>gpa/gmat/托福</th>
                 <th>目前学历</th>
                 <th>毕业院校</th>
@@ -72,6 +73,7 @@
                 <tr>
                     <td><?php echo $v['id']?></td>
                     <td><?php echo $v['userName']?></td>
+                    <td><?php echo $v['phone']?></td>
                     <td><?php echo $v['gpa']."/".$v['gmat']."/".$v['toefl']?></td>
                     <td><?php echo $v['education']?></td>
                     <td><?php echo $v['attendSchool']?></td>
