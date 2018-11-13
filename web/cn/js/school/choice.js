@@ -323,7 +323,7 @@ function chooseSub(){
         },
         success: function (result) {
             if(result.code==1){
-                alert('提交成功');
+                window.location.href='/choice-result/'+ result.id +'.html'
             }
             else {
                 alert("提交失败！");
