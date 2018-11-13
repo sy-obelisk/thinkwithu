@@ -14,35 +14,29 @@
                <div>
                    <div class="Disadvantage">劣势</div>
                    <div class="contentList">
-                       <?php if ($res['schoolGrade'] > 3) { ?>
-                           <li><b>•</b><span>院校背景：<?php echo $res['attendSchool'] ?></span></li>
-                       <?php } ?>
-                       <?php if ($res['gpa'] < 3) { ?>
-                           <li><b>•</b><span>GPA：<?php echo $res['gpa'] ?></span></li>
-                       <?php } ?>
-                       <?php if (($res['gmat'] > 400 && $res['gmat'] < 650) || ($res['gmat'] < 400 && $res['gmat'] < 310)) { ?>
-                           <li><b>•</b><span>GMAT/GRE：<?php echo $res['gmat'] ?></span></li>
-                       <?php } ?>
-                       <?php if (($res['toefl'] < 95 && $res['toefl'] > 10) || ($res['toefl'] < 6 && $res['toefl'] < 10)) { ?>
-                           <li><b>•</b><span>TOEFL/IELTS：<?php echo $res['toefl'] ?></span></li>
-                       <?php } ?>
+                       <?php if ($score['defect'] != false) { ?>
+                           <?php foreach ($score as $k => $v) {
+                               if ($k != 'defect' && $k != 'advantage' && $v['type'] == 0) { ?>
+                                   <li><b>•</b><span><?php echo $v['name'] ?>：<?php echo $v['score'] ?>，打败了<?php echo $v['num'] ?>人</span></li>
+                               <?php }
+                           } ?>
+                       <?php } else {
+                           echo ' <li><span>无明显劣势</span></li>';
+                       } ?>
                    </div>
                </div>
                 <div>
                     <div class="advantage">优势</div>
                     <div class="contentList">
-                        <?php if ($res['schoolGrade'] <3) { ?>
-                            <li><b>•</b><span>院校背景：<?php echo $res['attendSchool'] ?></span></li>
-                        <?php } ?>
-                        <?php if ($res['gpa'] > 3.5) { ?>
-                            <li><b>•</b><span>GPA：<?php echo $res['gpa'] ?>，打败了<?php echo $score['gpa']['num']?>位评测者</span></li>
-                        <?php } ?>
-                        <?php if (($res['gmat'] > 400 && $res['gmat'] > 720) || ($res['gmat'] < 400 && $res['gmat'] > 325)) { ?>
-                            <li><b>•</b><span>GMAT/GRE：<?php echo $res['gmat'] ?>，打败了<?php echo $score['gpa']['num']?>位评测者</span></li>
-                        <?php } ?>
-                        <?php if (($res['toefl'] >110 && $res['toefl'] > 10) || ($res['toefl'] >7 && $res['toefl'] < 10)) { ?>
-                            <li><b>•</b><span>TOEFL/IELTS：<?php echo $res['toefl'] ?>，打败了<?php echo $score['toefl']['num']?>位评测者</span></li>
-                        <?php } ?>
+                        <?php if ($score['advantage'] != false) { ?>
+                            <?php foreach ($score as $k => $v) {
+                                if ($k != 'defect' && $k != 'advantage' && $v['type'] == 1) { ?>
+                                    <li><b>•</b><span><?php echo $v['name'] ?>：<?php echo $v['score'] ?>，打败了<?php echo $v['num'] ?>人</span></li>
+                                <?php }
+                            } ?>
+                        <?php } else {
+                            echo ' <li><b>•</b><span>你的整体成绩条件暂无明显申请优势，请继续刷分！</span></li>';
+                        } ?>
                     </div>
                 </div>
             </div>
@@ -96,11 +90,11 @@
                     <a href="tencent://message/?uin=3382135617&Site=www.cnclcy&Menu=yes" target="_blank" class="r_k">人工精准选校入口</a>
                     <div class="ds_yx_al">
                         <span class="d_s"></span>
-                        <span>推荐导师</span>
+                        <span><a href="/teachers.html" target="_blank">推荐导师</a></span>
                         <span class="a_l"></span>
-                        <span>热门案例</span>
+                        <span><a href="/case.html" target="_blank">热门案例</a></span>
                         <span class="y_x_x"></span>
-                        <span>查看院校</span>
+                        <span><a href="/schools/<?php echo $v['id']?>.html" target="_blank">查看院校</a></span>
                     </div>
                     <div class="r_bottom">
                         <span class="p_lr">评论:</span>
@@ -128,11 +122,11 @@
                     <a href="" target="_blank" class="r_k">人工精准选校入口</a>
                     <div class="ds_yx_al">
                         <span class="d_s"></span>
-                        <span>推荐导师</span>
+                        <span><a href="/teachers.html" target="_blank">推荐导师</a></span>
                         <span class="a_l"></span>
-                        <span>热门案例</span>
+                        <span><a href="/case.html" target="_blank">热门案例</a></span>
                         <span class="y_x_x"></span>
-                        <span>查看院校</span>
+                        <span><a href="/schools/<?php echo $v['id']?>.html" target="_blank">查看院校</a></span>
                     </div>
                     <div class="r_bottom">
                         <span class="p_lr">评论:</span>

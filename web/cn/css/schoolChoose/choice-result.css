@@ -124,10 +124,11 @@
 .content_right{
     position: relative;
     width:230px;
-    height: 170px;
+    min-height: 170px;
     float: right;
     margin-top: 5px;
     margin-right: 5px;
+    padding-bottom: 10px;
     background: rgb(243,243,243);
 }
 .s_j{

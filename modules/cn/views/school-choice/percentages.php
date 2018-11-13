@@ -90,7 +90,7 @@
                 <P class="perGradsH4" style="margin-top: 40px"><i class="iconfont perBg"></i>学校背景</P>
                 <div class="school">
                     <ul>
-                        <li>
+                        <li id="xueli">
                             <label class="before-name" style="margin-right: 10px"><b style="color: white">*</b><span>目&nbsp;&nbsp;前&nbsp;&nbsp; 学&nbsp;&nbsp; 历</span></label>
                             <input type="radio" name="education" id="boshi" value="博士" checked="">
                             <label for="boshi">博士</label>
@@ -144,30 +144,30 @@
                               &nbsp;&nbsp;&nbsp;&nbsp;
                               业</span></label>
                             <input type="text" id="major-input" onclick="showMajorC(this)">
-                            <input type="hidden" name="major" value="172">
+                            <input type="hidden" name="major" value="172" id="major_z">
                         </li>
 
                         <li>
                             <label class="before-name"><b>*</b><span>感兴趣的留学服务</span></label>
                             <ul id="xinqu">
                                 <li>
-                                    <input type="checkbox" name="interest[]" id="diy" value="半DIY">
+                                    <input type="checkbox" name="interest[]" id="diy" value="1">
                                     <label for="diy">半DIY</label>
                                 </li>
                                 <li>
-                                    <input type="checkbox" name="interest[]" id="jinxiu" value="文书写作与精修">
+                                    <input type="checkbox" name="interest[]" id="jinxiu" value="2">
                                     <label for="jinxiu">文书写作与精修</label>
                                 </li>
                                 <li>
-                                    <input type="checkbox" name="interest[]" id="xuejie" value="学长学姐选校指导">
+                                    <input type="checkbox" name="interest[]" id="xuejie" value="3">
                                     <label for="xuejie">学长学姐选校指导</label>
                                 </li>
                                 <li>
-                                    <input type="checkbox" name="interest[]" id="quantao" value="全套留学服务">
+                                    <input type="checkbox" name="interest[]" id="quantao" value="4">
                                     <label for="quantao">全套留学服务</label>
                                 </li>
                                 <li>
-                                    <input type="checkbox" name="interest[]" id="zhongjie" value="已找中介">
+                                    <input type="checkbox" name="interest[]" id="zhongjie" value="5">
                                     <label for="zhongjie">已找中介</label>
                                 </li>
                             </ul>
@@ -659,7 +659,111 @@
     function subsInfo(){
         var num=$(".in-b-bot ul li input:checked").length;
         if(num){
-            $("#luquForm").submit();
+            //表单提交数据
+            var schoolName = $('#top-schoolName').val();//学校名称
+            var majorId = $('#majorId').val();//专业id
+            var majorName = $('#majorName').val();//专业名称
+            var gpa = $('#gpa').val();//gpa
+            var gmat = $('#gmat').val();//gmat
+            var toefl = $('#toefl').val();//toefl
+            var education = $("#xueli input:checked").val();//学历
+            var school = $(".school_value").val();//就读院校
+            var attendSchool = $("#schoolname").val();//具体学校名称
+            var major = $("#major_z").val();//专业
+            var obj_len= [];
+            var obj_1 = $("#xinqu li input:checked");
+            obj_1.each(function(){
+                obj_len.push($(this).val());//感兴趣的留学服务
+            });
+            var userName = $('#userName_1').val();//姓名
+            var phone = $('#phone_1').val();//电话
+            // var obj_tj= [];
+            // var obj_2 = $(".in-b-bot ul li input:checked");
+            // obj_2.each(function(){
+            //     obj_tj.push($(this).val());//具备的以下条件
+            // });
+            if($('#tiaojian1').is(':checked')){//500强、四大
+                var bigFour = $('#tiaojian1').val();
+            }else {
+                var bigFour = '';
+            }
+            if($('#tiaojian2').is(':checked')){//外企实习（工作）经验
+                var foreignCompany = $('#tiaojian2').val();
+            }else {
+                var foreignCompany = '';
+            }
+            if($('#tiaojian3').is(':checked')){//国企实习（工作）经验
+                var enterprises = $('#tiaojian3').val();
+            }else {
+                var enterprises = '';
+            }
+            if($('#tiaojian4').is(':checked')){//私企实习（工作）经验
+                var privateEnterprise = $('#tiaojian4').val();
+            }else {
+                var privateEnterprise = '';
+            }
+            if($('#tiaojian5').is(':checked')){//相关专业项目比赛经验
+                var project = $('#tiaojian5').val();
+            }else {
+                var project = '';
+            }
+            if($('#tiaojian6').is(':checked')){//海外游学经验
+                var study = $('#tiaojian6').val();
+            }else {
+                var study = '';
+            }
+            if($('#tiaojian7').is(':checked')){//公益活动
+                var publicBenefit = $('#tiaojian7').val();
+            }else {
+                var publicBenefit = '';
+            }
+            if($('#tiaojian8').is(':checked')){//获奖经历
+                var awards = $('#tiaojian8').val();
+            }else {
+                var awards = '';
+            }
+
+
+            $.ajax({
+                type: "POST",
+                dataType: "json",
+                url: "/cn/api/probability-storage" ,
+                data:{
+                    schoolName:schoolName,
+                    majorName:majorName,
+                    gpa:gpa,
+                    gmat:gmat,
+                    toefl:toefl,
+                    education:education,
+                    school:school,
+                    major:major,
+                    attendSchool:attendSchool,
+                    interest:obj_len,
+                    userName:userName,
+                    phone:phone,
+                    bigFour:bigFour,
+                    foreignCompany:foreignCompany,
+                    enterprises:enterprises,
+                    privateEnterprise:privateEnterprise,
+                    project:project,
+                    study:study,
+                    publicBenefit:publicBenefit,
+                    awards:awards
+                },
+                success: function (result) {
+                    if(result.code==1){
+                       console.log('提交成功')
+                    }
+                    else {
+                        alert("提交失败！");
+                    }
+                },
+                error : function() {
+                    alert("提交失败！");
+                }
+            });
+
+            // $("#luquForm").submit();
         }else {
             alert("请勾选以下已参加过的内容！");
             return false;
