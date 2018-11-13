@@ -660,6 +660,8 @@
         var num=$(".in-b-bot ul li input:checked").length;
         if(num){
             //表单提交数据
+            var schoolRank = $('.schoolRank').val();//院校排名
+            var country = $('.s_country').val();//国家
             var schoolName = $('#top-schoolName').val();//学校名称
             var majorId = $('#majorId').val();//专业id
             var majorName = $('#majorName').val();//专业名称
@@ -729,6 +731,8 @@
                 dataType: "json",
                 url: "/cn/api/probability-storage" ,
                 data:{
+                    schoolRank:schoolRank,
+                    country:country,
                     schoolName:schoolName,
                     majorName:majorName,
                     gpa:gpa,
@@ -752,7 +756,7 @@
                 },
                 success: function (result) {
                     if(result.code==1){
-                       console.log('提交成功')
+                       console.log('提交成功');
                     }
                     else {
                         alert("提交失败！");
