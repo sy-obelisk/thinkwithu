@@ -240,6 +240,25 @@ function chooseSub(){
     var schoolName = $('#schoolName').val();//学校具体名称
     var major01 = $('#major-input').val();//专业
 
+    $.ajax({
+        type: "POST",
+        dataType: "json",
+        url: "/cn/api/school-storage" ,
+        data:{
+
+        },
+        success: function (result) {
+            if(result.code==1){
+                console.log('提交成功');
+            }
+            else {
+                alert("提交失败！");
+            }
+        },
+        error : function() {
+            alert("提交失败！");
+        }
+    });
 
 
     // $("#chooseSchool").submit();
