@@ -56,7 +56,6 @@
                 <p class="c_t_f">所开设<?php echo $res['majorName'] ?>专业院校的申请要求</p>
                 <div class="bshare-custom icon-medium" style="width: 90px;height: 25px;background: rgb(166,94,162);float: left;margin-left: 20px"><div class="bsPromo bsPromo2"></div>
                     <a title="分享到新浪微博" class="bshare-sinaminiblog" style="background: url('/cn/images/school/weibo.png') 4px no-repeat;background-size: contain"> <span style="color: white;margin-top: 3px;margin-left: 4px;display: inline-block">炫耀一下</span></a>
-
                 </div>
                 <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script>
                 <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>

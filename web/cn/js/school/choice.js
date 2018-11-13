@@ -231,5 +231,16 @@ function chooseSub(){
         alert("请注意必填项！");
         return false;
     }
-    $("#chooseSchool").submit();
+    //获取对应值
+    var gpa = $('#gpa').val();//gpa
+    var gmat = $('#gmat').val();//gmat/gre
+    var toefl = $('#toefl').val();//toefl/ielts
+    var education = $("#xueli input:checked").val();//学历
+    var school = $('#biye').val();//就读毕业院校
+    var schoolName = $('#schoolName').val();//学校具体名称
+    var major01 = $('#major-input').val();//专业
+
+
+
+    // $("#chooseSchool").submit();
 }

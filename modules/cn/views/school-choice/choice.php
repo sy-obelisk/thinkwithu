@@ -69,7 +69,7 @@
                 <ul>
                     <li>
                         <span><b style="color: white">*</b>目&nbsp;&nbsp;&nbsp;前&nbsp;&nbsp;学&nbsp;&nbsp;&nbsp;历</span>
-                        <ul>
+                        <ul id="xueli">
                             <li>
                                 <input type="radio" name="education" id="boshi" value="博士" checked>
                                 <label for="boshi">博士</label>
