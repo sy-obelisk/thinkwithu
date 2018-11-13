@@ -59,8 +59,10 @@
                 <th>毕业院校</th>
                 <th>目前专业</th>
                 <th>院校等级</th>
-                <th>申请专业</th>
                 <th>申请国家</th>
+                <th>申请专业</th>
+                <th>分数</th>
+<!--                <th>链接</th>-->
             </tr>
             </thead>
             <tbody>
@@ -75,8 +77,10 @@
                     <td><?php echo $v['attendSchool']?></td>
                     <td><?php echo $v['nowMajor']?></td>
                     <td><?php echo $v['schoolGrade']?></td>
-                    <td><?php echo $v['major'].'-'.$v['majorDirection']?></td>
                     <td><?php echo Yii::$app->params['country'][$v['country']]?></td>
+                    <td><?php echo $v['majorName']?></td>
+                    <td><?php echo $v['score']?></td>
+<!--                    <td><a href="/choice-result/--><?php //echo $v['id']?><!--.html" target="_blank">choice-result/--><?php //echo $v['id']?><!--.html</a></td>-->
                 </tr>
                 <?php
             }

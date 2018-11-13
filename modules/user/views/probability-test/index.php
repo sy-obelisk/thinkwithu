@@ -59,8 +59,10 @@
                 <th>毕业院校</th>
                 <th>目前专业</th>
                 <th>院校等级</th>
-                <th>申请专业</th>
+                <th>申请院校及专业</th>
+                <th>感兴趣的服务</th>
                 <th>分数</th>
+                <th>录取几率</th>
             </tr>
             </thead>
             <tbody>
@@ -75,8 +77,14 @@
                     <td><?php echo $v['attendSchool']?></td>
                     <td><?php echo $v['nowMajor']?></td>
                     <td><?php echo \Yii::$app->params['school'][$v['schoolGrade']]?></td>
-                    <td><?php echo $v['major']?></td>
+                    <td>
+                        <?php foreach(explode(',',$v['interest']) as $val){
+                            echo Yii::$app->params['service'][$val].',';
+                        }?>
+                    </td>
+                    <td><?php echo $v['school']."-".$v['major']?></td>
                     <td><?php echo $v['score']?></td>
+                    <td><?php echo $v['percent']?></td>
                 </tr>
                 <?php
             }

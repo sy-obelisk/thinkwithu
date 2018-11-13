@@ -1218,15 +1218,15 @@ class ApiController extends ThinkUApiControl {
     {
 
         $apps = Yii::$app->request;
-        $result['result_gpa'] = round($apps->post('result_gpa'), 2);
-        $result['result_gmat'] = $apps->post('result_gmat');
-        $result['result_toefl'] = round($apps->post('result_toefl'), 2);
-        $education = $apps->post('education');  /*目前学历*/
-        $result['school_rank'] = $apps->post('school');  /*获取就读学校等级*/
-        $attendSchool = $apps->post('schoolName');  /*目前学校*/
-        $nowMajor = $apps->post('nowMajor');  /*目前专业名*/
-        $result['major_top'] = $apps->post('major_top');  /*详细专业*/
-        $result['school_major'] = $apps->post('school_major');/*专业方向*/
+        $result['result_gpa'] = strip_tags(round($apps->post('result_gpa'), 2));
+        $result['result_gmat'] = strip_tags($apps->post('result_gmat'));
+        $result['result_toefl'] = strip_tags(round($apps->post('result_toefl'), 2));
+        $education = strip_tags($apps->post('education'));  /*目前学历*/
+        $result['school_rank'] = strip_tags($apps->post('school'));  /*获取就读学校等级*/
+        $attendSchool = strip_tags($apps->post('schoolName'));  /*目前学校*/
+        $nowMajor = strip_tags($apps->post('nowMajor'));  /*目前专业名*/
+        $result['major_top'] = strip_tags($apps->post('major_top'));  /*详细专业*/
+        $result['school_major'] = strip_tags($apps->post('school_major'));/*专业方向*/
         $result['result_work'] = $apps->post('work');  /*工作企业*/
         $result['year'] = $apps->post('year'); /*工作年限*/
         $workDetail = $apps->post('live');  /*工作经验详情*/
@@ -1254,9 +1254,9 @@ class ApiController extends ThinkUApiControl {
                 unset($result['huo_j'][$key]);
             }
         }
-        $result['state'] = $apps->post('destination');    /*申请国家*/
-        $result['major'] = $apps->post('major');   /*申请专业id*/
-        $majorName = $apps->post('major02');   /*专业名*/
+        $result['state'] = strip_tags($apps->post('destination'));    /*申请国家*/
+        $result['major'] = strip_tags($apps->post('major'));   /*申请专业id*/
+        $majorName = strip_tags($apps->post('major02'));   /*专业名*/
         $data = Method::post("http://schools.smartapply.cn/cn/api/school-choice", ['result' => $result]);
         $school = json_decode($data, true);
         $most = 6;
@@ -1310,26 +1310,25 @@ class ApiController extends ThinkUApiControl {
 
         $schoolRank = Yii::$app->request->post('schoolRank', 0);  //院校排名
         $country = Yii::$app->request->post('country', 0);    //国家
-
         $schoolName = Yii::$app->request->post('schoolName', '');  //申请院校名
         $majorName = Yii::$app->request->post('majorName', '');   //申请专业名
-        $gpa = round(Yii::$app->request->post('gpa', ''), 2);   // 3.64;
-        $gmat = Yii::$app->request->post('gmat', '');
-        $toefl = round(Yii::$app->request->post('toefl', ''), 2);
-        $education = Yii::$app->request->post('education', '');   //学历
-        $school = Yii::$app->request->post('school', '');        //学校等级
-        $major = Yii::$app->request->post('major', '');          //专业名
-        $attendSchool = Yii::$app->request->post('attendSchool', '');        //当前在读学校
-        $bigFour = Yii::$app->request->post('bigFour', '');        //四大
-        $foreignCompany = Yii::$app->request->post('foreignCompany', '');        //外企
-        $enterprises = Yii::$app->request->post('enterprises', '');        //国企
-        $privateEnterprise = Yii::$app->request->post('privateEnterprise', '');        //私企
-        $project = Yii::$app->request->post('project', '');        //项目
-        $study = Yii::$app->request->post('study', '');        //游学
-        $publicBenefit = Yii::$app->request->post('publicBenefit', '');        //公益
-        $awards = Yii::$app->request->post('awards', '');        //得奖
-        $userName = Yii::$app->request->post('userName', '');        //得奖
-
+        $gpa =strip_tags(round(Yii::$app->request->post('gpa', ''), 2));   // 3.64;
+        $gmat = strip_tags(Yii::$app->request->post('gmat', ''));
+        $toefl = strip_tags(round(Yii::$app->request->post('toefl', ''), 2));
+        $education = strip_tags(Yii::$app->request->post('education', ''));   //学历
+        $school = strip_tags(Yii::$app->request->post('school', ''));        //学校等级
+        $major = strip_tags(Yii::$app->request->post('major', ''));          //专业名
+        $attendSchool = strip_tags(Yii::$app->request->post('attendSchool', ''));        //当前在读学校
+        $bigFour = strip_tags(Yii::$app->request->post('bigFour', ''));        //四大
+        $foreignCompany = strip_tags(Yii::$app->request->post('foreignCompany', ''));        //外企
+        $enterprises = strip_tags(Yii::$app->request->post('enterprises', ''));        //国企
+        $privateEnterprise = strip_tags(Yii::$app->request->post('privateEnterprise', ''));        //私企
+        $project = strip_tags(Yii::$app->request->post('project', ''));        //项目
+        $study = strip_tags(Yii::$app->request->post('study', ''));        //游学
+        $publicBenefit = strip_tags(Yii::$app->request->post('publicBenefit', ''));        //公益
+        $awards = strip_tags(Yii::$app->request->post('awards', ''));        //得奖
+        $userName = strip_tags(Yii::$app->request->post('userName', ''));        //得奖
+        $interest = Yii::$app->request->post('interest', '');        //得奖
         $workScore = 0;
         $model = new Content();
         if ($country == 1 || $country == 3) {
@@ -1448,11 +1447,13 @@ class ApiController extends ThinkUApiControl {
         $model->schoolGrade = $school;
         $model->nowMajor = $major;
         $model->attendSchool = $attendSchool;
+        $model->interest = implode(',', $interest);
         $model->createTime = time();
         $model->source = '申友pc';
+//        var_dump($model);die;
         $model->save();
-
-        die(json_encode(['code' => 1]));
+        $id= $model->primaryKey;
+        die(json_encode(['code' => 1,'id'=>$id]));
     }
 
     /**
@@ -1462,18 +1463,18 @@ class ApiController extends ThinkUApiControl {
     public function actionBackgroundStorage()
     {
         $userBackground = new UserBackground();
-        $userBackground->planTime = Yii::$app->request->post('planTime', '');  //计划出国时间
-        $userBackground->country = Yii::$app->request->post('country', '');    //意向国家
-        $userBackground->major = Yii::$app->request->post('major', '');         //意向专业
-        $userBackground->gmat = Yii::$app->request->post('gmat', '');
-        $userBackground->toefl = Yii::$app->request->post('toefl', '');
-        $userBackground->ielts = Yii::$app->request->post('ielts', '');
-        $userBackground->experience = Yii::$app->request->post('experience', '');  //实习经历
+        $userBackground->planTime = strip_tags(Yii::$app->request->post('planTime', ''));  //计划出国时间
+        $userBackground->country = strip_tags(Yii::$app->request->post('country', ''));    //意向国家
+        $userBackground->major = strip_tags(Yii::$app->request->post('major', ''));         //意向专业
+        $userBackground->gmat = strip_tags(Yii::$app->request->post('gmat', ''));
+        $userBackground->toefl = strip_tags(Yii::$app->request->post('toefl', ''));
+        $userBackground->ielts = strip_tags(Yii::$app->request->post('ielts', ''));
+        $userBackground->experience = strip_tags(Yii::$app->request->post('experience', ''));  //实习经历
         $userBackground->emphases = Yii::$app->request->post('emphases', '');      //关心得问题
-        $userBackground->supplement = Yii::$app->request->post('supplement', '');  //补充的问题
-        $userBackground->userName = Yii::$app->request->post('uName', '');      //姓名
-        $userBackground->phone = Yii::$app->request->post('phone', '');      //电话
-        $userBackground->weChat = Yii::$app->request->post('weChat', '');      //微信
+        $userBackground->supplement = strip_tags(Yii::$app->request->post('supplement', ''));  //补充的问题
+        $userBackground->userName = strip_tags(Yii::$app->request->post('uName', ''));      //姓名
+        $userBackground->phone = strip_tags(Yii::$app->request->post('phone', ''));      //电话
+        $userBackground->weChat = strip_tags(Yii::$app->request->post('weChat', ''));      //微信
         $userBackground->interest = Yii::$app->request->post('interest', '');      //感兴趣的留学服务
         $userBackground->createTime = time();      //感兴趣的留学服务
         if (preg_match("/1[34578]{1}\d{9}$/", $userBackground->phone)) {
