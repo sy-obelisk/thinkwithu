@@ -12,14 +12,14 @@ use app\libs\ThinkUController;
 
 class ClassController extends ThinkUController {
     public $enableCsrfValidation = false;
-
+    public $layout = 'cn';
     /**
      * 公开课列表页
      * @return string
      * @Obelisk
      */
     public function actionIndex(){
-        return $this->renderPartial('index');
+        return $this->render('index');
     }
 
     /**
@@ -31,7 +31,7 @@ class ClassController extends ThinkUController {
         $data = Content::getContent(['fields' => "url,synopsis,time,score,place,description,speaker,keywords",'where' => "c.id = $id"]);
         $count = $data[0]['viewCount'];
         Content::updateAll(['viewCount' => ($count+1)],"id=$id");
-        return $this->renderPartial('details',['data' => $data,'id' => $id]);
+        return $this->render('details',['data' => $data,'id' => $id]);
     }
 
     /**

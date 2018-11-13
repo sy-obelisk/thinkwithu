@@ -19,30 +19,6 @@
     <script type="text/javascript" src="/cn/js/jquery.SuperSlide.2.1.1.js"></script>
 </head>
 <body><!--公开课的页面都是有左右两边的组件的，我就不加了哈-->
-	<!--头部搜索栏-->
-<header class="sy-header">
-    <div class="w10 clearfix">
-        <img src="/cn/Hirsi/images/sy-text.png" style="margin-right: 55px" alt="高分成就梦想名校改变人生">
-        <img src="/cn/Hirsi/images/sy-tel.png" alt="400-600-1123">
-        <a class="refer-btn"
-           href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="
-           target="_blank">在线咨询</a>
-        <!--登录&注册-->
-        <div class="login-wrap fr" style="display: none;">
-            <span class="on">登录</span>
-            <span>注册</span>
-        </div>
-        <!--搜索-->
-        <div class="search-wrap fr">
-            <input class="search search1" type="search" onkeyup="enterKey(event,this)" placeholder="请输入关键词">
-            <img src="/cn/Hirsi/images/search-icon.png" style="margin-left: -1px;cursor: pointer;" onclick="keySearch()" alt="搜索">
-        </div>
-    </div>
-</header>
-<!--公开课头部-->
-<?php use app\commands\front\ClassHeadWidget;?>
-<?php ClassHeadWidget::begin(); ?>
-<?php ClassHeadWidget::end(); ?>
 <!--轮播-->
 <div class="classBanner">
     <div class="classB-hd hd">
@@ -268,18 +244,18 @@
 </div>
 <!--联系申友-->
 <div style="background: white;width: 100%;padding: 10px 0 5px 0">
-    <?php use app\commands\front\ContactWidget; ?>
-    <?php ContactWidget::begin(); ?>
-    <?php ContactWidget::end(); ?>
+<!--    --><?php //use app\commands\front\ContactWidget; ?>
+<!--    --><?php //ContactWidget::begin(); ?>
+<!--    --><?php //ContactWidget::end(); ?>
     <script type="text/javascript">
         jQuery(".connection").slide({mainCell: ".connectBd", trigger: "mouseover"});
     </script>
 </div>
 
 <!-------------------------------------------公开课页面的尾部-------------------------------------->
-<?php use app\commands\front\ClassFootWidget; ?>
-<?php ClassFootWidget::begin(); ?>
-<?php ClassFootWidget::end(); ?>
+<?php //use app\commands\front\ClassFootWidget; ?>
+<?php //ClassFootWidget::begin(); ?>
+<?php //ClassFootWidget::end(); ?>
 <!--右边固定部分-->
 <?php use app\commands\front\RightSuspensionWidget; ?>
 <?php RightSuspensionWidget::begin(); ?>

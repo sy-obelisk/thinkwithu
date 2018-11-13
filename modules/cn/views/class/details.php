@@ -15,9 +15,9 @@
 </head>
 <body>
 <!--公开课头部-->
-<?php use app\commands\front\ClassHeadWidget;?>
-<?php ClassHeadWidget::begin();?>
-<?php ClassHeadWidget::end();?>
+<?php //use app\commands\front\ClassHeadWidget;?>
+<?php //ClassHeadWidget::begin();?>
+<?php //ClassHeadWidget::end();?>
 
 <div class="open-detailsTitle">
     <ul>
@@ -299,17 +299,17 @@
 </div>
 
 <!--联系申友-->
-<?php use app\commands\front\ContactWidget;?>
-<?php ContactWidget::begin();?>
-<?php ContactWidget::end();?>
+<?php //use app\commands\front\ContactWidget;?>
+<?php //ContactWidget::begin();?>
+<?php //ContactWidget::end();?>
 <script type="text/javascript">
     jQuery(".connection").slide({mainCell:".connectBd",trigger:"mouseover"});
 </script>
 
 <!-------------------------------------------公开课页面的尾部-------------------------------------->
-<?php use app\commands\front\ClassFootWidget;?>
-<?php ClassFootWidget::begin();?>
-<?php ClassFootWidget::end();?>
+<?php //use app\commands\front\ClassFootWidget;?>
+<?php //ClassFootWidget::begin();?>
+<?php //ClassFootWidget::end();?>
 <!--右边固定部分-->
 <?php use app\commands\front\RightSuspensionWidget;?>
 <?php RightSuspensionWidget::begin();?>

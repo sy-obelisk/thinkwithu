@@ -76,7 +76,7 @@
                     <td><?php echo $v['nowMajor']?></td>
                     <td><?php echo $v['schoolGrade']?></td>
                     <td><?php echo $v['major'].'-'.$v['majorDirection']?></td>
-                    <td><?php echo $v['country']?></td>
+                    <td><?php echo Yii::$app->params['country'][$v['country']]?></td>
                 </tr>
                 <?php
             }

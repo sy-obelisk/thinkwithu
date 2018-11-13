@@ -38,29 +38,32 @@ class SchoolChoiceController extends ThinkUController
     }
 
     public function actionProbabilityResult(){
-//        $id = Yii::$app->request->post('id');
-//        $res = ProbabilityTest::find()->asArray()->where("id={$id}")->one();
-//        $h['gpa'] = $res['gpa'];
-//        $h['gmat'] = $res['gmat'];
-//        $h['toefl'] = $res['toefl'];
-//        $h['schoolGrade'] = $res['schoolGrade'];
-//        $h['attendSchool'] = $res['attendSchool'];
-//        $h['most'] = 6;
-//        $score = Method::score($h);
-//        if ($res['schoolGrade'] == 1) {
-//            $schoolGrade = "清北复交浙大";
-//        } elseif ($res['schoolGrade'] == 2) {
-//            $schoolGrade = "985学校";
-//        } elseif ($res['schoolGrade'] == 3) {
-//            $schoolGrade = "211学校";
-//        } elseif ($res['schoolGrade'] == 4) {
-//            $schoolGrade = "非211本科";
-//        } else {
-//            $schoolGrade = "专科";
-//        }
-//        $data = ['res' => $score, 'score' => $res['score'], 'percent' => $res['percent'], 'school' => $res['school'], 'major' => $res['major'], 'schoolGrade' => $schoolGrade];
-//        return $this->render('probabilityResult',['code' => 1, 'data' => $data]);
-        return $this->render('probabilityResult');
+        $id = Yii::$app->request->post('id');
+        $id = 3;
+        $res = ProbabilityTest::find()->asArray()->where("id={$id}")->one();
+        $h['gpa'] = $res['gpa'];
+        $h['gmat'] = $res['gmat'];
+        $h['toefl'] = $res['toefl'];
+        $h['schoolGrade'] = $res['schoolGrade'];
+        $h['attendSchool'] = $res['attendSchool'];
+        $h['most'] = 6;
+        $score = Method::score($h);
+        if ($res['schoolGrade'] == 1) {
+            $schoolGrade = "清北复交浙大";
+        } elseif ($res['schoolGrade'] == 2) {
+            $schoolGrade = "985学校";
+        } elseif ($res['schoolGrade'] == 3) {
+            $schoolGrade = "211学校";
+        } elseif ($res['schoolGrade'] == 4) {
+            $schoolGrade = "非211本科";
+        } else {
+            $schoolGrade = "专科";
+        }
+//        var_dump($score);die;
+        $data = ['res' => $score, 'score' => $res['score'], 'percent' => $res['percent'], 'school' => $res['school'], 'major' => $res['major'], 'schoolGrade' => $schoolGrade,'userName'=>$res['userName'],'data'=>$res];
+//        var_dump($data['res']);die;
+
+        return $this->render('probabilityResult',['code' => 1, 'data' => $data]);
     }
 
     /**
@@ -69,25 +72,27 @@ class SchoolChoiceController extends ThinkUController
      */
     public function actionSchoolResult()
     {
-//        $id = Yii::$app->request->post('id');
-//        $res = SchoolTest::find()->asArray()->where("id={$id}")->one();
-//        $result = unserialize($res['result']);
-//        $data = Method::post("http://schools.smartapply.cn/cn/api/school-choice", ['result' => $result]);
-//        $school = json_decode($data, true);
-//        if ($res['schoolGrade'] == 1) {
-//            $schoolGrade = "清北复交浙大";
-//        } elseif ($res['schoolGrade'] == 2) {
-//            $schoolGrade = "985学校";
-//        } elseif ($res['schoolGrade'] == 3) {
-//            $schoolGrade = "211学校";
-//        } elseif ($res['schoolGrade'] == 4) {
-//            $schoolGrade = "非211本科";
-//        } else {
-//            $schoolGrade = "专科";
-//        }
-//        $score = Method::score($res);
-//        return $this->render('schoolResult',['code' => 1, 'data' => $school, 'score' => $score, 'schoolGrade' => $schoolGrade, 'applyMajor' => $res['majorName'], 'testId' => $res['id']]);
-        return $this->render('schoolResult');
+        $id = Yii::$app->request->post('id');
+        $id = 2;
+        $res = SchoolTest::find()->asArray()->where("id={$id}")->one();
+        $result = unserialize($res['result']);
+        $data = Method::post("http://schools.smartapply.cn/cn/api/school-choice", ['result' => $result]);
+        $school = json_decode($data, true);
+        if ($res['schoolGrade'] == 1) {
+            $schoolGrade = "清北复交浙大";
+        } elseif ($res['schoolGrade'] == 2) {
+            $schoolGrade = "985学校";
+        } elseif ($res['schoolGrade'] == 3) {
+            $schoolGrade = "211学校";
+        } elseif ($res['schoolGrade'] == 4) {
+            $schoolGrade = "非211本科";
+        } else {
+            $schoolGrade = "专科";
+        }
+        $score = Method::score($res);
+//        unset($school['res']);
+//        echo '<pre>';var_dump($school);die;
+        return $this->render('schoolResult',['code' => 1, 'res' => $res, 'data' => $school, 'score' => $score, 'schoolGrade' => $schoolGrade, 'applyMajor' => $res['majorName'], 'testId' => $res['id']]);
     }
 
 
