@@ -185,7 +185,9 @@ function prevStep3(){
 function nextStep4(){
     var check=$(".step-4 ul li input:checked").length;
     var major=$("#step4-major").val();
-    if(!check || !major){
+    var uName=$("#userName_1").val();
+    var uPhone=$("#phone_1").val();
+    if(!check || !major|| !uName|| !uPhone){
         alert("必填项内容不能为空！");
         return false;
     }
@@ -223,12 +225,11 @@ function chooseSub(){
     var num=$("#mudidi input:checked").length;
     var zhuanye=$("#step4-major").val();
     var len=$("#xinqu li input:checked").length;
-    if(!num || !zhuanye){ /*|| len<=0*/
+    var uName=$("#userName_1").val();
+    var uPhone=$("#phone_1").val();
+    if(!num || !zhuanye|| !uName|| !uPhone){ /*|| len<=0*/
         alert("请注意必填项！");
         return false;
     }
-    var x=$("#chooseSchool").serializeArray();
-    var x_1 = JSON.stringify(x);
-    console.log(x_1);
-    // $("#chooseSchool").submit();
+    $("#chooseSchool").submit();
 }

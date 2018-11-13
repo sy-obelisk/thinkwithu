@@ -292,6 +292,14 @@
                             </li>
                         </ul>
                     </li>
+                    <li>
+                        <label for="userName_1"><b>*</b><span>您的姓名</span></label>
+                        <input type="text" id="userName_1" name="userName" value="" class="new_input">
+                    </li>
+                    <li>
+                        <label for="phone_1"><b>*</b><span>您的手机号</span></label>
+                        <input type="text" id="phone_1" name="phone" value="" class="new_input">
+                    </li>
                 </ul>
                 <div class="warn-info">
                     <div class="warn-left">

@@ -172,6 +172,16 @@
                                 </li>
                             </ul>
                         </li>
+
+                        <li>
+                            <label for="userName_1"><b>*</b><span>您的姓名</span></label>
+                            <input type="text" id="userName_1" name="userName" value="" class="new_input">
+                        </li>
+
+                        <li>
+                            <label for="phone_1"><b>*</b><span>您的手机号</span></label>
+                            <input type="text" id="phone_1" name="phone" value="" class="new_input">
+                        </li>
                     </ul>
                 </div>
                 <!--下一步-->
@@ -556,6 +566,8 @@
         var toefl=$("#toefl").val();
         var topSname=$("#top-schoolName").val();
         var topMname=$("#top-majorName").html();
+        var uName=$("#userName_1").val();
+        var uPhone=$("#phone_1").val();
         if(!topSname){
             alert("院校搜索为必选项！");
             return false;
@@ -631,6 +643,14 @@
         }
         if($("#xinqu li input:checked").length<=0){
             alert("感兴趣的留学服务为必选项！");
+            return false;
+        }
+        if(!uName){
+            alert("姓名为必填项！");
+            return false;
+        }
+        if(!uPhone){
+            alert("电话为必填项！");
             return false;
         }
         $(".back-mask").show();
