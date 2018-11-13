@@ -94,6 +94,7 @@
     $('.svgs').append(oSvg);
 
     //调用
-    drawPath(0.7);
+    var per = <?php echo $data['percent']?>;
+    drawPath((per/100));
 
 </script>

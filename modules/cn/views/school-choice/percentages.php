@@ -756,7 +756,7 @@
                 },
                 success: function (result) {
                     if(result.code==1){
-                       console.log('提交成功');
+                       window.location.href='/probability-result/'+ result.id +'.html'
                     }
                     else {
                         alert("提交失败！");

@@ -18,24 +18,24 @@ $(function(){
             '<li><input name="year[' + n + ']" type="radio"  value="5" id="year_'+n+'5"/><label for="year_'+n+'5">3-5年</label></li>' +
             '<li><input name="year[' + n + ']" type="radio"  value="6" id="year_'+n+'6"/><label for="year_'+n+'6">5年以上</label></li>' +
             '</ul>' +
-            '<textarea name="live[' + n + ']" placeholder="请如实填写跟申请方向相关的工作经验，若没有完整工作经验，请填写相关实习经验，每项描述不低于30字，请尽量填写大于30天的相关经历，若没有可不填；"></textarea>');
+            '<textarea name="live[' + n + ']" class="live" placeholder="请如实填写跟申请方向相关的工作经验，若没有完整工作经验，请填写相关实习经验，每项描述不低于30字，请尽量填写大于30天的相关经历，若没有可不填；"></textarea>');
         changeShowYear();
     });
 
     $("#add_2").click(function () {
-        $(this).before('<textarea name="project[]" placeholder="请如实填写跟申请方向相关的项目经验，如相关比赛经历、商业项目、实验项目、论文发表等。每项描述文字不低于30字。若没有可不填。">' +
+        $(this).before('<textarea name="project[]" class="project" placeholder="请如实填写跟申请方向相关的项目经验，如相关比赛经历、商业项目、实验项目、论文发表等。每项描述文字不低于30字。若没有可不填。">' +
             '</textarea>');
     });
     $("#add_3").click(function () {
-        $(this).before('<textarea name="studyTour[]" placeholder="请如实填写海外游学经历，如交换项目、海外实践课程等。若没有可不填。">' +
+        $(this).before('<textarea name="studyTour[]" class="studyTour" placeholder="请如实填写海外游学经历，如交换项目、海外实践课程等。若没有可不填。">' +
             '</textarea>');
     });
     $("#add_4").click(function () {
-        $(this).before('<textarea name="active[]" placeholder="请如实填写你所参与的公益项目，若没有可不填。">' +
+        $(this).before('<textarea name="active[]" class="active" placeholder="请如实填写你所参与的公益项目，若没有可不填。">' +
             '</textarea>');
     });
     $("#add_5").click(function () {
-        $(this).before('<textarea name="price[]" placeholder="请如实填写你所获奖经历，若没有可不填">' +
+        $(this).before('<textarea name="price[]" class="price" placeholder="请如实填写你所获奖经历，若没有可不填">' +
             '</textarea>');
     });
     //专业选择
@@ -238,18 +238,92 @@ function chooseSub(){
     var education = $("#xueli input:checked").val();//学历
     var school = $('#biye').val();//就读毕业院校
     var schoolName = $('#schoolName').val();//学校具体名称
-    var major01 = $('#major-input').val();//专业
+    var major01 = $('#major-input').val();//就读专业名称
+    var school_major = $('.fangPid_s').val();//就读专业id
+
+    var sortUl_obj = [];//企业数组
+    var sortUl = $('.sortUl');
+    sortUl.each(function(){
+        sortUl_obj.push($(this).find('input:checked').val());//
+    });
+
+    var yearTime_obj = [];//年份数组
+    var yearTime = $('.yearTime');
+    yearTime.each(function(){
+        yearTime_obj.push($(this).find('input:checked').val());//
+    });
+
+    var live_obj = [];//实习内容数组
+    var live = $('.live');
+    live.each(function(){
+        live_obj.push($(this).val());//
+    });
+
+    var destination = $("#mudidi input:checked").val();//留学目的地
+    var major = $(".fangPid_l").val();//留学专业id
+    var major02 = $("#step4-major").val();//留学专业名称
+    var obj_len= [];
+    var obj_1 = $("#xinqu li input:checked");
+    obj_1.each(function(){
+        obj_len.push($(this).val());//感兴趣的留学服务
+    });
+    var userName = $('#userName_1').val();//姓名
+    var phone = $('#phone_1').val();//电话
+
+    var obj_project =[];
+    var obj_p = $('.project');
+    obj_p.each(function(){
+        obj_project.push($(this).val());//项目经验
+    });
+
+    var obj_studyTour =[];
+    var obj_s = $('.studyTour');
+    obj_s.each(function(){
+        obj_studyTour.push($(this).val());//海外留学
+    });
+
+    var obj_active =[];
+    var obj_a = $('.active');
+    obj_a.each(function(){
+        obj_active.push($(this).val());//公益活动
+    });
+
+    var obj_price =[];
+    var obj_pr = $('.price');
+    obj_pr.each(function(){
+        obj_price.push($(this).val());//获奖经历
+    });
 
     $.ajax({
         type: "POST",
         dataType: "json",
         url: "/cn/api/school-storage" ,
         data:{
-
+            result_gpa:gpa,
+            result_gmat:gmat,
+            result_toefl:toefl,
+            education:education,
+            school:school,
+            schoolName:schoolName,
+            major01:major01,
+            school_major:school_major,
+            destination:destination,
+            major:major,
+            major02:major02,
+            interest:obj_len,
+            work:sortUl_obj,
+            year:yearTime_obj,
+            live:live_obj,
+            project:obj_project,
+            studyTour:obj_studyTour,
+            active:obj_active,
+            price:obj_price,
+            userName:userName,
+            phone:phone,
         },
         success: function (result) {
             if(result.code==1){
-                console.log('提交成功');
+                alert('提交成功');
             }
             else {
                 alert("提交失败！");

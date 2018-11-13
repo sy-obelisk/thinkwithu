@@ -38,8 +38,7 @@ class SchoolChoiceController extends ThinkUController
     }
 
     public function actionProbabilityResult(){
-        $id = Yii::$app->request->post('id');
-        $id = 4;
+        $id = Yii::$app->request->get('id',1);
         $res = ProbabilityTest::find()->asArray()->where("id={$id}")->one();
         $h['gpa'] = $res['gpa'];
         $h['gmat'] = $res['gmat'];
@@ -69,8 +68,7 @@ class SchoolChoiceController extends ThinkUController
      */
     public function actionSchoolResult()
     {
-        $id = Yii::$app->request->post('id');
-        $id = 2;
+        $id = Yii::$app->request->get('id',2);
         $res = SchoolTest::find()->asArray()->where("id={$id}")->one();
         $result = unserialize($res['result']);
         $data = Method::post("http://schools.smartapply.cn/cn/api/school-choice", ['result' => $result]);

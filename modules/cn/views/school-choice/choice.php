@@ -116,7 +116,7 @@
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;业</span>
                         <input type="text" class="com-input" id="major-input" onclick="showMajorC(this,2)" name="major01">
                         <input type="hidden" name="major_top" class="fangId">
-                        <input type="hidden" name="school_major" class="fangPid">
+                        <input type="hidden" name="school_major" class="fangPid fangPid_s">
                         <input type="hidden" name="nowMajor" class="fangName">
                     </li>
                 </ul>
@@ -177,7 +177,7 @@
                             <label for="fiveyear"> 5年以上</label>
                         </li>
                     </ul>
-                    <textarea name="live[0]" placeholder="请如实填写跟申请方向相关的工作经验，若没有完整工作经验，请填写相关实习经验,每项描述不低于30字，请尽量填写大于30天的相关经历，若没有可不填；"></textarea>
+                    <textarea name="live[0]" class="live" placeholder="请如实填写跟申请方向相关的工作经验，若没有完整工作经验，请填写相关实习经验,每项描述不低于30字，请尽量填写大于30天的相关经历，若没有可不填；"></textarea>
                     <div class="jixu-add" id="add_1">
                         <img src="/cn/images/school/choose-add.png" alt="添加图标">
                         <span>继续添加</span>
@@ -185,7 +185,7 @@
                 </div>
                 <div class="common-box">
                     <h4>项目经验</h4>
-                    <textarea name="project[]" placeholder="请如实填写跟申请方向相关的项目经验，如相关比赛经历、商业项目、实验项目、论文发表等。每项描述文字不低于30字。若没有可不填。"></textarea>
+                    <textarea name="project[]" class="project" placeholder="请如实填写跟申请方向相关的项目经验，如相关比赛经历、商业项目、实验项目、论文发表等。每项描述文字不低于30字。若没有可不填。"></textarea>
                     <div class="jixu-add" id="add_2">
                         <img src="/cn/images/school/choose-add.png" alt="添加图标">
                         <span>继续添加</span>
@@ -193,7 +193,7 @@
                 </div>
                 <div class="common-box">
                     <h4>海外留学</h4>
-                    <textarea name="studyTour[]" placeholder="请如实填写海外游学经历，如交换项目、海外实践课程等。若没有可不填。"></textarea>
+                    <textarea name="studyTour[]" class="studyTour" placeholder="请如实填写海外游学经历，如交换项目、海外实践课程等。若没有可不填。"></textarea>
                     <div class="jixu-add" id="add_3">
                         <img src="/cn/images/school/choose-add.png" alt="添加图标">
                         <span>继续添加</span>
@@ -201,7 +201,7 @@
                 </div>
                 <div class="common-box">
                     <h4>公益活动</h4>
-                    <textarea name="active[]" placeholder="请如实填写你所参与的公益项目，若没有可不填。"></textarea>
+                    <textarea name="active[]" class="active" placeholder="请如实填写你所参与的公益项目，若没有可不填。"></textarea>
                     <div class="jixu-add" id="add_4">
                         <img src="/cn/images/school/choose-add.png" alt="添加图标">
                         <span>继续添加</span>
@@ -209,7 +209,7 @@
                 </div>
                 <div class="common-box">
                     <h4>获奖经历</h4>
-                    <textarea name="price[]" placeholder="请如实填写你所获奖经历，若没有可不填。"></textarea>
+                    <textarea name="price[]" class="price" placeholder="请如实填写你所获奖经历，若没有可不填。"></textarea>
                     <div class="jixu-add" id="add_5">
                         <img src="/cn/images/school/choose-add.png" alt="添加图标">
                         <span>继续添加</span>
@@ -264,30 +264,30 @@
                         <span><b>*</b>专&nbsp;&nbsp;业</span>
                         <input type="text" class="com-input" id="step4-major" onclick="showMajorC(this,4)" name="major02">
                         <input type="hidden" name="id2" class="fangId">
-                        <input type="hidden" name="major" class="fangPid">
+                        <input type="hidden" name="major" class="fangPid fangPid_l">
                         <input type="hidden" name="major_left" class="fangName">
                     </li>
                     <li>
                         <span><b>*</b>感兴趣的留学服务</span>
                         <ul id="xinqu">
                             <li>
-                                <input type="checkbox" name="interest[]" id="diy" value="半DIY">
+                                <input type="checkbox" name="interest[]" id="diy" value="1">
                                 <label for="diy">半DIY</label>
                             </li>
                             <li>
-                                <input type="checkbox" name="interest[]" id="jinxiu" value="文书写作与精修">
+                                <input type="checkbox" name="interest[]" id="jinxiu" value="2">
                                 <label for="jinxiu">文书写作与精修</label>
                             </li>
                             <li>
-                                <input type="checkbox" name="interest[]" id="xuejie" value="学长学姐选校指导">
+                                <input type="checkbox" name="interest[]" id="xuejie" value="3">
                                 <label for="xuejie">学长学姐选校指导</label>
                             </li>
                             <li>
-                                <input type="checkbox" name="interest[]" id="quantao" value="全套留学服务">
+                                <input type="checkbox" name="interest[]" id="quantao" value="4">
                                 <label for="quantao">全套留学服务</label>
                             </li>
                             <li>
-                                <input type="checkbox" name="interest[]" id="zhongjie" value="已找中介">
+                                <input type="checkbox" name="interest[]" id="zhongjie" value="5">
                                 <label for="zhongjie">已找中介</label>
                             </li>
                         </ul>

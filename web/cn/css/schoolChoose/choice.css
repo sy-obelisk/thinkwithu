@@ -218,7 +218,7 @@ select#biye {
 }
 select#biye::-ms-expand { display: block;}
 .step-2, .step-3, .step-4 {
-    /*display: none;*/
+    display: none;
 }
 /*第三步*/
 .step-3{
