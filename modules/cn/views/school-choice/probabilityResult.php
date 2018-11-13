@@ -15,91 +15,32 @@
         <div class="backExceed"><!--背景条件分析-->
             <p class="backExceed_title">背景条件分析</p>
             <div class="content_left">
-                <?php if($data['data']['schoolGrade'] >3||$data['data']['gpa'] < 3||(($data['data']['gmat'] > 400 && $data['data']['gmat'] < 650) || ($data['data']['gmat'] < 400 && $data['data']['gmat'] < 325))||(($data['data']['toefl'] <95 && $data['data']['toefl'] > 10) || ($data['data']['toefl'] <6 && $data['data']['toefl'] < 10))){?>
-                    <div>
-                        <div class="Disadvantage">劣势</div>
-                        <div class="contentList">
-                            <?php if ($data['data']['schoolGrade'] > 3) { ?>
-                                <li><span>院校背景：<?php echo $data['data']['attendSchool'] ?></span></li>
-                            <?php } ?>
-                            <?php if ($data['data']['gpa'] < 3) { ?>
-                                <li><span>GPA：<?php echo $data['data']['gpa'] ?></span></li>
-                            <?php } ?>
-                            <?php if (($data['data']['gmat'] > 400 && $data['data']['gmat'] < 650) || ($data['data']['gmat'] < 400 && $data['data']['gmat'] < 325)) { ?>
-                                <li><span>GMAT/GRE：<?php echo $data['data']['gmat'] ?></span></li>
-                            <?php } ?>
-                            <?php if (($data['data']['toefl'] < 95 && $data['data']['toefl'] > 10) || ($data['data']['toefl'] < 6 && $data['data']['toefl'] < 10)) { ?>
-                                <li><span>TOEFL/IELTS：<?php echo $data['data']['toefl'] ?></span></li>
-                            <?php } ?>
-                        </div>
+                <div>
+                    <div class="Disadvantage">劣势</div>
+                    <div class="contentList">
+                        <?php if ($data['res']['defect'] != false) { ?>
+                            <?php foreach ($data['res'] as $k => $v) {
+                                if ($k != 'defect' && $k != 'advantage' && $v['type'] == 0) { ?>
+                                    <li><span><?php echo $v['name'] ?>：<?php echo $v['score'] ?>，打败了<?php echo $v['num'] ?>人</span></li>
+                                <?php }
+                            } ?>
+                        <?php } else {
+                            echo ' <li><span>无明显劣势</span></li>';
+                        } ?>
                     </div>
-                <?php }?>
+                </div>
                 <div>
                     <div class="advantage">优势</div>
                     <div class="contentList">
-<!--                        <li><span>雅思：加利福利亚,打败了136位测评者打败了136位测评者打败了136位测评者</span></li>-->
-<!--                        <li><span>个人经历：加利福利亚,打败了136位测评者打败了136位测评者打败了136位测评者</span></li>-->
-                        <?php if(isset($data['res']['advantage'])) {
-                        ?>
-                        <div class="no-youhsi">
-                            <ul>
-                                <?php
-                                foreach($data['res']['advantage'] as $k => $v) {
-                                    if($k>3){
-                                        break;
-                                    }
-                                    ?>
-                                    <li><?php echo $v?></li>
-
-                                    <?php
-                                }
-                                ?>
-                            </ul>
-                            <p>你的整体成绩条件暂无明显申请优势，请继续刷分！</p>
-                        </div>
-                        <?php
-                        }else {
-                        ?>
-
-                        <?php
-                        if (isset($data['res']['school'])&& $data['res']['school']['type']==1) {
-                            ?>
-                            <li>
-                                <span>院校背景：<?php echo$data['res']['school']['name'] ?>院校,打败了<b><?php echo $data['res']['school']['num'] ?></b>位测评者</span>
-                            </li>
-                            <?php
-                        }
-                        ?>
-                        <?php
-                        if (isset($data['res']['gpa']) && $data['res']['gpa']['type']==1) {
-                            ?>
-                            <li>
-                                <span>GPA：<?php echo $data['res']['gpa']['score'] ?>,打败了<b><?php echo $data['res']['gpa']['num'] ?></b>位测评者</span>
-                            </li>
-                            <?php
-                        }
-                        ?>
-                        <?php
-                        if (isset($data['res']['gmat'])&& $data['res']['gmat']['type']==1) {
-                            ?>
-                            <li>
-                                <span><?php echo $data['res']['gmat']['name'] ?>：<?php echo $data['res']['gmat']['score'] ?>,打败了<b><?php echo $data['res']['gmat']['num'] ?></b>位测评者</span>
-                            </li>
-                            <?php
-                        }
-                        ?>
-                        <?php
-                        if (isset($data['res']['toefl'])&& $data['res']['toefl']['type']==1) {
-                            ?>
-                            <li>
-                                <span><?php echo $data['res']['toefl']['name'] ?>：<?php echo $data['res']['toefl']['score'] ?>,打败了<b><?php echo $data['res']['toefl']['num'] ?></b>位测评者</span>
-                            </li>
-                            <?php
-                        }
-                        ?>
-                    <?php }?>
-
-
+                        <?php if ($data['res']['advantage'] != false) { ?>
+                            <?php foreach ($data['res'] as $k => $v) {
+                                if ($k != 'defect' && $k != 'advantage' && $v['type'] == 1) { ?>
+                                    <li><span><?php echo $v['name'] ?>：<?php echo $v['score'] ?>，打败了<?php echo $v['num'] ?>人</span></li>
+                                <?php }
+                            } ?>
+                        <?php } else {
+                            echo ' <li><span>你的整体成绩条件暂无明显申请优势，请继续刷分！</span></li>';
+                        } ?>
                     </div>
                 </div>
             </div>

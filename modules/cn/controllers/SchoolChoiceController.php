@@ -39,7 +39,7 @@ class SchoolChoiceController extends ThinkUController
 
     public function actionProbabilityResult(){
         $id = Yii::$app->request->post('id');
-        $id = 3;
+        $id = 4;
         $res = ProbabilityTest::find()->asArray()->where("id={$id}")->one();
         $h['gpa'] = $res['gpa'];
         $h['gmat'] = $res['gmat'];
@@ -59,10 +59,7 @@ class SchoolChoiceController extends ThinkUController
         } else {
             $schoolGrade = "专科";
         }
-//        var_dump($score);die;
         $data = ['res' => $score, 'score' => $res['score'], 'percent' => $res['percent'], 'school' => $res['school'], 'major' => $res['major'], 'schoolGrade' => $schoolGrade,'userName'=>$res['userName'],'data'=>$res];
-//        var_dump($data['res']);die;
-
         return $this->render('probabilityResult',['code' => 1, 'data' => $data]);
     }
 

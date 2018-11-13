@@ -92,16 +92,18 @@ class Method
         $toefl = $res['toefl'];
         $school = $res['schoolGrade'];
         $work = $res['most'];
+        $advantage = 0;
+        $defect = 0;
         if($gpa>10){
             $num1 = SchoolTest::find()->where("gpa<$gpa AND gpa>10")->count();
             $sign = round($gpa/100*4, 1);
-            $num2 = SchoolTest::find()->where("gpa<$gpa")->count();
+            $num2 = SchoolTest::find()->where("gpa<$sign")->count();
             $num = $num1+$num2;
             $gpa = $sign;
         }else{
             $num1 = SchoolTest::find()->where("gpa<$gpa")->count();
             $sign = ceil($gpa/4*100);
-            $num2 = SchoolTest::find()->where("gpa<$gpa")->count();
+            $num2 = SchoolTest::find()->where("gpa<$sign and gpa>10")->count();
             $num = $num1+$num2;
         }
         if($gpa>=3.5){
@@ -111,6 +113,7 @@ class Method
                 'type' => 1,
                 'name' => 'GPA'
             ];
+            $advantage+=1;
         }elseif($gpa>=3.0){
             $gpa1 = "GPA $gpa";
             $gpa = null;
@@ -121,6 +124,7 @@ class Method
                 'type' => 0,
                 'name' => 'GPA'
             ];
+            $defect+=1;
         }
 
         if(!empty($gmat)){
@@ -133,6 +137,7 @@ class Method
                         'type' => 1,
                         'name' => 'GRE'
                     ];
+                    $advantage+=1;
                 }elseif($gmat>=310){
                     $gmat1 = "GRE $gmat";
                     $gmat = null;
@@ -143,6 +148,7 @@ class Method
                         'type' => 0,
                         'name' => 'GRE'
                     ];
+                    $defect+=1;
                 }
             }else{
                 $num = SchoolTest::find()->where("gmat<$gmat AND gmat>360")->count();
@@ -153,6 +159,7 @@ class Method
                         'type' => 1,
                         'name' => 'GMAT'
                     ];
+                    $advantage+=1;
                 }elseif($gmat>=650){
                     $gmat1 = "GMAT $gmat";
                     $gmat = null;
@@ -163,6 +170,7 @@ class Method
                         'type' => 0,
                         'name' => 'GMAT'
                     ];
+                    $defect+=1;
                 }
             }
         }else{
@@ -178,6 +186,7 @@ class Method
                     'type' => 1,
                     'name' => '雅思'
                 ];
+                $advantage+=1;
             }elseif($toefl>=6){
                 $toefl1 = "IELTS $toefl";
                 $toefl = null;
@@ -188,6 +197,7 @@ class Method
                     'type' => 0,
                     'name' => '雅思'
                 ];
+                $defect+=1;
             }
         }else{
             $num = SchoolTest::find()->where("toefl<$toefl AND toefl>15")->count();
@@ -198,6 +208,7 @@ class Method
                     'type' => 1,
                     'name' => '托福'
                 ];
+                $advantage+=1;
             }elseif($toefl>=95){
                 $toefl1 = "TOEFL $toefl";
                 $toefl = null;
@@ -208,25 +219,30 @@ class Method
                     'type' => 0,
                     'name' => '托福'
                 ];
+                $defect+=1;
             }
         }
 
         $num = SchoolTest::find()->where("schoolGrade>$school")->count();
         if($school <=2){
             $school = [
-                'name' => $res['attendSchool'],
+                'name' => '所报院校',
+                'score' => $res['attendSchool'],
                 'num' => $num+2330,
                 'type' => 1
             ];
+            $advantage+=1;
         }elseif($school<=3){
             $school1 = "211 院校";
             $school = null;
         }else{
             $school = [
-                'name' => $res['attendSchool'],
+                'name' => '就读院校',
+                'score' => $res['attendSchool'],
                 'num' => $num+117,
                 'type' => 0
             ];
+            $defect+=1;
         }
         if($work == 6){
             $work = null;
@@ -242,19 +258,23 @@ class Method
             }
             if($work <=2){
                 $work = [
-                    'name' => $workName,
+                    'name' => '工作经验',
+                    'score' => $workName,
                     'num' => $num+2330,
                     'type' => 1
                 ];
+                $advantage+=1;
             }elseif($work<=4){
                 $work1 = "$workName 工作经验";
                 $work = null;
             }else{
                 $work = [
-                    'name' => $workName,
+                    'name' => '工作经验',
+                    'score' => $workName,
                     'num' => $num+117,
                     'type' => 0
                 ];
+                $defect+=1;
             }
         }
         $data = array();
@@ -276,6 +296,8 @@ class Method
         if($work){
             $data['work'] = $work;
         }
+        $data['advantage']=$advantage;
+        $data['defect']=$defect;
         return $data;
     }
 }

@@ -316,12 +316,18 @@ class Content extends ActiveRecord {
     public function gpaScore($country, $gpa)
     {
         if ($country == 1||$country == 3) {
+            if($gpa<5){
+                $gpa=round($gpa*100/4,1);
+            }
             if ($gpa <= 62.5) {
                 return 5;
             } else {
                 return $gpa > 87.5 ? 16 : ceil(($gpa - 62.5) / 2.5) + 5;
             }
         } else {
+            if($gpa<5){
+                $gpa=round($gpa*100/3.7,1);
+            }
             if ($gpa <= 61) {
                 return 5;
             } else {
