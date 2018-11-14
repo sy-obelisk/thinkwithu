@@ -78,58 +78,74 @@
     <div class="w10 nav-top" style="overflow: inherit;">
         <ul class="inb nav-list clearfix">
             <div class="forYou">
-
-
                 <?php
                 $country = Yii::$app->request->get('country','USA'); if($country=='USA'){
-                    echo '<img src="/cn/Hirsi/images/classify.png" alt="横">
-                           <span>美国留学申请服务</span>
-                           <div class="recommend-list">
-                                <ul>
-                                    <li><a href="/word-details/2401/index,178.html" class=""><b>•</b>美国星程计划</a></li>
-                                    <li><a href="/word-details/2408/index,178.html" class=""><b>•</b>美国星途计划</a></li>
-                                    <li><a href="" class=""><b>•</b>MBA精英计划</a></li>
-                                    <li><a href="" class=""><b>•</b>美国本科留学服务 </a></li>
-                                    <li><a href="" class=""><b>•</b>留学考试提分方案 </a></li>
-                                    <li><a href="" class=""><b>•</b>美国留学DIY论坛 </a></li>
-                                </ul>
-                           </div> ';
-                }elseif($country=='UK'){
-                    echo '<img src="/cn/Hirsi/images/classify.png" alt="横">
-                           <span>英国留学申请服务</span>
-                           <div class="recommend-list">
-                                <ul>
-                                    <li><a href="/word-details/2409/index,178.html" class=""><b>•</b>英国康桥计划</a></li>
-                                    <li><a href="/word-details/2410/index,178.html" class=""><b>•</b>大本钟计划</a></li>
-                                    <li><a href="" class=""><b>•</b>日不落计划</a></li>
-                                </ul>
-                           </div> ';
-                }elseif($country=='HK'){
-                    echo '<img src="/cn/Hirsi/images/classify.png" alt="横">
-                           <span>香港留学申请服务</span>
-                           <div class="recommend-list">
-                                <ul>
-                                    <li><a href="" class=""><b>•</b>紫荆花计划</a></li>
-                                </ul>
-                           </div> ';
-                }elseif($country=='AUS'){
-                    echo '<img src="/cn/Hirsi/images/classify.png" alt="横">
-                           <span>澳大利亚留学申请服务</span>
-                           <div class="recommend-list">
-                                <ul>
-                                    <li><a href="" class=""><b>•</b>澳世起航计划</a></li>
-                                </ul>
-                           </div> ';
-                }elseif($country=='Canada'){
-                    echo '<img src="/cn/Hirsi/images/classify.png" alt="横">
-                           <span>加拿大留学申请服务</span>
-                           <div class="recommend-list">
-                                <ul>
-                                    <li><a href="" class=""><b>•</b>香港星程计划</a></li>
-                                </ul>
-                           </div> ';
-                }?>
-
+                    $product1 = app\modules\cn\models\Content::getContent(['category' => "261,88", 'pageSize' => 6, 'order' => 'c.sort asc,c.id desc']);
+                    ?>
+                    <img src="/cn/Hirsi/images/classify.png" alt="横">
+                    <span>美国留学申请服务</span>
+                    <div class="recommend-list">
+                        <ul>
+                            <?php foreach($product1 as $v){?>
+                            <li><a href="/word-details/<?php echo $v['id']?>/index,178.html" class=""><b>•</b><?php echo $v['name']?></a></li>
+                            <?php }?>
+<!--                            <li><a href="/word-details/2408/index,178.html" class=""><b>•</b>美国星途计划</a></li>-->
+<!--                            <li><a href="" class=""><b>•</b>MBA精英计划</a></li>-->
+<!--                            <li><a href="" class=""><b>•</b>美国本科留学服务 </a></li>-->
+<!--                            <li><a href="" class=""><b>•</b>留学考试提分方案 </a></li>-->
+<!--                            <li><a href="" class=""><b>•</b>美国留学DIY论坛 </a></li>-->
+                        </ul>
+                    </div>
+                <?php } elseif ($country == 'UK') {
+                    $product2 = app\modules\cn\models\Content::getContent(['category' => "261,89", 'pageSize' => 6, 'order' => 'c.sort asc,c.id desc']);
+                    ?>
+                    <img src="/cn/Hirsi/images/classify.png" alt="横">
+                    <span>英国留学申请服务</span>
+                    <div class="recommend-list">
+                        <ul>
+                            <?php foreach($product2 as $v){?>
+                                <li><a href="/word-details/<?php echo $v['id']?>/index,178.html" class=""><b>•</b><?php echo $v['name']?></a></li>
+                            <?php }?>
+<!--                            <li><a href="/word-details/2409/index,178.html" class=""><b>•</b>英国康桥计划</a></li>-->
+<!--                            <li><a href="/word-details/2410/index,178.html" class=""><b>•</b>大本钟计划</a></li>-->
+<!--                            <li><a href="" class=""><b>•</b>日不落计划</a></li>-->
+                        </ul>
+                    </div>
+                <?php } elseif ($country == 'HK') {
+                    $product3 = app\modules\cn\models\Content::getContent(['category' => "261,90", 'pageSize' => 6, 'order' => 'c.sort asc,c.id desc']);
+                    ?>
+                    <img src="/cn/Hirsi/images/classify.png" alt="横">
+                    <span>香港留学申请服务</span>
+                    <div class="recommend-list">
+                        <ul>
+                            <?php foreach($product3 as $v){?>
+                                <li><a href="/word-details/<?php echo $v['id']?>/index,178.html" class=""><b>•</b><?php echo $v['name']?></a></li>
+                            <?php }?>
+<!--                            <li><a href="" class=""><b>•</b>紫荆花计划</a></li>-->
+                        </ul>
+                    </div>
+                <?php } elseif ($country == 'AUS') {
+                    $product4 = app\modules\cn\models\Content::getContent(['category' => "261,91", 'pageSize' => 6, 'order' => 'c.sort asc,c.id desc']);
+                    ?>
+                    <img src="/cn/Hirsi/images/classify.png" alt="横">
+                    <span>澳大利亚留学申请服务</span>
+                    <div class="recommend-list">
+                        <ul>
+                            <?php foreach($product4 as $v){?>
+                                <li><a href="/word-details/<?php echo $v['id']?>/index,178.html" class=""><b>•</b><?php echo $v['name']?></a></li>
+                            <?php }?>
+<!--                            <li><a href="" class=""><b>•</b>澳世起航计划</a></li>-->
+                        </ul>
+                    </div>
+                <?php } elseif ($country == 'Canada') { ?>
+                    <img src="/cn/Hirsi/images/classify.png" alt="横">
+                    <span>加拿大留学申请服务</span>
+                    <div class="recommend-list">
+                        <ul>
+                            <li><a href="" class=""><b>•</b>香港星程计划</a></li>
+                        </ul>
+                    </div>
+                <?php } ?>
             </div>
             <li><a class="nav1-link <?php echo $controller == 'index' ? 'on on-hover' : '' ?>" href="/">首页</a></li>
             <li>

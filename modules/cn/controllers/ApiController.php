@@ -1232,6 +1232,7 @@ class ApiController extends ThinkUApiControl {
         $result['item_suffer'] = $apps->post('project');  /*项目经验*/
         $interest = Yii::$app->request->post('interest', '');        //感兴趣的服务
         $phone = Yii::$app->request->post('phone', '');        //感兴趣的服务
+        $userName = Yii::$app->request->post('userName', '');        //感兴趣的服务
         foreach ($result['item_suffer'] as $key => $v) {
             if (!$v) {
                 unset($result['item_suffer'][$key]);
@@ -1273,7 +1274,7 @@ class ApiController extends ThinkUApiControl {
             $work = array();
         }
         $model = new SchoolTest();
-        $userId = Yii::$app->session->get('userId',7898);
+        $userId = Yii::$app->session->get('userId', 7898);
         $model->userId = $userId;
         $model->gpa = $result['result_gpa'];
         $model->gmat = $result['result_gmat'];
@@ -1300,8 +1301,9 @@ class ApiController extends ThinkUApiControl {
         $model->createTime = time();
         $model->phone = $phone;
         $model->most = $most;
+        $model->userName = $userName;
         $model->save();
-        $id= $model->primaryKey;
+        $id = $model->primaryKey;
         die(json_encode(['code' => 1, 'id' => $id]));
 
     }
@@ -1310,13 +1312,13 @@ class ApiController extends ThinkUApiControl {
      * 录取测评结果保存
      * by  yoyo
      */
-    public function actionProbabilityStorage(){
-
+    public function actionProbabilityStorage()
+    {
         $schoolRank = Yii::$app->request->post('schoolRank', 0);  //院校排名
         $country = Yii::$app->request->post('country', 0);    //国家
         $schoolName = Yii::$app->request->post('schoolName', '');  //申请院校名
         $majorName = Yii::$app->request->post('majorName', '');   //申请专业名
-        $gpa =strip_tags(round(Yii::$app->request->post('gpa', ''), 2));   // 3.64;
+        $gpa = strip_tags(round(Yii::$app->request->post('gpa', ''), 2));   // 3.64;
         $gmat = strip_tags(Yii::$app->request->post('gmat', ''));
         $toefl = strip_tags(round(Yii::$app->request->post('toefl', ''), 2));
         $education = strip_tags(Yii::$app->request->post('education', ''));   //学历
@@ -1337,7 +1339,7 @@ class ApiController extends ThinkUApiControl {
         $workScore = 0;
         $model = new Content();
         if ($country == 1 || $country == 3) {
-            $score = $model->score($gpa, $gmat, $toefl, $school,$country);
+            $score = $model->score($gpa, $gmat, $toefl, $school, $country);
             if ($bigFour) {
                 $workScore = 18;
             }
@@ -1382,7 +1384,7 @@ class ApiController extends ThinkUApiControl {
                 $experienceScore += 3;
             }
         } else {
-            $score =  $model->score($gpa, $gmat, $toefl, $school,$country);
+            $score = $model->score($gpa, $gmat, $toefl, $school, $country);
             if ($bigFour) {
                 $workScore = 8;
             }
@@ -1428,7 +1430,6 @@ class ApiController extends ThinkUApiControl {
         if ($score == false) {
             die("<script>alert('请检查填写内容是否齐全.......');history.go(-1)</script>");
         }
-
         $score = $score + $workScore + $experienceScore;
         $percent = $score / $total;
         if ($percent >= 1) {
@@ -1457,8 +1458,8 @@ class ApiController extends ThinkUApiControl {
         $model->source = '申友pc';
         $model->phone = $phone;
         $model->save();
-        $id= $model->primaryKey;
-        die(json_encode(['code' => 1,'id'=>$id]));
+        $id = $model->primaryKey;
+        die(json_encode(['code' => 1, 'id' => $id]));
     }
 
     /**

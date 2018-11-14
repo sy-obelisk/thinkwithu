@@ -25,7 +25,7 @@
                                 <?php }
                             } ?>
                         <?php } else {
-                            echo ' <li><span>无明显劣势</span></li>';
+                            echo ' <li><span>你的整体成绩条件暂无明显劣势</span></li>';
                         } ?>
                     </div>
                 </div>
@@ -47,8 +47,8 @@
         </div>
         <p class="tix">*此报告匹配标准近5年留学录取成果大数据作为技术支撑,并不能百分百代表实际录取结果,仅供参考</p>
         <div class="btn"><!--按钮-->
-            <a href="" class="backHome">返回首页</a>
-            <a href="" class="continue">继续测评</a>
+            <a href="/" class="backHome">返回首页</a>
+            <a href="/percentages-test.html" class="continue">继续测评</a>
         </div>
     </div>
 </section>
