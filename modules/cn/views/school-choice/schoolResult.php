@@ -21,7 +21,7 @@
                                <?php }
                            } ?>
                        <?php } else {
-                           echo ' <li><span>无明显劣势</span></li>';
+                           echo '<li><span>你的整体成绩条件暂无明显劣势</span></li>';
                        } ?>
                    </div>
                </div>
@@ -35,7 +35,7 @@
                                 <?php }
                             } ?>
                         <?php } else {
-                            echo ' <li><b>•</b><span>你的整体成绩条件暂无明显申请优势，请继续刷分！</span></li>';
+                            echo '<li><b>•</b><span>你的整体成绩条件暂无明显申请优势，请继续刷分！</span></li>';
                         } ?>
                     </div>
                 </div>
@@ -54,7 +54,7 @@
                 <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script>
                 <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
                 <div class="c_p">
-                    <a href="">重新评估</a>
+                    <a href="/choice-test.html">重新评估</a>
                 </div>
             </div>
         </div>
@@ -119,7 +119,7 @@
                     <span class="z_b"></span><span>所在地区:<?php echo $v['place']?></span>
                 </div>
                 <div class="school_right">
-                    <a href="" target="_blank" class="r_k">人工精准选校入口</a>
+                    <a href="tencent://message/?uin=3382135617&Site=www.cnclcy&Menu=yes" target="_blank" class="r_k">人工精准选校入口</a>
                     <div class="ds_yx_al">
                         <span class="d_s"></span>
                         <span><a href="/teachers.html" target="_blank">推荐导师</a></span>

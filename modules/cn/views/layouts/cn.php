@@ -95,13 +95,13 @@
         }
     }
     ?>
-<!--    <title>--><?php //echo $seo['title']?><!---申友网</title>-->
-<!--    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">-->
-<!--    <meta name="keywords" content="--><?php //echo $seo['keywords']?><!--">-->
+    <title><?php echo $this->context->title==false?'1111111':$this->context->title?>-申友网</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="keywords" content="<?php echo $this->context->keywords==false?'1111111':$this->context->keywords ?>">
     <?php
     if($action != 'word-details' && $action != 'picture-details' ) {
         ?>
-        <meta name="description" content="<?php echo $seo['description']?>">
+        <meta name="description" content="<?php echo $this->context->description==false?'1111111':$this->context->description ?>">
     <?php
     }
     ?>
