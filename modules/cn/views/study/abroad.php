@@ -475,19 +475,19 @@
                     <p>精品课</p>
                 </a>
             <?php } elseif ($country == 'HK') { ?>
-                <a href="http://www.gmatonline.cn/gmatcourses/397.html" target="_blank">
+                <a href="http://www.gmatonline.cn/gmatcourses/397.html" target="_blank" style="margin-left: 170px!important;">
                     <p>GMAT 700 分</p>
                     <p>冲刺课程</p>
                 </a>
-                <a href="http://www.greonline.cn/course/7778.html" target="_blank">
+                <a href="http://www.greonline.cn/course/7778.html" target="_blank" style="margin-left: 90px!important;">
                     <p>GRE 330 分</p>
                     <p>冲刺课程</p>
                 </a>
-                <a href="http://toefl.viplgw.cn/toeflcourses/18534.html" target="_blank">
+                <a href="http://toefl.viplgw.cn/toeflcourses/18534.html" target="_blank" style="margin-left: 170px!important;margin-top: 40px;">
                     <p>托福 110 分</p>
                     <p>冲刺课程</p>
                 </a>
-                <a href="http://ielts.viplgw.cn/cn/course/detail-2299.html" target="_blank"  style="margin-left: 415px;">
+                <a href="http://ielts.viplgw.cn/cn/course/detail-2299.html" target="_blank" style="margin-left: 150px!important;">
                     <p>雅思一对一</p>
                     <p>精品课</p>
                 </a>

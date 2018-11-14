@@ -473,7 +473,7 @@
                     <div class="fl" style="margin-right: 70px"><img src="/cn/gre/images/gre_1.png" alt=""></div>
                     <div class="fr tm">
                         <p class="bold_gre">来申友，我们帮你拿高分 </p>
-                        <p class="gre_de">全球已有<strong>10000+</strong>你的小伙伴加入雷哥GRE</p>
+                        <p class="gre_de">全球已有<strong>10000+</strong>你的小伙伴加入申友GRE</p>
                         <div class="tm register_btn">
                             <a class="inm" href="http://login.gmatonline.cn/cn/index/register" target="_blank">立即注册</a>
                         </div>
