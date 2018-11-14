@@ -314,7 +314,7 @@
                 </div>
                 <div class="bot-btn-group">
                     <input type="button" value="上一步" class="mr" onclick="prevStep3()">
-                    <input type="button" value="提交" onclick="chooseSub()">
+                    <input type="button" value="提交" onclick="chooseSub()" id="sureSub">
                 </div>
             </div>
         </form>

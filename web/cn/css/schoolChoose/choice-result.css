@@ -72,6 +72,7 @@
 }
 .content_left>div:nth-child(1){
     margin-top: 30px;
+    overflow: hidden;
 }
 .content_left>div{
     margin-bottom: 20px;
