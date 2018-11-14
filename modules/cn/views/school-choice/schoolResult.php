@@ -119,7 +119,7 @@
                     <span class="z_b"></span><span>所在地区:<?php echo $v['place']?></span>
                 </div>
                 <div class="school_right">
-                    <a href="" target="_blank" class="r_k">人工精准选校入口</a>
+                    <a href="" target="_blank" class="r_k">人工精准选校入口 ></a>
                     <div class="ds_yx_al">
                         <span class="d_s"></span>
                         <span><a href="/teachers.html" target="_blank">推荐导师</a></span>

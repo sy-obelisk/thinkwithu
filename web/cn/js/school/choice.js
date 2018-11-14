@@ -323,10 +323,12 @@ function chooseSub(){
         },
         success: function (result) {
             if(result.code==1){
+                $('#sureSub').attr('disabled',true);
+                $('#sureSub').css('background','rgb(173,173,173)');
                 window.location.href='/choice-result/'+ result.id +'.html'
             }
             else {
-                alert("提交失败！");
+                alert("提交失败");
             }
         },
         error : function() {

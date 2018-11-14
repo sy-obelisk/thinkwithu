@@ -110,6 +110,8 @@ function subBackground(){
             },
             success: function (result) {
                if(result.code==1){
+                   $('.nextBtn').attr('disabled',true);
+                   $('.nextBtn').css('background','rgb(173,173,173)');
                     $('.school_content').hide();
                     $('.results_back').fadeIn();
                     $(window).scrollTop(0);

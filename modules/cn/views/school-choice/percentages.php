@@ -756,6 +756,8 @@
                 },
                 success: function (result) {
                     if(result.code==1){
+                        $('.new-sub').attr('disabled',true);
+                        $('.new-sub').css('background','rgb(173,173,173)');
                        window.location.href='/probability-result/'+ result.id +'.html'
                     }
                     else {
