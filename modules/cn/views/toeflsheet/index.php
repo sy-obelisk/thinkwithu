@@ -444,5 +444,5 @@
         interTime: 50
     });
     //课程活动
-    jQuery(".active-wrap").slide({mainCell:".bd ul",autoPlay:true,effect:"topMarquee",vis:4,interTime:50});
+    jQuery(".active-wrap").slide({mainCell:".bd ul",autoPlay:true,effect:"topMarquee",vis:6,interTime:50});
 </script>

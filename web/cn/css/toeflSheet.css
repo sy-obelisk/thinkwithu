@@ -1003,7 +1003,7 @@ body{
 .active .right li {
     margin-bottom: 5px;
     padding-bottom: 5px;
-    border-bottom: 1px dashed rgb(239,239,239);
+    border-bottom: 1px dashed rgb(173,173,173);
 }
 .active .right li a{
     display: block;
