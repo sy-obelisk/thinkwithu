@@ -75,9 +75,9 @@
         <div class="casesContent">
             <div class="cases_d">
                 <ul>
-                    <?php for($i=0;$i<ceil(count($new)/3);$i++){?>
+                    <?php for($i=0;$i<ceil(count($new['data'])/3);$i++){?>
                     <li><!--外层循环li  内层循环div Content_d-->
-                        <?php foreach($new as $k=>$v){
+                        <?php foreach($new['data'] as $k=>$v){
                         if ($k < ($i + 1) * 3 && $k >= $i * 3) { ?>
                             <a href="" class="Content_d_cover">
                                 <div class="Content_d">
@@ -90,7 +90,6 @@
                                         </div>
                                     </div>
                                     <p class="content_p"><?php echo $v['name']?></p>
-                                </div>
                             </a>
                         <?php }}?>
                     </li>
