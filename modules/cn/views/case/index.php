@@ -85,6 +85,7 @@
                                 <div class="mask">
                                     <p class="mask_name"><?php echo $v['cnName']?></p><!--姓名-->
                                     <p class="mask_school">录取院校: <?php echo $v['problemComplement']?></p><!--录取院校-->
+                                    <p class="mask_obj"><?php if($v['article']!=false) echo '录取专业：'.$v['article'];?> </p><!--录取专业-->
                                 </div>
                             </div>
                             <p class="content_p"><?php echo $v['name']?></p>
