@@ -353,10 +353,21 @@
 .admission_d>p{
     font-size: 16px;
     margin: 7px 0;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    text-overflow:ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp:2;
 }
 .admission_d>p>span{
     margin-left: 10px;
+    /*display: inline-block;*/
     color: rgb(154,154,154);
+    /*overflow: hidden;*/
+    /*-webkit-box-orient: vertical;*/
+    /*text-overflow:ellipsis;*/
+    /*!*display: -webkit-box;*!*/
+    /*-webkit-line-clamp:2;*/
 }
 .page_size{
     position: absolute;
@@ -407,5 +418,8 @@
     display: none;
 }
 .pageSize .grey{
+    display: none;
+}
+.pageSize .prev{
     display: none;
 }
