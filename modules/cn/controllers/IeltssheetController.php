@@ -19,8 +19,11 @@ class IeltssheetController extends ThinkUController {
      * by obelisk
      */
     public function actionIndex(){
-        $extendData = CategoryExtend::find()->where("catId=247 AND belong='content'")->orderBy('id ASC')->all();
-        return $this->render('index',['extendData' => $extendData]);
+//        $extendData = CategoryExtend::find()->where("catId=247 AND belong='content'")->orderBy('id ASC')->all();
+        $data = file_get_contents('http://ielts.viplgw.cn/cn/api/ielts');
+        $data=json_decode($data,true);
+//        echo '<pre>';var_dump($data);die;
+        return $this->render('index',['data' => $data]);
 //        return $this->renderPartial('index');
     }
 }

@@ -32,10 +32,10 @@
                     <i class="iconfont r_w">&#xe656;</i>
                     <span>姓名</span>
                 </div>
-                <div>
-                    <i class="iconfont j_b">&#xe655;</i>
-                    <span>录取专业</span>
-                </div>
+<!--                <div>-->
+<!--                    <i class="iconfont j_b">&#xe655;</i>-->
+<!--                    <span>录取专业</span>-->
+<!--                </div>-->
                 <div>
                     <i class="iconfont x_x">&#xe606;</i>
                     <span>录取学校</span>
@@ -43,62 +43,14 @@
             </div>
             <div class="b_l_details">
                 <ul>
+                    <?php foreach($list as $v){
+                        if(($v['title']!=false)&&($v['name']!=$v['title'])){?>
                     <li><!--循环li-->
-                        <div><p>香港中文大学香港中文大学香港中文大学香港中文大学香港中文大学</p></div>
-                        <div>金融</div>
-                        <div>香港中文大学香港中文大学香港中文大学香港中文大学香港中文大学</div>
+                        <div><p><?php echo $v['name']?></p></div>
+<!--                        <div>金融</div>-->
+                        <div><?php echo $v['title']?></div>
                     </li>
-                    <li>
-                        <div><p>香港中文大学香港中文大学香港中文大学香港中文大学香港中文大学</p></div>
-                        <div>金融</div>
-                        <div>香港中文大学香港中文大学香港中文大学香港中文大学香港中文大学</div>
-                    </li>
-                    <li>
-                        <div><p>香港中文大学香港中文大学香港中文大学香港中文大学香港中文大学</p></div>
-                        <div>金融</div>
-                        <div>香港中文大学香港中文大学香港中文大学香港中文大学香港中文大学</div>
-                    </li>
-                    <li>
-                        <div><p>香港中文大学香港中文大学香港中文大学香港中文大学香港中文大学</p></div>
-                        <div>金融</div>
-                        <div>香港中文大学香港中文大学香港中文大学香港中文大学香港中文大学</div>
-                    </li>
-                    <li>
-                        <div><p>香港中文大学香港中文大学香港中文大学香港中文大学香港中文大学</p></div>
-                        <div>金融</div>
-                        <div>香港中文大学香港中文大学香港中文大学香港中文大学香港中文大学</div>
-                    </li>
-                    <li>
-                        <div><p>香港中文大学香港中文大学香港中文大学香港中文大学香港中文大学</p></div>
-                        <div>金融</div>
-                        <div>香港中文大学香港中文大学香港中文大学香港中文大学香港中文大学</div>
-                    </li>
-                    <li>
-                        <div><p>香港中文大学香港中文大学香港中文大学香港中文大学香港中文大学</p></div>
-                        <div>金融</div>
-                        <div>香港中文大学香港中文大学香港中文大学香港中文大学香港中文大学</div>
-                    </li>
-                    <li>
-                        <div><p>香港中文大学香港中文大学香港中文大学香港中文大学香港中文大学</p></div>
-                        <div>金融</div>
-                        <div>香港中文大学香港中文大学香港中文大学香港中文大学香港中文大学</div>
-                    </li>
-                    <li>
-                        <div><p>香港中文大学香港中文大学香港中文大学香港中文大学香港中文大学</p></div>
-                        <div>金融</div>
-                        <div>香港中文大学香港中文大学香港中文大学香港中文大学香港中文大学</div>
-                    </li>
-                    <li>
-                        <div><p>香港中文大学香港中文大学香港中文大学香港中文大学香港中文大学</p></div>
-                        <div>金融</div>
-                        <div>香港中文大学香港中文大学香港中文大学香港中文大学香港中文大学</div>
-                    </li>
-                    <li>
-                        <div><p>香港中文大学香港中文大学香港中文大学香港中文大学香港中文大学</p></div>
-                        <div>金融</div>
-                        <div>香港中文大学香港中文大学香港中文大学香港中文大学香港中文大学</div>
-                    </li>
-
+                    <?php }}?>
                 </ul>
             </div>
         </div>
@@ -123,82 +75,31 @@
         <div class="casesContent">
             <div class="cases_d">
                 <ul>
+                    <?php for($i=0;$i<ceil(count($new)/3);$i++){?>
                     <li><!--外层循环li  内层循环div Content_d-->
+                        <?php foreach($new as $k=>$v){
+                        if ($k < ($i + 1) * 3 && $k >= $i * 3) { ?>
                         <div class="Content_d">
                             <div class="imgCover">
-                                <img src="http://www.smartapply.cn/files/attach/images/20180726/1532594041166709.jpg" alt="录取图片">
+                                <img src="http://www.thinkwithu.com/<?php echo $v['image']?>" alt="录取图片">
                                 <div class="mask">
-                                    <p class="mask_name">Tan SJ</p><!--姓名-->
-                                    <p class="mask_school">录取院校: 纽约大学NYU和福特汉姆、墨尔本大学</p><!--录取院校-->
-                                    <p class="mask_obj">录取专业: 药学</p><!--录取专业-->
+                                    <p class="mask_name"><?php echo $v['name']?></p><!--姓名-->
+                                    <p class="mask_school">录取院校: <?php echo $v['abroadSchool']?></p><!--录取院校-->
+                                    <p class="mask_obj"><?php if($v['major']!=false) echo '录取专业：'.$v['major'];?> </p><!--录取专业-->
                                 </div>
                             </div>
-                            <p class="content_p">Tan S.J.拿到纽约大学NYU和福特汉姆、墨尔本大学Tan S.J.拿到纽约大学NYU和福特汉姆、墨尔本大学</p>
+                            <p class="content_p"><?php echo $v['name']?></p>
                         </div>
-                        <div class="Content_d">
-                            <div class="imgCover">
-                                <img src="http://www.smartapply.cn/files/attach/images/20180726/1532594041166709.jpg" alt="录取图片">
-                                <div class="mask">
-                                    <p class="mask_name">Tan SJ</p><!--姓名-->
-                                    <p class="mask_school">录取院校: 纽约大学NYU和福特汉姆、墨尔本大学</p><!--录取院校-->
-                                    <p class="mask_obj">录取专业: 药学</p><!--录取专业-->
-                                </div>
-                            </div>
-                            <p class="content_p">Tan S.J.拿到纽约大学NYU和福特汉姆、墨尔本大学Tan S.J.拿到纽约大学NYU和福特汉姆、墨尔本大学</p>
-                        </div>
-                        <div class="Content_d">
-                            <div class="imgCover">
-                                <img src="http://www.smartapply.cn/files/attach/images/20180726/1532594041166709.jpg" alt="录取图片">
-                                <div class="mask">
-                                    <p class="mask_name">Tan SJ</p><!--姓名-->
-                                    <p class="mask_school">录取院校: 纽约大学NYU和福特汉姆、墨尔本大学</p><!--录取院校-->
-                                    <p class="mask_obj">录取专业: 药学</p><!--录取专业-->
-                                </div>
-                            </div>
-                            <p class="content_p">Tan S.J.拿到纽约大学NYU和福特汉姆、墨尔本大学Tan S.J.拿到纽约大学NYU和福特汉姆、墨尔本大学</p>
-                        </div>
+                        <?php }}?>
                     </li>
-                    <li>
-                        <div class="Content_d">
-                            <div class="imgCover">
-                                <img src="http://www.smartapply.cn/files/attach/images/20180726/1532594041166709.jpg" alt="录取图片">
-                                <div class="mask">
-                                    <p class="mask_name">Tan SJ</p><!--姓名-->
-                                    <p class="mask_school">录取院校: 纽约大学NYU和福特汉姆、墨尔本大学</p><!--录取院校-->
-                                    <p class="mask_obj">录取专业: 药学</p><!--录取专业-->
-                                </div>
-                            </div>
-                            <p class="content_p">Tan S.J.拿到纽约大学NYU和福特汉姆、墨尔本大学Tan S.J.拿到纽约大学NYU和福特汉姆、墨尔本大学</p>
-                        </div>
-                        <div class="Content_d">
-                            <div class="imgCover">
-                                <img src="http://www.smartapply.cn/files/attach/images/20180726/1532594041166709.jpg" alt="录取图片">
-                                <div class="mask">
-                                    <p class="mask_name">Tan SJ</p><!--姓名-->
-                                    <p class="mask_school">录取院校: 纽约大学NYU和福特汉姆、墨尔本大学</p><!--录取院校-->
-                                    <p class="mask_obj">录取专业: 药学</p><!--录取专业-->
-                                </div>
-                            </div>
-                            <p class="content_p">Tan S.J.拿到纽约大学NYU和福特汉姆、墨尔本大学Tan S.J.拿到纽约大学NYU和福特汉姆、墨尔本大学</p>
-                        </div>
-                        <div class="Content_d">
-                            <div class="imgCover">
-                                <img src="http://www.smartapply.cn/files/attach/images/20180726/1532594041166709.jpg" alt="录取图片">
-                                <div class="mask">
-                                    <p class="mask_name">Tan SJ</p><!--姓名-->
-                                    <p class="mask_school">录取院校: 纽约大学NYU和福特汉姆、墨尔本大学</p><!--录取院校-->
-                                    <p class="mask_obj">录取专业: 药学</p><!--录取专业-->
-                                </div>
-                            </div>
-                            <p class="content_p">Tan S.J.拿到纽约大学NYU和福特汉姆、墨尔本大学Tan S.J.拿到纽约大学NYU和福特汉姆、墨尔本大学</p>
-                        </div>
-                    </li>
+                    <?php }?>
                 </ul>
             </div>
             <div class="hd hdCases">
                 <ul><!--循环li-->
+                    <?php for($i=0;$i<ceil(count($new)/3);$i++){?>
                     <li></li>
-                    <li></li>
+                    <?php }?>
                 </ul>
             </div>
         </div>
@@ -223,165 +124,31 @@
             </ul>
         </div>
         <div class="admission_c bd">
+            <?php foreach($case as $val){?>
             <ul><!--外层循环ul  内层循环li admission_d-->
-                <li class="admission_d">
-                    <div class="admission_img">
-                        <img src="http://www.smartapply.cn/files/attach/images/20180726/1532594041166709.jpg" alt="录取图片">
-                    </div>
-                    <p class="admission_name">TRUMP</p><!--姓名-->
-                    <p class="admission_m">哈佛大学</p><!--录取院校-->
-                    <p class="admission_school">毕业院校:<span>中国药科大学</span></p><!--毕业院校-->
-                    <p class="admission_hardware">硬件条件:<span>拿到纽约大学NYU和福特汉姆、墨尔本大学Tan S.J.拿到纽约大学NYU和福特汉姆、墨尔本大学</span></p><!--硬件条件-->
-                    <p class="admission_ad">录取院校:<span>哈佛大学</span></p><!--录取院校-->
-                    <p class="admission_obj">录取专业:<span>药学</span></p><!--录取专业-->
-                </li>
-                <li class="admission_d">
-                    <div class="admission_img">
-                        <img src="http://www.smartapply.cn/files/attach/images/20180726/1532594041166709.jpg" alt="录取图片">
-                    </div>
-                    <p class="admission_name">TRUMP</p><!--姓名-->
-                    <p class="admission_m">哈佛大学</p><!--录取院校-->
-                    <p class="admission_school">毕业院校:<span>中国药科大学</span></p><!--毕业院校-->
-                    <p class="admission_hardware">硬件条件:<span>拿到纽约大学NYU和福特汉姆、墨尔本大学Tan S.J.拿到纽约大学NYU和福特汉姆、墨尔本大学</span></p><!--硬件条件-->
-                    <p class="admission_ad">录取院校:<span>哈佛大学</span></p><!--录取院校-->
-                    <p class="admission_obj">录取专业:<span>药学</span></p><!--录取专业-->
-                </li>
-                <li class="admission_d">
-                    <div class="admission_img">
-                        <img src="http://www.smartapply.cn/files/attach/images/20180726/1532594041166709.jpg" alt="录取图片">
-                    </div>
-                    <p class="admission_name">TRUMP</p><!--姓名-->
-                    <p class="admission_m">哈佛大学</p><!--录取院校-->
-                    <p class="admission_school">毕业院校:<span>中国药科大学</span></p><!--毕业院校-->
-                    <p class="admission_hardware">硬件条件:<span>拿到纽约大学NYU和福特汉姆、墨尔本大学Tan S.J.拿到纽约大学NYU和福特汉姆、墨尔本大学</span></p><!--硬件条件-->
-                    <p class="admission_ad">录取院校:<span>哈佛大学</span></p><!--录取院校-->
-                    <p class="admission_obj">录取专业:<span>药学</span></p><!--录取专业-->
-                </li>
-                <li class="admission_d">
-                    <div class="admission_img">
-                        <img src="http://www.smartapply.cn/files/attach/images/20180726/1532594041166709.jpg" alt="录取图片">
-                    </div>
-                    <p class="admission_name">TRUMP</p><!--姓名-->
-                    <p class="admission_m">哈佛大学</p><!--录取院校-->
-                    <p class="admission_school">毕业院校:<span>中国药科大学</span></p><!--毕业院校-->
-                    <p class="admission_hardware">硬件条件:<span>拿到纽约大学NYU和福特汉姆、墨尔本大学Tan S.J.拿到纽约大学NYU和福特汉姆、墨尔本大学</span></p><!--硬件条件-->
-                    <p class="admission_ad">录取院校:<span>哈佛大学</span></p><!--录取院校-->
-                    <p class="admission_obj">录取专业:<span>药学</span></p><!--录取专业-->
-                </li>
-                <li class="admission_d">
-                    <div class="admission_img">
-                        <img src="http://www.smartapply.cn/files/attach/images/20180726/1532594041166709.jpg" alt="录取图片">
-                    </div>
-                    <p class="admission_name">TRUMP</p><!--姓名-->
-                    <p class="admission_m">哈佛大学</p><!--录取院校-->
-                    <p class="admission_school">毕业院校:<span>中国药科大学</span></p><!--毕业院校-->
-                    <p class="admission_hardware">硬件条件:<span>拿到纽约大学NYU和福特汉姆、墨尔本大学Tan S.J.拿到纽约大学NYU和福特汉姆、墨尔本大学</span></p><!--硬件条件-->
-                    <p class="admission_ad">录取院校:<span>哈佛大学</span></p><!--录取院校-->
-                    <p class="admission_obj">录取专业:<span>药学</span></p><!--录取专业-->
-                </li>
-                <li class="admission_d">
-                    <div class="admission_img">
-                        <img src="http://www.smartapply.cn/files/attach/images/20180726/1532594041166709.jpg" alt="录取图片">
-                    </div>
-                    <p class="admission_name">TRUMP</p><!--姓名-->
-                    <p class="admission_m">哈佛大学</p><!--录取院校-->
-                    <p class="admission_school">毕业院校:<span>中国药科大学</span></p><!--毕业院校-->
-                    <p class="admission_hardware">硬件条件:<span>拿到纽约大学NYU和福特汉姆、墨尔本大学Tan S.J.拿到纽约大学NYU和福特汉姆、墨尔本大学</span></p><!--硬件条件-->
-                    <p class="admission_ad">录取院校:<span>哈佛大学</span></p><!--录取院校-->
-                    <p class="admission_obj">录取专业:<span>药学</span></p><!--录取专业-->
-                </li>
+                <?php foreach ($val['data'] as $k => $v) {
+                    if (is_numeric($k)) {
+                        ?>
+                        <li class="admission_d">
+                            <div class="admission_img">
+                                <img src="http://www.smartapply.cn<?php echo $v['image'] ?>" alt="录取图片">
+                            </div>
+                            <p class="admission_name"><?php echo $v['cnName'] ?></p><!--姓名-->
+                            <p class="admission_m"><?php echo $v['problemComplement'] ?></p><!--录取院校-->
+                            <p class="admission_school">毕业院校:<span><?php echo $v['numbering'] ?></span></p><!--毕业院校-->
+                            <p class="admission_hardware">硬件条件:<span><?php echo $v['sentenceNumber'] ?></span></p>
+                            <!--硬件条件-->
+                            <p class="admission_ad">录取院校:<span>哈佛大学</span></p><!--录取院校-->
+                            <p class="admission_obj">录取专业:<span><?php echo $v['article'] ?></span></p><!--录取专业-->
+                        </li>
+                    <?php }
+                } ?>
                 <!--分页-->
                 <div class="page_size">
-
+                    <?php echo $val['pageStr'];?>
                 </div>
             </ul>
-            <ul>
-                <li class="admission_d">
-                    <div class="admission_img">
-                        <img src="http://www.smartapply.cn/files/attach/images/20180726/1532594041166709.jpg" alt="录取图片">
-                    </div>
-                    <p class="admission_name">TRUMP</p><!--姓名-->
-                    <p class="admission_m">哈佛大学</p><!--录取院校-->
-                    <p class="admission_school">毕业院校:<span>中国药科大学</span></p><!--毕业院校-->
-                    <p class="admission_hardware">硬件条件:<span>拿到纽约大学NYU和福特汉姆、墨尔本大学Tan S.J.拿到纽约大学NYU和福特汉姆、墨尔本大学</span></p><!--硬件条件-->
-                    <p class="admission_ad">录取院校:<span>哈佛大学</span></p><!--录取院校-->
-                    <p class="admission_obj">录取专业:<span>药学</span></p><!--录取专业-->
-                </li>
-                <li class="admission_d">
-                    <div class="admission_img">
-                        <img src="http://www.smartapply.cn/files/attach/images/20180726/1532594041166709.jpg" alt="录取图片">
-                    </div>
-                    <p class="admission_name">TRUMP</p><!--姓名-->
-                    <p class="admission_m">哈佛大学</p><!--录取院校-->
-                    <p class="admission_school">毕业院校:<span>中国药科大学</span></p><!--毕业院校-->
-                    <p class="admission_hardware">硬件条件:<span>拿到纽约大学NYU和福特汉姆、墨尔本大学Tan S.J.拿到纽约大学NYU和福特汉姆、墨尔本大学</span></p><!--硬件条件-->
-                    <p class="admission_ad">录取院校:<span>哈佛大学</span></p><!--录取院校-->
-                    <p class="admission_obj">录取专业:<span>药学</span></p><!--录取专业-->
-                </li>
-                <li class="admission_d">
-                    <div class="admission_img">
-                        <img src="http://www.smartapply.cn/files/attach/images/20180726/1532594041166709.jpg" alt="录取图片">
-                    </div>
-                    <p class="admission_name">TRUMP</p><!--姓名-->
-                    <p class="admission_m">哈佛大学</p><!--录取院校-->
-                    <p class="admission_school">毕业院校:<span>中国药科大学</span></p><!--毕业院校-->
-                    <p class="admission_hardware">硬件条件:<span>拿到纽约大学NYU和福特汉姆、墨尔本大学Tan S.J.拿到纽约大学NYU和福特汉姆、墨尔本大学</span></p><!--硬件条件-->
-                    <p class="admission_ad">录取院校:<span>哈佛大学</span></p><!--录取院校-->
-                    <p class="admission_obj">录取专业:<span>药学</span></p><!--录取专业-->
-                </li>
-                <!--分页-->
-                <div class="page_size">
-
-                </div>
-            </ul>
-            <ul>
-                <li class="admission_d">
-                    <div class="admission_img">
-                        <img src="http://www.smartapply.cn/files/attach/images/20180726/1532594041166709.jpg" alt="录取图片">
-                    </div>
-                    <p class="admission_name">TRUMP</p><!--姓名-->
-                    <p class="admission_m">哈佛大学</p><!--录取院校-->
-                    <p class="admission_school">毕业院校:<span>中国药科大学</span></p><!--毕业院校-->
-                    <p class="admission_hardware">硬件条件:<span>拿到纽约大学NYU和福特汉姆、墨尔本大学Tan S.J.拿到纽约大学NYU和福特汉姆、墨尔本大学</span></p><!--硬件条件-->
-                    <p class="admission_ad">录取院校:<span>哈佛大学</span></p><!--录取院校-->
-                    <p class="admission_obj">录取专业:<span>药学</span></p><!--录取专业-->
-                </li>
-                <li class="admission_d">
-                    <div class="admission_img">
-                        <img src="http://www.smartapply.cn/files/attach/images/20180726/1532594041166709.jpg" alt="录取图片">
-                    </div>
-                    <p class="admission_name">TRUMP</p><!--姓名-->
-                    <p class="admission_m">哈佛大学</p><!--录取院校-->
-                    <p class="admission_school">毕业院校:<span>中国药科大学</span></p><!--毕业院校-->
-                    <p class="admission_hardware">硬件条件:<span>拿到纽约大学NYU和福特汉姆、墨尔本大学Tan S.J.拿到纽约大学NYU和福特汉姆、墨尔本大学</span></p><!--硬件条件-->
-                    <p class="admission_ad">录取院校:<span>哈佛大学</span></p><!--录取院校-->
-                    <p class="admission_obj">录取专业:<span>药学</span></p><!--录取专业-->
-                </li>
-                <!--分页-->
-                <div class="page_size">
-
-                </div>
-            </ul>
-            <ul>
-                <li class="admission_d">
-                    <div class="admission_img">
-                        <img src="http://www.smartapply.cn/files/attach/images/20180726/1532594041166709.jpg" alt="录取图片">
-                    </div>
-                    <p class="admission_name">TRUMP</p><!--姓名-->
-                    <p class="admission_m">哈佛大学</p><!--录取院校-->
-                    <p class="admission_school">毕业院校:<span>中国药科大学</span></p><!--毕业院校-->
-                    <p class="admission_hardware">硬件条件:<span>拿到纽约大学NYU和福特汉姆、墨尔本大学Tan S.J.拿到纽约大学NYU和福特汉姆、墨尔本大学</span></p><!--硬件条件-->
-                    <p class="admission_ad">录取院校:<span>哈佛大学</span></p><!--录取院校-->
-                    <p class="admission_obj">录取专业:<span>药学</span></p><!--录取专业-->
-                </li>
-                <!--分页-->
-                <div class="page_size">
-
-                </div>
-            </ul>
-            <ul>
-
-            </ul>
+            <?php }?>
         </div>
     </div>
     <script>

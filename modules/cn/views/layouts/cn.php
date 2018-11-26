@@ -11,89 +11,89 @@
     if(strpos($url,'?tdsourcetag=s_pcqq_aiomsg')){
         $url=str_replace('?tdsourcetag=s_pcqq_aiomsg','',$url);
     }
-    if($url == '/VisaInterview.html'){
-        $seo['title'] = '签证面试';
-        $seo['keywords'] = '';
-        $seo['description'] == '';
-    }elseif($url == '/schools.html'){
-        $seo['title'] = '院校库';
-        $seo['keywords'] = '';
-        $seo['description'] = '';
-    } elseif($url == '/surprise.html'){
-        $seo['title'] = '这个页面去留学了';
-        $seo['keywords'] = '';
-        $seo['description'] = '';
-    }elseif($url == '/evaluation.html'){
-        $seo['title'] = '留学申请评估';
-        $seo['keywords'] = '';
-        $seo['description'] = '';
-    }elseif($url == '/gmat/app.html'){
-        $seo['title'] = 'gmatApp下载';
-        $seo['keywords'] = '';
-        $seo['description'] = '';
-    }elseif($url == '/problem.html'){
-        $seo['title'] = 'gmat机经';
-        $seo['keywords'] = '';
-        $seo['description'] = '';
-    }elseif($url == '/toefl/assistance.html'){
-        $seo['title'] = 'TOEFL(托福)培训-托福课程-托福辅导-托福在线课程-申友网';
-        $seo['keywords'] = '托福报名，托福考试时间，托福备考，托福机经，托福真题，托福培训，托福课程，托福网络课程，托福辅导，托福班，托福听力，托福口语、托福词汇、托福写作、托福阅读';
-        $seo['description'] = '申友托福培训平台致力培育托福高分学员。为学员提供关于托福报名，托福考试时间，托福机经，托福真题，托福听力，托福口语、托福词汇、托福写作、托福阅读等专业的托福备考信息，被业界称为“托福高分基地”。';
-    }elseif(strstr($url,'/teachers/')){
-        $seo['title'] = 'GMAT名师、托福名师、留学顾问';
-        $seo['keywords'] = '';
-        $seo['description'] = '';
-    }elseif(strstr($url,'/practices/')){
-        $seo['title'] = '游学实习详情页';
-        $seo['keywords'] = '';
-        $seo['description'] = '';
-    }elseif($url == '/mentor.html'){
-        $seo['title'] = '海外mentor';
-        $seo['keywords'] = '';
-        $seo['description'] = '';
-    }elseif($url == '/study-aboard/service/introduction.html'){
-        $seo['title'] = '留学服务';
-        $seo['keywords'] = '';
-        $seo['description'] = '';
-    }else{
-        if($action == 'word-details' || $action == 'picture-details' ){
-            $seo['title'] = $this->context->title;
-            $seo['keywords'] = $this->context->keywords;
-        }
-        elseif($action == 'details' && $controller == 'schools' ){
-            $seo['title'] = '院校库详情';
-            $seo['keywords'] = '';
-            $seo['description'] = '';
-        }
-        elseif($action == 'majormsg' && $controller == 'schools' ){
-            $seo['title'] = '院校库专业详情';
-            $seo['keywords'] = '';
-            $seo['description'] = '';
-        }else{
-            if(isset($this->context->layout_data) && $this->context->layout_data != null){
-                $data['seoId'] = $this->context->layout_data;
-            }
-            elseif(strstr($url,'/application/') ){
-                $data['seoId'] = 120;
-            }
-            elseif(strstr($url,'/question') ){
-                $data['seoId'] = 121;
-            }
-            elseif(strstr($url,'/promotion/') ){
-                $data['seoId'] = 165;
-            }
-            elseif($action == 'project' && $controller == 'study'){
-                $data['seoId'] = 119;
-            }
-            else{
-                $data = \app\modules\cn\models\UrlSeo::find()->where("url='$url'")->one();
-            }
-            if((!isset($data['seoId']))||$data['seoId']==false){
-                $data['seoId']=223;
-            }
-            $seo = \app\modules\cn\models\Category::getSeoInfo($data['seoId']);
-        }
-    }
+//    if($url == '/VisaInterview.html'){
+//        $seo['title'] = '签证面试';
+//        $seo['keywords'] = '';
+//        $seo['description'] == '';
+//    }elseif($url == '/schools.html'){
+//        $seo['title'] = '院校库';
+//        $seo['keywords'] = '';
+//        $seo['description'] = '';
+//    } elseif($url == '/surprise.html'){
+//        $seo['title'] = '这个页面去留学了';
+//        $seo['keywords'] = '';
+//        $seo['description'] = '';
+//    }elseif($url == '/evaluation.html'){
+//        $seo['title'] = '留学申请评估';
+//        $seo['keywords'] = '';
+//        $seo['description'] = '';
+//    }elseif($url == '/gmat/app.html'){
+//        $seo['title'] = 'gmatApp下载';
+//        $seo['keywords'] = '';
+//        $seo['description'] = '';
+//    }elseif($url == '/problem.html'){
+//        $seo['title'] = 'gmat机经';
+//        $seo['keywords'] = '';
+//        $seo['description'] = '';
+//    }elseif($url == '/toefl/assistance.html'){
+//        $seo['title'] = 'TOEFL(托福)培训-托福课程-托福辅导-托福在线课程-申友网';
+//        $seo['keywords'] = '托福报名，托福考试时间，托福备考，托福机经，托福真题，托福培训，托福课程，托福网络课程，托福辅导，托福班，托福听力，托福口语、托福词汇、托福写作、托福阅读';
+//        $seo['description'] = '申友托福培训平台致力培育托福高分学员。为学员提供关于托福报名，托福考试时间，托福机经，托福真题，托福听力，托福口语、托福词汇、托福写作、托福阅读等专业的托福备考信息，被业界称为“托福高分基地”。';
+//    }elseif(strstr($url,'/teachers/')){
+//        $seo['title'] = 'GMAT名师、托福名师、留学顾问';
+//        $seo['keywords'] = '';
+//        $seo['description'] = '';
+//    }elseif(strstr($url,'/practices/')){
+//        $seo['title'] = '游学实习详情页';
+//        $seo['keywords'] = '';
+//        $seo['description'] = '';
+//    }elseif($url == '/mentor.html'){
+//        $seo['title'] = '海外mentor';
+//        $seo['keywords'] = '';
+//        $seo['description'] = '';
+//    }elseif($url == '/study-aboard/service/introduction.html'){
+//        $seo['title'] = '留学服务';
+//        $seo['keywords'] = '';
+//        $seo['description'] = '';
+//    }else{
+//        if($action == 'word-details' || $action == 'picture-details' ){
+//            $seo['title'] = $this->context->title;
+//            $seo['keywords'] = $this->context->keywords;
+//        }
+//        elseif($action == 'details' && $controller == 'schools' ){
+//            $seo['title'] = '院校库详情';
+//            $seo['keywords'] = '';
+//            $seo['description'] = '';
+//        }
+//        elseif($action == 'majormsg' && $controller == 'schools' ){
+//            $seo['title'] = '院校库专业详情';
+//            $seo['keywords'] = '';
+//            $seo['description'] = '';
+//        }else{
+//            if(isset($this->context->layout_data) && $this->context->layout_data != null){
+//                $data['seoId'] = $this->context->layout_data;
+//            }
+//            elseif(strstr($url,'/application/') ){
+//                $data['seoId'] = 120;
+//            }
+//            elseif(strstr($url,'/question') ){
+//                $data['seoId'] = 121;
+//            }
+//            elseif(strstr($url,'/promotion/') ){
+//                $data['seoId'] = 165;
+//            }
+//            elseif($action == 'project' && $controller == 'study'){
+//                $data['seoId'] = 119;
+//            }
+//            else{
+//                $data = \app\modules\cn\models\UrlSeo::find()->where("url='$url'")->one();
+//            }
+//            if((!isset($data['seoId']))||$data['seoId']==false){
+//                $data['seoId']=223;
+//            }
+//            $seo = \app\modules\cn\models\Category::getSeoInfo($data['seoId']);
+//        }
+//    }
     ?>
     <title><?php echo $this->context->title==false?'1111111':$this->context->title?>-申友网</title>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">

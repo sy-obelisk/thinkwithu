@@ -131,6 +131,7 @@ class ContentController extends AppControl {
                 $model->image = $contentData['image'];
                 $model->catId = $contentData['catId'];
                 $re = $model->save();
+                Content::updateAll(['sort' => $model->primaryKey],"id=$model->primaryKey");
                 //将分类的内容属性，转移到内容本身的扩展属性中
                 $this->shiftExtend($model->primaryKey,$contentData['catId'],$extendValue);
                 //将分类的内容的副分类存储

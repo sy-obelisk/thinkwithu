@@ -1508,4 +1508,16 @@ class ApiController extends ThinkUApiControl {
         }
         die(json_encode($res));
     }
+
+    /**
+     * 案例分页
+     * By yoyo
+     */
+    public function actionGetCase(){
+        $catId = Yii::$app->request->get('catId',282);
+        $page = Yii::$app->request->get('page',1);
+        $data=file_get_contents("http://www.smartapply.cn/cn/api/get-case?catId=$catId&page=$page");
+        $data=json_decode($data,true);
+        die(json_encode($data));
+    }
 }

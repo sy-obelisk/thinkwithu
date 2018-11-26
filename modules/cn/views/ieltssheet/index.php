@@ -67,14 +67,14 @@
                 </ul>
             </div>
             <div class="content_bd bd">
-                <?php foreach($course as $val){?>
+                <?php foreach($data['course'] as $val){?>
                     <ul>
                         <div class="fraction_details">
                             <div class="fraction_name"><!--课程名称-->
                                 <div class="left_name" style=" border-left: 1px solid rgb(190,190,190)!important;">课程名称</div>
                                 <?php foreach($val as $v){?>
                                     <!--                                <td><a class="course-name" href="/toeflcourses/--><?php //echo $v['id']?><!--.html">--><?php //echo $v['name']?><!--</a></td>-->
-                                    <div class="couse"><a href="/cn/course/detail-<?php echo $v['id']?>.html"><?php echo $v['name']?></a></div>
+                                    <div class="couse"><a href="http://ielts.viplgw.cn/cn/course/detail-<?php echo $v['id']?>.html"><?php echo $v['name']?></a></div>
                                 <?php }?>
                             </div>
                             <div class="fraction_price"><!--课程价格-->
@@ -105,7 +105,7 @@
                                 <div class="left_try" style=" border-left: 1px solid rgb(190,190,190)!important;">试听</div>
                                 <?php foreach($val as $v){?>
                                     <div>
-                                        <a class="immediately" href="http://p.qiao.baidu.com/im/index?siteid=7905926&ucid=18329536&cp=&cr=&cw=" target="_blank">咨询</a>
+                                        <a class="immediately" href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank">咨询</a>
                                     </div>
                                 <?php }?>
                             </div>
@@ -182,9 +182,9 @@
     <div class="Activity_Broadcast">
         <div class="bdActivity">
             <ul class="banner">
-                <?php $i=0;for($i;$i<ceil(count($active)/4);$i++){?>
+                <?php $i=0;for($i;$i<ceil(count($data['active'])/4);$i++){?>
                     <li><!--外层循环li-->
-                        <?php foreach ($active as $k => $v) { ?>
+                        <?php foreach ($data['active'] as $k => $v) { ?>
                             <?php if ($k >= $i * 4 && $k < ($i + 1) * 4) { ?>
                                 <div class="Brushing"><!--内层循环div  Brushing -->
                                     <div class="Brushing_img"><img
@@ -236,7 +236,7 @@
     <div class="teamCover teamCover_1">
         <div><!--上列表-->
             <ul class="tinter_wrap"><!--循环li-->
-                <?php foreach($teacher as $v){?>
+                <?php foreach($data['teacher'] as $v){?>
                     <li class="Bdcotent">
                         <div class="Bdcotent_left">
                             <p class="teacher_name"><?php echo $v['name']?></p><!--老师名字-->
@@ -255,7 +255,7 @@
             <i class="iconfont prev">&#xe605;</i>
             <div class="smallImg">
                 <ul><!--循环li-->
-                    <?php foreach($teacher as $v){?>
+                    <?php foreach($data['teacher'] as $v){?>
                         <li class="img_cover">
                             <img src="http://ielts.viplgw.cn<?php echo $v['image']?>" alt="头像">
                         </li>
