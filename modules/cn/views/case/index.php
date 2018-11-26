@@ -163,13 +163,9 @@
 <script>
     //分页
     $(document).on("click", ".pageSize li.iPage", function () {
-
         var caseWrap = $(this).parent().parent();
         var catId = $('.success_title ul li.on').attr("data-catid");
         var page = parseInt($(this).html());
-        console.log(caseWrap);
-        console.log(catId);
-        console.log(page);
         $.ajax({
             url: "/cn/api/get-case",
             type: "get",
