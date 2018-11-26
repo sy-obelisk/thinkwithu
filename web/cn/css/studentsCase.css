@@ -370,6 +370,42 @@
     transform: translateX(-50%);
     display: inline-block;
 }
-.page_size li{
+/*分页*/
+.pageSize {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    overflow: hidden;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 1;
+    text-align: center;
+    padding: 10px;
+}
+.pageSize li{
     float: left;
+}
+.pageSize li {
+    cursor: pointer;
+    margin-right: 15px;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 30px;
+    box-shadow: rgba(0, 0, 0, 0.157) 0px 0px 1px 1px;
+    color: rgb(153, 153, 153);
+    padding: 0px 13px;
+    background: rgb(245, 245, 245);
+}
+.pageSize li.on {
+    background: #974798 !important;
+    color: #ffffff !important;
+}
+.pageSize .next{
+    display: none;
+}
+.pageSize .grey{
+    display: none;
 }

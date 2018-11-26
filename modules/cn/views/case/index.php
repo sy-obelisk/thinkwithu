@@ -82,14 +82,15 @@
                             <a href="" class="Content_d_cover">
                                 <div class="Content_d">
                                     <div class="imgCover">
-                                        <img src="http://www.thinkwithu.com/<?php echo $v['image']?>" alt="录取图片">
+                                        <img src="http://www.smartapply.cn/<?php echo $v['image']?>" alt="录取图片">
                                         <div class="mask">
-                                            <p class="mask_name"><?php echo $v['name']?></p><!--姓名-->
-                                            <p class="mask_school">录取院校: <?php echo $v['abroadSchool']?></p><!--录取院校-->
-                                            <p class="mask_obj"><?php if($v['major']!=false) echo '录取专业：'.$v['major'];?> </p><!--录取专业-->
+                                            <p class="mask_name"><?php echo $v['cnName']?></p><!--姓名-->
+                                            <p class="mask_school">录取院校: <?php echo $v['problemComplement']?></p><!--录取院校-->
+                                            <p class="mask_obj"><?php if($v['article']!=false) echo '录取专业：'.$v['article'];?> </p><!--录取专业-->
                                         </div>
                                     </div>
                                     <p class="content_p"><?php echo $v['name']?></p>
+                                </div>
                             </a>
                         <?php }}?>
                     </li>
@@ -147,7 +148,7 @@
                     <?php }
                 } ?>
                 <!--分页-->
-                <div class="page_size">
+                <div class="pageSize">
                     <?php echo $val['pageStr'];?>
                 </div>
             </ul>
