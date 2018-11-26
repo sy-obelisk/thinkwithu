@@ -127,7 +127,7 @@
         </div>
         <div class="admission_c bd">
             <?php foreach($case as $val){?>
-            <ul><!--外层循环ul  内层循环li admission_d-->
+            <ul class="successList"><!--外层循环ul  内层循环li admission_d-->
                 <?php foreach ($val['data'] as $k => $v) {
                     if (is_numeric($k)) {
                         ?>
@@ -141,7 +141,7 @@
                                 <p class="admission_school">毕业院校:<span><?php echo $v['numbering'] ?></span></p><!--毕业院校-->
                                 <p class="admission_hardware">硬件条件:<span><?php echo $v['sentenceNumber'] ?></span></p>
                                 <!--硬件条件-->
-                                <p class="admission_ad">录取院校:<span>哈佛大学</span></p><!--录取院校-->
+                                <p class="admission_ad">录取院校:<span><?php echo $v['problemComplement'] ?></span></p><!--录取院校-->
                                 <p class="admission_obj">录取专业:<span><?php echo $v['article'] ?></span></p><!--录取专业-->
                             </li>
                         </a>
@@ -159,3 +159,48 @@
         jQuery(".success_content").slide({});
     </script>
 </section>
+
+<script>
+    //分页
+    $(document).on("click", ".pageSize li.iPage", function () {
+
+        var caseWrap = $(this).parent().parent();
+        var catId = $('.success_title ul li.on').attr("data-catid");
+        var page = parseInt($(this).html());
+        console.log(caseWrap);
+        console.log(catId);
+        console.log(page);
+        $.ajax({
+            url: "/cn/api/get-case",
+            type: "get",
+            data: {
+                catId: catId,
+                page: page,
+            },
+            dataType: "json",
+            success: function (data) {
+                var str = "";
+                caseWrap.empty();
+                for (var i = 0; i < data.data.length; i++) {
+                    str += '<a href="/case/' + catId + '/' + data.data[i].id+'.html" class="admission_d_cover">';
+                    str +='<li class="admission_d">';
+
+                    str +='<div class="admission_img"><img src="http://www.smartapply.cn'+ data.data[i].image +'" alt="录取图片"></div>';
+                    str +='<p class="admission_name">'+ data.data[i].cnName +'</p><!--姓名-->';
+                    str +='<p class="admission_m">'+ data.data[i].problemComplement +'</p><!--录取院校-->';
+                    str +='<p class="admission_school">毕业院校:<span>'+ data.data[i].numbering +'</span></p><!--毕业院校-->';
+                    str +='<p class="admission_hardware">硬件条件:<span>'+data.data[i].sentenceNumber+'</span></p><!--硬件条件-->';
+                    str +='<p class="admission_ad">录取院校:<span>'+ data.data[i].problemComplement +'</span></p><!--录取院校-->';
+                    str +='<p class="admission_obj">录取专业:<span>'+data.data[i].article+'</span></p><!--录取专业-->';
+
+                    str +='</li>';
+                    str += '</a>';
+                }
+                //分页
+                str +='<div class="pageSize">'+ data.pageStr +'</div>';
+
+                caseWrap.append(str);
+            }
+        });
+    })
+</script>
