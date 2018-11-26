@@ -79,17 +79,19 @@
                     <li><!--外层循环li  内层循环div Content_d-->
                         <?php foreach($new as $k=>$v){
                         if ($k < ($i + 1) * 3 && $k >= $i * 3) { ?>
-                        <div class="Content_d">
-                            <div class="imgCover">
-                                <img src="http://www.thinkwithu.com/<?php echo $v['image']?>" alt="录取图片">
-                                <div class="mask">
-                                    <p class="mask_name"><?php echo $v['name']?></p><!--姓名-->
-                                    <p class="mask_school">录取院校: <?php echo $v['abroadSchool']?></p><!--录取院校-->
-                                    <p class="mask_obj"><?php if($v['major']!=false) echo '录取专业：'.$v['major'];?> </p><!--录取专业-->
+                            <a href="" class="Content_d_cover">
+                                <div class="Content_d">
+                                    <div class="imgCover">
+                                        <img src="http://www.thinkwithu.com/<?php echo $v['image']?>" alt="录取图片">
+                                        <div class="mask">
+                                            <p class="mask_name"><?php echo $v['name']?></p><!--姓名-->
+                                            <p class="mask_school">录取院校: <?php echo $v['abroadSchool']?></p><!--录取院校-->
+                                            <p class="mask_obj"><?php if($v['major']!=false) echo '录取专业：'.$v['major'];?> </p><!--录取专业-->
+                                        </div>
+                                    </div>
+                                    <p class="content_p"><?php echo $v['name']?></p>
                                 </div>
-                            </div>
-                            <p class="content_p"><?php echo $v['name']?></p>
-                        </div>
+                            </a>
                         <?php }}?>
                     </li>
                     <?php }?>
@@ -115,11 +117,11 @@
         <div class="service_line"></div>
         <div class="success_title hd">
             <ul>
-                <li><p>美国留学</p></li>
-                <li><p>英国留学</p></li>
-                <li><p>澳洲加拿大</p></li>
-                <li><p>香港新加坡</p></li>
-                <li><p>欧洲国家</p></li>
+                <li data-catid="282"><p>美国留学</p></li>
+                <li data-catid="283"><p>英国留学</p></li>
+                <li data-catid="284"><p>澳洲加拿大</p></li>
+                <li data-catid="285"><p>香港新加坡</p></li>
+                <li data-catid="286"><p>欧洲国家</p></li>
                 <a href="">More>></a>
             </ul>
         </div>
@@ -129,18 +131,20 @@
                 <?php foreach ($val['data'] as $k => $v) {
                     if (is_numeric($k)) {
                         ?>
-                        <li class="admission_d">
-                            <div class="admission_img">
-                                <img src="http://www.smartapply.cn<?php echo $v['image'] ?>" alt="录取图片">
-                            </div>
-                            <p class="admission_name"><?php echo $v['cnName'] ?></p><!--姓名-->
-                            <p class="admission_m"><?php echo $v['problemComplement'] ?></p><!--录取院校-->
-                            <p class="admission_school">毕业院校:<span><?php echo $v['numbering'] ?></span></p><!--毕业院校-->
-                            <p class="admission_hardware">硬件条件:<span><?php echo $v['sentenceNumber'] ?></span></p>
-                            <!--硬件条件-->
-                            <p class="admission_ad">录取院校:<span>哈佛大学</span></p><!--录取院校-->
-                            <p class="admission_obj">录取专业:<span><?php echo $v['article'] ?></span></p><!--录取专业-->
-                        </li>
+                        <a href="" class="admission_d_cover">
+                            <li class="admission_d">
+                                <div class="admission_img">
+                                    <img src="http://www.smartapply.cn<?php echo $v['image'] ?>" alt="录取图片">
+                                </div>
+                                <p class="admission_name"><?php echo $v['cnName'] ?></p><!--姓名-->
+                                <p class="admission_m"><?php echo $v['problemComplement'] ?></p><!--录取院校-->
+                                <p class="admission_school">毕业院校:<span><?php echo $v['numbering'] ?></span></p><!--毕业院校-->
+                                <p class="admission_hardware">硬件条件:<span><?php echo $v['sentenceNumber'] ?></span></p>
+                                <!--硬件条件-->
+                                <p class="admission_ad">录取院校:<span>哈佛大学</span></p><!--录取院校-->
+                                <p class="admission_obj">录取专业:<span><?php echo $v['article'] ?></span></p><!--录取专业-->
+                            </li>
+                        </a>
                     <?php }
                 } ?>
                 <!--分页-->

@@ -155,11 +155,11 @@
     padding: 30px 20px;
     margin-right: 55px;
 }
-.Content_d:nth-child(3){
+.Content_d_cover:nth-child(3) .Content_d{
     margin-right: 0px!important;
 }
 .imgCover{
-    max-height: 350px;
+    height: 350px;
     overflow: hidden;
     position: relative;
 }
@@ -171,11 +171,12 @@
     height: 100%;
     position: absolute;
     top: -350px;
+    /*top: 0;*/
     left: 0;
     transition: all 0.8s;
     -moz-transition: all 0.8s;
     -webkit-transition: all 0.8s;
-    background: rgba(157,71,152,.4);
+    background: rgba(157,71,152,.6);
 }
 .Content_d:hover .mask{
     transform: translateY(350px);
@@ -191,25 +192,30 @@
 
 }
 .mask_name{
-    font-size: 34px;
-    margin:130px 0px 0px 70px;
+    font-size: 22px;
+    width: 70%;
+    margin:130px auto 0px;
 }
 .mask_school{
     font-size: 18px;
-    margin: 10px 0 10px 70px;
+    width: 70%;
+    margin: 10px auto 10px;
 }
 .mask_obj{
+    width: 70%;
     font-size: 18px;
-    margin-left:70px;
+    margin: auto;
 }
 .content_p{
     margin: 10px 0;
     overflow: hidden;
-    text-overflow:ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
     font-size: 16px;
-    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /*-webkit-box-orient: vertical;*/
+    /*text-overflow:ellipsis;*/
+    /*display: -webkit-box;*/
+    /*-webkit-line-clamp: 2;*/
 }
 .casesContent{
     position: relative;
@@ -296,16 +302,20 @@
 }
 .admission_c{
     overflow: hidden;
+    position: relative;
+    padding-bottom: 60px;
 }
 .admission_d{
     float: left;
     width: 303px;
+    height: 469px;
     background: white;
     padding: 30px 30px;
     margin-right: 55px;
     margin-top: 20px;
 }
-.admission_d:nth-child(3n){
+
+.admission_d_cover:nth-child(3n) .admission_d{
     margin-right:0px!important;
 }
 .admission_d:hover{
@@ -320,7 +330,7 @@
  }
 
 .admission_img{
-    max-height: 330px;
+    height: 230px;
     overflow: hidden;
     position: relative;
     margin-bottom: 30px;
@@ -334,6 +344,11 @@
 }
 .admission_m{
     font-size: 16px;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    text-overflow:ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp:3;
 }
 .admission_d>p{
     font-size: 16px;
@@ -342,4 +357,19 @@
 .admission_d>p>span{
     margin-left: 10px;
     color: rgb(154,154,154);
+}
+.page_size{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    overflow: hidden;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    display: inline-block;
+}
+.page_size li{
+    float: left;
 }
