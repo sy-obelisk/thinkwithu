@@ -75,17 +75,17 @@
         <div class="casesContent">
             <div class="cases_d">
                 <ul>
-                    <?php for($i=0;$i<ceil(count($new)/3);$i++){?>
+                    <?php for($i=0;$i<ceil(count($new['data'])/3);$i++){?>
                     <li><!--外层循环li  内层循环div Content_d-->
-                        <?php foreach($new as $k=>$v){
+                        <?php foreach($new['data'] as $k=>$v){
                         if ($k < ($i + 1) * 3 && $k >= $i * 3) { ?>
                         <div class="Content_d">
                             <div class="imgCover">
-                                <img src="http://www.thinkwithu.com/<?php echo $v['image']?>" alt="录取图片">
+                                <img src="http://www.smartapply.cn/<?php echo $v['image']?>" alt="录取图片">
                                 <div class="mask">
-                                    <p class="mask_name"><?php echo $v['name']?></p><!--姓名-->
-                                    <p class="mask_school">录取院校: <?php echo $v['abroadSchool']?></p><!--录取院校-->
-                                    <p class="mask_obj"><?php if($v['major']!=false) echo '录取专业：'.$v['major'];?> </p><!--录取专业-->
+                                    <p class="mask_name"><?php echo $v['cnName']?></p><!--姓名-->
+                                    <p class="mask_school">录取院校: <?php echo $v['problemComplement']?></p><!--录取院校-->
+                                    <p class="mask_obj"><?php if($v['article']!=false) echo '录取专业：'.$v['article'];?> </p><!--录取专业-->
                                 </div>
                             </div>
                             <p class="content_p"><?php echo $v['name']?></p>
