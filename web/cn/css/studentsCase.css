@@ -265,12 +265,22 @@
     overflow: hidden;
 }
 .success_title ul li{
+    cursor: pointer;
     float: left;
-    padding: 20px 40px;
+    padding: 0px 40px;
+    font-size: 16px;
+
+}
+.success_title ul li p{
+    padding: 20px 0px;
     font-size: 16px;
     border-bottom: 2px solid transparent;
 }
 .success_title ul li.on{
+    color: #974798;
+
+}
+.success_title ul li.on p{
     color: #974798;
     border-bottom: 2px solid #974798;
 }

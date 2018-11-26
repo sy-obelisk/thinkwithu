@@ -23,6 +23,14 @@ class CaseController extends ThinkUController {
     public function actionIndex(){
         return $this->render('index');
     }
+    /**
+     * 学员案例详情
+     * @return string
+     * @Obelisk
+     */
+    public function actionDetails(){
+        return $this->render('details');
+    }
 
     /**
      * 高分列表

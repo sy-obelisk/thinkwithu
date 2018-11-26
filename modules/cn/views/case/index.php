@@ -214,11 +214,11 @@
         <div class="service_line"></div>
         <div class="success_title hd">
             <ul>
-                <li>美国留学</li>
-                <li>英国留学</li>
-                <li>澳洲加拿大</li>
-                <li>香港新加坡</li>
-                <li>欧洲国家</li>
+                <li><p>美国留学</p></li>
+                <li><p>英国留学</p></li>
+                <li><p>澳洲加拿大</p></li>
+                <li><p>香港新加坡</p></li>
+                <li><p>欧洲国家</p></li>
                 <a href="">More>></a>
             </ul>
         </div>
