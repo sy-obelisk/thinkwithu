@@ -28,11 +28,11 @@ class CaseController extends ThinkUController
 //        $new = Content::getContent(['fields' => 'abroadSchool,major', 'category' => "207", 'order' => 'c.id desc', 'pageSize' => 12]);
         $new = json_decode(file_get_contents("http://www.smartapply.cn/cn/api/get-case?catId=281&page=1"), true);
         $list = Content::getContent(['category' => "207", 'order' => 'c.sort asc,c.id desc', 'pageSize' => 50]);
-        $case['USA'] = json_decode(file_get_contents("http://www.smartapply.cn/cn/api/get-case?catId=282&page=1"), true);
-        $case['UK'] = json_decode(file_get_contents("http://www.smartapply.cn/cn/api/get-case?catId=283&page=1"), true);
-        $case['AUS'] = json_decode(file_get_contents("http://www.smartapply.cn/cn/api/get-case?catId=284&page=1"), true);
-        $case['HK'] = json_decode(file_get_contents("http://www.smartapply.cn/cn/api/get-case?catId=285&page=1"), true);
-        $case['EURO'] = json_decode(file_get_contents("http://www.smartapply.cn/cn/api/get-case?catId=286&page=1"), true);
+        $case[0] = json_decode(file_get_contents("http://www.smartapply.cn/cn/api/get-case?catId=282&page=1"), true);
+        $case[1] = json_decode(file_get_contents("http://www.smartapply.cn/cn/api/get-case?catId=283&page=1"), true);
+        $case[2] = json_decode(file_get_contents("http://www.smartapply.cn/cn/api/get-case?catId=284&page=1"), true);
+        $case[3] = json_decode(file_get_contents("http://www.smartapply.cn/cn/api/get-case?catId=285&page=1"), true);
+        $case[4] = json_decode(file_get_contents("http://www.smartapply.cn/cn/api/get-case?catId=286&page=1"), true);
 //        echo '<pre>';var_dump($new);die;
         return $this->render('index', ['case' => $case, 'new' => $new, 'list' => $list]);
     }
@@ -46,12 +46,9 @@ class CaseController extends ThinkUController
     {
         $id = Yii::$app->request->get('id');
         $catId = Yii::$app->request->get('catId');
-        $id = 286;
-        $data = json_decode(file_get_contents("http://www.smartapply.cn/cn/mall-two/detail?data-type='json"."'&countryid=$id&catId=$catId"), true);
-        echo '<pre>';
-        var_dump($data);
-        die;
-        return $this->render('details', $data);
+        $list = json_decode(file_get_contents("http://www.smartapply.cn/cn/api/get-case?catId=281&page=1"), true);
+        $data = json_decode(file_get_contents("http://www.smartapply.cn/cn/mall-two/three?data-type='json'&contentid=$id&countryid=$catId"), true);
+        return $this->render('details', ['data'=>$data['data'],'list'=>$list['data']]);
     }
 
     /**
@@ -87,5 +84,10 @@ class CaseController extends ThinkUController
         unset($contentData['pageStr']);
         return $this->render('eliteSchool', ['count' => $count, 'total' => $total, 'page' => $page, 'contentData' => $contentData]);
     }
+
+//    public function actionSearch(){
+//        $data=file_get_contents("http://www.smartapply.cn/cn/mall-two/select?countryid=240&word='斯坦福大学'");
+//    var_dump($data);die;
+//    }
 
 }

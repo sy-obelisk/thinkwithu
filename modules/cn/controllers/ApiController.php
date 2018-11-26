@@ -1520,4 +1520,23 @@ class ApiController extends ThinkUApiControl {
         $data=json_decode($data,true);
         die(json_encode($data));
     }
+
+
+//    public function actionCase(){
+////        (select name from Table_3)intersect(select stuname from Table_4)
+//        $catId = Yii::$app->request->get('catId',282);
+//        $category="206,104,89";
+//        $ids=explode(',',$category);
+//        $sql="select contentId from {{%category_content}} where catId=$ids[0]";
+//
+//        foreach(explode(',',$category) as $k=>$v){
+//            if($k>0) {
+//                $sql .= " intersect select contentId from {{%category_content}} where catId=$v";
+//            }
+//        }
+//        $data = Yii::$app->db->createCommand($sql)->queryAll();
+//        var_dump($data);die;
+//        $data=json_decode($data,true);
+//        die(json_encode($data));
+//    }
 }

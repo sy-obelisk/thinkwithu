@@ -12,10 +12,10 @@
     <div class="content">
         <!--左边-->
         <div class="content_left">
-            <p class="left_title">纽约大学！</p><!--标题-->
-            <p class="left_time">来源:2018-11-26 10:56:35</p><!--时间-->
+            <p class="left_title"><?php echo $data[0]['name']?></p><!--标题-->
+            <p class="left_time">来源:<?php echo $data[0]['createTime']?></p><!--时间-->
             <div class="con_c"><!--内容-->
-
+                <?php echo str_replace('/files/','http://www.smartapply.cn/files/',$data[0]['alternatives'])?>
             </div>
         </div>
         <!--右边-->
@@ -26,22 +26,12 @@
             </div>
             <div class="right_c">
                 <ul><!--循环li-->
+                    <?php foreach($list as $v){?>
                     <li>
                         <b>•</b>
-                        <a href="">GMAT备考中独立主格结构讲解GMAT备考中独立主格结构讲解</a>
+                        <a href="/case/281/<?php echo $v['id']?>.html"><?php echo $v['name']?></a>
                     </li>
-                    <li>
-                        <b>•</b>
-                        <a href="">GMAT备考中独立主格结构讲解GMAT备考中独立主格结构讲解</a>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <a href="">GMAT备考中独立主格结构讲解GMAT备考中独立主格结构讲解</a>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <a href="">GMAT备考中独立主格结构讲解GMAT备考中独立主格结构讲解</a>
-                    </li>
+                    <?php }?>
                 </ul>
             </div>
         </div>
