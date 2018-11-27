@@ -5,10 +5,12 @@
             <li><a class="<?php echo $controller == 'index' ? 'on on-hover' : '' ?>  nav1-link" href="/">首页</a></li>
             <li><a class="nav1-link <?php echo $controller == 'study' ? 'on on-hover' : '' ?>" href="/study-aboard/assistance.html">留学服务</a></li>
             <li><a class="nav1-link <?php echo $controller == 'gmatheet' ? 'on on-hover' : '' ?>" href="/gmatsheet.html">GMAT课程</a></li>
+            <li><a class="nav1-link <?php echo $controller == 'ieltssheet' ? 'on on-hover' : '' ?>" href="/ieltssheet.html">雅思课程</a></li>
+            <li><a class="nav1-link <?php echo $controller == 'toeflsheet' ? 'on on-hover' : '' ?>" href="/toefl/assistance.html">托福课程</a></li>
             <li><a class="nav1-link <?php echo $controller == 'gre' ? 'on on-hover' : '' ?>" href="/gre.html">GRE课程</a></li>
             <li><a class="nav1-link <?php echo $controller == 'satsheet' ? 'on on-hover' : '' ?>" href="/satsheet.html">SAT课程</a></li>
-            <li><a class="nav1-link <?php echo $controller == 'toeflsheet' ? 'on on-hover' : '' ?>" href="/toefl/assistance.html">托福课程</a></li>
-            <li><a class="nav1-link <?php echo $controller == 'ieltssheet' ? 'on on-hover' : '' ?>" href="/ieltssheet.html">雅思课程</a></li>
+
+
             <li><a class="nav1-link <?php echo $controller == 'words' ? 'on on-hover' : '' ?>" href="/words.html">单词学习</a></li>
             <li><a class="nav1-link <?php echo $controller == 'class' ? 'on on-hover' : '' ?>" href="/public-class.html">申友讲堂</a></li>
             <li><a class="nav1-link" href="http://www.gmatonline.cn" target="_blank">申友在线</a></li>
