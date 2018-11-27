@@ -328,7 +328,9 @@
 }.admission_d:hover p>span{
      color: #974798;
  }
-
+.forYou>span{
+    color: white!important;
+}
 .admission_img{
     height: 230px;
     overflow: hidden;
