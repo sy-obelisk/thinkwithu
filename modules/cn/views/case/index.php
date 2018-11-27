@@ -79,7 +79,7 @@
                     <li><!--外层循环li  内层循环div Content_d-->
                         <?php foreach($new['data'] as $k=>$v){
                         if ($k < ($i + 1) * 3 && $k >= $i * 3) { ?>
-                            <a href="" class="Content_d_cover">
+                            <a href="/case/281/<?php echo $v['id']?>.html" class="Content_d_cover">
                                 <div class="Content_d">
                                     <div class="imgCover">
                                         <img src="http://www.smartapply.cn/<?php echo $v['image']?>" alt="录取图片">
@@ -126,12 +126,12 @@
             </ul>
         </div>
         <div class="admission_c bd">
-            <?php foreach($case as $val){?>
+            <?php foreach($case as $key=>$val){?>
             <ul class="successList"><!--外层循环ul  内层循环li admission_d-->
                 <?php foreach ($val['data'] as $k => $v) {
                     if (is_numeric($k)) {
                         ?>
-                        <a href="" class="admission_d_cover">
+                        <a href="/case/<?php echo 282+$key?>/<?php echo $v['id']?>.html" class="admission_d_cover">
                             <li class="admission_d">
                                 <div class="admission_img">
                                     <img src="http://www.smartapply.cn<?php echo $v['image'] ?>" alt="录取图片">
