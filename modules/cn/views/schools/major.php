@@ -83,7 +83,7 @@
                     <i class="iconfont ico_fb_1">&#xe600;</i>
                     <span class="majro_cn">专业方向</span>
                     <span class="majro_en"> Professional employment direction</span>
-                    <span class="change_an"><i class="iconfont icon_change"></i>换一批</span>
+                    <span class="change_an"><i class="iconfont icon_change pro_change"></i>换一批</span>
                 </p>
                 <div class="prospectus-bottom">
                     <ul id="hotmajor">
@@ -215,3 +215,28 @@
         </div>
     </div>
 </section>
+<script>
+    //专业方向换一批
+    $('.change_an').click(function () {
+        $.post('http://schools.smartapply.cn/cn/api/select-major',{},function(re){
+            var str = "";
+            for(i=0;i<re.length;i++){
+                str +=' <li>'+
+                    '<div class="bTop-img"><a href="">'+
+                    '<img src="/cn/images/aboutUs_counicon05.png" alt="学校图片"></a>'+
+                    '</div>'+
+                    '<div class="bBot-info">'+
+                    '<ul>'+
+                    '<li>'+ re[i].title+'</li>'+
+                    '<li>'+ re[i].direction+'</li>'+
+                    '<li><a href="">查看详情>></a></li>'+
+                    '<li class="pg_free_li"><a href="" class="pg_free">免费评估<i class="iconfont left_icon">&#xe610;</i></a></li>'+
+                    '</ul>'+
+                    '</div>'+
+                    '</li>';
+            }
+
+            $("#hotmajor").html(str);
+        },'json')
+    })
+</script>
