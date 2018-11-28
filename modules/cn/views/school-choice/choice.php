@@ -6,7 +6,7 @@
         <div class="enrollBd">
             <ul>
                 <?php foreach($data as $v){?>
-                <li>雷哥网会员 <?php echo $v['userName'].' '.date('Y-m-d H:i:s')?>-获得一份录取报告</li>
+                <li>申友会员 <?php echo $v['userName'].' '.date('Y-m-d H:i:s')?>-获得一份录取报告</li>
                 <?php }?>
             </ul>
         </div>

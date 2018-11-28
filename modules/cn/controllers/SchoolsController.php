@@ -74,14 +74,11 @@ class SchoolsController extends ThinkUController {
      */
     public function actionDetails(){
         $school = new Schools();
-        $url = 'school';
         $data['schoolid'] = Yii::$app->request->get('schoolid');//分类ID
-        $result =  json_decode($school->CurlRequest($url,['schoolid'=>$data['schoolid']]),TRUE);//学院类型
-        return $this->render('detail',[
-            'details' => $result['data'],
-            'activity' => $this->activity,
-            'activityDate' => $this->activityDate
-        ]);
+        $data=json_decode(file_get_contents("http://schools.smartapply.cn/schools/id-".$data['schoolid'].".html?data-type='json'"),true);
+        $school =  json_decode($school->CurlRequest('school',['catid'=>155, 'pageNumber'=>1, 'pageSize'=>6]),TRUE);
+//        echo '<pre>';var_dump($data['major']);die;
+        return $this->render('detail',['data'=>$data['data'],'major'=>$data['major'],'school'=>$school['data']]);
     }
 
     /**专业数据
@@ -100,17 +97,9 @@ class SchoolsController extends ThinkUController {
      * by fawn
      */
     public function actionMajormsg(){
-        $school = new Schools();
-//        $url = 'content';
-//        $data['contentid'] = Yii::$app->request->get('contentid');//分类ID
-//        $data['catid'] = Yii::$app->request->get('catid');//分类ID
-//        $result = json_decode($school->CurlRequest($url,['contentid'=>$data['contentid'],'catid'=>$data['catid']]),TRUE);
-//        if(empty($result)){
-//            echo '<script>alert("暂无数据");history.go(-1);</script>';
-//            exit;
-//        }
-        $result['data']=array();
-        return $this->render('major',['major' => $result['data']]);
+        $id = Yii::$app->request->get('id');//分类ID
+        $data=json_decode(file_get_contents("http://schools.smartapply.cn/major/".$id.".html?data-type='json'"),true);
+        return $this->render('major',['data' => $data]);
     }
 
     public function actionTeacher(){

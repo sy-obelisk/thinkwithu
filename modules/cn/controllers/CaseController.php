@@ -11,6 +11,7 @@ namespace app\modules\cn\controllers;
 use yii;
 use app\modules\cn\models\Content;
 use app\libs\ThinkUController;
+use QL\QueryList;
 
 class CaseController extends ThinkUController
 {
@@ -48,7 +49,7 @@ class CaseController extends ThinkUController
         $catId = Yii::$app->request->get('catId');
         $list = json_decode(file_get_contents("http://www.smartapply.cn/cn/api/get-case?catId=281&page=1"), true);
         $data = json_decode(file_get_contents("http://www.smartapply.cn/cn/mall-two/three?data-type='json'&contentid=$id&countryid=$catId"), true);
-        return $this->render('details', ['data'=>$data['data'],'list'=>$list['data']]);
+        return $this->render('details', ['data' => $data['data'], 'list' => $list['data']]);
     }
 
     /**
@@ -85,9 +86,18 @@ class CaseController extends ThinkUController
         return $this->render('eliteSchool', ['count' => $count, 'total' => $total, 'page' => $page, 'contentData' => $contentData]);
     }
 
-//    public function actionSearch(){
-//        $data=file_get_contents("http://www.smartapply.cn/cn/mall-two/select?countryid=240&word='斯坦福大学'");
-//    var_dump($data);die;
-//    }
+    public function actionSearch()
+    {
+        $keyword = Yii::$app->request->get('keyword','');
+        $url="http://www.smartapply.cn/cn/mall-two/select?countryid=240&word=$keyword";
+        $data = QueryList::Query($url,array(
+            'url'=>array('.detailContent>ul>li>.detailC-left>a','href'),
+            'image'=>array('.detailContent>ul>li>.detailC-left>image','src'),
+            'name' => array('.detailContent>ul>li>.detailC-right>.title','text') ,
+            'time' => array('.detailContent>ul>li>.detailC-right>.time','text') ,
+            'dis' => array('.detailContent>ul>li>.detailC-right>div','text')
+        ))->getData();
+        return $this->render('search',$data);
+    }
 
 }
