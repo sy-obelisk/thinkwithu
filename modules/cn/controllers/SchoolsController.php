@@ -101,14 +101,15 @@ class SchoolsController extends ThinkUController {
      */
     public function actionMajormsg(){
         $school = new Schools();
-        $url = 'content';
-        $data['contentid'] = Yii::$app->request->get('contentid');//分类ID
-        $data['catid'] = Yii::$app->request->get('catid');//分类ID
-        $result = json_decode($school->CurlRequest($url,['contentid'=>$data['contentid'],'catid'=>$data['catid']]),TRUE);
-        if(empty($result)){
-            echo '<script>alert("暂无数据");history.go(-1);</script>';
-            exit;
-        }
+//        $url = 'content';
+//        $data['contentid'] = Yii::$app->request->get('contentid');//分类ID
+//        $data['catid'] = Yii::$app->request->get('catid');//分类ID
+//        $result = json_decode($school->CurlRequest($url,['contentid'=>$data['contentid'],'catid'=>$data['catid']]),TRUE);
+//        if(empty($result)){
+//            echo '<script>alert("暂无数据");history.go(-1);</script>';
+//            exit;
+//        }
+        $result['data']=array();
         return $this->render('major',['major' => $result['data']]);
     }
 
