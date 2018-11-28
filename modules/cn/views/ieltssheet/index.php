@@ -173,7 +173,7 @@
 <!--公开课-->
 <section class="openClass">
     <div class="sixgn-top">
-        <p class="courseName">各种留学考试问题尽在雷哥网公开课</p>
+        <p class="courseName">各种留学考试问题尽在申友公开课</p>
         <div class="xia"></div>
         <img src="/cn/images/ielts.png">
         <div class="lxia"></div>
@@ -224,10 +224,10 @@
         });
     </script>
 </section>
-<!--雷哥网名师-->
+<!--申友名师-->
 <section class="teacherCover">
     <div class="sixgn-top">
-        <p class="courseName">雷哥网名师与你同行</p>
+        <p class="courseName">申友名师与你同行</p>
         <div class="xia"></div>
         <img src="/cn/images/ielts.png">
         <div class="lxia"></div>
