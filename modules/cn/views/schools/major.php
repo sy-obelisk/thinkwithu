@@ -8,8 +8,8 @@
     <div class="detailsCon">
         <div class="con_title">
             <a href="">首页 &gt;</a>
-            <a href="">伦敦商学院（LBS）（London business school）&gt;</a>
-            <span>金融(Finance)</span>
+            <a href="/schools/<?php echo $school['id']?>.html"><?php echo $school['name']?>&gt;</a>
+            <span><?php echo $data['name']?>(<?php echo $data['title']?>)</span>
         </div>
     </div>
 
@@ -24,19 +24,19 @@
                 </p>
                 <div class="materials_c">
                     <div class="name_img"><!--学校名称图片-->
-                        <img src="http://schools.smartapply.cn/files/attach/images/20180309/1520566444459689.jpg" alt="学校名称图片">
+                        <img src="http://schools.smartapply.cn<?php echo $school['image']?>" alt="学校名称图片">
                     </div>
                     <div class="school_c"><!--中间部分-->
-                        <p class="c_name">伦敦商学院（LBS）</p>
-                        <span>London business school</span>
-                        <p>所在地:英国伦敦</p>
-                        <p>地理位置:英国伦敦</p>
-                        <p>学校排名:N/A</p>
-                        <p>官网:https://www.london.edu/</p>
+                        <p class="c_name"><?php echo $school['name']?></p>
+                        <span><?php echo $school['title']?></span>
+                        <p>所在地:<?php echo $school['answer']?></p>
+                        <p>地理位置:<?php echo $school['alternatives']?></p>
+                        <p>学校排名:<?php echo $school['article']?></p>
+                        <p>官网:<?php echo $data['url']?></p>
                         <a href="">录取几率免费评估</a>
                     </div>
                     <div class="school_img"><!--右边-->
-                        <img src="http://schools.smartapply.cn/cn/images/benke/benkeD-img.jpg" alt="学校图片">
+                        <img src="http://schools.smartapply.cn<?php echo $school['duration']?>" alt="学校图片">
                     </div>
                 </div>
             </div>
@@ -52,14 +52,14 @@
                         <li>
                             <div class="basic-left flex-container-center">项目名称</div>
                             <div class="basic-right">
-                                <span>Finance(金融)</span>
+                                <span><?php echo $data['title']?>(<?php echo $data['name']?>)</span>
                             </div>
                             <div style="clear: both"></div>
                         </li>
                         <li>
                             <div class="basic-left flex-container-center">项目网址</div>
                             <div class="basic-right">
-                                <span><a href="https://www.london.edu/programmes/masters-courses/masters-in-finance" target="_blank">https://www.london.edu/programmes/masters-courses/masters-in-finance</a></span>
+                                <span><a href="<?php echo $data['url']?>" target="_blank"><?php echo $data['url']?></a></span>
                             </div>
                             <div style="clear: both"></div>
                         </li>
@@ -74,7 +74,7 @@
                     <span class="majro_en"> Professional introduction</span>
                 </p>
                 <div class="iframeCover">
-                    <iframe id="college_homepage" src="https://www.london.edu/programmes/masters-courses/masters-in-finance" scrolling="auto" height="600px" width="94%" frameborder="0"></iframe><!--iframe内嵌窗口-->
+                    <iframe id="college_homepage" src="<?php echo $data['url']?>" scrolling="auto" height="600px" width="94%" frameborder="0"></iframe><!--iframe内嵌窗口-->
                 </div>
             </div>
             <!--专业方向-->
@@ -87,85 +87,21 @@
                 </p>
                 <div class="prospectus-bottom">
                     <ul id="hotmajor">
+                        <?php foreach($hot as $v){?>
                         <li>
                             <div class="bTop-img"><a href="/major/11870.html">
                                     <img src="/cn/images/aboutUs_counicon05.png" alt="学校图片"></a>
                             </div>
                             <div class="bBot-info">
                                 <ul>
-                                    <li>MS in Finance</li>
-                                    <li>0-8年</li>
-                                    <li><a href="" class="see_d">查看详情&gt;&gt;</a></li>
+                                    <li><?php echo $v['title']?></li>
+                                    <li><?php echo $v['direction']?></li>
+                                    <li><a href="/schools/major/<?php echo $v['id']?>.html" class="see_d">查看详情&gt;&gt;</a></li>
                                     <li class="pg_free_li"><a href="" class="pg_free">免费评估<i class="iconfont left_icon">&#xe610;</i></a></li>
                                 </ul>
                             </div>
                         </li>
-                        <li>
-                            <div class="bTop-img"><a href="/major/11870.html">
-                                    <img src="/cn/images/aboutUs_counicon05.png" alt="学校图片"></a>
-                            </div>
-                            <div class="bBot-info">
-                                <ul>
-                                    <li>MS in Finance</li>
-                                    <li>0-8年</li>
-                                    <li><a href="" class="see_d">查看详情&gt;&gt;</a></li>
-                                    <li class="pg_free_li"><a href="" class="pg_free">免费评估<i class="iconfont left_icon">&#xe610;</i></a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="bTop-img"><a href="/major/11870.html">
-                                    <img src="/cn/images/aboutUs_counicon05.png" alt="学校图片"></a>
-                            </div>
-                            <div class="bBot-info">
-                                <ul>
-                                    <li>MS in Finance</li>
-                                    <li>0-8年</li>
-                                    <li><a href="" class="see_d">查看详情&gt;&gt;</a></li>
-                                    <li class="pg_free_li"><a href="" class="pg_free">免费评估<i class="iconfont left_icon">&#xe610;</i></a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="bTop-img"><a href="/major/11870.html">
-                                    <img src="/cn/images/aboutUs_counicon05.png" alt="学校图片"></a>
-                            </div>
-                            <div class="bBot-info">
-                                <ul>
-                                    <li>MS in Finance</li>
-                                    <li>0-8年</li>
-                                    <li><a href="" class="see_d">查看详情&gt;&gt;</a></li>
-                                    <li class="pg_free_li"><a href="" class="pg_free">免费评估<i class="iconfont left_icon">&#xe610;</i></a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="bTop-img"><a href="/major/11870.html">
-                                    <img src="/cn/images/aboutUs_counicon05.png" alt="学校图片"></a>
-                            </div>
-                            <div class="bBot-info">
-                                <ul>
-                                    <li>MS in Finance</li>
-                                    <li>0-8年</li>
-                                    <li><a href="" class="see_d">查看详情&gt;&gt;</a></li>
-                                    <li class="pg_free_li"><a href="" class="pg_free">免费评估<i class="iconfont left_icon">&#xe610;</i></a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="bTop-img"><a href="/major/11870.html">
-                                    <img src="/cn/images/aboutUs_counicon05.png" alt="学校图片"></a>
-                            </div>
-                            <div class="bBot-info">
-                                <ul>
-                                    <li>MS in Finance</li>
-                                    <li>0-8年</li>
-                                    <li><a href="" class="see_d">查看详情&gt;&gt;</a></li>
-                                    <li class="pg_free_li"><a href="" class="pg_free">免费评估<i class="iconfont left_icon">&#xe610;</i></a></li>
-                                </ul>
-                            </div>
-                        </li>
-
+                        <?php }?>
                     </ul>
                 </div>
             </div>
@@ -177,40 +113,22 @@
                 <span><i class="iconfont icon_change">&#xe609;</i>换一批</span>
             </div>
             <div class="right_con"><!--循环 right_con_son -->
-                <div class="right_con_son">
-                    <div class="son_img">
-                        <img src="http://schools.smartapply.cn/files/attach/images/20180309/1520566444459689.jpg" alt="学校logo">
-                        <p>已有<span>2220</span>人评估</p>
-                    </div>
-                    <p class="son_sc_name">西奥大学</p>
-                    <p>university university university</p>
-                    <p>学校排名:7</p>
-                    <p>位于:西澳大利亚</p>
-                    <a href="">查看更多信息>></a>
-                </div>
-
-                <div class="right_con_son">
-                    <div class="son_img">
-                        <img src="http://schools.smartapply.cn/files/attach/images/20180309/1520566444459689.jpg" alt="学校logo">
-                        <p>已有<span>2220</span>人评估</p>
-                    </div>
-                    <p class="son_sc_name">西奥大学</p>
-                    <p>university university university</p>
-                    <p>学校排名:7</p>
-                    <p>位于:西澳大利亚</p>
-                    <a href="">查看更多信息>></a>
-                </div>
-                <div class="right_con_son">
-                    <div class="son_img">
-                        <img src="http://schools.smartapply.cn/files/attach/images/20180309/1520566444459689.jpg" alt="学校logo">
-                        <p>已有<span>2220</span>人评估</p>
-                    </div>
-                    <p class="son_sc_name">西奥大学</p>
-                    <p>university university university</p>
-                    <p>学校排名:7</p>
-                    <p>位于:西澳大利亚</p>
-                    <a href="">查看更多信息>></a>
-                </div>
+                <?php foreach ($schoolData['data'] as $k => $v) {
+                    if (is_numeric($k)) {
+                        ?>
+                        <div class="right_con_son">
+                            <div class="son_img">
+                                <img src="http://schools.smartapply.cn<?php echo $v['image'] ?>" alt="学校logo">
+                                <p>已有<span><?php echo $v['viewCount'] + rand(10, 100) ?></span>人评估</p>
+                            </div>
+                            <p class="son_sc_name"><?php echo $v['name'] ?></p>
+                            <p><?php echo $v['title'] ?></p>
+                            <p>学校排名:<?php echo $v['s_rank'] ?></p>
+                            <p>位于:<?php echo $v['s_wz'] ?></p>
+                            <a href="/schools/<?php echo $v['id'] ?>.html">查看更多信息>></a>
+                        </div>
+                    <?php }
+                } ?>
             </div>
         </div>
     </div>
