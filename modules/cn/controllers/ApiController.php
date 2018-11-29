@@ -17,6 +17,7 @@ use app\modules\cn\models\UserBackground;
 use app\modules\cn\models\Login;
 use app\libs\Sms;
 use app\libs\Method;
+use app\libs\Schools;
 use app\libs\VerificationCode;
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Headers: X-Requested-With');
@@ -1522,21 +1523,16 @@ class ApiController extends ThinkUApiControl {
     }
 
 
-//    public function actionCase(){
-////        (select name from Table_3)intersect(select stuname from Table_4)
-//        $catId = Yii::$app->request->get('catId',282);
-//        $category="206,104,89";
-//        $ids=explode(',',$category);
-//        $sql="select contentId from {{%category_content}} where catId=$ids[0]";
-//
-//        foreach(explode(',',$category) as $k=>$v){
-//            if($k>0) {
-//                $sql .= " intersect select contentId from {{%category_content}} where catId=$v";
-//            }
-//        }
-//        $data = Yii::$app->db->createCommand($sql)->queryAll();
-//        var_dump($data);die;
-//        $data=json_decode($data,true);
-//        die(json_encode($data));
-//    }
+    public function actionSchool(){
+        $num = Yii::$app->request->get('num',8);
+        $cate=[155,156,157,158,159,160,520,521];
+        if($num>=count($cate)){
+            $num=($num%count($cate));
+        }
+        $school = new Schools();
+        $school =  json_decode($school->CurlRequest('school',['catid'=>$cate[$num], 'pageNumber'=>1, 'pageSize'=>6]),TRUE);
+        die(json_encode(['school'=>$school['data'],'code'=>1,'count'=>$num]));
+    }
+
+
 }

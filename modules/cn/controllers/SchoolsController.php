@@ -76,8 +76,8 @@ class SchoolsController extends ThinkUController {
         $school = new Schools();
         $data['schoolid'] = Yii::$app->request->get('schoolid');//分类ID
         $data=json_decode(file_get_contents("http://schools.smartapply.cn/schools/id-".$data['schoolid'].".html?data-type='json'"),true);
-        $school =  json_decode($school->CurlRequest('school',['catid'=>155, 'pageNumber'=>1, 'pageSize'=>6]),TRUE);
 //        echo '<pre>';var_dump($data['major']);die;
+        $school =  json_decode($school->CurlRequest('school',['catid'=>155, 'pageNumber'=>1, 'pageSize'=>6]),TRUE);
         return $this->render('detail',['data'=>$data['data'],'major'=>$data['major'],'school'=>$school['data']]);
     }
 
@@ -97,9 +97,12 @@ class SchoolsController extends ThinkUController {
      * by fawn
      */
     public function actionMajormsg(){
+        $school = new Schools();
         $id = Yii::$app->request->get('id');//分类ID
         $data=json_decode(file_get_contents("http://schools.smartapply.cn/major/".$id.".html?data-type='json'"),true);
-        return $this->render('major',['data' => $data]);
+        $schoolData =  json_decode($school->CurlRequest('school',['catid'=>155, 'pageNumber'=>1, 'pageSize'=>6]),TRUE);
+//        echo '<pre>';var_dump($data['school']);die;
+        return $this->render('major',['hot' => $data['hot'],'school'=>$data['school'],'data'=>$data['data'],'schoolData'=>$schoolData]);
     }
 
     public function actionTeacher(){
