@@ -138,7 +138,7 @@
     $('.change_an').click(function () {
         $.post('http://schools.smartapply.cn/cn/api/select-major',{},function(re){
             var str = "";
-            for(i=0;i<re.length;i++){
+            for(var i=0;i<re.length;i++){
                 str +='<li>'+
                     '<div class="bTop-img"><a href="">'+
                     '<img src="/cn/images/aboutUs_counicon05.png" alt="学校图片"></a>'+
@@ -157,12 +157,33 @@
             $("#hotmajor").html(str);
         },'json')
     });
-    //
+    //右侧换一批
     var countNum = 0;
+    var flag = true;
     $('.change_right').click(function () {
+       if(flag==true){
+
+       }else {
+           countNum+=1;
+       }
         $.get('/cn/api/school',{count:countNum},function(re){
             var str = "";
-            console.log(re);
+            flag = false;
+            for(var i=0;i<6;i++){
+                str+='<div class="right_con_son">';
+                str+='<div class="son_img">';
+                str+='<img src="http://schools.smartapply.cn'+ re.school[i].image +'" alt="学校logo">';
+                str+='<p>已有<span>'+ (parseInt(re.school[i].viewCount)+parseInt(Math.floor(Math.random()*(100 - 1) + 1)))+'</span>人评估</p>';
+                str+='</div>';
+                str+='<p class="son_sc_name">'+ re.school[i].name  +'</p>';
+                str+='<p>'+ re.school[i].title  +'</p>';
+                str+='<p>学校排名'+ re.school[i].s_rank  +'</p>';
+                str+='<p>位于'+ re.school[i].s_wz  +'</p>';
+                str+='<a href="/schools/'+ re.school[i].id +'.html">查看更多信息>></a>';
+                str+='</div>';
+            }
+            $('.right_con').html(str);
+
         },'json')
     });
 </script>

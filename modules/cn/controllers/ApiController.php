@@ -1524,14 +1524,14 @@ class ApiController extends ThinkUApiControl {
 
 
     public function actionSchool(){
-        $num = Yii::$app->request->get('num',8);
+        $count = Yii::$app->request->get('count',8);
         $cate=[155,156,157,158,159,160,520,521];
-        if($num>=count($cate)){
-            $num=($num%count($cate));
+        if($count>=count($cate)){
+            $count=($count%count($cate));
         }
         $school = new Schools();
-        $school =  json_decode($school->CurlRequest('school',['catid'=>$cate[$num], 'pageNumber'=>1, 'pageSize'=>6]),TRUE);
-        die(json_encode(['school'=>$school['data'],'code'=>1,'count'=>$num]));
+        $school =  json_decode($school->CurlRequest('school',['catid'=>$cate[$count], 'pageNumber'=>1, 'pageSize'=>6]),TRUE);
+        die(json_encode(['school'=>$school['data'],'code'=>1,'count'=>$count]));
     }
 
 
