@@ -26,15 +26,21 @@ class CaseController extends ThinkUController
      */
     public function actionIndex()
     {
-//        $new = Content::getContent(['fields' => 'abroadSchool,major', 'category' => "207", 'order' => 'c.id desc', 'pageSize' => 12]);
-        $new = json_decode(file_get_contents("http://www.smartapply.cn/cn/api/get-case?catId=281&page=1"), true);
-        $list = Content::getContent(['category' => "207", 'order' => 'c.sort asc,c.id desc', 'pageSize' => 50]);
-        $case[0] = json_decode(file_get_contents("http://www.smartapply.cn/cn/api/get-case?catId=282&page=1"), true);
-        $case[1] = json_decode(file_get_contents("http://www.smartapply.cn/cn/api/get-case?catId=283&page=1"), true);
-        $case[2] = json_decode(file_get_contents("http://www.smartapply.cn/cn/api/get-case?catId=284&page=1"), true);
-        $case[3] = json_decode(file_get_contents("http://www.smartapply.cn/cn/api/get-case?catId=285&page=1"), true);
-        $case[4] = json_decode(file_get_contents("http://www.smartapply.cn/cn/api/get-case?catId=286&page=1"), true);
-//        echo '<pre>';var_dump($new);die;
+        $new = Content::getContent(['fields' => 'abroadSchool,major', 'category' => "207", 'order' => 'c.id desc', 'pageSize' => 12]);
+//        $new = json_decode(file_get_contents("http://www.smartapply.cn/cn/api/get-case?catId=281&page=1"), true);
+        $list = Content::getContent(['category' => "207,104", 'order' => 'c.id desc', 'pageSize' => 50]);
+//        $case[0] = json_decode(file_get_contents("http://www.smartapply.cn/cn/api/get-case?catId=282&page=1"), true);
+//        $case[1] = json_decode(file_get_contents("http://www.smartapply.cn/cn/api/get-case?catId=283&page=1"), true);
+//        $case[2] = json_decode(file_get_contents("http://www.smartapply.cn/cn/api/get-case?catId=284&page=1"), true);
+//        $case[3] = json_decode(file_get_contents("http://www.smartapply.cn/cn/api/get-case?catId=285&page=1"), true);
+//        $case[4] = json_decode(file_get_contents("http://www.smartapply.cn/cn/api/get-case?catId=286&page=1"), true);
+
+        $case[0] = Content::getContent(['fields' => 'abroadSchool,major,score,oldSchool','category' => "104,88,207", 'order' => 'c.sort asc,c.id desc', 'pageSize' => 12,'page'=>1,'pageStr'=>1]);
+        $case[1] = Content::getContent(['fields' => 'abroadSchool,major,score,oldSchool','category' => "104,89,207", 'order' => 'c.sort asc,c.id desc', 'pageSize' => 12,'page'=>1,'pageStr'=>1]);
+        $case[2] = Content::getContent(['fields' => 'abroadSchool,major,score,oldSchool','category' => "104,91,96,207", 'order' => 'c.sort asc,c.id desc', 'pageSize' => 12,'page'=>1,'pageStr'=>1]);
+        $case[3] = Content::getContent(['fields' => 'abroadSchool,major,score,oldSchool','category' => "104,90,93,207", 'order' => 'c.sort asc,c.id desc', 'pageSize' => 12,'page'=>1,'pageStr'=>1]);
+        $case[4] = Content::getContent(['fields' => 'abroadSchool,major,score,oldSchool','category' => "104,94,207", 'order' => 'c.sort asc,c.id desc', 'pageSize' => 12,'page'=>1,'pageStr'=>1]);
+//        echo '<pre>';var_dump($case[0]);die;
         return $this->render('index', ['case' => $case, 'new' => $new, 'list' => $list]);
     }
 
@@ -46,10 +52,14 @@ class CaseController extends ThinkUController
     public function actionDetails()
     {
         $id = Yii::$app->request->get('id');
-        $catId = Yii::$app->request->get('catId');
-        $list = json_decode(file_get_contents("http://www.smartapply.cn/cn/api/get-case?catId=281&page=1"), true);
-        $data = json_decode(file_get_contents("http://www.smartapply.cn/cn/mall-two/three?data-type='json'&contentid=$id&countryid=$catId"), true);
-        return $this->render('details', ['data' => $data['data'], 'list' => $list['data']]);
+//        $catId = Yii::$app->request->get('catId');
+//        $list = json_decode(file_get_contents("http://www.smartapply.cn/cn/api/get-case?catId=281&page=1"), true);
+//        $data = json_decode(file_get_contents("http://www.smartapply.cn/cn/mall-two/three?data-type='json'&contentid=$id&countryid=$catId"), true);
+
+        $list = Content::getContent(['category' => "207,104", 'order' => 'c.id desc', 'pageSize' => 50]);
+        $data = Content::getContent(['fields' => 'abroadSchool,major,score,oldSchool,description','where'=>'c.id='.$id])[0];
+
+        return $this->render('details', ['data' => $data, 'list' => $list]);
     }
 
     /**
@@ -88,16 +98,24 @@ class CaseController extends ThinkUController
 
     public function actionSearch()
     {
-        $keyword = Yii::$app->request->get('keyword','');
-        $url="http://www.smartapply.cn/cn/mall-two/select?countryid=240&word=$keyword";
-        $data = QueryList::Query($url,array(
-            'url'=>array('.detailContent>ul>li>.detailC-left>a','href'),
-            'image'=>array('.detailContent>ul>li>.detailC-left>image','src'),
-            'name' => array('.detailContent>ul>li>.detailC-right>.title','text') ,
-            'time' => array('.detailContent>ul>li>.detailC-right>.time','text') ,
-            'dis' => array('.detailContent>ul>li>.detailC-right>div','text')
-        ))->getData();
-        return $this->render('search',$data);
+        $keyword = strip_tags(Yii::$app->request->get('keyword',''));
+        $keyword = '牛津大学';
+//        $url="http://www.smartapply.cn/cn/mall-two/select?countryid=240&word=$keyword";
+//        $data = QueryList::Query($url,array(
+//            'url'=>array('.detailContent>ul>li>.detailC-left>a','href'),
+//            'image'=>array('.detailContent>ul>li>.detailC-left>image','src'),
+//            'name' => array('.detailContent>ul>li>.detailC-right>.title','text') ,
+//            'time' => array('.detailContent>ul>li>.detailC-right>.time','text') ,
+//            'dis' => array('.detailContent>ul>li>.detailC-right>div','text')
+//        ))->getData();
+        if($keyword!=false){
+            $keyword=str_replace('大学','',$keyword);
+            $data = Content::getContent(['fields' => 'abroadSchool,major,score,oldSchool','category' => "207,104",'where'=>"c.name like '%".$keyword."%'"]);
+        }else{
+            $data=array();
+        }
+        $list = Content::getContent(['category' => "207,104", 'order' => 'c.id desc', 'pageSize' => 50]);
+        return $this->render('search',['data'=>$data,'list'=>$list]);
     }
 
 }

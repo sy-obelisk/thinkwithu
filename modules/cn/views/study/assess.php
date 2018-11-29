@@ -76,7 +76,7 @@
                 <ul>
                     <?php
                     foreach($extendData as $k => $v) {
-                        if($k < 6 || $k == (count($extendData)-1)){
+                        if($k < 6 ){
                             continue;
                         }
                         if($k == 6){

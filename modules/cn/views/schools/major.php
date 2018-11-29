@@ -7,7 +7,7 @@
 <section class="majorCover">
     <div class="detailsCon">
         <div class="con_title">
-            <a href="">首页 &gt;</a>
+            <a href="/">首页 &gt;</a>
             <a href="/schools/<?php echo $school['id']?>.html"><?php echo $school['name']?>&gt;</a>
             <span><?php echo $data['name']?>(<?php echo $data['title']?>)</span>
         </div>
@@ -33,7 +33,7 @@
                         <p>地理位置:<?php echo $school['alternatives']?></p>
                         <p>学校排名:<?php echo $school['article']?></p>
                         <p>官网:<?php echo $data['url']?></p>
-                        <a href="">录取几率免费评估</a>
+                        <a href="/percentages-test.html">录取几率免费评估</a>
                     </div>
                     <div class="school_img"><!--右边-->
                         <img src="http://schools.smartapply.cn<?php echo $school['duration']?>" alt="学校图片">
@@ -97,7 +97,7 @@
                                     <li><?php echo $v['title']?></li>
                                     <li><?php echo $v['direction']?></li>
                                     <li><a href="/schools/major/<?php echo $v['id']?>.html" class="see_d">查看详情&gt;&gt;</a></li>
-                                    <li class="pg_free_li"><a href="" class="pg_free">免费评估<i class="iconfont left_icon">&#xe610;</i></a></li>
+                                    <li class="pg_free_li"><a href="/evaluation.html" class="pg_free">免费评估<i class="iconfont left_icon">&#xe610;</i></a></li>
                                 </ul>
                             </div>
                         </li>

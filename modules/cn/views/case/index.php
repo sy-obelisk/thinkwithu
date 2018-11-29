@@ -68,25 +68,25 @@
         <!--搜索-->
         <div class="l_c_search">
             <span>学校:</span><input type="text" class="school">
-            <span>专业:</span><input type="text" class="profession">
+<!--            <span>专业:</span><input type="text" class="profession">-->
             <span class="search_btn">搜索</span>
         </div>
         <!--案例-->
         <div class="casesContent">
             <div class="cases_d">
                 <ul>
-                    <?php for($i=0;$i<ceil(count($new['data'])/3);$i++){?>
+                    <?php for($i=0;$i<ceil(count($new)/3);$i++){?>
                     <li><!--外层循环li  内层循环div Content_d-->
-                        <?php foreach($new['data'] as $k=>$v){
+                        <?php foreach($new as $k=>$v){
                         if ($k < ($i + 1) * 3 && $k >= $i * 3) { ?>
-                            <a href="/case/281/<?php echo $v['id']?>.html" class="Content_d_cover">
+                            <a href="/case/<?php echo $v['id']?>.html" class="Content_d_cover">
                                 <div class="Content_d">
                                     <div class="imgCover">
                                         <img src="http://www.smartapply.cn/<?php echo $v['image']?>" alt="录取图片">
                                         <div class="mask">
-                                            <p class="mask_name"><?php echo $v['cnName']?></p><!--姓名-->
-                                            <p class="mask_school">录取院校: <?php echo $v['problemComplement']?></p><!--录取院校-->
-                                            <p class="mask_obj"><?php if($v['article']!=false) echo '录取专业：'.$v['article'];?> </p><!--录取专业-->
+                                            <p class="mask_name"><?php echo $v['title']==false?$v['name']:$v['title']?></p><!--姓名-->
+                                            <?php if($v['abroadSchool']!=false){?><p class="mask_school">录取院校: <?php echo $v['abroadSchool']?></p><?php }?><!--录取院校-->
+                                            <?php if($v['major']!=false){?><p class="mask_obj"><?php  echo '录取专业：'.$v['major'];?> </p><?php }?><!--录取专业-->
                                         </div>
                                     </div>
                                     <p class="content_p"><?php echo $v['name']?></p>
@@ -128,28 +128,30 @@
         <div class="admission_c bd">
             <?php foreach($case as $key=>$val){?>
             <ul class="successList"><!--外层循环ul  内层循环li admission_d-->
-                <?php foreach ($val['data'] as $k => $v) {
+                <?php foreach ($val as $k => $v) {
                     if (is_numeric($k)) {
                         ?>
-                        <a href="/case/<?php echo 282+$key?>/<?php echo $v['id']?>.html" class="admission_d_cover">
+                        <a href="/case/<?php echo $v['id']?>.html" class="admission_d_cover">
                             <li class="admission_d">
                                 <div class="admission_img">
-                                    <img src="http://www.smartapply.cn<?php echo $v['image'] ?>" alt="录取图片">
+                                    <img src="http://www.thinkwithu.com<?php echo $v['image'] ?>" alt="录取图片">
                                 </div>
-                                <p class="admission_name"><?php echo $v['cnName'] ?></p><!--姓名-->
-                                <p class="admission_m"><?php echo $v['problemComplement'] ?></p><!--录取院校-->
-                                <p class="admission_school">毕业院校:<span><?php echo $v['numbering'] ?></span></p><!--毕业院校-->
-                                <p class="admission_hardware">硬件条件:<span><?php echo $v['sentenceNumber'] ?></span></p>
+                                <p class="admission_name"><?php echo $v['name'] ?></p><!--姓名-->
+<!--                                <p class="admission_m">--><?php //echo $v['abroadSchool'] ?><!--</p><!--录取院校-->
+                                <p class="admission_school">毕业院校:<span><?php echo $v['oldSchool'] ?></span></p><!--毕业院校-->
+                                <p class="admission_hardware">硬件条件:<span><?php echo $v['score'] ?></span></p>
                                 <!--硬件条件-->
-                                <p class="admission_ad">录取院校:<span><?php echo $v['problemComplement'] ?></span></p><!--录取院校-->
-                                <p class="admission_obj">录取专业:<span><?php echo $v['article'] ?></span></p><!--录取专业-->
+                                <p class="admission_ad">录取院校:<span><?php echo $v['abroadSchool'] ?></span></p><!--录取院校-->
+                                <p class="admission_obj">录取专业:<span><?php echo $v['major'] ?></span></p><!--录取专业-->
                             </li>
                         </a>
                     <?php }
                 } ?>
                 <!--分页-->
                 <div class="pageSize">
-                    <?php echo $val['pageStr'];?>
+                    <?php for($i=1;$i<=$val['total'];$i++){?>
+                    <li data-value="<?php echo $val['total']?>" class="total mr02"><span class="colorRed"><?php echo $i;?></span></li>
+                    <?php }?>
                 </div>
             </ul>
             <?php }?>

@@ -144,7 +144,7 @@
 </script>
 
 <div class="open-commonTitle">
-    <h4><a href="/public-class/abroad.html">留学申请</a></h4><a href="/public-class/abroad.html">更多</a>
+    <h4><a href="/public-class/abroad.html">留学申请</a></h4><a href="/public-class/list.html">更多</a>
 </div>
 
 <div class="open-commonStyle">

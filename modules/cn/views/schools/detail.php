@@ -8,7 +8,7 @@
 <section class="institution_details">
     <div class="detailsCon">
         <div class="con_title">
-            <a href="">首页 ></a>
+            <a href="/">首页 ></a>
             <span> <?php echo $data['name']?></span>
         </div>
     </div>
@@ -33,7 +33,7 @@
                         <p>地理位置:<?php echo $data['answer']?></p>
                         <p>学校排名:<?php echo $data['article']?></p>
                         <p>官网:<?php echo $data['listeningFile']?></p>
-                        <a href="">录取几率免费评估</a>
+                        <a href="/percentages-test.html">录取几率免费评估</a>
                     </div>
                     <div class="school_img"><!--右边-->
                         <img src="http://schools.smartapply.cn<?php echo $data['duration']?>" alt="学校图片">
