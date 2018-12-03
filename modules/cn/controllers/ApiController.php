@@ -1565,4 +1565,25 @@ class ApiController extends ThinkUApiControl {
         $res['message'] = '我们的工作人员将于1-2个工作日内跟你联系';
         die(json_encode($res));
     }
+
+    /**
+     *图片验证码
+     * @yoyo
+     */
+    public function actionCheckCode()
+    {
+        $session = Yii::$app->session;
+        $verificationCode = Yii::$app->request->post('verificationCode', '');
+        if ($verificationCode) {
+            if (strtolower($session->get('verificationCode')) != strtolower($verificationCode)) {
+                $re['code'] = 0;
+                $re['message'] = '验证码错误';
+                die(json_encode($re));
+            }
+        }
+        $res['code'] = 1;
+        $res['message'] = '验证通过！';
+        die(json_encode($res));
+    }
+
 }
