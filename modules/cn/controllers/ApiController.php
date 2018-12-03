@@ -1524,7 +1524,7 @@ class ApiController extends ThinkUApiControl {
 //        $data = file_get_contents("http://www.smartapply.cn/cn/api/get-case?catId=$catId&page=$page");
 //        $data = json_decode($data, true);
 
-        $data = Content::getContent(['fields' => 'abroadSchool,major,score,oldSchool', 'category' => "$catId", 'order' => 'c.sort asc,c.id desc', 'pageSize' => 12, 'page' => $page, 'pageStr' => 1]);
+        $data['data'] = Content::getContent(['fields' => 'abroadSchool,major,score,oldSchool', 'category' => "$catId", 'order' => 'c.sort asc,c.id desc', 'pageSize' => 12, 'page' => $page]);
         $data['page'] = $page;
         die(json_encode($data));
     }
@@ -1542,4 +1542,27 @@ class ApiController extends ThinkUApiControl {
         die(json_encode(['school' => $school['data'], 'code' => 1, 'count' => $count]));
     }
 
+    /**
+     *评估信息存储
+     * @Obelisk
+     */
+    public function actionAssessment()
+    {
+        $session = Yii::$app->session;
+        $name = Yii::$app->request->post('name');
+        $extendVal = Yii::$app->request->post('extendVal');
+        $verificationCode = Yii::$app->request->post('verificationCode', '');
+        $contentModel = new Content();
+        if ($verificationCode) {
+            if (strtolower($session->get('verificationCode')) != strtolower($verificationCode)) {
+                $re['code'] = 0;
+                $re['message'] = '验证码错误';
+                die(json_encode($re));
+            }
+        }
+        $contentModel->addContent(222, $extendVal[15], $name, $extendVal);
+        $res['code'] = 1;
+        $res['message'] = '我们的工作人员将于1-2个工作日内跟你联系';
+        die(json_encode($res));
+    }
 }
