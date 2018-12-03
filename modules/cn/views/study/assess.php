@@ -241,13 +241,13 @@
                 url: '/cn/api/check-code',
                 type: 'post',
                 data:{
-                    verificationCode:code_y,
-                }
+                    verificationCode:code_y
+                },
                 async:false,//设置同步方式，非异步！
                 cache:false,//严格禁止缓存！
                 dataType: 'json',
                 success: function (data) {
-                    if(data != code){
+                    if(data.code!=1){
                         alert("验证码输入错误");
                         ajaxFlag=false;
                     }
