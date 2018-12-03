@@ -119,6 +119,7 @@
     -moz-box-shadow: #E7E7E7 0px 0px 10px;
     box-shadow: #E7E7E7 0px 0px 10px;
     margin-bottom: 50px;
+    text-align: center;
 }
 .l_c_search>span{
     margin: 0px 10px 0px 40px;
@@ -415,6 +416,9 @@
 .pageSize li.on {
     background: #974798 !important;
     color: #ffffff !important;
+}
+.pageSize li.on span{
+    color: white!important;
 }
 .pageSize .next{
     display: none;

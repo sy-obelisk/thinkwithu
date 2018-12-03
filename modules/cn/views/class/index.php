@@ -43,7 +43,7 @@
             <?php
             foreach ($data as $v) {
                 ?>
-                <li><a href="<?php echo $v['url'] ?>"><img src="<?php echo $v['image'] ?>" alt="banner图"/></a></li>
+                <li><a href="<?php echo $v['url'] ?>"><img src="http://www.thinkwithu.com<?php echo $v['image'] ?>" alt="banner图"/></a></li>
             <?php
             }
             ?>
@@ -56,85 +56,85 @@
     <?php
     if (!$userId) {
         ?>
-        <div class="member-login">
-            <h4>会员登录</h4>
-            <ul>
-                <li>
-                    <div class="member-left">
-                        <span></span>
-                        <img src="/cn/images/open_username.png" alt="图片"/>
-                    </div>
-                    <div class="member-right">
-                        <input class="indexUserName" type="text" placeholder="手机/邮箱/用户名"/>
-                    </div>
-                    <div style="clear: both"></div>
-                </li>
-                <li>
-                    <div class="member-left">
-                        <span></span>
-                        <img src="/cn/images/open_password.png" alt="图片"/>
-                    </div>
-                    <div class="member-right">
-                        <input class="indexUserPass" type="password" placeholder="密码"/>
-                    </div>
-                    <div style="clear: both"></div>
-                    <a href="#">忘记密码？</a>
-
-                    <div style="clear: both"></div>
-                </li>
-                <li>
-                    <div class="leftVerification">
-                        <input class="indexCode" type="text" placeholder="验证码"/>
-                    </div>
-                    <div class="rightImgFont">
-                        <img title="点击刷新" src="/cn/api/verification-code" align="absbottom"
-                             onclick="this.src='/cn/api/verification-code?'+Math.random();"/>
-                    </div>
-                    <div style="clear: both"></div>
-                </li>
-                <li>
-                    <input onclick="indexLogin()" type="button" value="马上登录"/>
-                    <input onclick="userRegister()" type="button" value="立即注册"/>
-
-                    <div class="otherLogin">
-                        <span>其他账号登录</span><br>
-                        <a href="#"><img src="/cn/images/open_weibo.png" alt="微博" width="18"/></a>
-                        <a href="#"><img src="/cn/images/open_qq.png" alt="QQ" width="18"/></a>
-                    </div>
-                </li>
-            </ul>
-            <script type="text/javascript">
-                function indexLogin() {
-                    var userPass = $('.indexUserPass').val()
-                    var userName = $('.indexUserName').val();
-                    var code = $('.indexCode').val();
-                    if (userName == "") {
-                        alert('请输入用户名');
-                        return false;
-                    }
-                    if (userPass == "") {
-                        alert('请输入密码');
-                        return false;
-                    }
-
-                    if (code == "") {
-                        alert('请输入验证码');
-                        return false;
-                    }
-                    $.post('/cn/api/check-login', {
-                        verificationCode: code,
-                        userPass: userPass,
-                        userName: userName
-                    }, function (re) {
-                        if (re.code == 1) {
-                            window.location.reload()
-                        } else {
-                            alert(re.message);
-                        }
-                    }, 'json')
-                }
-            </script>
-        </div>
+<!--        <div class="member-login">-->
+<!--            <h4>会员登录</h4>-->
+<!--            <ul>-->
+<!--                <li>-->
+<!--                    <div class="member-left">-->
+<!--                        <span></span>-->
+<!--                        <img src="/cn/images/open_username.png" alt="图片"/>-->
+<!--                    </div>-->
+<!--                    <div class="member-right">-->
+<!--                        <input class="indexUserName" type="text" placeholder="手机/邮箱/用户名"/>-->
+<!--                    </div>-->
+<!--                    <div style="clear: both"></div>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <div class="member-left">-->
+<!--                        <span></span>-->
+<!--                        <img src="/cn/images/open_password.png" alt="图片"/>-->
+<!--                    </div>-->
+<!--                    <div class="member-right">-->
+<!--                        <input class="indexUserPass" type="password" placeholder="密码"/>-->
+<!--                    </div>-->
+<!--                    <div style="clear: both"></div>-->
+<!--                    <a href="#">忘记密码？</a>-->
+<!---->
+<!--                    <div style="clear: both"></div>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <div class="leftVerification">-->
+<!--                        <input class="indexCode" type="text" placeholder="验证码"/>-->
+<!--                    </div>-->
+<!--                    <div class="rightImgFont">-->
+<!--                        <img title="点击刷新" src="/cn/api/verification-code" align="absbottom"-->
+<!--                             onclick="this.src='/cn/api/verification-code?'+Math.random();"/>-->
+<!--                    </div>-->
+<!--                    <div style="clear: both"></div>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <input onclick="indexLogin()" type="button" value="马上登录"/>-->
+<!--                    <input onclick="userRegister()" type="button" value="立即注册"/>-->
+<!---->
+<!--                    <div class="otherLogin">-->
+<!--                        <span>其他账号登录</span><br>-->
+<!--                        <a href="#"><img src="/cn/images/open_weibo.png" alt="微博" width="18"/></a>-->
+<!--                        <a href="#"><img src="/cn/images/open_qq.png" alt="QQ" width="18"/></a>-->
+<!--                    </div>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--            <script type="text/javascript">-->
+<!--                function indexLogin() {-->
+<!--                    var userPass = $('.indexUserPass').val()-->
+<!--                    var userName = $('.indexUserName').val();-->
+<!--                    var code = $('.indexCode').val();-->
+<!--                    if (userName == "") {-->
+<!--                        alert('请输入用户名');-->
+<!--                        return false;-->
+<!--                    }-->
+<!--                    if (userPass == "") {-->
+<!--                        alert('请输入密码');-->
+<!--                        return false;-->
+<!--                    }-->
+<!---->
+<!--                    if (code == "") {-->
+<!--                        alert('请输入验证码');-->
+<!--                        return false;-->
+<!--                    }-->
+<!--                    $.post('/cn/api/check-login', {-->
+<!--                        verificationCode: code,-->
+<!--                        userPass: userPass,-->
+<!--                        userName: userName-->
+<!--                    }, function (re) {-->
+<!--                        if (re.code == 1) {-->
+<!--                            window.location.reload()-->
+<!--                        } else {-->
+<!--                            alert(re.message);-->
+<!--                        }-->
+<!--                    }, 'json')-->
+<!--                }-->
+<!--            </script>-->
+<!--        </div>-->
     <?php
     }
     ?>

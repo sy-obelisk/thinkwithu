@@ -14,13 +14,13 @@
             <div class="content-wrap w12 clearfix">
                 <!--左-->
                 <div class="cl-wrap fl">
-                    <form id="myForm" action="/cn/api/assess" onsubmit="return checkSub()" method="post">
+                    <form id="myForm" action="/cn/api/assessment" onsubmit="return checkSub()" method="post">
                         <div class="cl-list-wrap">
                             <div class="cl-list">
                                 <p class="select-text">1.我想申请：<em class="must">(必填） </em></p>
                                 <div class="int-wrap  int-1 relative clearfix">
                                     <span class="m1 spanVal must">请选择</span>
-                                    <input name="extendValue[]" class="val" type="hidden" value="">
+                                    <input name="extendValue[0]" class="val" type="hidden" value="">
                                     <span class="crow inb fr"><img src="cn/images/assess/crow.png" alt=""></span>
                                     <ul class="select-list ani">
                                         <li>本科</li>
@@ -33,7 +33,7 @@
                                 <p class="select-text">2.我想申请的国家：<em class="must">(必填） </em></p>
                                 <div class="int-wrap  int-1 relative clearfix">
                                     <span class="m1 spanVal must">请选择</span>
-                                    <input name="extendValue[]" class="val" type="hidden" value="">
+                                    <input name="extendValue[1]" class="val" type="hidden" value="">
                                     <span class="crow inb fr"><img src="cn/images/assess/crow.png" alt=""></span>
                                     <ul class="select-list ani">
                                         <li>美国</li>
@@ -49,14 +49,14 @@
                             <div class="cl-list">
                                 <p class="select-text">3.我现在的专业：<em class="must">(必填） </em></p>
                                 <div class="int-wrap  int-1 relative clearfix">
-                                    <input name="extendValue[]" class="class=" val"="" m3"="" type="text" placeholder="请输入您现在的专业">
+                                    <input name="extendValue[4]" class="class=" val"="" m3"="" type="text" placeholder="请输入您现在的专业">
                                 </div>
                             </div>
                             <div class="cl-list">
                                 <p class="select-text">4.我现在的学历：<em class="must">(必填） </em></p>
                                 <div class="int-wrap  int-1 relative clearfix">
                                     <span class="m1 spanVal must">请选择</span>
-                                    <input name="extendValue[]" class="val" type="hidden" value="">
+                                    <input name="extendValue[15]" class="val" type="hidden" value="">
                                     <span class="crow inb fr"><img src="cn/images/assess/crow.png" alt=""></span>
                                     <ul class="select-list ani">
                                         <li>本科</li>
@@ -68,13 +68,13 @@
                             <div class="cl-list">
                                 <p class="select-text">5.我意向出国的时间：<em class="must">(必填） </em></p>
                                 <div class="int-wrap  int-1 relative clearfix">
-                                    <input name="extendValue[]" class="class=" val"="" m3"="" type="text" placeholder="请输入您意向出国时间">
+                                    <input name="extendValue[16]" class="class=" val"="" m3"="" type="text" placeholder="请输入您意向出国时间">
                                 </div>
                             </div>
                             <div class="cl-list">
                                 <p class="select-text">6.毕业/目前在读的学校：<em class="must"> </em></p>
                                 <div class="int-wrap  int-1 relative clearfix">
-                                    <input name="extendValue[]" class=" m3" type="text" placeholder="请输入您毕业/目前在读的学校">
+                                    <input name="extendValue[3]" class=" m3" type="text" placeholder="请输入您毕业/目前在读的学校">
                                 </div>
                             </div>
                             <div class="submit1 next">下一步</div>
@@ -83,59 +83,59 @@
                             <div class="cl-list">
                                 <p class="select-text">我申请的专业：<em class="must"> </em></p>
                                 <div class="int-wrap clearfix">
-                                    <input class="m9" type="text" name="extendValue[]" placeholder="请输入您申请的专业">
+                                    <input class="m9" type="text" name="extendValue[2]" placeholder="请输入您申请的专业">
 
                                 </div>
                             </div>
                             <div class="cl-list">
                                 <p class="select-text">GRE/GMAT：<em class="must">(必填） </em></p>
                                 <div class="int-wrap clearfix">
-                                    <input class="m9" type="text" name="extendValue[]" id="GMAT" placeholder="请输入您的GRE/GMAT成绩">
+                                    <input class="m9" type="text" name="extendValue[8]" id="GMAT" placeholder="请输入您的GRE/GMAT成绩">
 
                                 </div>
                             </div>
                             <div class="cl-list">
                                 <p class="select-text">GPA：<em class="must">(必填） </em></p>
                                 <div class="int-wrap clearfix">
-                                    <input class="m9" type="text" name="extendValue[]" id="GPA" placeholder="请输入您的GPA成绩">
+                                    <input class="m9" type="text" name="extendValue[6]" id="GPA" placeholder="请输入您的GPA成绩">
 
                                 </div>
                             </div>
                             <div class="cl-list">
                                 <p class="select-text">托福/雅思：<em class="must">(必填） </em></p>
                                 <div class="int-wrap clearfix">
-                                    <input class="m9" type="text" name="extendValue[]" id="TOEFL" placeholder="请输入您的托福/雅思成绩">
+                                    <input class="m9" type="text" name="extendValue[7]" id="TOEFL" placeholder="请输入您的托福/雅思成绩">
 
                                 </div>
                             </div>
                             <div class="cl-list">
                                 <p class="select-text">考试情况：<em class="must"> </em></p>
                                 <div class="int-wrap clearfix">
-                                    <input class="m9" type="text" name="extendValue[]" placeholder="请填写">
+                                    <input class="m9" type="text" name="extendValue[9]" placeholder="请填写">
 
                                 </div>
                             </div>
                             <div class="cl-list">
                                 <p class="select-text">荣誉奖励：<em class="must"> </em></p>
-                                <textarea name="extendValue[]" class="text-de m14"></textarea>
+                                <textarea name="extendValue[10]" class="text-de m14"></textarea>
                             </div>
                             <div class="cl-list">
                                 <p class="select-text">职业/学术成就：<em class="must"> </em></p>
-                                <textarea name="extendValue[]" class="text-de m14"></textarea>
+                                <textarea name="extendValue[11]" class="text-de m14"></textarea>
                             </div>
                             <div class="cl-list">
                                 <p class="select-text">社团活动：<em class="must"> </em></p>
-                                <textarea name="extendValue[]" class="text-de m14"></textarea>
+                                <textarea name="extendValue[12]" class="text-de m14"></textarea>
                             </div>
                             <div class="cl-list">
                                 <p class="select-text">工作/实习背景：<em class="must"> </em></p>
-                                <textarea name="extendValue[]" class="text-de m14"></textarea>
+                                <textarea name="extendValue[13]" class="text-de m14"></textarea>
                             </div>
                             <div class="cl-list">
                                 <p class="select-text">您关心的问题：<em class="must"> </em></p>
                                 <div class="int-wrap int-1 relative clearfix">
                                     <span class="must spanVal">请选择</span>
-                                    <input type="hidden" name="extendValue[]" value="">
+                                    <input type="hidden" name="extendValue[5]" value="">
                                     <span class="crow inb fr"><img src="cn/images/assess/crow.png" alt=""></span>
                                     <ul class="select-list ani" style="height: 70px;">
                                         <li>服务质量</li>
@@ -146,21 +146,21 @@
                             <div class="cl-list">
                                 <p class="select-text">我还想了解：<em class="must"> </em></p>
                                 <div class="int-wrap clearfix">
-                                    <input class="m9" type="text" name="extendValue[]" placeholder="请填写">
+                                    <input class="m9" type="text" name="extendValue[17]" placeholder="请填写">
 
                                 </div>
                             </div>
                             <div class="cl-list">
                                 <p class="select-text">你的姓名：<em class="must"> </em></p>
                                 <div class="int-wrap clearfix">
-                                    <input class="m9" type="text" name="extendValue[]" placeholder="请输入您的姓名">
+                                    <input class="m9" type="text" name="name" placeholder="请输入您的姓名">
 
                                 </div>
                             </div>
                             <div class="cl-list">
                                 <p class="select-text">你的电话：<em class="must">(必填） </em></p>
                                 <div class="int-wrap clearfix special" >
-                                    <input class="m9" type="text" name="extendValue[]" placeholder="请输入您的电话">
+                                    <input class="m9" type="text" name="extendValue[15]" placeholder="请输入您的电话">
                                 </div>
                                 <div class="v-code">
                                     <img style="height: 35px;" src="/cn/api/verification-code" onclick="this.src='/cn/api/verification-code?'+Math.random();" name="user_code" alt="验证码">
@@ -231,14 +231,18 @@
         var code = $('#code').val();
         var a = 1;
         var num=0;
-        if(code==''){
+        if(code=='') {
             alert('请输入验证码');
             return false;
         } else{
             var ajaxFlag=true;
+            var code_y = $('#code').val();
             $.ajax({
-                url: '/cn/api/get-code',
+                url: '/cn/api/check-code',
                 type: 'post',
+                data:{
+                    verificationCode:code_y,
+                }
                 async:false,//设置同步方式，非异步！
                 cache:false,//严格禁止缓存！
                 dataType: 'json',

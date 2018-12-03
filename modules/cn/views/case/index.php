@@ -128,25 +128,27 @@
         <div class="admission_c bd">
             <?php foreach($case as $key=>$val){?>
             <ul class="successList"><!--外层循环ul  内层循环li admission_d-->
-                <?php foreach ($val as $k => $v) {
-                    if (is_numeric($k)) {
-                        ?>
-                        <a href="/case/<?php echo $v['id']?>.html" class="admission_d_cover">
-                            <li class="admission_d">
-                                <div class="admission_img">
-                                    <img src="http://www.thinkwithu.com<?php echo $v['image'] ?>" alt="录取图片">
-                                </div>
-                                <p class="admission_name"><?php echo $v['name'] ?></p><!--录取院校-->
-<!--                                <p class="admission_m">--><?php //echo $v['abroadSchool'] ?><!--</p><!--录取院校-->
-                                <p class="admission_school">毕业院校:<span><?php echo $v['oldSchool'] ?></span></p><!--毕业院校-->
-                                <p class="admission_hardware">硬件条件:<span><?php echo $v['score'] ?></span></p>
-                                <!--硬件条件-->
-                                <p class="admission_ad">录取院校:<span><?php echo $v['abroadSchool'] ?></span></p><!--录取院校-->
-                                <p class="admission_obj">录取专业:<span><?php echo $v['major'] ?></span></p><!--录取专业-->
-                            </li>
-                        </a>
-                    <?php }
-                } ?>
+               <div class="List_c">
+                   <?php foreach ($val as $k => $v) {
+                       if (is_numeric($k)) {
+                           ?>
+                           <a href="/case/<?php echo $v['id']?>.html" class="admission_d_cover">
+                               <li class="admission_d">
+                                   <div class="admission_img">
+                                       <img src="http://www.thinkwithu.com<?php echo $v['image'] ?>" alt="录取图片">
+                                   </div>
+                                   <p class="admission_name"><?php echo $v['name'] ?></p><!--录取院校-->
+                                   <!--                                <p class="admission_m">--><?php //echo $v['abroadSchool'] ?><!--</p><!--录取院校-->
+                                   <p class="admission_school">毕业院校:<span><?php echo $v['oldSchool'] ?></span></p><!--毕业院校-->
+                                   <p class="admission_hardware">硬件条件:<span><?php echo $v['score'] ?></span></p>
+                                   <!--硬件条件-->
+                                   <p class="admission_ad">录取院校:<span><?php echo $v['abroadSchool'] ?></span></p><!--录取院校-->
+                                   <p class="admission_obj">录取专业:<span><?php echo $v['major'] ?></span></p><!--录取专业-->
+                               </li>
+                           </a>
+                       <?php }
+                   } ?>
+               </div>
                 <!--分页-->
                 <div class="pageSize">
                     <?php for($i=1;$i<=$val['total'];$i++){?>
@@ -165,9 +167,11 @@
 <script>
     //分页
     $(document).on("click", ".pageSize li.total", function () {
-        var caseWrap = $(this).parent().parent();
+        var caseWrap = $(this).parent().parent().find('.List_c');
         var catId = $('.success_title ul li.on').attr("data-catid");
         var page = parseInt($(this).children().html());
+        $(this).siblings().removeClass('on');
+        $(this).addClass('on');
         $.ajax({
             url: "/cn/api/get-case",
             type: "get",
@@ -179,26 +183,26 @@
             success: function (data) {
                 var str = "";
                 caseWrap.empty();
-                // for (var i = 0; i < data.count.index; i++) {
-                //     console.log(data[i].id);
-                //     str += '<a href="/case/' + catId + '/' + data[i].id+'.html" class="admission_d_cover">';
-                //     str +='<li class="admission_d">';
-                //
-                //     str +='<div class="admission_img"><img src="http://www.smartapply.cn'+ data[i].image +'" alt="录取图片"></div>';
-                //     str +='<p class="admission_name">'+ data[i].name +'</p><!--录取院校-->';
-                //     // str +='<p class="admission_m">'+ data[i].name +'</p><!--录取院校-->';
-                //     str +='<p class="admission_school">毕业院校:<span>'+ data[i].oldSchool +'</span></p><!--毕业院校-->';
-                //     str +='<p class="admission_hardware">硬件条件:<span>'+ data[i].score+'</span></p><!--硬件条件-->';
-                //     str +='<p class="admission_ad">录取院校:<span>'+ data[i].abroadSchool +'</span></p><!--录取院校-->';
-                //     str +='<p class="admission_obj">录取专业:<span>'+ data[i].major+'</span></p><!--录取专业-->';
-                //
-                //     str +='</li>';
-                //     str += '</a>';
-                // }
-                // //分页
-                // str +='<div class="pageSize">'+ data.pageStr +'</div>';
-                //
-                // caseWrap.append(str);
+                for (var i = 0; i < data.data.length; i++) {
+                    str += '<a href="/case/' + catId + '/' + data.data[i].id+'.html" class="admission_d_cover">';
+                    str +='<li class="admission_d">';
+
+                    str +='<div class="admission_img"><img src="http://www.thinkwithu.com'+ data.data[i].image +'" alt="录取图片"></div>';
+                    str +='<p class="admission_name">'+ data.data[i].name +'</p><!--录取院校-->';
+                    // str +='<p class="admission_m">'+ data.data[i].name +'</p><!--录取院校-->';
+                    str +='<p class="admission_school">毕业院校:<span>'+ data.data[i].oldSchool +'</span></p><!--毕业院校-->';
+                    if(data.data[i].score){
+                        str +='<p class="admission_hardware">硬件条件:<span>'+ data.data[i].score+'</span></p><!--硬件条件-->';
+                    }else {
+                        str +='<p class="admission_hardware">硬件条件:<span></span></p><!--硬件条件-->';
+                    }
+                    str +='<p class="admission_ad">录取院校:<span>'+ data.data[i].abroadSchool +'</span></p><!--录取院校-->';
+                    str +='<p class="admission_obj">录取专业:<span>'+ data.data[i].major+'</span></p><!--录取专业-->';
+
+                    str +='</li>';
+                    str += '</a>';
+                }
+                caseWrap.append(str);
             }
         });
     })
