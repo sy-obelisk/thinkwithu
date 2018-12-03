@@ -69,7 +69,7 @@
         <div class="l_c_search">
             <span>学校:</span><input type="text" class="school">
 <!--            <span>专业:</span><input type="text" class="profession">-->
-            <span class="search_btn">搜索</span>
+            <span class="search_btn" onclick="search_al()">搜索</span>
         </div>
         <!--案例-->
         <div class="casesContent">
@@ -205,6 +205,10 @@
                 caseWrap.append(str);
             }
         });
-    })
+    });
     //搜索
+    function search_al() {
+        var keyword = $('.school').val();
+        window.location.href='/case/search.html?keyword='+ keyword +'';
+    }
 </script>
