@@ -14,7 +14,7 @@
             <div class="content-wrap w12 clearfix">
                 <!--左-->
                 <div class="cl-wrap fl">
-                    <form id="myForm" action="/assess.html" onsubmit="return checkSub()" method="post">
+                    <form id="myForm" action="/cn/api/assess" onsubmit="return checkSub()" method="post">
                         <div class="cl-list-wrap">
                             <div class="cl-list">
                                 <p class="select-text">1.我想申请：<em class="must">(必填） </em></p>
