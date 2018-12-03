@@ -10,9 +10,19 @@
     <meta name="description" content="<?php echo $seo['description']?>">
     <link rel="stylesheet" href="/cn/css/open-list.css">
     <link rel="stylesheet" href="/cn/css/open-public.css"/>
+    <link rel="stylesheet" href="/cn/Hirsi/css/index.css"/>
+    <link rel="stylesheet" href="/cn/css/header.css"/>
     <link rel="stylesheet" href="/cn/css/fonts/font-awesome/css/font-awesome.min.css">
     <script type="text/javascript" src="/cn/js/jquery1.42.min.js"></script>
     <script type="text/javascript" src="/cn/js/jquery.SuperSlide.2.1.1.js"></script>
+    <style>
+        .nav-list{
+            overflow: hidden;
+            margin: 6px 0px 0px 0px !important;
+            float: right;
+            /*width: 1046px!important*/
+        }
+    </style>
 </head>
 <body>
 <!--公开课头部-->
