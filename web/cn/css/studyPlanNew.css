@@ -37,8 +37,9 @@
 }
 
 .cr-wrap {
-    margin-top: 65px;
-    width: 440px;
+    /*margin-top: 65px;*/
+    width: 520px;
+    background: white;
 }
 
 .cr-tit {
@@ -46,7 +47,8 @@
 }
 
 .ban-wrap {
-    margin-top: 16px;
+    width: 90%;
+    margin:16px auto 16px;
 }
 
 .ban-left {
@@ -62,12 +64,13 @@
 }
 
 .ban-text {
-    font-size: 14px;
+    font-size: 16px;
+    margin: 0 0 10px 10px;
 }
 
 .point {
-    width: 11px;
-    height: 11px;
+    width: 19px;
+    height: 19px;
     margin-right: 7px;
     background: url("../images-2/point.png") no-repeat 0 0;
 }

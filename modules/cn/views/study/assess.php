@@ -7,8 +7,8 @@
             <div class="w12 tit-top clearfix">
                 <img src="cn/images/assess/t1.png" alt="欢迎进入免费留学评估系统">
                 <div class="inb step-tit fr">
-                    <img src="cn/images/assess/step-1.png" style="margin-right: 30px;" alt="">
-                    <img src="cn/images/assess/step-2.png" alt="">
+                    <img src="cn/images/assess/step-1.png" style="margin-right: 70px;" alt="">
+                    <img src="cn/images/assess/step-2.png" style="margin-right: 165px;" alt="">
                 </div>
             </div>
             <div class="content-wrap w12 clearfix">
@@ -177,6 +177,41 @@
                     </form>
                 </div>
                 <!--右-->
+                <div class="cr-wrap fr">
+                    <div class="cr-tit tr"><img src="cn/images/assess/ad.png" alt=""></div>
+                    <div class="ban-list">
+                        <div class="ban-wrap">
+                            <div class="ban-left tm inb">
+                                <img src="cn/images/assess/ad1.png" alt="">
+                            </div>
+                            <div class="ban-right inb">
+                                <p class="ban-text"><img class="point inb" src="cn/images/assess/gou.png">透明+保障 </p>
+                                <p class="ban-text"><img class="point inb" src="cn/images/assess/gou.png">网申、邮箱等账号密码与学生共享 </p>
+                                <p class="ban-text"><img class="point inb" src="cn/images/assess/gou.png">文书、邮寄材料全部透明操作</p>
+                            </div>
+                        </div>
+                        <div class="ban-wrap">
+                            <div class="ban-left tm inb">
+                                <img src="cn/images/assess/ad1.png" alt="">
+                            </div>
+                            <div class="ban-right inb">
+                                <p class="ban-text"><img class="point inb" src="cn/images/assess/gou.png">透明+保障 </p>
+                                <p class="ban-text"><img class="point inb" src="cn/images/assess/gou.png">网申、邮箱等账号密码与学生共享 </p>
+                                <p class="ban-text"><img class="point inb" src="cn/images/assess/gou.png">文书、邮寄材料全部透明操作</p>
+                            </div>
+                        </div>
+                        <div class="ban-wrap">
+                            <div class="ban-left tm inb">
+                                <img src="cn/images/assess/ad1.png" alt="">
+                            </div>
+                            <div class="ban-right inb">
+                                <p class="ban-text"><img class="point inb" src="cn/images/assess/gou.png">透明+保障 </p>
+                                <p class="ban-text"><img class="point inb" src="cn/images/assess/gou.png">网申、邮箱等账号密码与学生共享 </p>
+                                <p class="ban-text"><img class="point inb" src="cn/images/assess/gou.png">文书、邮寄材料全部透明操作</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
