@@ -43,7 +43,7 @@ class ClassController extends ThinkUController {
         $data = Content::getContent(['fields' => "url,synopsis,time,score,place,description,speaker,keywords",'where' => "c.id = $id"]);
 //        $count = $data[0]['viewCount'];
 //        Content::updateAll(['viewCount' => ($count+1)],"id=$id");
-        return $this->renderPartial('detailsBack',['data' => $data,'id' => $id]);
+        return $this->render('detailsBack',['data' => $data,'id' => $id]);
     }
 
     /**
@@ -60,7 +60,7 @@ class ClassController extends ThinkUController {
         unset($data['count']);
         unset($data['total']);
         unset($data['pageStr']);
-    return $this->renderPartial('list',['count' => $count,'total' => $total,'pageStr' => $pageStr,'data'=>$data,'page' =>$page,'category' => 'syabroad']);
+    return $this->render('list',['count' => $count,'total' => $total,'pageStr' => $pageStr,'data'=>$data,'page' =>$page,'category' => 'syabroad']);
 }
 
     /**
@@ -79,7 +79,7 @@ class ClassController extends ThinkUController {
         unset($data['count']);
         unset($data['total']);
         unset($data['pageStr']);
-        return $this->renderPartial('list',['count' => $count,'total' => $total,'pageStr' => $pageStr,'data'=>$data,'page' =>$page,'category' => 'syabroad']);
+        return $this->render('list',['count' => $count,'total' => $total,'pageStr' => $pageStr,'data'=>$data,'page' =>$page,'category' => 'syabroad']);
     }
 
     /**
@@ -94,7 +94,7 @@ class ClassController extends ThinkUController {
         }
         $model = new Login();
         $data = $model->findOne($userId);
-        return $this->renderPartial("manage",['data' => $data]);
+        return $this->render("manage",['data' => $data]);
     }
 
     /**
@@ -111,7 +111,7 @@ class ClassController extends ThinkUController {
         $pageSize = 12;
         $model = new Collect();
         $data = $model->getCollect($userId,$page,$pageSize,1);
-        return $this->renderPartial("collect",['data' => $data]);
+        return $this->render("collect",['data' => $data]);
     }
 
 }
