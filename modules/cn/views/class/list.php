@@ -10,19 +10,9 @@
     <meta name="description" content="<?php echo $seo['description']?>">
     <link rel="stylesheet" href="/cn/css/open-list.css">
     <link rel="stylesheet" href="/cn/css/open-public.css"/>
-    <link rel="stylesheet" href="/cn/Hirsi/css/index.css"/>
-    <link rel="stylesheet" href="/cn/css/header.css"/>
     <link rel="stylesheet" href="/cn/css/fonts/font-awesome/css/font-awesome.min.css">
     <script type="text/javascript" src="/cn/js/jquery1.42.min.js"></script>
     <script type="text/javascript" src="/cn/js/jquery.SuperSlide.2.1.1.js"></script>
-    <style>
-        .nav-list{
-            overflow: hidden;
-            margin: 6px 0px 0px 0px !important;
-            float: right;
-            /*width: 1046px!important*/
-        }
-    </style>
 </head>
 <body>
 <!--公开课头部-->
@@ -134,20 +124,20 @@
 
 
 <!--联系申友-->
-<?php use app\commands\front\ContactWidget;?>
-<?php ContactWidget::begin();?>
-<?php ContactWidget::end();?>
+<?php //use app\commands\front\ContactWidget;?>
+<?php //ContactWidget::begin();?>
+<?php //ContactWidget::end();?>
 <script type="text/javascript">
     jQuery(".connection").slide({mainCell:".connectBd",trigger:"mouseover"});
 </script>
 
 <!-------------------------------------------公开课页面的尾部-------------------------------------->
-<?php use app\commands\front\ClassFootWidget;?>
-<?php ClassFootWidget::begin();?>
-<?php ClassFootWidget::end();?>
-<?php use app\commands\front\RightSuspensionWidget;?>
-<?php RightSuspensionWidget::begin();?>
-<?php RightSuspensionWidget::end();?>
+<?php //use app\commands\front\ClassFootWidget;?>
+<?php //ClassFootWidget::begin();?>
+<?php //ClassFootWidget::end();?>
+<?php //use app\commands\front\RightSuspensionWidget;?>
+<?php //RightSuspensionWidget::begin();?>
+<?php //RightSuspensionWidget::end();?>
 <!----------------------------------------------左边悬浮窗-------------------------------------------------------------->
 <?php use app\commands\front\LeftSuspensionWidget;?>
 <?php LeftSuspensionWidget::begin();?>
