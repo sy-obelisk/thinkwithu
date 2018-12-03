@@ -12,6 +12,9 @@ use app\libs\ThinkUApiControl;
 use app\modules\cn\models\Content;
 use app\modules\cn\models\SchoolTest;
 use app\modules\cn\models\Collect;
+use app\modules\cn\models\ExtendData;
+use app\modules\cn\models\ContentExtend;
+use app\modules\cn\models\CategoryContent;
 use app\modules\cn\models\ProbabilityTest;
 use app\modules\cn\models\UserBackground;
 use app\modules\cn\models\Login;
@@ -1519,6 +1522,9 @@ class ApiController extends ThinkUApiControl {
         $page = Yii::$app->request->get('page',1);
         $data=file_get_contents("http://www.smartapply.cn/cn/api/get-case?catId=$catId&page=$page");
         $data=json_decode($data,true);
+
+        //        $data = Content::getContent(['fields' => 'abroadSchool,major,score,oldSchool','category' => "$catId", 'order' => 'c.sort asc,c.id desc', 'pageSize' => 12,'page'=>$page,'pageStr'=>1]);
+
         die(json_encode($data));
     }
 
@@ -1533,6 +1539,5 @@ class ApiController extends ThinkUApiControl {
         $school =  json_decode($school->CurlRequest('school',['catid'=>$cate[$count], 'pageNumber'=>1, 'pageSize'=>6]),TRUE);
         die(json_encode(['school'=>$school['data'],'code'=>1,'count'=>$count]));
     }
-
 
 }

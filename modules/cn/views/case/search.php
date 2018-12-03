@@ -4,38 +4,28 @@
 <section class="searchCover">
     <div class="detailsCon">
         <div class="con_title">
-            <a href="">留学商城 ></a>
-            <a href="">案例库</a>
+            <a href="/">首页 ></a>
+            <a href="/case.html">案例库</a>
         </div>
     </div>
     <div class="content">
         <!--左边-->
         <div class="content_left">
             <ul class="search_list">
+                <?php foreach($data as $k=>$v){?>
                 <li>
                     <div class="result_img">
-                        <img src="http://www.smartapply.cn/files/attach/images/20170328/1490665185318340.png" alt="">
+                        <img src="http://www.thinkwithu.com<?php echo $v['image']?>" alt="">
                     </div>
                     <div class="result_name">
-                        <p>牛津大学录取&清华大学录取</p>
-                        <a href="">[点击详情]</a>
+                        <p><?php echo $v['title']!=false?$v['title']:$v['name']?></p>
+                        <a href="/case/<?php echo $v['id']?>.html">[点击详情]</a>
                     </div>
                     <div class="result_time">
-                       <p>2018-11-23 14:00</p>
+                       <p><?php $v['createTime']?></p>
                     </div>
                 </li>
-                <li>
-                    <div class="result_img">
-                        <img src="http://www.smartapply.cn/files/attach/images/20170328/1490665185318340.png" alt="">
-                    </div>
-                    <div class="result_name">
-                        <p>牛津大学录取&清华大学录取</p>
-                        <a href="">[点击详情]</a>
-                    </div>
-                    <div class="result_time">
-                        <p>2018-11-23 14:00</p>
-                    </div>
-                </li>
+                <?php }?>
             </ul>
         </div>
         <!--右边-->
@@ -46,30 +36,12 @@
             </div>
             <div class="right_c">
                 <ul><!--循环li-->
-                    <li>
-                        <b>•</b>
-                        <a href="">武汉Guo同学获全美专排第三UIUC建筑专业Offer！</a>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <a href="">武汉Guo同学获全美专排第三UIUC建筑专业Offer！</a>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <a href="">武汉Guo同学获全美专排第三UIUC建筑专业Offer！</a>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <a href="">武汉Guo同学获全美专排第三UIUC建筑专业Offer！</a>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <a href="">武汉Guo同学获全美专排第三UIUC建筑专业Offer！</a>
-                    </li>
-                    <li>
-                        <b>•</b>
-                        <a href="">武汉Guo同学获全美专排第三UIUC建筑专业Offer！</a>
-                    </li>
+                    <?php foreach ($list as $v) { ?>
+                        <li>
+                            <b>•</b>
+                            <a href="/case/<?php echo $v['id'] ?>.html"><?php echo $v['title'] == false ? $v['name'] : $v['title'] ?></a>
+                        </li>
+                    <?php } ?>
                 </ul>
             </div>
         </div>

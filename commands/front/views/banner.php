@@ -41,11 +41,11 @@
                 <a class="nav1-link <?php echo ($controller == 'satsheet' || $controller == 'ieltssheet' || $controller == 'gmatsheet' || $controller == 'toeflsheet' || $controller == 'gre') ? 'on on-hover' : '' ?>" href="javascript:void(0);">考试提分 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
                 <div class="eaxm-list">
                     <ul>
-                        <li><a href="/satsheet.html">SAT</a></li>
-                        <li><a href="/toefl/assistance.html">托福</a></li>
-                        <li><a href="/ieltssheet.html">雅思</a></li>
                         <li><a href="/gmatsheet.html">GAMT</a></li>
+                        <li><a href="/ieltssheet.html">雅思</a></li>
+                        <li><a href="/toefl/assistance.html">托福</a></li>
                         <li><a href="/gre.html">GRE</a></li>
+                        <li><a href="/satsheet.html">SAT</a></li>
                     </ul>
                 </div>
             </li>
@@ -60,20 +60,23 @@
                 </div>
             </li>
             <li>
-                <a class="nav1-link <?php echo $controller == 'schools' ? 'on on-hover' : '' ?>" href="/schools.html">院校库 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
-                <div class="eaxm-list eaxm-list-1">
-                    <ul>
-                        <li><a href="">院校查询</a></li>
-                        <li><a href="">专业排名</a></li>
-                        <li><a href="">大学排名</a></li>
-                    </ul>
-                </div>
+                <a class="nav1-link <?php echo $controller == 'schools' ? 'on on-hover' : '' ?>" href="/schools.html">院校库
+<!--                    <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标">-->
+                </a>
+<!--                <div class="eaxm-list eaxm-list-1">-->
+<!--                    <ul>-->
+<!--                        <li><a href="">院校查询</a></li>-->
+<!--                        <li><a href="">专业排名</a></li>-->
+<!--                        <li><a href="">大学排名</a></li>-->
+<!--                    </ul>-->
+<!--                </div>-->
             </li>
             <li><a class="nav1-link" href="/">留学百科 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a></li>
-            <li><a class="nav1-link" href="/practices.html">实习活动</a></li>
+            <li><a class="nav1-link <?php echo $controller == 'practices' ? 'on on-hover' : '' ?>" href="/practices.html">实习活动</a></li>
             <li><a class="nav1-link <?php echo $controller == 'class' ? 'on on-hover' : '' ?>" href="/public-class.html">申友讲堂</a></li>
             <li><a class="nav1-link <?php echo $controller == 'case' ? 'on on-hover' : '' ?>" href="/case.html">名校案列</a></li>
             <li><a class="nav1-link <?php echo $controller == 'masters' ? 'on on-hover' : '' ?>" href="/teachers.html">名师团队</a></li>
+            <li><a href="http://bbs.thinkwithu.com/">申友论坛</a></li>
         </ul>
     </div>
 </nav>
