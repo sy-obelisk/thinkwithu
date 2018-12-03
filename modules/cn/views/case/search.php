@@ -5,7 +5,8 @@
     <div class="detailsCon">
         <div class="con_title">
             <a href="/">首页 ></a>
-            <a href="/case.html">案例库</a>
+            <a href="/case.html">案例库 ></a>
+            <span>案例搜索</span>
         </div>
     </div>
     <div class="content">

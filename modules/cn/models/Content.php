@@ -1,4 +1,4 @@
-<?php 
+<?php
 namespace app\modules\cn\models;
 use app\libs\Method;
 use yii\db\ActiveRecord;
@@ -315,9 +315,9 @@ class Content extends ActiveRecord {
 
     public function gpaScore($country, $gpa)
     {
-        if ($country == 1||$country == 3) {
-            if($gpa<5){
-                $gpa=round($gpa*100/4,1);
+        if ($country == 1 || $country == 3) {
+            if ($gpa < 5) {
+                $gpa = round($gpa * 100 / 4, 1);
             }
             if ($gpa <= 62.5) {
                 return 5;
@@ -325,8 +325,8 @@ class Content extends ActiveRecord {
                 return $gpa > 87.5 ? 16 : ceil(($gpa - 62.5) / 2.5) + 5;
             }
         } else {
-            if($gpa<5){
-                $gpa=round($gpa*100/3.7,1);
+            if ($gpa < 5) {
+                $gpa = round($gpa * 100 / 3.7, 1);
             }
             if ($gpa <= 61) {
                 return 5;
@@ -339,7 +339,7 @@ class Content extends ActiveRecord {
 
     public function gmatScore($country, $gmat, $gre)
     {
-        if ($country == 1||$country == 3) {
+        if ($country == 1 || $country == 3) {
             if ($gmat) {
                 if ($gmat <= 600) {
                     return 5;
@@ -375,7 +375,7 @@ class Content extends ActiveRecord {
 
     public function toeflScore($country, $toefl, $ielts)
     {
-        if ($country == 1||$country == 3) {
+        if ($country == 1 || $country == 3) {
             if ($toefl) {
                 if ($toefl <= 80) {
                     return 6;
@@ -411,7 +411,7 @@ class Content extends ActiveRecord {
 
     public function schoolScore($country, $school)
     {
-        if ($country == 1||$country == 3) {
+        if ($country == 1 || $country == 3) {
             switch ($school) {
                 case $school == 1:
                     return 15;
@@ -454,7 +454,7 @@ class Content extends ActiveRecord {
     //实习经历
     public function fieldworkScore($country, $company, $num)
     {
-        if ($country == 1||$country == 3) {
+        if ($country == 1 || $country == 3) {
             if ($company == 1 || $company == 2) {
                 if ($num == 1) {
                     return 18;
@@ -522,58 +522,27 @@ class Content extends ActiveRecord {
         }
     }
 
-//    public function school($score,$country)
-//    {
-//        if($country == 1||$country == 3) {
-//            if($score>80){
-//                return 163;
-//            }elseif($score>69){
-//                return 164;
-//            }elseif($score>59){
-//                return 165;
-//            }elseif($score>49){
-//                return 515;
-//            }
-//        }elseif($country=='UK'){
-//            if($score>55){
-//                return 163;
-//            }elseif($score>69){
-//                return 164;
-//            }elseif($score>59){
-//                return 165;
-//            }elseif($score>49){
-//                return 515;
-//            }
-//        } elseif($country=='HK'){
-//
-//        } elseif($country=='AUS'){
-//
-//        } elseif($country=='Canada'){
-//
-//        } elseif($country=='Singapore'){
-//
-//        }
-//    }
 
     /**
      * 选校测评学生得分
      * @return array
      * @yoyo
      */
-    public function score($country,$gpa, $gmat, $toefl, $school,$gre='',$ielts=''){
-        if($gmat<400){
-            $gre=$gmat;
-            $gmat='';
+    public function score($country, $gpa, $gmat, $toefl, $school, $gre = '', $ielts = '')
+    {
+        if ($gmat < 400) {
+            $gre = $gmat;
+            $gmat = '';
         }
-        if($toefl<10){
-            $ielts=$toefl;
-            $toefl='';
+        if ($toefl < 10) {
+            $ielts = $toefl;
+            $toefl = '';
         }
         $s1 = $this->gpaScore($country, $gpa);
         $s2 = $this->gmatScore($country, $gmat, $gre);
         $s3 = $this->toeflScore($country, $toefl, $ielts);
         $s4 = $this->schoolScore($country, $school);
-        return $s1+$s2+$s3+$s4;
+        return $s1 + $s2 + $s3 + $s4;
     }
 
     /**
@@ -581,83 +550,108 @@ class Content extends ActiveRecord {
      * @return array
      * @Obelisk
      */
-    public function getTotalScore($schoolRank,$country){
+    public function getTotalScore($schoolRank, $country)
+    {
         //美国
-        if($country == 1){
-            if($schoolRank<=10){
+        if ($country == 1) {
+            if ($schoolRank <= 10) {
                 $total = 100;
-            }elseif($schoolRank<=20){
+            } elseif ($schoolRank <= 20) {
                 $total = 94;
-            }elseif($schoolRank<=30){
+            } elseif ($schoolRank <= 30) {
                 $total = 89;
-            }elseif($schoolRank<=50){
+            } elseif ($schoolRank <= 50) {
                 $total = 79;
-            }elseif($schoolRank<=60){
+            } elseif ($schoolRank <= 60) {
                 $total = 69;
-            }elseif($schoolRank<=80){
+            } elseif ($schoolRank <= 80) {
                 $total = 64;
-            }elseif($schoolRank<=100){
+            } elseif ($schoolRank <= 100) {
                 $total = 59;
-            }
-            elseif($schoolRank<=120){
+            } elseif ($schoolRank <= 120) {
                 $total = 54;
-            }
-            elseif($schoolRank<=150){
+            } elseif ($schoolRank <= 150) {
                 $total = 49;
-            }else{
+            } else {
                 $total = 40;
             }
         }
         //英国
-        if($country == 2){
-            if($schoolRank<=5){
+        if ($country == 2) {
+            if ($schoolRank <= 5) {
                 $total = 100;
-            }elseif($schoolRank<=12){
+            } elseif ($schoolRank <= 12) {
                 $total = 80;
-            }elseif($schoolRank<=20){
+            } elseif ($schoolRank <= 20) {
                 $total = 70;
-            }elseif($schoolRank<=30){
+            } elseif ($schoolRank <= 30) {
                 $total = 55;
-            }elseif($schoolRank<=50){
+            } elseif ($schoolRank <= 50) {
                 $total = 45;
-            }else{
+            } else {
                 $total = 40;
             }
         }
         //加拿大
-        if($country == 3){
-            if($schoolRank<=5){
+        if ($country == 3) {
+            if ($schoolRank <= 5) {
                 $total = 100;
-            }elseif($schoolRank<=10){
+            } elseif ($schoolRank <= 10) {
                 $total = 70;
-            }else{
+            } else {
                 $total = 54;
             }
         }
         //澳洲
-        if($country == 4){
-            if($schoolRank<=5){
+        if ($country == 4) {
+            if ($schoolRank <= 5) {
                 $total = 71;
-            }else{
+            } else {
                 $total = 50;
             }
         }
         //新加坡
-        if($country == 5){
-            if($schoolRank<=2){
+        if ($country == 5) {
+            if ($schoolRank <= 2) {
                 $total = 100;
-            }else{
+            } else {
                 $total = 82;
             }
         }
         //香港
-        if($country == 6){
-            if($schoolRank<=4){
+        if ($country == 6) {
+            if ($schoolRank <= 4) {
                 $total = 100;
-            }else{
+            } else {
                 $total = 70;
             }
         }
         return $total;
     }
+
+//    public function getCase($catId, $w = '', $page, $pageSize, $order = '')
+//    {
+//
+//        $seField = ",(SELECT ce.value FROM {{%content_extend}} ce WHERE ce.contentId=c.id AND ce.code='c273ac9fb03fe83739dc0bd5ad2678a6') as major";
+//        $seField .= ",(SELECT ce.value FROM {{%content_extend}} ce WHERE ce.contentId=c.id AND ce.code='7d5cd08f7c929c4b95533a9371dca73d') as abroadSchool";
+//        $seField .= ",(SELECT ce.value FROM {{%content_extend}} ce WHERE ce.contentId=c.id AND ce.code='a05db4d7754035fb0768492b7720eef6') as oldSchool";
+//        $seField .= ",(SELECT ce.value FROM {{%content_extend}} ce WHERE ce.contentId=c.id AND ce.code='6d18833806f505bb06b5083adc72b1b3') as score";
+//        $where = "1=1";
+//        $where .= " AND c.id in(select DISTINCT cc.contentId from {{%category_content}} cc where cc.catId in(" . $catId . ") ) ";
+//        $where .= $w != false ? " AND " . $w : '';
+//        $page = $page != false ? $page : 1;
+//        $order = $order != false ? $order : 'c.id DESC';
+//        $pageSize = $pageSize != false ? $pageSize : 10;
+//        $limit = isset($select['limit']) ? $select['limit'] : (($page - 1) * $pageSize) . ",$pageSize";
+//        $sql = "select c.*,ca.name as catName$seField from {{%content}} c LEFT JOIN {{%category}} ca ON c.catId=ca.id left join {{%category_content}} cc on c.id=cc.contentId where $where";
+//        $content = \Yii::$app->db->createCommand("$sql ORDER BY $order LIMIT " . $limit)->queryAll();
+//        $count = count(\Yii::$app->db->createCommand("$sql")->queryAll());
+//        $pageStr = Method::getPagedRows(['count' => $count, 'pageSize' => $pageSize]);
+//        $content['pageStr'] = $pageStr;
+//        $content['count'] = $count;
+//        $content['total'] = ceil($count / $pageSize);
+//
+//        return $content;
+//
+//    }
 }

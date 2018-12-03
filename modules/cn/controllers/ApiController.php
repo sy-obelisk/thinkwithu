@@ -1517,27 +1517,29 @@ class ApiController extends ThinkUApiControl {
      * 案例分页
      * By yoyo
      */
-    public function actionGetCase(){
-        $catId = Yii::$app->request->get('catId',282);
-        $page = Yii::$app->request->get('page',1);
-        $data=file_get_contents("http://www.smartapply.cn/cn/api/get-case?catId=$catId&page=$page");
-        $data=json_decode($data,true);
+    public function actionGetCase()
+    {
+        $catId = Yii::$app->request->get('catId', "104,88,207");
+        $page = Yii::$app->request->get('page', 1);
+//        $data = file_get_contents("http://www.smartapply.cn/cn/api/get-case?catId=$catId&page=$page");
+//        $data = json_decode($data, true);
 
-        //        $data = Content::getContent(['fields' => 'abroadSchool,major,score,oldSchool','category' => "$catId", 'order' => 'c.sort asc,c.id desc', 'pageSize' => 12,'page'=>$page,'pageStr'=>1]);
-
+        $data = Content::getContent(['fields' => 'abroadSchool,major,score,oldSchool', 'category' => "$catId", 'order' => 'c.sort asc,c.id desc', 'pageSize' => 12, 'page' => $page, 'pageStr' => 1]);
+        $data['page'] = $page;
         die(json_encode($data));
     }
 
 
-    public function actionSchool(){
-        $count = Yii::$app->request->get('count',8);
-        $cate=[155,156,157,158,159,160,520,521];
-        if($count>=count($cate)){
-            $count=($count%count($cate));
+    public function actionSchool()
+    {
+        $count = Yii::$app->request->get('count', 8);
+        $cate = [155, 156, 157, 158, 159, 160, 520, 521];
+        if ($count >= count($cate)) {
+            $count = ($count % count($cate));
         }
         $school = new Schools();
-        $school =  json_decode($school->CurlRequest('school',['catid'=>$cate[$count], 'pageNumber'=>1, 'pageSize'=>6]),TRUE);
-        die(json_encode(['school'=>$school['data'],'code'=>1,'count'=>$count]));
+        $school = json_decode($school->CurlRequest('school', ['catid' => $cate[$count], 'pageNumber' => 1, 'pageSize' => 6]), TRUE);
+        die(json_encode(['school' => $school['data'], 'code' => 1, 'count' => $count]));
     }
 
 }
