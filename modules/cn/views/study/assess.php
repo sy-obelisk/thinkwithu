@@ -23,9 +23,12 @@
                                     <input name="extendValue[0]" class="val" type="hidden" value="">
                                     <span class="crow inb fr"><img src="cn/images/assess/crow.png" alt=""></span>
                                     <ul class="select-list ani">
+                                        <li>高中</li>
                                         <li>本科</li>
                                         <li>硕士</li>
-                                        <li>PHD/MBA</li>
+                                        <li>MBA</li>
+                                        <li>博士</li>
+                                        <li>游学</li>
                                     </ul>
                                 </div>
                             </div>
@@ -38,11 +41,12 @@
                                     <ul class="select-list ani">
                                         <li>美国</li>
                                         <li>英国</li>
-                                        <li>澳大利亚</li>
+                                        <li>澳洲</li>
                                         <li>加拿大</li>
-                                        <li>港澳台</li>
+                                        <li>香港</li>
                                         <li>新加坡</li>
-                                        <li>其他</li>
+                                        <li>其他国家</li>
+                                        <li>移民</li>
                                     </ul>
                                 </div>
                             </div>
@@ -56,7 +60,7 @@
                                 <p class="select-text">4.我现在的学历：<em class="must">(必填） </em></p>
                                 <div class="int-wrap  int-1 relative clearfix">
                                     <span class="m1 spanVal must">请选择</span>
-                                    <input name="extendValue[15]" class="val" type="hidden" value="">
+                                    <input name="extendValue[14]" class="val" type="hidden" value="">
                                     <span class="crow inb fr"><img src="cn/images/assess/crow.png" alt=""></span>
                                     <ul class="select-list ani">
                                         <li>本科</li>
@@ -68,7 +72,7 @@
                             <div class="cl-list">
                                 <p class="select-text">5.我意向出国的时间：<em class="must">(必填） </em></p>
                                 <div class="int-wrap  int-1 relative clearfix">
-                                    <input name="extendValue[16]" class="class=" val"="" m3"="" type="text" placeholder="请输入您意向出国时间">
+                                    <input name="extendValue[15]" class="class=" val"="" m3"="" type="text" placeholder="请输入您意向出国时间">
                                 </div>
                             </div>
                             <div class="cl-list">
@@ -82,8 +86,21 @@
                         <div class="cl-list-wrap2 ">
                             <div class="cl-list">
                                 <p class="select-text">我申请的专业：<em class="must"> </em></p>
-                                <div class="int-wrap clearfix">
-                                    <input class="m9" type="text" name="extendValue[2]" placeholder="请输入您申请的专业">
+                                <div class="int-wrap  int-1 relative clearfix">
+<!--                                    <input class="m9" type="text" name="extendValue[2]" placeholder="请输入您申请的专业">-->
+                                    <span class="m1 spanVal must">请选择</span>
+                                    <input name="extendValue[2]" class="val" type="hidden" value="">
+                                    <span class="crow inb fr"><img src="cn/images/assess/crow.png" alt=""></span>
+                                    <ul class="select-list ani" style="height: 280px;">
+                                        <li>商科</li>
+                                        <li>理工科</li>
+                                        <li>文科</li>
+                                        <li>法律</li>
+                                        <li>医学</li>
+                                        <li>艺术</li>
+                                        <li>体育</li>
+                                        <li>其他</li>
+                                    </ul>
 
                                 </div>
                             </div>
@@ -137,16 +154,21 @@
                                     <span class="must spanVal">请选择</span>
                                     <input type="hidden" name="extendValue[5]" value="">
                                     <span class="crow inb fr"><img src="cn/images/assess/crow.png" alt=""></span>
-                                    <ul class="select-list ani" style="height: 70px;">
-                                        <li>服务质量</li>
-                                        <li>评价</li>
+                                    <ul class="select-list ani" style="height: 240px;">
+                                        <li>服务流程</li>
+                                        <li>出国考试流程</li>
+                                        <li>选校定位</li>
+                                        <li>申请步骤</li>
+                                        <li>申请费用</li>
+                                        <li>奖学金</li>
+                                        <li>其他</li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="cl-list">
                                 <p class="select-text">我还想了解：<em class="must"> </em></p>
                                 <div class="int-wrap clearfix">
-                                    <input class="m9" type="text" name="extendValue[17]" placeholder="请填写">
+                                    <input class="m9" type="text" name="extendValue[16]" placeholder="请填写">
 
                                 </div>
                             </div>
@@ -160,7 +182,7 @@
                             <div class="cl-list">
                                 <p class="select-text">你的电话：<em class="must">(必填） </em></p>
                                 <div class="int-wrap clearfix special" >
-                                    <input class="m9" type="text" name="extendValue[15]" placeholder="请输入您的电话">
+                                    <input class="m9" type="text" name="extendValue[17]" placeholder="请输入您的电话">
                                 </div>
                                 <div class="v-code">
                                     <img style="height: 35px;" src="/cn/api/verification-code" onclick="this.src='/cn/api/verification-code?'+Math.random();" name="user_code" alt="验证码">

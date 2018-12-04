@@ -1550,17 +1550,9 @@ class ApiController extends ThinkUApiControl {
     {
         $session = Yii::$app->session;
         $name = Yii::$app->request->post('name');
-        $extendVal = Yii::$app->request->post('extendVal');
-        $verificationCode = Yii::$app->request->post('verificationCode', '');
+        $extendVal = Yii::$app->request->post('extendValue');
         $contentModel = new Content();
-        if ($verificationCode) {
-            if (strtolower($session->get('verificationCode')) != strtolower($verificationCode)) {
-                $re['code'] = 0;
-                $re['message'] = '验证码错误';
-                die(json_encode($re));
-            }
-        }
-        $contentModel->addContent(222, $extendVal[15], $name, $extendVal);
+        $contentModel->addContent(222, $extendVal[17], $name, $extendVal);
         $res['code'] = 1;
         $res['message'] = '我们的工作人员将于1-2个工作日内跟你联系';
         die(json_encode($res));
