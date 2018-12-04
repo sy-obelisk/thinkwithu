@@ -32,11 +32,11 @@ class CaseController extends ThinkUController
 //        $case[0] = json_decode(file_get_contents("http://www.smartapply.cn/cn/api/get-case?catId=282&page=1"), true);
 //        $model=new Content();
 //        $case[0] = $model->getCase("104,88,207",'cc.catId=88', 1, 12,'');
-        $case[0] = Content::getContent(['fields' => 'abroadSchool,major,score,oldSchool', 'category' => "104,88,207", 'order' => 'c.sort asc,c.id desc',  'pageSize' => 12, 'page' => 1, 'pageStr' => 1]);
-        $case[1] = Content::getContent(['fields' => 'abroadSchool,major,score,oldSchool', 'category' => "104,89,207", 'order' => 'c.sort asc,c.id desc',  'pageSize' => 12, 'page' => 1, 'pageStr' => 1]);
-        $case[2] = Content::getContent(['fields' => 'abroadSchool,major,score,oldSchool', 'category' => "104,91,96,207", 'order' => 'c.sort asc,c.id desc', 'pageSize' => 12, 'page' => 1, 'pageStr' => 1]);
-        $case[3] = Content::getContent(['fields' => 'abroadSchool,major,score,oldSchool', 'category' => "104,90,93,207", 'order' => 'c.sort asc,c.id desc', 'pageSize' => 12, 'page' => 1, 'pageStr' => 1]);
-        $case[4] = Content::getContent(['fields' => 'abroadSchool,major,score,oldSchool', 'category' => "104,94,207", 'order' => 'c.sort asc,c.id desc',  'pageSize' => 12, 'page' => 1, 'pageStr' => 1]);
+        $case[0] = Content::getContent(['fields' => 'abroadSchool,major,score,oldSchool', 'category' => "104,88,207", 'order' => 'c.id desc',  'pageSize' => 12, 'page' => 1, 'pageStr' => 1]);
+        $case[1] = Content::getContent(['fields' => 'abroadSchool,major,score,oldSchool', 'category' => "104,89,207", 'order' => 'c.id desc',  'pageSize' => 12, 'page' => 1, 'pageStr' => 1]);
+        $case[2] = Content::getContent(['fields' => 'abroadSchool,major,score,oldSchool', 'category' => "104,91,96,207", 'order' => 'c.id desc', 'pageSize' => 12, 'page' => 1, 'pageStr' => 1]);
+        $case[3] = Content::getContent(['fields' => 'abroadSchool,major,score,oldSchool', 'category' => "104,90,93,207", 'order' => 'c.id desc', 'pageSize' => 12, 'page' => 1, 'pageStr' => 1]);
+        $case[4] = Content::getContent(['fields' => 'abroadSchool,major,score,oldSchool', 'category' => "104,94,207", 'order' => 'c.id desc',  'pageSize' => 12, 'page' => 1, 'pageStr' => 1]);
 //        echo '<pre>';var_dump($case[0]);die;
         return $this->render('index', ['case' => $case, 'new' => $new, 'list' => $list]);
     }

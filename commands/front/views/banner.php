@@ -71,7 +71,14 @@
 <!--                    </ul>-->
 <!--                </div>-->
             </li>
-            <li><a class="nav1-link" href="/">留学百科 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a></li>
+            <li><a class="nav1-link <?php echo $controller == 'encyclopedia' ? 'on on-hover' : '' ?>" href="/">留学百科 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
+                <div class="eaxm-list eaxm-list-1">
+                    <ul>
+                        <li><a href="/encyclopedia/master.html">硕士动态</a></li>
+                        <li><a href="/encyclopedia/bachelor.html">本科动态</a></li>
+                    </ul>
+                </div>
+            </li>
             <li><a class="nav1-link <?php echo $controller == 'practices' ? 'on on-hover' : '' ?>" href="/practices.html">实习活动</a></li>
             <li><a class="nav1-link <?php echo $controller == 'class' ? 'on on-hover' : '' ?>" href="/public-class.html">申友讲堂</a></li>
             <li><a class="nav1-link <?php echo $controller == 'case' ? 'on on-hover' : '' ?>" href="/case.html">名校案列</a></li>
