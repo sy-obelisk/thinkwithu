@@ -34,36 +34,47 @@
                     <span>本科头条</span>
                     <img src="/cn/images/ency/hot.png" alt="">
                 </div>
-                <ul class="br_news_list">
-                    <li>
-                        <p class="br_name ellipsis"><a href="" target="_blank">2018年TOP30美国大学早录取要求</a></p>
-                        <p class="ellipsis-2 br_de">    在2018年本科托福要求，美国名校说的是100，但是事实上你也看到了，没有110不要开玩笑了…除非你是美高的，本身语言运用能力其实要比国内纯应试英语宝宝的英语能力强得多的那种。</p>
-                        <div class="flex-container">
-                            <span class="br_date">2018-03-01</span>
-                            <a class="br_online" href="#">在线咨询</a>
-                        </div>
-                    </li>
-                    <li>
-                        <p class="br_name ellipsis"><a href="" target="_blank">3月10日哪四所英国名校招生官将来华巡讲？</a></p>
-                        <p class="ellipsis-2 br_de">  随着英国首相梅姨成功访华之后，中英两国的合作关系俨然进入“黄金阶段”，不少家长们为了顺应时代潮流，纷纷希望孩子能尽早的适应国外先进的—英式教育，那如何选择真正适合孩子发展的英国院校?</p>
-                        <div class="flex-container">
-                            <span class="br_date">2018-02-28</span>
-                            <a class="br_online" href="#">在线咨询</a>
-                        </div>
-                    </li>
-                    <li>
-                        <p class="br_name ellipsis"><a href="" target="_blank">美国本科申请课外活动介绍需要注意这六大问题</a></p>
-                        <p class="ellipsis-2 br_de">美国本科申请时，课外活动介绍该如何写？想要体现自己的个人才艺和能力，很多学生都会将自己参加过的课外活动不分主次，罗列于表单上，这样的填写对于自己并不益处。列举课外活动的顺序，不仅仅要列出重要的活动，同时要进行有序的排列，参加的比赛或加入的俱乐部尽量写全称，不要用缩写。跟着小编来看看美国本科申请课外活动介绍需要注意哪些问题?</p>
-                        <div class="flex-container">
-                            <span class="br_date">2018-02-24</span>
-                            <a class="br_online" href="#">在线咨询</a>
-                        </div>
-                    </li>
-                </ul>
+                <div class="bd">
+                    <ul class="br_news_list"><!--循环li-->
+                        <li>
+                            <p class="br_name ellipsis"><a href="" target="_blank">2018年TOP30美国大学早录取要求</a></p>
+                            <p class="ellipsis-2 br_de">    在2018年本科托福要求，美国名校说的是100，但是事实上你也看到了，没有110不要开玩笑了…除非你是美高的，本身语言运用能力其实要比国内纯应试英语宝宝的英语能力强得多的那种。</p>
+                            <div class="flex-container">
+                                <span class="br_date">2018-03-01</span>
+                                <a class="br_online" href="#">在线咨询</a>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="br_name ellipsis"><a href="" target="_blank">3月10日哪四所英国名校招生官将来华巡讲？</a></p>
+                            <p class="ellipsis-2 br_de">  随着英国首相梅姨成功访华之后，中英两国的合作关系俨然进入“黄金阶段”，不少家长们为了顺应时代潮流，纷纷希望孩子能尽早的适应国外先进的—英式教育，那如何选择真正适合孩子发展的英国院校?</p>
+                            <div class="flex-container">
+                                <span class="br_date">2018-02-28</span>
+                                <a class="br_online" href="#">在线咨询</a>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="br_name ellipsis"><a href="" target="_blank">美国本科申请课外活动介绍需要注意这六大问题</a></p>
+                            <p class="ellipsis-2 br_de">美国本科申请时，课外活动介绍该如何写？想要体现自己的个人才艺和能力，很多学生都会将自己参加过的课外活动不分主次，罗列于表单上，这样的填写对于自己并不益处。列举课外活动的顺序，不仅仅要列出重要的活动，同时要进行有序的排列，参加的比赛或加入的俱乐部尽量写全称，不要用缩写。跟着小编来看看美国本科申请课外活动介绍需要注意哪些问题?</p>
+                            <div class="flex-container">
+                                <span class="br_date">2018-02-24</span>
+                                <a class="br_online" href="#">在线咨询</a>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="br_name ellipsis"><a href="" target="_blank">美国本科申请课外活动介绍需要注意这六大问题</a></p>
+                            <p class="ellipsis-2 br_de">美国本科申请时，课外活动介绍该如何写？想要体现自己的个人才艺和能力，很多学生都会将自己参加过的课外活动不分主次，罗列于表单上，这样的填写对于自己并不益处。列举课外活动的顺序，不仅仅要列出重要的活动，同时要进行有序的排列，参加的比赛或加入的俱乐部尽量写全称，不要用缩写。跟着小编来看看美国本科申请课外活动介绍需要注意哪些问题?</p>
+                            <div class="flex-container">
+                                <span class="br_date">2018-02-24</span>
+                                <a class="br_online" href="#">在线咨询</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
+        </div>`
         <script>
             jQuery(".banner_l").slide({mainCell:".bd ul",effect:"leftLoop",autoPlay:true});
+            jQuery(".banner_r").slide({mainCell:".bd ul",effect:"topLoop",autoPlay:true,vis:3});
         </script>
         <!--        留学咨询-->
         <div>
