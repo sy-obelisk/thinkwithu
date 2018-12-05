@@ -129,6 +129,9 @@
     text-align: right;
     margin:5px 0 3px 0;
 }
+.botList{
+    padding-bottom: 40px;
+}
 study-left{
     width: 847px;
     float: left;
@@ -290,9 +293,9 @@ study-left{
 }
 .common-title-h{
     width: 100%;
-    border-left: 5px #01a4e5 solid;
+    border-left: 3px #994499 solid;
     font-size: 20px;
-    color: #01a4e5;
+    color: #994499;
     padding-left: 10px;
 }
 .ProductList{
@@ -360,7 +363,7 @@ study-left{
 .interSchool ul li:first-child .inter-num,
 .interSchool ul li:nth-child(2) .inter-num,
 .interSchool ul li:nth-child(3) .inter-num{
-    background-color: #68c8ef;
+    background-color: #994499;
 }
 .interSchool ul li:last-child{
     border-bottom: none;
@@ -393,7 +396,7 @@ study-left{
     font-size: 14px;
 }
 .inter-info span b{
-    color: #01a4e5;
+    color: #994499;
 }
 /*新版添加样式*/
 .qh_dcontent{
@@ -446,7 +449,7 @@ study-left{
 }
 
 .consult_list li:hover .consult_tit {
-    text-decoration: underline;
+    /*text-decoration: underline;*/
     color: #ff4d51;
 }
 
@@ -488,11 +491,11 @@ study-left{
     color: #777777;
     font-size: 12px;
     line-height: 24px;
-    height: 72px;
-    margin-bottom: 12px;
+    /*height: 72px;*/
+    margin-bottom: 15px;
 }
 
-.consult_view {
+.consult_view span{
     color: #777777;
     font-size: 12px;
 }
@@ -546,8 +549,8 @@ study-left{
     border-bottom: none;
 }
 
-.consult_list2 li:hover .consult_tit {
-    text-decoration: underline;
+.consult_list2 li:hover .consult_tit{
+    /*text-decoration: underline;*/
     color: #ff5061;
 }
 
@@ -582,17 +585,19 @@ study-left{
 }
 
 .pageSize ul li:hover {
-    border-color: #68c8ef;
-    background: #68c8ef;
+    border-color: #994499;
+    background: #994499;
     color: #ffffff;
 }
 
 .pageSize ul li.on {
-    border-color:#68c8ef;
-    background:#68c8ef;
+    border-color:#994499;
+    background:#994499;
     color: #ffffff;
 }
 
 .pageSize ul li:last-child {
     margin-right: 0;
 }
+
+

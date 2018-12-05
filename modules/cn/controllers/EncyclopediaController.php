@@ -44,6 +44,7 @@ class EncyclopediaController extends ThinkUController
      */
     public function actionMaster()
     {
+
         return $this->render('master');
     }
 
