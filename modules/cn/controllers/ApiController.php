@@ -1602,11 +1602,12 @@ class ApiController extends ThinkUApiControl {
 
     public function actionMajor(){
         $catId = Yii::$app->request->post('catId','');
+        $page = Yii::$app->request->post('page',1);
         $category='136,118';
         if($catId!=false){
             $category='136,118,'.$catId;
         }
-        $data = Content::getContent(['fields' => 'description,abstract', 'category' => $category, 'order' => 'c.id desc', 'pageSize' => 12]);//头条
+        $data = Content::getContent(['fields' => 'description,abstract', 'category' => $category, 'order' => 'c.id desc', 'pageSize' => 12,'page'=>$page]);//头条
         die(json_encode(['data'=>$data,'code'=>1]));
     }
 
