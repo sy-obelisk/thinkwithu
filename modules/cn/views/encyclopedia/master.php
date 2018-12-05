@@ -43,66 +43,17 @@
                 <div class="title">今日头条 <img src="/cn/images/ency/hot.png" alt="图标"></div>
                 <div class="bd">
                     <ul>
-                        <li>
-                            <p><span>留学国家</span><a href="">【DS/CS/MIS专业】如何申请DS/CS/MIS顶尖名校？收下这份攻略，克服90%的名校申请难</a></p>
-                            <div class="clearfix">
-                                <div class="r-con-info ellipsis fl">
-                                    对于留学选校，你最看重的因素是什么？DS/CS/MIS硕士申请攻略
+                        <?php foreach ($list as $v) { ?>
+                            <li>
+                                <p><span>留学资讯</span><a href=""><?php echo $v['name'] ?></a></p>
+                                <div class="clearfix">
+                                    <div class="r-con-info ellipsis fl">
+                                        <?php echo $v['abstract'] ?>
+                                    </div>
+                                    <div class="hexi-time fr"><?php echo $v['createTime'] ?></div>
                                 </div>
-                                <div class="hexi-time fr">2018-11-16</div>
-                            </div>
-
-                        </li>
-                        <li>
-                            <p><span>留学国家</span><a href="">美加澳学费又暴涨，送你一份双十一省（剁）钱（手）指南！</a></p>
-                            <div class="clearfix">
-                                <div class="r-con-info ellipsis fl">
-                                    美加澳学费又暴涨，送你一份双十一省（剁）钱（手）指南！
-                                </div>
-                                <div class="hexi-time fr">2018-11-06</div>
-                            </div>
-
-                        </li>
-                        <li>
-                            <p><span>留学国家</span><a href="">重磅！2019年USNEWS世界大学排名发布，你的梦校排第几？</a></p>
-                            <div class="clearfix">
-                                <div class="r-con-info ellipsis fl">
-                                    刚刚，2019年USNews世界大学排名火热出炉！
-                                </div>
-                                <div class="hexi-time fr">2018-10-30</div>
-                            </div>
-
-                        </li>
-                        <li>
-                            <p><span>留学国家</span><a href="">2019THE商科与经济学专业世界大学排名出炉</a></p>
-                            <div class="clearfix">
-                                <div class="r-con-info ellipsis fl">
-                                    权威机构泰晤士高等教育（THE）除了每年都会发布世界大学排名,还会发布几个学科的全球大学排名，今年的学科排名也有所扩展，将有11个学科。而最近THE率先发布了商业与经济学科、社会科学学科、教育学科和法律学科的排名。
-                                </div>
-                                <div class="hexi-time fr">2018-10-25</div>
-                            </div>
-
-                        </li>
-                        <li>
-                            <p><span>留学国家</span><a href="">【公开课】金融/金工/BA专业碰撞解读，1小时掌握商科大热门申请诀窍！</a></p>
-                            <div class="clearfix">
-                                <div class="r-con-info ellipsis fl">
-                                    金融/金工/BA专业碰撞解读，1小时掌握商科大热门申请诀窍！
-                                </div>
-                                <div class="hexi-time fr">2018-10-25</div>
-                            </div>
-
-                        </li>
-                        <li>
-                            <p><span>留学国家</span><a href="">美加澳学费又暴涨，送你一份双十一省（剁）钱（手）指南！</a></p>
-                            <div class="clearfix">
-                                <div class="r-con-info ellipsis fl">
-                                    美加澳学费又暴涨，送你一份双十一省（剁）钱（手）指南！
-                                </div>
-                                <div class="hexi-time fr">2018-11-06</div>
-                            </div>
-
-                        </li>
+                            </li>
+                        <?php } ?>
                     </ul>
                 </div>
             </div>
@@ -129,91 +80,63 @@
                     </div>
                     <div class="qh_dbd bd">
                         <!--外层循环ul class="wc" 内层循环li class="nc"-->
-                        <ul class="wc">
-                            <li>
-                                <div class="dbd_content">
-                                    <ul class="consult_list"><!--列表内容-->
-                                        <li class="nc" data-id="5934"><!--循环li-->
-                                            <div class="clearfix">
-                                                <div class="consult_img fl">
-                                                    <a href="">
-                                                        <img src="http://www.smartapply.cn/cn/images/rand-image/rand1.png" alt="资讯左侧图片">
-                                                    </a>
-                                                </div>
-                                                <div class="consult_text fr">
-                                                    <p class="ellipsis consult_tit">
-                                                        <a href="">2019英国G5硕士现在申请还来得及吗？丨附申请要求</a>
-                                                    </p>
-                                                    <p class="ellipsis-2 consult_de">9-12月是留学申请高峰期 基本上大部分的学校 都会在这个时间段开放Round 1申请今年的英国G5院校Fall 2019硕士申请基本上已经进入倒计时下面跟着锦鲤一起来看看具体详情！</p>
-                                                    <div class="consult_view clearfix">
-                                                        <div class="fl">
-                                                            <div class="xiaobian_tx">
-                                                                <a href="">
-                                                                    <img src="http://www.smartapply.cn/cn/images/editor-user/JL.png" alt="小编头像">
+                        <?php foreach ($data as $val) { ?>
+                            <ul class="wc">
+                                <li>
+                                    <div class="dbd_content">
+                                        <ul class="consult_list"><!--列表内容-->
+                                            <?php foreach ($val as $k => $v) {
+                                                if (is_numeric($k)) {
+                                                    ?>
+                                                    <li class="nc" data-id="5934"><!--循环li-->
+                                                        <div class="clearfix">
+                                                            <div class="consult_img fl">
+                                                                <a href="/encyclopedia/<?php echo $v['id'] ?>.html">
+                                                                    <img src="http://www.thinkwithu.com<?php echo $v['image'] ?>" alt="资讯左侧图片">
                                                                 </a>
                                                             </div>
-                                                            <span class="xiaob_name">
-                                                                <a href="javascript:void(0);">申友</a>
-                                                            </span>
-                                                            <span>2018-12-04</span>
-                                                            <span class="view_line">|</span>
-                                                            <span>阅读（4394）</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <!--分页-->
-                                    <div class="pageSize tm">
-                                        <ul>    </ul>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="wc">
-                            <li>
-                                <div class="dbd_content">
-                                    <ul class="consult_list">
-                                        <li class="nc" data-id="5934"><!--循环li-->
-                                            <div class="clearfix">
-                                                <div class="consult_img fl">
-                                                    <a href="">
-                                                        <img src="http://www.smartapply.cn/cn/images/rand-image/rand1.png" alt="资讯左侧图片">
-                                                    </a>
-                                                </div>
-                                                <div class="consult_text fr">
-                                                    <p class="ellipsis consult_tit">
-                                                        <a href="">我是第二页</a>
-                                                    </p>
-                                                    <p class="ellipsis-2 consult_de">9-12月是留学申请高峰期 基本上大部分的学校 都会在这个时间段开放Round 1申请今年的英国G5院校Fall 2019硕士申请基本上已经进入倒计时下面跟着锦鲤一起来看看具体详情！</p>
-                                                    <div class="consult_view clearfix">
-                                                        <div class="fl">
-                                                            <div class="xiaobian_tx">
-                                                                <a href="">
-                                                                    <img src="http://www.smartapply.cn/cn/images/editor-user/JL.png" alt="小编头像">
-                                                                </a>
-                                                            </div>
-                                                            <span class="xiaob_name">
-                                                                <a href="javascript:void(0);">申友</a>
-                                                            </span>
-                                                            <span>2018-12-04</span>
-                                                            <span class="view_line">|</span>
-                                                            <span>阅读（4394）</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <!--分页-->
-                                    <div class="pageSize tm">
-                                        <ul>    </ul>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
+                                                            <div class="consult_text fr">
+                                                                <p class="ellipsis consult_tit">
+                                                                    <a href="/encyclopedia/<?php echo $v['id'] ?>.html"><?php echo $v['name'] ?></a>
+                                                                </p>
 
+                                                                <p class="ellipsis-2 consult_de"><?php echo $v['abstract'] ?></p>
+
+                                                                <div class="consult_view clearfix">
+                                                                    <div class="fl">
+                                                                        <div class="xiaobian_tx">
+                                                                            <a href="">
+                                                                                <img
+                                                                                    src="http://www.smartapply.cn/cn/images/editor-user/JL.png"
+                                                                                    alt="小编头像">
+                                                                            </a>
+                                                                        </div>
+                                                                        <span class="xiaob_name">
+                                                                            <a href="javascript:void(0);">申友</a>
+                                                                        </span>
+                                                                        <span><?php echo $v['createTime'] ?></span>
+                                                                        <span class="view_line">|</span>
+                                                                        <span>阅读（<?php echo $v['viewCount'] ?>）</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                <?php }
+                                            } ?>
+                                        </ul>
+                                        <!--分页-->
+                                        <div class="pageSize tm">
+                                            <ul>
+                                                <?php for($i=1;$i<=$val['total'];$i++){?>
+                                                    <li data-value="<?php echo $val['total']?>" class="total mr02"><span class="colorRed"><?php echo $i;?></span></li>
+                                                <?php }?>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        <?php } ?>
                     </div>
                 </div>
 
@@ -227,42 +150,23 @@
                     <div class="common-title-h">您可能感兴趣的学校</div>
                     <div class="interSchool">
                         <ul>
-                            <li>
-                                <div class="inter-num">1</div>
-                                <div class="inter-img">
-                                    <img src="http://schools.smartapply.cn/files/attach/images/20180309/1520566444459689.jpg" alt="学校图片">
-                                </div>
-                                <div class="inter-info">
-                                    <h4><a href="http://schools.smartapply.cn/schools/18903.html">伦敦商学院（LBS）</a></h4>
-                                    <span>排名：<b>N/A</b> | 查看人数：<b>
-<!--                                                -->                                               350                                            </b></span>
-                                </div>
-                                <div class="clearfix"></div>
-                            </li>
-                            <li>
-                                <div class="inter-num">2</div>
-                                <div class="inter-img">
-                                    <img src="http://schools.smartapply.cn/files/attach/images/20180614/1528963721391856.jpg" alt="学校图片">
-                                </div>
-                                <div class="inter-info">
-                                    <h4><a href="http://schools.smartapply.cn/schools/18983.html">巴黎文理研究大学</a></h4>
-                                    <span>排名：<b>1</b> | 查看人数：<b>
-<!--                                                -->                                               306                                            </b></span>
-                                </div>
-                                <div class="clearfix"></div>
-                            </li>
-                            <li>
-                                <div class="inter-num">3</div>
-                                <div class="inter-img">
-                                    <img src="http://schools.smartapply.cn/files/attach/images/20180614/1528964924186883.png" alt="学校图片">
-                                </div>
-                                <div class="inter-info">
-                                    <h4><a href="http://schools.smartapply.cn/schools/18985.html">索邦大学</a></h4>
-                                    <span>排名：<b>1</b> | 查看人数：<b>
-<!--                                                -->                                               304                                            </b></span>
-                                </div>
-                                <div class="clearfix"></div>
-                            </li>
+                            <?php foreach ($school['data'] as $k => $v) {
+                                if (is_numeric($k)) {
+                                    ?>
+                                    <li>
+                                        <div class="inter-num"><?php echo $k + 1 ?></div>
+                                        <div class="inter-img">
+                                            <img src="http://schools.smartapply.cn<?php echo $v['image'] ?>" alt="学校图片">
+                                        </div>
+                                        <div class="inter-info">
+                                            <h4><a href="/schools/<?php echo $v['id'] ?>.html"><?php echo $v['name'] ?>
+                                                    （<?php echo $v['title'] ?>）</a></h4>
+                                            <span>排名：<b><?php echo $v['s_rank'] ?></b> | 查看人数：<b><?php echo $v['viewCount']+rand(30,80) ?></b></span>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </li>
+                                <?php }
+                            } ?>
                         </ul>
                     </div>
 
