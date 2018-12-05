@@ -12,6 +12,7 @@ use app\libs\ThinkUApiControl;
 use app\modules\cn\models\Content;
 use app\modules\cn\models\SchoolTest;
 use app\modules\cn\models\Collect;
+use app\modules\cn\models\Practices;
 use app\modules\cn\models\ExtendData;
 use app\modules\cn\models\ContentExtend;
 use app\modules\cn\models\CategoryContent;
@@ -1576,6 +1577,27 @@ class ApiController extends ThinkUApiControl {
         $res['code'] = 1;
         $res['message'] = '验证通过！';
         die(json_encode($res));
+    }
+
+    /**
+     *游学申请
+     * @yoyo
+     */
+    public function actionAbroadApply()
+    {
+        if ($_POST) {
+            $extendVal = Yii::$app->request->post('extendValue');
+            $contentModel = new Practices();
+            $data = $contentModel->addContent(244, $extendVal[0], $extendVal);
+            if (!$data) {
+                $res['code'] = 1;
+                $res['message'] = '我们的工作人员将于1-2个工作日内跟你联系！';
+            } else {
+                $res['code'] = 0;
+                $res['message'] = '数据传输出错！';
+            }
+            die(json_encode($res));
+        }
     }
 
 }

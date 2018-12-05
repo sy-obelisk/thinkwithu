@@ -194,9 +194,9 @@
                                 <?php echo $v['name']?></a></h4>
 						<span>时间：<?php echo date("Y-m-d",strtotime($v['time']))?></span>
 						<div>
-							<a href="/practices/<?php echo $v['id']?>.html" target="_blank">
-								<?php echo html_entity_decode($v['synopsis'])?>
-							</a>
+<!--							<a href="/practices/--><?php //echo $v['id']?><!--.html" target="_blank">-->
+<!--								--><?php //echo html_entity_decode($v['synopsis'])?>
+<!--							</a>-->
 						</div>
 						<a href="/practices/<?php echo $v['id']?>.html" class="clickBtn" target="_blank"><span>查看详细介绍</span></a>
 					</li>

@@ -25,14 +25,14 @@ class PracticesController extends ThinkUController {
      */
     public function actionIndex(){
         $extendData = CategoryExtend::find()->where("catId=244 AND belong='content'")->orderBy('id ASC')->all();
-        if($_POST){
-            $extendVal = Yii::$app->request->post('extendValue');
-            $contentModel = new Practices();
-            $data =  $contentModel->addContent(244,$extendVal[0],$extendVal);
-            if(!$data){
-                echo('<script>alert("我们的工作人员将于1-2个工作日内跟你联系");</script>');
-            }
-        }
+//        if($_POST){
+//            $extendVal = Yii::$app->request->post('extendValue');
+//            $contentModel = new Practices();
+//            $data =  $contentModel->addContent(244,$extendVal[0],$extendVal);
+//            if(!$data){
+//                echo('<script>alert("我们的工作人员将于1-2个工作日内跟你联系");</script>');
+//            }
+//        }
         return $this->render('index',['extendData' => $extendData]);
 
     }
