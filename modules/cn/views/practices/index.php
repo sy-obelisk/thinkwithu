@@ -280,7 +280,7 @@
 		<div class="assigned">
 			名额有限，先抢先得
 		</div>
-		<form action="/practices.html" onsubmit="return checkSub()" method="post">
+		<form action="/cn/api/abroad-apply" onsubmit="return checkSub()" method="post">
 			<div class="message-sign">
 				<ul>
 					<?php
@@ -357,24 +357,8 @@
 
 <script type="text/javascript">
 	function checkSub() {
-		var a = 1;
-		$('.spanVal').each(function() {
-			var spanVal = $(this).html();
-			if(spanVal == '请选择') {
-				spanVal = '';
-			}
-			$(this).next().val(spanVal);
-		});
-
-		$('.val').each(function() {
-			if($(this).val() == "" || $(this).val() == "请选择") {
-				alert('星标志位必填');
-				a = 2;
-				return false;
-			}
-		});
-		if(a == 2) {
-			return false;
-		}
+        $('.val').each(function () {
+            
+        })
 	}
 </script>

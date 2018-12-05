@@ -80,7 +80,7 @@
             <span>名额有限，先抢先得</span>
             <img src="/cn/images/practiceD_carIcon.png" alt="分隔图片">
         </div>
-        <form action="/practices.html" onsubmit="return checkSub()" method="post">
+        <form action="/cn/api/abroad-apply" onsubmit="return checkSub()" method="post">
             <div class="detailCR-bot">
                 <ul>
                     <?php

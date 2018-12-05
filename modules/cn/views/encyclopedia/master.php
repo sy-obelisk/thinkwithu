@@ -304,11 +304,11 @@
                         '<a href="/cn/admission-requirement/detail/'+da[i].catId+'-'+da[i].id+'.html">' +da[i].title+
                         '</a>' +
                         '</p>' +
-                        '<p class="ellipsis-3 consult_de">'+da[i].answer+'</p>' +
+                        '<p class="ellipsis-2 consult_de">'+da[i].answer+'</p>' +
                         '<div class="consult_view clearfix">' +
                         '<div class="fl">' +
                         '<div class="xiaobian_tx">' +
-                        '<a href="/copyreader-'+da[i].userId+'.html">' +
+                        '<a href="">' +
                         '<img src="';
                     str+='http://www.smartapply.cn/cn/images/editor-user/JL.png';
                     str+='" alt="小编头像">' +
