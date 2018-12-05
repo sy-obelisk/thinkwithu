@@ -1600,4 +1600,14 @@ class ApiController extends ThinkUApiControl {
         }
     }
 
+    public function actionMajor(){
+        $catId = Yii::$app->request->post('catId','');
+        $category='136,118';
+        if($catId!=false){
+            $category='136,118,'.$catId;
+        }
+        $data = Content::getContent(['fields' => 'description,abstract', 'category' => $category, 'order' => 'c.id desc', 'pageSize' => 12]);//头条
+        die(json_encode(['data'=>$data,'code'=>1]));
+    }
+
 }
