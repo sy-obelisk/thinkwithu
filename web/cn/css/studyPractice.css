@@ -1,4 +1,7 @@
-
+*{
+    margin: 0;
+    padding: 0;
+}
 .practiceTop{
     width: 1440px;
     height: 364px;
@@ -15,13 +18,13 @@
     height: 69px;
     line-height: 69px;
     display: block;
-    margin: 0 auto;
+    margin: 20px auto 0;
     border: 2px #9da29e solid;
     border-radius: 50px;
     color: white;
     font-size: 30px;
     background: rgba(0, 0, 0, 0.61);
-    margin-top: 20px;
+    /*margin-top: 20px;*/
 }
 .practiceTop a:hover{
     color: #82328c;
@@ -70,8 +73,15 @@
     width: 238px;
     height: 298px;
     float: left;
+    /*flex: 1;*/
     margin-right: 12px;
     text-align: center;
+}
+.program_con ul{
+    overflow: hidden;
+    /*display: flex;*/
+    /*flex-wrap: nowrap;*/
+    /*flex-direction: row;*/
 }
 .program_white .program_con ul li{
     color: #5b5b5b;
@@ -99,7 +109,7 @@
 .program_con ul li div{
     width: 85%;
     height: 34px;
-    margin: 0 auto;
+    margin: 12px auto 0;
     font-size: 12px;
     text-align: left;
     text-overflow: ellipsis;
@@ -110,7 +120,6 @@
     -moz-line-clamp: 2;
     -webkit-box-orient: vertical;
     -moz-box-orient: vertical;
-    margin-top: 12px;
 }
 .program_white .program_con ul li div a{
     color: #5b5b5b;
@@ -519,7 +528,7 @@
 }
 
 /*全球金融实习*/
-.bg-promote{	
+.bg-promote{
 	background-color: #ccc;
 }
 .bg-wrap{
@@ -558,7 +567,7 @@
 .bg-cont .bg-overplay{
 	position: absolute;
 	width: 100%;
-	height: 100%;	
+	height: 100%;
 	z-index: 9;
 	transition: all 0.4s;
 }

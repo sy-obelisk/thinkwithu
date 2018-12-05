@@ -179,7 +179,7 @@
 				<li><span></span>国内实习</li>
 			</ul>
 		</div>
-		<div class="program_con">
+		<div class="program_con program_con_s">
 			<ul>
 				<?php
                 $data = \app\modules\cn\models\Content::getContent(['fields' => 'id,image,name,time,synopsis','category' => "240,243",'pageSize'=>4]);
@@ -195,7 +195,7 @@
 						<span>时间：<?php echo date("Y-m-d",strtotime($v['time']))?></span>
 						<div>
 							<a href="/practices/<?php echo $v['id']?>.html" target="_blank">
-								<?php echo html_entity_decode($v['synopsis'])?>
+<!--								--><?php //echo html_entity_decode($v['synopsis'])?>
 							</a>
 						</div>
 						<a href="/practices/<?php echo $v['id']?>.html" class="clickBtn" target="_blank"><span>查看详细介绍</span></a>
@@ -219,7 +219,7 @@
 						<span>时间：<?php echo date("Y-m-d",strtotime($v['time']))?></span>
 						<div>
 							<a href="/practices/<?php echo $v['id']?>.html" target="_blank">
-								<?php echo html_entity_decode($v['synopsis'])?>
+<!--								--><?php //echo html_entity_decode($v['synopsis'])?>
 							</a>
 						</div>
 						<a href="/practices/<?php echo $v['id']?>.html" class="clickBtn" target="_blank"><span>查看详细介绍</span></a>
