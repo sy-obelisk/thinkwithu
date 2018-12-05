@@ -116,24 +116,24 @@
             <!--左-->
             <div class="study-left">
                 <div class="qh_dcontent">
-                    <div class="qh_dhd">
+                    <div class="qh_dhd hd">
                         <ul>
-                            <li class="on" data-catid="118" onclick="titleSlide(this)">全部</li>
-                            <li data-catid="121" onclick="titleSlide(this)" class="">留学问答</li>
-                            <li data-catid="119" onclick="titleSlide(this)">留学规划</li>
-                            <li data-catid="" onclick="titleSlide(this)">留学国家</li>
-                            <li data-catid="120" onclick="titleSlide(this)">留学手续</li>
-                            <li data-catid="115" onclick="titleSlide(this)">GMAT</li>
-                            <li data-catid="116" onclick="titleSlide(this)">托福</li>
+                            <li class="on" data-catid="118">全部</li>
+                            <li data-catid="121">留学问答</li>
+                            <li data-catid="119">留学规划</li>
+                            <li data-catid="" >留学国家</li>
+                            <li data-catid="120">留学手续</li>
+                            <li data-catid="115">GMAT</li>
+                            <li data-catid="116">托福</li>
                         </ul>
                     </div>
-                    <div class="qh_dbd">
-                        <!--全部-->
-                        <ul>
+                    <div class="qh_dbd bd">
+                        <!--外层循环ul class="wc" 内层循环li class="nc"-->
+                        <ul class="wc">
                             <li>
                                 <div class="dbd_content">
                                     <ul class="consult_list"><!--列表内容-->
-                                        <li data-id="5934"><!--循环li-->
+                                        <li class="nc" data-id="5934"><!--循环li-->
                                             <div class="clearfix">
                                                 <div class="consult_img fl">
                                                     <a href="">
@@ -171,12 +171,54 @@
                                 </div>
                             </li>
                         </ul>
+                        <ul class="wc">
+                            <li>
+                                <div class="dbd_content">
+                                    <ul class="consult_list">
+                                        <li class="nc" data-id="5934"><!--循环li-->
+                                            <div class="clearfix">
+                                                <div class="consult_img fl">
+                                                    <a href="">
+                                                        <img src="http://www.smartapply.cn/cn/images/rand-image/rand1.png" alt="资讯左侧图片">
+                                                    </a>
+                                                </div>
+                                                <div class="consult_text fr">
+                                                    <p class="ellipsis consult_tit">
+                                                        <a href="">我是第二页</a>
+                                                    </p>
+                                                    <p class="ellipsis-2 consult_de">9-12月是留学申请高峰期 基本上大部分的学校 都会在这个时间段开放Round 1申请今年的英国G5院校Fall 2019硕士申请基本上已经进入倒计时下面跟着锦鲤一起来看看具体详情！</p>
+                                                    <div class="consult_view clearfix">
+                                                        <div class="fl">
+                                                            <div class="xiaobian_tx">
+                                                                <a href="">
+                                                                    <img src="http://www.smartapply.cn/cn/images/editor-user/JL.png" alt="小编头像">
+                                                                </a>
+                                                            </div>
+                                                            <span class="xiaob_name">
+                                                                <a href="javascript:void(0);">申友</a>
+                                                            </span>
+                                                            <span>2018-12-04</span>
+                                                            <span class="view_line">|</span>
+                                                            <span>阅读（4394）</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <!--分页-->
+                                    <div class="pageSize tm">
+                                        <ul>    </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
 
                     </div>
                 </div>
 
                 <script type="text/javascript">
-                    jQuery(".qh_dcontent").slide({titCell:".qh_dhd li",mainCell:".qh_dbd",trigger:"click"});
+                    jQuery(".qh_dcontent").slide({trigger:"click"});
                 </script>
             </div>
             <!--右-->
@@ -231,16 +273,16 @@
 </section>
 
 <script>
-    //选项卡内容切换
-    function titleSlide(o) {
-        var catId=$(o).attr("data-catid");
-        var page=$(".pageSize ul li.on").html();
-        ajaxStr(catId,1);
-    }
+    //分页
+    // $(".pageSize ul li.iPage").click(function() {
+    //     var catId=$(".qh_dhd ul li.on").attr("data-catid");
+    //     var page=$(this).html();
+    //     ajaxStr(catId,page);
+    // });
     function ajaxStr(catId,page) {
         var str='';
         $.ajax({
-            url:"cn/api/major",
+            url:"/cn/api/major",
             type:"get",
             data:{
                 catId:catId,
@@ -288,11 +330,7 @@
                 $(".consult_list").html(str);
                 $(".pageSize ul").html(data.pageStr);
                 setTimeout(function () {
-                    $(".pageSize ul li.iPage").click(function() {
-                        var catId=$(".qh_dhd ul li.on").attr("data-catid");
-                        var page=$(this).html();
-                        ajaxStr(catId,page);
-                    });
+
                 },1000);
 
             }
