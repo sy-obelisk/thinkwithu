@@ -12,16 +12,6 @@
                     <img src="http://www.thinkwithu.com//files/attach/images/20170217/1487326065197811.png" alt="案例库">
                 </a>
             </li>
-            <li>
-                <a href="" target="_blank">
-                    <img src="http://www.thinkwithu.com//files/attach/images/20170217/1487326158184993.png" alt="案例库">
-                </a>
-            </li>
-            <li>
-                <a href="" target="_blank">
-                    <img src="http://www.thinkwithu.com//files/attach/images/20170303/1488503883239281.jpg" alt="案例库">
-                </a>
-            </li>
         </ul>
     </div>
     <!--左边-->
@@ -56,7 +46,7 @@
         </div>
     </div>
     <script>
-        jQuery(".banner").slide({mainCell:".bd ul",effect:"leftLoop",autoPlay:true});
+        // jQuery(".banner").slide({mainCell:".bd ul",effect:"leftLoop",autoPlay:true});
         jQuery(".b_l_content").slide({mainCell:".b_l_details ul",autoPlay:true,effect:"topMarquee",vis:9,interTime:50,trigger:"click"});
     </script>
 </section>
