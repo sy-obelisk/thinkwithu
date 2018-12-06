@@ -1,6 +1,8 @@
 <link rel="stylesheet" href="/cn/css/encyclopedia/details.css">
 <link rel="stylesheet" href="/cn/css/encyclopedia/reset.css">
 
+<input type="hidden" value="1516" id="arcticleId"><!--文章id-->
+
 <section class="enDetailsCover">
     <div class="enWrap">
         <div class="enTitle">
@@ -43,79 +45,50 @@
                         </div>
                         <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script>
                         <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
-                        <span class="error"><img src="/cn/images/ency/error.png" alt=""><em>报错</em></span>
+                        <span class="error" onclick="showM()"><img src="/cn/images/ency/error.png" alt=""><em>报错</em></span>
                     </div>
                 </div>
             </div>
             <!--右-->
-            <div class="study-right">
+            <div class="commonRight">
                 <div class="TopList">
-                    <div class="common-title-h">您可能感兴趣的学校</div>
-                    <div class="interSchool">
+
+                    <div class="hotXiao">
+                        <div class="common-title">
+                           <span>|</span> 你可能感兴趣的学校
+                        </div>
+                        <div class="interestSchool">
+                            <ul> <!--循环li-->
+                                <li class="school-flex">
+                                    <div class="numDiv">1</div>
+                                    <div class="interImg">
+                                        <a href="">
+                                            <img src="http://schools.smartapply.cn/files/attach/images/20180309/1520566444459689.jpg" alt="学校图片">
+                                        </a>
+                                    </div>
+                                    <div class="interSchoolF">
+                                        <p class="ellipsis"><a href="">伦敦商学院（LBS）</a></p>
+                                        <span class="ellipsis">排名：N/A   &nbsp;&nbsp;|&nbsp;&nbsp;  查看人数：553</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="xb-c-right">
+                        <h4> <span>|</span>热门文章推荐</h4>
                         <ul><!--循环li-->
                             <li>
-                                <div class="inter-num">1</div>
-                                <div class="inter-img">
-                                    <img src="http://schools.smartapply.cn/files/2015/0115/20150115033833448.jpg" alt="学校图片">
+                                <div class="us-left">
+                                    <a href="">
+                                        <img src="http://www.smartapply.cn/files/attach/images/20181116/1542340686838050.png" alt="图片">
+                                    </a>
                                 </div>
-                                <div class="inter-info">
-                                    <h4><a href="/schools/11664.html">波士顿学院                                                    （Boston College）</a></h4>
-                                    <span>排名：<b>32</b> | 查看人数：<b>5056</b></span>
-                                </div>
-                                <div class="clearfix"></div>
-                            </li>
-                            <li>
-                                <div class="inter-num">2</div>
-                                <div class="inter-img">
-                                    <img src="http://schools.smartapply.cn/files/2015/0115/20150115034354272.png" alt="学校图片">
-                                </div>
-                                <div class="inter-info">
-                                    <h4><a href="/schools/11665.html">威廉玛丽学院                                                    （College of William and Mary）</a></h4>
-                                    <span>排名：<b>32</b> | 查看人数：<b>48</b></span>
-                                </div>
-                                <div class="clearfix"></div>
-                            </li>
-                            <li>
-                                <div class="inter-num">3</div>
-                                <div class="inter-img">
-                                    <img src="http://schools.smartapply.cn/files/2015/0115/20150115034548977.png" alt="学校图片">
-                                </div>
-                                <div class="inter-info">
-                                    <h4><a href="/schools/11666.html">纽约大学（NYU）                                                    （New York University）</a></h4>
-                                    <span>排名：<b>30</b> | 查看人数：<b>55</b></span>
-                                </div>
-                                <div class="clearfix"></div>
-                            </li>
-                            <li>
-                                <div class="inter-num">4</div>
-                                <div class="inter-img">
-                                    <img src="http://schools.smartapply.cn/files/2015/0115/20150115034659400.jpg" alt="学校图片">
-                                </div>
-                                <div class="inter-info">
-                                    <h4><a href="/schools/11667.html">罗切斯特大学                                                    （University of Rochester）</a></h4>
-                                    <span>排名：<b>34</b> | 查看人数：<b>36</b></span>
-                                </div>
-                                <div class="clearfix"></div>
-                            </li>
-                            <li>
-                                <div class="inter-num">5</div>
-                                <div class="inter-img">
-                                    <img src="http://schools.smartapply.cn/files/2015/0115/20150115034807979.jpg" alt="学校图片">
-                                </div>
-                                <div class="inter-info">
-                                    <h4><a href="/schools/11668.html">布兰迪斯大学                                                    （Brandeis University）</a></h4>
-                                    <span>排名：<b>34</b> | 查看人数：<b>62</b></span>
-                                </div>
-                                <div class="clearfix"></div>
-                            </li>
-                            <li>
-                                <div class="inter-num">6</div>
-                                <div class="inter-img">
-                                    <img src="http://schools.smartapply.cn/files/2015/0115/20150115034934768.jpg" alt="学校图片">
-                                </div>
-                                <div class="inter-info">
-                                    <h4><a href="/schools/11669.html">佐治亚理工学院                                                    （Georgia Institute of Technology）</a></h4>
-                                    <span>排名：<b>34</b> | 查看人数：<b>73</b></span>
+                                <div class="us-right">
+                                    <p class="ellipsis-2">
+                                        <a href="">【DS/CS/MIS专业】如何申请DS/CS/MIS顶尖名校？收下这份攻略，克服90%的名校申请难</a>
+                                    </p>
+                                    <span>2018-11-16</span>
+                                    <span class="fr">阅读：54428</span>
                                 </div>
                                 <div class="clearfix"></div>
                             </li>
@@ -127,3 +100,84 @@
         </div>
     </div>
 </section>
+<!--报错弹窗-->
+<section class="error_mask">
+    <div class="error_kuang">
+        <div class="error_close" onclick="closeErrorMask()">
+            <img src="http://www.greonline.cn/cn/images/error_close.png" alt="关闭图标">
+        </div>
+        <div class="error_title bgw">
+            纠错文章
+        </div>
+        <div class="error_sort">
+            <ul>
+                <li>
+                    <label for="sort01">错别字</label>
+                    <input type="radio" name="check" id="sort01" data-type="1">
+                </li>
+                <li>
+                    <label for="sort02">排版有误</label>
+                    <input type="radio" name="check" id="sort02" data-type="2">
+                </li>
+                <li>
+                    <label for="sort03">描述错误</label>
+                    <input type="radio" name="check" id="sort03" data-type="3">
+                </li>
+                <li>
+                    <label for="sort04">理解错误</label>
+                    <input type="radio" name="check" id="sort04" data-type="4">
+                </li>
+                <li>
+                    <label for="sort05">抄袭文章</label>
+                    <input type="radio" name="check" id="sort05" data-type="5">
+                </li>
+                <li>
+                    <label for="sort06">其它</label>
+                    <input type="radio" name="check" id="sort06" data-type="6">
+                </li>
+            </ul>
+        </div>
+        <div class="error_title error2">
+            错误描述
+        </div>
+        <div class="error_text">
+            <textarea class="descrip"></textarea>
+            <input type="button" value="提交" onclick="subError()">
+        </div>
+    </div>
+</section>
+
+<script>
+    //开启弹窗
+    function showM() {
+        $('.error_mask').show();
+    }
+    //关闭弹窗
+    function closeErrorMask() {
+        $('.error_mask').hide();
+    }
+    //提交报错
+    function subError() {
+        var id = $('#arcticleId').val()//文章id
+        var reportType = $("input[type='radio']:checked").attr('data-type');//错误类型
+        var details = $('.descrip').val();//错误描述
+        if($("input[type='radio']:checked").length>0){
+
+        }else {
+            alert('请选择错误原因');
+            return false
+        }
+        if(details){
+            $.post('/cn/api/report',{
+                contentId:id,
+                reportType:reportType,
+                description:details
+            },function (re) {
+
+            })
+        }else {
+            alert('请填写错误描述')
+        }
+
+    }
+</script>

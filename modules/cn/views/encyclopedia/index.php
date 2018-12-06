@@ -9,22 +9,18 @@
             <div class="banner_l">
                 <div class="bannerHd hd">
                     <ul><!--循环li-->
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <?php foreach($banner as $v){?>
+                            <li></li>
+                        <?php }?>
                     </ul>
                 </div>
                 <div class="bannerBd bd">
                     <ul><!--循环li-->
-                        <li>
-                            <a href=""> <img src="http://www.smartapply.cn/files/attach/images/20180228/1519807830738702.jpg" alt=""></a>
-                        </li>
-                        <li>
-                            <a href=""> <img src="http://www.smartapply.cn/files/attach/images/20180228/1519807830738702.jpg" alt=""></a>
-                        </li>
-                        <li>
-                            <a href=""> <img src="http://www.smartapply.cn/files/attach/images/20180228/1519807830738702.jpg" alt=""></a>
-                        </li>
+                        <?php foreach($banner as $v){?>
+                            <li>
+                                <a href="<?php echo $v['url'] ?>"> <img src="<?php echo $v['image'] ?>" alt=""></a>
+                            </li>
+                        <?php }?>
                     </ul>
                 </div>
             </div>

@@ -12,6 +12,7 @@ use app\libs\ThinkUApiControl;
 use app\modules\cn\models\Content;
 use app\modules\cn\models\SchoolTest;
 use app\modules\cn\models\Collect;
+use app\modules\cn\models\Report;
 use app\modules\cn\models\Practices;
 use app\modules\cn\models\ExtendData;
 use app\modules\cn\models\ContentExtend;
@@ -1611,4 +1612,34 @@ class ApiController extends ThinkUApiControl {
         die(json_encode(['data'=>$data,'code'=>1,'page'=>$page]));
     }
 
+    /**
+     * 添加举报
+     * @yoyo
+     */
+    public function actionReport()
+    {
+        $session = Yii::$app->session;
+//        $userId = $session->get('userId');
+        $contentId = Yii::$app->request->post('contentId');
+        $reportType = Yii::$app->request->post('reportType');
+        $description = Yii::$app->request->post('description');
+        $reportCat = Yii::$app->request->post('cate');
+        $type = Yii::$app->request->post('type');
+        $model = new Report();
+        $model->contentId = $contentId;
+        $model->reportType = $reportType;
+        $model->description = $description;
+        $model->reportCat = $reportCat;
+        $model->type = $type;
+        $model->userId = '';
+        $model->createTime = time();
+        $re = $model->save();
+        if ($re) {
+            $re = ['code' => 1, 'message' => '提交成功，感谢您的反馈，我们会尽快核实纠正！'];
+            die(json_encode($re));
+        } else {
+            $re = ['code' => 0, 'message' => '举报失败，请重试'];
+            die(json_encode($re));
+        }
+    }
 }

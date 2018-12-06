@@ -22,12 +22,9 @@
 <!--轮播-->
 <div class="classBanner">
     <div class="classB-hd hd">
-        <?php
-        $data = \app\modules\cn\models\Content::getContent(['fields' => 'url', 'category' => '190,107']);
-        ?>
         <ul>
             <?php
-            foreach ($data as $v) {
+            foreach ($banner as $v) {
                 ?>
                 <li></li>
             <?php
@@ -36,12 +33,9 @@
         </ul>
     </div>
     <div class="classB-bd">
-        <?php
-        $data = \app\modules\cn\models\Content::getContent(['fields' => 'url', 'category' => '190,107']);
-        ?>
         <ul>
             <?php
-            foreach ($data as $v) {
+            foreach ($banner as $v) {
                 ?>
                 <li><a href="<?php echo $v['url'] ?>"><img src="http://www.thinkwithu.com<?php echo $v['image'] ?>" alt="banner图"/></a></li>
             <?php

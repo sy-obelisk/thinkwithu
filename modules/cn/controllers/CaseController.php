@@ -96,7 +96,7 @@ class CaseController extends ThinkUController
     public function actionSearch()
     {
         $keyword = strip_tags(Yii::$app->request->get('keyword',''));
-        $keyword = '牛津大学';
+//        $keyword = '牛津大学';
 //        $url="http://www.smartapply.cn/cn/mall-two/select?countryid=240&word=$keyword";
 //        $data = QueryList::Query($url,array(
 //            'url'=>array('.detailContent>ul>li>.detailC-left>a','href'),
