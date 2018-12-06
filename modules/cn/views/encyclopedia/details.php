@@ -159,7 +159,7 @@
     //提交报错
     function subError() {
         var id = $('#arcticleId').val()//文章id
-        var reportType = $("input[type='radio']:checked").attr('data-type');//错误类型
+        var catType = $("input[type='radio']:checked").attr('data-type');//错误类型
         var details = $('.descrip').val();//错误描述
         if($("input[type='radio']:checked").length>0){
 
@@ -170,10 +170,15 @@
         if(details){
             $.post('/cn/api/report',{
                 contentId:id,
-                reportType:reportType,
-                description:details
+                reportType:1,
+                description:details,
+                cate:catType,
+                type:1
             },function (re) {
-
+                if(JSON.parse(re).code==1){
+                    alert(JSON.parse(re).message);
+                    $('.error_mask').hide();
+                }
             })
         }else {
             alert('请填写错误描述')
