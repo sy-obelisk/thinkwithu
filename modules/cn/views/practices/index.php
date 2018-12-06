@@ -297,7 +297,7 @@
                                 ?>
 								<!--下拉-->
 								<div class="sign-xiala">
-									<span>请选择</span>
+									<span class="chooice">请选择</span>
 									<!--右边的下拉箭头-->
 									<div class="rightJ" onclick="upXiala(this)"></div>
 									<!--下拉内容-->
@@ -356,9 +356,25 @@
 </div>
 
 <script type="text/javascript">
+
 	function checkSub() {
-        $('.val').each(function () {
-            
-        })
+	    var a = 1;
+	    var c = 1;
+        var obj = $('.val');
+        var obj_1 = $('.chooice').eq(3);
+        obj.each(function () {
+
+            if($(this).val() == "" || $(this).val() == "请选择"){
+                a=2;
+            }
+        });
+        if(obj_1.html()=='请选择'){
+            c = 2;
+        }
+        if(a==2||c == 2){
+            alert('星标志位必填');
+            console.log(111);
+            return false;
+        }
 	}
 </script>

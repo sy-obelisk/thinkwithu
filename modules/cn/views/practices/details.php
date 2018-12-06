@@ -112,21 +112,6 @@
                                             </ul>
                                         </div>
                                     </div>
-<!--                                    <div class="default defa03">-->
-<!--                                        <span class="spanVal">请选择</span>-->
-<!--                                        <input type="hidden" --><?php //echo $v['required'] == 1?'class="val"':''?><!--  name="extendValue[]" value="">-->
-<!--                                        <div class="clickBac clickBac01" onclick="selectInfo(this)"></div>-->
-<!--                                        <!--文字-->
-<!--                                        <div class="secFont secFont03">-->
-<!--                                            <ul>-->
-<!--                                                --><?php //foreach($typeValue as $val) { ?>
-<!--                                                    <li>--><?php //echo $val?><!--</li>-->
-<!--                                                --><?php
-//                                                }
-//                                                ?>
-<!--                                            </ul>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
                                 <?php
                                 } elseif($v['type'] == 4) {
                                     ?>
@@ -151,22 +136,25 @@
 
 
 <script type="text/javascript">
-    function checkSub(){
-        $('.spanVal').each(function(){
-            var spanVal = $(this).html();
-            if(spanVal == '请选择'){
-                spanVal = '';
-            }
-            $(this).next().val(spanVal);
-        });
+    function checkSub() {
+        var a = 1;
+        var c = 1;
+        var obj = $('.val');
+        var obj_1 = $('.chooice').eq(3);
+        obj.each(function () {
 
-        $('.val').each(function(){
             if($(this).val() == "" || $(this).val() == "请选择"){
-                alert('星标志位必填');
-                a = 2;
-                return false;
+                a=2;
             }
         });
+        if(obj_1.html()=='请选择'){
+            c = 2;
+        }
+        if(a==2||c == 2){
+            alert('星标志位必填');
+            console.log(111);
+            return false;
+        }
     }
 
     function hots(){

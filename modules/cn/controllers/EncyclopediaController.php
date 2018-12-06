@@ -7,6 +7,7 @@
 namespace app\modules\cn\controllers;
 
 use yii;
+use app\libs\Schools;
 use app\libs\ThinkUController;
 use app\modules\cn\models\Content;
 
@@ -21,11 +22,7 @@ class EncyclopediaController extends ThinkUController
     public function actionIndex()
     {
         $data = Content::getContent(['fields' => 'description,abstract', 'category' => "135,118", 'order' => 'c.id desc', 'pageSize' => 12]);//头条
-//        $school['usa'] = Content::getContent(['fields' => 'description', 'category' => "225,88,135", 'order' => 'c.id desc', 'pageSize' => 12]);//头条
-//        $school['apply'] = Content::getContent(['fields' => 'description', 'category' => "120,88,135", 'order' => 'c.id desc', 'pageSize' => 12]);//头条
-//        $school['answer'] = Content::getContent(['fields' => 'description', 'category' => "121,88,135", 'order' => 'c.id desc', 'pageSize' => 12]);//头条
-//        var_dump($school['apply']);die;
-        return $this->render('index',['data'=>$data]);
+        return $this->render('index', ['data' => $data]);
     }
 
     /**
@@ -44,8 +41,18 @@ class EncyclopediaController extends ThinkUController
      */
     public function actionMaster()
     {
-
-        return $this->render('master');
+        $list = Content::getContent(['fields' => 'description,abstract', 'category' => "136,118", 'order' => 'c.id desc', 'pageSize' => 12]);//头条
+        $data[0] = Content::getContent(['fields' => 'description,abstract', 'category' => '136,118', 'order' => 'c.id desc', 'pageSize' => 12, 'page' => 1, 'pageStr' => 1]);//头条
+        $data[1] = Content::getContent(['fields' => 'description,abstract', 'category' => '136,121', 'order' => 'c.id desc', 'pageSize' => 12, 'page' => 1, 'pageStr' => 1]);//头条
+        $data[2] = Content::getContent(['fields' => 'description,abstract', 'category' => '136,119', 'order' => 'c.id desc', 'pageSize' => 12, 'page' => 1, 'pageStr' => 1]);//头条
+        $data[3] = Content::getContent(['fields' => 'description,abstract', 'category' => '136,128', 'order' => 'c.id desc', 'pageSize' => 12, 'page' => 1, 'pageStr' => 1]);//头条
+        $data[4] = Content::getContent(['fields' => 'description,abstract', 'category' => '136,120', 'order' => 'c.id desc', 'pageSize' => 12, 'page' => 1, 'pageStr' => 1]);//头条
+        $data[5] = Content::getContent(['fields' => 'description,abstract', 'category' => '136,115', 'order' => 'c.id desc', 'pageSize' => 12, 'page' => 1, 'pageStr' => 1]);//头条
+        $data[6] = Content::getContent(['fields' => 'description,abstract', 'category' => '136,116', 'order' => 'c.id desc', 'pageSize' => 12, 'page' => 1, 'pageStr' => 1]);//头条
+        $school = new Schools();
+        $school = json_decode($school->CurlRequest('school', ['catid' => 155, 'pageNumber' => 1, 'pageSize' => 6]), TRUE);
+//        echo '<pre>';var_dump($school);die;
+        return $this->render('master', ['data' => $data, 'list' => $list,'school'=>$school]);
     }
 
 }
