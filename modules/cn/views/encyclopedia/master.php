@@ -10,31 +10,21 @@
             <div class="banner_l">
                 <div class="bannerHd hd">
                     <ul><!--循环li-->
+                       <?php foreach($banner as $v){?>
                         <li></li>
-                        <li></li>
-                        <li></li>
+                        <?php }?>
                     </ul>
                 </div>
                 <div class="bannerBd bd">
                     <ul><!--循环li-->
-                        <li>
-                            <a href="">
-                                <img src="http://www.smartapply.cn/files/attach/images/20180228/1519807830738702.jpg" alt="">
-                                <div class="mess-bot-mask">【DS/CS/MIS专业】如何申请DS/CS/MIS顶尖名校？收下这份攻略，克服90%的名校申请难</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="http://www.smartapply.cn/files/attach/images/20180228/1519807830738702.jpg" alt="">
-                                <div class="mess-bot-mask">aaaaaaaaaaaaaaaaaaaaaaaaa a a a a a a a a </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="http://www.smartapply.cn/files/attach/images/20180228/1519807830738702.jpg" alt="">
-                                <div class="mess-bot-mask">aaaaaaaaaaaaaaaaaaaaaaaaa a a a a a a a a </div>
-                            </a>
-                        </li>
+                        <?php foreach($banner as $v){?>
+                            <li>
+                                <a href="<?php echo $v['url'] ?>">
+                                    <img src="<?php echo $v['image'] ?>" alt="">
+                                    <div class="mess-bot-mask"><?php echo $v['name']?></div>
+                                </a>
+                            </li>
+                        <?php }?>
                     </ul>
                 </div>
             </div>
@@ -72,7 +62,7 @@
                             <li class="on" data-catid="118">全部</li>
                             <li data-catid="121">留学问答</li>
                             <li data-catid="119">留学规划</li>
-                            <li data-catid="" >留学国家</li>
+                            <li data-catid="128" >留学国家</li>
                             <li data-catid="120">留学手续</li>
                             <li data-catid="115">GMAT</li>
                             <li data-catid="116">托福</li>

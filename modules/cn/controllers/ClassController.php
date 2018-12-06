@@ -19,7 +19,8 @@ class ClassController extends ThinkUController {
      * @Obelisk
      */
     public function actionIndex(){
-        return $this->render('index');
+        $banner = Content::getContent(['fields' => 'url', 'category' => "268", 'order' => 'c.id desc', 'page'=>1,'pageSize' => 10]);//头条
+        return $this->render('index',['banner'=>$banner]);
     }
 
     /**

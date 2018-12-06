@@ -22,7 +22,8 @@ class EncyclopediaController extends ThinkUController
     public function actionIndex()
     {
         $data = Content::getContent(['fields' => 'description,abstract', 'category' => "135,118", 'order' => 'c.id desc', 'pageSize' => 12]);//头条
-        return $this->render('index', ['data' => $data]);
+        $banner = Content::getContent(['fields' => 'url', 'category' => "268", 'order' => 'c.id desc', 'page'=>1,'pageSize' => 10]);//头条
+        return $this->render('index', ['data' => $data ,'banner'=>$banner]);
     }
 
     /**
@@ -51,8 +52,10 @@ class EncyclopediaController extends ThinkUController
         $data[6] = Content::getContent(['fields' => 'description,abstract', 'category' => '136,116', 'order' => 'c.id desc', 'pageSize' => 12, 'page' => 1, 'pageStr' => 1]);//头条
         $school = new Schools();
         $school = json_decode($school->CurlRequest('school', ['catid' => 155, 'pageNumber' => 1, 'pageSize' => 6]), TRUE);
+        $banner = Content::getContent(['fields' => 'url', 'category' => "268", 'order' => 'c.id desc', 'page'=>1,'pageSize' => 10]);//头条
+
 //        echo '<pre>';var_dump($school);die;
-        return $this->render('master', ['data' => $data, 'list' => $list,'school'=>$school]);
+        return $this->render('master', ['data' => $data, 'list' => $list,'school'=>$school,'banner'=>$banner]);
     }
 
 }
