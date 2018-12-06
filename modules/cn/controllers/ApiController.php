@@ -1622,14 +1622,14 @@ class ApiController extends ThinkUApiControl {
 //        $userId = $session->get('userId');
         $contentId = Yii::$app->request->post('contentId');
         $reportType = Yii::$app->request->post('reportType');
-        $description = Yii::$app->request->post('description');
+        $description = strip_tags(Yii::$app->request->post('description'));
         $reportCat = Yii::$app->request->post('cate');
         $type = Yii::$app->request->post('type');
         $model = new Report();
         $model->contentId = $contentId;
         $model->reportType = $reportType;
         $model->description = $description;
-        $model->reportCat = $reportCat;
+//        $model->reportCat = $reportCat;
         $model->type = $type;
         $model->userId = '';
         $model->createTime = time();
