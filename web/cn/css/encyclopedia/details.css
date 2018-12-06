@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.enDetailsCover{
+    width: 100%;
+    background: #F6F6F6;
+    padding-bottom: 40px;
+}
+.enWrap{
+    width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+.enTitle{
+    margin: 10px 0;
+}
+.enTitle span{
+    color:#944294;
+}
+.content{
+    width: 100%;
+    overflow: hidden;
+}
+.content_left{
+    width: 817px;
+    float: left;
+    background: white;
+    padding: 20px 15px;
+}
+.conTitle{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.consult_view span{
+    color: #777777;
+    font-size: 12px;
+}
+.xiaobian_tx{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: gainsboro;
+    float: left;
+    overflow: hidden;
+    margin-right: 6px;
+    margin-top: -8px;
+}
+.xiaob_name{
+    color: #333;
+    margin-right: 20px;
+}
+.xiaobian_tx img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.content_right{
+    width: 313px;
+    float: right;
+    background: white;
+}
+.consult_view span {
+    color: #777777;
+    font-size: 12px;
+}
+.fl{
+    width: 100%;
+}
+.view_se{
+    float: right;
+    margin-right: 10px;
+}
+.consult_view {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e2dede;
+}
+.con_con{
+    padding: 20px 0;
+}
+.con_bot{
+    overflow: hidden;
+}
+.bot_l{
+    float: left;
+    color: #848484;
+}
+.bot_r img{
+    width: 20px;
+    margin-right: 5px;
+}
+.bot_r{
+    color: #848484;
+    float: right;
+}
+
+.share{
+    margin-right: 10px;
+    cursor: pointer;
+}
+.share em{
+    color: #848484!important;
+}
+.error{
+    margin-right: 10px;
+    cursor: pointer;
+}
+.sharemore{
+    display: inline-block !important;
+}
