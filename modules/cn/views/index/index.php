@@ -747,15 +747,15 @@
             <ul>
                 <!--            循环li-->
                 <li>
-                    <a href="" target="_blank"><img src="http://www.thinkwithu.com/files/attach/images/20171019/1508404770815637.jpg" alt="">
+                    <a href="" target="_blank"><img src="/cn/Hirsi/images/index-gmat.jpg" alt="">
                     </a>
                 </li>
                 <li>
-                    <a href="" target="_blank"><img src="http://www.thinkwithu.com/files/attach/images/20171019/1508404770815637.jpg" alt="">
+                    <a href="" target="_blank"><img src="/cn/Hirsi/images/index-toefl.jpg" alt="">
                     </a>
                 </li>
                 <li>
-                    <a href="" target="_blank"><img src="http://www.thinkwithu.com/files/attach/images/20171019/1508404770815637.jpg" alt="">
+                    <a href="" target="_blank"><img src="/cn/Hirsi/images/index-itels.jpg" alt="">
                     </a>
                 </li>
             </ul>

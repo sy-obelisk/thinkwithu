@@ -43,6 +43,11 @@
     font-size: 30px;
     color: white;
     margin-left: 5px;
+    display: inline-block;
+    margin-top: 15px;
+}
+.hotLine{
+    margin-top: -10px;
 }
 .footer_right p{
     color: white;

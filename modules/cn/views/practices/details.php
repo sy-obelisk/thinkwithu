@@ -97,8 +97,8 @@
                                     ?>
                                     <!--下拉-->
                                     <div class="sign-xiala">
-                                        <span>请选择</span>
-                                        <input type="hidden" <?php echo $v['required'] == 1?'class="val"':''?>  name="extendValue[]" value="">
+                                        <span class="chooice">请选择</span>
+<!--                                        <input type="hidden" --><?php //echo $v['required'] == 1?'class="val"':''?><!--  name="extendValue[]" value="">-->
                                         <!--右边的下拉箭头-->
                                         <div class="rightJ" onclick="upXiala(this)"></div>
                                         <!--下拉内容-->
@@ -152,7 +152,6 @@
         }
         if(a==2||c == 2){
             alert('星标志位必填');
-            console.log(111);
             return false;
         }
     }

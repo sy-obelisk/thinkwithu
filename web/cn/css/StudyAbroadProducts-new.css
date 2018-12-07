@@ -526,18 +526,21 @@ body{
 }
 /*热门留学项目*/
 .hot_items{
-    width: 920px;
+    width: 960px;
     margin: 50px auto;
 }
 .hot_content{
     overflow: hidden;
 }
 .hot_content ul li{
-    width: 280px;
-    height: 300px;
-    margin-right: 40px;
-    float: left;
+    width: 230px;
+    height: 310px;
+    background: black;
+    margin-right: 10px;
+    border-radius: 5px;
     position: relative;
+    float: left;
+    overflow: hidden;
 }
 .hot_content ul li:last-child{
     margin-right: 0px!important;

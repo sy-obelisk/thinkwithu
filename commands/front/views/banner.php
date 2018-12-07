@@ -71,7 +71,7 @@
 <!--                    </ul>-->
 <!--                </div>-->
             </li>
-            <li><a class="nav1-link <?php echo $controller == 'encyclopedia' ? 'on on-hover' : '' ?>" href="/">留学百科 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
+            <li><a class="nav1-link <?php echo $controller == 'encyclopedia' ? 'on on-hover' : '' ?>" href="javascript:void(0);">留学百科 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
                 <div class="eaxm-list eaxm-list-1">
                     <ul>
                         <li><a href="/encyclopedia/master.html">硕士动态</a></li>

@@ -152,7 +152,7 @@
             </ul>
         </div>
         <div class="footer_right">
-            <p>全国免费咨询热线:<span>400-600-1123</span></p>
+            <p class="hotLine">全国免费咨询热线:<span>400-600-1123</span></p>
             <div>
                 <img src="/cn/images/index_erweima02.jpg" alt="申友留学"/>
                 <p>申友留学</p>

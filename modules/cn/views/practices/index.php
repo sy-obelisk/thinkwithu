@@ -363,7 +363,6 @@
         var obj = $('.val');
         var obj_1 = $('.chooice').eq(3);
         obj.each(function () {
-
             if($(this).val() == "" || $(this).val() == "请选择"){
                 a=2;
             }
@@ -373,7 +372,6 @@
         }
         if(a==2||c == 2){
             alert('星标志位必填');
-            console.log(111);
             return false;
         }
 	}

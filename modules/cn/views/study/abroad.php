@@ -255,6 +255,7 @@
         <ul>
             <?php foreach($abroadPro as $v){?>
             <li>
+<!--                <img class="hotImg" src="--><?php //echo $v['image']?><!--" alt="">-->
                 <img class="hotImg" src="<?php echo $v['image']?>" alt="">
                 <a href="/word-details/<?php echo $v['id']?>/index,178.html"><?php echo $v['name']?> <span><i class="iconfont">&#xe600;</i></span></a>
             </li>
@@ -262,7 +263,7 @@
         </ul>
     </div>
     <script>
-        jQuery(".hot_items").slide({mainCell:".hot_content ul",effect:"leftLoop",autoPlay:true,vis:3});
+        jQuery(".hot_items").slide({mainCell:".hot_content ul",effect:"leftLoop",autoPlay:true,vis:4});
     </script>
 </section>
 <!--背景提升项目-->
