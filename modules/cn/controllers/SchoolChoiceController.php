@@ -20,6 +20,9 @@ class SchoolChoiceController extends ThinkUController
 
     public function actionBackground()
     {
+        $this->title = '出国留学_美国留学_英国留学_澳洲留学_留学申请_申友留学';
+        $this->keywords = '留学评估，留学测评，录取几率，背景测评，选校测评，留学中介，美国留学中介，留学中介顾问，留学中介机构，英国留学中介，放心留学中介，值得信赖的留学中介，好的留学中介';
+        $this->description = '申友网专业留学测评系统，为准备出国留学的学生提供免费的留学竞争力分析报告，根据客户填写的个人背景信息，快速进行背景测评、选校测评和录取几率测评等';
         return $this->render('background');
     }
 
@@ -27,11 +30,9 @@ class SchoolChoiceController extends ThinkUController
     {
         if (!$_POST) {
             $data = ProbabilityTest::find()->asArray()->orderBy("id desc")->limit(15)->all();
-            $this->title = '提供留学生寒暑假背景提升项目|美国|英国|香港|实习|暑校|科研|国际项目|留学中介-申友留学网专注在线DIY留学申请服务-慧申科技旗下教育品牌';
-            $this->keywords = '留学实习、国外金融实习、国内名企实习、summer school、名校科研项目、商业比赛、留学资源、master、背景提升、申友网,留学中介，美国留学中介，留学中介顾问，留学中介机构，英国留学中介，放心留学中介，值得信赖的留学中介，好的留学中介';
-            $this->description = '申友网，慧申科技旗下教育品牌，成立于2012年，提供大数据驱动下的国际教育O＋O服务。申友网通过PC、WAP和APP等互联网平台和工具，通过院校库、案例库和录取条件库等建立选校模型，为客户的留学申请精准定位，
-        提供个性化留学选校与申请服务，并以申友网学习中心提供留学与出国英语辅导线下服务，二者相辅相成。帮您找放心的留学中介机构！';
-
+            $this->title = '出国留学_美国留学_英国留学_澳洲留学_留学申请_申友留学';
+            $this->keywords = '留学评估，留学测评，录取几率，背景测评，选校测评，留学中介，美国留学中介，留学中介顾问，留学中介机构，英国留学中介，放心留学中介，值得信赖的留学中介，好的留学中介';
+            $this->description = '申友网专业留学测评系统，为准备出国留学的学生提供免费的留学竞争力分析报告，根据客户填写的个人背景信息，快速进行背景测评、选校测评和录取几率测评等';
             return $this->render('percentages', ['data' => $data]);
         }
     }
@@ -40,10 +41,9 @@ class SchoolChoiceController extends ThinkUController
     {
         if (!$_POST) {
             $data = SchoolTest::find()->asArray()->orderBy("id desc")->limit(15)->all();
-            $this->title = '提供留学生寒暑假背景提升项目|美国|英国|香港|实习|暑校|科研|国际项目|留学中介-申友留学网专注在线DIY留学申请服务-慧申科技旗下教育品牌';
-            $this->keywords = '留学实习、国外金融实习、国内名企实习、summer school、名校科研项目、商业比赛、留学资源、master、背景提升、申友网,留学中介，美国留学中介，留学中介顾问，留学中介机构，英国留学中介，放心留学中介，值得信赖的留学中介，好的留学中介';
-            $this->description = '申友网，慧申科技旗下教育品牌，成立于2012年，提供大数据驱动下的国际教育O＋O服务。申友网通过PC、WAP和APP等互联网平台和工具，通过院校库、案例库和录取条件库等建立选校模型，为客户的留学申请精准定位，
-        提供个性化留学选校与申请服务，并以申友网学习中心提供留学与出国英语辅导线下服务，二者相辅相成。帮您找放心的留学中介机构！';
+            $this->title = '出国留学_美国留学_英国留学_澳洲留学_留学申请_申友留学';
+            $this->keywords = '留学评估，留学测评，录取几率，背景测评，选校测评，留学中介，美国留学中介，留学中介顾问，留学中介机构，英国留学中介，放心留学中介，值得信赖的留学中介，好的留学中介';
+            $this->description = '申友网专业留学测评系统，为准备出国留学的学生提供免费的留学竞争力分析报告，根据客户填写的个人背景信息，快速进行背景测评、选校测评和录取几率测评等';
 
             return $this->render('choice', ['data' => $data]);
         }
@@ -75,10 +75,9 @@ class SchoolChoiceController extends ThinkUController
             $schoolGrade = "专科";
         }
         $data = ['res' => $score, 'score' => $res['score'], 'percent' => $res['percent'], 'school' => $res['school'], 'major' => $res['major'], 'schoolGrade' => $schoolGrade, 'userName' => $res['userName'], 'data' => $res];
-        $this->title = '提供留学生寒暑假背景提升项目|美国|英国|香港|实习|暑校|科研|国际项目|留学中介-申友留学网专注在线DIY留学申请服务-慧申科技旗下教育品牌';
-        $this->keywords = '留学实习、国外金融实习、国内名企实习、summer school、名校科研项目、商业比赛、留学资源、master、背景提升、申友网,留学中介，美国留学中介，留学中介顾问，留学中介机构，英国留学中介，放心留学中介，值得信赖的留学中介，好的留学中介';
-        $this->description = '申友网，慧申科技旗下教育品牌，成立于2012年，提供大数据驱动下的国际教育O＋O服务。申友网通过PC、WAP和APP等互联网平台和工具，通过院校库、案例库和录取条件库等建立选校模型，为客户的留学申请精准定位，
-        提供个性化留学选校与申请服务，并以申友网学习中心提供留学与出国英语辅导线下服务，二者相辅相成。帮您找放心的留学中介机构！';
+        $this->title = '出国留学_美国留学_英国留学_澳洲留学_留学申请_申友留学';
+        $this->keywords = '留学评估，留学测评，录取几率，背景测评，选校测评，留学中介，美国留学中介，留学中介顾问，留学中介机构，英国留学中介，放心留学中介，值得信赖的留学中介，好的留学中介';
+        $this->description = '申友网专业留学测评系统，为准备出国留学的学生提供免费的留学竞争力分析报告，根据客户填写的个人背景信息，快速进行背景测评、选校测评和录取几率测评等';
 
         return $this->render('probabilityResult', ['code' => 1, 'data' => $data]);
     }
@@ -109,10 +108,9 @@ class SchoolChoiceController extends ThinkUController
             $schoolGrade = "专科";
         }
         $score = Method::score($res);
-        $this->title = '提供留学生寒暑假背景提升项目|美国|英国|香港|实习|暑校|科研|国际项目|留学中介-申友留学网专注在线DIY留学申请服务-慧申科技旗下教育品牌';
-        $this->keywords = '留学实习、国外金融实习、国内名企实习、summer school、名校科研项目、商业比赛、留学资源、master、背景提升、申友网,留学中介，美国留学中介，留学中介顾问，留学中介机构，英国留学中介，放心留学中介，值得信赖的留学中介，好的留学中介';
-        $this->description = '申友网，慧申科技旗下教育品牌，成立于2012年，提供大数据驱动下的国际教育O＋O服务。申友网通过PC、WAP和APP等互联网平台和工具，通过院校库、案例库和录取条件库等建立选校模型，为客户的留学申请精准定位，
-        提供个性化留学选校与申请服务，并以申友网学习中心提供留学与出国英语辅导线下服务，二者相辅相成。帮您找放心的留学中介机构！';
+        $this->title = '出国留学_美国留学_英国留学_澳洲留学_留学申请_申友留学';
+        $this->keywords = '留学评估，留学测评，录取几率，背景测评，选校测评，留学中介，美国留学中介，留学中介顾问，留学中介机构，英国留学中介，放心留学中介，值得信赖的留学中介，好的留学中介';
+        $this->description = '申友网专业留学测评系统，为准备出国留学的学生提供免费的留学竞争力分析报告，根据客户填写的个人背景信息，快速进行背景测评、选校测评和录取几率测评等';
 
         return $this->render('schoolResult', ['code' => 1, 'res' => $res, 'data' => $school, 'score' => $score, 'schoolGrade' => $schoolGrade, 'applyMajor' => $res['majorName'], 'testId' => $res['id']]);
     }
