@@ -1555,9 +1555,8 @@ class ApiController extends ThinkUApiControl {
         $extendVal = Yii::$app->request->post('extendValue');
         $contentModel = new Content();
         $contentModel->addContent(222, $extendVal[17], $name, $extendVal);
-        $res['code'] = 1;
-        $res['message'] = '我们的工作人员将于1-2个工作日内跟你联系';
-        die(json_encode($res));
+        die('<script>alert("我们的工作人员将于1-2个工作日内跟你联系");history.go(-2);</script>');
+//        die(json_encode($res));
     }
 
     /**
@@ -1602,8 +1601,8 @@ class ApiController extends ThinkUApiControl {
     }
 
     public function actionMajor(){
-        $catId = Yii::$app->request->post('catId','');
-        $page = Yii::$app->request->post('page',1);
+        $catId = Yii::$app->request->get('catId','');
+        $page = Yii::$app->request->get('page',1);
         $category='136';
         if($catId!=false){
             $category='136,'.$catId;

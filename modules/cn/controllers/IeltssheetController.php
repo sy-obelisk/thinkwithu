@@ -19,11 +19,11 @@ class IeltssheetController extends ThinkUController {
      * by obelisk
      */
     public function actionIndex(){
-//        $extendData = CategoryExtend::find()->where("catId=247 AND belong='content'")->orderBy('id ASC')->all();
         $data = file_get_contents('http://ielts.viplgw.cn/cn/api/ielts');
         $data=json_decode($data,true);
-//        echo '<pre>';var_dump($data);die;
+        $this->title='Ielts(雅思)培训-Ielts课程-Ielts辅导-Ielts在线课程-申友网';
+        $this->keywords='Ielts报名，Ielts考试时间，Ielts备考，Ielts机经，Ielts真题，Ielts培训，Ielts课程，Ielts网络课程，Ielts辅导，Ielts班，Ielts听力，Ielts口语、Ielts词汇、Ielts写作、Ielts阅读';
+        $this->description='申友Ielts培训平台致力培育Ielts高分学员。为学员提供关于Ielts报名，Ielts考试时间，Ielts机经，Ielts真题，Ielts听力，Ielts口语、Ielts词汇、Ielts写作、Ielts阅读等专业的Ielts备考信息，被业界称为“Ielts高分基地';
         return $this->render('index',['data' => $data]);
-//        return $this->renderPartial('index');
     }
 }
