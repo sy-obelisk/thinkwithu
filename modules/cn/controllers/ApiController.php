@@ -1590,13 +1590,11 @@ class ApiController extends ThinkUApiControl {
             $contentModel = new Practices();
             $data = $contentModel->addContent(244, $extendVal[0], $extendVal);
             if (!$data) {
-                $res['code'] = 1;
-                $res['message'] = '我们的工作人员将于1-2个工作日内跟你联系！';
+                die('<script>alert("我们的工作人员将于1-2个工作日内跟你联系");history.go(-1);</script>');
             } else {
                 $res['code'] = 0;
-                $res['message'] = '数据传输出错！';
+                die('<script>alert("数据传输出错！");history.go(-1);</script>');
             }
-            die(json_encode($res));
         }
     }
 
