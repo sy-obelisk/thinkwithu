@@ -35,7 +35,7 @@
                     <ul>
                         <?php foreach ($list as $v) { ?>
                             <li>
-                                <p><span>留学资讯</span><a href=""><?php echo $v['name'] ?></a></p>
+                                <p><span>留学资讯</span><a href="/encyclopedia/<?php echo $v['id'] ?>.html"><?php echo $v['name'] ?></a></p>
                                 <div class="clearfix">
                                     <div class="r-con-info ellipsis fl">
                                         <?php echo $v['abstract'] ?>
@@ -62,7 +62,7 @@
                             <li class="on" data-catid="118">全部</li>
                             <li data-catid="121">留学问答</li>
                             <li data-catid="119">留学规划</li>
-                            <li data-catid="128" >留学国家</li>
+                            <li data-catid="128">留学国家</li>
                             <li data-catid="120">留学手续</li>
                             <li data-catid="115">GMAT</li>
                             <li data-catid="116">托福</li>
@@ -119,7 +119,7 @@
                                         <div class="pageSize tm">
                                             <ul>
                                                 <?php for($i=1;$i<=$val['total'];$i++){?>
-                                                    <li data-value="<?php echo $val['total']?>" class="total mr02"><span class="colorRed"><?php echo $i;?></span></li>
+                                                    <li data-value="<?php echo $val['total']?>" class="total mr02 <?php if ($i==1) echo 'on';?>"><span class="colorRed"><?php echo $i;?></span></li>
                                                 <?php }?>
                                             </ul>
                                         </div>

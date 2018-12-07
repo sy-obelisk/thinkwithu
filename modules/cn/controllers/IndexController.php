@@ -58,6 +58,10 @@ class IndexController extends ThinkUController {
         $case['abroad'] = Content::getContent(['fields' => 'oldSchool,score,time,abroadSchool,major','type'=>1,'category' => "178,206", 'pageSize' => 4, 'where'=>'c.sort>0','order' => 'c.sort asc,c.id desc']);
         $teacher = Content::getContent(['fields' => 'speaker,job,description,abstract', 'category' => "138,139", 'pageSize' => 15, 'order' => 'c.sort asc,c.id desc']);
         $book = Content::getContent(['fields' => 'speaker,keywords,description', 'category' => "109,108", 'pageSize' => 15, 'order' => 'c.sort asc,c.id desc']);
+        $this->title='申友官网-留学咨询_名校出国留学申请机构_托福/GMAT培训机构-申友网';
+        $this->keywords='出国留学,名校留学,留学咨询,留学条件,出国游学,美国留学,gmat培训,托福培训,雅思培训';
+        $this->description='申友留学,专注商科与STEM留学咨询,提供留学申请一站式服务,是GMAT与托福培训的行业领跑者。申友专注英国、美国、加拿大、澳洲、香港等名校留学申请,留学咨询、出国留学、托福与GMAT培训，尽在申友。';
+//
         return $this->render('index',['banner'=>$banner,'abroadPro'=>$abroadPro,'news'=>$news,'teacher'=>$teacher,'abroad'=>$abroad,'case'=>$case,'book'=>$book]);
     }
 

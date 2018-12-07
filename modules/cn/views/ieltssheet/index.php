@@ -188,8 +188,8 @@
                             <?php if ($k >= $i * 4 && $k < ($i + 1) * 4) { ?>
                                 <div class="Brushing"><!--内层循环div  Brushing -->
                                     <div class="Brushing_img"><img
-                                                src="http://toefl.viplgw.cn/files/attach/images/20181026/1540519825292477.jpg"
-                                                alt=""></div>
+                                                src="http://ielts.viplgw.cn<?php echo $v['image']?>"
+                                                alt="雅思活动"></div>
                                     <div class="Brushing_cover">
                                         <p class="Brushing_title"><?php echo $v['name'] ?></p>
                                         <div class="Brushing_teacher">老师:<p><?php echo $v['trainer'] ?></p></div>
@@ -207,8 +207,9 @@
         </div>
         <div class="hd hdActivity">
             <ul><!--循环li-->
+                <?php $i=0;for($i;$i<ceil(count($data['active'])/4);$i++){?>
                 <li></li>
-                <li></li>
+                <?php }?>
             </ul>
         </div>
     </div>

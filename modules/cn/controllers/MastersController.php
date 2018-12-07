@@ -22,6 +22,10 @@ class MastersController extends ThinkUController {
      */
     public function actionIndex(){
         $id = Yii::$app->request->get('id');
+        $this->title='申友网-GMAT名师-托福名师-雅思名师-申友网';
+        $this->keywords='GMAT名师，托福名师，雅思名师，GMAT培训，GRE培训，托福培训，Ielts培训，雅思培训';
+        $this->description='申友平台致力培育留学考试高分学员。为学员提供关于考试报名，考试时间，机经，真题，专业的备考信息。';
+
         return $this->render('index',['id' => $id]);
     }
 
