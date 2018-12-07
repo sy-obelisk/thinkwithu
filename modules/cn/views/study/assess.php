@@ -224,7 +224,7 @@
                         </div>
                         <div class="ban-wrap">
                             <div class="ban-left tm inb">
-                                <img src="cn/images/assess/ad1.png" alt="">
+                                <img src="cn/images/assess/ad1.png" a.select-listlt="">
                             </div>
                             <div class="ban-right inb">
                                 <p class="ban-text"><img class="point inb" src="cn/images/assess/gou.png">透明+保障 </p>

@@ -173,9 +173,11 @@
         $(this).addClass('on');
         var catId=$(".qh_dhd ul li.on").attr("data-catid");
         var page=$(this).children().html();
-        ajaxStr(catId,page);
+        var consult_list = $(this).parents('.dbd_content').find('.consult_list')
+        ajaxStr(catId,page,consult_list);
+
     });
-    function ajaxStr(catId,page) {
+    function ajaxStr(catId,page,consult_list) {
         var str='';
         $.ajax({
             url:"/cn/api/major",
@@ -186,7 +188,7 @@
             },
             dataType:"json",
             success:function (data) {
-                $(".consult_list").empty();
+                consult_list.empty();
                 var da=data.data;
                 for(var i=0;i<da.length;i++){
                     str+='<li class="nc" data-id="'+ da[i].id +'">' +
@@ -220,7 +222,7 @@
                         '</div>' +
                         '</li>';
                 }
-                $(".consult_list").html(str);
+                consult_list.html(str);
 
             }
         })

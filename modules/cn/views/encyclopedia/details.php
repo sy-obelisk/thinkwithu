@@ -1,20 +1,20 @@
 <link rel="stylesheet" href="/cn/css/encyclopedia/details.css">
 <link rel="stylesheet" href="/cn/css/encyclopedia/reset.css">
 
-<input type="hidden" value="1516" id="arcticleId"><!--文章id-->
+<input type="hidden" value="<?php echo $data['id']?>" id="arcticleId"><!--文章id-->
 
 <section class="enDetailsCover">
     <div class="enWrap">
         <div class="enTitle">
-            <a href="">留学商城 ></a>
-            <a href="">头条 ></a>
+            <a href="/">首页 ></a>
+            <a href="/encyclopedia/master.html">留学百科 ></a>
             <span>正文</span>
         </div>
         <div class="content">
             <!--左-->
             <div class="content_left">
                 <!--标题-->
-                <p class="conTitle">哥伦比亚大学申请条件及留学费用【常春藤系列】哥伦比亚大学申请条件及留学费用哥伦比亚大学申请条件及留学费用</p>
+                <p class="conTitle"><?php echo $data['name']?></p>
                 <div class="consult_view clearfix">
                     <div class="fl">
                         <div class="xiaobian_tx">
@@ -25,20 +25,20 @@
                         <span class="xiaob_name">
                             <a href="javascript:void(0);">申友</a>
                         </span>
-                        <span>2017-03-03 17:54:53</span>
-                        <span class="view_se">阅读（141）</span>
+                        <span><?php echo $data['createTime']?></span>
+                        <span class="view_se">阅读（<?php echo $data['viewCount']?>）</span>
                     </div>
                 </div>
                 <!--内容-->
                 <div class="con_con">
-                    哥伦比亚大学申请条件及留学费用哥伦比亚大学申请条件及留学费用哥伦比亚大学申请条件及留学费用哥伦比亚大学申请条件及留学费用哥伦比亚大学申请条件及留学费用哥伦比亚大学申请条件及留学费用哥伦比亚大学申请条件及留学费用哥伦比亚大学申请条件及留学费用哥伦比亚大学申请条件及留学费用哥伦比亚大学申请条件及留学费用
+                   <?php echo $data['description']?>
                 </div>
                 <!--尾部-->
                 <div class="con_bot">
-                    <div class="bot_l">
-                        <img src="/cn/images/ency/bq.png" alt="">
-                        <span>硕士留学 美国留学 留学申请</span>
-                    </div>
+<!--                    <div class="bot_l">-->
+<!--                        <img src="/cn/images/ency/bq.png" alt="">-->
+<!--                        <span>硕士留学 美国留学 留学申请</span>-->
+<!--                    </div>-->
                     <div class="bot_r">
                         <div class="bshare-custom icon-medium sharemore">
                             <a title="更多平台" class="bshare-more share"><img src="/cn/images/ency/share.png" alt=""><em>分享</em></a>
@@ -59,39 +59,46 @@
                         </div>
                         <div class="interestSchool">
                             <ul> <!--循环li-->
+                                <?php foreach ($school['data'] as $k => $v) {
+                                if (is_numeric($k)) {
+                                ?>
                                 <li class="school-flex">
-                                    <div class="numDiv">1</div>
+                                    <div class="numDiv"><?php echo $k + 1 ?></div>
                                     <div class="interImg">
-                                        <a href="">
-                                            <img src="http://schools.smartapply.cn/files/attach/images/20180309/1520566444459689.jpg" alt="学校图片">
+                                        <a href="/schools/<?php echo $v['id'] ?>.html">
+                                            <img src="http://schools.smartapply.cn<?php echo $v['image'] ?>" alt="学校图片">
                                         </a>
                                     </div>
                                     <div class="interSchoolF">
-                                        <p class="ellipsis"><a href="">伦敦商学院（LBS）</a></p>
-                                        <span class="ellipsis">排名：N/A   &nbsp;&nbsp;|&nbsp;&nbsp;  查看人数：553</span>
+                                        <p class="ellipsis"><a href="/schools/<?php echo $v['id'] ?>.html"><?php echo $v['name'] ?>（<?php echo $v['title'] ?>）</a></p>
+                                        <span class="ellipsis">排名：<?php echo $v['s_rank'] ?>   &nbsp;&nbsp;|&nbsp;&nbsp;  查看人数：<?php echo $v['viewCount']+rand(30,80) ?></span>
                                     </div>
                                 </li>
+                                <?php }
+                                } ?>
                             </ul>
                         </div>
                     </div>
                     <div class="xb-c-right">
                         <h4> <span>|</span>热门文章推荐</h4>
                         <ul><!--循环li-->
+                            <?php foreach($hot as $v){?>
                             <li>
                                 <div class="us-left">
-                                    <a href="">
-                                        <img src="http://www.smartapply.cn/files/attach/images/20181116/1542340686838050.png" alt="图片">
+                                    <a href="/encyclopedia/<?php echo $v['id'] ?>.html">
+                                        <img src="http://www.thinkwithu.com<?php echo $v['image']?>" alt="图片">
                                     </a>
                                 </div>
                                 <div class="us-right">
                                     <p class="ellipsis-2">
-                                        <a href="">【DS/CS/MIS专业】如何申请DS/CS/MIS顶尖名校？收下这份攻略，克服90%的名校申请难</a>
+                                        <a href="/encyclopedia/<?php echo $v['id'] ?>.html"><?php echo $v['name']?></a>
                                     </p>
-                                    <span>2018-11-16</span>
-                                    <span class="fr">阅读：54428</span>
+                                    <span><?php echo $v['createTime']?></span>
+                                    <span class="fr">阅读：<?php echo $v['viewCount']?></span>
                                 </div>
                                 <div class="clearfix"></div>
                             </li>
+                            <?php }?>
                         </ul>
                     </div>
 

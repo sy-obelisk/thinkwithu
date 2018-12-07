@@ -98,12 +98,14 @@ $(function(){
                 $(".nav-wrap").addClass("nav-flexd");
                 $(".nav-list li a").addClass("a-fiexd");
                 $(".nav-list .eaxm-list").addClass("eaxm-fiexd");
-                $(".logo").attr("src","/cn/Hirsi/images/shenyoulg2.png")
+                $(".logo").attr("src","/cn/Hirsi/images/shenyoulg2.png");
+                $(".crow-1").attr("src","/cn/Hirsi/images/crow-11.png")
             }else {
                 $(".nav-wrap").removeClass("nav-flexd");
                 $(".nav-list li a").removeClass("a-fiexd");
                 $(".nav-list .eaxm-list").removeClass("eaxm-fiexd");
-                $(".logo").attr("src","/cn/Hirsi/images/sy-logo3.png")
+                $(".logo").attr("src","/cn/Hirsi/images/sy-logo3.png");
+                $(".crow-1").attr("src","/cn/Hirsi/images/crow-1.png")
             }
         })
     })

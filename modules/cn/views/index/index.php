@@ -368,7 +368,7 @@
 
                                        <p class="ency_name_en"><?php echo $v['title'] ?></p>
 
-                                       <p class="ency_rank"><i class="iconfont trophy">&#xe60c;</i> 学校排名:
+                                       <p class="ency_rank"><i class="iconfont trophy">&#xe6ae;</i> 学校排名:
                                            <span><?php echo $v['s_rank'] ?></span></p>
 
                                        <div class="ency_bottom">

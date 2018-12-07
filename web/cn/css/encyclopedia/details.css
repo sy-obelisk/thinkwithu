@@ -103,8 +103,14 @@
     margin-right: 10px;
     cursor: pointer;
 }
+.sharemore{
+    margin-right: 20px;
+}
 .share em{
     color: #848484!important;
+}
+em{
+    vertical-align: middle;
 }
 .error{
     margin-right: 10px;

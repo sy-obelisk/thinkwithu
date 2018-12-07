@@ -32,9 +32,13 @@ class EncyclopediaController extends ThinkUController
     public function actionDetails()
     {
         $id = Yii::$app->request->get('id');
-        $data = Content::getContent(['fields' => 'description', 'where' => 'c.id =' . $id]);
+        $data = Content::getContent(['fields' => 'description', 'where' => 'c.id =' . $id])[0];
+        Content::updateAll(['viewCount' => ($data['viewCount']+1)],"id=$id");
+        $school = new Schools();
+        $school = json_decode($school->CurlRequest('school', ['catid' => 155, 'pageNumber' => 1, 'pageSize' => 6]), TRUE);
+        $hot = Content::getContent(['fields' => 'description', 'category'=>118 ,'order'=>'c.viewCount desc','pageSize'=>15]);
 //        var_dump($data);die;
-        return $this->render('details');
+        return $this->render('details',['data'=>$data,'school'=>$school ,'hot'=>$hot]);
     }
 
     /**

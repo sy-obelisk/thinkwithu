@@ -480,6 +480,7 @@ a:hover{
     /*height: 261px;*/
     margin: 0 auto;
     margin-bottom: 14px;
+    padding-top: 10px;
 }
 .connectHd{
     width: 100%;
@@ -3093,6 +3094,7 @@ h1.info-tit {
     float: left;
     position: relative;
     min-width: 150px;
+    text-align: center;
 }
 .forYou img{
     vertical-align: middle;

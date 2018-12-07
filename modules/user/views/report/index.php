@@ -40,7 +40,7 @@
                 <td>
                     <select name="reportType">
                         <option value="" <?php echo isset($_GET['reportType'])&&$_GET['reportType']==""?"selected":''?>>全部</option>
-                        <option value="1" <?php echo isset($_GET['reportType'])&&$_GET['reportType']==1?"selected":''?>>解析</option>
+                        <option value="1" <?php echo isset($_GET['reportType'])&&$_GET['reportType']==1?"selected":''?>>文章</option>
                         <option value="2" <?php echo isset($_GET['reportType'])&&$_GET['reportType']==2?"selected":''?>>评论</option>
                         <option value="3" <?php echo isset($_GET['reportType'])&&$_GET['reportType']==3?"selected":''?>>题目</option>
                     </select>

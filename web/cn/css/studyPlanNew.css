@@ -160,7 +160,7 @@
 
 .select-list {
     z-index: 999;
-    height: 105px;
+    /*height: 215px;*/
     /*overflow: auto;*/
     width: 100%;
     left: -1px;

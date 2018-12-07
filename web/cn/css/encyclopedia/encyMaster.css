@@ -5,6 +5,8 @@
 .masterCover{
     width: 100%;
     background: #F6F6F6;
+    padding-bottom: 40px;
+    overflow: hidden;
 }
 .w12{
     width: 1200px;
@@ -130,7 +132,7 @@
     margin:5px 0 3px 0;
 }
 .botList{
-    padding-bottom: 40px;
+    margin-bottom: 40px;
 }
 study-left{
     width: 847px;
