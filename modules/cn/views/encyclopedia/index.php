@@ -38,7 +38,7 @@
                                 <p class="ellipsis-2 br_de">  <?php echo $v['abstract'] ?></p>
                                 <div class="flex-container">
                                     <span class="br_date"><?php echo $v['createTime'] ?></span>
-                                    <a class="br_online" href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=新官网（thinkwithu）&cw=">在线咨询</a>
+                                    <a class="br_online" target="_blank" href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=新官网（thinkwithu）&cw=">在线咨询</a>
                                 </div>
                             </li>
                         <?php } ?>

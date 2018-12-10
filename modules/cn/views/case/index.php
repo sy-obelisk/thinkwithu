@@ -9,7 +9,7 @@
         <ul><!--循环li-->
             <li>
                 <a href="" target="_blank">
-                    <img src="http://www.thinkwithu.com//files/attach/images/20170217/1487326065197811.png" alt="案例库">
+                    <img src="http://www.thinkwithu.com/files/attach/images/20170217/1487326065197811.png" alt="案例库">
                 </a>
             </li>
         </ul>
@@ -18,10 +18,10 @@
     <div class="bannerLeft">
         <div class="b_l_content">
             <div class="b_l_title">
-                <div>
-                    <i class="iconfont r_w">&#xe656;</i>
-                    <span>姓名</span>
-                </div>
+<!--                <div>-->
+<!--                    <i class="iconfont r_w">&#xe656;</i>-->
+<!--                    <span>姓名</span>-->
+<!--                </div>-->
 <!--                <div>-->
 <!--                    <i class="iconfont j_b">&#xe655;</i>-->
 <!--                    <span>录取专业</span>-->
@@ -34,13 +34,13 @@
             <div class="b_l_details">
                 <ul>
                     <?php foreach($list as $v){
-                        if(($v['title']!=false)&&($v['name']!=$v['title'])){?>
+//                        if(($v['title']!=false)&&($v['name']!=$v['title'])){?>
                     <li><!--循环li-->
-                        <div><p><?php echo $v['name']?></p></div>
+<!--                        <div><p>--><?php //echo $v['name']?><!--</p></div>-->
 <!--                        <div>金融</div>-->
-                        <div><?php echo $v['title']?></div>
+                        <div><?php echo $v['name']?></div>
                     </li>
-                    <?php }}?>
+                    <?php }?>
                 </ul>
             </div>
         </div>
@@ -72,7 +72,7 @@
                             <a href="/case/<?php echo $v['id']?>.html" class="Content_d_cover">
                                 <div class="Content_d">
                                     <div class="imgCover">
-                                        <img src="http://www.smartapply.cn/<?php echo $v['image']?>" alt="录取图片">
+                                        <img src="http://www.thinkwithu.com<?php echo $v['image']?>" alt="录取图片">
                                         <div class="mask">
                                             <p class="mask_name"><?php echo $v['title']==false?$v['name']:$v['title']?></p><!--姓名-->
                                             <?php if($v['abroadSchool']!=false){?><p class="mask_school">录取院校: <?php echo $v['abroadSchool']?></p><?php }?><!--录取院校-->
@@ -142,7 +142,7 @@
                 <!--分页-->
                 <div class="pageSize">
                     <?php for($i=1;$i<=$val['total'];$i++){?>
-                    <li data-value="<?php echo $val['total']?>" class="total mr02"><span class="colorRed"><?php echo $i;?></span></li>
+                    <li data-value="<?php echo $val['total']?>" class="total mr02 <?php if($i==1) echo 'on'?>"><span class="colorRed"><?php echo $i;?></span></li>
                     <?php }?>
                 </div>
             </ul>
