@@ -1632,7 +1632,7 @@ class ApiController extends ThinkUApiControl {
         $model->contentId = $contentId;
         $model->reportType = $reportType;
         $model->description = $description;
-//        $model->reportCat = $reportCat;
+        $model->cate = $reportCat;
         $model->type = $type;
         $model->userId = '';
         $model->createTime = time();
