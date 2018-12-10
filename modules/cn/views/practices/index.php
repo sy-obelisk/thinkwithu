@@ -297,6 +297,7 @@
                                 ?>
 								<!--下拉-->
 								<div class="sign-xiala">
+                                    <input type="hidden" name="extendValue[]" class="problem" value="">
 									<span class="chooice">请选择</span>
 									<!--右边的下拉箭头-->
 									<div class="rightJ" onclick="upXiala(this)"></div>
