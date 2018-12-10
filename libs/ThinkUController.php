@@ -5,6 +5,10 @@ use yii\web\Controller;
 use app\models\Login;
 use app\modules\basic\models\Params;
 class ThinkUController extends Controller {
+    public $title;
+    public $keywords;
+    public $description;
+
     public function init() {
         $this->config();
         $session  = Yii::$app->session;

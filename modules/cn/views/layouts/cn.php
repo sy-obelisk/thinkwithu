@@ -11,97 +11,14 @@
     if(strpos($url,'?tdsourcetag=s_pcqq_aiomsg')){
         $url=str_replace('?tdsourcetag=s_pcqq_aiomsg','',$url);
     }
-    if($url == '/VisaInterview.html'){
-        $seo['title'] = '签证面试';
-        $seo['keywords'] = '';
-        $seo['description'] == '';
-    }elseif($url == '/schools.html'){
-        $seo['title'] = '院校库';
-        $seo['keywords'] = '';
-        $seo['description'] = '';
-    } elseif($url == '/surprise.html'){
-        $seo['title'] = '这个页面去留学了';
-        $seo['keywords'] = '';
-        $seo['description'] = '';
-    }elseif($url == '/evaluation.html'){
-        $seo['title'] = '留学申请评估';
-        $seo['keywords'] = '';
-        $seo['description'] = '';
-    }elseif($url == '/gmat/app.html'){
-        $seo['title'] = 'gmatApp下载';
-        $seo['keywords'] = '';
-        $seo['description'] = '';
-    }elseif($url == '/problem.html'){
-        $seo['title'] = 'gmat机经';
-        $seo['keywords'] = '';
-        $seo['description'] = '';
-    }elseif($url == '/toefl/assistance.html'){
-        $seo['title'] = 'TOEFL(托福)培训-托福课程-托福辅导-托福在线课程-申友网';
-        $seo['keywords'] = '托福报名，托福考试时间，托福备考，托福机经，托福真题，托福培训，托福课程，托福网络课程，托福辅导，托福班，托福听力，托福口语、托福词汇、托福写作、托福阅读';
-        $seo['description'] = '申友托福培训平台致力培育托福高分学员。为学员提供关于托福报名，托福考试时间，托福机经，托福真题，托福听力，托福口语、托福词汇、托福写作、托福阅读等专业的托福备考信息，被业界称为“托福高分基地”。';
-    }elseif(strstr($url,'/teachers/')){
-        $seo['title'] = 'GMAT名师、托福名师、留学顾问';
-        $seo['keywords'] = '';
-        $seo['description'] = '';
-    }elseif(strstr($url,'/practices/')){
-        $seo['title'] = '游学实习详情页';
-        $seo['keywords'] = '';
-        $seo['description'] = '';
-    }elseif($url == '/mentor.html'){
-        $seo['title'] = '海外mentor';
-        $seo['keywords'] = '';
-        $seo['description'] = '';
-    }elseif($url == '/study-aboard/service/introduction.html'){
-        $seo['title'] = '留学服务';
-        $seo['keywords'] = '';
-        $seo['description'] = '';
-    }else{
-        if($action == 'word-details' || $action == 'picture-details' ){
-            $seo['title'] = $this->context->title;
-            $seo['keywords'] = $this->context->keywords;
-        }
-        elseif($action == 'details' && $controller == 'schools' ){
-            $seo['title'] = '院校库详情';
-            $seo['keywords'] = '';
-            $seo['description'] = '';
-        }
-        elseif($action == 'majormsg' && $controller == 'schools' ){
-            $seo['title'] = '院校库专业详情';
-            $seo['keywords'] = '';
-            $seo['description'] = '';
-        }else{
-            if(isset($this->context->layout_data) && $this->context->layout_data != null){
-                $data['seoId'] = $this->context->layout_data;
-            }
-            elseif(strstr($url,'/application/') ){
-                $data['seoId'] = 120;
-            }
-            elseif(strstr($url,'/question') ){
-                $data['seoId'] = 121;
-            }
-            elseif(strstr($url,'/promotion/') ){
-                $data['seoId'] = 165;
-            }
-            elseif($action == 'project' && $controller == 'study'){
-                $data['seoId'] = 119;
-            }
-            else{
-                $data = \app\modules\cn\models\UrlSeo::find()->where("url='$url'")->one();
-            }
-            if((!isset($data['seoId']))||$data['seoId']==false){
-                $data['seoId']=223;
-            }
-            $seo = \app\modules\cn\models\Category::getSeoInfo($data['seoId']);
-        }
-    }
     ?>
-    <title><?php echo $seo['title']?>-申友网</title>
+    <title><?php echo $this->context->title==false?'申友官网-留学咨询_名校出国留学申请机构_托福/GMAT培训机构-申友网':$this->context->title?>-申友网</title>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta name="keywords" content="<?php echo $seo['keywords']?>">
+    <meta name="keywords" content="<?php echo $this->context->keywords==false?'出国留学,名校留学,留学咨询,留学条件,出国游学,美国留学,gmat培训,托福培训,雅思培训':$this->context->keywords ?>">
     <?php
     if($action != 'word-details' && $action != 'picture-details' ) {
         ?>
-        <meta name="description" content="<?php echo $seo['description']?>">
+        <meta name="description" content="<?php echo $this->context->description==false?'申友留学,专注商科与STEM留学咨询,提供留学申请一站式服务,是GMAT与托福培训的行业领跑者。申友专注英国、美国、加拿大、澳洲、香港等名校留学申请,留学咨询、出国留学、托福与GMAT培训，尽在申友。':$this->context->description ?>">
     <?php
     }
     ?>
@@ -119,7 +36,7 @@
     <link rel="stylesheet" href="/cn/css/footer.css"/>
     <link rel="stylesheet" href="/cn/css/public.css"/>
     <link rel="stylesheet" href="/cn/Hirsi/css/reset.css">
-    <link rel="stylesheet" href="/cn/Hirsi/css/index.css">
+    <link rel="stylesheet" type="text/css" href="/cn/css/iconfont.css">
     <link rel="stylesheet" href="/cn/css/fonts/font-awesome/css/font-awesome.min.css"/>
     <link rel="shortcut icon" href="http://www.thinkwithu.com/favicon.ico" />
     <script type="text/javascript" src="/cn/js/jquery1.42.min.js"></script>
@@ -129,161 +46,50 @@
     <script type="text/javascript" src="/cn/js/public.js"></script>
 </head>
 <body>
-<?php use app\commands\front\ContactWidget;?>
-<?php use app\commands\front\BannerWidget;?>
 <!-----------------------------头部------------------------------>
-<!--国家留学页面导航栏没有顶部搜索栏-->
-<?php
-	if(($controller=='study' && $action == 'index') || $url == '/training.html'){
-	?>
-<?php
-}else{
-	?>
-	<header class="sy-header">
-    <div class="w10 clearfix">
-        <img src="/cn/Hirsi/images/sy-text.png" style="margin-right: 55px" alt="高分成就梦想名校改变人生">
-        <img src="/cn/Hirsi/images/sy-tel.png" alt="400-600-1123">
-        <a class="refer-btn"
-           href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="
-           target="_blank">在线咨询</a>
-        <!--登录&注册-->
-        <div class="login-wrap fr" style="display: none;">
-            <span class="on">登录</span>
-            <span>注册</span>
+<div class="headTop">
+    <div class="headTopContent">
+        <div class="img_left">
+            <img src="/cn/Hirsi/images/sy-text-new.png" alt="">
         </div>
-        <!--搜索-->
-        <div class="search-wrap fr">
-            <input class="search search1" type="search" onkeyup="enterKey(event,this)" placeholder="请输入关键词">
-            <img src="/cn/Hirsi/images/search-icon.png" style="margin-left: -1px;cursor: pointer;" onclick="keySearch()" alt="搜索">
+        <div class="img_right">
+            <i class="iconfont phone_index">&#xe6df;</i>
+            <span class="phoneNum_index">400-600-1123</span>
+            <a href=""><span class="consultation_index">在线咨询>></span></a>
         </div>
-        <!--        app下载-->
-        <div class="appDownload">
-            <span title="app下载" class="tit_t">APP <b></b></span>
-            <div class="pull_down">
-                <ul>
-                    <li>
-                        <a href="http://www.gmatonline.cn/DownloadApp.html">
-                            <div class="first_layer">
-                                <img src="http://www.gmatonline.cn/app/web_core/styles/images-3/gmatapp_logo.jpg"
-                                     alt="app logo图标"/>
-                                <span>雷哥GMAT苹果版</span>
-                            </div>
-                        </a>
-                        <div class="code_box">
-                            <img src="http://www.gmatonline.cn/app/web_core/styles/images-3/leigeQrCode.png"
-                                 alt="app二维码图片"/>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="http://www.gmatonline.cn/DownloadApp.html">
-                            <div class="first_layer">
-                                <img src="http://www.gmatonline.cn/app/web_core/styles/images-3/gmatapp_logo.jpg"
-                                     alt="app logo图标"/>
-                                <span>雷哥GMAT安卓版</span>
-                            </div>
-                        </a>
-                        <div class="code_box">
-                            <img src="http://www.gmatonline.cn/app/web_core/styles/images-3/leige-android.png"
-                                 alt="app二维码图片"/>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="http://www.toeflonline.cn/toefl_app.html">
-                            <div class="first_layer">
-                                <img src="http://www.toeflonline.cn/cn/images/toeflapp_logo.jpg" alt="app logo图标"/>
-                                <span>雷哥托福苹果版</span>
-                            </div>
-                        </a>
-                        <div class="code_box">
-                            <img src="http://www.toeflonline.cn/cn/images/app-ios.png" alt="app二维码图片"/>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="http://www.toeflonline.cn/toefl_app.html">
-                            <div class="first_layer">
-                                <img src="http://www.toeflonline.cn/cn/images/toeflapp_logo.jpg" alt="app logo图标"/>
-                                <span>雷哥托福安卓版</span>
-                            </div>
-                        </a>
-                        <div class="code_box">
-                            <img src="http://www.toeflonline.cn/cn/images/app-android.png" alt="app二维码图片"/>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="http://www.smartapply.cn/app.html">
-                            <div class="first_layer">
-                                <img src="http://www.smartapply.cn/cn/images/smart-appLogo.png" alt="app logo图标"/>
-                                <span>雷哥选校苹果版</span>
-                            </div>
-                        </a>
-                        <div class="code_box">
-                            <img src="http://www.smartapply.cn/cn/images/smart-erweima.png" alt="app二维码图片"/>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="http://www.smartapply.cn/app.html">
-                            <div class="first_layer">
-                                <img src="http://www.smartapply.cn/cn/images/smart-appLogo.png" alt="app logo图标"/>
-                                <span>雷哥选校安卓版</span>
-                            </div>
-                        </a>
-                        <div class="code_box">
-                            <img src="http://www.smartapply.cn/cn/images/anroid-smartapp.png" alt="app二维码图片"/>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="http://words.viplgw.cn/" target="_blank">
-                            <div class="first_layer">
-                                <img src="http://www.gmatonline.cn/app/web_core/styles/images/words-iosLogo.jpg" alt="app logo图标"/>
-                                <span>雷哥单词苹果版</span>
-                            </div>
-                        </a>
-                        <div class="code_box">
-                            <img src="http://www.gmatonline.cn/app/web_core/styles/images/words-ios.png" alt="app二维码图片"/>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="http://words.viplgw.cn/" target="_blank">
-                            <div class="first_layer">
-                                <img src="http://www.gmatonline.cn/app/web_core/styles/images/words-iosLogo.jpg" alt="app logo图标"/>
-                                <span>雷哥单词安卓版</span>
-                            </div>
-                        </a>
-                        <div class="code_box">
-                            <img src="/cn/images/word_android.png" alt="app二维码图片"/>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!--        app下载 end-->
-        <div class="clearBr"></div>
-
     </div>
-</header>
-<?php	
-}	
-?>	
-
+</div>
+<div class="seach_input">
+    <div class="seachInputContent">
+        <a href="/"><img class="logo-new" src="/cn/Hirsi/images/sy-logo3.png" alt="" style="width: 172px;"></a>
+        <div class="search_div">
+            <i class="iconfont seach_index">&#xe6bc;</i>
+            <input type="search" placeholder="关键词" class="input_seach search search1" onkeyup="enterKey(event,this)">
+            <div class="seach_word" onclick="keySearch()">搜索</div>
+        </div>
+    </div>
+</div>
 <!-----------------------------头部end------------------------------>
 
+<?php use app\commands\front\ContactWidget;?>
+<?php use app\commands\front\BannerWidget;?>
 <!-----------------------------导航------------------------------>
 <?php
-	//删掉了($controller=='study' && $action == 'index') ||
+//删掉了($controller=='study' && $action == 'index') ||
 if($url == '/training.html') {
     ?>
-    
-<?php
+
+    <?php
 }else {
     ?>
     <?php BannerWidget::begin();?>
     <?php BannerWidget::end();?>
-<?php
+    <?php
 }
 ?>
 <?= $content ?>
 
-<?php if($url == '/gmatsheet.html' || $url == '/mentor.html' || $url== '/toeflsheet.html') {?>
+<?php if($url == '/mentor.html' || $url== '/toeflsheet.html') {?>
     <div class="contactWay">
         <div class="contactHead">联系方式</div>
         <div class="contactSlide">

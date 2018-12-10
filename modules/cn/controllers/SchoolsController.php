@@ -34,6 +34,9 @@ class SchoolsController extends ThinkUController {
         $major_data = json_decode($school->CurlRequest($url,['catid'=>171]),TRUE);//专业
         $cost_data = json_decode($school->CurlRequest($url,['catid'=>414]),TRUE);//费用
         $type_data = json_decode($school->CurlRequest($url,['catid'=>419]),TRUE);//学院类型
+        $this->title='院校库，美国留学院校分享，出国留学案例分享 申友留学专注名校留学申请';
+        $this->keywords='留学中介,留学,留学中介机构,留学机构,启德留学,EIC启德教育,留学资讯,出国留学条件,出国留学流程,出国留学中介,读研条件,出国留学费用,出国留学网,留学网,申请出国留学,留学签证,留学看点,留学考试';
+        $this->description='申友留学，专注商科与STEM留学咨询，提供留学申请一站式服务，是GMAT与托福 雅思培训的行业领跑者。申友专注美国、英国、加拿大、澳洲、香港等名校留学，留学咨询，出国留学，托福 雅思与GMAT培训，尽在申友。';
         return $this->render('index',
             [
                 'country' => $country_data['data'],
@@ -74,14 +77,14 @@ class SchoolsController extends ThinkUController {
      */
     public function actionDetails(){
         $school = new Schools();
-        $url = 'school';
         $data['schoolid'] = Yii::$app->request->get('schoolid');//分类ID
-        $result =  json_decode($school->CurlRequest($url,['schoolid'=>$data['schoolid']]),TRUE);//学院类型
-        return $this->render('detail',[
-            'details' => $result['data'],
-            'activity' => $this->activity,
-            'activityDate' => $this->activityDate
-        ]);
+        $data=json_decode(file_get_contents("http://schools.smartapply.cn/schools/id-".$data['schoolid'].".html?data-type='json'"),true);
+//        echo '<pre>';var_dump($data['major']);die;
+        $school =  json_decode($school->CurlRequest('school',['catid'=>155, 'pageNumber'=>1, 'pageSize'=>6]),TRUE);
+        $this->title=$data['data']['name'].',院校库，美国留学院校分享，出国留学案例分享 申友留学专注名校留学申请';
+        $this->keywords='留学中介,留学,留学中介机构,留学机构,启德留学,EIC启德教育,留学资讯,出国留学条件,出国留学流程,出国留学中介,读研条件,出国留学费用,出国留学网,留学网,申请出国留学,留学签证,留学看点,留学考试';
+        $this->description='申友留学，专注商科与STEM留学咨询，提供留学申请一站式服务，是GMAT与托福 雅思培训的行业领跑者。申友专注美国、英国、加拿大、澳洲、香港等名校留学，留学咨询，出国留学，托福 雅思与GMAT培训，尽在申友。';
+        return $this->render('detail',['data'=>$data['data'],'major'=>$data['major'],'school'=>$school['data']]);
     }
 
     /**专业数据
@@ -101,15 +104,14 @@ class SchoolsController extends ThinkUController {
      */
     public function actionMajormsg(){
         $school = new Schools();
-        $url = 'content';
-        $data['contentid'] = Yii::$app->request->get('contentid');//分类ID
-        $data['catid'] = Yii::$app->request->get('catid');//分类ID
-        $result = json_decode($school->CurlRequest($url,['contentid'=>$data['contentid'],'catid'=>$data['catid']]),TRUE);
-        if(empty($result)){
-            echo '<script>alert("暂无数据");history.go(-1);</script>';
-            exit;
-        }
-        return $this->render('major',['major' => $result['data']]);
+        $id = Yii::$app->request->get('id');//分类ID
+        $data=json_decode(file_get_contents("http://schools.smartapply.cn/major/".$id.".html?data-type='json'"),true);
+        $schoolData =  json_decode($school->CurlRequest('school',['catid'=>155, 'pageNumber'=>1, 'pageSize'=>6]),TRUE);
+//        echo '<pre>';var_dump($data['school']);die;
+        $this->title=$data['data']['name'].',院校库，美国留学院校分享，出国留学案例分享 申友留学专注名校留学申请';
+        $this->keywords='留学中介,留学,留学中介机构,留学机构,启德留学,EIC启德教育,留学资讯,出国留学条件,出国留学流程,出国留学中介,读研条件,出国留学费用,出国留学网,留学网,申请出国留学,留学签证,留学看点,留学考试';
+        $this->description='申友留学，专注商科与STEM留学咨询，提供留学申请一站式服务，是GMAT与托福 雅思培训的行业领跑者。申友专注美国、英国、加拿大、澳洲、香港等名校留学，留学咨询，出国留学，托福 雅思与GMAT培训，尽在申友。';
+        return $this->render('major',['hot' => $data['hot'],'school'=>$data['school'],'data'=>$data['data'],'schoolData'=>$schoolData]);
     }
 
     public function actionTeacher(){

@@ -4,16 +4,14 @@ body{
 }
 .praDetail-top{
     width: 1001px;
-    margin: 0 auto;
-    margin-top: 18px;
+    margin: 18px auto 0;
 }
 .praDetail-top img{
     width: 100%;
 }
 .praDetail-con{
     width: 1001px;
-    margin: 0 auto;
-    margin-top: 25px;
+    margin: 25px auto 0;
 }
 .detailC-left{
     width: 709px;
@@ -27,6 +25,12 @@ body{
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     background: white;
+}
+.detaL-top span {
+    white-space: normal;
+}
+.detaL-top p {
+    white-space: normal;
 }
 .detaL-top ul li{
     font-size: 12px;

@@ -112,933 +112,964 @@
     <link rel="stylesheet" href="/cn/css/public.css"/>
     <link rel="stylesheet" href="/cn/Hirsi/css/reset.css">
     <link rel="stylesheet" href="/cn/Hirsi/css/index.css">
+    <link rel="stylesheet" type="text/css" href="/cn/css/iconfont.css">
     <link rel="stylesheet" href="/cn/css/fonts/font-awesome/css/font-awesome.min.css"/>
     <link rel="shortcut icon" href="http://www.thinkwithu.com/favicon.ico"/>
-    <script type="text/javascript" src="/cn/js/jquery1.42.min.js"></script>
-    <script type="text/javascript" src="/cn/Hirsi/js/jquery-1.12.2.min.js"></script>
-    <script type="text/javascript" src="/cn/Hirsi/js/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="/cn/js/jquery1.7.2.min.js"></script>
     <script type="text/javascript" src="/cn/js/jquery.SuperSlide.2.1.1.js"></script>
     <script type="text/javascript" src="/cn/js/public.js"></script>
 </head>
 <body>
-<?php use app\commands\front\ContactWidget; ?>
-<!--header 头部-->
-<header class="sy-header">
-    <div class="w10 clearfix">
-        <img src="/cn/Hirsi/images/sy-text.png" style="margin-right: 55px" alt="高分成就梦想名校改变人生">
-        <img src="/cn/Hirsi/images/sy-tel.png" alt="400-600-1123">
-        <a class="refer-btn"
-           href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="
-           target="_blank">在线咨询</a>
-        <!--登录&注册-->
-        <div class="login-wrap fr" style="display: none;">
-            <span class="on">登录</span>
-            <span>注册</span>
+<!--banner-->
+<section class="bannerWrap">
+    <div class="banner banner_head" style="overflow: hidden;max-height: 460px">
+        <div class="hd_banner hd">
+            <ul>
+                <!--            循环li-->
+                <?php foreach($banner as $v){?>
+                <li class=""></li>
+                <?php }?>
+            </ul>
         </div>
+        <div class="bd_banner bd" style="width: 100%;overflow: hidden;">
+            <ul>
+                <!--            循环li-->
+                <?php foreach($banner as $v){?>
+                <li>
+                    <a href="<?php echo $v['url']?>" target="_blank">
+                        <img src="http://www.thinkwithu.com/<?php echo $v['image']?>" alt="留学活动">
+                    </a>
+                </li>
+                <?php }?>
+            </ul>
+        </div>
+    </div>
 
-        <!--搜索-->
-        <div class="search-wrap fr">
-            <input class="search search1" type="search" onkeyup="enterKey(event,this)" placeholder="请输入关键词">
-            <img src="/cn/Hirsi/images/search-icon.png" style="margin-left: -1px;cursor: pointer;" onclick="keySearch()" alt="搜索">
+</section>
+<!--留学百科-->
+<section class="index_Record">
+    <img class="Record_map" src="/cn/Hirsi/images/map.png" alt="">
+    <!--部分战绩-->
+    <div class="Record_content">
+        <p class="Record_title">部分战绩</p>
+        <p class="Record_title_l">连续五年 , 案例辉煌</p>
+        <div class="ut_logo">
+            <div class="logo_content">
+                <img class="uyLogo" src="/cn/Hirsi/images/stanford.gif" alt="">
+                <div>
+                    <p class="ut_name">Stanford</p>
+                    <p class="ut_num"><span>60</span>例</p>
+                </div>
+            </div>
+            <div class="logo_content">
+                <img class="uyLogo" src="/cn/Hirsi/images/princeton.gif" alt="">
+                <div>
+                    <p class="ut_name">Princeton</p>
+                    <p class="ut_num"><span>25</span>例</p>
+                </div>
+            </div>
+            <div class="logo_content">
+                <img class="uyLogo" src="/cn/Hirsi/images/mit.gif" alt="" style="margin-top: 20px">
+                <div>
+                    <p class="ut_name">MIT</p>
+                    <p class="ut_num"><span>48</span>例</p>
+                </div>
+            </div>
+            <div class="logo_content">
+                <img class="uyLogo" src="/cn/Hirsi/images/berkeley.gif" alt="">
+                <div>
+                    <p class="ut_name">Berkeley</p>
+                    <p class="ut_num"><span>83</span>例</p>
+                </div>
+            </div>
         </div>
-        <!--        app下载-->
-        <div class="appDownload">
-            <span title="app下载" class="tit_t">APP <b></b></span>
-            <div class="pull_down">
+        <div class="ut_logo">
+            <div class="logo_content">
+                <img class="uyLogo" src="/cn/Hirsi/images/cmu.gif" alt="">
+                <div>
+                    <p class="ut_name">CMU</p>
+                    <p class="ut_num"><span>78</span>例</p>
+                </div>
+            </div>
+            <div class="logo_content">
+                <img class="uyLogo" src="/cn/Hirsi/images/harvard.gif" alt="">
+                <div>
+                    <p class="ut_name">Harvard</p>
+                    <p class="ut_num"><span>39</span>例</p>
+                </div>
+            </div>
+            <div class="logo_content">
+                <img class="uyLogo" src="/cn/Hirsi/images/oxford.gif" alt="">
+                <div>
+                    <p class="ut_name">Oxford</p>
+                    <p class="ut_num"><span>8</span>例</p>
+                </div>
+            </div>
+            <div class="logo_content">
+                <img class="uyLogo" src="/cn/Hirsi/images/cambridge.gif" alt="">
+                <div>
+                    <p class="ut_name">Cambridge</p>
+                    <p class="ut_num"><span>14</span>例</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--留学服务-->
+    <div class="study_service">
+        <p class="Record_title">留学服务</p>
+        <div class="service_line"></div>
+        <div class="first_title"><span>|</span>留学服务</div>
+        <div class="service_list">
+            <!--留学服务轮播  循环li-->
+            <div class="service_bd">
                 <ul>
+                    <?php foreach($abroadPro as $v){?>
                     <li>
-                        <a href="http://www.gmatonline.cn/DownloadApp.html">
-                            <div class="first_layer">
-                                <img src="http://www.gmatonline.cn/app/web_core/styles/images-3/gmatapp_logo.jpg"
-                                     alt="app logo图标"/>
-                                <span>雷哥GMAT苹果版</span>
-                            </div>
-                        </a>
-                        <div class="code_box">
-                            <img src="http://www.gmatonline.cn/app/web_core/styles/images-3/leigeQrCode.png"
-                                 alt="app二维码图片"/>
+                        <img src="<?php echo $v['image']?>" alt="">
+                        <div class="service_bot">
+                            <p><?php echo $v['name']?></p>
+                            <a href="/word-details/<?php echo $v['id']?>/index,261.html">查看详情</a>
                         </div>
                     </li>
-                    <li>
-                        <a href="http://www.gmatonline.cn/DownloadApp.html">
-                            <div class="first_layer">
-                                <img src="http://www.gmatonline.cn/app/web_core/styles/images-3/gmatapp_logo.jpg"
-                                     alt="app logo图标"/>
-                                <span>雷哥GMAT安卓版</span>
-                            </div>
-                        </a>
-                        <div class="code_box">
-                            <img src="http://www.gmatonline.cn/app/web_core/styles/images-3/leige-android.png"
-                                 alt="app二维码图片"/>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="http://www.toeflonline.cn/toefl_app.html">
-                            <div class="first_layer">
-                                <img src="http://www.toeflonline.cn/cn/images/toeflapp_logo.jpg" alt="app logo图标"/>
-                                <span>雷哥托福苹果版</span>
-                            </div>
-                        </a>
-                        <div class="code_box">
-                            <img src="http://www.toeflonline.cn/cn/images/app-ios.png" alt="app二维码图片"/>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="http://www.toeflonline.cn/toefl_app.html">
-                            <div class="first_layer">
-                                <img src="http://www.toeflonline.cn/cn/images/toeflapp_logo.jpg" alt="app logo图标"/>
-                                <span>雷哥托福安卓版</span>
-                            </div>
-                        </a>
-                        <div class="code_box">
-                            <img src="http://www.toeflonline.cn/cn/images/app-android.png" alt="app二维码图片"/>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="http://www.smartapply.cn/app.html">
-                            <div class="first_layer">
-                                <img src="http://www.smartapply.cn/cn/images/smart-appLogo.png" alt="app logo图标"/>
-                                <span>雷哥选校苹果版</span>
-                            </div>
-                        </a>
-                        <div class="code_box">
-                            <img src="http://www.smartapply.cn/cn/images/smart-erweima.png" alt="app二维码图片"/>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="http://www.smartapply.cn/app.html">
-                            <div class="first_layer">
-                                <img src="http://www.smartapply.cn/cn/images/smart-appLogo.png" alt="app logo图标"/>
-                                <span>雷哥选校安卓版</span>
-                            </div>
-                        </a>
-                        <div class="code_box">
-                            <img src="http://www.smartapply.cn/cn/images/anroid-smartapp.png" alt="app二维码图片"/>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="http://words.viplgw.cn/" target="_blank">
-                            <div class="first_layer">
-                                <img src="http://www.gmatonline.cn/app/web_core/styles/images/words-iosLogo.jpg" alt="app logo图标"/>
-                                <span>雷哥单词苹果版</span>
-                            </div>
-                        </a>
-                        <div class="code_box">
-                            <img src="http://www.gmatonline.cn/app/web_core/styles/images/words-ios.png" alt="app二维码图片"/>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="http://words.viplgw.cn/" target="_blank">
-                            <div class="first_layer">
-                                <img src="http://www.gmatonline.cn/app/web_core/styles/images/words-iosLogo.jpg" alt="app logo图标"/>
-                                <span>雷哥单词安卓版</span>
-                            </div>
-                        </a>
-                        <div class="code_box">
-                            <img src="/cn/images/word_android.png" alt="app二维码图片"/>
-                        </div>
-                    </li>
+                    <?php }?>
+                </ul>
+            </div>
+            <a class="next"><i class="iconfont next_icon">&#xe602;</i></a>
+            <a class="prev"><i class="iconfont prev_icon">&#xe601;</i></a>
+        </div>
+        <!--留学七步曲-->
+        <div class="first_title"><span>|</span>留学七步曲</div>
+        <div class="steps_study">
+            <div class="steps_left">
+                <p class="steps_num">0 1</p>
+                <p class="steps_time">时间规划</p>
+                <p class="steps_left_word">三大申请规划方案</p>
+                <p class="steps_left_word">明确名校申请计划</p>
+            </div>
+            <div class="steps_right">
+                <div class="steps_right_div steps_right2">
+                    <p class="steps_num_right">0 2</p>
+                    <p class="steps_time_right">背景提升</p>
+                    <p class="steps_right_word">专业背景竞争力提升辅导</p>
+                    <p class="steps_right_word">申请策略辅导和执行</p>
+                </div>
+                <div class="steps_right_div steps_right3">
+                    <p class="steps_num_right">0 3</p>
+                    <p class="steps_time_right">专家选校</p>
+                    <p class="steps_right_word">专家选校建议和指导</p>
+                    <p class="steps_right_word">确立目标名校名单</p>
+                </div>
+                <div class="steps_right_div steps_right4">
+                    <p class="steps_num_right">0 4</p>
+                    <p class="steps_time_right">文书设计</p>
+                    <p class="steps_right_word">制作优秀高质量的文书</p>
+                    <p class="steps_right_word">准备申请材料</p>
+                </div>
+                <div class="steps_right_div step10 steps_right5">
+                    <p class="steps_num_right">0 5</p>
+                    <p class="steps_time_right">申请手续</p>
+                    <p class="steps_right_word">完成客户指定目标学校申请</p>
+                    <p class="steps_right_word">学校联系与“套磁”帮助</p>
+                </div>
+                <div class="steps_right_div step10 steps_right6">
+                    <p class="steps_num_right">0 6</p>
+                    <p class="steps_time_right">面试指导</p>
+                    <p class="steps_right_word">精细的面试分析</p>
+                    <p class="steps_right_word">优质的面试辅导</p>
+                </div>
+                <div class="steps_right_div step10 steps_right7">
+                    <p class="steps_num_right">0 7</p>
+                    <p class="steps_time_right">出国签证</p>
+                    <p class="steps_right_word">出国咨询高端服务</p>
+                    <p class="steps_right_word">圆梦留学海外</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--留学系统-->
+    <div class="studySystem">
+        <div class="first_title studySystem_title"><span>|</span>CRM 留学系统</div>
+        <div class="seven_steps">
+            <div class="steps_div">
+                <i class="iconfont stepsIcon">&#xe60a;</i>
+                <p>可与所有服务团队</p>
+                <p>所有成员交流</p>
+            </div>
+            <div class="steps_div">
+                <i class="iconfont stepsIcon">&#xe74b;</i>
+                <p>上传个人信息、成绩单、</p>
+                <p>推荐个人资料申请材料</p>
+            </div>
+            <div class="steps_div">
+                <i class="iconfont stepsIcon">&#xe619;</i>
+                <p>审核咨询项目的</p>
+                <p>服务计划书</p>
+            </div>
+            <div class="steps_div">
+                <i class="iconfont stepsIcon">&#xe604;</i>
+                <p>参加留学考试</p>
+                <p>能力测试</p>
+            </div>
+            <div class="steps_div">
+                <i class="iconfont stepsIcon">&#xe639;</i>
+                <p>查阅申友留学</p>
+                <p>选校内部参数</p>
+            </div>
+            <div class="steps_div">
+                <i class="iconfont stepsIcon">&#xe67c;</i>
+                <p>查阅申请文书</p>
+            </div>
+            <div class="steps_div">
+                <i class="iconfont stepsIcon">&#xe670;</i>
+                <p>查阅申请资料</p>
+                <p>追踪申请状态</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--留学百科-->
+<section class="encyclopedia">
+    <p class="Record_title">留学百科</p>
+    <div class="service_line"></div>
+    <div class="encyclopedia_content"><!--第一个选项卡-->
+       <div class="encyclopedia_nav encyclopediaHd hd">
+           <ul>
+               <li>美国</li>
+               <li>英国</li>
+               <li>加拿大</li>
+               <li>澳洲</li>
+               <li>新加坡</li>
+               <li>香港</li>
+               <li>欧洲</li>
+               <li>亚洲</li>
+               <div><a href="">More>></a></div>
+           </ul>
+       </div>
+       <div style="width: 100%;overflow: hidden">
+           <div class="encyclopedia_left" style="margin-top: 40px;margin-bottom: 10px">
+               <img src="/cn/Hirsi/images/hot-school.png" alt="">
+               <!--                    <div class="encyclopedia_left_words"><p>最热留学院校</p></div>-->
+           </div>
+           <div class="encyclopediaBd bd">
+               <ul><!--对应有几个国家就有几个ul 循环ul-->
+                   <div class="encyclopedia_right"><!--循环li-->
+                       <ul>
+                           <?php  $school = new app\libs\Schools();
+                           $us= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "155", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
+                           if(isset($us['data'])){
+                           foreach($us['data'] as $k=>$v) {
+                               if (is_numeric($k)) {
+                                   ?>
+                                   <li class="ency_school">
+                                       <div class="ency_logo">
+                                           <img src="http://schools.smartapply.cn<?php echo $v['image'] ?>" alt="">
+                                       </div>
+                                       <p class="ency_name"><?php echo $v['name'] ?></p>
+
+                                       <p class="ency_name_en"><?php echo $v['title'] ?></p>
+
+                                       <p class="ency_rank"><i class="iconfont trophy">&#xe6ae;</i> 学校排名:
+                                           <span><?php echo $v['s_rank'] ?></span></p>
+
+                                       <div class="ency_bottom">
+                                           <span><a
+                                                   href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="><i
+                                                       class="iconfont people">&#xe74e;</i>推荐导师</a></span>
+                                           <span><a href="/case.html"><i class="iconfont fire">
+                                                       &#xe614;</i>热门案例</a></span>
+                                       </div>
+                                       <div class="ency_mask"><!--鼠标移入的遮罩层-->
+                                           <div class="ency_test"><a href="/percentages-test.html">录取几率测评</a></div>
+                                           <div class="ency_look"><a
+                                                   href=" /schools/<?php echo $v['id'] ?>.html">查看学校</a></div>
+                                       </div>
+                                   </li>
+                               <?php }
+                           }}?>
+                       </ul>
+                   </div>
+               </ul>
+               <ul>
+                   <div class="encyclopedia_right"><!--循环li-->
+                       <ul> <!--对应有几个国家就有几个ul 循环ul-->
+                           <?php $uk= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "156", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
+                           if(isset($us['data'])){
+                           foreach($uk['data'] as $k=>$v) {
+                               if (is_numeric($k)) {
+                                   ?>
+                                   <li class="ency_school">
+                                       <div class="ency_logo">
+                                           <img src="http://schools.smartapply.cn<?php echo $v['image'] ?>" alt="">
+                                       </div>
+                                       <p class="ency_name"><?php echo $v['name'] ?></p>
+
+                                       <p class="ency_name_en"><?php echo $v['title'] ?></p>
+
+                                       <p class="ency_rank"><i class="iconfont trophy">&#xe60c;</i> 学校排名:
+                                           <span><?php echo $v['s_rank'] ?></span></p>
+
+                                       <div class="ency_bottom">
+                                           <span><a
+                                                   href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="><i
+                                                       class="iconfont people">&#xe74e;</i>推荐导师</a></span>
+                                           <span><a href="/case.html"><i class="iconfont fire">&#xe614;</i>热门案例</a></span>
+                                       </div>
+                                       <div class="ency_mask"><!--鼠标移入的遮罩层-->
+                                           <div class="ency_test"><a href="/percentages-test.html">录取几率测评</a></div>
+                                           <div class="ency_look"><a
+                                                   href=" /schools/<?php echo $v['id'] ?>.html">查看学校</a></div>
+                                       </div>
+                                   </li>
+                               <?php }
+                           }}?>
+                       </ul>
+                   </div>
+               </ul>
+               <ul>
+                   <div class="encyclopedia_right"><!--循环li-->
+                       <ul> <!--对应有几个国家就有几个ul 循环ul-->
+                           <?php $canada= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "157", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
+                           if(isset($us['data'])){
+                           foreach($canada['data'] as $k=>$v) {
+                               if (is_numeric($k)) {
+                                   ?>
+                                   <li class="ency_school">
+                                       <div class="ency_logo">
+                                           <img src="http://schools.smartapply.cn<?php echo $v['image'] ?>" alt="">
+                                       </div>
+                                       <p class="ency_name"><?php echo $v['name'] ?></p>
+
+                                       <p class="ency_name_en"><?php echo $v['title'] ?></p>
+
+                                       <p class="ency_rank"><i class="iconfont trophy">&#xe60c;</i> 学校排名:
+                                           <span><?php echo $v['s_rank'] ?></span></p>
+
+                                       <div class="ency_bottom">
+                                           <span><a
+                                                   href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="><i
+                                                       class="iconfont people">&#xe74e;</i>推荐导师</a></span>
+                                           <span><a href="/case.html"><i class="iconfont fire">
+                                                       &#xe614;</i>热门案例</a></span>
+                                       </div>
+                                       <div class="ency_mask"><!--鼠标移入的遮罩层-->
+                                           <div class="ency_test"><a href="/percentages-test.html">录取几率测评</a></div>
+                                           <div class="ency_look"><a
+                                                   href="/schools/<?php echo $v['id'] ?>.html">查看学校</a></div>
+                                       </div>
+                                   </li>
+                               <?php }
+                           }}?>
+                       </ul>
+                   </div>
+               </ul>
+               <ul>
+                   <div class="encyclopedia_right"><!--循环li-->
+                       <ul> <!--对应有几个国家就有几个ul 循环ul-->
+                           <?php $australia= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "158", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
+                           if(isset($us['data'])){
+                           foreach($australia['data'] as $k=>$v) {
+                               if (is_numeric($k)) {
+                                   ?>
+                                   <li class="ency_school">
+                                       <div class="ency_logo">
+                                           <img src="http://schools.smartapply.cn<?php echo $v['image'] ?>" alt="">
+                                       </div>
+                                       <p class="ency_name"><?php echo $v['name'] ?></p>
+
+                                       <p class="ency_name_en"><?php echo $v['title'] ?></p>
+
+                                       <p class="ency_rank"><i class="iconfont trophy">&#xe60c;</i> 学校排名:
+                                           <span><?php echo $v['s_rank'] ?></span></p>
+
+                                       <div class="ency_bottom">
+                                           <span><a
+                                                   href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="><i
+                                                       class="iconfont people">&#xe74e;</i>推荐导师</a></span>
+                                           <span><a href="/case.html"><i class="iconfont fire">
+                                                       &#xe614;</i>热门案例</a></span>
+                                       </div>
+                                       <div class="ency_mask"><!--鼠标移入的遮罩层-->
+                                           <div class="ency_test"><a href="/percentages-test.html">录取几率测评</a></div>
+                                           <div class="ency_look"><a
+                                                   href="/schools/<?php echo $v['id'] ?>.html">查看学校</a></div>
+                                       </div>
+                                   </li>
+                               <?php }
+                           }}?>
+                       </ul>
+                   </div>
+               </ul>
+               <ul>
+
+                   <div class="encyclopedia_right"><!--循环li-->
+                       <ul> <!--对应有几个国家就有几个ul 循环ul-->
+                           <?php $singapore= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "159", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
+                           if(isset($us['data'])){
+                           foreach($singapore['data'] as $k=>$v) {
+                               if (is_numeric($k)) {
+                                   ?>
+                                   <li class="ency_school">
+                                       <div class="ency_logo">
+                                           <img src="http://schools.smartapply.cn<?php echo $v['image'] ?>" alt="">
+                                       </div>
+                                       <p class="ency_name"><?php echo $v['name'] ?></p>
+
+                                       <p class="ency_name_en"><?php echo $v['title'] ?></p>
+
+                                       <p class="ency_rank"><i class="iconfont trophy">&#xe60c;</i> 学校排名:
+                                           <span><?php echo $v['s_rank'] ?></span></p>
+
+                                       <div class="ency_bottom">
+                                           <span><a
+                                                   href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="><i
+                                                       class="iconfont people">&#xe74e;</i>推荐导师</a></span>
+                                           <span><a href="/case.html"><i class="iconfont fire">
+                                                       &#xe614;</i>热门案例</a></span>
+                                       </div>
+                                       <div class="ency_mask"><!--鼠标移入的遮罩层-->
+                                           <div class="ency_test"><a href="/percentages-test.html">录取几率测评</a></div>
+                                           <div class="ency_look"><a
+                                                   href=" /schools/<?php echo $v['id'] ?>.html">查看学校</a></div>
+                                       </div>
+                                   </li>
+                               <?php }
+                           }}?>
+                       </ul>
+                   </div>
+
+               </ul>
+               <ul>
+
+                   <div class="encyclopedia_right"><!--循环li-->
+                       <ul> <!--对应有几个国家就有几个ul 循环ul-->
+                           <?php $hk= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "160", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
+                           if(isset($us['data'])){
+                           foreach($hk['data'] as $k=>$v) {
+                               if (is_numeric($k)) {
+                                   ?>
+                                   <li class="ency_school">
+                                       <div class="ency_logo">
+                                           <img src="http://schools.smartapply.cn<?php echo $v['image'] ?>" alt="">
+                                       </div>
+                                       <p class="ency_name"><?php echo $v['name'] ?></p>
+
+                                       <p class="ency_name_en"><?php echo $v['title'] ?></p>
+
+                                       <p class="ency_rank"><i class="iconfont trophy">&#xe60c;</i> 学校排名:
+                                           <span><?php echo $v['s_rank'] ?></span></p>
+
+                                       <div class="ency_bottom">
+                                           <span><a
+                                                   href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="><i
+                                                       class="iconfont people">&#xe74e;</i>推荐导师</a></span>
+                                           <span><a href="/case.html"><i class="iconfont fire">
+                                                       &#xe614;</i>热门案例</a></span>
+                                       </div>
+                                       <div class="ency_mask"><!--鼠标移入的遮罩层-->
+                                           <div class="ency_test"><a href="/percentages-test.html">录取几率测评</a></div>
+                                           <div class="ency_look"><a
+                                                   href="/schools/<?php echo $v['id'] ?>.html">查看学校</a></div>
+                                       </div>
+                                   </li>
+                               <?php }
+                           }}?>
+                       </ul>
+                   </div>
+
+               </ul>
+               <ul>
+
+                   <div class="encyclopedia_right"><!--循环li-->
+                       <ul> <!--对应有几个国家就有几个ul 循环ul-->
+                           <?php $europe= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "520", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
+                           if(isset($us['data'])){
+                           foreach($europe['data'] as $k=>$v) {
+                               if (is_numeric($k)) {
+                                   ?>
+                                   <li class="ency_school">
+                                       <div class="ency_logo">
+                                           <img src="http://schools.smartapply.cn<?php echo $v['image'] ?>" alt="">
+                                       </div>
+                                       <p class="ency_name"><?php echo $v['name'] ?></p>
+
+                                       <p class="ency_name_en"><?php echo $v['title'] ?></p>
+
+                                       <p class="ency_rank"><i class="iconfont trophy">&#xe60c;</i> 学校排名:
+                                           <span><?php echo $v['s_rank'] ?></span></p>
+
+                                       <div class="ency_bottom">
+                                           <span><a
+                                                   href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="><i
+                                                       class="iconfont people">&#xe74e;</i>推荐导师</a></span>
+                                           <span><a href="/case.html"><i class="iconfont fire">
+                                                       &#xe614;</i>热门案例</a></span>
+                                       </div>
+                                       <div class="ency_mask"><!--鼠标移入的遮罩层-->
+                                           <div class="ency_test"><a href="/percentages-test.html">录取几率测评</a></div>
+                                           <div class="ency_look"><a
+                                                   href=" /schools/<?php echo $v['id'] ?>.html">查看学校</a></div>
+                                       </div>
+                                   </li>
+                               <?php }
+                           }}?>
+                       </ul>
+                   </div>
+
+               </ul>
+               <ul>
+
+                   <div class="encyclopedia_right"><!--循环li-->
+                       <ul> <!--对应有几个国家就有几个ul 循环ul-->
+                           <?php $asia= json_decode($school->CurlRequest('school', ['keyword' => '', 'schoolid' => '', 'type' => '', 'catid' => "521", 'pageNumber' => 1, 'pageSize' => 8, 'hot' => '']), TRUE);
+                           if(isset($us['data'])){
+                           foreach($asia['data'] as $k=>$v) {
+                               if (is_numeric($k)) {
+                                   ?>
+                                   <li class="ency_school">
+                                       <div class="ency_logo">
+                                           <img src="http://schools.smartapply.cn<?php echo $v['image'] ?>" alt="">
+                                       </div>
+                                       <p class="ency_name"><?php echo $v['name'] ?></p>
+
+                                       <p class="ency_name_en"><?php echo $v['title'] ?></p>
+
+                                       <p class="ency_rank"><i class="iconfont trophy">&#xe60c;</i> 学校排名:
+                                           <span><?php echo $v['s_rank'] ?></span></p>
+
+                                       <div class="ency_bottom">
+                                           <span><a
+                                                   href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="><i
+                                                       class="iconfont people">&#xe74e;</i>推荐导师</a></span>
+                                           <span><a href="/case.html"><i class="iconfont fire">
+                                                       &#xe614;</i>热门案例</a></span>
+                                       </div>
+                                       <div class="ency_mask"><!--鼠标移入的遮罩层-->
+                                           <div class="ency_test"><a href="/percentages-test.html">录取几率测评</a></div>
+                                           <div class="ency_look"><a
+                                                   href="/schools/<?php echo $v['id'] ?>.html">查看学校</a></div>
+                                       </div>
+                                   </li>
+                               <?php }
+                           }}?>
+                       </ul>
+                   </div>
+
+               </ul>
+           </div>
+       </div>
+    </div>
+    <div class="encyclopedia_tab"><!--第二个选项卡-->
+        <div class="encyclopedia_left"><!--第二个选项卡左边-->
+            <img src="/cn/Hirsi/images/reply.png" alt="">
+<!--            <div class="encyclopedia_left_tab"><span>2018</span><p>年申请攻略</p></div>-->
+        </div>
+        <div class="encyclopedia_center encyclopedia_center_1"><!--第二个选项卡中间-->
+            <div class="ency_center_nav">
+                <ul>
+                    <li>留学活动</li>
+                    <li>留学规划</li>
+                    <li>留学国家</li>
+                    <li>留学手续</li>
+                </ul>
+            </div>
+            <div class="ency_center_content content0"><!--对应有几个选项就有几个slideBox 外层循环slideBox -->
+                <div class="ency_center_bd slideBox">
+                    <ul><!--每个slideBox 内层循环li -->
+                        <?php foreach($abroad['active'] as $v){?>
+                        <li>
+                            <a href="/word-details/<?php echo $v['id']?>/index,178.html"><span class="Statement"><?php echo $v['name']?></span></a>
+                        </li>
+                        <?php }?>
+                    </ul>
+                </div>
+                <div class="ency_center_bd slideBox">
+                    <ul>
+                        <?php foreach($abroad['plan'] as $v){?>
+                            <li>
+                                <a href="/word-details/<?php echo $v['id']?>/index,178.html"><span class="Statement"><?php echo $v['name']?></span></a>
+                            </li>
+                        <?php }?>
+                    </ul>
+                </div>
+                <div class="ency_center_bd slideBox">
+                    <ul>
+                        <?php foreach($abroad['state'] as $v){?>
+                            <li>
+                                <a href="/word-details/<?php echo $v['id']?>/index,178.html"><span class="Statement"><?php echo $v['name']?></span></a>
+                            </li>
+                        <?php }?>
+                    </ul>
+                </div>
+                <div class="ency_center_bd slideBox">
+                    <ul>
+                        <?php foreach($abroad['apply'] as $v){?>
+                            <li>
+                                <a href="/word-details/<?php echo $v['id']?>/index,178.html"><span class="Statement"><?php echo $v['name']?></span></a>
+                            </li>
+                        <?php }?>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="encyctab_right"><!--第二个选项卡右边-->
+            <a href="">
+                <div class="ency_recommend">
+                    <img class="recommend_img" src="/cn/Hirsi/images/recommend.png" alt="">
+                    <img style="width: 100%" src="http://www.thinkwithu.com/<?php echo $abroad['recommend'][0]['image']?>" alt="">
+                    <div class="ency_bot_words"><p><?php echo $abroad['recommend'][0]['name']?></p></div>
+                </div>
+            </a>
+            <div class="encyctab_right_lb">
+                <ul>
+                    <?php foreach($abroad['recommend'] as $k=>$v){
+                        if($k>0){?>
+                        <li class="active">
+                            <span><?php echo $k?></span><a href="/word-details/<?php echo $v['id']?>/index,178.html"><?php echo $v['name']?></a>
+                        </li>
+                    <?php }}?>
                 </ul>
             </div>
         </div>
-        <!--        app下载 end-->
-        <div class="clearBr"></div>
     </div>
-</header>
-<!--nav 导航栏-->
-<?php use app\commands\front\BannerWidget;?>
-<?php BannerWidget::begin();?>
-<?php BannerWidget::end();?>
-<!--Banner-->
-<section class="banner-wrap">
-    <div class="slideBox">
-        <ul class="hd clearfix"></ul>
-        <ul class="banner">
-            <?php
-            $data = \app\modules\cn\models\Content::getContent(['fields' => 'url', 'category' => "190,223", 'pageSize' => 10]);
-            foreach ($data as $v) {
-                ?>
-                <li><a href="<?php echo $v['url'] ?>" target="_blank"
-                       style="background: url('<?php echo $v['image'] ?>') no-repeat center;background-size: auto 100%;"></a>
-                </li>
-                <?php
-            }
-            ?>
-        </ul>
-    </div>
-    <!---------------------------左边悬浮窗---------------------------------->
-    <?php use app\commands\front\LeftSuspensionWidget;?>
-    <?php LeftSuspensionWidget::begin();?>
-    <?php LeftSuspensionWidget::end();?>
 </section>
-<!--推荐-->
-<section>
-    <div class="w10 tm">
-        <h1 class="module-tit inb"><em class="line-2">为你</em>推荐</h1>
-        <div class="list-wrap">
-            <ul class="train clearfix">
-                <li>
-                    <a href="/USA.html">
-                        <img src="/cn/images/usa.png" alt="" />
-                        <p>美国留学</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="/UK.html">
-                        <img src="/cn/images/uk.png"/>
-                        <p>英国留学</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="/AUS.html">
-                        <img src="/cn/images/australia.png"/>
-                        <p>澳洲留学</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="/COUNTRY.html">
-                        <img src="/cn/images/canada.png"/>
-                        <p>加拿大留学</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="/HK.html">
-                        <img src="/cn/images/hk.png"/>
-                        <p>香港留学</p>
-                    </a>
-                </li>
+<!--中间轮播-->
+<section class="center_carousel">
+    <div class="carousel carousel_head" style="overflow: hidden;max-height: 200px">
+        <div class="hd_carousel hd">
+            <ul>
+                <!--            循环li-->
+                <li class=""></li>
+                <li class=""></li>
+                <li class=""></li>
             </ul>
-            <ul class="abroad clearfix">
+        </div>
+        <div class="bd_carousel bd" style="width: 100%;overflow: hidden;">
+            <ul>
+                <!--            循环li-->
                 <li>
-                    <a href="/gmatsheet.html">
-                        <img src="/cn/images/intensive_img01.png"/>
-                        <p>GMAT课程</p>
+                    <a href="" target="_blank"><img src="/cn/Hirsi/images/index-gmat.jpg" alt="">
                     </a>
                 </li>
                 <li>
-                    <a href="/gmatsheet.html">
-                        <img src="/cn/images/intensive_img04.png"/>
-                        <p>GRE课程</p>
+                    <a href="" target="_blank"><img src="/cn/Hirsi/images/index-toefl.jpg" alt="">
                     </a>
                 </li>
                 <li>
-                    <a href="/toefl/assistance.html">
-                        <img src="/cn/images/intensive_img06.png"/>
-                        <p>托福课程</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="/ieltssheet.html">
-                        <img src="/cn/images/intensive_img07.png"/>
-                        <p>雅思课程</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://www.viplgw.cn" target="_blank">
-                        <img src="/cn/images/intensive_img08.png"/>
-                        <p>网络课程</p>
+                    <a href="" target="_blank"><img src="/cn/Hirsi/images/index-itels.jpg" alt="">
                     </a>
                 </li>
             </ul>
         </div>
-    </div>
-</section>
-<!--留学服务-->
-<section class="serve">
-    <div class="w10 tm">
-        <h1 class="module-tit inb"><em class="line-2">留学</em>服务</h1>
-        <ul class="serve-list clearfix">
-            <li>
-                <div>
-                    <img class="serve-img" src="/cn/Hirsi/images/ser-1.png" alt="">
-                    <div class="serve-text">
-                        <h1 class="serve-name">留学评估<span class="serve-line"></span></h1>
-                        <p class="serve-de">了解专业的留学分析</p>
-                        <a class="serve-btn" href="/evaluation.html" target="_blank">查看详情</a>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <img class="serve-img" src="/cn/Hirsi/images/ser-2.png" alt="">
-                    <div class="serve-text">
-                        <h1 class="serve-name">院校排名<span class="serve-line"></span></h1>
-                        <p class="serve-de">找找你想去的学校</p>
-                        <a class="serve-btn" href="/schools.html">查看详情</a>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <img class="serve-img" src="/cn/Hirsi/images/ser-3.png" alt="">
-                    <div class="serve-text">
-                        <h1 class="serve-name">留学申请<span class="serve-line"></span></h1>
-                        <p class="serve-de">有经验可信赖的顾问</p>
-                        <a class="serve-btn" href="/study-aboard/assistance.html">查看详情</a>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <img class="serve-img" src="/cn/Hirsi/images/ser-4.png" alt="">
-                    <div class="serve-text">
-                        <h1 class="serve-name">留学百科<span class="serve-line"></span></h1>
-                        <p class="serve-de">你想看的这里都有</p>
-                        <a class="serve-btn" href="/list/88,118.html">查看详情</a>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <img class="serve-img" src="/cn/Hirsi/images/ser-5.png" alt="">
-                    <div class="serve-text">
-                        <h1 class="serve-name">实习+游学<span class="serve-line"></span></h1>
-                        <p class="serve-de">世界太大，出去看看。</p>
-                        <a class="serve-btn" href="/practices.html" target="_blank">查看详情</a>
-                    </div>
-                </div>
-            </li>
-        </ul>
-        <ul class="serve2-list clearfix">
-            <li>
-                <div class="serve2-tit clearfix">
-                    <div class="fl serve2-name-wrap">
-                        <img src="/cn/Hirsi/images/icon-s1.png" alt="">
-                        <span class="serve2-name">留学报告</span>
-                    </div>
-                    <a class="serve-more fr" href="/list/178,125.html">MORE</a>
-                </div>
-                <dl>
-                    <?php
-                    $data = \app\modules\cn\models\Content::getContent(['category' => "125,178", "pageSize" => 5]);
-                    foreach ($data as $v) {
-                        ?>
-                        <dt>
-                            <a href="/word-details/<?php echo $v['id'] ?>/index,178,125.html"><?php echo $v['name'] ?></a>
-                        </dt>
-                        <?php
-                    }
-                    ?>
-                </dl>
-            </li>
-            <li>
-                <div class="serve2-tit clearfix">
-                    <div class="fl serve2-name-wrap">
-                        <img src="/cn/Hirsi/images/icon-s2.png" alt="">
-                        <span class="serve2-name">问答专区</span>
-                    </div>
-                    <a class="serve-more fr" href="/question.html">MORE</a>
-                </div>
-                <dl>
-                    <?php
-                    $data = \app\modules\cn\models\Content::getContent(['category' => "121,178", "pageSize" => 5]);
-                    foreach ($data as $v) {
-                        ?>
-                        <dt>
-                            <a href="/word-details/<?php echo $v['id'] ?>/index,178,121.html"><?php echo $v['name'] ?></a>
-                        </dt>
-                        <?php
-                    }
-                    ?>
-                </dl>
-            </li>
-            <li>
-                <div class="serve2-tit clearfix">
-                    <div class="fl serve2-name-wrap">
-                        <img src="/cn/Hirsi/images/icon-s3.png" alt="">
-
-                        <span class="serve2-name">留学公开课</span>
-                    </div>
-                    <a class="serve-more fr" href="/public-class.html">MORE</a>
-                </div>
-                <dl>
-                    <?php
-                    $data = \app\modules\cn\models\Content::getContent(['category' => "107,178", "pageSize" => 5]);
-                    foreach ($data as $k => $v) {
-                        ?>
-                        <dt><a href="/public-class/<?php echo $v['id'] ?>.html"><?php echo $k + 1 ?>
-                                .<?php echo $v['name'] ?></a></dt>
-                        <?php
-                    }
-                    ?>
-
-                </dl>
-            </li>
-        </ul>
     </div>
 </section>
 <!--考试服务-->
-<section class="test">
-    <div class="w10 tm">
-        <h1 class="module-tit inb"><em class="line-2" style="border-bottom: 3px solid #ffffff">考试</em>服务</h1>
-        <ul class="test-list clearfix">
-            <li>
-                <span class="test-name">课</span>
-                <img class="test-img" src="/cn/Hirsi/images/19.png" alt="">
-                <a href="/training.html">
-                    <div class="test-de">备考课程</div>
-                </a>
-            </li>
-            <li>
-                <span class="test-name">精</span>
-                <img class="test-img" src="/cn/Hirsi/images/20.png" alt="">
-                <a href="/public-class.html">
-                    <div class="test-de">公开课</div>
-                </a>
-            </li>
-            <li>
-                <span class="test-name">疑</span>
-                <img class="test-img" src="/cn/Hirsi/images/21.png" alt="">
-                <a href="/question.html">
-                    <div class="test-de">问答</div>
-                </a>
-            </li>
-            <li>
-                <span class="test-name">机</span>
-                <img class="test-img" src="/cn/Hirsi/images/22.png" alt="">
-                <a href="/problem.html#toggle">
-                    <div class="test-de">机经下载</div>
-                </a>
-            </li>
-            <li>
-                <span class="test-name">测</span>
-                <img class="test-img" src="/cn/Hirsi/images/23.png" alt="">
-                <a href="http://www.gmatonline.cn/exam/index.html" target="_blank">
-                    <div class="test-de">模考与测评</div>
-                </a>
-            </li>
-            <li>
-                <span class="test-name">巧</span>
-                <img class="test-img" src="/cn/Hirsi/images/24.png" alt="">
-                <a href="/list/115,165.html">
-                    <div class="test-de">提分技巧</div>
-                </a>
-            </li>
-            <li>
-                <span class="test-name">研</span>
-                <img class="test-img" src="/cn/Hirsi/images/25.png" alt="">
-                <a href="/list/115,125.html">
-                    <div class="test-de">研究报告</div>
-                </a>
-            </li>
-            <li>
-                <span class="test-name">讯</span>
-                <img class="test-img" src="/cn/Hirsi/images/26.png" alt="">
-                <a href="/list/115,118.html">
-                    <div class="test-de">考试动态</div>
-                </a>
-            </li>
-        </ul>
-        <div class="clearfix">
-            <ul class="testLeft-wrap fl clearfix">
-                <li style="margin-bottom: 15px;">
-                    <div class="erm-wrap"><img src="/cn/Hirsi/images/erm-1.png" alt="扫描二维码，下载APP"></div>
-                    <p class="erm-name">GMAT APP</p>
+<section class="eaxm_service">
+    <p class="Record_title">考试服务</p>
+    <div class="service_line"></div>
+    <div class="eaxm_list">
+        <!--留学服务轮播  循环li-->
+        <div class="eaxm_bd">
+            <ul>
+                <li>
+                    <img src="/cn/Hirsi/images/test-1.png" alt="">
+                    <div class="eaxm_bot">
+                        <p>GMAT</p>
+                        <a href="/gmatsheet.html">查看详情</a>
+                    </div>
                 </li>
                 <li>
-                    <div class="erm-wrap"><img src="/cn/Hirsi/images/erm-2.png" alt="扫描二维码，下载APP"></div>
-                    <p style="background: #E95C4A;" class="erm-name">TOEFL APP</p>
+                    <img src="/cn/Hirsi/images/test-2.png" alt="">
+                    <div class="eaxm_bot">
+                        <p>GRE</p>
+                        <a href="/gre.html">查看详情</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="/cn/Hirsi/images/test-3.png" alt="">
+                    <div class="eaxm_bot">
+                        <p>托福</p>
+                        <a href="/toefl/assistance.html">查看详情</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="/cn/Hirsi/images/test-4.png" alt="">
+                    <div class="eaxm_bot">
+                        <p>雅思</p>
+                        <a href="/ieltssheet.html">查看详情</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="/cn/Hirsi/images/test-5.png" alt="">
+                    <div class="eaxm_bot">
+                        <p>SAT</p>
+                        <a href="/satsheet.html">查看详情</a>
+                    </div>
                 </li>
             </ul>
-            <div class="testRight-wrap fr">
-                <p class="rightServe-name tl clearfix">GMAT每日一题 <a class="more fr" href="/problem.html">MORE</a></p>
-                <div class="slide02 clearfix">
-                    <?php
-                    $one = [];
-                    $two = [];
-                    $data = \app\modules\cn\models\Content::getContent(['category' => "249",'fields' => "abstract", "pageSize" => 100]);
-                    foreach ($data as $k => $v) {
-                        if($k%2==0){
-                            $one[] = $v;
-                        }else{
-                            $two[] = $v;
-                        }
-                    }
-                    ?>
-
-
-                    <div class="slide-f1 fl">
-                        <div class="topicBd">
-                            <ol class="topic-list">
-                                <?php
-                                foreach($one as $v) {
-                                    ?>
-                                    <li>
-
-                                        <a href="/word-details/<?php echo $v['id'] ?>/249.html"><?php echo $v['name']?></a>
-
-                                        <p class="ellipsis-2 tode"><?php echo $v['abstract']?></p>
-                                    </li>
-                                    <?php
-                                }
-                                ?>
-                            </ol>
-
-                        </div>
-                    </div>
-
-                    <div class="slide-fr fr">
-                        <div class="topicBd">
-                            <ol class="topic-list">
-                                <?php
-                                foreach($two as $v) {
-                                    ?>
-                                    <li>
-                                        <a href="/word-details/<?php echo $v['id'] ?>/249.html"><?php echo $v['name']?></a>
-
-                                        <p class="ellipsis-2 tode"><?php echo $v['abstract']?></p>
-                                    </li>
-                                    <?php
-                                }
-                                ?>
-
-                            </ol>
-
-                        </div>
-                    </div>
-
+        </div>
+<!--        <a class="next"><i class="iconfont next_icon">&#xe602;</i></a>-->
+<!--        <a class="prev"><i class="iconfont prev_icon">&#xe601;</i></a>-->
+    </div>
+    <div class="eaxm_tab"><!--考试服务选项卡-->
+        <div class="eaxm_left"><!--考试服务选项卡左边-->
+            <img src="/cn/Hirsi/images/reply.png" alt="">
+<!--            <div class="eaxm_left_tab"><span>2018</span><p>年<span>GMAT</span>考务查询</p></div>-->
+        </div>
+        <div class="eaxm_center eaxm_center_1"><!--第二个选项卡中间-->
+            <div class="eaxm_center_nav">
+                <ul>
+                    <li>GMAT</li>
+                    <li>GRE</li>
+                    <li>托福</li>
+                    <li>雅思</li>
+                    <li>SAT</li>
+                </ul>
+            </div>
+            <div class="eaxm_center_content content0"><!--对应有几个选项就有几个slideBox 外层循环slideBox -->
+                <div class="eaxm_center_bd slideBox">
+                    <ul>
+                        <?php foreach($news['gmat'] as $v){?>
+                            <li>
+                                <a href="/word-details/<?php echo $v['id']?>/index,261.html"><span class="Statement"><?php echo $v['name']?></span></a>
+                            </li>
+                        <?php }?>
+                    </ul>
                 </div>
-                <script>
-                    jQuery(".slide-f1").slide({
-                        mainCell: ".topicBd ol",
-                        autoPlay: true,
-                        effect: "topMarquee",
-                        interTime: 50,
-                        vis: 5,
-                        autoPage: true
-                    });
-                    jQuery(".slide-fr").slide({
-                        mainCell: ".topicBd ol",
-                        autoPlay: true,
-                        effect: "topMarquee",
-                        interTime: 50,
-                        vis: 5,
-                        autoPage: true
-                    });
-                </script>
+                <div class="eaxm_center_bd slideBox">
+                    <ul>
+                        <?php foreach($news['gre'] as $v){?>
+                            <li>
+                                <a href="/word-details/<?php echo $v['id']?>/index,261.html"><span class="Statement"><?php echo $v['name']?></span></a>
+                            </li>
+                        <?php }?>
+                    </ul>
+                </div>
+                <div class="eaxm_center_bd slideBox">
+                    <ul>
+                        <?php foreach($news['toefl'] as $v){?>
+                            <li>
+                                <a href="/word-details/<?php echo $v['id']?>/index,261.html"><span class="Statement"><?php echo $v['name']?></span></a>
+                            </li>
+                        <?php }?>
+                    </ul>
+                </div>
+                <div class="eaxm_center_bd slideBox">
+                    <ul>
+                        <?php foreach($news['ielts'] as $v){?>
+                            <li>
+                                <a href="/word-details/<?php echo $v['id']?>/index,261.html"><span class="Statement"><?php echo $v['name']?></span></a>
+                            </li>
+                        <?php }?>
+                    </ul>
+                </div>
+                <div class="eaxm_center_bd slideBox">
+                    <ul>
+                        <?php foreach($news['sat'] as $v){?>
+                            <li>
+                                <a href="/word-details/<?php echo $v['id']?>/index,261.html"><span class="Statement"><?php echo $v['name']?></span></a>
+                            </li>
+                        <?php }?>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="eaxm_right"><!--第二个选项卡右边-->
+            <a href="">
+                <div class="eaxm_recommend">
+                    <img style="width: 100%" src="http://www.thinkwithu.com/<?php echo $news['recommend'][0]['image']?>" alt="">
+                    <div class="ency_bot_words"><p><?php echo $news['recommend'][0]['name']?></p></div>
+                </div>
+            </a>
+            <div class="eaxm_right_lb">
+                <ul>
+                    <?php foreach($news['recommend'] as $k=>$v){
+                        if($k>0){?>
+                        <li class="active">
+                            <span><?php echo $k?></span><a href="/word-details/<?php echo $v['id']?>/index,261.html" ><?php echo $v['name']?></a>
+                        </li>
+                    <?php }}?>
+                   </ul>
             </div>
         </div>
     </div>
 </section>
-<!--热门学校-->
-<section class="hotSchools">
-    <div class="w10 tm">
-        <h1 class="module-tit inb" style="color: #ff0000;"><em class="line-2">本周热</em>门学校</h1>
-        <div>
-            <ul class="school-img clearfix">
-                <li><a href="/schools/11664.html"><img
-                            src="http://schools.smartapply.cn/files/2015/0115/20150115033833448.jpg" alt=""></a></li>
-                <li><a href="/schools/11702.html"><img
-                            src="http://schools.smartapply.cn/files/2015/0119/20150119014957762.jpg" alt=""></a></li>
-                <li><a href="/schools/11752.html"><img
-                            src="http://schools.smartapply.cn/files/2015/0120/20150120033644987.jpg" alt=""></a></li>
-                <li><a href="/schools/11756.html"><img
-                            src="http://schools.smartapply.cn/files/2015/0120/20150120030905295.jpg" alt=""></a></li>
-                <li><a href="/schools/11758.html"><img
-                            src="http://schools.smartapply.cn/files/2015/0120/20150120040227130.jpg" alt=""></a></li>
-                <li><a href="/schools/11665.html"><img
-                            src="http://schools.smartapply.cn/files/2015/0115/20150115034354272.png" alt=""></a></li>
-                <li><a href="/schools/11666.html"><img
-                            src="http://schools.smartapply.cn/files/2015/0115/20150115034548977.png" alt=""></a></li>
-                <li><a href="/schools/11667.html"><img
-                            src="http://schools.smartapply.cn/files/2015/0115/20150115034659400.jpg" alt=""></a></li>
-                <li><a href="/schools/11668.html"><img
-                            src="http://schools.smartapply.cn/files/2015/0115/20150115034807979.jpg" alt=""></a></li>
-                <li><a href="/schools/11669.html"><img
-                            src="http://schools.smartapply.cn/files/2015/0115/20150115034934768.jpg" alt=""></a></li>
-                <li><a href="/schools/11670.html"><img
-                            src="http://schools.smartapply.cn/files/2015/0115/20150115035042155.gif" alt=""></a></li>
-                <li><a href="/schools/11671.html"><img
-                            src="http://schools.smartapply.cn/files/2015/0115/20150115035640843.jpg" alt=""></a></li>
+<!--成功案例-->
+<section class="success_case">
+    <p class="Record_title">成功案例</p>
+    <div class="service_line"></div>
+    <div class="Curriculum_Broadcast">
+        <div class="bdCurriculum">
+            <ul class="banner"><!--外层循环li-->
+                <li><!--内层层循环div  recommendation-->
+                    <?php foreach($case['gmat'] as $v){?>
+                    <div class="recommendation">
+                        <div class="recommendation_cover">
+                            <div class="reco_img"><img src="<?php echo $v['image']?>" alt="申友高分案例"></div>
+                            <div class="reco_iforma">
+                                <p>姓名:<?php echo $v['name']?></p>
+                                <p>分数:<?php echo $v['score']?></p>
+                                <p>出分时间:<?php echo $v['time']?></p>
+                                <p><?php echo $v['title']?></p>
+                            </div>
+                            <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank"><div class="zx_btn">咨询高分秘籍</div></a>
+                        </div>
+                    </div>
+                    <?php }?>
+                </li>
+                <li>
+                    <?php foreach($case['gre'] as $v){?>
+                    <div class="recommendation">
+                        <div class="recommendation_cover">
+                            <div class="reco_img"><img src="<?php echo $v['image']?>" alt="申友高分案例"></div>
+                            <div class="reco_iforma">
+                                <p>姓名:<?php echo $v['name']?></p>
+                                <p>分数:<?php echo $v['score']?></p>
+                                <p>出分时间:<?php echo $v['time']?></p>
+                                <p><?php echo $v['title']?></p>
+                            </div>
+                            <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank"><div class="zx_btn">咨询高分秘籍</div></a>
+                        </div>
+                    </div>
+                    <?php }?>
+                </li>
+                <li>
+                    <?php foreach($case['toefl'] as $v){?>
+                    <div class="recommendation">
+                        <div class="recommendation_cover">
+                            <div class="reco_img"><img src="<?php echo $v['image']?>" alt="申友高分案例"></div>
+                            <div class="reco_iforma">
+                                <p>姓名:<?php echo $v['name']?></p>
+                                <p>分数:<?php echo $v['score']?></p>
+                                <p>出分时间:<?php echo $v['time']?></p>
+                                <p><?php echo $v['title']?></p>
+                            </div>
+                            <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank"><div class="zx_btn">咨询高分秘籍</div></a>
+                        </div>
+                    </div>
+                    <?php }?>
+                </li>
+                <li>
+                    <?php foreach($case['ielts'] as $v){?>
+                        <div class="recommendation">
+                            <div class="recommendation_cover">
+                                <div class="reco_img"><img src="<?php echo $v['image']?>" alt="申友高分案例"></div>
+                                <div class="reco_iforma">
+                                    <p>姓名:<?php echo $v['name']?></p>
+                                    <p>分数:<?php echo $v['score']?></p>
+                                    <p>出分时间:<?php echo $v['time']?></p>
+                                    <p><?php echo $v['title']?></p>
+                                </div>
+                                <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank"><div class="zx_btn">咨询高分秘籍</div></a>
+                            </div>
+                        </div>
+                    <?php }?>
+                </li>
+                <li>
+                    <?php foreach($case['abroad'] as $v){?>
+                        <div class="recommendation">
+                            <div class="recommendation_cover">
+                                <div class="reco_img"><img src="<?php echo $v['image']?>" alt="申友留学案例"></div>
+                                <div class="reco_iforma">
+                                    <p>姓名:<?php echo $v['name']?></p>
+                                    <p>毕业院校:<?php echo $v['oldSchool']?></p>
+                                    <p>硬件条件:<?php echo $v['score']?></p>
+                                    <p>录取学校:<?php echo $v['abroadSchool']?></p>
+                                    <p>录取专业:<?php echo $v['major']?></p>
+                                </div>
+                                <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank"><div class="zx_btn">咨询名校秘籍</div></a>
+                            </div>
+                        </div>
+                    <?php }?>
+                </li>
             </ul>
-            <a href="/schools.html">
-                <div class="school-btn">院校查询</div>
-            </a>
         </div>
+        <div class="hd hdCurriculum">
+            <ul>
+                <li><p>GMAT</p></li>
+                <li><p>GRE</p></li>
+                <li><p>托福</p></li>
+                <li><p>雅思</p></li>
+                <li><p>留学</p></li>
+            </ul>
+        </div>
+        <div style="clear: both"></div>
     </div>
 </section>
-<!--申友成就梦想-->
-<section class="sy-dream">
-    <div class="w10 tm">
-        <h1 class="module-tit inb"><em class="line-2" style="border-color: #ffffff">申友成</em>就梦想</h1>
-        <div class="slideBox-4">
-            <ul class="bd-4">
-                <?php
-                $data = \app\modules\cn\models\ Content::getContent(['fields' => 'smallPhoto,abroadSchool,abstract', 'category' => '102,178', 'pageSize' => 30, 'order' => "c.id DESC"]);
-                ?>
-                <?php
-                foreach ($data as $v) {
-                    ?>
-                    <li>
-                        <div class="enroll-wrap clearfix">
-                            <div class="student-img fl"><img src="<?php echo $v['smallPhoto'] ?>" alt=""></div>
-                            <div class="fr enroll-school">
-                                <p class="stu-name ellipsis"><?php echo $v['name'] ?></p>
-                                <p class="school-name ellipsis"><?php echo $v['abroadSchool'] ?></p>
-                                <p class="stu-intro ellipsis-3">
-                                    <?php echo $v['abstract'] ?>
-                                </p>
-                                <div class="tr"><a class="show-btn" target="_blank" href="/word-details/<?php echo $v['id'] ?>/index,102.html">查看详情</a>
-                                </div>
+<!--名师团队-->
+<section class="teacherTeam">
+    <p class="Record_title">名师团队</p>
+    <div class="service_line"></div>
+    <div class="teamCover teamCover_1">
+
+        <div style="width: 970px;float: left">
+            <ul class="tinter_wrap"><!--循环li-->
+                <?php foreach($teacher as $v){?>
+                    <li class="Bdcotent">
+                        <div class="cotent_img"><!--老师图片-->
+                            <img src="http://www.thinkwithu.com<?php echo $v['image']?>" alt="">
+                        </div>
+                        <div class="cotent_imgCover"></div>
+                        <div class="teacher_name"><!--老师名字-->
+                            <p><?php echo $v['name']?> 老师</p>
+                        </div>
+                        <div class="cotent_intro"><!--老师介绍内容-->
+                            <i class="iconfont Trophyicon">&#xe603;</i>
+                            <span class="fir_p"><?php echo $v['abstract']?></span>
+                            <p class="sec_p">个人简介</p>
+                            <p class="th_p"><?php echo strip_tags($v['description'])?></p>
+                            <p class="four_p">主讲课程</p>
+                            <p class="five_p"><?php echo $v['speaker']?></p>
+                            <div class="details">
+                                <a href="/teachers/<?php echo $v['name']?>/<?php echo $v['id']?>.html">查看详情<i class="iconfont cricle_right">&#xe682;</i></a>
                             </div>
                         </div>
                     </li>
-                    <?php
-                }
-                ?>
+                <?php }?>
             </ul>
         </div>
-        <div class="enroll-list-wrap clearfix">
-            <div class="fl" style="margin-top: 15px;"><img src="/cn/Hirsi/images/tri-3.png" alt=""></div>
-            <div class="txtMarquee-top txtScroll-top fl">
-                <div class="bd">
-                    <ul class="enroll-list clearfix">
-                        <?php
-                        foreach ($data as $v) {
-                            ?>
-                            <li>
-                                <div class="fl stu-img"><img src="<?php echo $v['smallPhoto'] ?>" alt=""></div>
-                                <div class="fl stuIntro-wrap">
-                                    <p><?php echo $v['name'] ?>：<?php echo $v['abroadSchool'] ?></p>
-                                    <p class="ellipsis-2 stu-info">
-                                        <?php echo $v['abstract'] ?>
-                                    </p>
-                                </div>
-                            </li>
-                            <?php
-                        }
-                        ?>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--选择申友，掌握未来-->
-<section>
-    <h1 class="syIntro-tit">选择申友，掌握未来</h1>
-    <div class="w10">
-        <div class="slideBox-1 relative">
-            <div class="banner2 ">
-                <?php
-                $data = \app\modules\cn\models\Content::getContent(['type' =>1,'fields' => 'abstract，smallPhoto,job,description', 'category' => "139,140", 'pageSize' => 100]);
-                $count = count($data) / 4;
-                for ($i = 0; $i < $count; $i++) {
-                    ?>
-                    <ul class="teacher-list">
-                        <?php
-                        $j = 0;
-                        foreach ($data as $key => $value) {
-                            if ($j == 4) {
-                                break;
-                            }
-                            ?>
-                            <li>
-                                <div class="teacher-img fl"><a
-                                        href="/teachers/<?php echo $value['name'] ?>/<?php echo $value['id'] ?>.html"><img
-                                            src="<?php echo $value['image'] ?>"
-                                            alt="<?php echo $value['name'] ?>头像"></a>
-                                </div>
-                                <div class="teacherInfo-wrap fr">
-                                    <a href="/teachers/<?php echo $value['name'] ?>/<?php echo $value['id'] ?>.html"><h1
-                                            class="teacher-name"><?php echo $value['name'] ?></h1></a>
 
-                                    <p class="teacher-tag"><?php echo $value['job'] ?></p>
+        <div class="teamCoverhd">
+            <i class="iconfont prev">&#xe605;</i>
+            <div class="smallImg">
+                <ul>
+                      <?php foreach($teacher as $v) { ?>
+                          <li>
+                              <div class="teamCoverhd_image">
+                                  <img src="http://www.thinkwithu.com<?php echo $v['image']?>" alt="">
+                              </div>
 
-                                    <p class="teacher-tag ellipsis"><?php echo $value['abstract'] ?></p>
-                                    <a class="refer-btn2"
-                                       href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="
-                                       target="_blank">在线咨询</a>
-                                </div>
-                            </li>
-                            <?php
-                            $j++;
-                            unset($data[$key]);
-                        }
-                        ?>
-                    </ul>
-                    <?php
-                }
-                ?>
+<!--                              <div class="name_mask">--><?php //echo $v['name']?><!--</div>-->
+                              <div class="name_mask"></div>
+                          </li>
+                      <?php }?>
+                </ul>
             </div>
-            <div class="prev ani">
-                <div class="tri-1"></div>
-            </div>
-            <div class="next ani">
-                <div class="tri-1"></div>
-            </div>
+            <i class="iconfont next">&#xe606;</i>
         </div>
-    </div>
-</section>
-<!--海外mentor-->
-<section>
-    <div class="abroad-wrap w10">
-        <h1 class="tm abroad-tit">海外Mentor</h1>
-        <div class="slideBox-3">
-            <ul class="info-list banner4">
-                <?php
-                $data = \app\modules\cn\models\Content::getContent(['fields' => 'abstract', 'category' => "142"]);
-                foreach ($data as $k => $v) {
-                    ?>
-                    <li class="info-list-wrap">
-                        <div class="abroad-intro">
-                            <p> <?php echo $v['abstract'] ?></p>
-                            <div class="tri-2"></div>
-                            <div class="abroad-line"></div>
-                        </div>
-                        <div class="abroad-img"><a href="#"><img src="<?php echo $v['image'] ?>" alt=""></a></div>
-                    </li>
-                    <?php
-                }
-                ?>
-            </ul>
-            <ul class="abroad-slide"></ul>
-        </div>
+
+
     </div>
 </section>
 <!--研发成果-->
-<section>
-    <h1 class="syIntro-tit">研发成果</h1>
-    <div class="w10">
-        <div class="picMarquee-left relative">
-            <div class="banner3 " style="padding: 40px 34px;overflow: hidden;">
-                <ul class="books-list clearfix">
-                    <?php
-                    $data = \app\modules\cn\models\Content::getContent(['category' => "108"]);
-                    foreach ($data as $k => $v) {
-                        ?>
-                        <li><a href="/materials.html"><span></span><img src="<?php echo $v['image'] ?>" alt="教材"></a>
-                        </li>
-                        <?php
-                    }
-                    ?>
-                </ul>
-            </div>
-            <div class="prev ani">
-                <div class="tri-1"></div>
-            </div>
-            <div class="next ani">
-                <div class="tri-1"></div>
-            </div>
+<section class="rdResults">
+    <p class="Record_title">研发成果</p>
+    <div class="service_line"></div>
+    <div class="Results_list">
+        <!--留学服务轮播  循环li-->
+        <div class="Results_bd">
+            <ul>
+                <?php foreach($book as $v){?>
+                <li>
+                    <img src="http://www.thinkwithu.com<?php echo $v['image']?>" alt="<?php echo $v['name']?>">
+                </li>
+                <?php }?>
+            </ul>
         </div>
-        <!--联系申友-->
-        <!--        <div class="contact-wrap">-->
-        <!--            <div class="contact-header clearfix">-->
-        <!--                <div class="contact-header-left fl">-->
-        <!--                    <span class="contact-ch">联系申友</span>-->
-        <!--                    <span class="contact-tel-text">全国免费咨询热线：</span>-->
-        <!--                    <span class="contact-tel">400-600-1123</span>-->
-        <!--                </div>-->
-        <!--                <div class="contact-header-right fr">-->
-        <!--                    <span class="on">北京</span><em>|</em>-->
-        <!--                    <span>上海</span><em>|</em>-->
-        <!--                    <span>成都</span><em>|</em>-->
-        <!--                    <span>西安</span><em>|</em>-->
-        <!--                    <span>武汉</span><em>|</em>-->
-        <!--                    <span>杭州</span><em>|</em>-->
-        <!--                    <span>长沙</span><em>|</em>-->
-        <!--                    <span>广东</span><em>|</em>-->
-        <!--                    <span>深圳</span><em>|</em>-->
-        <!--                    <span>美国</span>-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--            <div class="area-wrap clearfix">-->
-        <!--                <div class="fl area-left clearfix">-->
-        <!--                    <div class="fl"><img src="/cn/Hirsi/images/area-1.png" alt=""></div>-->
-        <!--                    <div class="fr area-left-text">-->
-        <!--                        <h1 class="area-name">北京服务中心</h1>-->
-        <!--                        <div>-->
-        <!--                            <span>电话：</span><span class="inb left-text">010-62416397</span>-->
-        <!--                        </div>-->
-        <!--                        <div>-->
-        <!--                            <span>地址：</span><span class="inb left-text">北京市海淀区海淀北二街8号中关村SOHO大厦617室</span>-->
-        <!--                        </div>-->
-        <!--                    </div>-->
-        <!---->
-        <!--                </div>-->
-        <!--                <div class="fl area-mid">-->
-        <!--                    <p>公交路线：</p>-->
-        <!--                    <p>1、302, 641, 718，中关村南下</p>-->
-        <!--                    <p>2、26，运通114，北京市地震局下车</p>-->
-        <!--                    <p>3、特9外，运通106，运通110，中关村西站下</p>-->
-        <!--                    <p class="metro">-->
-        <!--                        地铁路线：乘坐地铁10号线至苏州街站下B口出，-->
-        <!--                        乘坐地铁4号线至中关村站D口出，直行约5分钟即-->
-        <!--                        可到达中关村SOHO大厦。-->
-        <!--                    </p>-->
-        <!--                </div>-->
-        <!--                <div class="fr area-right">-->
-        <!--                    <div class="area-right-tit">预约北京顾问</div>-->
-        <!--                    <div class="area-form">-->
-        <!--                        <div class="form-int">-->
-        <!--                            <div class="icon-img"><img src="/cn/Hirsi/images/icon-a1.png" alt=""></div>-->
-        <!--                            <span>姓&nbsp;&nbsp;&nbsp;&nbsp;名：</span>-->
-        <!--                            <input type="text" name="name" id="username-2">-->
-        <!--                        </div>-->
-        <!--                        <div class="form-int">-->
-        <!--                            <div class="icon-img"><img src="/cn/Hirsi/images/icon-a4.png" alt=""></div>-->
-        <!--                            <span>邮&nbsp;&nbsp;&nbsp;&nbsp;箱：</span>-->
-        <!--                            <input type="text" name="name" id="email">-->
-        <!--                        </div>-->
-        <!--                        <div class="form-int">-->
-        <!--                            <div class="icon-img"><img src="/cn/Hirsi/images/icon-a3.png" alt=""></div>-->
-        <!--                            <span>电&nbsp;&nbsp;&nbsp;&nbsp;话：</span>-->
-        <!--                            <input type="text" name="name" id="tel-2">-->
-        <!--                        </div>-->
-        <!--                        <div class="form-int">-->
-        <!--                            <div class="icon-img"><img src="/cn/Hirsi/images/icon-a4.png" alt=""></div>-->
-        <!--                            <span>验<em>证</em>码：</span>-->
-        <!--                            <input style="width: 36px;padding: 0;height: 17px" type="text" name="name" id="auth-code">-->
-        <!--                            <div class="auth-code inb">获取验证码</div>-->
-        <!--                        </div>-->
-        <!--                        <div class="tr"><span class="form-submit">确定</span></div>-->
-        <!--                    </div>-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--        </div>-->
-        <!--    </div>-->
+        <a class="next"><i class="iconfont next_icon">&#xe602;</i></a>
+        <a class="prev"><i class="iconfont prev_icon">&#xe601;</i></a>
+    </div>
 </section>
-<!--中间弹窗-->
-<!--<div class="m-tc">-->
-<!--    <div class="ic-wrap">-->
-<!--        <div class="ic-close"></div>-->
-<!--        <a href="/word-details/1349/178,105,118.html"><img src="/cn/images/b-ic.png" alt=""></a>-->
-<!--    </div>-->
-<!--</div>-->
-<!--footer 底部-->
-<!--<footer>-->
-<!--    <div class="w10">-->
-<!--        <div class="footer-list-wrap clearfix">-->
-<!--            <ul class="footer-list">-->
-<!--                <li><a href="#">美国</a></li>-->
-<!--                <li><a href="#">英国</a></li>-->
-<!--                <li><a href="#">香港</a></li>-->
-<!--                <li><a href="#">澳洲</a></li>-->
-<!--                <li><a href="#">其他</a></li>-->
-<!--            </ul>-->
-<!--            <ul class="footer-list">-->
-<!--                <li><a href="#">GMAT做题</a></li>-->
-<!--                <li><a href="#">GMAT测评</a></li>-->
-<!--                <li><a href="#">托福考试</a></li>-->
-<!--                <li><a href="#">高分心得</a></li>-->
-<!--                <li><a href="#">开班查询</a></li>-->
-<!--            </ul>-->
-<!--            <ul class="footer-list">-->
-<!--                <li><a href="#">本科留学</a></li>-->
-<!--                <li><a href="#">硕士留学</a></li>-->
-<!--                <li><a href="#">博士留学</a></li>-->
-<!--                <li><a href="#">游学服务</a></li>-->
-<!--            </ul>-->
-<!--            <ul class="footer-list ft2 clearfix">-->
-<!--                <li><a href="#">院校排名</a></li>-->
-<!--                <li><a href="#">留学规划</a></li>-->
-<!--                <li><a href="#">签证面试</a></li>-->
-<!--                <li><a href="#">留学问答</a></li>-->
-<!--                <li><a href="#">专业解析 </a></li>-->
-<!--                <li><a href="#">文书写作 </a></li>-->
-<!--                <li><a href="#">就业指导 </a></li>-->
-<!--                <li><a href="#">留学评估 </a></li>-->
-<!--            </ul>-->
-<!--            <ul class="footer-list">-->
-<!--                <li><a href="#">申友介绍 </a></li>-->
-<!--                <li><a href="#">名师文档 </a></li>-->
-<!--                <li><a href="#">行业资质 </a></li>-->
-<!--                <li><a href="#">加入我们 </a></li>-->
-<!--                <li><a href="#">联系我们 </a></li>-->
-<!--            </ul>-->
-<!--        </div>-->
-<!--        <div class="tm ft-tel-wrap">-->
-<!--            <img src="/cn/Hirsi/images/icon-f1.png" alt="">-->
-<!--            <span class="ft-tel">400-600-1123</span>-->
-<!--        </div>-->
-<!--        <div class="ftErm-wrap tm">-->
-<!--            <div class="inb ft-erm-wrap">-->
-<!--                <img src="/cn/Hirsi/images/ft-erm-1.png" alt="">-->
-<!--                <span class="ft-erm-name">申友GMAT</span>-->
-<!--            </div>-->
-<!--            <div class="inb ft-erm-wrap">-->
-<!--                <img src="/cn/Hirsi/images/ft-erm-2.png" alt="">-->
-<!--                <span class="ft-erm-name">申友留学</span>-->
-<!--            </div>-->
-<!--            <div class="inb ft-erm-wrap">-->
-<!--                <img src="/cn/Hirsi/images/ft-erm-3.png" alt="">-->
-<!--                <span class="ft-erm-name">雷哥GMAT</span>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</footer>-->
-<!--copyRight-->
-<!--<section class="copyRight tm">-->
-<!--    <div class="copyRight-link">-->
-<!--        <span class="link-tit">友情链接:</span>-->
-<!--        <a href="#">小申托福&nbsp;&nbsp;|</a>-->
-<!--        <a href="#">留学社区&nbsp;&nbsp;|</a>-->
-<!--        <a href="#">去留学网&nbsp;&nbsp;|</a>-->
-<!--        <a href="#">雷哥GMAT在线&nbsp;&nbsp;|</a>-->
-<!--        <a href="#">新浪微博&nbsp;&nbsp;|</a>-->
-<!--        <a href="#">申友教育人人网主页</a>-->
-<!--    </div>-->
-<!--    <div class="copyRight-text"><span>Copyright © 2015 All Right Reserved 申友教育 版权所有 京ICP备16000003号</span></div>-->
-<!--</section>-->
-<script>
 
-    //    banner 轮播
-    jQuery(".slideBox").slide({
-        mainCell: ".banner",
-        titCell: ".hd",
-        effect: "fold",
-        autoPlay: true,
-        autoPage: "<li></li>"
-    });
-    //无缝滚动
-    jQuery(".slideBox-4").slide({
-        mainCell: ".bd-4",
-        effect: "fold",
-        delayTime: 800,
-        autoPlay: true,
-    });
-    //    jQuery(".txtMarquee-top").slide({
-    //        mainCell: ".enroll-list",
-    //        autoPlay: true,
-    //        effect: "topMarquee",
-    //        vis: 1,
-    //        opp: false,
-    //        interTime: 50
-    //    });
-    jQuery(".txtScroll-top").slide({
-        mainCell: ".bd ul",
-        autoPage: true,
-        effect: "topLoop",
-        delayTime: 1000,
-        autoPlay: true,
-        vis: 1
-    });
-    //    老师列表 轮播
-    jQuery(".slideBox-1").slide({
-        mainCell: ".banner2",
-        effect: "leftLoop",
-        autoPlay: true,
-
-    });
-    //     海外Mentor
-    jQuery(".slideBox-3").slide({
-        mainCell: ".banner4",
-        titCell: ".abroad-slide",
-        effect: "fold",
-        delayTime: 1000,
-        autoPlay: true,
-        autoPage: "<li></li>"
-    });
-    //    研发成果 轮播
-    jQuery(".picMarquee-left").slide({
-        mainCell: ".banner3 ul",
-        autoPlay: true,
-        effect: "leftMarquee",
-        vis: 5,
-        interTime: 50,
-        trigger: "click"
-    });
-</script>
 <?php if ($url == '/gmatsheet.html' || $url == '/mentor.html' || $url == '/toeflsheet.html') { ?>
     <div class="contactWay">
         <div class="contactHead">联系方式</div>
@@ -1071,7 +1102,7 @@
                                     <span>咨询热线：</span>
 
                                     <p class="purpleColor"><?php echo $v['phone'] ?></p>
-                                    <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">
+                                    <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank">
                                         <img src="/cn/images/mentor_personIcon.png" alt="咨询图标">
                                         <span>免费咨询</span>
                                     </a>
@@ -1099,9 +1130,6 @@
 }
 else{
 ?>
-    <!--联系申友-->
-    <?php ContactWidget::begin(); ?>
-    <?php ContactWidget::end(); ?>
     <script type="text/javascript">
         jQuery(".connection").slide({mainCell: ".connectBd", trigger: "mouseover"});
     </script>
@@ -1109,21 +1137,79 @@ else{
 }
 ?>
 
-<!-----------------------------尾部------------------------------>
-<?php use app\commands\front\FooterWidget; ?>
-<?php FooterWidget::begin(); ?>
-<?php FooterWidget::end(); ?>
-<!-----------------------------尾部end------------------------------>
-<!-------------------------------------------------右边的悬浮窗------------------------------------------->
-<?php //use app\commands\front\RightSuspensionWidget;?>
-<?php //RightSuspensionWidget::begin();?>
-<?php //RightSuspensionWidget::end();?>
-<!----------------------------------------------左边悬浮窗-------------------------------------------------------------->
-<?php //use app\commands\front\LeftSuspensionWidget;?>
-<?php //LeftSuspensionWidget::begin();?>
-<?php //LeftSuspensionWidget::end();?>
+
 </body>
 <script>
+    //首页轮播初始化
+    jQuery(".banner_head").slide({mainCell:".bd ul",effect:"leftLoop",autoPlay:true});
+    //留学服务轮播展示
+    jQuery(".service_list").slide({mainCell:".service_bd ul",autoPage:true,effect:"left",autoPlay:true,vis:5});
+    //留学百科选项卡1切换
+    jQuery(".encyclopedia_content").slide({});
+    //留学鼠标移入效果
+    $('.ency_school').hover(function () {
+        $(this).find('.ency_mask').show();
+    },function () {
+        $(this).find('.ency_mask').hide();
+    });
+    //留学百科选项卡2上下轮播
+    jQuery(".encyclopedia_center .slideBox").slide({ mainCell:"ul",vis:9,prevCell:".sPrev",nextCell:".sNext",effect:"topMarquee",interTime:50,autoPlay:true,trigger:"click"});
+    //留学百科选项卡2切换
+    jQuery(".encyclopedia_center").slide({titCell:".ency_center_nav li",mainCell:".ency_center_content"});
+    //留学百科选项卡2右边轮播
+    jQuery(".encyctab_right").slide({mainCell:".encyctab_right_lb ul",autoPlay:true,effect:"topMarquee",vis:5,interTime:50,trigger:"click"});
+    //中间轮播广告
+    jQuery(".carousel_head").slide({mainCell:".bd ul",effect:"leftLoop",autoPlay:true});
+    //考试服务轮播展示
+    // jQuery(".eaxm_list").slide({mainCell:".eaxm_bd ul",autoPage:true,effect:"left",autoPlay:true,vis:5});
+    //考试服务选项卡2上下轮播
+    jQuery(".eaxm_center .slideBox").slide({ mainCell:"ul",vis:9,prevCell:".sPrev",nextCell:".sNext",effect:"topMarquee",interTime:50,autoPlay:true,trigger:"click"});
+    //考试服务选项卡2切换
+    jQuery(".eaxm_center").slide({titCell:".eaxm_center_nav li",mainCell:".eaxm_center_content"});
+    //考试服务选项卡2右边轮播
+    jQuery(".eaxm_right").slide({mainCell:".eaxm_right_lb ul",autoPlay:true,effect:"topMarquee",vis:5,interTime:50,trigger:"click"});
+    //成功案例
+    jQuery(".Curriculum_Broadcast").slide({
+        mainCell: ".bdCurriculum ul",
+        effect: "leftLoop",
+        trigger: "click",
+        delayTime: 1000,
+        interTime: 3000,
+        mouseOverStop: true
+    });
+    //名师团队
+
+
+    jQuery(".teamCover").slide({
+        titCell:".smallImg ul li",
+        mainCell:".tinter_wrap",
+        effect:"fold",
+        autoPlay:true,
+        interTime:3000,
+        mouseOverStop:true,
+    });
+    jQuery(".teamCover .teamCoverhd").slide({mainCell:".smallImg ul",interTime: 3000,vis:3,scroll:1,effect:"topLoop", autoPlay:true,});
+    $('.Bdcotent').mouseover(function () {
+        $('.smallImg ul').trigger('mouseover');
+    }).mouseout(function () {
+        $('.smallImg ul').trigger('mouseout');
+    });
+    $('.smallImg ul li.clone').removeClass('on');
+    //研发成果
+    jQuery(".Results_list").slide({mainCell:".Results_bd ul",autoPage:true,effect:"left",autoPlay:true,vis:6});
+
+    // jQuery(".game163").slide({ titCell:".smallImg li", mainCell:".bigImg", effect:"fold", autoPlay:true,delayTime:200,			startFun:function(i,p){				if(i==0){ jQuery(".game163 .sPrev").click() } else if( i%4==0 ){ jQuery(".game163 .sNext").click()}			}		});		jQuery(".game163 .smallScroll").slide({ mainCell:"ul",delayTime:100,vis:4,scroll:4,effect:"left",autoPage:true,prevCell:".sPrev",nextCell:".sNext",pnLoop:false });
+
+
+
+
+
+
+
+
+
+
+
     var H = $(window).height();
     mh = (H - 322) / 2;
     setTimeout(function(){

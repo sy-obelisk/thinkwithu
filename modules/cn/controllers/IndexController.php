@@ -4,7 +4,9 @@
  * by Obelisk
  */
 namespace app\modules\cn\controllers;
+
 use yii;
+use app\libs\Schools;
 use app\modules\cn\models\Content;
 use app\modules\cn\models\Category;
 use app\libs\ThinkUController;
@@ -36,7 +38,30 @@ class IndexController extends ThinkUController {
 //            default:
 //                break;
 //        }
-        return $this->renderPartial('index');
+        $banner = Content::getContent(['fields' => 'url', 'category' => "190,223", 'pageSize' => 10]);
+        $abroadPro = Content::getContent(['fields' => 'url', 'category' => "261", 'pageSize' => 10]);
+        $news['gmat'] = Content::getContent(['category' => "115,166", 'pageSize' => 15, 'order' => 'c.id desc']);
+        $news['toefl'] = Content::getContent(['category' => "116,166", 'pageSize' => 15, 'order' => 'c.id desc']);
+        $news['gre'] = Content::getContent(['category' => "171,166", 'pageSize' => 15, 'order' => 'c.id desc']);
+        $news['ielts'] = Content::getContent(['category' => "172,166", 'pageSize' => 15, 'order' => 'c.id desc']);
+        $news['sat'] = Content::getContent(['category' => "173,166", 'pageSize' => 15, 'order' => 'c.id desc']);
+        $news['recommend'] = Content::getContent(['category' => "169,109", 'pageSize' => 15, 'order' => 'c.id desc']);
+        $abroad['active'] = Content::getContent(['category' => "117,118", 'pageSize' => 15, 'order' => 'c.id desc']);
+        $abroad['plan'] = Content::getContent(['category' => "117,119", 'pageSize' => 15, 'order' => 'c.id desc']);
+        $abroad['state'] = Content::getContent(['category' => "165,117", 'pageSize' => 15, 'order' => 'c.id desc']);
+        $abroad['apply'] = Content::getContent(['category' => "120,117", 'pageSize' => 15, 'order' => 'c.id desc']);
+        $abroad['recommend'] = Content::getContent(['category' => "117", 'pageSize' => 15, 'order' => 'c.id desc']);
+        $case['gmat'] = Content::getContent(['fields' => 'score,time','category' => "115,104,206",'type'=>1, 'pageSize' => 4,'where'=>'c.sort>0', 'order' => 'c.sort asc,c.id desc']);
+        $case['gre'] = Content::getContent(['fields' => 'score,time','category' => "171,104,206",'type'=>1, 'pageSize' => 4, 'where'=>'c.sort>0','order' => 'c.sort asc,c.id desc']);
+        $case['toefl'] = Content::getContent(['fields' => 'score,time','category' => "116,104,206",'type'=>1, 'pageSize' => 4,'where'=>'c.sort>0', 'order' => 'c.sort asc,c.id desc']);
+        $case['ielts'] = Content::getContent(['fields' => 'score,time','category' => "172,104,206",'type'=>1, 'pageSize' => 4,'where'=>'c.sort>0', 'order' => 'c.sort asc,c.id desc']);
+        $case['abroad'] = Content::getContent(['fields' => 'oldSchool,score,time,abroadSchool,major','type'=>1,'category' => "178,206", 'pageSize' => 4, 'where'=>'c.sort>0','order' => 'c.sort asc,c.id desc']);
+        $teacher = Content::getContent(['fields' => 'speaker,job,description,abstract', 'category' => "138,139", 'pageSize' => 15, 'order' => 'c.sort asc,c.id desc']);
+        $book = Content::getContent(['fields' => 'speaker,keywords,description', 'category' => "109,108", 'pageSize' => 15, 'order' => 'c.sort asc,c.id desc']);
+        $this->title='申友官网-留学咨询—名校留学专业申请机构-托福/雅思/GMAT/GRE培训机构-申友网';
+        $this->keywords='出国留学 名校留学 留学咨询 留学条件 留学机构哪家好 美国留学 美国留学咨询机构 美国留学服务 GMAT培训 雅思培训 托福培训 GRE培训';
+        $this->description='申友留学，专注上课与STEM留学咨询，提供留学申请一站式服务，是GMAT与托福 雅思培训的行业领跑者。申友专注美国、英国、加拿大、澳洲、香港等名校留学，留学咨询，出国留学，托福 雅思与GMAT培训，尽在申友。';
+        return $this->render('index',['banner'=>$banner,'abroadPro'=>$abroadPro,'news'=>$news,'teacher'=>$teacher,'abroad'=>$abroad,'case'=>$case,'book'=>$book]);
     }
 
     /**
@@ -79,39 +104,39 @@ class IndexController extends ThinkUController {
      * 文字三级详情详情
      * @Obelisk
      */
-    public function actionWordDetails(){
-    $id = Yii::$app->request->get('id');
-    $category = Yii::$app->request->get('category');
-    $changeNeedCategory =  $category;
-    $categoryArr = explode(",",$category);
-    $end = end($categoryArr);
-    $nav =[];
-    foreach($categoryArr as $k => $v){
-        if($v == 'index'){
-            unset($categoryArr[0]);
-            $nav[$k]['name'] = '首页';
-            $nav[$k]['url'] = '/cn/index';
-        }else{
-            $url = Category::getOneCategory($v);
-            $nav[$k]['name'] = "{$url['name']}";
-            $nav[$k]['url'] = "{$url['url']}";
+    public function actionWordDetails()
+    {
+        $id = Yii::$app->request->get('id');
+        $category = Yii::$app->request->get('category');
+        $changeNeedCategory = $category;
+        $categoryArr = explode(",", $category);
+        $end = end($categoryArr);
+        $nav = [];
+        foreach ($categoryArr as $k => $v) {
+            if ($v == 'index') {
+                unset($categoryArr[0]);
+                $nav[$k]['name'] = '首页';
+                $nav[$k]['url'] = '/cn/index';
+            } else {
+                $url = Category::getOneCategory($v);
+                $nav[$k]['name'] = "{$url['name']}";
+                $nav[$k]['url'] = "{$url['url']}";
+            }
+        }
+        $category = implode(",", $categoryArr);
+        $data = Content::getContent(['fields' => "keywords,abstract,description", 'where' => "c.id = $id"]);
+        if (count($data) == 0) {
+            $this->redirect('/surprise.html');
+        } else {
+            $prev = Content::getContent(['category' => $category, 'where' => "c.id < $id", "order" => "c.id DESC", "pageSize" => 1]);
+            $next = Content::getContent(['category' => $category, 'where' => "c.id > $id", "order" => "c.id ASC", "pageSize" => 1]);
+            $count = $data[0]['viewCount'];
+            Content::updateAll(['viewCount' => ($count + 1)], "id=$id");
+            $this->title = $data[0]['name'].',申友官网-留学咨询—名校留学专业申请机构-托福/雅思/GMAT/GRE培训机构-申友网';
+            $this->keywords = $data[0]['keywords'];
+            return $this->render('wordDetails', ['end' => $end, 'nav' => $nav, 'data' => $data, 'prev' => $prev, 'next' => $next, 'changeNeedCategory' => $changeNeedCategory]);
         }
     }
-    $category = implode(",",$categoryArr);
-    $data = Content::getContent(['fields' => "keywords,abstract,description",'where' => "c.id = $id"]);
-
-    if(count($data) == 0){
-        $this->redirect('/surprise.html');
-    }else{
-        $prev = Content::getContent(['category' => $category,'where' => "c.id < $id","order" => "c.id DESC","pageSize" => 1]);
-        $next = Content::getContent(['category' => $category,'where' => "c.id > $id","order" => "c.id ASC","pageSize" => 1]);
-        $count = $data[0]['viewCount'];
-        Content::updateAll(['viewCount' => ($count+1)],"id=$id");
-        $this->title = $data[0]['name'];
-        $this->keywords = $data[0]['keywords'];
-        return $this->render('wordDetails',['end'=>$end,'nav' => $nav,'data' => $data,'prev' => $prev,'next' => $next,'changeNeedCategory' => $changeNeedCategory]);
-    }
-}
 
     /**
      * 专业内容列表页

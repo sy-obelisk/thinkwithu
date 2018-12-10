@@ -1,7 +1,7 @@
 <div class="connection">
     <div class="connectHd hd">
-        <b><a href="/contactus.html">联系申友</a></b>
-        <span>全国免费咨询热线：<span>400-600-1123</span></span>
+        <b><a href="/contactus.html" style="font-size: 24px">联系申友</a></b>
+        <span style="color: rgb(85,85,85);">全国免费咨询热线：<span>400-600-1123</span></span>
         <ul>
             <?php
                 foreach($data as $k => $v) {
@@ -28,47 +28,49 @@
                     <li>
                         <div class="conBdLeft">
                             <div class="leftL">
-                                <img src="<?php echo $v['image']?>" alt="城市图"/>
+                                <img src="http://www.thinkwithu.com/<?php echo $v['image']?>" alt="城市图"/>
+                                <p><?php echo $v['name']?>服务中心</p>
                             </div>
                             <div class="rightR">
-                                <h3><?php echo $v['name']?>服务中心</h3>
                                 <span><?php echo $v['phone']?"电话：".$v['phone']:''?></span>
                                 <p><?php echo $v['email']?"邮箱：".$v['email']:''?></p>
                                 <p><?php echo $v['place']?"地址：".$v['place']:''?></p>
+                                <ul>
+                                    <li><?php echo $v['busRoutes']?"公交路线：".$v['busRoutes']:''?></pre></li>
+                                    <li><?php echo $v['metroRoutes']?"地铁路线：".$v['metroRoutes']:''?></li>
+                                </ul>
+                            </div>
+                            <div class="conBdCenter">
+
                             </div>
                         </div>
-                        <div class="conBdCenter">
-                            <ul>
-                                <li><?php echo $v['busRoutes']?"公交路线：".$v['busRoutes']:''?></pre></li>
-                                <li><?php echo $v['metroRoutes']?"地铁路线：".$v['metroRoutes']:''?></li>
-                            </ul>
-                        </div>
+
                         <div class="conBdRight">
-                            <a href="javascript:;">预约留学顾问</a>
+                            <a href="javascript:;"><span>/</span> 预约留学顾问 <span>/</span></a>
 
                             <form action="" id="leaveWords">
-                                <div style="margin-top: 20px">
-                                    <img src="/cn/images/studyA_formIcon01.png" alt="图标"/>
+                                <div class="iro" style="margin-top: 10px">
+<!--                                    <img src="/cn/images/studyA_formIcon01.png" alt="图标"/>-->
                                     <label>姓&nbsp;&nbsp;&nbsp;名：</label>
                                     <input type="text" name="name" class="name comLength"/>
                                 </div>
                                 <div>
-                                    <img src="/cn/images/studyA_formIcon02.png" alt="图标"/>
+<!--                                    <img src="/cn/images/studyA_formIcon02.png" alt="图标"/>-->
                                     <label>邮&nbsp;&nbsp;&nbsp;箱：</label>
                                     <input type="text" name="extendValue[]" class="email comLength "/>
                                 </div>
                                 <div>
-                                    <img src="/cn/images/studyA_formIcon03.png" alt="图标"/>
+<!--                                    <img src="/cn/images/studyA_formIcon03.png" alt="图标"/>-->
                                     <label>电&nbsp;&nbsp;&nbsp;话：</label>
                                     <input type="text" name="extendValue[]" class="phone comLength"/>
                                 </div>
                                 <div>
-                                    <img src="/cn/images/studyA_formIcon04.png" alt="图标"/>
+<!--                                    <img src="/cn/images/studyA_formIcon04.png" alt="图标"/>-->
                                     <label>验证码：</label>
                                     <input type="text"  name="code" class="phoneCode speLength"/>
                                     <input type="button" class="code speBtn" onclick="contactCode(this)" value="获取验证码"/>
                                 </div>
-                                <input type="button" onclick="contactSub(this)" value="确定"/>
+                                <input type="button" class="sure_footer" onclick="contactSub(this)" value="确定"/>
                             </form>
                         </div>
                         <div style="clear: both"></div>

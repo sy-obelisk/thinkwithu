@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.encyCover{
+    background: #FBFDFF;
+    padding-bottom: 40px;
+}
+.w12{
+    width: 1200px;
+    margin: auto;
+}
+.bg_w{
+    background: white;
+    overflow: hidden;
+}
+.bannerWrap{
+    width: 100%;
+    padding: 20px 0px;
+    overflow: hidden;
+}
+.banner_l {
+    width: 650px;
+    height: 410px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+}
+.bannerBd ul li img{
+    width: 100%;
+}
+.bannerHd {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    overflow: hidden;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.bannerHd li{
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    margin-left: 10px;
+    background-color: #CBCBCB;
+}
+.bannerHd li.on{
+    background: rgb(153,68,153);
+}
+
+.banner_r {
+    width: 505px;
+    float: right;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+.br_tit {
+    background: #994499;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 0 15px;
+    height: 30px;
+    line-height: 25px;
+    /*margin-bottom: 15px;*/
+}
+
+.br_tit span {
+    /*padding-right: 5px;*/
+    vertical-align: middle;
+}
+.br_tit img {
+    width: 20px;
+}
+
+.br_name {
+    color: #333333;
+    font-size: 19px;
+    line-height: 36px;
+    margin-bottom: 2px;
+}
+
+.br_name:hover a {
+    color: #994499;
+    /*text-decoration: underline;*/
+}
+
+.br_de {
+    color: #9e9d9d;
+    font-size: 14px;
+    line-height: 20px;
+    height: 40px;
+    margin-bottom: 11px;
+}
+
+.br_date {
+    color: #9b9b9b;
+    font-size: 14px;
+}
+
+.br_online {
+    font-size: 14px;
+    color:white ;
+    text-decoration: none;
+    font-weight: bold;
+    float: right;
+    display: inline-block;
+    padding: 3px 10px ;
+    border-radius: 10px;
+    background: #994499;
+}
+.br_online:hover{
+    color:white !important;
+}
+
+.br_news_list li {
+    padding-top: 3px;
+    padding-bottom: 12px;
+    border-bottom: 1px dashed #EFEFEF;
+}
+.inm {
+    display: inline-block;
+    vertical-align: middle;
+}
+.infor_name {
+    margin-right: 130px;
+}
+
+.infor_name span {
+    font-size: 22px;
+    font-weight: bold;
+    color: #994499;
+    /*padding-left: 8px;*/
+    vertical-align: middle;
+}
+.infor_name img{
+    width: 24px;
+}
+.infor_tel img{
+    width: 24px;
+}
+.infor_tel span {
+    font-size: 18px;
+    /*font-weight: bold;*/
+    color: #994499;
+    /*padding-left: 8px;*/
+    vertical-align: middle;
+}
+
+.country_list {
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: -2px;
+
+}
+
+.country_list dt {
+    padding: 0 25px;
+    line-height: 34px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: bottom;
+    border-top: 4px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+
+.country_list dt.on {
+    color: #994499;
+    /*font-weight: bold;*/
+    border-top: 3px solid #994499;
+    border-left: 1px solid #EFEFEF;
+    border-right: 1px solid #EFEFEF;
+    border-bottom: 4px solid #ffffff;
+}
+
+.information_nav {
+    border-bottom: 1px solid #EFEFEF;
+}
+
+.item_list {
+    padding: 15px;
+    width: 340px;
+    border: 1px solid #EFEFEF;
+}
+
+.item_icon {
+    height: 85px;
+    line-height: 85px;
+}
+
+.item_name {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.item_bg {
+    /*width: 340px;*/
+    height: 125px;
+    margin-bottom: 20px;
+    /*background: yellowgreen!important;*/
+}
+
+.item_tab {
+    display: none;
+
+}
+
+.item_Wrap .item_tab:nth-child(1) {
+    display: block;
+}
+
+.item_tab_wrap {
+    width: 100%;
+}
+
+.t1_bg {
+    background: url("/cn/images/ency/academy.png") no-repeat;
+    background-size: cover;
+}
+
+.t2_bg {
+    background: url("/cn/images/ency/apply.png") no-repeat;
+    background-size: cover;
+}
+
+.t3_bg {
+    background: url("/cn/images/ency/cost.png") no-repeat;
+    background-size: cover;
+}
+
+.news_tit {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333333;
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+
+.news_de {
+    color: #9e9d9d;
+    font-size: 14px;
+    line-height: 20px;
+    height: 40px;
+    margin: 10px 0 5px 0;
+    text-align: justify;
+
+}
+
+.news_date {
+    color: #9e9d9d;
+    font-size: 14px;
+    line-height: 32px;
+}
+
+.news_list li:hover .news_tit {
+    color: #994499;
+    /*text-decoration: underline;*/
+}
+
+.online_infor a {
+    color:white ;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    padding: 5px 25px;
+    border-radius: 15px;
+    margin: 10px 0;
+    background: #994499;
+}
+.online_infor a:hover{
+    color:white !important;
+}
+
+.line_1 {
+    left: 0;
+    bottom: -5px;
+}
+
+.item_Wrap {
+    padding: 20px;
+}

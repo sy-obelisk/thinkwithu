@@ -1,4 +1,5 @@
 $(function(){
+
     //    咨询框改版自适应2016.12.26
     $(".refer_top").css({
         "height":$(".refer_top").width(),
@@ -52,14 +53,35 @@ $(function(){
     });
 
 	//导航栏hover效果
-    $(".nav-list a.nav1-link").hover(function () {
-        $(this).addClass("on");
-        $(this).parent().siblings("li").find("a.nav1-link").removeClass("on");
+    $(".nav-list li").hover(function () {
+        $(this).find("a.nav1-link").addClass("on");
+        $(this).siblings("li").find("a.nav1-link").removeClass("on");
+        $(this).find('.eaxm-list').show();
     }, function () {
         $("a.on-hover").addClass("on");
         $(this).not("on-hover").removeClass("on");
+        $(this).find('.eaxm-list').hide();
     });
-  
+    $('.eaxm-list').hover(function () {
+
+    },function () {
+        $(this).hide();
+    });
+    $('.recommend-list').hover(function () {
+
+    },function () {
+        $('.recommend-list').hide();
+    });
+    $('.recommend-list li').hover(function () {
+        $(this).css( 'background','rgba(0,0,0,.5)')
+    },function () {
+        $(this).css( 'background','rgba(0,0,0,0)')
+    });
+    $('.forYou').mouseover(function () {
+        $('.recommend-list').show();
+    }).mouseout(function () {
+        $('.recommend-list').hide();
+    });
     //导航栏下拉菜单hover效果
     $(".nav-list li:nth-child(2) .nav2-wrap").hover(function(){
     	$(this).siblings("a").addClass("on");
@@ -75,11 +97,15 @@ $(function(){
             if (top>45){
                 $(".nav-wrap").addClass("nav-flexd");
                 $(".nav-list li a").addClass("a-fiexd");
-                $(".logo").attr("src","/cn/Hirsi/images/shenyoulg2.png")
+                $(".nav-list .eaxm-list").addClass("eaxm-fiexd");
+                $(".logo").attr("src","/cn/Hirsi/images/shenyoulg2.png");
+                $(".crow-1").attr("src","/cn/Hirsi/images/crow-11.png")
             }else {
                 $(".nav-wrap").removeClass("nav-flexd");
                 $(".nav-list li a").removeClass("a-fiexd");
-                $(".logo").attr("src","/cn/Hirsi/images/sy-logo3.png")
+                $(".nav-list .eaxm-list").removeClass("eaxm-fiexd");
+                $(".logo").attr("src","/cn/Hirsi/images/sy-logo3.png");
+                $(".crow-1").attr("src","/cn/Hirsi/images/crow-1.png")
             }
         })
     })
@@ -190,7 +216,7 @@ function enterKey(event,obj){
     }
 }
 function keySearch() {
-    var k = $('.search-wrap>input').val();
+    var k = $('.search_div>input').val();
     //location.href = "http://words.viplgw.cn/search.html?keyword=" + encodeURI(k);
     location.href = "http://www.thinkwithu.com/search.html?keyword=" + encodeURI(k);
 }

@@ -9,8 +9,7 @@
     <meta name="keywords" content="<?php echo $seo['keywords'] ?>">
     <meta name="description" content="<?php echo $seo['description'] ?>">
     <link rel="stylesheet" href="/cn/Hirsi/css/reset.css">
-    <link rel="stylesheet" href="/cn/Hirsi/css/index.css">
-    <link rel="stylesheet" href="/cn/css/header.css"/>
+<!--    <link rel="stylesheet" href="/cn/Hirsi/css/index.css">-->
     <link rel="stylesheet" href="/cn/css/openClass.css">
     <link rel="stylesheet" href="/cn/css/open-public.css"/>
     <link rel="stylesheet" href="/cn/css/fonts/font-awesome/css/font-awesome.min.css">
@@ -20,140 +19,13 @@
     <script type="text/javascript" src="/cn/js/jquery.SuperSlide.2.1.1.js"></script>
 </head>
 <body><!--公开课的页面都是有左右两边的组件的，我就不加了哈-->
-	<!--头部搜索栏-->
-<header class="sy-header">
-    <div class="w10 clearfix">
-        <img src="/cn/Hirsi/images/sy-text.png" style="margin-right: 55px" alt="高分成就梦想名校改变人生">
-        <img src="/cn/Hirsi/images/sy-tel.png" alt="400-600-1123">
-        <a class="refer-btn"
-           href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="
-           target="_blank">在线咨询</a>
-        <!--登录&注册-->
-        <div class="login-wrap fr" style="display: none;">
-            <span class="on">登录</span>
-            <span>注册</span>
-        </div>
-        <!--搜索-->
-        <div class="search-wrap fr">
-            <input class="search search1" type="search" onkeyup="enterKey(event,this)" placeholder="请输入关键词">
-            <img src="/cn/Hirsi/images/search-icon.png" style="margin-left: -1px;cursor: pointer;" onclick="keySearch()" alt="搜索">
-        </div>
-        <div class="appDownload">
-            <span title="app下载" class="tit_t">APP <b></b></span>
-            <div class="pull_down">
-                <ul>
-                    <li>
-                        <a href="http://www.gmatonline.cn/DownloadApp.html">
-                            <div class="first_layer">
-                                <img src="http://www.gmatonline.cn/app/web_core/styles/images-3/gmatapp_logo.jpg"
-                                     alt="app logo图标"/>
-                                <span>雷哥GMAT苹果版</span>
-                            </div>
-                        </a>
-                        <div class="code_box">
-                            <img src="http://www.gmatonline.cn/app/web_core/styles/images-3/leigeQrCode.png"
-                                 alt="app二维码图片"/>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="http://www.gmatonline.cn/DownloadApp.html">
-                            <div class="first_layer">
-                                <img src="http://www.gmatonline.cn/app/web_core/styles/images-3/gmatapp_logo.jpg"
-                                     alt="app logo图标"/>
-                                <span>雷哥GMAT安卓版</span>
-                            </div>
-                        </a>
-                        <div class="code_box">
-                            <img src="http://www.gmatonline.cn/app/web_core/styles/images-3/leige-android.png"
-                                 alt="app二维码图片"/>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="http://www.toeflonline.cn/toefl_app.html">
-                            <div class="first_layer">
-                                <img src="http://www.toeflonline.cn/cn/images/toeflapp_logo.jpg" alt="app logo图标"/>
-                                <span>雷哥托福苹果版</span>
-                            </div>
-                        </a>
-                        <div class="code_box">
-                            <img src="http://www.toeflonline.cn/cn/images/app-ios.png" alt="app二维码图片"/>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="http://www.toeflonline.cn/toefl_app.html">
-                            <div class="first_layer">
-                                <img src="http://www.toeflonline.cn/cn/images/toeflapp_logo.jpg" alt="app logo图标"/>
-                                <span>雷哥托福安卓版</span>
-                            </div>
-                        </a>
-                        <div class="code_box">
-                            <img src="http://www.toeflonline.cn/cn/images/app-android.png" alt="app二维码图片"/>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="http://www.smartapply.cn/app.html">
-                            <div class="first_layer">
-                                <img src="http://www.smartapply.cn/cn/images/smart-appLogo.png" alt="app logo图标"/>
-                                <span>雷哥选校苹果版</span>
-                            </div>
-                        </a>
-                        <div class="code_box">
-                            <img src="http://www.smartapply.cn/cn/images/smart-erweima.png" alt="app二维码图片"/>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="http://www.smartapply.cn/app.html">
-                            <div class="first_layer">
-                                <img src="http://www.smartapply.cn/cn/images/smart-appLogo.png" alt="app logo图标"/>
-                                <span>雷哥选校安卓版</span>
-                            </div>
-                        </a>
-                        <div class="code_box">
-                            <img src="http://www.smartapply.cn/cn/images/anroid-smartapp.png" alt="app二维码图片"/>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="http://words.viplgw.cn/" target="_blank">
-                            <div class="first_layer">
-                                <img src="http://www.gmatonline.cn/app/web_core/styles/images/words-iosLogo.jpg" alt="app logo图标"/>
-                                <span>雷哥单词苹果版</span>
-                            </div>
-                        </a>
-                        <div class="code_box">
-                            <img src="http://www.gmatonline.cn/app/web_core/styles/images/words-ios.png" alt="app二维码图片"/>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="http://words.viplgw.cn/" target="_blank">
-                            <div class="first_layer">
-                                <img src="http://www.gmatonline.cn/app/web_core/styles/images/words-iosLogo.jpg" alt="app logo图标"/>
-                                <span>雷哥单词安卓版</span>
-                            </div>
-                        </a>
-                        <div class="code_box">
-                            <img src="/cn/images/word_android.png" alt="app二维码图片"/>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!--        app下载 end-->
-        <div class="clearBr"></div>
-    </div>
-</header>
-<!--公开课头部-->
-<?php use app\commands\front\ClassHeadWidget;?>
-<?php ClassHeadWidget::begin(); ?>
-<?php ClassHeadWidget::end(); ?>
+
 <!--轮播-->
 <div class="classBanner">
     <div class="classB-hd hd">
-        <?php
-        $data = \app\modules\cn\models\Content::getContent(['fields' => 'url', 'category' => '190,107']);
-        ?>
         <ul>
             <?php
-            foreach ($data as $v) {
+            foreach ($banner as $v) {
                 ?>
                 <li></li>
             <?php
@@ -162,14 +34,11 @@
         </ul>
     </div>
     <div class="classB-bd">
-        <?php
-        $data = \app\modules\cn\models\Content::getContent(['fields' => 'url', 'category' => '190,107']);
-        ?>
         <ul>
             <?php
-            foreach ($data as $v) {
+            foreach ($banner as $v) {
                 ?>
-                <li><a href="<?php echo $v['url'] ?>"><img src="<?php echo $v['image'] ?>" alt="banner图"/></a></li>
+                <li><a href="<?php echo $v['url'] ?>"><img src="http://www.thinkwithu.com<?php echo $v['image'] ?>" alt="banner图"/></a></li>
             <?php
             }
             ?>
@@ -182,85 +51,85 @@
     <?php
     if (!$userId) {
         ?>
-        <div class="member-login">
-            <h4>会员登录</h4>
-            <ul>
-                <li>
-                    <div class="member-left">
-                        <span></span>
-                        <img src="/cn/images/open_username.png" alt="图片"/>
-                    </div>
-                    <div class="member-right">
-                        <input class="indexUserName" type="text" placeholder="手机/邮箱/用户名"/>
-                    </div>
-                    <div style="clear: both"></div>
-                </li>
-                <li>
-                    <div class="member-left">
-                        <span></span>
-                        <img src="/cn/images/open_password.png" alt="图片"/>
-                    </div>
-                    <div class="member-right">
-                        <input class="indexUserPass" type="password" placeholder="密码"/>
-                    </div>
-                    <div style="clear: both"></div>
-                    <a href="#">忘记密码？</a>
-
-                    <div style="clear: both"></div>
-                </li>
-                <li>
-                    <div class="leftVerification">
-                        <input class="indexCode" type="text" placeholder="验证码"/>
-                    </div>
-                    <div class="rightImgFont">
-                        <img title="点击刷新" src="/cn/api/verification-code" align="absbottom"
-                             onclick="this.src='/cn/api/verification-code?'+Math.random();"/>
-                    </div>
-                    <div style="clear: both"></div>
-                </li>
-                <li>
-                    <input onclick="indexLogin()" type="button" value="马上登录"/>
-                    <input onclick="userRegister()" type="button" value="立即注册"/>
-
-                    <div class="otherLogin">
-                        <span>其他账号登录</span><br>
-                        <a href="#"><img src="/cn/images/open_weibo.png" alt="微博" width="18"/></a>
-                        <a href="#"><img src="/cn/images/open_qq.png" alt="QQ" width="18"/></a>
-                    </div>
-                </li>
-            </ul>
-            <script type="text/javascript">
-                function indexLogin() {
-                    var userPass = $('.indexUserPass').val()
-                    var userName = $('.indexUserName').val();
-                    var code = $('.indexCode').val();
-                    if (userName == "") {
-                        alert('请输入用户名');
-                        return false;
-                    }
-                    if (userPass == "") {
-                        alert('请输入密码');
-                        return false;
-                    }
-
-                    if (code == "") {
-                        alert('请输入验证码');
-                        return false;
-                    }
-                    $.post('/cn/api/check-login', {
-                        verificationCode: code,
-                        userPass: userPass,
-                        userName: userName
-                    }, function (re) {
-                        if (re.code == 1) {
-                            window.location.reload()
-                        } else {
-                            alert(re.message);
-                        }
-                    }, 'json')
-                }
-            </script>
-        </div>
+<!--        <div class="member-login">-->
+<!--            <h4>会员登录</h4>-->
+<!--            <ul>-->
+<!--                <li>-->
+<!--                    <div class="member-left">-->
+<!--                        <span></span>-->
+<!--                        <img src="/cn/images/open_username.png" alt="图片"/>-->
+<!--                    </div>-->
+<!--                    <div class="member-right">-->
+<!--                        <input class="indexUserName" type="text" placeholder="手机/邮箱/用户名"/>-->
+<!--                    </div>-->
+<!--                    <div style="clear: both"></div>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <div class="member-left">-->
+<!--                        <span></span>-->
+<!--                        <img src="/cn/images/open_password.png" alt="图片"/>-->
+<!--                    </div>-->
+<!--                    <div class="member-right">-->
+<!--                        <input class="indexUserPass" type="password" placeholder="密码"/>-->
+<!--                    </div>-->
+<!--                    <div style="clear: both"></div>-->
+<!--                    <a href="#">忘记密码？</a>-->
+<!---->
+<!--                    <div style="clear: both"></div>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <div class="leftVerification">-->
+<!--                        <input class="indexCode" type="text" placeholder="验证码"/>-->
+<!--                    </div>-->
+<!--                    <div class="rightImgFont">-->
+<!--                        <img title="点击刷新" src="/cn/api/verification-code" align="absbottom"-->
+<!--                             onclick="this.src='/cn/api/verification-code?'+Math.random();"/>-->
+<!--                    </div>-->
+<!--                    <div style="clear: both"></div>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <input onclick="indexLogin()" type="button" value="马上登录"/>-->
+<!--                    <input onclick="userRegister()" type="button" value="立即注册"/>-->
+<!---->
+<!--                    <div class="otherLogin">-->
+<!--                        <span>其他账号登录</span><br>-->
+<!--                        <a href="#"><img src="/cn/images/open_weibo.png" alt="微博" width="18"/></a>-->
+<!--                        <a href="#"><img src="/cn/images/open_qq.png" alt="QQ" width="18"/></a>-->
+<!--                    </div>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--            <script type="text/javascript">-->
+<!--                function indexLogin() {-->
+<!--                    var userPass = $('.indexUserPass').val()-->
+<!--                    var userName = $('.indexUserName').val();-->
+<!--                    var code = $('.indexCode').val();-->
+<!--                    if (userName == "") {-->
+<!--                        alert('请输入用户名');-->
+<!--                        return false;-->
+<!--                    }-->
+<!--                    if (userPass == "") {-->
+<!--                        alert('请输入密码');-->
+<!--                        return false;-->
+<!--                    }-->
+<!---->
+<!--                    if (code == "") {-->
+<!--                        alert('请输入验证码');-->
+<!--                        return false;-->
+<!--                    }-->
+<!--                    $.post('/cn/api/check-login', {-->
+<!--                        verificationCode: code,-->
+<!--                        userPass: userPass,-->
+<!--                        userName: userName-->
+<!--                    }, function (re) {-->
+<!--                        if (re.code == 1) {-->
+<!--                            window.location.reload()-->
+<!--                        } else {-->
+<!--                            alert(re.message);-->
+<!--                        }-->
+<!--                    }, 'json')-->
+<!--                }-->
+<!--            </script>-->
+<!--        </div>-->
     <?php
     }
     ?>
@@ -270,7 +139,7 @@
 </script>
 
 <div class="open-commonTitle">
-    <h4><a href="/public-class/abroad.html">留学申请</a></h4><a href="/public-class/abroad.html">更多</a>
+    <h4><a href="/public-class/abroad.html">留学申请</a></h4><a href="/public-class/list.html">更多</a>
 </div>
 
 <div class="open-commonStyle">
@@ -370,18 +239,18 @@
 </div>
 <!--联系申友-->
 <div style="background: white;width: 100%;padding: 10px 0 5px 0">
-    <?php use app\commands\front\ContactWidget; ?>
-    <?php ContactWidget::begin(); ?>
-    <?php ContactWidget::end(); ?>
+<!--    --><?php //use app\commands\front\ContactWidget; ?>
+<!--    --><?php //ContactWidget::begin(); ?>
+<!--    --><?php //ContactWidget::end(); ?>
     <script type="text/javascript">
         jQuery(".connection").slide({mainCell: ".connectBd", trigger: "mouseover"});
     </script>
 </div>
 
 <!-------------------------------------------公开课页面的尾部-------------------------------------->
-<?php use app\commands\front\ClassFootWidget; ?>
-<?php ClassFootWidget::begin(); ?>
-<?php ClassFootWidget::end(); ?>
+<?php //use app\commands\front\ClassFootWidget; ?>
+<?php //ClassFootWidget::begin(); ?>
+<?php //ClassFootWidget::end(); ?>
 <!--右边固定部分-->
 <?php use app\commands\front\RightSuspensionWidget; ?>
 <?php RightSuspensionWidget::begin(); ?>

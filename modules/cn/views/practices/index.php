@@ -179,7 +179,7 @@
 				<li><span></span>国内实习</li>
 			</ul>
 		</div>
-		<div class="program_con">
+		<div class="program_con program_con_s">
 			<ul>
 				<?php
                 $data = \app\modules\cn\models\Content::getContent(['fields' => 'id,image,name,time,synopsis','category' => "240,243",'pageSize'=>4]);
@@ -194,9 +194,9 @@
                                 <?php echo $v['name']?></a></h4>
 						<span>时间：<?php echo date("Y-m-d",strtotime($v['time']))?></span>
 						<div>
-							<a href="/practices/<?php echo $v['id']?>.html" target="_blank">
-								<?php echo html_entity_decode($v['synopsis'])?>
-							</a>
+<!--							<a href="/practices/--><?php //echo $v['id']?><!--.html" target="_blank">-->
+<!--								--><?php //echo html_entity_decode($v['synopsis'])?>
+<!--							</a>-->
 						</div>
 						<a href="/practices/<?php echo $v['id']?>.html" class="clickBtn" target="_blank"><span>查看详细介绍</span></a>
 					</li>
@@ -218,9 +218,9 @@
                                 <?php echo $v['name']?></a></h4>
 						<span>时间：<?php echo date("Y-m-d",strtotime($v['time']))?></span>
 						<div>
-							<a href="/practices/<?php echo $v['id']?>.html" target="_blank">
-								<?php echo html_entity_decode($v['synopsis'])?>
-							</a>
+<!--							<a href="/practices/--><?php //echo $v['id']?><!--.html" target="_blank">-->
+<!--								--><?php //echo html_entity_decode($v['synopsis'])?>
+<!--							</a>-->
 						</div>
 						<a href="/practices/<?php echo $v['id']?>.html" class="clickBtn" target="_blank"><span>查看详细介绍</span></a>
 					</li>
@@ -280,7 +280,7 @@
 		<div class="assigned">
 			名额有限，先抢先得
 		</div>
-		<form action="/practices.html" onsubmit="return checkSub()" method="post">
+		<form action="/cn/api/abroad-apply" onsubmit="return checkSub()" method="post">
 			<div class="message-sign">
 				<ul>
 					<?php
@@ -297,7 +297,8 @@
                                 ?>
 								<!--下拉-->
 								<div class="sign-xiala">
-									<span>请选择</span>
+                                    <input type="hidden" name="extendValue[]" class="problem" value="">
+									<span class="chooice">请选择</span>
 									<!--右边的下拉箭头-->
 									<div class="rightJ" onclick="upXiala(this)"></div>
 									<!--下拉内容-->
@@ -356,25 +357,23 @@
 </div>
 
 <script type="text/javascript">
-	function checkSub() {
-		var a = 1;
-		$('.spanVal').each(function() {
-			var spanVal = $(this).html();
-			if(spanVal == '请选择') {
-				spanVal = '';
-			}
-			$(this).next().val(spanVal);
-		});
 
-		$('.val').each(function() {
-			if($(this).val() == "" || $(this).val() == "请选择") {
-				alert('星标志位必填');
-				a = 2;
-				return false;
-			}
-		});
-		if(a == 2) {
-			return false;
-		}
+	function checkSub() {
+	    var a = 1;
+	    var c = 1;
+        var obj = $('.val');
+        var obj_1 = $('.chooice').eq(3);
+        obj.each(function () {
+            if($(this).val() == "" || $(this).val() == "请选择"){
+                a=2;
+            }
+        });
+        if(obj_1.html()=='请选择'){
+            c = 2;
+        }
+        if(a==2||c == 2){
+            alert('星标志位必填');
+            return false;
+        }
 	}
 </script>

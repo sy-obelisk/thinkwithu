@@ -13,6 +13,6 @@ class WordsController extends ThinkUController {
     public function actionIndex(){
         $word = Method::post("http://words.viplgw.cn/cn/index/index-api");
         $word = json_decode($word,true);
-        return $this->renderPartial('index',['words'=>$word['data']['word'],'totalCount'=>$word['data']['totalCount']]);
+        return $this->render('index',['words'=>$word['data']['word'],'totalCount'=>$word['data']['totalCount']]);
     }
 }
