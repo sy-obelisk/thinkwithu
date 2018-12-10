@@ -62,7 +62,7 @@
                             <li class="on" data-catid="118">全部</li>
                             <li data-catid="121">留学问答</li>
                             <li data-catid="119">留学规划</li>
-                            <li data-catid="128">留学国家</li>
+                            <li data-catid="165">留学提升</li>
                             <li data-catid="120">留学手续</li>
                             <li data-catid="115">GMAT</li>
                             <li data-catid="116">托福</li>

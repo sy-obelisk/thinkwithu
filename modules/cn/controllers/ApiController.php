@@ -1553,9 +1553,15 @@ class ApiController extends ThinkUApiControl {
         $session = Yii::$app->session;
         $name = Yii::$app->request->post('name');
         $extendVal = Yii::$app->request->post('extendValue');
-        $contentModel = new Content();
-        $contentModel->addContent(222, $extendVal[17], $name, $extendVal);
-        die('<script>alert("我们的工作人员将于1-2个工作日内跟你联系");history.go(-2);</script>');
+//        $contentModel = new Content();
+//        $contentModel->addContent(222, $extendVal[17], $name, $extendVal);
+        $contentModel = new Practices();
+        $data = $contentModel->addContent(222, $name, $extendVal);
+        if (!$data) {
+            die('<script>alert("我们的工作人员将于1-2个工作日内跟你联系");history.go(-2);</script>');
+        }else{
+            die('<script>alert("数据添加失败，请重试");history.go(-1);</script>');
+        }
 //        die(json_encode($res));
     }
 

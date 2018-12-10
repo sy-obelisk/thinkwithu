@@ -40,15 +40,15 @@ class IndexController extends ThinkUController {
 //        }
         $banner = Content::getContent(['fields' => 'url', 'category' => "190,223", 'pageSize' => 10]);
         $abroadPro = Content::getContent(['fields' => 'url', 'category' => "261", 'pageSize' => 10]);
-        $news['gmat'] = Content::getContent(['category' => "115,118", 'pageSize' => 15, 'order' => 'c.id desc']);
-        $news['toefl'] = Content::getContent(['category' => "116,118", 'pageSize' => 15, 'order' => 'c.id desc']);
+        $news['gmat'] = Content::getContent(['category' => "115,166", 'pageSize' => 15, 'order' => 'c.id desc']);
+        $news['toefl'] = Content::getContent(['category' => "116,166", 'pageSize' => 15, 'order' => 'c.id desc']);
         $news['gre'] = Content::getContent(['category' => "171,166", 'pageSize' => 15, 'order' => 'c.id desc']);
         $news['ielts'] = Content::getContent(['category' => "172,166", 'pageSize' => 15, 'order' => 'c.id desc']);
         $news['sat'] = Content::getContent(['category' => "173,166", 'pageSize' => 15, 'order' => 'c.id desc']);
         $news['recommend'] = Content::getContent(['category' => "169,109", 'pageSize' => 15, 'order' => 'c.id desc']);
         $abroad['active'] = Content::getContent(['category' => "117,118", 'pageSize' => 15, 'order' => 'c.id desc']);
         $abroad['plan'] = Content::getContent(['category' => "117,119", 'pageSize' => 15, 'order' => 'c.id desc']);
-        $abroad['state'] = Content::getContent(['category' => "118,87", 'pageSize' => 15, 'order' => 'c.id desc']);
+        $abroad['state'] = Content::getContent(['category' => "165,117", 'pageSize' => 15, 'order' => 'c.id desc']);
         $abroad['apply'] = Content::getContent(['category' => "120,117", 'pageSize' => 15, 'order' => 'c.id desc']);
         $abroad['recommend'] = Content::getContent(['category' => "117", 'pageSize' => 15, 'order' => 'c.id desc']);
         $case['gmat'] = Content::getContent(['fields' => 'score,time','category' => "115,104,206",'type'=>1, 'pageSize' => 4,'where'=>'c.sort>0', 'order' => 'c.sort asc,c.id desc']);

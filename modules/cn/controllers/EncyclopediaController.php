@@ -50,7 +50,7 @@ class EncyclopediaController extends ThinkUController
         $data[0] = Content::getContent(['fields' => 'description,abstract', 'category' => '136,118', 'order' => 'c.id desc', 'pageSize' => 12, 'page' => 1, 'pageStr' => 1]);//头条
         $data[1] = Content::getContent(['fields' => 'description,abstract', 'category' => '136,121', 'order' => 'c.id desc', 'pageSize' => 12, 'page' => 1, 'pageStr' => 1]);//头条
         $data[2] = Content::getContent(['fields' => 'description,abstract', 'category' => '136,119', 'order' => 'c.id desc', 'pageSize' => 12, 'page' => 1, 'pageStr' => 1]);//头条
-        $data[3] = Content::getContent(['fields' => 'description,abstract', 'category' => '136,128', 'order' => 'c.id desc', 'pageSize' => 12, 'page' => 1, 'pageStr' => 1]);//头条
+        $data[3] = Content::getContent(['fields' => 'description,abstract', 'category' => '136,165', 'order' => 'c.id desc', 'pageSize' => 12, 'page' => 1, 'pageStr' => 1]);//头条
         $data[4] = Content::getContent(['fields' => 'description,abstract', 'category' => '136,120', 'order' => 'c.id desc', 'pageSize' => 12, 'page' => 1, 'pageStr' => 1]);//头条
         $data[5] = Content::getContent(['fields' => 'description,abstract', 'category' => '136,115', 'order' => 'c.id desc', 'pageSize' => 12, 'page' => 1, 'pageStr' => 1]);//头条
         $data[6] = Content::getContent(['fields' => 'description,abstract', 'category' => '136,116', 'order' => 'c.id desc', 'pageSize' => 12, 'page' => 1, 'pageStr' => 1]);//头条
