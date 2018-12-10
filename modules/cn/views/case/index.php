@@ -18,10 +18,10 @@
     <div class="bannerLeft">
         <div class="b_l_content">
             <div class="b_l_title">
-                <div>
-                    <i class="iconfont r_w">&#xe656;</i>
-                    <span>姓名</span>
-                </div>
+<!--                <div>-->
+<!--                    <i class="iconfont r_w">&#xe656;</i>-->
+<!--                    <span>姓名</span>-->
+<!--                </div>-->
 <!--                <div>-->
 <!--                    <i class="iconfont j_b">&#xe655;</i>-->
 <!--                    <span>录取专业</span>-->
@@ -36,7 +36,7 @@
                     <?php foreach($list as $v){
                         if(($v['title']!=false)&&($v['name']!=$v['title'])){?>
                     <li><!--循环li-->
-                        <div><p><?php echo $v['name']?></p></div>
+<!--                        <div><p>--><?php //echo $v['name']?><!--</p></div>-->
 <!--                        <div>金融</div>-->
                         <div><?php echo $v['title']?></div>
                     </li>

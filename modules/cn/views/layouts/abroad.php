@@ -156,11 +156,11 @@
                 <a class="nav1-link" href="/">考试提分 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
                 <div class="eaxm-list">
                     <ul>
-                        <li><a href="/satsheet.html">SAT</a></li>
-                        <li><a href="/toefl/assistance.html">托福</a></li>
-                        <li><a href="/ieltssheet.html">雅思</a></li>
                         <li><a href="/gmatsheet.html">GAMT</a></li>
+                        <li><a href="/ieltssheet.html">雅思</a></li>
+                        <li><a href="/toefl/assistance.html">托福</a></li>
                         <li><a href="/gre.html">GRE</a></li>
+                        <li><a href="/satsheet.html">SAT</a></li>
                     </ul>
                 </div>
             </li>
@@ -175,16 +175,24 @@
                 </div>
             </li>
             <li>
-                <a class="nav1-link" href="/schools.html">院校库 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
+                <a class="nav1-link" href="/schools.html">院校库 </a> <div class="eaxm-list eaxm-list-1">-->
+                    <!--                    <ul>-->
+                    <!--                        <li><a href="">院校查询</a></li>-->
+                    <!--                        <li><a href="">专业排名</a></li>-->
+                    <!--                        <li><a href="">大学排名</a></li>-->
+                    <!--                    </ul>-->
+                    <!--                </div>
+                    <!--               -->
+            </li>
+            <li>
+                <a class="nav1-link" href="/">留学百科 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
                 <div class="eaxm-list eaxm-list-1">
                     <ul>
-                        <li><a href="">院校查询</a></li>
-                        <li><a href="">专业排名</a></li>
-                        <li><a href="">大学排名</a></li>
+                        <li><a href="/encyclopedia/master.html">硕士动态</a></li>
+                        <li><a href="/encyclopedia/bachelor.html">本科动态</a></li>
                     </ul>
                 </div>
             </li>
-            <li><a class="nav1-link" href="/">留学百科 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a></li>
             <li><a class="nav1-link" href="/">实习活动</a></li>
             <li><a class="nav1-link" href="/public-class.html">申友讲堂</a></li>
             <li><a class="nav1-link" href="/case.html">名校案列</a></li>
