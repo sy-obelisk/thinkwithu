@@ -19,6 +19,7 @@
     <script type="text/javascript" src="/cn/js/jquery.SuperSlide.2.1.1.js"></script>
 </head>
 <body><!--公开课的页面都是有左右两边的组件的，我就不加了哈-->
+
 <!--轮播-->
 <div class="classBanner">
     <div class="classB-hd hd">

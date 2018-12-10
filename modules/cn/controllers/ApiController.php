@@ -1645,4 +1645,62 @@ class ApiController extends ThinkUApiControl {
             die(json_encode($re));
         }
     }
+
+    /**
+     * ncrm 短信请求接口
+     * @sjeam
+     */
+     public function actionNcrmphoneCode()
+     {
+         $session = Yii::$app->session;
+         $sms = new Sms();
+         $phoneNum = Yii::$app->request->get('phoneNum');
+         if (!empty($phoneNum)) {
+             $phoneCode = mt_rand(100000, 999999);
+             $session->set($phoneNum.'phoneCode',$phoneCode);
+             $session->set('phoneTime',time());
+             $content = 'ncrm修改密码，验证码：' . $phoneCode . '（10分钟有效），';
+             $sms->send($phoneNum, $content, $ext = '', $stime = '', $rrid = '');
+             $res['code'] = 1;
+             $res['phonecode']=$phoneCode;
+             $res['message'] = '短信发送成功！';
+         } else {
+             $res['code'] = 0;
+             $res['message'] = '发送失败!手机号码为空！';
+         }
+         die(json_encode($res));
+     }
+
+
+
+    /**
+
+     * 发送邮箱
+
+     * @sjeam
+
+     */
+
+    public function actionNcrmemailCode(){
+        $emailcode = mt_rand(100000, 999999);
+        $email = Yii::$app->request->post('email');
+        // $email="359824901@qq.com";
+        $mail= Yii::$app->mailer->compose();
+        $mail->setTo($email);
+        $mail->setSubject("【ncrm(登录验证)】邮件验证码");
+        $mail->setHtmlBody('验证码：' . $emailcode . '(10分钟有效)'
+        );    //发布可以带html标签的文本
+
+        if($mail->send()) {
+            $res['code'] = 1;
+            $res['emailcode'] = $emailcode;
+            $res['message'] = '邮件发送成功！';
+        }else {
+            $res['code'] = 0;
+            $res['message'] = '邮件发送失败！';
+        }
+        die(json_encode($res));
+
+    }
+
 }
