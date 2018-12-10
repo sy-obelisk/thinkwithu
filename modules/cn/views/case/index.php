@@ -34,13 +34,13 @@
             <div class="b_l_details">
                 <ul>
                     <?php foreach($list as $v){
-                        if(($v['title']!=false)&&($v['name']!=$v['title'])){?>
+//                        if(($v['title']!=false)&&($v['name']!=$v['title'])){?>
                     <li><!--循环li-->
 <!--                        <div><p>--><?php //echo $v['name']?><!--</p></div>-->
 <!--                        <div>金融</div>-->
-                        <div><?php echo $v['title']?></div>
+                        <div><?php echo $v['name']?></div>
                     </li>
-                    <?php }}?>
+                    <?php }?>
                 </ul>
             </div>
         </div>
