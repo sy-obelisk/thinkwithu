@@ -74,11 +74,11 @@
                     <td><?php echo $v['id']?></td>
                     <td><span><?php echo $v['contentId']?></span></td>
                     <td><span><?php echo $v['userId']?></span></td>
-                    <td><span><?php echo Yii::$app->params['report'][$v['reportType']][$v['reportCat']]?></span></td>
+                    <td><span><?php echo Yii::$app->params['report'][$v['reportType']][$v['cate']]?></span></td>
                     <td><span><?php echo $v['description']?></span></td>
                     <?php
                         switch($v['reportType']){
-                            case 1:$v['reportType']='解析';break;
+                            case 1:$v['reportType']='文章';break;
                             case 2:$v['reportType']='评论';break;
                             case 3:$v['reportType']='题目/内容';break;
                         }

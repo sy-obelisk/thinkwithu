@@ -29,22 +29,22 @@ class ReportController extends  AppControl{
         $id  = Yii::$app->request->get('id','');
 //        $userId  = Yii::$app->request->get('userId','');
         $reportType  = Yii::$app->request->get('reportType','');
-        $reportCat  = Yii::$app->request->get('reportCat','');
+        $cate  = Yii::$app->request->get('reportCat','');
         $where = "1=1";
         if($beginTime){
-            $where .= " AND r.createTime>$beginTime";
+            $where .= " AND createTime>$beginTime";
         }
         if($endTime){
-            $where .= " AND r.createTime<$endTime";
+            $where .= " AND createTime<$endTime";
         }
         if($id){
-            $where .= " AND r.id = $id";
+            $where .= " AND id = $id";
         }
 //        if($userId){
 //            $where .= " AND r.userId = $userId";
 //        }
         if($reportType){
-            $where .= " AND r.reportType = $reportType";
+            $where .= " AND reportType = $reportType";
         }
         $reportData = $model->getAllReport($where,20,$page);
         $page = Method::getPagedRows(['count'=>$reportData['count'],'pageSize'=>20, 'rows'=>'models']);
