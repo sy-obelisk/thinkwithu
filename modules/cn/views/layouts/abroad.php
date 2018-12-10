@@ -29,6 +29,10 @@
             s.parentNode.insertBefore(hm, s);
         })();
     </script>
+    <title><?php echo $this->context->title==false?'申友官网-留学咨询_名校出国留学申请机构_托福/GMAT培训机构-申友网':$this->context->title?>-申友网</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="keywords" content="<?php echo $this->context->keywords==false?'出国留学,名校留学,留学咨询,留学条件,出国游学,美国留学,gmat培训,托福培训,雅思培训':$this->context->keywords ?>">
+    <meta name="description" content="<?php echo $this->context->description==false?'申友留学,专注商科与STEM留学咨询,提供留学申请一站式服务,是GMAT与托福培训的行业领跑者。申友专注英国、美国、加拿大、澳洲、香港等名校留学申请,留学咨询、出国留学、托福与GMAT培训，尽在申友。':$this->context->description ?>">
     <script type="text/javascript" src="//s.union.360.cn/7302.js"></script>
     <link rel="stylesheet" href="/cn/css/header.css"/>
     <link rel="stylesheet" href="/cn/css/footer.css"/>
