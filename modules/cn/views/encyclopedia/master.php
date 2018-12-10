@@ -82,7 +82,7 @@
                                                         <div class="clearfix">
                                                             <div class="consult_img fl">
                                                                 <a href="/encyclopedia/<?php echo $v['id'] ?>.html">
-                                                                    <img src="http://www.thinkwithu.com<?php echo $v['image'] ?>" alt="资讯左侧图片">
+                                                                    <img src="http://www.thinkwithu.com<?php echo $v['image']!=false?$v['image']:'/files/attach/images/20181209/1544341497105409.jpg'?>" alt="资讯左侧图片">
                                                                 </a>
                                                             </div>
                                                             <div class="consult_text fr">
