@@ -156,7 +156,7 @@
                 <a class="nav1-link" href="/">考试提分 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
                 <div class="eaxm-list">
                     <ul>
-                        <li><a href="/gmatsheet.html">GAMT</a></li>
+                        <li><a href="/gmatsheet.html">GMAT</a></li>
                         <li><a href="/ieltssheet.html">雅思</a></li>
                         <li><a href="/toefl/assistance.html">托福</a></li>
                         <li><a href="/gre.html">GRE</a></li>
@@ -175,7 +175,7 @@
                 </div>
             </li>
             <li>
-                <a class="nav1-link" href="/schools.html">院校库 </a> <div class="eaxm-list eaxm-list-1">-->
+                <a class="nav1-link" href="/schools.html">院校库 </a> <div class="eaxm-list eaxm-list-1">
                     <!--                    <ul>-->
                     <!--                        <li><a href="">院校查询</a></li>-->
                     <!--                        <li><a href="">专业排名</a></li>-->
