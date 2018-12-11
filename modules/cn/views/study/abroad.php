@@ -253,13 +253,26 @@
     <div class="service_line"></div>
     <div class="hot_content">
         <ul>
-            <?php foreach($abroadPro as $v){?>
-            <li>
-<!--                <img class="hotImg" src="--><?php //echo $v['image']?><!--" alt="">-->
-                <img class="hotImg" src="<?php echo $v['image']?>" alt="">
-                <a href="/word-details/<?php echo $v['id']?>/index,178.html"><?php echo $v['name']?> <span><i class="iconfont">&#xe600;</i></span></a>
-            </li>
-            <?php }?>
+            <?php foreach ($abroadPro as $k => $v) {
+                $country = Yii::$app->request->get('country', 'USA');
+                if ($country == 'USA' || $country == 'UK') {
+                    if ($k < count($abroadPro) - 2) {
+                        ?>
+                        <li>
+                            <img class="hotImg" src="<?php echo $v['image'] ?>" alt="">
+                            <a href="/word-details/<?php echo $v['id'] ?>/index,178.html"><?php echo $v['name'] ?>
+                                <span><i class="iconfont">&#xe600;</i></span></a>
+                        </li>
+                    <?php }
+                } else {
+                    ?>
+                    <li>
+                        <img class="hotImg" src="<?php echo $v['image'] ?>" alt="">
+                        <a href="/word-details/<?php echo $v['id'] ?>/index,178.html"><?php echo $v['name'] ?> <span><i
+                                    class="iconfont">&#xe600;</i></span></a>
+                    </li>
+                <?php }
+            } ?>
         </ul>
     </div>
     <script>
