@@ -38,7 +38,7 @@ class IndexController extends ThinkUController {
 //            default:
 //                break;
 //        }
-        $banner = Content::getContent(['fields' => 'url', 'category' => "190,223", 'pageSize' => 10]);
+        $banner = Content::getContent(['fields' => 'url', 'category' => "190,223",'order'=>'c.id desc', 'pageSize' => 10]);
         $abroadPro = Content::getContent(['fields' => 'url', 'category' => "261", 'order'=>'c.id desc','pageSize' => 11]);
         $news['gmat'] = Content::getContent(['category' => "115,166", 'pageSize' => 15, 'order' => 'c.id desc']);
         $news['toefl'] = Content::getContent(['category' => "116,166", 'pageSize' => 15, 'order' => 'c.id desc']);
@@ -51,11 +51,11 @@ class IndexController extends ThinkUController {
         $abroad['state'] = Content::getContent(['category' => "165,117", 'pageSize' => 15, 'order' => 'c.id desc']);
         $abroad['apply'] = Content::getContent(['category' => "120,117", 'pageSize' => 15, 'order' => 'c.id desc']);
         $abroad['recommend'] = Content::getContent(['category' => "117", 'pageSize' => 15, 'order' => 'c.id desc']);
-        $case['gmat'] = Content::getContent(['fields' => 'score,time','category' => "115,104,206",'type'=>1, 'pageSize' => 4,'where'=>'c.sort>0', 'order' => 'c.sort asc,c.id desc']);
-        $case['gre'] = Content::getContent(['fields' => 'score,time','category' => "171,104,206",'type'=>1, 'pageSize' => 4, 'where'=>'c.sort>0','order' => 'c.sort asc,c.id desc']);
-        $case['toefl'] = Content::getContent(['fields' => 'score,time','category' => "116,104,206",'type'=>1, 'pageSize' => 4,'where'=>'c.sort>0', 'order' => 'c.sort asc,c.id desc']);
-        $case['ielts'] = Content::getContent(['fields' => 'score,time','category' => "172,104,206",'type'=>1, 'pageSize' => 4,'where'=>'c.sort>0', 'order' => 'c.sort asc,c.id desc']);
-        $case['abroad'] = Content::getContent(['fields' => 'oldSchool,score,time,abroadSchool,major','type'=>1,'category' => "178,206", 'pageSize' => 4, 'where'=>'c.sort>0','order' => 'c.sort asc,c.id desc']);
+        $case['gmat'] = Content::getContent(['fields' => 'score,time','category' => "115,104,206",'type'=>1, 'pageSize' => 4, 'order' => 'c.id desc']);
+        $case['gre'] = Content::getContent(['fields' => 'score,time','category' => "171,104,206",'type'=>1, 'pageSize' => 4, 'order' => 'c.id desc']);
+        $case['toefl'] = Content::getContent(['fields' => 'score,time','category' => "116,104,206",'type'=>1, 'pageSize' => 4, 'order' => 'c.id desc']);
+        $case['ielts'] = Content::getContent(['fields' => 'score,time','category' => "172,104,206",'type'=>1, 'pageSize' => 4, 'order' => 'c.id desc']);
+        $case['abroad'] = Content::getContent(['fields' => 'oldSchool,score,time,abroadSchool,major','type'=>1,'category' => "104,207", 'pageSize' => 4, 'order' => 'c.id desc']);
         $teacher = Content::getContent(['fields' => 'speaker,job,description,abstract', 'category' => "138,139", 'pageSize' => 15, 'order' => 'c.sort asc,c.id desc']);
         $book = Content::getContent(['fields' => 'speaker,keywords,description', 'category' => "109,108", 'pageSize' => 15, 'order' => 'c.sort asc,c.id desc']);
         $this->title='申友官网-留学咨询—名校留学专业申请机构-托福/雅思/GMAT/GRE培训机构-申友网';

@@ -84,35 +84,32 @@
             <div class="forYou">
                 <?php
                 $country = Yii::$app->request->get('country','USA'); if($country=='USA'){
-                    $product1 = app\modules\cn\models\Content::getContent(['category' => "261,88", 'pageSize' => 6, 'order' => 'c.sort asc,c.id desc']);
+                    $product1 = app\modules\cn\models\Content::getContent(['category' => "261,88", 'pageSize' => 6, 'order' => 'c.id desc']);
                     ?>
                     <img src="/cn/Hirsi/images/classify.png" alt="横">
                     <span>美国留学申请服务</span>
                     <div class="recommend-list">
                         <ul>
-                            <?php foreach($product1 as $v){?>
-                            <li><a href="/word-details/<?php echo $v['id']?>/index,178.html" class=""><b>•</b><?php echo $v['name']?></a></li>
-                            <?php }?>
-<!--                            <li><a href="/word-details/2408/index,178.html" class=""><b>•</b>美国星途计划</a></li>-->
-<!--                            <li><a href="" class=""><b>•</b>MBA精英计划</a></li>-->
-<!--                            <li><a href="" class=""><b>•</b>美国本科留学服务 </a></li>-->
-<!--                            <li><a href="" class=""><b>•</b>留学考试提分方案 </a></li>-->
-<!--                            <li><a href="" class=""><b>•</b>美国留学DIY论坛 </a></li>-->
+                            <?php foreach ($product1 as $k => $v) {
+                                if ($k < count($product1) - 2) {
+                                    ?>
+                                    <li><a href="/word-details/<?php echo $v['id'] ?>/index,178.html" class=""><b>•</b><?php echo $v['name'] ?></a></li>
+                                <?php }
+                            } ?>
                         </ul>
                     </div>
                 <?php } elseif ($country == 'UK') {
-                    $product2 = app\modules\cn\models\Content::getContent(['category' => "261,89", 'pageSize' => 6, 'order' => 'c.sort asc,c.id desc']);
+                    $product2 = app\modules\cn\models\Content::getContent(['category' => "261,89", 'pageSize' => 6, 'order' => 'c.id desc']);
                     ?>
                     <img src="/cn/Hirsi/images/classify.png" alt="横">
                     <span>英国留学申请服务</span>
                     <div class="recommend-list">
                         <ul>
-                            <?php foreach($product2 as $v){?>
-                                <li><a href="/word-details/<?php echo $v['id']?>/index,178.html" class=""><b>•</b><?php echo $v['name']?></a></li>
-                            <?php }?>
-<!--                            <li><a href="/word-details/2409/index,178.html" class=""><b>•</b>英国康桥计划</a></li>-->
-<!--                            <li><a href="/word-details/2410/index,178.html" class=""><b>•</b>大本钟计划</a></li>-->
-<!--                            <li><a href="" class=""><b>•</b>日不落计划</a></li>-->
+                            <?php foreach ($product2 as $k=>$v) {
+                                if ($k < count($product2) - 2) { ?>
+                                    <li><a href="/word-details/<?php echo $v['id'] ?>/index,178.html" class=""><b>•</b><?php echo $v['name'] ?></a></li>
+                                <?php }
+                            } ?>
                         </ul>
                     </div>
                 <?php } elseif ($country == 'HK') {
@@ -125,7 +122,6 @@
                             <?php foreach($product3 as $v){?>
                                 <li><a href="/word-details/<?php echo $v['id']?>/index,178.html" class=""><b>•</b><?php echo $v['name']?></a></li>
                             <?php }?>
-<!--                            <li><a href="" class=""><b>•</b>紫荆花计划</a></li>-->
                         </ul>
                     </div>
                 <?php } elseif ($country == 'AUS') {
@@ -138,7 +134,6 @@
                             <?php foreach($product4 as $v){?>
                                 <li><a href="/word-details/<?php echo $v['id']?>/index,178.html" class=""><b>•</b><?php echo $v['name']?></a></li>
                             <?php }?>
-<!--                            <li><a href="" class=""><b>•</b>澳世起航计划</a></li>-->
                         </ul>
                     </div>
                 <?php } elseif ($country == 'Canada') { ?>
