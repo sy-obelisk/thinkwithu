@@ -2837,10 +2837,13 @@ h1.abroad-tit {
     overflow: hidden;
 }
 .img_left{
-    float: left;
+    /*float: left;*/
 }
 .img_right{
-    float: right;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    /*float: right;*/
 }
 .phone_index,.phoneNum_index{
     color: rgb(153,153,153);
@@ -2867,11 +2870,24 @@ h1.abroad-tit {
     width: 1200px ;
     margin: auto;
     overflow: hidden;
+    position: relative;
+}
+.imgC{
+    display: block;
+    overflow: hidden;
+    float: left;
+    vertical-align: middle;
 }
 .logo-new{
     float: left;
 }
+.logo-new_1{
+    vertical-align: middle;
+    float: left;
+    margin: 20px 70px 0 40px;
+}
 .search_div{
+    float: left;
     width: 400px;
     height: 19px;
     margin:6px auto 0;

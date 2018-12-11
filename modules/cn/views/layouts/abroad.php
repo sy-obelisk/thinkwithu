@@ -153,10 +153,10 @@
             </div>
             <li><a class="nav1-link <?php echo $controller == 'index' ? 'on on-hover' : '' ?>" href="/">首页</a></li>
             <li>
-                <a class="nav1-link" href="/">考试提分 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
+                <a class="nav1-link" href="/">GMAT培训 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
                 <div class="eaxm-list">
                     <ul>
-                        <li><a href="/gmatsheet.html">GAMT</a></li>
+                        <li><a href="/gmatsheet.html">GMAT</a></li>
                         <li><a href="/ieltssheet.html">雅思</a></li>
                         <li><a href="/toefl/assistance.html">托福</a></li>
                         <li><a href="/gre.html">GRE</a></li>
