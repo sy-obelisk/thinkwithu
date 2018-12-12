@@ -260,7 +260,7 @@ class StudyController extends ThinkUController {
         $internship['welfare'] = Content::getContent(['pageStr' => 1, 'category' => "238,264", 'pageSize' => 6, 'page'=>1, 'order' => 'c.sort asc,c.id desc']);
         $this->title='出国留学_美国留学_英国留学_澳洲留学_留学申请_申友留学';
         $this->keywords='留学评估，留学测评，录取几率，背景测评，选校测评，留学中介，美国留学中介，留学中介顾问，留学中介机构，英国留学中介，放心留学中介，值得信赖的留学中介，好的留学中介';
-        $this->description='申友网专业留学测评系统，为准备出国留学的学生提供免费的留学竞争力分析报告，根据客户填写的个人背景信息，快速进行背景测评、选校测评和录取几率测评等';
+        $this->description='申友留学，专注商科与STEM留学咨询，提供留学申请一站式服务，是GMAT与托福 雅思培训的行业领跑者。申友专注美国、英国、加拿大、澳洲、香港等名校留学，留学咨询，出国留学，托福 雅思与GMAT培训，尽在申友';
 //        echo '<pre>';var_dump($active);die;
         return $this->render('abroad', ['banner'=>$banner,'recommend'=>$recommend,'caseList' => $caseList, 'news' => $news, 'active' => $active, 'abroadPro' => $abroadPro, 'case' => $case, 'teacher' => $teacher, 'internship' => $internship]);
     }
