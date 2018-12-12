@@ -245,10 +245,10 @@ class StudyController extends ThinkUController {
         $news['science'] = Content::getContent(['category' => "145,$catId", 'pageSize' => 15, 'order' => 'c.id desc']);
         $news['finance'] = Content::getContent(['category' => "149,$catId", 'pageSize' => 15, 'order' => 'c.id desc']);
         $news['arts'] = Content::getContent(['category' => "146,$catId", 'pageSize' => 15, 'order' => 'c.id desc']);
-        $news['abroad'] = Content::getContent(['type' => 1, 'category' => "178,118,$catId", 'pageSize' => 4, 'where' => 'c.sort>0', 'order' => 'c.sort asc,c.id desc']);
+        $news['abroad'] = Content::getContent(['category' => "118,$catId", 'pageSize' => 4, 'where' => 'c.sort>0', 'order' => 'c.sort asc,c.id desc']);
         $news['major'] = Content::getContent(['type' => 1, 'category' => "143,$catId", 'pageSize' => 5, 'where' => 'c.sort>0', 'order' => 'c.sort asc,c.id desc']);
         $active = Content::getContent(['type' => 1,'fields' => 'url,speaker,time', 'category' => '178,107', 'pageSize' => 5,'where'=>'c.catId=107','order' => 'c.id desc']);
-        $abroadPro = Content::getContent(['fields' => 'url', 'category' => "261,$catId", 'pageSize' => 10]);
+        $abroadPro = Content::getContent(['fields' => 'url', 'category' => "261,$catId",'order'=>'c.id desc', 'pageSize' => 10]);
         $case = Content::getContent(['type' => 1, 'category' => "178,206,$catId", 'pageSize' => 15, 'where' => 'c.sort>0', 'order' => 'c.sort asc,c.id desc']);
         $teacher = Content::getContent(['fields' => 'speaker,job,description,abstract', 'category' => "138,139", 'pageSize' => 15, 'order' => 'c.sort asc,c.id desc']);
         $recommend = Content::getContent(['category' => "$catId,143", 'pageSize' => 15, 'order' => 'c.id desc']);
