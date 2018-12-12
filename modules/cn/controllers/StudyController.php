@@ -245,12 +245,12 @@ class StudyController extends ThinkUController {
         $news['science'] = Content::getContent(['category' => "145,$catId", 'pageSize' => 15, 'order' => 'c.id desc']);
         $news['finance'] = Content::getContent(['category' => "149,$catId", 'pageSize' => 15, 'order' => 'c.id desc']);
         $news['arts'] = Content::getContent(['category' => "146,$catId", 'pageSize' => 15, 'order' => 'c.id desc']);
-        $news['abroad'] = Content::getContent(['category' => "118,$catId", 'pageSize' => 4, 'where' => 'c.sort>0', 'order' => 'c.sort asc,c.id desc']);
-        $news['major'] = Content::getContent(['type' => 1, 'category' => "143,$catId", 'pageSize' => 5, 'where' => 'c.sort>0', 'order' => 'c.sort asc,c.id desc']);
+        $news['abroad'] = Content::getContent(['category' => "118,$catId", 'pageSize' => 25, 'where' => 'c.sort>0', 'order' => 'c.id desc']);
+        $news['major'] = Content::getContent(['type' => 1, 'category' => "143,$catId", 'pageSize' => 25, 'where' => 'c.sort>0', 'order' => 'c.id desc']);
         $active = Content::getContent(['type' => 1,'fields' => 'url,speaker,time', 'category' => '178,107', 'pageSize' => 5,'where'=>'c.catId=107','order' => 'c.id desc']);
         $abroadPro = Content::getContent(['fields' => 'url', 'category' => "261,$catId",'order'=>'c.id desc', 'pageSize' => 10]);
-        $case = Content::getContent(['type' => 1, 'category' => "178,206,$catId", 'pageSize' => 15, 'where' => 'c.sort>0', 'order' => 'c.sort asc,c.id desc']);
-        $teacher = Content::getContent(['fields' => 'speaker,job,description,abstract', 'category' => "138,139", 'pageSize' => 15, 'order' => 'c.sort asc,c.id desc']);
+        $case = Content::getContent(['type' => 1, 'category' => "104,207,$catId", 'pageSize' => 15, 'order' => 'c.id desc']);
+        $teacher = Content::getContent(['fields' => 'speaker,job,description,abstract', 'category' => "138", 'pageSize' => 15, 'order' => 'c.sort asc,c.id desc']);
         $recommend = Content::getContent(['category' => "$catId,143", 'pageSize' => 15, 'order' => 'c.id desc']);
         $internship['inland'] = Content::getContent(['pageStr' => 1, 'category' => "238,242", 'pageSize' => 6, 'page'=>1,'order' => 'c.sort asc,c.id desc']);
         $internship['foreign'] = Content::getContent(['pageStr' => 1, 'category' => "238,243", 'pageSize' => 6,'page'=>1 ,'order' => 'c.sort asc,c.id desc']);
