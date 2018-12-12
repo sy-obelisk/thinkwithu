@@ -10,7 +10,9 @@
     margin: 0;
     padding: 0;
 }
-
+body{
+    overflow-x: hidden;
+}
 /************************头部********************/
 /*.sy-header {*/
     /*padding: 10px 0;*/

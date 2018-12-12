@@ -37,8 +37,8 @@
                 </div>
             </div>
             <li><a class="nav1-link <?php echo $controller == 'index' ? 'on on-hover' : '' ?>" href="/">首页</a></li>
-            <li>
-                <a class="nav1-link <?php echo ($controller == 'satsheet' || $controller == 'ieltssheet' || $controller == 'gmatsheet' || $controller == 'toeflsheet' || $controller == 'gre') ? 'on on-hover' : '' ?>" href="javascript:void(0);">考试提分 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
+            <li style="flex: 1.2">
+                <a class="nav1-link <?php echo ($controller == 'satsheet' || $controller == 'ieltssheet' || $controller == 'gmatsheet' || $controller == 'toeflsheet' || $controller == 'gre') ? 'on on-hover' : '' ?>" href="javascript:void(0);">GMAT培训 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
                 <div class="eaxm-list">
                     <ul>
                         <li><a href="/gmatsheet.html">GMAT</a></li>
