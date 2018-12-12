@@ -1229,7 +1229,7 @@ class ApiController extends ThinkUApiControl {
         $education = strip_tags($apps->post('education'));  /*目前学历*/
         $result['school_rank'] = strip_tags($apps->post('school'));  /*获取就读学校等级*/
         $attendSchool = strip_tags($apps->post('schoolName'));  /*目前学校*/
-        $nowMajor = strip_tags($apps->post('nowMajor'));  /*目前专业名*/
+        $nowMajor = strip_tags($apps->post('major01'));  /*目前专业名*/
         $result['major_top'] = strip_tags($apps->post('major_top'));  /*详细专业*/
         $result['school_major'] = strip_tags($apps->post('school_major'));/*专业方向*/
         $result['result_work'] = $apps->post('work');  /*工作企业*/
