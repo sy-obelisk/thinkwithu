@@ -56,7 +56,7 @@ class IndexController extends ThinkUController {
         $case['toefl'] = Content::getContent(['fields' => 'score,time','category' => "116,104,206",'type'=>1, 'pageSize' => 4, 'order' => 'c.id desc']);
         $case['ielts'] = Content::getContent(['fields' => 'score,time','category' => "172,104,206",'type'=>1, 'pageSize' => 4, 'order' => 'c.id desc']);
         $case['abroad'] = Content::getContent(['fields' => 'oldSchool,score,time,abroadSchool,major','type'=>1,'category' => "104,207", 'pageSize' => 4, 'order' => 'c.id desc']);
-        $teacher = Content::getContent(['fields' => 'speaker,job,description,abstract', 'category' => "138,139", 'pageSize' => 15, 'order' => 'c.sort asc,c.id desc']);
+        $teacher = Content::getContent(['fields' => 'speaker,job,description,abstract', 'category' => "138", 'pageSize' => 20, 'order' => 'c.sort asc,c.id desc']);
         $book = Content::getContent(['fields' => 'speaker,keywords,description', 'category' => "109,108", 'pageSize' => 15, 'order' => 'c.sort asc,c.id desc']);
         $this->title='申友官网-留学咨询—名校留学专业申请机构-托福/雅思/GMAT/GRE培训机构-申友网';
         $this->keywords='出国留学 名校留学 留学咨询 留学条件 留学机构哪家好 美国留学 美国留学咨询机构 美国留学服务 GMAT培训 雅思培训 托福培训 GRE培训';

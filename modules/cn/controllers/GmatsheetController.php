@@ -23,7 +23,7 @@ class GmatsheetController extends ThinkUController {
      */
     public function actionIndex(){
         $extendData = CategoryExtend::find()->where("catId=247 AND belong='content'")->orderBy('id ASC')->all();//联系我们
-        $case = Content::getContent(['fields' => 'score,time,flag','category' => "115,102,206",'type'=>1, 'pageSize' => 9,'where'=>'c.sort>0', 'order' => 'c.sort asc,c.id desc']);
+        $case = Content::getContent(['fields' => 'score,time,flag','category' => "115,104,206",'type'=>1, 'pageSize' => 9,'where'=>'c.sort>0', 'order' => 'c.id desc']);
         $active = Content::getContent(['category' => "115,107",'type'=>1, 'pageSize' => 15,'order' => 'c.id desc']);
         $news = Content::getContent(['category' => "115,118",'type'=>1, 'pageSize' => 15,'order' => 'c.id desc']);
         $course=json_decode(file_get_contents("http://www.gmatonline.cn/index.php?web/webapi/gmatCourse"),true);
@@ -31,7 +31,7 @@ class GmatsheetController extends ThinkUController {
         $this->title='GMAT培训-GMAT课程-GMAT班-GMAT辅导-GMAT模考-申友GMAT-申友网';
         $this->keywords='GMAT报名，GMAT考试时间，GMAT备考，GMAT换库，GMAT机经-GMAT逻辑-GMAT培训-GMAT数学- GMAT阅读-GMAT培训哪家好-GMAT培训上海-GMAT培训北京-GMAT培训杭州-GMAT培训武汉-GMAT培训广州-GMAT培训成都';
         $this->description='申友GMAT培训平台致力培育GMAT高分学员。为学员提供关于GMAT报名，GMAT考试时间，GMAT换库，GMAT机经，GMAT逻辑，GMAT真题，GMAT阅读，GMAT数学，GMAT语法等专业的GMAT备考信息，被业界称为“GMAT高分基地”';
-//        echo '<pre>';var_dump($course);die;
+//        echo '<pre>';var_dump($case);die;
         return $this->render('index',['extendData' => $extendData,'case'=>$case,'news'=>$news,'active'=>$active,'course'=>$course,'teacher'=>$teacher]);
     }
 }
