@@ -36,7 +36,7 @@
     <script type="text/javascript" src="//s.union.360.cn/7302.js"></script>
     <link rel="stylesheet" href="/cn/css/header.css"/>
     <link rel="stylesheet" href="/cn/css/footer.css"/>
-    <link rel="stylesheet" href="/cn/css/public.css"/>
+    <link rel="stylesheet" href="/cn/css/public.css?v=1"/>
     <link rel="stylesheet" href="/cn/Hirsi/css/reset.css">
     <link rel="stylesheet" type="text/css" href="/cn/css/iconfont.css">
     <link rel="stylesheet" href="/cn/css/fonts/font-awesome/css/font-awesome.min.css"/>
@@ -155,7 +155,7 @@
                 <?php } ?>
             </div>
             <li><a class="nav1-link <?php echo $controller == 'index' ? 'on on-hover' : '' ?>" href="/">首页</a></li>
-            <li>
+            <li style="flex: 1.2">
                 <a class="nav1-link" href="/">GMAT培训 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
                 <div class="eaxm-list">
                     <ul>
