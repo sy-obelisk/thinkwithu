@@ -666,9 +666,9 @@
         <div class="encyclopedia_center encyclopedia_center_1"><!--第二个选项卡中间-->
             <div class="ency_center_nav">
                 <ul>
-                    <li>留学活动</li>
+                    <li>留学动态</li>
                     <li>留学规划</li>
-                    <li>留学国家</li>
+                    <li>留学提升</li>
                     <li>留学手续</li>
                 </ul>
             </div>
