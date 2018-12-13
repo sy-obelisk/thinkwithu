@@ -218,7 +218,7 @@
     <div class="study_service">
         <p class="Record_title">留学服务</p>
         <div class="service_line"></div>
-        <div class="first_title"><span>|</span>留学服务</div>
+        <div class="first_title"><span>|</span>名校留学产品</div>
         <div class="service_list">
             <!--留学服务轮播  循环li-->
             <div class="service_bd">
@@ -238,7 +238,7 @@
             <a class="prev"><i class="iconfont prev_icon">&#xe601;</i></a>
         </div>
         <!--留学七步曲-->
-        <div class="first_title"><span>|</span>留学七步曲</div>
+        <div class="first_title"><span>|</span>留学七步曲解决方案</div>
         <div class="steps_study">
             <div class="steps_left">
                 <p class="steps_num">0 1</p>
@@ -288,7 +288,7 @@
     </div>
     <!--留学系统-->
     <div class="studySystem">
-        <div class="first_title studySystem_title"><span>|</span>CRM 留学系统</div>
+        <div class="first_title studySystem_title"><span>|</span>CRM 在线留学系统</div>
         <div class="seven_steps">
             <div class="steps_div">
                 <i class="iconfont stepsIcon">&#xe60a;</i>
