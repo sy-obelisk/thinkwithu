@@ -64,7 +64,7 @@
 <div class="seach_input">
     <div class="seachInputContent">
         <a href="/" class="imgC">
-            <img class="logo-new" src="/cn/Hirsi/images/sy-logo3.png" alt="" style="width: 172px;">
+            <img class="logo-new" src="/cn/Hirsi/images/sy-logo4.png" alt="" style="width: 172px;">
             <img class="logo-new_1" src="/cn/Hirsi/images/sy-text-new.png" alt="">
         </a>
         <div class="search_div">
