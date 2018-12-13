@@ -5,7 +5,7 @@
 
 <nav class="nav-wrap">
     <div class="w10 w12" style="overflow: inherit;">
-        <a href="/"><img class="logo" src="/cn/Hirsi/images/sy-logo3.png" alt=""></a>
+        <a href="/"><img class="logo" src="/cn/Hirsi/images/sy-logo4.png" alt=""></a>
         <ul class="inb nav-list clearfix" style="margin-top: 6px">
             <li><a class=" nav1-link" href="/">首页</a></li>
             <li><a class="nav1-link" href="/study-aboard/assistance.html">留学服务</a>
