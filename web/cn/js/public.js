@@ -104,7 +104,7 @@ $(function(){
                 $(".nav-wrap").removeClass("nav-flexd");
                 $(".nav-list li a").removeClass("a-fiexd");
                 $(".nav-list .eaxm-list").removeClass("eaxm-fiexd");
-                $(".logo").attr("src","/cn/Hirsi/images/sy-logo3.png");
+                $(".logo").attr("src","/cn/Hirsi/images/sy-logo4.png");
                 $(".crow-1").attr("src","/cn/Hirsi/images/crow-1.png")
             }
         })

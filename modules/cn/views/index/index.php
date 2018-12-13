@@ -218,7 +218,7 @@
     <div class="study_service">
         <p class="Record_title">留学服务</p>
         <div class="service_line"></div>
-        <div class="first_title"><span>|</span>留学服务</div>
+        <div class="first_title"><span>|</span>名校留学产品</div>
         <div class="service_list">
             <!--留学服务轮播  循环li-->
             <div class="service_bd">
@@ -238,7 +238,7 @@
             <a class="prev"><i class="iconfont prev_icon">&#xe601;</i></a>
         </div>
         <!--留学七步曲-->
-        <div class="first_title"><span>|</span>留学七步曲</div>
+        <div class="first_title"><span>|</span>留学七步曲解决方案</div>
         <div class="steps_study">
             <div class="steps_left">
                 <p class="steps_num">0 1</p>
@@ -288,7 +288,7 @@
     </div>
     <!--留学系统-->
     <div class="studySystem">
-        <div class="first_title studySystem_title"><span>|</span>CRM 留学系统</div>
+        <div class="first_title studySystem_title"><span>|</span>CRM 在线留学系统</div>
         <div class="seven_steps">
             <div class="steps_div">
                 <i class="iconfont stepsIcon">&#xe60a;</i>
@@ -666,9 +666,9 @@
         <div class="encyclopedia_center encyclopedia_center_1"><!--第二个选项卡中间-->
             <div class="ency_center_nav">
                 <ul>
-                    <li>留学活动</li>
+                    <li>留学动态</li>
                     <li>留学规划</li>
-                    <li>留学国家</li>
+                    <li>留学提升</li>
                     <li>留学手续</li>
                 </ul>
             </div>
@@ -901,39 +901,24 @@
         <div class="bdCurriculum">
             <ul class="banner"><!--外层循环li-->
                 <li><!--内层层循环div  recommendation-->
+                    <?php foreach($case['abroad'] as $v){?>
+                        <div class="recommendation">
+                            <div class="recommendation_cover">
+                                <div class="reco_img"><img src="<?php echo $v['image']?>" alt="申友留学案例"></div>
+                                <div class="reco_iforma">
+                                    <p>姓名:<?php echo $v['name']?></p>
+                                    <p>毕业院校:<?php echo $v['oldSchool']?></p>
+                                    <p>硬件条件:<?php echo $v['score']?></p>
+                                    <p>录取学校:<?php echo $v['abroadSchool']?></p>
+                                    <p>录取专业:<?php echo $v['major']?></p>
+                                </div>
+                                <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank"><div class="zx_btn">咨询名校秘籍</div></a>
+                            </div>
+                        </div>
+                    <?php }?>
+                </li>
+                <li>
                     <?php foreach($case['gmat'] as $v){?>
-                    <div class="recommendation">
-                        <div class="recommendation_cover">
-                            <div class="reco_img"><img src="<?php echo $v['image']?>" alt="申友高分案例"></div>
-                            <div class="reco_iforma">
-                                <p>姓名:<?php echo $v['name']?></p>
-                                <p>分数:<?php echo $v['score']?></p>
-                                <p>出分时间:<?php echo $v['time']?></p>
-                                <p><?php echo $v['title']?></p>
-                            </div>
-                            <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank"><div class="zx_btn">咨询高分秘籍</div></a>
-                        </div>
-                    </div>
-                    <?php }?>
-                </li>
-                <li>
-                    <?php foreach($case['gre'] as $v){?>
-                    <div class="recommendation">
-                        <div class="recommendation_cover">
-                            <div class="reco_img"><img src="<?php echo $v['image']?>" alt="申友高分案例"></div>
-                            <div class="reco_iforma">
-                                <p>姓名:<?php echo $v['name']?></p>
-                                <p>分数:<?php echo $v['score']?></p>
-                                <p>出分时间:<?php echo $v['time']?></p>
-                                <p><?php echo $v['title']?></p>
-                            </div>
-                            <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank"><div class="zx_btn">咨询高分秘籍</div></a>
-                        </div>
-                    </div>
-                    <?php }?>
-                </li>
-                <li>
-                    <?php foreach($case['toefl'] as $v){?>
                     <div class="recommendation">
                         <div class="recommendation_cover">
                             <div class="reco_img"><img src="<?php echo $v['image']?>" alt="申友高分案例"></div>
@@ -965,31 +950,49 @@
                     <?php }?>
                 </li>
                 <li>
-                    <?php foreach($case['abroad'] as $v){?>
+                    <?php foreach($case['toefl'] as $v){?>
                         <div class="recommendation">
                             <div class="recommendation_cover">
-                                <div class="reco_img"><img src="<?php echo $v['image']?>" alt="申友留学案例"></div>
+                                <div class="reco_img"><img src="<?php echo $v['image']?>" alt="申友高分案例"></div>
                                 <div class="reco_iforma">
                                     <p>姓名:<?php echo $v['name']?></p>
-                                    <p>毕业院校:<?php echo $v['oldSchool']?></p>
-                                    <p>硬件条件:<?php echo $v['score']?></p>
-                                    <p>录取学校:<?php echo $v['abroadSchool']?></p>
-                                    <p>录取专业:<?php echo $v['major']?></p>
+                                    <p>分数:<?php echo $v['score']?></p>
+                                    <p>出分时间:<?php echo $v['time']?></p>
+                                    <p><?php echo $v['title']?></p>
                                 </div>
-                                <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank"><div class="zx_btn">咨询名校秘籍</div></a>
+                                <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank"><div class="zx_btn">咨询高分秘籍</div></a>
                             </div>
                         </div>
                     <?php }?>
                 </li>
+                <li>
+                    <?php foreach($case['gre'] as $v){?>
+                    <div class="recommendation">
+                        <div class="recommendation_cover">
+                            <div class="reco_img"><img src="<?php echo $v['image']?>" alt="申友高分案例"></div>
+                            <div class="reco_iforma">
+                                <p>姓名:<?php echo $v['name']?></p>
+                                <p>分数:<?php echo $v['score']?></p>
+                                <p>出分时间:<?php echo $v['time']?></p>
+                                <p><?php echo $v['title']?></p>
+                            </div>
+                            <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank"><div class="zx_btn">咨询高分秘籍</div></a>
+                        </div>
+                    </div>
+                    <?php }?>
+                </li>
+
+
+
             </ul>
         </div>
         <div class="hd hdCurriculum">
             <ul>
-                <li><p>GMAT</p></li>
-                <li><p>GRE</p></li>
-                <li><p>托福</p></li>
-                <li><p>雅思</p></li>
                 <li><p>留学</p></li>
+                <li><p>GMAT</p></li>
+                <li><p>雅思</p></li>
+                <li><p>托福</p></li>
+                <li><p>GRE</p></li>
             </ul>
         </div>
         <div style="clear: both"></div>
@@ -1178,8 +1181,6 @@ else{
         mouseOverStop: true
     });
     //名师团队
-
-
     jQuery(".teamCover").slide({
         titCell:".smallImg ul li",
         mainCell:".tinter_wrap",

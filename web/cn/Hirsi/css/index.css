@@ -1061,7 +1061,7 @@ body{
 .Curriculum_Broadcast {
     position: relative;
     /* overflow: hidden; */
-    padding-top: 20px;
+    padding: 20px 0px 100px 0px;
     max-height: 422px;
 }
 .Curriculum_Broadcast{
@@ -1166,39 +1166,48 @@ body{
     cursor: pointer;
 }
 .hdCurriculum{
-    width:60px ;
-    height:350px;
+    width:300px ;
+    height:44px;
     position: absolute;
-    top: 20px;
-    left: -105px;
-    -webkit-box-shadow:10px 2px 10px 0px rgb(248,248,248);
-    -moz-box-shadow:10px 2px 10px 0px rgb(248,248,248);
-    box-shadow: 10px 2px 10px 0px rgb(248,248,248);
+    bottom: 60px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-box-shadow:10px 2px 10px 0px #e0dfdf;
+    -moz-box-shadow:10px 2px 10px 0px #e0dfdf;
+    box-shadow: 10px 2px 10px 0px #e0dfdf;
+    overflow: hidden;
+    border-radius: 10px;
 }
 .hdCurriculum ul li{
-    width: 100%;
+    width: 60px;
     height: 44px;
+    float: left;
     background: white;
     text-align: center;
     border-bottom: 1px solid rgb(224,224,224);
     font-family: 宋体;
     color: rgb(83,83,83);
-    padding-top: 25px;
+    /*padding-top: 25px;*/
     cursor: pointer;
+    line-height: 44px;
 }
 .hdCurriculum ul li:nth-child(1) p{
-    transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
+    /*transform: rotate(90deg);*/
+    /*-ms-transform: rotate(90deg);*/
+    /*-moz-transform: rotate(90deg);*/
+    /*-webkit-transform: rotate(90deg);*/
+    /*-o-transform: rotate(90deg);*/
 }
 .hdCurriculum ul li:nth-child(2) p{
-    transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
+    /*transform: rotate(90deg);*/
+    /*-ms-transform: rotate(90deg);*/
+    /*-moz-transform: rotate(90deg);*/
+    /*-webkit-transform: rotate(90deg);*/
+    /*-o-transform: rotate(90deg);*/
 }
 .Curriculum_more{
     width: 60px;
@@ -1224,15 +1233,14 @@ body{
     font-size: 20px;
 }
 .hdCurriculum ul li:first-child{
-    height: 45px!important;
     border-bottom: 1px solid rgb(224,224,224);
     border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 .hdCurriculum ul li:last-child{
     /*height: 65px!important;*/
+    border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
     border: none!important;
 }
 .hdCurriculum ul li.on{
@@ -1368,7 +1376,7 @@ body{
     z-index: 10;
 }
 .cotent_img img{
-    margin:20px auto 0px;
+    margin:0px auto 0px;
 }
 .teacher_name{
     font-size: 20px;
