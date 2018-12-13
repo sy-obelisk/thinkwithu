@@ -80,7 +80,7 @@
                         </div>
                     </div>
                     <div class="xb-c-right">
-                        <h4> <span>|</span>热门文章推荐</h4>
+                        <h4> <span>|</span>最新文章推荐</h4>
                         <ul><!--循环li-->
                             <?php foreach($hot as $v){?>
                             <li>
