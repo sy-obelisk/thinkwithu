@@ -901,39 +901,24 @@
         <div class="bdCurriculum">
             <ul class="banner"><!--外层循环li-->
                 <li><!--内层层循环div  recommendation-->
+                    <?php foreach($case['abroad'] as $v){?>
+                        <div class="recommendation">
+                            <div class="recommendation_cover">
+                                <div class="reco_img"><img src="<?php echo $v['image']?>" alt="申友留学案例"></div>
+                                <div class="reco_iforma">
+                                    <p>姓名:<?php echo $v['name']?></p>
+                                    <p>毕业院校:<?php echo $v['oldSchool']?></p>
+                                    <p>硬件条件:<?php echo $v['score']?></p>
+                                    <p>录取学校:<?php echo $v['abroadSchool']?></p>
+                                    <p>录取专业:<?php echo $v['major']?></p>
+                                </div>
+                                <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank"><div class="zx_btn">咨询名校秘籍</div></a>
+                            </div>
+                        </div>
+                    <?php }?>
+                </li>
+                <li>
                     <?php foreach($case['gmat'] as $v){?>
-                    <div class="recommendation">
-                        <div class="recommendation_cover">
-                            <div class="reco_img"><img src="<?php echo $v['image']?>" alt="申友高分案例"></div>
-                            <div class="reco_iforma">
-                                <p>姓名:<?php echo $v['name']?></p>
-                                <p>分数:<?php echo $v['score']?></p>
-                                <p>出分时间:<?php echo $v['time']?></p>
-                                <p><?php echo $v['title']?></p>
-                            </div>
-                            <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank"><div class="zx_btn">咨询高分秘籍</div></a>
-                        </div>
-                    </div>
-                    <?php }?>
-                </li>
-                <li>
-                    <?php foreach($case['gre'] as $v){?>
-                    <div class="recommendation">
-                        <div class="recommendation_cover">
-                            <div class="reco_img"><img src="<?php echo $v['image']?>" alt="申友高分案例"></div>
-                            <div class="reco_iforma">
-                                <p>姓名:<?php echo $v['name']?></p>
-                                <p>分数:<?php echo $v['score']?></p>
-                                <p>出分时间:<?php echo $v['time']?></p>
-                                <p><?php echo $v['title']?></p>
-                            </div>
-                            <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank"><div class="zx_btn">咨询高分秘籍</div></a>
-                        </div>
-                    </div>
-                    <?php }?>
-                </li>
-                <li>
-                    <?php foreach($case['toefl'] as $v){?>
                     <div class="recommendation">
                         <div class="recommendation_cover">
                             <div class="reco_img"><img src="<?php echo $v['image']?>" alt="申友高分案例"></div>
@@ -965,31 +950,49 @@
                     <?php }?>
                 </li>
                 <li>
-                    <?php foreach($case['abroad'] as $v){?>
+                    <?php foreach($case['toefl'] as $v){?>
                         <div class="recommendation">
                             <div class="recommendation_cover">
-                                <div class="reco_img"><img src="<?php echo $v['image']?>" alt="申友留学案例"></div>
+                                <div class="reco_img"><img src="<?php echo $v['image']?>" alt="申友高分案例"></div>
                                 <div class="reco_iforma">
                                     <p>姓名:<?php echo $v['name']?></p>
-                                    <p>毕业院校:<?php echo $v['oldSchool']?></p>
-                                    <p>硬件条件:<?php echo $v['score']?></p>
-                                    <p>录取学校:<?php echo $v['abroadSchool']?></p>
-                                    <p>录取专业:<?php echo $v['major']?></p>
+                                    <p>分数:<?php echo $v['score']?></p>
+                                    <p>出分时间:<?php echo $v['time']?></p>
+                                    <p><?php echo $v['title']?></p>
                                 </div>
-                                <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank"><div class="zx_btn">咨询名校秘籍</div></a>
+                                <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank"><div class="zx_btn">咨询高分秘籍</div></a>
                             </div>
                         </div>
                     <?php }?>
                 </li>
+                <li>
+                    <?php foreach($case['gre'] as $v){?>
+                    <div class="recommendation">
+                        <div class="recommendation_cover">
+                            <div class="reco_img"><img src="<?php echo $v['image']?>" alt="申友高分案例"></div>
+                            <div class="reco_iforma">
+                                <p>姓名:<?php echo $v['name']?></p>
+                                <p>分数:<?php echo $v['score']?></p>
+                                <p>出分时间:<?php echo $v['time']?></p>
+                                <p><?php echo $v['title']?></p>
+                            </div>
+                            <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank"><div class="zx_btn">咨询高分秘籍</div></a>
+                        </div>
+                    </div>
+                    <?php }?>
+                </li>
+
+
+
             </ul>
         </div>
         <div class="hd hdCurriculum">
             <ul>
-                <li><p>GMAT</p></li>
-                <li><p>GRE</p></li>
-                <li><p>托福</p></li>
-                <li><p>雅思</p></li>
                 <li><p>留学</p></li>
+                <li><p>GMAT</p></li>
+                <li><p>雅思</p></li>
+                <li><p>托福</p></li>
+                <li><p>GRE</p></li>
             </ul>
         </div>
         <div style="clear: both"></div>
@@ -1178,8 +1181,6 @@ else{
         mouseOverStop: true
     });
     //名师团队
-
-
     jQuery(".teamCover").slide({
         titCell:".smallImg ul li",
         mainCell:".tinter_wrap",
