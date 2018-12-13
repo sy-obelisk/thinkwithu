@@ -75,7 +75,7 @@
         <div class="img_right">
             <i class="iconfont phone_index">&#xe6df;</i>
             <span class="phoneNum_index">400-600-1123</span>
-            <a href=""><span class="consultation_index">在线咨询>></span></a>
+            <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank"><span class="consultation_index">在线咨询>></span></a>
         </div>
     </div>
 </div>
