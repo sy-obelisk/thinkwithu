@@ -59,11 +59,11 @@
         <div class="fraction_content">
             <div class="content_hd hd">
                 <ul>
-                    <li class=""><p>雅思单项课程</p></li>
                     <li class=""><p>直播课程</p></li>
                     <li class=""><p>面授课程</p></li>
                     <li class=""><p>视频课程</p></li>
                     <li class=""><p>一对一</p></li>
+                    <li class=""><p>雅思单项课程</p></li>
                 </ul>
             </div>
             <div class="content_bd bd">
