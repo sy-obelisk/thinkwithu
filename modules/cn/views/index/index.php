@@ -898,7 +898,16 @@
     <p class="Record_title">成功案例</p>
     <div class="service_line"></div>
     <div class="Curriculum_Broadcast">
-        <div class="bdCurriculum">
+        <div class="hd hdCurriculum">
+            <ul>
+                <li><p>留学</p></li>
+                <li><p>GMAT</p></li>
+                <li><p>雅思</p></li>
+                <li><p>托福</p></li>
+                <li><p>GRE</p></li>
+            </ul>
+        </div>
+        <div class="bdCurriculum bd">
             <ul class="banner"><!--外层循环li-->
                 <li><!--内层层循环div  recommendation-->
                     <?php foreach($case['abroad'] as $v){?>
@@ -982,17 +991,6 @@
                     <?php }?>
                 </li>
 
-
-
-            </ul>
-        </div>
-        <div class="hd hdCurriculum">
-            <ul>
-                <li><p>留学</p></li>
-                <li><p>GMAT</p></li>
-                <li><p>雅思</p></li>
-                <li><p>托福</p></li>
-                <li><p>GRE</p></li>
             </ul>
         </div>
         <div style="clear: both"></div>
@@ -1173,8 +1171,9 @@ else{
     jQuery(".eaxm_right").slide({mainCell:".eaxm_right_lb ul",autoPlay:true,effect:"topMarquee",vis:5,interTime:50,trigger:"click"});
     //成功案例
     jQuery(".Curriculum_Broadcast").slide({
+        titCell:".hd ul li",
         mainCell: ".bdCurriculum ul",
-        effect: "leftLoop",
+        effect: "left",
         trigger: "click",
         delayTime: 1000,
         interTime: 3000,
