@@ -144,7 +144,7 @@
 
 <div class="open-commonStyle">
     <?php
-    $data = \app\modules\cn\models\Content::getContent(['fields' => 'url,place,time', 'category' => '178,107', 'pageSize' => 8]);
+    $data = \app\modules\cn\models\Content::getContent(['fields' => 'url,place,time', 'category' => '178,107', 'pageSize' => 8,'order' =>'c.id desc']);
     ?>
     <ul>
         <?php
@@ -185,7 +185,7 @@
             </div>
         </li>
         <?php
-        $data = \app\modules\cn\models\Content::getContent(['fields' => 'url,place,time', 'category' => '115,107', 'pageSize' => 3]);
+        $data = \app\modules\cn\models\Content::getContent(['fields' => 'url,place,time', 'category' => '115,107', 'pageSize' => 3,'order'=>'id desc']);
         ?>
         <?php
         foreach ($data as $v) {
@@ -213,7 +213,7 @@
             </div>
         </li>
         <?php
-        $data = \app\modules\cn\models\Content::getContent(['fields' => 'url,place,time', 'category' => '116,107', 'pageSize' => 3]);
+        $data = \app\modules\cn\models\Content::getContent(['fields' => 'url,place,time', 'category' => '116,107', 'pageSize' => 3,'order'=>'id desc']);
         ?>
         <?php
         foreach ($data as $v) {
