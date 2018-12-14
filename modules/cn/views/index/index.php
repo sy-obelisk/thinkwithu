@@ -925,7 +925,6 @@
                             </div>
                         </div>
                     <?php }?>
-                    1
                 </li>
                 <li>
                     <?php foreach($case['gmat'] as $v){?>
@@ -942,7 +941,6 @@
                         </div>
                     </div>
                     <?php }?>
-                    2
                 </li>
                 <li>
                     <?php foreach($case['ielts'] as $v){?>
@@ -959,7 +957,6 @@
                             </div>
                         </div>
                     <?php }?>
-                    3
                 </li>
                 <li>
                     <?php foreach($case['toefl'] as $v){?>
@@ -976,7 +973,6 @@
                             </div>
                         </div>
                     <?php }?>
-                    4
                 </li>
                 <li>
                     <?php foreach($case['gre'] as $v){?>
@@ -993,7 +989,6 @@
                         </div>
                     </div>
                     <?php }?>
-                    5
                 </li>
 
             </ul>
