@@ -23,9 +23,9 @@ class GmatsheetController extends ThinkUController {
      */
     public function actionIndex(){
         $extendData = CategoryExtend::find()->where("catId=247 AND belong='content'")->orderBy('id ASC')->all();//联系我们
-        $case = Content::getContent(['fields' => 'score,time,flag','category' => "115,104,206",'type'=>1, 'pageSize' => 9,'where'=>'c.sort>0', 'order' => 'c.id desc']);
-        $active = Content::getContent(['category' => "115,107",'type'=>1, 'pageSize' => 15,'order' => 'c.id desc']);
-        $news = Content::getContent(['category' => "115,118",'type'=>1, 'pageSize' => 15,'order' => 'c.id desc']);
+        $case = Content::getContent(['fields' => 'score,time,flag','category' => "115,104,206", 'pageSize' => 9, 'order' => 'c.id desc']);
+        $active = Content::getContent(['category' => "115,107", 'pageSize' => 15,'order' => 'c.id desc']);
+        $news = Content::getContent(['category' => "115,118", 'pageSize' => 15,'order' => 'c.id desc']);
         $course=json_decode(file_get_contents("http://www.gmatonline.cn/index.php?web/webapi/gmatCourse"),true);
         $teacher = Content::getContent(['fields' => 'speaker,job,description,abstract', 'category' => "138,139", 'pageSize' => 15, 'order' => 'c.sort asc,c.id desc']);
         $this->title='GMAT培训-GMAT课程-GMAT班-GMAT辅导-GMAT模考-申友GMAT-申友网';
