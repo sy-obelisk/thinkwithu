@@ -35,9 +35,9 @@
         $seo['keywords'] = '';
         $seo['description'] = '';
     } elseif ($url == '/toefl/assistance.html') {
-        $seo['title'] = 'TOEFL(托福)培训-托福课程-托福辅导-托福在线课程-申友网';
-        $seo['keywords'] = '托福报名，托福考试时间，托福备考，托福机经，托福真题，托福培训，托福课程，托福网络课程，托福辅导，托福班，托福听力，托福口语、托福词汇、托福写作、托福阅读';
-        $seo['description'] = '申友托福培训平台致力培育托福高分学员。为学员提供关于托福报名，托福考试时间，托福机经，托福真题，托福听力，托福口语、托福词汇、托福写作、托福阅读等专业的托福备考信息，被业界称为“托福高分基地”。';
+        $seo['title'] = '申友官网-留学咨询—名校留学专业申请机构-托福/雅思/GMAT/GRE培训机构-申友网';
+        $seo['keywords'] = '出国留学 名校留学 留学咨询 留学条件 留学机构哪家好 美国留学 美国留学咨询机构 美国留学服务 GMAT培训 雅思培训 托福培训 GRE培训';
+        $seo['description'] = '申友留学，专注商科与STEM留学咨询，提供留学申请一站式服务，是GMAT与托福 雅思培训的行业领跑者。申友专注美国、英国、加拿大、澳洲、香港等名校留学，留学咨询，出国留学，托福 雅思与GMAT培训，尽在申友。';
     } elseif (strstr($url, '/teachers/')) {
         $seo['title'] = 'GMAT名师、托福名师、留学顾问';
         $seo['keywords'] = '';
@@ -158,28 +158,28 @@
                 <img class="uyLogo" src="/cn/Hirsi/images/stanford.gif" alt="">
                 <div>
                     <p class="ut_name">Stanford</p>
-                    <p class="ut_num"><span>60</span>例</p>
+                    <p class="ut_num"><span>35</span>例</p>
                 </div>
             </div>
             <div class="logo_content">
                 <img class="uyLogo" src="/cn/Hirsi/images/princeton.gif" alt="">
                 <div>
                     <p class="ut_name">Princeton</p>
-                    <p class="ut_num"><span>25</span>例</p>
+                    <p class="ut_num"><span>12</span>例</p>
                 </div>
             </div>
             <div class="logo_content">
                 <img class="uyLogo" src="/cn/Hirsi/images/mit.gif" alt="" style="margin-top: 20px">
                 <div>
                     <p class="ut_name">MIT</p>
-                    <p class="ut_num"><span>48</span>例</p>
+                    <p class="ut_num"><span>23</span>例</p>
                 </div>
             </div>
             <div class="logo_content">
                 <img class="uyLogo" src="/cn/Hirsi/images/berkeley.gif" alt="">
                 <div>
                     <p class="ut_name">Berkeley</p>
-                    <p class="ut_num"><span>83</span>例</p>
+                    <p class="ut_num"><span>30</span>例</p>
                 </div>
             </div>
         </div>
@@ -188,28 +188,28 @@
                 <img class="uyLogo" src="/cn/Hirsi/images/cmu.gif" alt="">
                 <div>
                     <p class="ut_name">CMU</p>
-                    <p class="ut_num"><span>78</span>例</p>
+                    <p class="ut_num"><span>28</span>例</p>
                 </div>
             </div>
             <div class="logo_content">
                 <img class="uyLogo" src="/cn/Hirsi/images/harvard.gif" alt="">
                 <div>
                     <p class="ut_name">Harvard</p>
-                    <p class="ut_num"><span>39</span>例</p>
+                    <p class="ut_num"><span>18</span>例</p>
                 </div>
             </div>
             <div class="logo_content">
                 <img class="uyLogo" src="/cn/Hirsi/images/oxford.gif" alt="">
                 <div>
                     <p class="ut_name">Oxford</p>
-                    <p class="ut_num"><span>8</span>例</p>
+                    <p class="ut_num"><span>14</span>例</p>
                 </div>
             </div>
             <div class="logo_content">
                 <img class="uyLogo" src="/cn/Hirsi/images/cambridge.gif" alt="">
                 <div>
                     <p class="ut_name">Cambridge</p>
-                    <p class="ut_num"><span>14</span>例</p>
+                    <p class="ut_num"><span>21</span>例</p>
                 </div>
             </div>
         </div>
@@ -712,7 +712,7 @@
             </div>
         </div>
         <div class="encyctab_right"><!--第二个选项卡右边-->
-            <a href="">
+            <a href="/word-details/<?php echo $abroad['recommend'][0]['id']?>/index,261.html">
                 <div class="ency_recommend">
                     <img class="recommend_img" src="/cn/Hirsi/images/recommend.png" alt="">
                     <img style="width: 100%" src="http://www.thinkwithu.com/<?php echo $abroad['recommend'][0]['image']?>" alt="">
@@ -874,7 +874,7 @@
             </div>
         </div>
         <div class="eaxm_right"><!--第二个选项卡右边-->
-            <a href="">
+            <a href="/word-details/<?php echo $news['recommend'][0]['id']?>/index,261.html">
                 <div class="eaxm_recommend">
                     <img style="width: 100%" src="http://www.thinkwithu.com/<?php echo $news['recommend'][0]['image']?>" alt="">
                     <div class="ency_bot_words"><p><?php echo $news['recommend'][0]['name']?></p></div>
