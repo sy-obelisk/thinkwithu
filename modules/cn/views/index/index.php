@@ -158,7 +158,11 @@
                 <img class="uyLogo" src="/cn/Hirsi/images/stanford.gif" alt="">
                 <div>
                     <p class="ut_name">Stanford</p>
+<<<<<<< HEAD
                     <p class="ut_num"><span>35</span>例</p>
+=======
+                    <p class="ut_num"><span>34</span>例</p>
+>>>>>>> 7718c2397b7eb6048b6327d53d36f04a9a3d0fb1
                 </div>
             </div>
             <div class="logo_content">
@@ -172,14 +176,22 @@
                 <img class="uyLogo" src="/cn/Hirsi/images/mit.gif" alt="" style="margin-top: 20px">
                 <div>
                     <p class="ut_name">MIT</p>
+<<<<<<< HEAD
                     <p class="ut_num"><span>23</span>例</p>
+=======
+                    <p class="ut_num"><span>32</span>例</p>
+>>>>>>> 7718c2397b7eb6048b6327d53d36f04a9a3d0fb1
                 </div>
             </div>
             <div class="logo_content">
                 <img class="uyLogo" src="/cn/Hirsi/images/berkeley.gif" alt="">
                 <div>
                     <p class="ut_name">Berkeley</p>
+<<<<<<< HEAD
                     <p class="ut_num"><span>57</span>例</p>
+=======
+                    <p class="ut_num"><span>30</span>例</p>
+>>>>>>> 7718c2397b7eb6048b6327d53d36f04a9a3d0fb1
                 </div>
             </div>
         </div>
@@ -188,7 +200,11 @@
                 <img class="uyLogo" src="/cn/Hirsi/images/cmu.gif" alt="">
                 <div>
                     <p class="ut_name">CMU</p>
+<<<<<<< HEAD
                     <p class="ut_num"><span>51</span>例</p>
+=======
+                    <p class="ut_num"><span>28</span>例</p>
+>>>>>>> 7718c2397b7eb6048b6327d53d36f04a9a3d0fb1
                 </div>
             </div>
             <div class="logo_content">
@@ -925,7 +941,6 @@
                             </div>
                         </div>
                     <?php }?>
-                    1
                 </li>
                 <li>
                     <?php foreach($case['gmat'] as $v){?>
@@ -942,7 +957,6 @@
                         </div>
                     </div>
                     <?php }?>
-                    2
                 </li>
                 <li>
                     <?php foreach($case['ielts'] as $v){?>
@@ -959,7 +973,6 @@
                             </div>
                         </div>
                     <?php }?>
-                    3
                 </li>
                 <li>
                     <?php foreach($case['toefl'] as $v){?>
@@ -976,7 +989,6 @@
                             </div>
                         </div>
                     <?php }?>
-                    4
                 </li>
                 <li>
                     <?php foreach($case['gre'] as $v){?>
@@ -993,7 +1005,6 @@
                         </div>
                     </div>
                     <?php }?>
-                    5
                 </li>
 
             </ul>
