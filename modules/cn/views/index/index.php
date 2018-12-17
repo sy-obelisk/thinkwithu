@@ -158,7 +158,7 @@
                 <img class="uyLogo" src="/cn/Hirsi/images/stanford.gif" alt="">
                 <div>
                     <p class="ut_name">Stanford</p>
-                    <p class="ut_num"><span>60</span>例</p>
+                    <p class="ut_num"><span>34</span>例</p>
                 </div>
             </div>
             <div class="logo_content">
@@ -172,14 +172,14 @@
                 <img class="uyLogo" src="/cn/Hirsi/images/mit.gif" alt="" style="margin-top: 20px">
                 <div>
                     <p class="ut_name">MIT</p>
-                    <p class="ut_num"><span>48</span>例</p>
+                    <p class="ut_num"><span>32</span>例</p>
                 </div>
             </div>
             <div class="logo_content">
                 <img class="uyLogo" src="/cn/Hirsi/images/berkeley.gif" alt="">
                 <div>
                     <p class="ut_name">Berkeley</p>
-                    <p class="ut_num"><span>83</span>例</p>
+                    <p class="ut_num"><span>30</span>例</p>
                 </div>
             </div>
         </div>
@@ -188,7 +188,7 @@
                 <img class="uyLogo" src="/cn/Hirsi/images/cmu.gif" alt="">
                 <div>
                     <p class="ut_name">CMU</p>
-                    <p class="ut_num"><span>78</span>例</p>
+                    <p class="ut_num"><span>28</span>例</p>
                 </div>
             </div>
             <div class="logo_content">
