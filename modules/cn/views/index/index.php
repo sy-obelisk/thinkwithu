@@ -158,28 +158,28 @@
                 <img class="uyLogo" src="/cn/Hirsi/images/stanford.gif" alt="">
                 <div>
                     <p class="ut_name">Stanford</p>
-                    <p class="ut_num"><span>60</span>例</p>
+                    <p class="ut_num"><span>35</span>例</p>
                 </div>
             </div>
             <div class="logo_content">
                 <img class="uyLogo" src="/cn/Hirsi/images/princeton.gif" alt="">
                 <div>
                     <p class="ut_name">Princeton</p>
-                    <p class="ut_num"><span>25</span>例</p>
+                    <p class="ut_num"><span>12</span>例</p>
                 </div>
             </div>
             <div class="logo_content">
                 <img class="uyLogo" src="/cn/Hirsi/images/mit.gif" alt="" style="margin-top: 20px">
                 <div>
                     <p class="ut_name">MIT</p>
-                    <p class="ut_num"><span>48</span>例</p>
+                    <p class="ut_num"><span>23</span>例</p>
                 </div>
             </div>
             <div class="logo_content">
                 <img class="uyLogo" src="/cn/Hirsi/images/berkeley.gif" alt="">
                 <div>
                     <p class="ut_name">Berkeley</p>
-                    <p class="ut_num"><span>83</span>例</p>
+                    <p class="ut_num"><span>57</span>例</p>
                 </div>
             </div>
         </div>
@@ -188,28 +188,28 @@
                 <img class="uyLogo" src="/cn/Hirsi/images/cmu.gif" alt="">
                 <div>
                     <p class="ut_name">CMU</p>
-                    <p class="ut_num"><span>78</span>例</p>
+                    <p class="ut_num"><span>51</span>例</p>
                 </div>
             </div>
             <div class="logo_content">
                 <img class="uyLogo" src="/cn/Hirsi/images/harvard.gif" alt="">
                 <div>
                     <p class="ut_name">Harvard</p>
-                    <p class="ut_num"><span>39</span>例</p>
+                    <p class="ut_num"><span>18</span>例</p>
                 </div>
             </div>
             <div class="logo_content">
                 <img class="uyLogo" src="/cn/Hirsi/images/oxford.gif" alt="">
                 <div>
                     <p class="ut_name">Oxford</p>
-                    <p class="ut_num"><span>8</span>例</p>
+                    <p class="ut_num"><span>14</span>例</p>
                 </div>
             </div>
             <div class="logo_content">
                 <img class="uyLogo" src="/cn/Hirsi/images/cambridge.gif" alt="">
                 <div>
                     <p class="ut_name">Cambridge</p>
-                    <p class="ut_num"><span>14</span>例</p>
+                    <p class="ut_num"><span>21</span>例</p>
                 </div>
             </div>
         </div>
@@ -712,7 +712,7 @@
             </div>
         </div>
         <div class="encyctab_right"><!--第二个选项卡右边-->
-            <a href="">
+            <a href="/word-details/<?php echo $abroad['recommend'][0]['id']?>/index,261.html">
                 <div class="ency_recommend">
                     <img class="recommend_img" src="/cn/Hirsi/images/recommend.png" alt="">
                     <img style="width: 100%" src="http://www.thinkwithu.com/<?php echo $abroad['recommend'][0]['image']?>" alt="">
@@ -874,7 +874,7 @@
             </div>
         </div>
         <div class="eaxm_right"><!--第二个选项卡右边-->
-            <a href="">
+            <a href="/word-details/<?php echo $news['recommend'][0]['id']?>/index,261.html">
                 <div class="eaxm_recommend">
                     <img style="width: 100%" src="http://www.thinkwithu.com/<?php echo $news['recommend'][0]['image']?>" alt="">
                     <div class="ency_bot_words"><p><?php echo $news['recommend'][0]['name']?></p></div>
