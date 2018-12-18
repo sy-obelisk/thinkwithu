@@ -100,10 +100,10 @@
         </script>
     </div>
 </section>
-<!--成功案例-->
+<!--留学案例-->
 <section class="success_cases">
     <div class="success_content">
-        <p class="Record_title">成功案例</p>
+        <p class="Record_title">留学案例</p>
         <div class="service_line"></div>
         <div class="success_title hd">
             <ul>
@@ -153,9 +153,97 @@
         jQuery(".success_content").slide({});
     </script>
 </section>
+<!--成功案例-->
+<section class="Study_case">
+    <div class="StudyContent">
+        <p class="Record_title">成功案例</p>
+        <div class="service_line"></div>
+        <div class="success_title hd">
+            <ul>
+                <li data-catid=""><p>GMAT</p></li>
+                <li data-catid=""><p>雅思</p></li>
+                <li data-catid=""><p>托福</p></li>
+                <li data-catid=""><p>GRE</p></li>
+                <a href="">More>></a>
+            </ul>
+        </div>
+
+        <div class="admission_c bd">
+            <!--外层循环ul  内层循环a标签 admission_d_cover-->
+            <ul class="successList">
+                <div class="List_c">
+                    <a href="" class="admission_d_cover">
+                        <li class="Study_d">
+                            <div class="Study_img">
+                                <img src="http://www.thinkwithu.com/files/attach/images/20151224/1450927492359581.jpg" alt="录取图片">
+                            </div>
+                            <p class="admission_name">北京科技大学 飞跃 宾夕法尼亚大学</p><!--录取院校-->
+                            <!--                                <p class="admission_m">--><!--</p><!--录取院校-->
+                            <p class="admission_school">毕业院校:<span>北京科技大学</span></p><!--毕业院校-->
+                            <p class="admission_hardware">硬件条件:<span></span></p>
+                            <!--硬件条件-->
+                            <p class="admission_ad">录取院校:<span> 宾夕法尼亚大学</span></p><!--录取院校-->
+                            <p class="admission_obj">录取专业:<span></span></p><!--录取专业-->
+                        </li>
+                    </a>
+                    <a href="" class="admission_d_cover">
+                        <li class="Study_d">
+                            <div class="Study_img">
+                                <img src="http://www.thinkwithu.com/files/attach/images/20151224/1450927492359581.jpg" alt="录取图片">
+                            </div>
+                            <p class="admission_name">北京科技大学 飞跃 宾夕法尼亚大学</p><!--录取院校-->
+                            <!--                                <p class="admission_m">--><!--</p><!--录取院校-->
+                            <p class="admission_school">毕业院校:<span>北京科技大学</span></p><!--毕业院校-->
+                            <p class="admission_hardware">硬件条件:<span></span></p>
+                            <!--硬件条件-->
+                            <p class="admission_ad">录取院校:<span> 宾夕法尼亚大学</span></p><!--录取院校-->
+                            <p class="admission_obj">录取专业:<span></span></p><!--录取专业-->
+                        </li>
+                    </a>
+                    <a href="" class="admission_d_cover">
+                        <li class="Study_d">
+                            <div class="Study_img">
+                                <img src="http://www.thinkwithu.com/files/attach/images/20151224/1450927492359581.jpg" alt="录取图片">
+                            </div>
+                            <p class="admission_name">北京科技大学 飞跃 宾夕法尼亚大学</p><!--录取院校-->
+                            <!--                                <p class="admission_m">--><!--</p><!--录取院校-->
+                            <p class="admission_school">毕业院校:<span>北京科技大学</span></p><!--毕业院校-->
+                            <p class="admission_hardware">硬件条件:<span></span></p>
+                            <!--硬件条件-->
+                            <p class="admission_ad">录取院校:<span> 宾夕法尼亚大学</span></p><!--录取院校-->
+                            <p class="admission_obj">录取专业:<span></span></p><!--录取专业-->
+                        </li>
+                    </a>
+                    <a href="" class="admission_d_cover">
+                        <li class="Study_d">
+                            <div class="Study_img">
+                                <img src="http://www.thinkwithu.com/files/attach/images/20151224/1450927492359581.jpg" alt="录取图片">
+                            </div>
+                            <p class="admission_name">北京科技大学 飞跃 宾夕法尼亚大学</p><!--录取院校-->
+                            <!--                                <p class="admission_m">--><!--</p><!--录取院校-->
+                            <p class="admission_school">毕业院校:<span>北京科技大学</span></p><!--毕业院校-->
+                            <p class="admission_hardware">硬件条件:<span></span></p>
+                            <!--硬件条件-->
+                            <p class="admission_ad">录取院校:<span> 宾夕法尼亚大学</span></p><!--录取院校-->
+                            <p class="admission_obj">录取专业:<span></span></p><!--录取专业-->
+                        </li>
+                    </a>
+                </div>
+                <!--分页-->
+                <div class="pageSizeStudy">
+
+                </div>
+            </ul>
+        </div>
+    </div>
+    <script>
+        jQuery(".StudyContent").slide({});
+    </script>
+</section>
+
 
 <script>
-    //分页
+    //留学案例分页
     $(document).on("click", ".pageSize li.total", function () {
         var caseWrap = $(this).parent().parent().find('.List_c');
         var catId = $('.success_title ul li.on').attr("data-catid");
@@ -196,6 +284,8 @@
             }
         });
     });
+    //成功案例分页
+
     //搜索
     function search_al() {
         var keyword = $('.school').val();
