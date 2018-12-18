@@ -158,7 +158,7 @@
     <div class="StudyContent">
         <p class="Record_title">成功案例</p>
         <div class="service_line"></div>
-        <div class="success_title hd">
+        <div class="Study_title hd">
             <ul>
                 <li data-catid=""><p>GMAT</p></li>
                 <li data-catid=""><p>雅思</p></li>

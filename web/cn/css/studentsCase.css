@@ -519,3 +519,44 @@
 .pageSizeStudy .prev{
     display: none;
 }
+.Study_title{
+    width: 100%;
+    background: white;
+    -webkit-box-shadow: #E7E7E7 0px 0px 10px;
+    -moz-box-shadow: #E7E7E7 0px 0px 10px;
+    box-shadow: #E7E7E7 0px 0px 10px;
+    margin-bottom: 30px;
+}
+.Study_title ul{
+    overflow: hidden;
+}
+.Study_title ul li{
+    cursor: pointer;
+    float: left;
+    padding: 0px 40px;
+    font-size: 16px;
+
+}
+.Study_title ul li p{
+    padding: 20px 0px;
+    font-size: 16px;
+    border-bottom: 2px solid transparent;
+}
+.Study_title ul li.on{
+    color: #974798;
+
+}
+.Study_title ul li.on p{
+    color: #974798;
+    border-bottom: 2px solid #974798;
+}
+.Study_title ul li:nth-child(1){
+    margin-left: 30px;
+}
+.Study_title ul a{
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 16px;
+    float: right;
+    color: rgb(182,182,182);
+}
