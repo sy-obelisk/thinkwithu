@@ -227,7 +227,7 @@
                 var str = "";
                 caseWrap.empty();
                 for (var i = 0; i < data.data.length; i++) {
-                    str += '<a href="/case/' + catId + '/' + data.data[i].id+'.html" class="admission_d_cover">';
+                    str += '<a href="/case/' + data.data[i].id+'.html" class="admission_d_cover">';
                     str +='<li class="admission_d">';
 
                     str +='<div class="admission_img"><img src="http://www.thinkwithu.com'+ data.data[i].image +'" alt="录取图片"></div>';
