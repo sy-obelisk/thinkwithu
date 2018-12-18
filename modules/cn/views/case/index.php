@@ -112,7 +112,7 @@
                 <li data-catid="104,91,96,207"><p>澳洲加拿大</p></li>
                 <li data-catid="104,90,93,207"><p>香港新加坡</p></li>
                 <li data-catid="104,94,207"><p>欧洲国家</p></li>
-                <a href="">More>></a>
+<!--                <a href="">More>></a>-->
             </ul>
         </div>
         <div class="admission_c bd">
@@ -156,84 +156,48 @@
 <!--成功案例-->
 <section class="Study_case">
     <div class="StudyContent">
-        <p class="Record_title">成功案例</p>
+        <p class="Record_title">高分案例</p>
         <div class="service_line"></div>
         <div class="success_title hd">
             <ul>
-                <li data-catid=""><p>GMAT</p></li>
-                <li data-catid=""><p>雅思</p></li>
-                <li data-catid=""><p>托福</p></li>
-                <li data-catid=""><p>GRE</p></li>
-                <a href="">More>></a>
+                <li data-catid="115,104,206"><p>GMAT</p></li>
+                <li data-catid="172,104,206"><p>雅思</p></li>
+                <li data-catid="116,104,206"><p>托福</p></li>
+                <li data-catid="171,104,206"><p>GRE</p></li>
+<!--                <a href="">More>></a>-->
             </ul>
         </div>
 
         <div class="admission_c bd">
             <!--外层循环ul  内层循环a标签 admission_d_cover-->
+            <?php foreach($score as $val){?>
             <ul class="successList">
                 <div class="List_c">
-                    <a href="" class="admission_d_cover">
-                        <li class="Study_d">
-                            <div class="Study_img">
-                                <img src="http://www.thinkwithu.com/files/attach/images/20151224/1450927492359581.jpg" alt="录取图片">
-                            </div>
-                            <p class="admission_name">北京科技大学 飞跃 宾夕法尼亚大学</p><!--录取院校-->
-                            <!--                                <p class="admission_m">--><!--</p><!--录取院校-->
-                            <p class="admission_school">毕业院校:<span>北京科技大学</span></p><!--毕业院校-->
-                            <p class="admission_hardware">硬件条件:<span></span></p>
-                            <!--硬件条件-->
-                            <p class="admission_ad">录取院校:<span> 宾夕法尼亚大学</span></p><!--录取院校-->
-                            <p class="admission_obj">录取专业:<span></span></p><!--录取专业-->
-                        </li>
-                    </a>
-                    <a href="" class="admission_d_cover">
-                        <li class="Study_d">
-                            <div class="Study_img">
-                                <img src="http://www.thinkwithu.com/files/attach/images/20151224/1450927492359581.jpg" alt="录取图片">
-                            </div>
-                            <p class="admission_name">北京科技大学 飞跃 宾夕法尼亚大学</p><!--录取院校-->
-                            <!--                                <p class="admission_m">--><!--</p><!--录取院校-->
-                            <p class="admission_school">毕业院校:<span>北京科技大学</span></p><!--毕业院校-->
-                            <p class="admission_hardware">硬件条件:<span></span></p>
-                            <!--硬件条件-->
-                            <p class="admission_ad">录取院校:<span> 宾夕法尼亚大学</span></p><!--录取院校-->
-                            <p class="admission_obj">录取专业:<span></span></p><!--录取专业-->
-                        </li>
-                    </a>
-                    <a href="" class="admission_d_cover">
-                        <li class="Study_d">
-                            <div class="Study_img">
-                                <img src="http://www.thinkwithu.com/files/attach/images/20151224/1450927492359581.jpg" alt="录取图片">
-                            </div>
-                            <p class="admission_name">北京科技大学 飞跃 宾夕法尼亚大学</p><!--录取院校-->
-                            <!--                                <p class="admission_m">--><!--</p><!--录取院校-->
-                            <p class="admission_school">毕业院校:<span>北京科技大学</span></p><!--毕业院校-->
-                            <p class="admission_hardware">硬件条件:<span></span></p>
-                            <!--硬件条件-->
-                            <p class="admission_ad">录取院校:<span> 宾夕法尼亚大学</span></p><!--录取院校-->
-                            <p class="admission_obj">录取专业:<span></span></p><!--录取专业-->
-                        </li>
-                    </a>
-                    <a href="" class="admission_d_cover">
-                        <li class="Study_d">
-                            <div class="Study_img">
-                                <img src="http://www.thinkwithu.com/files/attach/images/20151224/1450927492359581.jpg" alt="录取图片">
-                            </div>
-                            <p class="admission_name">北京科技大学 飞跃 宾夕法尼亚大学</p><!--录取院校-->
-                            <!--                                <p class="admission_m">--><!--</p><!--录取院校-->
-                            <p class="admission_school">毕业院校:<span>北京科技大学</span></p><!--毕业院校-->
-                            <p class="admission_hardware">硬件条件:<span></span></p>
-                            <!--硬件条件-->
-                            <p class="admission_ad">录取院校:<span> 宾夕法尼亚大学</span></p><!--录取院校-->
-                            <p class="admission_obj">录取专业:<span></span></p><!--录取专业-->
-                        </li>
-                    </a>
+                    <?php foreach ($val as $k => $v) {
+                        if (is_numeric($k)) { ?>
+                            <a href="/case/<?php echo $v['id'] ?>.html" class="admission_d_cover">
+                                <li class="Study_d">
+                                    <div class="Study_img">
+                                        <img src="http://www.thinkwithu.com<?php echo $v['image'] ?>" alt="高分案例图片">
+                                    </div>
+                                    <p class="admission_name"><?php echo $v['title'] != false ? $v['title'] : $v['name'] ?></p>
+                                    <!--录取院校-->
+                                    <p class="admission_school">考试分数:<span><?php echo $v['score'] ?></span></p>
+                                    <!--毕业院校-->
+                                    <p class="admission_hardware">考试时间:<?php echo $v['time'] ?><span></span></p>
+                                </li>
+                            </a>
+                        <?php }
+                    } ?>
                 </div>
                 <!--分页-->
                 <div class="pageSizeStudy">
-
+                    <?php for($i=1;$i<=$val['total'];$i++){?>
+                        <li data-value="<?php echo $val['total']?>" class="total mr02 <?php if($i==1) echo 'on'?>"><span class="colorRed"><?php echo $i;?></span></li>
+                    <?php }?>
                 </div>
             </ul>
+            <?php }?>
         </div>
     </div>
     <script>

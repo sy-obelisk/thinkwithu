@@ -37,10 +37,14 @@ class CaseController extends ThinkUController
         $case[2] = Content::getContent(['fields' => 'abroadSchool,major,score,oldSchool', 'category' => "104,91,96,207", 'order' => 'c.id desc', 'pageSize' => 12, 'page' => 1, 'pageStr' => 1]);
         $case[3] = Content::getContent(['fields' => 'abroadSchool,major,score,oldSchool', 'category' => "104,90,93,207", 'order' => 'c.id desc', 'pageSize' => 12, 'page' => 1, 'pageStr' => 1]);
         $case[4] = Content::getContent(['fields' => 'abroadSchool,major,score,oldSchool', 'category' => "104,94,207", 'order' => 'c.id desc',  'pageSize' => 12, 'page' => 1, 'pageStr' => 1]);
-        $this->title='成功案例，经验分享-申友网-申友网';
-        $this->keywords='留学案例，美国留学案例，加拿大成功签证案例，澳洲申请案例，欧洲留学案例，法国留学案例，英国留学案例';
-        $this->description='申友网为您提供留学成功申请案例，高分学子案例，高分心得，申请技巧，备考经验等学员信息，更多信息欢迎来电咨询';
-        return $this->render('index', ['case' => $case, 'new' => $new, 'list' => $list]);
+        $score['gmat'] = Content::getContent(['fields' => 'score,time', 'category' => "115,104,206",  'pageSize' => 12, 'page' => 1, 'pageStr' => 1, 'order' => 'c.id desc']);
+        $score['ielts'] = Content::getContent(['fields' => 'score,time', 'category' => "172,104,206",  'pageSize' => 12, 'page' => 1, 'pageStr' => 1, 'order' => 'c.id desc']);
+        $score['toefl'] = Content::getContent(['fields' => 'score,time', 'category' => "116,104,206",  'pageSize' => 12, 'page' => 1, 'pageStr' => 1, 'order' => 'c.id desc']);
+        $score['gre'] = Content::getContent(['fields' => 'score,time', 'category' => "171,104,206",  'pageSize' => 12, 'page' => 1, 'pageStr' => 1, 'order' => 'c.id desc']);
+        $this->title = '成功案例，经验分享-申友网-申友网';
+        $this->keywords = '留学案例，美国留学案例，加拿大成功签证案例，澳洲申请案例，欧洲留学案例，法国留学案例，英国留学案例';
+        $this->description = '申友网为您提供留学成功申请案例，高分学子案例，高分心得，申请技巧，备考经验等学员信息，更多信息欢迎来电咨询';
+        return $this->render('index', ['case' => $case, 'new' => $new, 'list' => $list, 'score' => $score]);
     }
 
     /**
