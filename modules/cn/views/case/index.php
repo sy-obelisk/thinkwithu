@@ -207,48 +207,8 @@
 
 
 <script>
-    //留学案例分页
-    $(document).on("click", ".pageSizeStudy li.total", function () {
-        var caseWrap = $(this).parent().parent().find('.List_c');
-        var catId = $('.Study_title ul li.on').attr("data-catid");
-        var page = parseInt($(this).children().html());
-        $(this).siblings().removeClass('on');
-        $(this).addClass('on');
-        $.ajax({
-            url: "/cn/api/get-case",
-            type: "get",
-            data: {
-                catId: catId,
-                page: page,
-            },
-            dataType: "json",
-            success: function (data) {
-                var str = "";
-                caseWrap.empty();
-                for (var i = 0; i < data.data.length; i++) {
-                    str += '<a href="/case/' + catId + '/' + data.data[i].id+'.html" class="admission_d_cover">';
-                    str +='<li class="Study_d">';
 
-                    str +='<div class="Study_img"><img src="http://www.thinkwithu.com'+ data.data[i].image +'" alt="录取图片"></div>';
-                    if(data.data[i].title){
-                        str +='<p class="admission_name">'+ data.data[i].title +'</p>';
-                    }else {
-                        str +='<p class="admission_name">'+ data.data[i].name +'</p>';
-                    }
-                    if(data.data[i].score){
-                        str +='<p class="admission_school">考试分数:<span>'+ data.data[i].score +'</span></p>';
-                    }else {
-                        str +='<p class="admission_hardware">考试时间:<span></span></p>';
-                    }
-                    str +='<p class="admission_hardware">考试时间:<span>'+ data.data[i].time+'</span></p>';
-                    str +='</li>';
-                    str += '</a>';
-                }
-                caseWrap.append(str);
-            }
-        });
-    });
-    //成功案例分页
+    //留学案例分页
     $(document).on("click", ".pageSize li.total", function () {
         var caseWrap = $(this).parent().parent().find('.List_c');
         var catId = $('.success_title ul li.on').attr("data-catid");
@@ -282,6 +242,51 @@
                     str +='<p class="admission_ad">录取院校:<span>'+ data.data[i].abroadSchool +'</span></p><!--录取院校-->';
                     str +='<p class="admission_obj">录取专业:<span>'+ data.data[i].major+'</span></p><!--录取专业-->';
 
+                    str +='</li>';
+                    str += '</a>';
+                }
+                caseWrap.append(str);
+            }
+        });
+    });
+    //成功案例分页
+    $(document).on("click", ".pageSizeStudy li.total", function () {
+        var caseWrap = $(this).parent().parent().find('.List_c');
+        var catId = $('.Study_title ul li.on').attr("data-catid");
+        var page = parseInt($(this).children().html());
+        $(this).siblings().removeClass('on');
+        $(this).addClass('on');
+        $.ajax({
+            url: "/cn/api/get-case",
+            type: "get",
+            data: {
+                catId: catId,
+                page: page,
+            },
+            dataType: "json",
+            success: function (data) {
+                var str = "";
+                caseWrap.empty();
+                for (var i = 0; i < data.data.length; i++) {
+                    str += '<a href="/case/' + catId + '/' + data.data[i].id+'.html" class="admission_d_cover">';
+                    str +='<li class="Study_d">';
+
+                    str +='<div class="Study_img"><img src="http://www.thinkwithu.com'+ data.data[i].image +'" alt="录取图片"></div>';
+                    if(data.data[i].title){
+                        str +='<p class="admission_name">'+ data.data[i].title +'</p>';
+                    }else {
+                        str +='<p class="admission_name">'+ data.data[i].name +'</p>';
+                    }
+                    if(data.data[i].score){
+                        str +='<p class="admission_school">考试分数:<span>'+ data.data[i].score +'</span></p>';
+                    }else {
+                        str +='<p class="admission_hardware">考试时间:<span></span></p>';
+                    }
+                    if(data.data[i].time){
+                        str +='<p class="admission_hardware">考试时间:<span>'+ data.data[i].time+'</span></p>';
+                    }else {
+                        str +='<p class="admission_hardware">考试时间:<span></span></p>';
+                    }
                     str +='</li>';
                     str += '</a>';
                 }
