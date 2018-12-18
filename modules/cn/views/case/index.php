@@ -9,7 +9,7 @@
         <ul><!--循环li-->
             <li>
                 <a href="" target="_blank">
-                    <img src="http://www.thinkwithu.com/files/attach/images/20170217/1487326065197811.png" alt="案例库">
+                    <img src="/cn/images/2019_case_banner.png" alt="案例库">
                 </a>
             </li>
         </ul>
