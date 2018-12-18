@@ -1526,7 +1526,7 @@ class ApiController extends ThinkUApiControl {
 //        $data = file_get_contents("http://www.smartapply.cn/cn/api/get-case?catId=$catId&page=$page");
 //        $data = json_decode($data, true);
 
-        $data['data'] = Content::getContent(['fields' => 'abroadSchool,major,score,oldSchool', 'category' => "$catId", 'order' => 'c.sort asc,c.id desc', 'pageSize' => 12, 'page' => $page]);
+        $data['data'] = Content::getContent(['fields' => 'abroadSchool,major,score,oldSchool,time', 'category' => "$catId", 'order' => 'c.id desc', 'pageSize' => 12, 'page' => $page]);
         $data['page'] = $page;
         die(json_encode($data));
     }

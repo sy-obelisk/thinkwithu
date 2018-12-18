@@ -41,7 +41,7 @@
                 <?php foreach($caseList as $v){?>
                 <li>
                     <b>•</b>
-                    <span><a href="/word-details/<?php echo $v['id']?>/index,178.html"><?php echo $v['name']?></a></span>
+                    <span><a href="/word-details/<?php echo $v['id']?>/index,178.html"><?php echo $v['title']!=false?$v['title']:$v['name']?></a></span>
                     <div class="clearfix"></div>
                 </li>
                 <?php }?>
