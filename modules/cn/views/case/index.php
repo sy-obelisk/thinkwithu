@@ -38,7 +38,7 @@
                     <li><!--循环li-->
 <!--                        <div><p>--><?php //echo $v['name']?><!--</p></div>-->
 <!--                        <div>金融</div>-->
-                        <div><?php echo $v['name']?></div>
+                        <div><?php echo $v['title']?></div>
                     </li>
                     <?php }?>
                 </ul>
