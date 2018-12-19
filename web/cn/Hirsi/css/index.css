@@ -1166,7 +1166,7 @@ body{
     cursor: pointer;
 }
 .hdCurriculum{
-    width:300px ;
+    /*width:300px ;*/
     height:44px;
     position: absolute;
     bottom: 60px;
