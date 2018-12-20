@@ -904,7 +904,7 @@
                 <li><p>GMAT</p></li>
                 <li><p>雅思</p></li>
                 <li><p>托福</p></li>
-                <li><p>GRE</p></li>
+<!--                <li><p>GRE</p></li>-->
             </ul>
         </div>
         <div class="bdCurriculum bd">

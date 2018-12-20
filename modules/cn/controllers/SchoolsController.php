@@ -52,7 +52,7 @@ class SchoolsController extends ThinkUController {
 
     }
 
-    /**首页-院校库数据
+    /**首页-院校库数据-旧的方法
      * @return string
      * by fawn
      */
@@ -71,6 +71,26 @@ class SchoolsController extends ThinkUController {
         $result = json_decode($school->CurlRequest($url,['keyword'=>$data['keyword'], 'schoolid'=>$data['schoolid'], 'type'=>$data['type'], 'catid'=>$data['catid'], 'pageNumber'=>$data['pageNumber'], 'pageSize'=>$data['pageSize'],'hot'=>$data['hot']]),TRUE);
         die(json_encode($result));
     }
+
+//    /**首页-院校库数据
+//     * @return string
+//     * by fawn
+//     */
+//    public function actionSelect()
+//    {
+//        $country = Yii::$app->request->post('country', '');
+//        $page = Yii::$app->request->post('page', 1);
+//        $rank = Yii::$app->request->post('rank', '');
+//        $major = Yii::$app->request->post('major', '');
+//        $majorDetails = Yii::$app->request->post('majorDetails', '');
+//        $type = Yii::$app->request->post('type', '');
+//        $schoolSystem = Yii::$app->request->post('schoolSystem', '');
+//        $tuition = Yii::$app->request->post('tuition', '');
+//        $result = file_get_contents("http://schools.smartapply.cn/schools.html?data-type=json&country=$country&rank=$rank&major=$major&majorDetails=$majorDetails&type=$type&schoolSystem=$schoolSystem&tuition=$tuition&page=$page");
+//        $result =json_decode($result,true);
+////        var_dump($result);die;
+//        die(json_encode($result['data']));
+//    }
 
     /**院校详情
      * by fawn

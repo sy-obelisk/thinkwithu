@@ -163,7 +163,7 @@
                 <li data-catid="115,104,206"><p>GMAT</p></li>
                 <li data-catid="172,104,206"><p>雅思</p></li>
                 <li data-catid="116,104,206"><p>托福</p></li>
-                <li data-catid="171,104,206"><p>GRE</p></li>
+<!--                <li data-catid="171,104,206"><p>GRE</p></li>-->
 <!--                <a href="">More>></a>-->
             </ul>
         </div>
