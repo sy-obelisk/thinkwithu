@@ -342,7 +342,7 @@
                <li>香港</li>
                <li>欧洲</li>
                <li>亚洲</li>
-               <div><a href="">More>></a></div>
+               <div><a target="_blank" href="/encyclopedia/master.html">More>></a></div>
            </ul>
        </div>
        <div style="width: 100%;overflow: hidden">
