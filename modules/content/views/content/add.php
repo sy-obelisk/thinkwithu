@@ -91,6 +91,12 @@
                         <a href="#" class="btn btn-info" onclick="upImage();">上传图片</a>
                     </div>
                 </div>
+            <div class="control-group">
+                <label for="modulename" class="control-label">阅读量</label>
+                <div class="controls">
+                    <input type="text" id="input1" name="content[viewCount]" value="<?php echo isset($data['viewCount'])?$data['viewCount']:''?>" datatype="viewCount" needle="needle" >
+                </div>
+            </div>
 
             <?php
             foreach ($catContent as $k => $v) {

@@ -536,6 +536,12 @@
         $.ajax({
             url: '/cn/schools/select',
             data: {
+//                country:156,
+//                rank:163,
+//                major:172,
+//                majorDetails:196,
+//                schoolSystem:420,
+//                tuition:' ',
                 keyword: keyword,
                 type: type,
                 catid: catid,

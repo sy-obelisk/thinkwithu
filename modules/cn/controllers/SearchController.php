@@ -14,6 +14,7 @@ use app\libs\P;
 
 class SearchController extends ThinkUController {
     public $enableCsrfValidation = false;
+    public $layout = 'cn';
     public function actionIndex(){
         $keyword  = Yii::$app->request->get('keyword', '');
         $keyword  =addslashes($keyword);
