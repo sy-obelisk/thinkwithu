@@ -116,7 +116,7 @@ class CaseController extends ThinkUController
 //        ))->getData();
         if($keyword!=false){
             $keyword=str_replace('大学','',$keyword);
-            $data = Content::getContent(['fields' => 'abroadSchool,major,score,oldSchool','category' => "207,104",'where'=>"c.name like '%".$keyword."%'"]);
+            $data = Content::getContent(['fields' => 'abroadSchool,major,score,oldSchool','category' => "207,104",'where'=>"c.title like '%".$keyword."%'"]);
         }else{
             $data=array();
         }
