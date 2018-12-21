@@ -241,36 +241,26 @@
             </div>
         </li>
 <!--        这开始渲染三个-->
-        <li>
-            <a href="/public-class/2097.html"><img src="/files/attach/images/20170818/1503020000516905.png" alt="课程图"></a>
-
-            <p><a href="/public-class/2097.html">技巧大解放，托福口语高分轻松上</a></p>
-            <span>2017-08-24 16:30</span>
-            <b></b>
-
-            <div style="clear: both;border-bottom: 1px #cbcbcb solid"></div>
-            <a href="javascript:;" onclick="addCollect(2097)" class="classBtn diffColor01">报名</a>                                     <a href="/public-class/2097.html" class="classBtn diffColor02">详情</a>
-        </li>
-        <li>
-            <a href="/public-class/2097.html"><img src="/files/attach/images/20170818/1503020000516905.png" alt="课程图"></a>
-
-            <p><a href="/public-class/2097.html">技巧大解放，托福口语高分轻松上</a></p>
-            <span>2017-08-24 16:30</span>
-            <b></b>
-
-            <div style="clear: both;border-bottom: 1px #cbcbcb solid"></div>
-            <a href="javascript:;" onclick="addCollect(2097)" class="classBtn diffColor01">报名</a>                                     <a href="/public-class/2097.html" class="classBtn diffColor02">详情</a>
-        </li>
-        <li>
-            <a href="/public-class/2097.html"><img src="/files/attach/images/20170818/1503020000516905.png" alt="课程图"></a>
-
-            <p><a href="/public-class/2097.html">技巧大解放，托福口语高分轻松上</a></p>
-            <span>2017-08-24 16:30</span>
-            <b></b>
-
-            <div style="clear: both;border-bottom: 1px #cbcbcb solid"></div>
-            <a href="javascript:;" onclick="addCollect(2097)" class="classBtn diffColor01">报名</a>                                     <a href="/public-class/2097.html" class="classBtn diffColor02">详情</a>
-        </li>
+        <?php
+        $data = \app\modules\cn\models\Content::getContent(['fields' => 'url,place,time', 'category' => '172,107', 'pageSize' => 3, 'order' => 'id desc']);
+        ?>
+        <?php
+        foreach ($data as $v) {
+            ?>
+            <li>
+                <a href="/public-class/<?php echo $v['id'] ?>.html"><img src="<?php echo $v['image'] ?>" alt="课程图"/></a>
+                <p><a href="/public-class/<?php echo $v['id'] ?>.html"><?php echo $v['name'] ?></a></p>
+                <span><?php echo date("Y-m-d H:i", strtotime($v['time'])) ?></span>
+                <b><?php echo $v['place'] ?></b>
+                <div style="clear: both;border-bottom: 1px #cbcbcb solid"></div>
+                <?php if (!empty($v['url'])) { ?>
+                    <a class="classBtn diffColor01"
+                       href="/public-class/back/<?php echo $v['id'] ?>.html">课程回放</a>                     <?php } else { ?>
+                    <a href="javascript:;" onclick="addCollect(<?php echo $v['id'] ?>)"
+                       class="classBtn diffColor01">报名</a>                     <?php } ?>
+                <a href="/public-class/<?php echo $v['id'] ?>.html" class="classBtn diffColor02">详情</a>
+            </li>
+        <?php } ?>
         <!-- 结束-->
     </ul>
 </div>
