@@ -558,6 +558,7 @@
 	width: 331px;
 }
 .right-zx-info ul li{
+	max-height: 20px!important;
 	margin-bottom: 8px;
 }
 .right-zx-info ul li:last-child{
@@ -570,7 +571,9 @@
 }
 .right-zx-info ul li a{
 	width: 240px;
-	white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
 	font-size: 14px;
 	color: #333333;
 	display: block;

@@ -235,6 +235,34 @@
         <?php
         }
         ?>
+        <li class="noBorderLi">
+            <div class="haveBG-img imgBack03">
+                <div class="zz_div"></div>
+                <h1>雅思</h1>
+            </div>
+        </li>
+<!--        这开始渲染三个-->
+        <?php
+        $data = \app\modules\cn\models\Content::getContent(['fields' => 'url,place,time', 'category' => '172,107', 'pageSize' => 3, 'order' => 'id desc']);
+        ?>
+        <?php
+        foreach ($data as $v) {
+            ?>
+            <li>
+                <a href="/public-class/<?php echo $v['id'] ?>.html"><img src="<?php echo $v['image'] ?>" alt="课程图"/></a>
+                <p><a href="/public-class/<?php echo $v['id'] ?>.html"><?php echo $v['name'] ?></a></p>
+                <span><?php echo date("Y-m-d H:i", strtotime($v['time'])) ?></span>
+                <b><?php echo $v['place'] ?></b>
+                <div style="clear: both;border-bottom: 1px #cbcbcb solid"></div>
+                <?php if (!empty($v['url'])) { ?>
+                    <a class="classBtn diffColor01"
+                       href="/public-class/back/<?php echo $v['id'] ?>.html">课程回放</a>                     <?php } else { ?>
+                    <a href="javascript:;" onclick="addCollect(<?php echo $v['id'] ?>)"
+                       class="classBtn diffColor01">报名</a>                     <?php } ?>
+                <a href="/public-class/<?php echo $v['id'] ?>.html" class="classBtn diffColor02">详情</a>
+            </li>
+        <?php } ?>
+        <!-- 结束-->
     </ul>
 </div>
 <!--联系申友-->

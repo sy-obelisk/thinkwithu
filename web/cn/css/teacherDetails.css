@@ -70,14 +70,17 @@
 }
 .detail-con{
     width: 100%;
-    padding: 43px 10px 50px 10px;
+    padding: 3px 10px 10px 10px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    background: rgba(137, 114, 170, 0.43);
-    margin-top: -30px;
+    background: rgba(255, 255, 255, 0.8);
+    margin-top: 10px;
     color: white;
     font-size: 14px;
+}
+.detail-con p{
+    margin-top: 10px;
 }
 .students{
     width: 1001px;
