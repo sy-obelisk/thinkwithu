@@ -235,6 +235,43 @@
         <?php
         }
         ?>
+        <li class="noBorderLi">
+            <div class="haveBG-img imgBack03">
+                <h1>雅思</h1>
+            </div>
+        </li>
+<!--        这开始渲染三个-->
+        <li>
+            <a href="/public-class/2097.html"><img src="/files/attach/images/20170818/1503020000516905.png" alt="课程图"></a>
+
+            <p><a href="/public-class/2097.html">技巧大解放，托福口语高分轻松上</a></p>
+            <span>2017-08-24 16:30</span>
+            <b></b>
+
+            <div style="clear: both;border-bottom: 1px #cbcbcb solid"></div>
+            <a href="javascript:;" onclick="addCollect(2097)" class="classBtn diffColor01">报名</a>                                     <a href="/public-class/2097.html" class="classBtn diffColor02">详情</a>
+        </li>
+        <li>
+            <a href="/public-class/2097.html"><img src="/files/attach/images/20170818/1503020000516905.png" alt="课程图"></a>
+
+            <p><a href="/public-class/2097.html">技巧大解放，托福口语高分轻松上</a></p>
+            <span>2017-08-24 16:30</span>
+            <b></b>
+
+            <div style="clear: both;border-bottom: 1px #cbcbcb solid"></div>
+            <a href="javascript:;" onclick="addCollect(2097)" class="classBtn diffColor01">报名</a>                                     <a href="/public-class/2097.html" class="classBtn diffColor02">详情</a>
+        </li>
+        <li>
+            <a href="/public-class/2097.html"><img src="/files/attach/images/20170818/1503020000516905.png" alt="课程图"></a>
+
+            <p><a href="/public-class/2097.html">技巧大解放，托福口语高分轻松上</a></p>
+            <span>2017-08-24 16:30</span>
+            <b></b>
+
+            <div style="clear: both;border-bottom: 1px #cbcbcb solid"></div>
+            <a href="javascript:;" onclick="addCollect(2097)" class="classBtn diffColor01">报名</a>                                     <a href="/public-class/2097.html" class="classBtn diffColor02">详情</a>
+        </li>
+        <!-- 结束-->
     </ul>
 </div>
 <!--联系申友-->
