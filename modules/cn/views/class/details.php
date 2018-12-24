@@ -75,7 +75,7 @@
 
         <div class="open-commonStyle">
             <?php
-            $inter = \app\modules\cn\models\Content::getContent(['order'=>'c.viewCount DESC','fields' => 'place,time,','category' => '107','pageSize' => 4,'where' => 'c.catId != 190']);
+            $inter = \app\modules\cn\models\Content::getContent(['order'=>'c.viewCount DESC','fields' => 'place,time,','category' => '107','pageSize' => 4,'where' => 'c.catId != 190' ,'order'=>'c.id desc']);
             ?>
             <ul>
                 <?php
