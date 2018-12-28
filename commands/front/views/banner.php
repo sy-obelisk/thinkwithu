@@ -81,7 +81,7 @@
             </li>
             <li><a class="nav1-link <?php echo $controller == 'practices' ? 'on on-hover' : '' ?>" href="/practices.html">实习活动</a></li>
             <li><a class="nav1-link <?php echo $controller == 'class' ? 'on on-hover' : '' ?>" href="/public-class.html">申友讲堂</a></li>
-            <li><a class="nav1-link <?php echo $controller == 'case' ? 'on on-hover' : '' ?>" href="/case.html">名校案列</a></li>
+            <li><a class="nav1-link <?php echo $controller == 'case' ? 'on on-hover' : '' ?>" href="/case.html">名校案例</a></li>
             <li><a class="nav1-link <?php echo $controller == 'masters' ? 'on on-hover' : '' ?>" href="/teachers.html">名师团队</a></li>
             <li><a href="http://bbs.thinkwithu.com/">申友论坛</a></li>
         </ul>

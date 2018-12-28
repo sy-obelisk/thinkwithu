@@ -64,6 +64,7 @@
                 <th>感兴趣的服务</th>
                 <th>分数</th>
                 <th>录取几率</th>
+                <th>测试时间</th>
             </tr>
             </thead>
             <tbody>
@@ -87,6 +88,7 @@
                     </td>
                     <td><?php echo $v['score']?></td>
                     <td><?php echo $v['percent']?></td>
+                    <td><?php echo date('Y-m-d H:i:s',$v['createTime'])?></td>
                 </tr>
                 <?php
             }
