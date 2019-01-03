@@ -101,8 +101,8 @@ class SchoolsController extends ThinkUController {
      */
     public function actionSearch()
     {
-        $schoolId = Yii::$app->request->get('school', 11693);
-        $majorId = Yii::$app->request->get('majorId',0);
+        $schoolId = Yii::$app->request->get('school');
+        $majorId = Yii::$app->request->get('major');
         $result = file_get_contents("http://schools.smartapply.cn/select/s-$schoolId/m-$majorId.html?data-type=json");
         $result =json_decode($result,true);
         die(json_encode($result));
