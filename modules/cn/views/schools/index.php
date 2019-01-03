@@ -214,8 +214,6 @@
      */
     function schoolslist(pagenum,pagesize,u,obj){
 
-        
-
         $(obj).siblings().removeClass('on');
         if($(obj).hasClass("on")){
             $(obj).removeClass("on");
@@ -223,31 +221,12 @@
             $(obj).addClass("on");
         }
 
-        var schoolid = $("#schoolid").val();
-        var keyword = $("#keyword").val();
-        // var valN = $("#valN").html();
-        var valN = $("#valN").attr('data-html');
-        var catids = '';
-        var catid = '';
-        $(".cen-one ul li.on").each(function(){
-            catids +=$(this).attr("cid")+",";
-        });
-        if(u){
-            catid=u;
-            if(catids){
-                catid = catids+u;
-            }
-        }else{
-            catid=catids;
-        }
-        if(keyword){
-            if(valN=='搜学校'){
-                var type = 1;
-            }else{
-                var type = 0;
-            }
-            catid = '';
-        }
+        var schoolId = $('#school_country').find('.on').attr('cid');
+        var rankId = $('.totalRanking').find('.on').attr('cid');
+        var majorId = $('.proDirection').find('.on').attr('cid');
+        var majorDetailsId = $('#changeContent').find('.on').attr('cid');
+
+
         if(pagenum =='' || pagenum==null){
             pagenum =1;
         }if(pagesize =='' || pagesize==null){
@@ -257,18 +236,19 @@
         $.ajax({
             url: '/cn/schools/select',
             data: {
-//                country:156,
-//                rank:163,
-//                major:172,
-//                majorDetails:196,
-//                schoolSystem:420,
-//                tuition:' ',
-                keyword: keyword,
-                type: type,
-                catid: catid,
-                schoolid: schoolid,
-                pageNumber: pagenum,
-                pageSize: pagesize
+               country:schoolId,//学校id
+               page:pagenum,//页数
+               rank:rankId,//排名id
+               major:majorId,//专业大类id
+               majorDetails:majorDetailsId,//专业名称id
+               schoolSystem:'',//公立还是私立
+               tuition:' ',//学费
+//                 keyword: keyword,
+//                 type: type,
+//                 catid: catid,
+//                 schoolid: schoolid,
+//                 pageNumber: pagenum,
+//                 pageSize: pagesize
             },
             type: 'post',
             cache: false,
@@ -276,6 +256,7 @@
             success: function (data) {
                 $('#schooldata').empty();
                 if(data.code == 1){
+
                     var str = "";
                     var pages = "";
                     $.each(data.data,function(k,v) {
