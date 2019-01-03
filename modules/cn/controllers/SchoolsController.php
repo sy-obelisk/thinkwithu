@@ -52,45 +52,45 @@ class SchoolsController extends ThinkUController {
 
     }
 
-    /**首页-院校库数据-旧的方法
-     * @return string
-     * by fawn
-     */
-    public function actionSelect(){
-        $school = new Schools();
-        $url = 'school';
-        $pageNumber = Yii::$app->request->post('pageNumber');//分类ID
-        $pageSize = Yii::$app->request->post('pageSize');//分类ID
-        $data['keyword'] = Yii::$app->request->post('keyword');//学校类型
-        $data['schoolid'] = Yii::$app->request->post('schoolid');//学校ID
-        $data['type'] = Yii::$app->request->post('type');//关键字类型
-        $data['hot'] = Yii::$app->request->post('hot');//关键字类型
-        $data['catid'] = trim(Yii::$app->request->post('catid'),',');//分类ID
-        $data['pageNumber'] = !empty($pageNumber)?$pageNumber:1;
-        $data['pageSize'] = !empty($pageSize)?$pageSize:10;
-        $result = json_decode($school->CurlRequest($url,['keyword'=>$data['keyword'], 'schoolid'=>$data['schoolid'], 'type'=>$data['type'], 'catid'=>$data['catid'], 'pageNumber'=>$data['pageNumber'], 'pageSize'=>$data['pageSize'],'hot'=>$data['hot']]),TRUE);
-        die(json_encode($result));
-    }
-
-//    /**首页-院校库数据
+//    /**首页-院校库数据-旧的方法
 //     * @return string
 //     * by fawn
 //     */
-//    public function actionSelect()
-//    {
-//        $country = Yii::$app->request->post('country', '');
-//        $page = Yii::$app->request->post('page', 1);
-//        $rank = Yii::$app->request->post('rank', '');
-//        $major = Yii::$app->request->post('major', '');
-//        $majorDetails = Yii::$app->request->post('majorDetails', '');
-//        $type = Yii::$app->request->post('type', '');
-//        $schoolSystem = Yii::$app->request->post('schoolSystem', '');
-//        $tuition = Yii::$app->request->post('tuition', '');
-//        $result = file_get_contents("http://schools.smartapply.cn/schools.html?data-type=json&country=$country&rank=$rank&major=$major&majorDetails=$majorDetails&type=$type&schoolSystem=$schoolSystem&tuition=$tuition&page=$page");
-//        $result =json_decode($result,true);
-////        var_dump($result);die;
-//        die(json_encode($result['data']));
+//    public function actionSelect(){
+//        $school = new Schools();
+//        $url = 'school';
+//        $pageNumber = Yii::$app->request->post('pageNumber');//分类ID
+//        $pageSize = Yii::$app->request->post('pageSize');//分类ID
+//        $data['keyword'] = Yii::$app->request->post('keyword');//学校类型
+//        $data['schoolid'] = Yii::$app->request->post('schoolid');//学校ID
+//        $data['type'] = Yii::$app->request->post('type');//关键字类型
+//        $data['hot'] = Yii::$app->request->post('hot');//关键字类型
+//        $data['catid'] = trim(Yii::$app->request->post('catid'),',');//分类ID
+//        $data['pageNumber'] = !empty($pageNumber)?$pageNumber:1;
+//        $data['pageSize'] = !empty($pageSize)?$pageSize:10;
+//        $result = json_decode($school->CurlRequest($url,['keyword'=>$data['keyword'], 'schoolid'=>$data['schoolid'], 'type'=>$data['type'], 'catid'=>$data['catid'], 'pageNumber'=>$data['pageNumber'], 'pageSize'=>$data['pageSize'],'hot'=>$data['hot']]),TRUE);
+//        die(json_encode($result));
 //    }
+
+    /**首页-院校库数据
+     * @return string
+     * by fawn
+     */
+    public function actionSelect()
+    {
+        $country = Yii::$app->request->post('country', '');
+        $page = Yii::$app->request->post('page', 1);
+        $rank = Yii::$app->request->post('rank', '');// 排行
+        $major = Yii::$app->request->post('major', '');//专业方向
+        $majorDetails = Yii::$app->request->post('majorDetails', '');//专业详情
+        $type = Yii::$app->request->post('type', '');//
+        $schoolSystem = Yii::$app->request->post('schoolSystem', '');//公立还是私立
+        $tuition = Yii::$app->request->post('tuition', '');//学费
+        $result = file_get_contents("http://schools.smartapply.cn/schools.html?data-type=json&country=$country&rank=$rank&major=$major&majorDetails=$majorDetails&type=$type&schoolSystem=$schoolSystem&tuition=$tuition&page=$page");
+        $result =json_decode($result,true);
+//        var_dump($result);die;
+        die(json_encode($result['data']));
+    }
 
     /**院校详情
      * by fawn
