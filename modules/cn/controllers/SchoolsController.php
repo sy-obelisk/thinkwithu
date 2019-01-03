@@ -151,4 +151,11 @@ class SchoolsController extends ThinkUController {
         die(json_encode($arr));
     }
 
+    /**专业数据
+     * by fawn
+     */
+    public function actionMajorAnalysis(){
+        return $this->render('majorAnalysis',[]);
+    }
+
 }
