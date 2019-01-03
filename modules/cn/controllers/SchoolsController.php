@@ -34,9 +34,11 @@ class SchoolsController extends ThinkUController {
         $major_data = json_decode($school->CurlRequest($url,['catid'=>171]),TRUE);//专业
         $cost_data = json_decode($school->CurlRequest($url,['catid'=>414]),TRUE);//费用
         $type_data = json_decode($school->CurlRequest($url,['catid'=>419]),TRUE);//学院类型
+        $school =  json_decode($school->CurlRequest('school',['catid'=>155, 'pageNumber'=>1, 'pageSize'=>6]),TRUE);
         $this->title='院校库，美国留学院校分享，出国留学案例分享 申友留学专注名校留学申请';
         $this->keywords='留学中介,留学,留学中介机构,留学机构,启德留学,EIC启德教育,留学资讯,出国留学条件,出国留学流程,出国留学中介,读研条件,出国留学费用,出国留学网,留学网,申请出国留学,留学签证,留学看点,留学考试';
         $this->description='申友留学，专注商科与STEM留学咨询，提供留学申请一站式服务，是GMAT与托福 雅思培训的行业领跑者。申友专注美国、英国、加拿大、澳洲、香港等名校留学，留学咨询，出国留学，托福 雅思与GMAT培训，尽在申友。';
+//        echo '<pre>';var_dump($school);die;
         return $this->render('index',
             [
                 'country' => $country_data['data'],
@@ -46,7 +48,8 @@ class SchoolsController extends ThinkUController {
                 'cost' => $cost_data['data'],
                 'type' => $type_data['data'],
                 'activity' => $this->activity,
-                'activityDate' => $this->activityDate
+                'activityDate' => $this->activityDate,
+                'school' => $school
             ]
         );
 

@@ -129,39 +129,20 @@
             <span class="change_right"><i class="iconfont icon_change">&#xe609;</i>换一批</span>
         </div>
         <div class="right_con"><!--循环 right_con_son -->
-            <div class="right_con_son">
-                <div class="son_img">
-                    <img src="http://schools.smartapply.cn/files/2015/0115/20150115033833448.jpg" alt="学校logo">
-                    <p>已有<span>5047</span>人评估</p>
-                </div>
-                <p class="son_sc_name">波士顿学院</p>
-                <p>Boston College</p>
-                <p>学校排名:32</p>
-                <p>位于:Massachusetts（马萨诸塞州）</p>
-                <a href="/schools/11664.html">查看更多信息&gt;&gt;</a>
-            </div>
-            <div class="right_con_son">
-                <div class="son_img">
-                    <img src="http://schools.smartapply.cn/files/2015/0115/20150115033833448.jpg" alt="学校logo">
-                    <p>已有<span>5047</span>人评估</p>
-                </div>
-                <p class="son_sc_name">波士顿学院</p>
-                <p>Boston College</p>
-                <p>学校排名:32</p>
-                <p>位于:Massachusetts（马萨诸塞州）</p>
-                <a href="/schools/11664.html">查看更多信息&gt;&gt;</a>
-            </div>
-            <div class="right_con_son">
-                <div class="son_img">
-                    <img src="http://schools.smartapply.cn/files/2015/0115/20150115033833448.jpg" alt="学校logo">
-                    <p>已有<span>5047</span>人评估</p>
-                </div>
-                <p class="son_sc_name">波士顿学院</p>
-                <p>Boston College</p>
-                <p>学校排名:32</p>
-                <p>位于:Massachusetts（马萨诸塞州）</p>
-                <a href="/schools/11664.html">查看更多信息&gt;&gt;</a>
-            </div>
+            <?php foreach($school['data'] as $k=>$v){
+                if(is_numeric($k)){?>
+                    <div class="right_con_son">
+                        <div class="son_img">
+                            <img src="http://schools.smartapply.cn<?php echo $v['image']?>" alt="学校logo">
+                            <p>已有<span><?php echo $v['viewCount']+rand(10,100) ?></span>人评估</p>
+                        </div>
+                        <p class="son_sc_name"><?php echo $v['name']?></p>
+                        <p><?php echo $v['title']?></p>
+                        <p>学校排名:<?php echo $v['s_rank']?></p>
+                        <p>位于:<?php echo $v['s_wz']?></p>
+                        <a href="/schools/<?php echo $v['id']?>.html">查看更多信息>></a>
+                    </div>
+                <?php }}?>
         </div>
     </div>
     <div style="clear: both"></div>
