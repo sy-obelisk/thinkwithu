@@ -98,7 +98,9 @@
             <div class="chagneMajor">
 <!--                <span class="triangle triLeft01"></span>-->
                 <div class="chagneName"><b>专业名称：</b></div>
-                <div id="changeContent"></div>
+                <div id="changeContent">
+
+                </div>
             </div>
         </div>
          <div class="acad-center02">
@@ -211,6 +213,9 @@
      * 院校数据
      */
     function schoolslist(pagenum,pagesize,u,obj){
+
+        
+
         $(obj).siblings().removeClass('on');
         if($(obj).hasClass("on")){
             $(obj).removeClass("on");
