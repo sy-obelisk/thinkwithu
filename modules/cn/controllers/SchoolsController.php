@@ -72,7 +72,7 @@ class SchoolsController extends ThinkUController {
 //        die(json_encode($result));
 //    }
 
-    /**首页-院校库数据
+    /**院校库数据-按条件匹配院校
      * @return string
      * by fawn
      */
@@ -90,6 +90,19 @@ class SchoolsController extends ThinkUController {
         $result =json_decode($result,true);
 //        var_dump($result);die;
         die(json_encode($result['data']));
+    }
+
+    /**院校库数据-学校专业搜索
+     * @return string
+     * by fawn
+     */
+    public function actionSearch()
+    {
+        $schoolId = Yii::$app->request->get('school', 11693);
+        $majorId = Yii::$app->request->get('majorId',0);
+        $result = file_get_contents("http://schools.smartapply.cn/select/s-$schoolId/m-$majorId.html?data-type=json");
+        $result =json_decode($result,true);
+        die(json_encode($result));
     }
 
     /**院校详情
