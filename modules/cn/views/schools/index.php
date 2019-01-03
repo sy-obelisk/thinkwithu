@@ -38,30 +38,13 @@
                 <div class="search-school">
                     <label class="sea-name"><span>目标学校:</span></label>
                     <div class="sea-input">
-                        <input type="text" placeholder="" oninput="showData()" id="top-schoolName" name="schoolName">
-                        <input type="hidden" name="schoolId" class="schoolId">
-                        <input type="hidden" name="schoolRank" class="schoolRank">
-                        <input type="hidden" name="country" class="s_country">
-                        <div class="s-i-select">
-                            <ul>
-
-                            </ul>
-                        </div>
+                        <input type="text" placeholder="" id="top-schoolName" name="schoolName">
                     </div>
                 </div>
                 <div class="search-major">
                     <label class="sea-name"><span>目标专业:</span></label>
-                    <div class="s-m-select">
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-default dropdown-toggle pro_choice" data-toggle="dropdown">
-                                <span class="b_val" id="top-majorName"></span>
-                                <input type="hidden" value="" name="majorId" id="majordeId">
-                                <input type="hidden" name="majorName" id="majorName">
-                            </button>
-                            <ul class="dropdown-menu pro_category" role="menu">
-
-                            </ul>
-                        </div>
+                    <div class="sea-input">
+                        <input type="text" placeholder="" id="top-schoolMajor" name="schoolName">
                     </div>
                 </div>
                 <div class="searchBtn" onclick="searchSure()">确定</div>
@@ -130,7 +113,8 @@
              <div class="findSchool">
                  <span class="findSchoolSpan">*共找到<span id="s_school">0</span>所符合条件的学校</span>
                  <div  class="findSchoolRight">
-                     <span>找到<span id="s_school_right">0</span>所学校</span><span style="margin-left: 10px">|<label class="nowNum" style="margin-left: 10px"></label>/<label class="totleNum"></label></span>
+                     <span>找到<span id="s_school_right">0</span>所学校</span>
+<!--                     <span style="margin-left: 10px">|<label class="nowNum" style="margin-left: 10px"></label>/<label class="totleNum"></label></span>-->
                  </div>
              </div>
              <!--学校列表-->
@@ -152,39 +136,20 @@
             <span class="change_right"><i class="iconfont icon_change">&#xe609;</i>换一批</span>
         </div>
         <div class="right_con"><!--循环 right_con_son -->
-            <div class="right_con_son">
-                <div class="son_img">
-                    <img src="http://schools.smartapply.cn/files/2015/0115/20150115033833448.jpg" alt="学校logo">
-                    <p>已有<span>5047</span>人评估</p>
-                </div>
-                <p class="son_sc_name">波士顿学院</p>
-                <p>Boston College</p>
-                <p>学校排名:32</p>
-                <p>位于:Massachusetts（马萨诸塞州）</p>
-                <a href="/schools/11664.html">查看更多信息&gt;&gt;</a>
-            </div>
-            <div class="right_con_son">
-                <div class="son_img">
-                    <img src="http://schools.smartapply.cn/files/2015/0115/20150115033833448.jpg" alt="学校logo">
-                    <p>已有<span>5047</span>人评估</p>
-                </div>
-                <p class="son_sc_name">波士顿学院</p>
-                <p>Boston College</p>
-                <p>学校排名:32</p>
-                <p>位于:Massachusetts（马萨诸塞州）</p>
-                <a href="/schools/11664.html">查看更多信息&gt;&gt;</a>
-            </div>
-            <div class="right_con_son">
-                <div class="son_img">
-                    <img src="http://schools.smartapply.cn/files/2015/0115/20150115033833448.jpg" alt="学校logo">
-                    <p>已有<span>5047</span>人评估</p>
-                </div>
-                <p class="son_sc_name">波士顿学院</p>
-                <p>Boston College</p>
-                <p>学校排名:32</p>
-                <p>位于:Massachusetts（马萨诸塞州）</p>
-                <a href="/schools/11664.html">查看更多信息&gt;&gt;</a>
-            </div>
+            <?php foreach($school['data'] as $k=>$v){
+                if(is_numeric($k)){?>
+                    <div class="right_con_son">
+                        <div class="son_img">
+                            <img src="http://schools.smartapply.cn<?php echo $v['image']?>" alt="学校logo">
+                            <p>已有<span><?php echo $v['viewCount']+rand(10,100) ?></span>人评估</p>
+                        </div>
+                        <p class="son_sc_name"><?php echo $v['name']?></p>
+                        <p><?php echo $v['title']?></p>
+                        <p>学校排名:<?php echo $v['s_rank']?></p>
+                        <p>位于:<?php echo $v['s_wz']?></p>
+                        <a href="/schools/<?php echo $v['id']?>.html">查看更多信息>></a>
+                    </div>
+                <?php }}?>
         </div>
     </div>
     <div style="clear: both"></div>
@@ -246,6 +211,11 @@
             $(obj).addClass("on");
         }
 
+        var majorName = $('.proDirection').find('.on').attr('data-value');
+        var majorDetailsName = $('#changeContent').find('.on').html();
+        $('.cond_dir_content').html(majorName);
+        $('.cond_name_content').html(majorDetailsName);
+
         var schoolId = $('#school_country').find('.on').attr('cid');
         var rankId = $('.totalRanking').find('.on').attr('cid');
         var majorId = $('.proDirection').find('.on').attr('cid');
@@ -281,7 +251,7 @@
             dataType: 'json',
             success: function (data) {
                 $('#schooldata').empty();
-                if(data.code == 1){
+                if(data.data){
 
                     var str = "";
                     var pages = "";
@@ -296,14 +266,14 @@
                         '<div class="centTwo-center">'+
                         '<h4><a href="/schools/'+ v.id+'.html">'+ v.name+'</a></h4>'+
                         '<ul>'+
-                        '<li>'+ v.title +'<span class="comment">有0条热门评论</span></li>'+
-                        '<li>所在地：'+ v.s_place+'</li>'+
-                        '<li>地理位置：'+ v.s_wz+'</li>'+
-                        '<li>官网：<a href="'+ v.s_url +'" target="_blank">'+ v.s_url+'</a></li>'+
+                        '<li>'+ v.title +'<span class="comment">有'+ v.reply +'条热门评论</span></li>'+
+                        '<li>所在地：'+ v.place+'</li>'+
+                        '<li>地理位置：'+ v.seat+'</li>'+
+                        '<li>官网：<a href="'+ v.listeningFile +'" target="_blank">'+ v.listeningFile+'</a></li>'+
                         '</ul>'+
                         '</div>'+
                         '<div class="centTwo-right">'+
-                        '<div class="shcoolRank">学校排名：'+ v.s_rank+'</div>'+
+                        '<div class="shcoolRank">学校排名：'+ v.rank+'</div>'+
                         '<div class="guwen">'+
                         '<a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank">'+
                         '<span>和顾问聊聊</span>'+
@@ -320,24 +290,22 @@
 
                     });
 
-                    $("#s_school").html(data.data.count);
-                    $("#s_school_right").html(data.data.count);
+                    $("#s_school").html(data.count);
+                    $("#s_school_right").html(data.count);
 
-                    $("#page_s").html(data.data.pageStr);
+                    $("#page_s").html(data.pageStr);
 
                     $('.iPage').click(function () {
                         var page_1 = $(this).html();
-                        schoolslist(page_1,10,catid)
+                        schoolslist(page_1,10,'')
                     });
 
-                    $('.nowNum').html(data.data.page);
-                    $('.totleNum').html(data.data.total);
-                    if(parseInt(data.data.page) ==parseInt(data.data.total)){
-                        $("#changenext").removeAttr("onclick");
-                    }
+                    // $('.nowNum').html(data.data.page);
+                    // $('.totleNum').html(data.totalPage);
+
                 }
 
-                if(data.code == 0){
+                if(data.data.length==0){
                     $("#schooldata").html('<li>暂无相关数据</li>');
                     $("#s_school").html(0);
                     $("#page_s").html('');
@@ -379,146 +347,81 @@
     });
 
 
-
-
-
-
-
-    //    就读毕业院校下拉框显示
-    $('.Pro_choose').click(function () {
-        if($(this).hasClass('open')){
-            $(this).removeClass('open');
-            $('.school_category').slideUp();
-        }else {
-            $(this).addClass('open');
-            $('.school_category').slideDown();
-        }
-
-    });
-    //    专业选择下拉框显示
-    $('.pro_choice').click(function () {
-        if($(this).hasClass('open')){
-            $(this).removeClass('open');
-            $('.pro_category').slideUp();
-        }else {
-            $(this).addClass('open');
-            $('.pro_category').slideDown();
-        }
-
-    });
-    //    下拉之后赋值
-    function  fuzhi(o){
-        var newVal=$(o).find("a").html();
-        var majorId=$(o).attr("data-id");
-        var s_value=$(o).attr("data-value");
-        $(o).parents("ul").siblings("button").find(".b_val").html(newVal);
-        $(o).parents("ul").siblings("button").find("input.school_value").val(s_value);
-        $(o).parents("ul").siblings("button").find("input#majordeId").val(majorId);
-        $(o).parents("ul").siblings("button").find("input#majorName").val(newVal);
-        //就读毕业院校下拉框关闭
-        $('.Pro_choose').removeClass('open');
-        $('.school_category').slideUp();
-
-        //专业选择下拉框关闭
-        $('.pro_choice').removeClass('open');
-        $('.pro_category').slideUp();
-    }
-    //    显示专业点击选择
-    $(".second_page ul li").click(function(){
-        $(this).addClass("on").siblings("li").removeClass("on");
-        $(this).parents("li").addClass("on").siblings("li").removeClass("on").find("li").removeClass("on");
-    });
-    //    显示专业弹窗
-    function showMajorC(o){
-        $(".t-major-mask").show();
-    }
-    //    关闭专业弹窗
-    function closeMajorC(){
-        $(".t-major-mask").hide();
-    }
-    //    保存选择的专业类别
-    function sureMajor(){
-        var h=$(".second_page ul li.on").html();
-        var pid=$(".second_page ul li.on").attr("data-pid");
-        $(".t-major-mask").hide();
-        $("#major-input").val(h).siblings("input[type='hidden']").val(pid);
-    }
-
-    //    院校搜索
-    function showData(){
-        var v=$("#top-schoolName").val();
-        if(v){
-            $(".s-i-select").find("ul").html("");
-            $.ajax({
-                url:"http://schools.smartapply.cn/cn/api/words-school",
-                type:"get",
-                data:{
-                    keywords:v
-                },
-                dataType:"json",
-                jsonp: "callback",//传递给请求处理程序或页面的，用以获得jsonp回调函数名的参数名(默认为:callback)
-                jsonpCallback: "success_jsonpCallback",//自定义的jsonp回调函数名称，默认为jQuery自动生成的随机函数名
-                success:function(data){
-                    var str='';
-                    if(data.code==1){
-                        if(data.data){
-                            for(var i=0;i<data.data.length;i++){
-                                str+='<li onclick="schoolFuZhi(this)" data-id="'+data.data[i].id+'"' +
-                                    ' data-rank="'+data.data[i].rank+'"' +
-                                    'data-country="'+data.data[i].country+'"><b>'+data.data[i].name+'</b><span>('+data.data[i].title+')</span></li>';
-                            }
-                            $(".s-i-select").find("ul").html(str);
-                            $(".s-i-select").slideDown();
-                            return false;
-                        }
-                    }
-                }
-            });
-
-        }else{
-            $(".s-i-select").slideUp();
-        }
-    }
-    //    院校搜索下拉框赋值
-    function schoolFuZhi(o){
-        var newV=$(o).find("b").html();
-        $(o).parents(".s-i-select").hide().siblings("input").val(newV).attr("data-lid",$(o).attr("data-id"))
-            .siblings("input.schoolId").val($(o).attr("data-id"))
-            .end().siblings("input.schoolRank").val($(o).attr("data-rank"))
-            .end().siblings("input.s_country").val($(o).attr("data-country"));
-        searchMajor($(o).attr("data-id"));
-    }
-    //    搜索专业
-    function searchMajor(id){
-        $(".search-major").find(".dropdown-menu").html("");
-        $.ajax({
-            url:"http://schools.smartapply.cn/cn/api/id-major",
-            type:"get",
-            data:{
-                id:id
-            },
-            dataType:"json",
-            jsonp: "callback",//传递给请求处理程序或页面的，用以获得jsonp回调函数名的参数名(默认为:callback)
-            jsonpCallback: "success_jsonpCallback",//自定义的jsonp回调函数名称，默认为jQuery自动生成的随机函数名
-            success:function(data){
-                var str='';
-                if(data){
-                    for(var i=0;i<data.length;i++){
-                        str+='<li onclick="fuzhi(this)" data-id="'+data[i].id+'">'+
-                            '<a href="javascript:void(0);">'+data[i].name+'</a>'+
-                            '</li>';
-                    }
-                    $(".search-major").show().find(".dropdown-menu").html(str);
-                }
-            }
-        });
-    }
     //搜索确认
     function searchSure() {
-        var schoolId_s = $('.schoolId').val();//目标学校id
-        var majordeId = $('#majordeId').val();//目标专业id
-        $.get('/cn/schools/search',{school:schoolId_s,majorId:majordeId},function (re) {
-            
+        var schoolId_s = $('#top-schoolName').val();//目标学校id
+        var majordeId = $('#top-schoolMajor').val();//目标专业id
+        if(!schoolId_s){
+            alert('请先填写目标学校');
+            return false
+        }
+        if(!majordeId){
+            alert('请先填写目标专业');
+            return false
+        }
+
+        $.get('/cn/schools/search',{school:schoolId_s,majorId:majordeId},function (data) {
+            $('#schooldata').empty();
+            if(data.data.data){
+                console.log(1111);
+                var str = "";
+                var pages = "";
+                $.each(data.data.data,function(k,v) {
+                    console.log(data.data);
+                    str +=' <li>'+
+                        '<div class="centTwo-left">'+
+                        '<a href="/schools/'+ v.id+'.html">'+
+                        '<div class="imgCover"><img src="http://schools.smartapply.cn/'+ v.image+'" alt="学校图片"></div>'+
+                        '<p>已有<span class="viewNum"> '+ v.viewCount+'</span>人关注</p>'+
+                        '</a>'+
+                        '</div>'+
+                        '<div class="centTwo-center">'+
+                        '<h4><a href="/schools/'+ v.id+'.html">'+ v.name+'</a></h4>'+
+                        '<ul>'+
+                        '<li>'+ v.title +'<span class="comment">有'+ v.reply +'条热门评论</span></li>'+
+                        '<li>所在地：'+ v.place+'</li>'+
+                        '<li>地理位置：'+ v.seat+'</li>'+
+                        '<li>官网：<a href="'+ v.listeningFile +'" target="_blank">'+ v.listeningFile+'</a></li>'+
+                        '</ul>'+
+                        '</div>'+
+                        '<div class="centTwo-right">'+
+                        '<div class="shcoolRank">学校排名：'+ v.rank+'</div>'+
+                        '<div class="guwen">'+
+                        '<a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank">'+
+                        '<span>和顾问聊聊</span>'+
+                        '</a>'+
+                        '</div>'+
+                        '<div style="clear: both"></div>'+
+                        '<a href="/evaluation.html">免费留学评估</a>'+
+                        '</div>'+
+                        '<div style="clear: both"></div>'+
+                        '</li>';
+                    if(v.name){
+                        $("#schooldata").html(str);
+                    }
+
+                });
+
+                $("#s_school").html(data.data.count);
+                $("#s_school_right").html(data.data.count);
+
+                $("#page_s").html(data.data.pageStr);
+
+                $('.iPage').click(function () {
+                    var page_1 = $(this).html();
+                    schoolslist(page_1,10,'')
+                });
+
+                // $('.nowNum').html(data.data.page);
+                // $('.totleNum').html(data.totalPage);
+
+            }
+
+            if(data.data.data.length==0){
+                $("#schooldata").html('<li>暂无相关数据</li>');
+                $("#s_school").html(0);
+                $("#page_s").html('');
+            }
         },'json')
     }
 </script>

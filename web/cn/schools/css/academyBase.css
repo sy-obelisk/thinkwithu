@@ -890,9 +890,10 @@ body{
 #page_s{
     float: none!important;
     position: absolute;
-    left: 35%;
+    left: 50%;
     overflow: hidden;
-    transform: translateX(-30%);
+    transform: translateX(-50%);
+    display: flex;
 }
 #page_s li{
     cursor: pointer;
@@ -901,6 +902,7 @@ body{
     color: rgb(153,153,153);
     border: 1px solid rgb(153,153,153);
 }
+
 .page ul li.on{
     color: white!important;
     border: 1px solid #994499!important;
@@ -1060,6 +1062,9 @@ body{
     height: 3px;
     margin: 35px auto;
     background:#944294;
+}
+.grey,.next,.prev{
+    display: none;
 }
 /*搜索框*/
 .search-lu-group{
