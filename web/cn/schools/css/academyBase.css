@@ -38,8 +38,8 @@ body{
     vertical-align: middle;
 }
 .acad-top span{
-    font-size: 12px;
-    vertical-align: middle;
+    font-size: 16px;
+    /*vertical-align: middle;*/
 }
 #keyword{
     width: 160px;
@@ -1060,4 +1060,231 @@ body{
     height: 3px;
     margin: 35px auto;
     background:#944294;
+}
+/*搜索框*/
+.search-lu-group{
+    width: 100%;
+    margin: 5px 0;
+}
+.search-school {
+    /*float: left;*/
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 10px;
+}
+.sea-name {
+    float: left;
+    font-size: 16px;
+    margin-top: 5px;
+}
+.sea-name b {
+    vertical-align: middle;
+    color: rgb(153,68,153);
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.sea-name span{
+    display: inline-block;
+    margin-right: 10px;
+}
+.sea-input {
+    width: 192px;
+    height: 30px;
+    line-height: 25px;
+    float: left;
+    border: 1px rgb(204,204,204) solid;
+    border-radius: 3px;
+    position: relative;
+}
+.sea-input input {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: none;
+    font-size: 16px;
+    padding-left: 7px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.search-btn {
+    width: 29px;
+    height: 100%;
+    background-color: rgb(153,68,153);
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.s-i-select {
+    width: 99%;
+    height: 200px;
+    overflow: auto;
+    position: absolute;
+    left: 0;
+    top: 28px;
+    z-index: 2;
+    border: 1px rgb(153,68,153) solid;
+    background-color: white;
+    display: none;
+}
+.s-i-select ul li span {
+    font-size: 14px;
+    color: grey;
+}
+/* 设置滚动条的样式 */
+.s-m-select .dropdown-menu::-webkit-scrollbar {
+    width: 6px;
+}
+/* 滚动槽 */
+.s-m-select .dropdown-menu::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(44, 44, 44, 0.27);
+}
+/* 滚动条滑块 */
+.s-m-select .dropdown-menu::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.1);
+    -webkit-box-shadow: inset 0 0 6px rgb(153,68,153);
+}
+.s-m-select .dropdown-menu::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(153,68,153,0.57);
+}
+/* 滚动槽 */
+.s-i-select::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(44, 44, 44, 0.27);
+}
+/* 滚动条滑块 */
+.s-i-select::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.1);
+    -webkit-box-shadow: inset 0 0 6px rgb(153,68,153);
+}
+.s-i-select::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(153,68,153,.57);
+}
+.s-i-select ul li{
+    padding: 5px 0;
+    padding-left: 15px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.s-i-select ul li span{
+    font-size: 12px;
+    color: grey;
+}
+.s-i-select ul li:hover{
+    cursor: pointer;
+    background-color: rgb(153,68,153);
+    color: white;
+}
+.search-major{
+    /*float: right;*/
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 40px;
+}
+.btn-group {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+.s-m-select {
+    float: left;
+}
+.s-m-select .btn-group button {
+    width: 180px;
+    height: 30px;
+    border: 1px rgb(204,204,204) solid;
+    border-radius: 3px;
+    outline: none;
+}
+.btn-group .btn {
+    padding: 0;
+    position: relative;
+    float: left;
+}
+.btn-group button {
+    width: 135px;
+    height: 21px;
+    border: 1px #cccccc solid;
+    border-radius: 0;
+    text-align: left;
+    color: #343434;
+    padding-left: 10px !important;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    position: relative;
+}
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.s-m-select .btn-group button b {
+    font-weight: normal;
+    color: #787878;
+}
+.rightJ-btn {
+    width: 29px;
+    height: 100%;
+    display: block;
+    line-height: 30px;
+    background-color: rgb(153,68,153);
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.s-m-select .dropdown-menu {
+    min-width: 100%;
+    height: 200px;
+    overflow: auto;
+    border: 1px rgb(153,68,153) solid;
+    box-shadow: none;
+    border-radius: 0;
+}
+.dropdown-menu {
+    width: 100%;
+    position: absolute;
+    top: 92%;
+    left: 0;
+    z-index: 1000;
+    float: left;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    display: none;
+}
+.school_category{
+    -webkit-box-shadow:  0 3px 5px #ccc;
+    -moz-box-shadow:  0 3px 5px #ccc;
+    box-shadow:  0 3px 5px #ccc;
 }
