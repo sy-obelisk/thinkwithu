@@ -86,7 +86,7 @@ class SchoolsController extends ThinkUController {
         $type = Yii::$app->request->post('type', '');//
         $schoolSystem = Yii::$app->request->post('schoolSystem', '');//公立还是私立
         $tuition = Yii::$app->request->post('tuition', '');//学费
-        $result = file_get_contents("http://schools.smartapply.cn/schools.html?data-type=json&country=$country&rank=$rank&major=$major&majorDetails=$majorDetails&type=$type&schoolSystem=$schoolSystem&tuition=$tuition&page=$page");
+        $result = file_get_contents("http://schools.smartapply.cn/schools.html?data-type=json&country=$country&rank=$rank&major=$major&majorDetails=$majorDetails&page=$page");
         $result =json_decode($result,true);
 //        var_dump($result);die;
         die(json_encode($result['data']));
