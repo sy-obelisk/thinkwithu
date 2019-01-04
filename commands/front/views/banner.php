@@ -61,15 +61,15 @@
             </li>
             <li>
                 <a class="nav1-link <?php echo $controller == 'schools' ? 'on on-hover' : '' ?>" href="/schools.html">院校库
-<!--                    <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标">-->
+                    <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标">
                 </a>
-<!--                <div class="eaxm-list eaxm-list-1">-->
-<!--                    <ul>-->
-<!--                        <li><a href="">院校查询</a></li>-->
-<!--                        <li><a href="">专业排名</a></li>-->
-<!--                        <li><a href="">大学排名</a></li>-->
-<!--                    </ul>-->
-<!--                </div>-->
+                <div class="eaxm-list eaxm-list-1">
+                    <ul>
+                        <li><a href="/schools.html">院校查询</a></li>
+                        <li><a href="/major-analysis/433/1.html">专业排名</a></li>
+                        <li><a href="">大学排名</a></li>
+                    </ul>
+                </div>
             </li>
             <li><a class="nav1-link <?php echo $controller == 'encyclopedia' ? 'on on-hover' : '' ?>" href="javascript:void(0);">留学百科 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
                 <div class="eaxm-list eaxm-list-1">

@@ -5,6 +5,7 @@
  */
 namespace app\modules\cn\controllers;
 use yii;
+use app\libs\Method;
 use app\libs\ThinkUController;
 use app\modules\cn\models\Content;
 use app\libs\Schools;
@@ -172,14 +173,23 @@ class SchoolsController extends ThinkUController {
      * by yoyo
      */
     public function actionMajorAnalysis(){
-        return $this->render('majorAnalysis',[]);
+        $catId = Yii::$app->request->get('catId',433);//分类ID
+        $page = Yii::$app->request->get('page',1);//分类ID
+        $pageSize = Yii::$app->request->get('pageSize',10);//分类ID
+        $data = Method::post("http://www.smartapply.cn/cn/app-api/major-list", ['catId' => $catId,'page'=>$page,'pageSize'=>$pageSize]);
+        $data = json_decode($data,true);
+        return $this->render('majorAnalysis',$data);
     }
 
     /**专业详情
      * by yoyo
      */
-    public function actionMajorDetails(){
-        return $this->render('majorDetails',[]);
+    public function actionMajorDetail(){
+        $id = Yii::$app->request->get('id',3424);//分类ID
+        $data = Method::post("http://www.smartapply.cn/cn/app-api/major-detail", ['id' => $id]);
+        $data = json_decode($data,true);
+//        var_dump($data);die;
+        return $this->render('majorDetail',$data);
     }
 
 }
