@@ -178,6 +178,7 @@ class SchoolsController extends ThinkUController {
         $pageSize = Yii::$app->request->get('pageSize',10);//分类ID
         $data = Method::post("http://www.smartapply.cn/cn/app-api/major-list", ['catId' => $catId,'page'=>$page,'pageSize'=>$pageSize]);
         $data = json_decode($data,true);
+//        echo '<pre>';var_dump($data);die;
         return $this->render('majorAnalysis',$data);
     }
 
@@ -188,7 +189,7 @@ class SchoolsController extends ThinkUController {
         $id = Yii::$app->request->get('id',3424);//分类ID
         $data = Method::post("http://www.smartapply.cn/cn/app-api/major-detail", ['id' => $id]);
         $data = json_decode($data,true);
-//        var_dump($data);die;
+//        echo '<pre>';var_dump($data);die;
         return $this->render('majorDetail',$data);
     }
 

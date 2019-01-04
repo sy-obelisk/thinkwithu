@@ -9,54 +9,49 @@
             <div class="proTitleUlCover hd">
                <ul class="proTitleUl">
                    <!--循环li  个数太多会自动换行-->
-                   <a class="on" href="">商科</a>
-                   <a href="">理工科</a>
-                   <a href="">文科</a>
-                   <a href="">艺术与设计</a>
+                   <a <?php echo $catId==433?'class="on"':''?> href="/major-analysis/433/1.html">商科</a>
+                   <a <?php echo $catId==434?'class="on"':''?> href="/major-analysis/434/1.html">理工科</a>
+                   <a <?php echo $catId==435?'class="on"':''?> href="/major-analysis/435/1.html">文科</a>
+                   <a <?php echo $catId==436?'class="on"':''?> href="/major-analysis/436/1.html">艺术与设计</a>
                </ul>
             </div>
         </div>
         <div class="proContent bd">
             <!--外层循环ul  内层循环li-->
             <ul>
-                <li>
-                    <div class="bdLeft">
-                        <a href=""> <p><b class="flod">金融硕士</b><span class="litter">(Master)</span></p></a>
-                        <div class="bdWords">金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士</div>
-                    </div>
-                    <div class="bdRight">
-                        <a href="" target="_blank"><img src="/cn/schools/images/sercah_shcool.png" alt="" style="width: 20px"><span class="color-x">相关院校</span></a>
-                        <p>麻省理工学院</p>
-                        <p>麻省理工学院麻省理工学院</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="bdLeft">
-                        <p><b class="flod">金融硕士</b><span class="litter">(Master)</span></p>
-                        <div class="bdWords">金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士金融硕士</div>
-                    </div>
-                    <div class="bdRight">
-                        <a href="" target="_blank"><img src="/cn/schools/images/sercah_shcool.png" alt="" style="width: 20px"><span class="color-x">相关院校</span></a>
-                        <p>麻省理工学院</p>
-                        <p>麻省理工学院麻省理工学院</p>
-                    </div>
-                </li>
+                <?php foreach ($data['data'] as $v) { ?>
+                    <li>
+                        <div class="bdLeft">
+                            <a href="/major-detail/<?php echo $v['id']?>.html">
+                                <p><b class="flod"><?php echo $v['name'] ?></b><span class="litter">(<?php echo $v['title'] ?>)</span></p>
+                            </a>
+                            <div class="bdWords"><?php echo $v['introduce'] ?></div>
+                        </div>
+                        <div class="bdRight">
+                            <a href="" target="_blank">
+                                <img src="/cn/schools/images/sercah_shcool.png" alt="" style="width: 20px"><span class="color-x">相关院校</span>
+                            </a>
+                            <?php $school = explode(',', $v['school']);
+                            foreach ($school as $key=>$val) {
+                                if($key<2){
+                                ?>
+                                <p><?php echo $val ?></p>
+                            <?php } }?>
+                        </div>
+                    </li>
+                <?php } ?>
+
                 <!--分页-->
                 <div class="page pagetop">
                     <ul id="page_s">
-                        <a class="on" href="">1</a>
-                        <a class="iPage"  href="">2</a>
+                        <?php $n=ceil($data['count']/10);
+                        for($i=1;$i<$n+1;$i++){
+                        ?>
+                        <a class="<?php echo $data['page']==$i?'on':'iPage'?>" href="/major-analysis/<?php echo $catId?>/<?php echo $i?>.html"><?php echo $i?></a>
+                        <?php }?>
+<!--                        <a class="iPage"  href="">2</a>-->
                     </ul>
                 </div>
-            </ul>
-            <ul>
-                2222
-            </ul>
-            <ul>
-                3333
-            </ul>
-            <ul>
-                44444
             </ul>
         </div>
     </div>

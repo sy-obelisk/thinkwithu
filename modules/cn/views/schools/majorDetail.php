@@ -2,13 +2,13 @@
 
 
 <div class="majorDetailsTitle">
-    <a href="">专业解析首页 > </a><span class="titleName">金融硕士</span>
+    <a href="">专业解析首页 > </a><span class="titleName"><?php echo $name?></span>
 </div>
 <section class="majorDetails">
     <!--左边-->
     <div class="analysisLeft">
         <div class="leftTitle">
-            <p>金融硕士<span>(Master)</span></p>
+            <p><?php echo $name?><span>(<?php echo $title?>)</span></p>
         </div>
         <div class="leftContent">
             <!--专业详情-->
@@ -18,19 +18,19 @@
                     <div class="dis_flex">
                         <div class="wd_1">开始学位</div>
                         <div class="wd_2">
-                            MasterMasterMaster
+                           <?php echo $answer?>
                         </div>
                     </div>
                     <div class="dis_flex">
                         <div class="wd_1">就业方向</div>
                         <div class="wd_2">
-                            就业方向就业方向就业方向就业方向就业方向就业方向就业方向就业方向就业方向就业方向就业方向就业方向就业方向就业方向就业方向就业方向就业方向就业方向就业方向就业方向就业方向就业方向
+                            <?php echo $article?>
                         </div>
                     </div>
                     <div class="dis_flex">
                         <div class="wd_1">从事职业</div>
                         <div class="wd_2">
-                            就业方向就业方向就业方向就业方向就业方向就业方向就业方向就业方向就业方向就业方向就业方向就业方向就业方向就业方向
+                            <?php echo $alternatives?>
                         </div>
                     </div>
                     <div class="dis_flex">
@@ -42,7 +42,7 @@
                     <div class="dis_flex">
                         <div class="wd_1">相关排名</div>
                         <div class="wd_2">
-                            MasterMasterMaster
+                            <?php echo $cnName?>
                         </div>
                     </div>
                 </div>
@@ -51,28 +51,25 @@
             <div class="explanation">
                 <p class="proTitle"><b>|</b> 专业解释</p>
                 <div class="expContent">
-                    专业解释专业解释专业解释专业解释专业解释专业解释专业解释专业解释专业解释专业解释专业解释专业解释专业解释专业解释
+                    <?php echo $numbering?>
                 </div>
             </div>
             <!--适合申请人背景-->
             <div class="applicant">
                 <p class="proTitle"><b>|</b> 适合申请人背景</p>
                 <div class="expContent">
-                    专业解释专业解释专业解释专业解释专业解释专业解释专业解释专业解释专业解释专业解释专业解释专业解释专业解释专业解释
+                    <?php echo $sentenceNumber?>
                 </div>
             </div>
             <!--相关院校-->
             <div class="related">
                 <p class="proTitle"><b>|</b> 相关院校</p>
                 <ul class="relatedName">
-                    <li>麻省理工学院</li>
-                    <li>麻省理工学院</li>
-                    <li>麻省理工学院</li>
-                    <li>麻省理工学院</li>
-                    <li>清华大学</li>
-                    <li>清华大学</li>
-                    <li>清华大学</li>
-                    <li>清华大学</li>
+                    <?php $school = explode(',', $duration);
+                    foreach ($school as $v) {
+                        ?>
+                        <li><?php echo $v ?></li>
+                    <?php } ?>
                 </ul>
             </div>
             <!--专业开设课程及课程方向-->
@@ -84,22 +81,20 @@
                     <div class="dotton"></div>
                 </div>
                 <div>
-                    1、公司金融 1、公司金融 1、公司金融 1、公司金融1、公司金融1、公司金融1、公司金融1、公司金融1、公司金融
+                    <?php echo $problemComplement?>
                 </div>
                 <!--专业开设课程-->
                 <div class="flex_div">
                     <div class="wd_3">专业开设课程</div>
-                    <div class="dotton"></div>
+                    <div class="dotton">
+                    </div>
                 </div>
                 <ul class="relatedName">
-                    <li>公司金融</li>
-                    <li>公司金融</li>
-                    <li>公司金融</li>
-                    <li>公司金融</li>
-                    <li>公司金融</li>
-                    <li>公司金融</li>
-                    <li>公司金融</li>
-                    <li>公司金融</li>
+                    <?php $n = explode(',', $trainer);
+                    foreach ($n as $v) {
+                        ?>
+                        <li><?php echo $v ?></li>
+                    <?php } ?>
                 </ul>
             </div>
             <!--在线咨询-->

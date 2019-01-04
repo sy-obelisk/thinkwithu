@@ -253,7 +253,7 @@ $config = [
 
                  'major-analysis/<catId:\d+>/<page:\d>.html' => 'cn/schools/major-analysis',//专业二级
 
-                 'major-detail/<id:\d+>.html' => 'cn/schools/major-details',//专业详情
+                 'major-detail/<id:\d+>.html' => 'cn/schools/major-detail',//专业详情
 
                  'practices.html' => 'cn/practices/index',//游学实习首页
 
