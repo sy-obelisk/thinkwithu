@@ -1,12 +1,4 @@
-$(function () {
-    $('.proTitleUl li').click(function () {
-       var index = $(this).index();
-        $('.proTitleUl li').removeClass('on');
-        $(this).addClass('on');
-        $('.proContent ul').hide();
-        $('.proContent ul').eq(index).fadeIn();
-    })
-});
+
 function getCode(o) {
     var countdown=60;
     var str = 1;

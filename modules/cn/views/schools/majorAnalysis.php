@@ -9,10 +9,10 @@
             <div class="proTitleUlCover hd">
                <ul class="proTitleUl">
                    <!--循环li  个数太多会自动换行-->
-                   <li class="on">商科</li>
-                   <li>理工科</li>
-                   <li>文科</li>
-                   <li>艺术与设计</li>
+                   <a class="on" href="">商科</a>
+                   <a href="">理工科</a>
+                   <a href="">文科</a>
+                   <a href="">艺术与设计</a>
                </ul>
             </div>
         </div>
@@ -41,6 +41,13 @@
                         <p>麻省理工学院麻省理工学院</p>
                     </div>
                 </li>
+                <!--分页-->
+                <div class="page pagetop">
+                    <ul id="page_s">
+                        <a class="on" href="">1</a>
+                        <a class="iPage"  href="">2</a>
+                    </ul>
+                </div>
             </ul>
             <ul>
                 2222
@@ -123,3 +130,7 @@
         </div>
     </div>
 </section>
+
+<script>
+
+</script>

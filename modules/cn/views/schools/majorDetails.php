@@ -40,7 +40,7 @@
                         </div>
                     </div>
                     <div class="dis_flex">
-                        <div class="wd_1">开始学位</div>
+                        <div class="wd_1">相关排名</div>
                         <div class="wd_2">
                             MasterMasterMaster
                         </div>

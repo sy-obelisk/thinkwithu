@@ -34,7 +34,8 @@ body{
     align-items: center;
 
 }
-.proTitleUl>li{
+.proTitleUl>a{
+    display: inline-block;
     height: 25px;
     line-height: 25px;
     padding: 2px 10px;
@@ -44,12 +45,13 @@ body{
     margin-left: 10px;
     margin-bottom: 10px;
 }
-.proTitleUl li.on{
+.proTitleUl a.on{
     background:#994499;
     color: white;
 }
 .proContent{
     overflow: hidden;
+    background: white;
 }
 .proContent>ul{
     background: white;
@@ -250,4 +252,32 @@ body{
     text-decoration: none;
     line-height: 35px;
     background:#994499;
+}
+
+/*分页*/
+.pagetop {
+    position: relative;
+    margin: 40px 0 90px 0;
+}
+#page_s {
+    float: none!important;
+    position: absolute;
+    left: 50%;
+    overflow: hidden;
+    transform: translateX(-50%);
+    display: flex;
+}
+#page_s a {
+    display: block;
+    cursor: pointer;
+    padding: 3px 10px;
+    border-radius: 3px;
+    margin-right: 10px;
+    color: rgb(153,153,153);
+    border: 1px solid rgb(153,153,153);
+}
+.page ul a.on {
+    color: white!important;
+    border: 1px solid #994499!important;
+    background: #994499;
 }
