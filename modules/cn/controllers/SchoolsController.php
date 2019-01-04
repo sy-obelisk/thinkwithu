@@ -135,7 +135,8 @@ class SchoolsController extends ThinkUController {
         $result = json_decode($school->CurlRequest($url,['contentid'=>$data['contentid'],'catid'=>$data['catid'],'hot'=>$data['hot']]),TRUE);
         die(json_encode($result));
     }
-    /**专业详情
+
+    /**院校的专业详情
      * by fawn
      */
     public function actionMajormsg(){
@@ -168,10 +169,17 @@ class SchoolsController extends ThinkUController {
     }
 
     /**专业数据
-     * by fawn
+     * by yoyo
      */
     public function actionMajorAnalysis(){
         return $this->render('majorAnalysis',[]);
+    }
+
+    /**专业详情
+     * by yoyo
+     */
+    public function actionMajorDetails(){
+        return $this->render('majorDetails',[]);
     }
 
 }
