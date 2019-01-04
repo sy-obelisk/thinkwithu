@@ -3028,6 +3028,9 @@ h1.info-tit {
 
 .nav-wrap {
     background: rgba(248,248,248,0.5);
+    -webkit-box-shadow: 0px 2px 5px #e6e6e6;
+    -moz-box-shadow: 0px 2px 5px #e6e6e6;
+    box-shadow: 0px 2px 5px #e6e6e6;
 }
 .nav-top{
     width: 1200px;

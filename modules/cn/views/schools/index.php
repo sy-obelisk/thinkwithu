@@ -266,7 +266,7 @@
                         '<div class="centTwo-center">'+
                         '<h4><a href="/schools/'+ v.id+'.html">'+ v.name+'</a></h4>'+
                         '<ul>'+
-                        '<li>'+ v.title +'<span class="comment">有'+ v.reply +'条热门评论</span></li>'+
+                        '<li>'+ v.title +'</li>'+
                         '<li>所在地：'+ v.place+'</li>'+
                         '<li>地理位置：'+ v.seat+'</li>'+
                         '<li>官网：<a href="'+ v.listeningFile +'" target="_blank">'+ v.listeningFile+'</a></li>'+
@@ -378,7 +378,7 @@
                         '<div class="centTwo-center">'+
                         '<h4><a href="/schools/'+ v.id+'.html">'+ v.name+'</a></h4>'+
                         '<ul>'+
-                        '<li>'+ v.title +'<span class="comment">有'+ v.reply +'条热门评论</span></li>'+
+                        '<li>'+ v.title +'</li>'+
                         '<li>所在地：'+ v.place+'</li>'+
                         '<li>地理位置：'+ v.seat+'</li>'+
                         '<li>官网：<a href="'+ v.listeningFile +'" target="_blank">'+ v.listeningFile+'</a></li>'+
