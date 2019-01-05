@@ -1703,4 +1703,23 @@ class ApiController extends ThinkUApiControl {
 
     }
 
+    /**
+     *推荐顾问
+     * @yoyo
+     */
+    public function actionCounselorrecommend()
+    {
+        if ($_POST) {
+            $extendVal = Yii::$app->request->post('extendValue');
+            $contentModel = new Practices();
+            $data = $contentModel->addContent(270, $extendVal[0], $extendVal);
+            if (!$data) {
+                die('<script>alert("我们的工作人员将于1-2个工作日内跟你联系");history.go(-1);</script>');
+            } else {
+                $res['code'] = 0;
+                die('<script>alert("数据传输出错！");history.go(-1);</script>');
+            }
+        }
+    }
+
 }
