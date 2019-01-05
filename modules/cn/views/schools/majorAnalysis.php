@@ -60,7 +60,7 @@
         <div class="RightTitle">帮我推荐好顾问</div>
         <div class="RightSubmit">
             <p class="m20">你的姓名:</p>
-            <input type="text" class="userName w80" name="extendValue[]"/>
+            <input type="text" class="userName w80" name="name"/>
 
             <p class="m10">意向留学国家:</p>
             <input type="text" class="country w80" name="extendValue[]"/>

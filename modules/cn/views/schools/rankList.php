@@ -79,7 +79,39 @@
     <div class="rankListRight">
         <!--年份-->
         <div class="rightTitle">
-
+           <ul class="rightTitleContent">
+               <a class="year">年份:</a>
+               <!--当前这个加上类名 on-->
+               <a href="" class="on">2017</a>
+               <a href="" class="">2018</a>
+               <a href="" class="new">2019</a>
+           </ul>
+        </div>
+        <div class="schoolContent">
+            <ul>
+                <!--循环li-->
+                <li>
+                    <div class="ContentLeft">1</div>
+                    <div class="ContentCenter">
+                        <p>哈佛大学</p>
+                        <p>hafo</p>
+                        <p>查看人数 : <b>6222</b></p>
+                    </div>
+                    <div class="ContentRight">
+                        <a href=""><span>录取几率</span></a>
+                        <a href=""><span>推荐导师</span></a>
+                        <a href=""><span>热门案例</span></a>
+                    </div>
+                </li>
+            </ul>
+            <!--分页-->
+            <div class="page pagetop">
+                <ul id="page_s">
+                    <!--当前的加上on-->
+                    <a href="" class="on">1</a>
+                    <a href="" class="iPage">2</a>
+                </ul>
+            </div>
         </div>
     </div>
 </section>

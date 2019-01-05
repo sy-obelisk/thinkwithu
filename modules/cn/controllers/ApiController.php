@@ -1711,14 +1711,26 @@ class ApiController extends ThinkUApiControl {
     {
         if ($_POST) {
             $extendVal = Yii::$app->request->post('extendValue');
+            $name = Yii::$app->request->post('name');
+            $code = Yii::$app->request->post('code');
+            $content = new Content();
             $contentModel = new Practices();
-            $data = $contentModel->addContent(270, $extendVal[0], $extendVal);
-            if (!$data) {
-                die('<script>alert("我们的工作人员将于1-2个工作日内跟你联系");history.go(-1);</script>');
-            } else {
+            $checkTime = $content->checkTime();
+            if(!$checkTime){
                 $res['code'] = 0;
-                die('<script>alert("数据传输出错！");history.go(-1);</script>');
+                $res['message'] = '验证码过期';
+            }else{
+                $checkCode = $content->checkCode($extendVal[2],$code);
+                if(!$checkCode){
+                    $res['code'] = 0;
+                    $res['message'] = '验证码错误';
+                }else{
+                    $data = $contentModel->addContent(270, $name, $extendVal);
+                    $res['code'] = 1;
+                    $res['message'] = '我们的工作人员将于1-2个工作日内跟你联系';
+                }
             }
+            die(json_encode($res));
         }
     }
 

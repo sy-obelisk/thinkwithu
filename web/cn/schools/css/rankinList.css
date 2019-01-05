@@ -146,13 +146,120 @@ body{
     margin-top: 5px;
     font-size: 16px;
 }
-
+.rankListRight{
+    width: 875px;
+    float: right;
+    background: white;
+}
 .rightTitle{
-    height: 60px;
     border-top: 1px solid rgb(254,221,253);
     line-height: 60px;
     text-align: center;
     color: #994499;
     font-size: 22px;
     background: rgb(241,240,240);
+}
+.rightTitleContent{
+    height: 40px;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /*justify-content: center;*/
+    align-items: center;
+}
+.rightTitleContent a{
+    display: inline-block;
+    font-size: 18px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0px 15px;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+.rightTitleContent a:hover{
+    color: rgb(85,85,85);
+}
+.year{
+    margin: 0 15px 0 20px;
+}
+.rightTitleContent a.on{
+    background: #994499;
+    color: white;
+}
+.schoolContent{
+    background: white;
+}
+.schoolContent ul li{
+    margin: auto;
+    list-style: none;
+    width: 90%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid rgb(212,211,213);
+}
+.ContentLeft{
+    width: 40px;
+    height: 40px;
+    background: yellowgreen;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+}
+.ContentCenter{
+    flex: 2;
+    margin-left: 30px;
+    color: rgb(85,85,85);
+}
+.ContentCenter p{
+    padding: 5px 0;
+    font-size: 16px;
+}
+.ContentCenter p:nth-child(2){
+    font-size: 14px;
+}
+.ContentCenter b{
+    font-weight: bold;
+    color: rgb(102,102,102);
+    margin-left: 5px;
+}
+.ContentRight{
+
+}
+.ContentRight>a{
+    display: block;
+    padding: 5px 20px;
+    border: 1px solid rgb(0,163,233);
+    border-radius: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.pagetop {
+    position: relative;
+    margin: 40px 0 90px 0;
+}
+#page_s{
+    float: none!important;
+    position: absolute;
+    left: 50%;
+    overflow: hidden;
+    transform: translateX(-50%);
+    display: flex;
+}
+#page_s a{
+    display: block;
+    padding: 3px 10px;
+    border-radius: 3px;
+    color: rgb(153,153,153);
+    margin-right: 15px;
+    border: 1px solid rgb(153,153,153);
+}
+
+.page ul a.on{
+    color: white!important;
+    border: 1px solid #994499!important;
+    background: #994499;
 }

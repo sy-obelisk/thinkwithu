@@ -29,10 +29,13 @@ function getCode(o) {
 }
 function recommed() {
     var extendValue=[];
-    extendValue[0] = $('.userName').val();
-    extendValue[1] = $('.country').val();
-    extendValue[2] = $('.situation').val();
-    extendValue[3] = $('.phone').val();
+    var name='';
+    var code='';
+    name = $('.userName').val();
+    code = $('.code_marjo').val();
+    extendValue[0] = $('.country').val();
+    extendValue[1] = $('.situation').val();
+    extendValue[2] = $('.phone').val();
 
     if($('.code_marjo').val()==''){
         alert('请先获取验证码');
@@ -46,8 +49,13 @@ function recommed() {
         return false
     }
     $.post('/cn/api/recommend-counselor',{
-        extendValue:extendValue
+        extendValue:extendValue,
+        name:name,
+        code:code
     },function(re){
-
+        if(re.code==1){
+            alert(re.message);
+            window.location.reload();
+        }
     },'json');
 }
