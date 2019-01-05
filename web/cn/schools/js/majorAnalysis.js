@@ -28,5 +28,26 @@ function getCode(o) {
     },"json");
 }
 function recommed() {
-    
+    var extendValue=[];
+    extendValue[0] = $('.userName').val();
+    extendValue[1] = $('.country').val();
+    extendValue[2] = $('.situation').val();
+    extendValue[3] = $('.phone').val();
+
+    if($('.code_marjo').val()==''){
+        alert('请先获取验证码');
+        return false
+    }
+    if(extendValue[0]!=''||extendValue[1]!=''||extendValue[2]!=''||extendValue[3]!=''){
+
+    }
+    else {
+        alert('请先填写信息');
+        return false
+    }
+    $.post('/cn/api/recommend-counselor',{
+        extendValue:extendValue
+    },function(re){
+
+    },'json');
 }

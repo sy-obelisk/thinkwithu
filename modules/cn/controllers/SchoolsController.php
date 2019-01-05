@@ -197,8 +197,11 @@ class SchoolsController extends ThinkUController {
      * by yoyo
      */
     public function actionRanking(){
-        $id = Yii::$app->request->get('id',3424);//分类ID
-        $data = file_get_contents("http://www.smartapply.cn/cn/app-api/school-rank");
+        $classId = Yii::$app->request->get('classId',296);//分类ID
+        $yearId = Yii::$app->request->get('yearId',427);//分类ID
+        $page = Yii::$app->request->get('page',1);//分类ID
+        $pageSize = Yii::$app->request->get('pageSize',15);//分类ID
+        $data = file_get_contents("http://www.smartapply.cn/cn/app-api/school-rank?classId=$classId&yearId=$yearId&page=$page&pageSize=$pageSize");
         $data = json_decode($data,true);
 //        echo '<pre>';var_dump($data);die;
         return $this->render('rankList',[]);

@@ -60,16 +60,16 @@
         <div class="RightTitle">帮我推荐好顾问</div>
         <div class="RightSubmit">
             <p class="m20">你的姓名:</p>
-            <input type="text" class="userName w80" name="userName"/>
+            <input type="text" class="userName w80" name="extendValue[]"/>
 
             <p class="m10">意向留学国家:</p>
-            <input type="text" class="country w80" name="country"/>
+            <input type="text" class="country w80" name="extendValue[]"/>
 
             <p class="m10">个人情况(如就读学校,年级,平均成绩等):</p>
-            <input type="text" class="situation w80" name="situation"/>
+            <input type="text" class="situation w80" name="extendValue[]"/>
 
             <p class="m10">您的电话<b>*</b>:</p>
-            <input type="text" class="phone w80" name="phone" id="tel"/>
+            <input type="text" class="phone w80" name="extendValue[]" id="tel"/>
 
             <input type="text" class="code_marjo" name="code">
             <button class="getCode" onclick="getCode(this)">获取验证码</button>
