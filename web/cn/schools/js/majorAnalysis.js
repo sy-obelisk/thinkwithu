@@ -27,3 +27,6 @@ function getCode(o) {
 
     },"json");
 }
+function recommed() {
+    
+}

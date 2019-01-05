@@ -73,7 +73,7 @@
 
             <input type="text" class="code_marjo" name="code">
             <button class="getCode" onclick="getCode(this)">获取验证码</button>
-            <div class="sure">提交</div>
+            <div class="sure" onclick="recommed()">提交</div>
         </div>
         <div class="rightCenter">
             <div>
@@ -126,6 +126,4 @@
     </div>
 </section>
 
-<script>
-
-</script>
+>

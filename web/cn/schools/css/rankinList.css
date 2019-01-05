@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(246,246,246);
+}
+.rankListCover{
+    width: 1200px;
+    margin: 30px auto;
+    overflow: hidden;
+}
+.rankListLeft{
+    width: 300px;
+    float: left;
+
+}
+.leftTitle{
+    height: 60px;
+    border-top: 1px solid rgb(254,221,253);
+    line-height: 60px;
+    text-align: center;
+    color: #994499;
+    font-size: 22px;
+    background: rgb(241,240,240);
+}
+.listContent{
+    background: white;
+}
+.listContent li{
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    list-style: none;
+    border-bottom: 1px dotted rgb(212,211,213);
+}
+.listContent li.listOn:after{
+    content: ' ';
+    height: 0;
+    right: 0;
+    position: absolute;
+    width: 10px;
+    border-width: 7px;
+    top: 20px;
+    border-top:7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 15px solid #994499;
+}
+.listContent li:last-child{
+    border-bottom: 0px dotted rgb(212,211,213)!important;
+}
+.succesCase{
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color:white;
+    font-size: 22px;
+    background: #994499;
+    margin-top: 30px;
+}
