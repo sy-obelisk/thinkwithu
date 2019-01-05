@@ -1707,7 +1707,7 @@ class ApiController extends ThinkUApiControl {
      *推荐顾问
      * @yoyo
      */
-    public function actionCounselorrecommend()
+    public function actionRecommendCounselor()
     {
         if ($_POST) {
             $extendVal = Yii::$app->request->post('extendValue');
