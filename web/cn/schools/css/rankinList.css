@@ -62,3 +62,97 @@ body{
     background: #994499;
     margin-top: 30px;
 }
+.caseContent{
+    background: white;
+}
+.caseContent li{
+    width: 95%;
+    margin: auto;
+    padding: 10px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    list-style: none;
+}
+.caseContent li b{
+    color: #994499;
+}
+.caseContent li a{
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 15px;
+}
+.rightCenter{
+    display: flex;
+    margin: 20px auto;
+}
+.rightCenter>div{
+    flex: 1;
+    height: 90px;
+    text-align: center;
+    color: white;
+    background: rgb(164,100,241);
+    margin-right: 10px;
+    font-size: 15px;
+}
+.rightCenter>div img{
+    margin: 15px 0 5px;
+}
+.rightCenter>div p{
+    color: white;
+}
+.rightCenter>div:nth-child(3){
+    margin-right: 0px !important;
+}
+.advertising_1{
+    height:150px;
+    background: yellowgreen;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 3px;
+}
+.advertising_1 p{
+    width: 85%;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin: auto;
+}
+.advertising_2{
+    height:150px;
+    margin-top: 20px;
+    background: yellowgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    letter-spacing: 3px;
+}
+.advertising_2 p{
+    width: 85%;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+.qrCode{
+    margin-top: 20px;
+    height: 300px;
+    background: yellowgreen;
+}
+.qrCodeP{
+    color: rgb(0,163,233);
+    text-align: center;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.rightTitle{
+    height: 60px;
+    border-top: 1px solid rgb(254,221,253);
+    line-height: 60px;
+    text-align: center;
+    color: #994499;
+    font-size: 22px;
+    background: rgb(241,240,240);
+}

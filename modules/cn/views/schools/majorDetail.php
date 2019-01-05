@@ -33,12 +33,12 @@
                             <?php echo $alternatives?>
                         </div>
                     </div>
-                    <div class="dis_flex">
-                        <div class="wd_1">相关证书</div>
-                        <div class="wd_2">
-                            MasterMasterMaster
-                        </div>
-                    </div>
+<!--                    <div class="dis_flex">-->
+<!--                        <div class="wd_1">相关证书</div>-->
+<!--                        <div class="wd_2">-->
+<!--                            MasterMasterMaster-->
+<!--                        </div>-->
+<!--                    </div>-->
                     <div class="dis_flex">
                         <div class="wd_1">相关排名</div>
                         <div class="wd_2">
