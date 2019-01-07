@@ -221,6 +221,9 @@ body{
 .ContentCenter p:nth-child(2){
     font-size: 14px;
 }
+.ContentCenter p:nth-child(3){
+    font-size: 14px;
+}
 .ContentCenter b{
     font-weight: bold;
     color: rgb(102,102,102);
