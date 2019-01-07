@@ -204,9 +204,12 @@ class SchoolsController extends ThinkUController {
         $page = Yii::$app->request->get('page',1);//分类ID
         $pageSize = Yii::$app->request->get('pageSize',15);//分类ID
         $data = file_get_contents("http://www.smartapply.cn/cn/app-api/school-rank?classId=$classId&yearId=$yearId&page=$page&pageSize=$pageSize");
+        $class = file_get_contents("http://www.smartapply.cn/cn/app-api/university-class");
+        $case = Content::getContent(['fields' => 'abroadSchool,major,score,oldSchool', 'category' => "104,207", 'order' => 'c.id desc',  'pageSize' => 12, 'page' => 1]);
         $data = json_decode($data,true);
+        $class = json_decode($class,true);
 //        echo '<pre>';var_dump($data);die;
-        return $this->render('rankList',[]);
+        return $this->render('rankList',['data'=>$data,'class'=>$class,'case'=>$case]);
     }
 
 }
