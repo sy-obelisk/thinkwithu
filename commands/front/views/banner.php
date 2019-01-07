@@ -67,7 +67,7 @@
                     <ul>
                         <li><a href="/schools.html">院校查询</a></li>
                         <li><a href="/major-analysis/433/1.html">专业排名</a></li>
-                        <li><a href="">大学排名</a></li>
+                        <li><a href="/schools-ranking/296/427/1.html">大学排名</a></li>
                     </ul>
                 </div>
             </li>

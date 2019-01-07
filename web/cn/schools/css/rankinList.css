@@ -41,7 +41,7 @@ body{
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    text-align: center;
+    text-indent: 35px;
     padding: 15px 0;
     font-size: 16px;
     list-style: none;
@@ -222,20 +222,22 @@ body{
 .schoolContent ul li:nth-child(1) .ContentLeft{
     background:  url('/cn/schools/images/1_1.png')no-repeat!important;
     background-size: contain;
+    color: white;
 }
 .schoolContent ul li:nth-child(2) .ContentLeft{
     background:  url('/cn/schools/images/2_2.png')no-repeat!important;
     background-size: contain;
+    color: white;
 }
 .schoolContent ul li:nth-child(3) .ContentLeft{
     background:  url('/cn/schools/images/3_3.png')no-repeat!important;
     background-size: contain;
+    color: white;
 }
 .ContentLeft{
     background:  url('/cn/schools/images/4_4.png')no-repeat;
     width: 41px;
     height: 48px;
-    color: white;
     font-size: 20px;
     text-align: center;
     line-height: 48px;
