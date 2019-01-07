@@ -153,8 +153,8 @@ class SchoolsController extends ThinkUController {
     }
 
     public function actionTeacher(){
-        $pageNumber = Yii::$app->request->post('pageNumber');//分类ID
-        $result = Content::getContent(['pageStr' =>'1','fields' => "job,abstract",'category' => "140",'pageSize' => 5,'page' => $pageNumber]);
+        $page = Yii::$app->request->get('page',1);//分类ID
+        $result = Content::getContent(['pageStr' =>'1','fields' => "job,abstract",'category' => "140",'pageSize' => 5,'page' => $page]);
         unset($result['count']);
         unset($result['total']);
         unset($result['pageStr']);
@@ -166,7 +166,9 @@ class SchoolsController extends ThinkUController {
             $arr['code'] = 0;
             $arr['message'] = "false";
         }
-        die(json_encode($arr));
+//        die(json_encode($arr));
+        return $this->render('teacher',['teacher'=>$result]);
+
     }
 
     /**专业数据

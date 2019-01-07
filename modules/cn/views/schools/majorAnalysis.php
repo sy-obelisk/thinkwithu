@@ -28,9 +28,9 @@
                             <div class="bdWords"><?php echo $v['introduce'] ?></div>
                         </div>
                         <div class="bdRight">
-                            <a href="" target="_blank">
+                            <div>
                                 <img src="/cn/schools/images/sercah_shcool.png" alt="" style="width: 20px"><span class="color-x">相关院校</span>
-                            </a>
+                            </div>
                             <?php $school = explode(',', $v['school']);
                             foreach ($school as $key=>$val) {
                                 if($key<2){
@@ -77,19 +77,19 @@
         </div>
         <div class="rightCenter">
             <div>
-                <a href="" target="_blank">
+                <a href="/background-test.html" target="_blank">
                     <img src="/cn/schools/images/background.png" alt="">
                     <p>背景测评</p>
                 </a>
             </div>
             <div>
-                <a href="" target="_blank">
+                <a href="/choice-test.html" target="_blank">
                     <img src="/cn/schools/images/choose-school.png" alt="">
                     <p>选校测评</p>
                 </a>
             </div>
             <div>
-                <a href="" target="_blank">
+                <a href="/percentages-test.html" target="_blank">
                     <img src="/cn/schools/images/admission.png" alt="">
                     <p>录取几率</p>
                 </a>
@@ -120,7 +120,7 @@
                 </li>
             </ul>
             <div class="lineOn">
-                <a href="" target="_blank">在线咨询</a>
+                <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank">在线咨询</a>
             </div>
         </div>
     </div>

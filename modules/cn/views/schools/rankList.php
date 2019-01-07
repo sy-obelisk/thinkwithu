@@ -61,13 +61,13 @@
         </div>
         <!--广告1-->
         <div class="advertising_1">
-            <p>热门留学方案,看前辈们是怎么成功拿到offer!</p>
+<!--            <p>热门留学方案,看前辈们是怎么成功拿到offer!</p>-->
         </div>
         <!--广告2-->
         <div class="advertising_2">
-            <p>如何利用文书包装自己？<br>
-                文书导师在线解答
-            </p>
+<!--            <p>如何利用文书包装自己？<br>-->
+<!--                文书导师在线解答-->
+<!--            </p>-->
         </div>
         <!--二维码-->
         <div class="qrCode">
@@ -84,7 +84,7 @@
                <!--当前这个加上类名 on-->
                <a href="" class="on">2017</a>
                <a href="" class="">2018</a>
-               <a href="" class="new">2019</a>
+               <a href="" class=""><img src="/cn/schools/images/new.png" alt="" class="new">2019</a>
            </ul>
         </div>
         <div class="schoolContent">
@@ -98,9 +98,9 @@
                         <p>查看人数 : <b>6222</b></p>
                     </div>
                     <div class="ContentRight">
-                        <a href=""><span>录取几率</span></a>
-                        <a href=""><span>推荐导师</span></a>
-                        <a href=""><span>热门案例</span></a>
+                        <a href=""><i class="iconfont ">&#xe61a;</i><span>录取几率</span></a>
+                        <a href=""><i class="iconfont ">&#xe666;</i><span>推荐导师</span></a>
+                        <a href=""><i class="iconfont ">&#xe60b;</i><span>热门案例</span></a>
                     </div>
                 </li>
             </ul>
