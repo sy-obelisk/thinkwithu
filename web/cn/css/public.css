@@ -3018,6 +3018,7 @@ h1.info-tit {
     top: 0;
     width: 100%;
     background: #974694!important;
+    box-shadow: none!important;
 }
 .a-fiexd {
     color: #ffffff!important;
