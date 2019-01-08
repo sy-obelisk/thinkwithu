@@ -269,8 +269,12 @@
                         '<li>'+ v.title +'</li>'+
                         '<li>所在地：'+ v.place+'</li>'+
                         '<li>地理位置：'+ v.seat+'</li>'+
-                        '<li>官网：<a href="'+ v.listeningFile +'" target="_blank">'+ v.listeningFile+'</a></li>'+
-                        '</ul>'+
+                        '<li>官网：<a href="'+ v.listeningFile +'" target="_blank">'+ v.listeningFile+'</a></li>';
+                                $.each(v.major,function (c,i) {
+                                    str += '<li>专业项目：<span style="color: rgb(68,153,233)">'+ i.title +'</span><span style="margin: 0px 10px">学位：'+ i.degree +'</span>专业类别：<span>'+ i.name +'</span></li>';
+                                    console.log(str)
+                                });
+                        str+='</ul>'+
                         '</div>'+
                         '<div class="centTwo-right">'+
                         '<div class="shcoolRank">学校排名：'+ v.rank+'</div>'+
@@ -363,11 +367,9 @@
         $.get('/cn/schools/search',{school:schoolId_s,majorId:majordeId},function (data) {
             $('#schooldata').empty();
             if(data.data.data){
-                console.log(1111);
                 var str = "";
                 var pages = "";
                 $.each(data.data.data,function(k,v) {
-                    console.log(data.data);
                     str +=' <li>'+
                         '<div class="centTwo-left">'+
                         '<a href="/schools/'+ v.id+'.html">'+
