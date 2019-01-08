@@ -315,3 +315,29 @@ body{
     margin-top: 5px;
     font-size: 16px;
 }
+.pagetop {
+    position: relative;
+    margin: 40px 0 90px 0;
+}
+#page_s{
+    float: none!important;
+    position: absolute;
+    left: 50%;
+    overflow: hidden;
+    transform: translateX(-50%);
+    display: flex;
+}
+#page_s a{
+    display: block;
+    padding: 3px 10px;
+    border-radius: 3px;
+    color: rgb(153,153,153);
+    margin-right: 15px;
+    border: 1px solid rgb(153,153,153);
+}
+
+.page ul a.on{
+    color: white!important;
+    border: 1px solid #994499!important;
+    background: #994499;
+}

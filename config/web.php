@@ -257,6 +257,10 @@ $config = [
 
                  'schools-ranking/<classId:\d+>/<yearId:\d+>/<page:\d+>.html' => 'cn/schools/ranking',//学校的排行
 
+                 'counselor-teachers/<country:\d+>/<page:\d+>.html' => 'cn/schools/teacher',//推荐顾问
+
+                 'counselor-detail/<id:\d+>.html' => 'cn/schools/teacher-detail',//推荐顾问
+
                  'practices.html' => 'cn/practices/index',//游学实习首页
 
                  'practices/<id:\d+>.html' => 'cn/practices/details',//游学实习详情页面

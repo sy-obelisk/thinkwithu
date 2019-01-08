@@ -67,8 +67,8 @@
                <a class="year">年份:</a>
                <!--当前这个加上类名 on-->
                <?php foreach($data['years'] as $v){?>
-               <a href="/schools-ranking/<?php echo Yii::$app->request->get('classId',296)?>/<?php echo $v['id']?>/1.html" class="<?php echo $v['id']==Yii::$app->request->get('yearId',427)?'on':'';if($v['id']==427) echo '';?>"><img
-                           src="/cn/schools/images/new.png" alt="" class="new"><?php echo $v['name']?></a>
+               <a href="/schools-ranking/<?php echo \Yii::$app->request->get('classId',296)?>/<?php echo $v['id']?>/1.html" class="<?php echo $v['id']==\Yii::$app->request->get('yearId',427)?'on':'';?>">
+                   <?php if($v['id']==428){?><img src="/cn/schools/images/new.png" alt="" class="new"><?php }?><?php echo $v['name']?></a>
                <?php }?>
            </ul>
         </div>

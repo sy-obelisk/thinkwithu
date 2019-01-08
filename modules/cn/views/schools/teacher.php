@@ -12,11 +12,35 @@
             <div class="messageRight">
                 <div class="bd">
                     <ul class="bdlist">
-                        <li><p>2018-9-20 12:00 已为雷哥网会员trump安排申请中国留学顾问</p></li>
-                        <li><p>2018-9-20 12:00 已为雷哥网会员trump安排申请中国留学顾问</p></li>
-                        <li><p>2018-9-20 12:00 已为雷哥网会员trump安排申请中国留学顾问</p></li>
-                        <li><p>2018-9-20 12:00 已为雷哥网会员trump安排申请中国留学顾问</p></li>
-                        <li><p>2018-9-20 12:00 已为雷哥网会员trump安排申请中国留学顾问</p></li>
+                        <?php
+                        foreach($teacher['barrage'] as $k=>$v) {
+                            ?>
+                            <li><p><?php echo $v['dateTime'];?> 已为申友网会员<?php echo isset($v['nickname'])?$v['nickname']:$v['userName'] ?>同学安排<?php
+                                if($k==0){
+                                    echo "美国";
+                                } elseif($k==1){
+                                    echo "英国";
+                                } elseif($k==2){
+                                    echo "美国";
+                                } elseif($k==3){
+                                    echo "香港";
+                                } elseif($k==4){
+                                    echo "加拿大";
+                                } elseif($k==5){
+                                    echo "澳洲";
+                                } elseif($k==6){
+                                    echo "韩国";
+                                } elseif($k==7){
+                                    echo "日本";
+                                } elseif($k==8){
+                                    echo "新加坡";
+                                } else{
+                                    echo "中国";
+                                }
+                                ?>留学顾问</p></li>
+                            <?php
+                        }
+                        ?>
                     </ul>
                 </div>
             </div>
@@ -29,17 +53,17 @@
             <ul class="rightTitleContent">
                 <a class="year">申请国家:</a>
                 <!--当前这个加上类名 on-->
-                <a href="" class="on">全部</a>
-                <a href="" class="">美国</a>
-                <a href="" class="">英国</a>
-                <a href="" class="">澳洲</a>
-                <a href="" class="">香港</a>
-                <a href="" class="">新加坡</a>
-                <a href="" class="">加拿大</a>
-                <a href="" class="">欧洲</a>
-                <a href="" class="">韩国</a>
-                <a href="" class="">日本</a>
-                <a href="" class="">中国</a>
+                <a href="/counselor-teachers/0/1.html" class="<?php if(\Yii::$app->request->get('country')==0) echo 'on'?>">全部</a>
+                <a href="/counselor-teachers/246/1.html" class="<?php if(\Yii::$app->request->get('country')==246) echo 'on'?>">美国</a>
+                <a href="/counselor-teachers/254/1.html" class="<?php if(\Yii::$app->request->get('country')==254) echo 'on'?>">英国</a>
+                <a href="/counselor-teachers/252/1.html" class="<?php if(\Yii::$app->request->get('country')==252) echo 'on'?>">澳洲</a>
+                <a href="/counselor-teachers/249/1.html" class="<?php if(\Yii::$app->request->get('country')==249) echo 'on'?>">香港</a>
+                <a href="/counselor-teachers/250/1.html" class="<?php if(\Yii::$app->request->get('country')==250) echo 'on'?>">新加坡</a>
+                <a href="/counselor-teachers/253/1.html" class="<?php if(\Yii::$app->request->get('country')==253) echo 'on'?>">加拿大</a>
+                <a href="/counselor-teachers/251/1.html" class="<?php if(\Yii::$app->request->get('country')==251) echo 'on'?>">欧洲</a>
+                <a href="/counselor-teachers/247/1.html" class="<?php if(\Yii::$app->request->get('country')==247) echo 'on'?>">韩国</a>
+                <a href="/counselor-teachers/248/1.html" class="<?php if(\Yii::$app->request->get('country')==248) echo 'on'?>">日本</a>
+                <a href="/counselor-teachers/255/1.html" class="<?php if(\Yii::$app->request->get('country')==255) echo 'on'?>">中国</a>
             </ul>
         </div>
         <div class="tea_content">
@@ -47,71 +71,55 @@
             <div class="tea_details">
                 <ul>
                     <!--循环li-->
-                    <?php foreach($teacher['data']['data'] as $v){?>
-                    <li>
-                        <!--老师图片 名字-->
-                        <div class="tea_img">
-                            <div>
-                               <img src="http://www.smartapply.cn<?php echo $v['image']?>" alt="文服老师">
-                            </div>
-                            <p><?php echo $v['name']?></p>
-                        </div>
-                        <!--个人简介-->
-                        <div class="personal">
-                            <p class="Introduction"><span>个人简介</span> <a href="" class="reservation">预约咨询</a></p>
-                            <p class="practicing"><?php echo $v['source']?> <?php echo $v['buyNum']?> 从业<?php echo $v['age']?>年</p>
-                            <div class="personalWords"><?php echo $v['answer']?></div>
-                            <div class="impression">
-                                <div>
-                                    <p><?php echo $v['students']?>份</p>
-                                    <p>获取录取通知书</p>
+                    <?php foreach ($teacher['data']['data'] as $v) { ?>
+                        <li>
+                            <a href="" style="display: block">
+                                <!--老师图片 名字-->
+                                <div class="tea_img">
+                                    <div>
+                                        <img src="http://www.smartapply.cn<?php echo $v['image'] ?>" alt="文服老师">
+                                    </div>
+                                    <p><?php echo $v['name'] ?></p>
                                 </div>
-                                <div>
-                                    <p><?php echo $v['successRate']?>%</p>
-                                    <p>留学申请成功率</p>
+                                <!--个人简介-->
+                                <div class="personal">
+                                    <p class="Introduction"><span>个人简介</span> <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" class="reservation">预约咨询</a></p>
+                                    <p class="practicing"><?php echo $v['source'] ?> <?php echo $v['buyNum'] ?>
+                                        从业<?php echo $v['age'] ?>年</p>
+                                    <div class="personalWords"><?php echo strip_tags($v['answer']) ?></div>
+                                    <div class="impression">
+                                        <div>
+                                            <p><?php echo $v['students'] ?>份</p>
+                                            <p>获取录取通知书</p>
+                                        </div>
+                                        <div>
+                                            <p><?php echo $v['successRate'] ?>%</p>
+                                            <p>留学申请成功率</p>
+                                        </div>
+                                        <div>
+                                            <p><?php echo $v['impression'] ?>分</p>
+                                            <p>学生印象分</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div>
-                                    <p><?php echo $v['impression']?>分</p>
-                                    <p>学生印象分</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!--清除浮动的 不管-->
-                        <div style="clear: both"></div>
-                    </li>
-                    <?php }?>
-                    <li>
-                        <!--老师图片 名字-->
-                        <div class="tea_img">
-                            <div>
-                                <img src="http://www.thinkwithu.com/files/attach/images/20160901/1472705745484320.jpg" alt="">
-                            </div>
-                            <p>Keven NI</p>
-                        </div>
-                        <!--个人简介-->
-                        <div class="personal">
-                            <p class="Introduction"><span>个人简介</span> <a href="" class="reservation">预约咨询</a></p>
-                            <p class="practicing">联合创始人 全球 从业12年</p>
-                            <div class="personalWords">联合创始人 全球 从业12年联合创始人 全球 从业12年联合创始人 全球 从业12年联合创始人 全球 从业12年联合创始人 全球 从业12年 联合创始人 全球 从业12年联合创始人 全球 从业12年联合创始人 全球 从业12年联合创始人 全球</div>
-                            <div class="impression">
-                                <div>
-                                    <p>1600份</p>
-                                    <p>获取录取通知书</p>
-                                </div>
-                                <div>
-                                    <p>99.2%</p>
-                                    <p>留学申请成功率</p>
-                                </div>
-                                <div>
-                                    <p>99分</p>
-                                    <p>学生印象分</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!--清除浮动的 不管-->
-                        <div style="clear: both"></div>
-                    </li>
+                                <!--清除浮动的 不管-->
+                                <div style="clear: both"></div>
+                            </a>
+                        </li>
+                    <?php } ?>
                 </ul>
+                <!--分页-->
+                <div class="page pagetop">
+                    <ul id="page_s">
+                        <?php
+                        $page=\Yii::$app->request->get('page',1);
+                        for($i=1;$i<$teacher['data']['totalPage']+1;$i++){
+                            ?>
+                            <a class="<?php echo $page==$i?'on':'iPage'?>" href="/counselor-teachers/<?php echo \Yii::$app->request->get('country')?>/<?php echo $i?>.html"><?php echo $i?></a>
+                        <?php }?>
+                        <!--                        <a class="iPage"  href="">2</a>-->
+                    </ul>
+                </div>
             </div>
             <!--右边-->
             <div class="rankListLeft">
@@ -119,33 +127,38 @@
                 <div class="caseContent bd">
                     <ul>
                         <!--循环li-->
-                        <li>
-                            <div class="caseImg">
-                                <img src="http://www.thinkwithu.com/files/attach/images/20160901/1472705745484320.jpg" alt="">
-                            </div>
-                            <div class="caseName">
-                                <p>kevin ni</p>
-                                <div>联合创始人</div>
-                                <a href="" target="_blank">咨询</a>
-                            </div>
-                        </li>
+                        <?php
+                        $data = file_get_contents("http://www.smartapply.cn/cn/consultant/1.html?data-type=json");
+                        $data = json_decode($data, true);
+                        foreach ($data['data']['data'] as $v) { ?>
+                            <li>
+                                <div class="caseImg">
+                                    <img src="http://www.smartapply.cn<?php echo $v['image'] ?>" alt="">
+                                </div>
+                                <div class="caseName">
+                                    <p><?php echo $v['name'] ?></p>
+                                    <div><?php echo $v['source'] ?></div>
+                                    <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank">咨询</a>
+                                </div>
+                            </li>
+                        <?php } ?>
                     </ul>
                 </div>
                 <div class="rightCenter">
                     <div>
-                        <a href="" target="_blank">
+                        <a href="/background-test.html" target="_blank">
                             <img src="/cn/schools/images/background.png" alt="">
                             <p>背景测评</p>
                         </a>
                     </div>
                     <div>
-                        <a href="" target="_blank">
+                        <a href="/choice-test.html" target="_blank">
                             <img src="/cn/schools/images/choose-school.png" alt="">
                             <p>选校测评</p>
                         </a>
                     </div>
                     <div>
-                        <a href="" target="_blank">
+                        <a href="/percentages-test.html" target="_blank">
                             <img src="/cn/schools/images/admission.png" alt="">
                             <p>录取几率</p>
                         </a>
