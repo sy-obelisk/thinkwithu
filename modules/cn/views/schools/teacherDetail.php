@@ -8,31 +8,31 @@
             <!--左边-->
             <div class="teacher-left">
                 <div class="teacherImg">
-                    <img src="http://www.smartapply.cn/files/attach/images/20170817/1502931744512388.png" alt="老师头像">
+                    <img src="http://www.smartapply.cn<?php echo $data[0]['image']?>" alt="老师头像">
                 </div>
                 <div class="teacherInfo">
-                    <p>Kevin Ni<span>联合创始人</span></p>
-                    <p>全球;从业12年</p>
-                    <a href="" target="_blank">预约咨询</a>
+                    <p><?php echo $data[0]['name']?><span><?php echo $data[0]['A']?></span></p>
+                    <p><?php echo $data[0]['alternatives']?>;从业<?php echo $data[0]['article']?>年</p>
+                    <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank">预约咨询</a>
                 </div>
             </div>
             <!--右边-->
             <div class="teacher-right">
                 <div class="commonCircle cir-back01">
                     <div>
-                        <h4>1649份</h4>
+                        <h4><?php echo $data[0]['listeningFile']?>份</h4>
                         <p>获取录取通知书</p>
                     </div>
                 </div>
                 <div class="commonCircle cir-back02">
                     <div>
-                        <h4>99.2%</h4>
+                        <h4><?php echo $data[0]['cnName']?>%</h4>
                         <p>留学申请成功率</p>
                     </div>
                 </div>
                 <div class="commonCircle cir-back03">
                     <div>
-                        <h4>99分</h4>
+                        <h4><?php echo $data[0]['numbering']?>分</h4>
                         <p>学生印象评分</p>
                     </div>
                 </div>
@@ -53,7 +53,7 @@
                 <h2>个人简介</h2>
                 <div>
                     <!--整个内容-->
-                    <p> </p><p>雷哥网联合创始人，留学规划与英语教育名家，GMAT/TOEFL名师。</p><p>联合创始人，中国留学咨询行业领军人物。上海交大EMBA，连续多年亲自深入全球名企名校走访交流，如谷歌、苹果、FACEBOOK，哈佛、沃顿、斯坦福。多年研究英语系国家名校留学，尤其擅长商科申请规划。指导的学生多人获得美英著名商学院录取，如Stanford、MIT、Yale、哥大、JHU、剑桥、LSE、帝国理工等。对文书创作颇有建树，研究名校文书上千篇，洞悉名校录取官喜好和录取倾向。</p><p>留学考试学术成果：“GMAT逻辑靶向图”、“GMAT逻辑本质论”、“GMAT语法优先原则”、“GMAT必要性阅读法”、“新托福听力阈值训练法”、“新托福万能口语法”、“雅思西方批判式作文法”等，是留学英语考试的集大成者。在国内首创“新托福四化一中心作文法”。研发和出版多本留学英语培训教材，并不断优化教学方法，专著有《Influence--雷哥GMAT逻辑》、 《雅思写作攻略》、《申友GMAT高分讲义》、 《GMAT真题名师精讲》等。</p><p><br></p><p></p>
+                    <p><?php echo $data[0]['answer']?></p>
                 </div>
             </div>
             <!--近期服务案例-->
@@ -64,7 +64,11 @@
                         <div class="grey-bot">
                             <div class="commonSee">
                                 <!--整个内容-->
-                                <p>留学考试学术成果：</p><p>“GMAT逻辑靶向图”、“GMAT逻辑本质论”、“GMAT语法优先原则”、“GMAT必要性阅读法”、“新托福听力阈值训练法”、“新托福万能口语法”、“雅思西方批判式作文法”等，是留学英语考试的集大成者。</p><p>在国内首创“新托福四化一中心作文法”。研发和出版多本留学英语培训教材，并不断优化教学方法，专著有《Influence--雷哥GMAT逻辑》、 《雅思写作攻略》、《申友GMAT高分讲义》、 《GMAT真题名师精讲》等。</p>
+<!--                                --><?php //echo '<pre>';var_dump($caseList);die;
+                                foreach($caseList as $v){?>
+                                <p><?php echo $v[0]['cnName']?>,<?php echo $v[0]['numbering']?>,<?php echo $v[0]['sentenceNumber']?></p>
+                                <p>申请方向：<?php echo $v[0]['article']?>,录取结果：<?php echo $v[0]['problemComplement']?></p>
+                                <?php }?>
                             </div>
                         </div>
                     </li>
@@ -74,7 +78,10 @@
             <div class="hisAnswer" id="hisAnswer">
                 <h2>TA的回答</h2>
                 <ul>
-
+                    <?php if($answer){
+                    foreach($answer as $v) { ?>
+                    <h4><?php echo $v['question'] ?></h4>
+                    <p><?php echo $v['content'] ?></p><?php }}?>
                 </ul>
             </div>
         </div>
@@ -83,24 +90,17 @@
             <div class="RightTitle">可能感兴趣的大学</div>
             <ul class="consuBot">
                 <!--循环li-->
+                <?php foreach($school as $k=>$v){?>
                 <li>
-                    <div class="numDiv">1</div>
-                    <a href="">伦敦商学院（LBS）</a>
-                    <span>排名 1</span>
+                    <div class="numDiv"><?php echo $k+1?></div>
+                    <a href="/schools/<?php echo $v['id']?>.html"><?php echo $v['name']?>（<?php echo $v['title']?>）</a>
+                    <span>排名 <?php echo $v['article']?></span>
                     <p class="c_kNum">
                         <img src="/cn/schools/images/sercah_shcool.png" alt="查看图标">
-                        <span>553人查看</span>
+                        <span><?php echo $v['viewCount']?>人查看</span>
                     </p>
                 </li>
-                <li>
-                    <div class="numDiv">1</div>
-                    <a href="">伦敦商学院（LBS）</a>
-                    <span>排名 1</span>
-                    <p class="c_kNum">
-                        <img src="/cn/schools/images/sercah_shcool.png" alt="查看图标">
-                        <span>553人查看</span>
-                    </p>
-                </li>
+                <?php }?>
             </ul>
         </div>
         <!--清浮动-->
