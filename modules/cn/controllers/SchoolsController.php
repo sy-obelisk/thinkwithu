@@ -153,10 +153,9 @@ class SchoolsController extends ThinkUController {
     }
 
     public function actionTeacher(){
-        $countryid = Yii::$app->request->get('country');
-        $regionid = Yii::$app->request->get('regionid',0);
+        $countryid = Yii::$app->request->get('country','');
+        $regionid = Yii::$app->request->get('region',0);
         $page = Yii::$app->request->get('page',1);
-//        $num = Yii::$app->request->get('num','');
         if($countryid==false){
             $data = file_get_contents("http://www.smartapply.cn/cn/consultant/$page.html?data-type=json");
         }else{
@@ -165,10 +164,11 @@ class SchoolsController extends ThinkUController {
         $result=json_decode($data,true);
 //        echo '<pre>';var_dump($result);die;
         return $this->render('teacher',['teacher'=>$result]);
-
     }
 
     public function actionTeacherDetail(){
+        $id = Yii::$app->request->get('id','');
+        $data = file_get_contents("http://www.smartapply.cn/cn/consultant/details/$id.html?data-type=json");
         return $this->render('teacherDetail',[]);
 
     }
