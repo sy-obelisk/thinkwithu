@@ -98,7 +98,7 @@
                 </ul>
             </div>
             <!--在线咨询-->
-            <a class="zx_online" href="" target="_blank"><img src="/cn/schools/images/zx_icon.png" alt=""><span>在线咨询</span></a>
+            <a class="zx_online" href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank"><img src="/cn/schools/images/zx_icon.png" alt=""><span>在线咨询</span></a>
         </div>
     </div>
     <!--右边-->

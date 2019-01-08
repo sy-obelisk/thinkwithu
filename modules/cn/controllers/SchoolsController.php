@@ -153,21 +153,27 @@ class SchoolsController extends ThinkUController {
     }
 
     public function actionTeacher(){
-        $page = Yii::$app->request->get('page',1);//分类ID
-        $result = Content::getContent(['pageStr' =>'1','fields' => "job,abstract",'category' => "140",'pageSize' => 5,'page' => $page]);
-        unset($result['count']);
-        unset($result['total']);
-        unset($result['pageStr']);
-        if($result){
-            $arr['code'] = 1;
-            $arr['message'] = "true";
-            $arr['data'] = $result;
+        $countryid = Yii::$app->request->get('country');
+        $regionid = Yii::$app->request->get('regionid',0);
+        $page = Yii::$app->request->get('page',1);
+//        $num = Yii::$app->request->get('num','');
+        if($countryid==false){
+            $data = file_get_contents("http://www.smartapply.cn/cn/consultant/$page.html?data-type=json");
         }else{
-            $arr['code'] = 0;
-            $arr['message'] = "false";
+            $data = file_get_contents("http://www.smartapply.cn/cn/consultant/country-$countryid/-$regionid-$page.html?data-type=json");
         }
-//        die(json_encode($arr));
+        $result=json_decode($data,true);
+//        echo '<pre>';var_dump($result);die;
         return $this->render('teacher',['teacher'=>$result]);
+
+    }
+
+    public function actionTeacherDetail(){
+        return $this->render('teacherDetail',[]);
+
+    }
+    public function actionSchoolDetail(){
+        return $this->render('schoolDetail',[]);
 
     }
 
