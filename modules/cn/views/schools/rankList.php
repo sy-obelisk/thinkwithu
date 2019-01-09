@@ -79,13 +79,13 @@
                     <li>
                         <div class="ContentLeft"><?php echo $v['ranking']?></div>
                         <div class="ContentCenter">
-                            <a href=""><p><?php echo $v['chineseName']?></p></a>
+                            <a href="/schools/<?php echo $v['relationId']?>.html"><p><?php echo $v['chineseName']?></p></a>
                             <p><?php echo $v['englishName']?></p>
                             <p>查看人数 : <b><?php echo rand(3000,20000)?></b></p>
                         </div>
                         <div class="ContentRight">
                             <a href="/percentages-test.html"><i class="iconfont ">&#xe61a;</i><span>录取几率</span></a>
-                            <a href=""><i class="iconfont ">&#xe666;</i><span><span>推荐导师</span></a>
+                            <a href="/counselor-teachers/0/1.html"><i class="iconfont ">&#xe666;</i><span><span>推荐导师</span></a>
                             <a href="/case.html"><i class="iconfont ">&#xe60b;</i><span>热门案例</span></a>
                         </div>
                     </li>

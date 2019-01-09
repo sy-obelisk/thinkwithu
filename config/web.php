@@ -247,7 +247,9 @@ $config = [
 
                  'schools.html' => 'cn/schools/index',//院校库首页
 
-                 'schools/<schoolid:\d+>.html' => 'cn/schools/details',//院校详情
+                 'schools/<schoolid:\d+>.html' => 'cn/schools/details',//院校详情 排行
+
+                 'schools-detail/<schoolid:\d+>.html' => 'cn/schools/school-detail',//院校详情 学校查询
 
                  'schools/major/<id:\d+>.html' => 'cn/schools/majormsg',//学校专业
 
