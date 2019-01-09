@@ -247,6 +247,9 @@ body{
     margin-left: 30px;
     color: rgb(85,85,85);
 }
+.ContentCenter a:hover p{
+    color: #994499;
+}
 .ContentCenter p{
     padding: 5px 0;
     font-size: 16px;

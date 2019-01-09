@@ -79,7 +79,7 @@
                     <li>
                         <div class="ContentLeft"><?php echo $v['ranking']?></div>
                         <div class="ContentCenter">
-                            <p><?php echo $v['chineseName']?></p>
+                            <a href=""><p><?php echo $v['chineseName']?></p></a>
                             <p><?php echo $v['englishName']?></p>
                             <p>查看人数 : <b><?php echo rand(3000,20000)?></b></p>
                         </div>
