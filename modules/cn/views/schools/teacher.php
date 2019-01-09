@@ -73,7 +73,7 @@
                     <!--循环li-->
                     <?php foreach ($teacher['data']['data'] as $v) { ?>
                         <li>
-                            <a href="" style="display: block">
+                            <a href="/counselor-detail/<?php echo $v['id']?>.html" style="display: block">
                                 <!--老师图片 名字-->
                                 <div class="tea_img">
                                     <div>

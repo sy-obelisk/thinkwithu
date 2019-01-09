@@ -19,7 +19,7 @@
                 <ul>
                     <li class="ellipsis">
                         <img src="/cn/schools/images/benkeD-white01.png" alt="图标">
-                        <span>所在国家：<?php echo $data['sentenceNumber']?></span>
+                        <span>所在国家：<?php echo $data['country']?></span>
                     </li>
                     <li class="ellipsis">
                         <img src="/cn/schools/images/benkeD-white02.png" alt="图标">
@@ -64,10 +64,10 @@
                     <li class="on">
                         <a href="javascript:void(0);" onclick="showSecond(this)">
                             <span class="blue-s">专业设置</span>
-                            <div class="num-tot">1</div>
+                            <div class="num-tot"><?php echo count($major)?></div>
                             <span class="grey-jianT"></span>
                         </a>
-                        <?php foreach($major as $val){?>
+                        <?php foreach($major as $key=>$val){?>
                         <ul>
                             <li>
                                 <a href="javascript:void(0);" onclick="showSecond(this)">
@@ -131,38 +131,38 @@
                                 </a>
                             </li>
                             <li>
-                                <span class="time">截止日期 ：</span><?php echo $v['endTime']?></li>
+                                <span class="time">截止日期 ：</span><?php echo $v['endTime']!=false?$v['endTime']:'数据正在更新中，请前往“项目网址”查看~'?></li>
                             <li>
                                 <span class="time">基本申请要求 : </span>
                                 <table class="project-table">
                                     <tbody>
                                     <tr class="project-tr">
                                         <td>GPA ：</td>
-                                        <td><?php echo $v['gpa']?></td>
+                                        <td><?php echo $v['gpa']!=false?$v['gpa']:'数据正在更新中，请前往“项目网址”查看~'?></td>
 
                                         <td>GRE ：</td>
-                                        <td><?php echo $v['gre']?></td>
+                                        <td><?php echo $v['gre']!=false?$v['gre']:'数据正在更新中，请前往“项目网址”查看~'?></td>
                                     </tr>
                                     <tr class="project-tr">
                                         <td>雅思 ：</td>
-                                        <td><?php echo $v['ielts']?></td>
+                                        <td><?php echo $v['ielts']!=false?$v['ielts']:'数据正在更新中，请前往“项目网址”查看~'?></td>
                                         <td>学位 ：</td>
-                                        <td><?php echo $v['degree']?></td>
+                                        <td><?php echo $v['degree']!=false?$v['degree']:'数据正在更新中，请前往“项目网址”查看~'?></td>
 
                                     </tr>
                                     <tr class="project-tr">
                                         <td>托福 ：</td>
-                                        <td><?php echo $v['toefl']?></td>
+                                        <td><?php echo $v['toefl']!=false?$v['toefl']:'数据正在更新中，请前往“项目网址”查看~'?></td>
                                         <td>工作年限 ：</td>
-                                        <td><?php echo $v['years']==false?'无':$v['years']?></td>
+                                        <td><?php echo $v['years']==false?'数据正在更新中，请前往“项目网址”查看~':$v['years']?></td>
 
                                     </tr>
                                     <tr class="project-tr">
                                         <td>GMAT ：</td>
-                                        <td><?php echo $v['gmat']?></td>
+                                        <td><?php echo $v['gmat']!=false?$v['gmat']:'数据正在更新中，请前往“项目网址”查看~'?></td>
 
                                         <td>学费 ：</td>
-                                        <td><?php echo $v['tuition']?></td>
+                                        <td><?php echo $v['tuition']!=false?$v['tuition']:'数据正在更新中，请前往“项目网址”查看~'?></td>
                                     </tr>
                                     </tbody>
                                 </table>

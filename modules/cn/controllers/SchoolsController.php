@@ -176,10 +176,10 @@ class SchoolsController extends ThinkUController {
 
     }
     public function actionSchoolDetail(){
-        $schoolId = Yii::$app->request->get('schoolId',11693);
+        $schoolId = Yii::$app->request->get('school',11693);
         $data = file_get_contents("http://schools.smartapply.cn/schools/id-$schoolId.html?data-type=json");
         $data = json_decode($data,true);
-//        echo '<pre>';var_dump($data['major']);die;
+//        echo '<pre>';var_dump($data['data']);die;
         return $this->render('schoolDetail',$data);
 
     }

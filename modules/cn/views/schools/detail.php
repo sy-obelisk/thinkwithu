@@ -56,10 +56,11 @@
                     <i class="iconfont ico_fb">&#xe605;</i>
                     <span>专业详情</span>
                 </p><!--如果有多个则外层循环 ProName  内层循环 pro_title-->
+                <?php foreach($major as $val){?>
                 <div class="ProName">
-                    <div class="ProName_title"><?php echo $major[0]['name']?></div>
+                    <div class="ProName_title"><?php echo $val['name']?></div>
                     <div class="ProName_details">
-                        <?php foreach($major[0]['content'] as $v){?>
+                        <?php foreach($val['content'] as $v){?>
                         <a class="pro_title" href="/schools/major/<?php echo $v['id']?>.html">
                             <p><?php echo $v['name']?></p>
                             <p><?php echo $v['title']?></p>
@@ -67,6 +68,7 @@
                         <?php }?>
                     </div>
                 </div>
+                <?php }?>
             </div>
         </div>
         <!--右-->
