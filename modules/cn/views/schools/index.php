@@ -258,13 +258,13 @@
                     $.each(data.data,function(k,v) {
                         str +=' <li>'+
                         '<div class="centTwo-left">'+
-                        '<a href="/schools/'+ v.id+'.html">'+
+                        '<a href="/schools-detail/'+ v.id+'.html">'+
                         '<div class="imgCover"><img src="http://schools.smartapply.cn/'+ v.image+'" alt="学校图片"></div>'+
                         '<p>已有<span class="viewNum"> '+ v.viewCount+'</span>人关注</p>'+
                         '</a>'+
                         '</div>'+
                         '<div class="centTwo-center">'+
-                        '<h4><a href="/schools/'+ v.id+'.html">'+ v.name+'</a></h4>'+
+                        '<h4><a href="/schools-detail/'+ v.id+'.html">'+ v.name+'</a></h4>'+
                         '<ul>'+
                         '<li>'+ v.title +'</li>'+
                         '<li>所在地：'+ v.place+'</li>'+
@@ -355,15 +355,10 @@
     function searchSure() {
         var schoolId_s = $('#top-schoolName').val();//目标学校id
         var majordeId = $('#top-schoolMajor').val();//目标专业id
-        if(!schoolId_s){
-            alert('请先填写目标学校');
+        if(!schoolId_s&&!majordeId){
+            alert('请先填写目标学校或者目标专业');
             return false
         }
-        if(!majordeId){
-            alert('请先填写目标专业');
-            return false
-        }
-
         $.get('/cn/schools/search',{school:schoolId_s,majorId:majordeId},function (data) {
             $('#schooldata').empty();
             if(data.data.data){
@@ -372,13 +367,13 @@
                 $.each(data.data.data,function(k,v) {
                     str +=' <li>'+
                         '<div class="centTwo-left">'+
-                        '<a href="/schools/'+ v.id+'.html">'+
+                        '<a href="/schools-detail/'+ v.id+'.html">'+
                         '<div class="imgCover"><img src="http://schools.smartapply.cn/'+ v.image+'" alt="学校图片"></div>'+
                         '<p>已有<span class="viewNum"> '+ v.viewCount+'</span>人关注</p>'+
                         '</a>'+
                         '</div>'+
                         '<div class="centTwo-center">'+
-                        '<h4><a href="/schools/'+ v.id+'.html">'+ v.name+'</a></h4>'+
+                        '<h4><a href="/schools-detail/'+ v.id+'.html">'+ v.name+'</a></h4>'+
                         '<ul>'+
                         '<li>'+ v.title +'</li>'+
                         '<li>所在地：'+ v.place+'</li>'+
