@@ -77,10 +77,11 @@
                                 </a>
                                 <ul>
                                     <?php foreach($val['content'] as $k=>$v){?>
-                                    <li class="thridLi" data-majorid="18904">
-                                        <a href="javascript:void(0);" onclick="majorDetail(this,18904)">
+                                    <li class="thridLi" data-majorid="<?php echo $v['id']?>">
+                                        <a href="javascript:void(0);" onclick="majorDetail(this,<?php echo $v['id']?>)">
                                             <span><?php echo $k+1?></span>
-                                              <?php echo $v['name']?>                                                 </a>
+                                              <?php echo $v['name']?>
+                                        </a>
                                     </li>
                                     <?php }?>
                                 </ul>
