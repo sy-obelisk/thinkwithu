@@ -168,8 +168,11 @@ class SchoolsController extends ThinkUController {
 
     public function actionTeacherDetail(){
         $id = Yii::$app->request->get('id','');
-        $data = file_get_contents("http://www.smartapply.cn/cn/consultant/details/$id.html?data-type=json");
-        return $this->render('teacherDetail',[]);
+        $id =564;
+        $data =  Method::post("http://www.smartapply.cn/cn/app-api/adviser-detail",['contentid'=>$id]);
+        $data=json_decode($data,true);
+//        echo '<pre>';var_dump($data);die;
+        return $this->render('teacherDetail',$data);
 
     }
     public function actionSchoolDetail(){
