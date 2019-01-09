@@ -4,13 +4,15 @@
  * by fawn
  */
 namespace app\modules\cn\controllers;
+
 use yii;
 use app\libs\Method;
 use app\libs\ThinkUController;
 use app\modules\cn\models\Content;
 use app\libs\Schools;
 
-class SchoolsController extends ThinkUController {
+class SchoolsController extends ThinkUController
+{
     public $enableCsrfValidation = false;
     public $layout = 'cn';
     public $activity;
@@ -22,23 +24,25 @@ class SchoolsController extends ThinkUController {
         $this->activity = $re['activity'];
         $this->activityDate = $re['activityDate'];
     }
+
     /**首页-分类数据
      * @return string
      * by fawn
      */
-    public function actionIndex(){
+    public function actionIndex()
+    {
         $school = new Schools();
         $url = 'category';
-        $country_data = json_decode($school->CurlRequest($url,['catid'=>154]),TRUE);//国家
-        $rank_data = json_decode($school->CurlRequest($url,['catid'=>162]),TRUE);//排名
-        $degree_data = json_decode($school->CurlRequest($url,['catid'=>166]),TRUE);//学位
-        $major_data = json_decode($school->CurlRequest($url,['catid'=>171]),TRUE);//专业
-        $cost_data = json_decode($school->CurlRequest($url,['catid'=>414]),TRUE);//费用
-        $type_data = json_decode($school->CurlRequest($url,['catid'=>419]),TRUE);//学院类型
-        $school =  json_decode($school->CurlRequest('school',['catid'=>155, 'pageNumber'=>1, 'pageSize'=>6]),TRUE);
-        $this->title='院校库，美国留学院校分享，出国留学案例分享 申友留学专注名校留学申请';
-        $this->keywords='留学中介,留学,留学中介机构,留学机构,启德留学,EIC启德教育,留学资讯,出国留学条件,出国留学流程,出国留学中介,读研条件,出国留学费用,出国留学网,留学网,申请出国留学,留学签证,留学看点,留学考试';
-        $this->description='申友留学，专注商科与STEM留学咨询，提供留学申请一站式服务，是GMAT与托福 雅思培训的行业领跑者。申友专注美国、英国、加拿大、澳洲、香港等名校留学，留学咨询，出国留学，托福 雅思与GMAT培训，尽在申友。';
+        $country_data = json_decode($school->CurlRequest($url, ['catid' => 154]), TRUE);//国家
+        $rank_data = json_decode($school->CurlRequest($url, ['catid' => 162]), TRUE);//排名
+        $degree_data = json_decode($school->CurlRequest($url, ['catid' => 166]), TRUE);//学位
+        $major_data = json_decode($school->CurlRequest($url, ['catid' => 171]), TRUE);//专业
+        $cost_data = json_decode($school->CurlRequest($url, ['catid' => 414]), TRUE);//费用
+        $type_data = json_decode($school->CurlRequest($url, ['catid' => 419]), TRUE);//学院类型
+        $school = json_decode($school->CurlRequest('school', ['catid' => 155, 'pageNumber' => 1, 'pageSize' => 6]), TRUE);
+        $this->title = '院校库，美国留学院校分享，出国留学案例分享 申友留学专注名校留学申请';
+        $this->keywords = '留学中介,留学,留学中介机构,留学机构,启德留学,EIC启德教育,留学资讯,出国留学条件,出国留学流程,出国留学中介,读研条件,出国留学费用,出国留学网,留学网,申请出国留学,留学签证,留学看点,留学考试';
+        $this->description = '申友留学，专注商科与STEM留学咨询，提供留学申请一站式服务，是GMAT与托福 雅思培训的行业领跑者。申友专注美国、英国、加拿大、澳洲、香港等名校留学，留学咨询，出国留学，托福 雅思与GMAT培训，尽在申友。';
 //        echo '<pre>';var_dump($school);die;
         return $this->render('index',
             [
@@ -91,7 +95,7 @@ class SchoolsController extends ThinkUController {
         $schoolSystem = Yii::$app->request->post('schoolSystem', '');//公立还是私立
         $tuition = Yii::$app->request->post('tuition', '');//学费
         $result = file_get_contents("http://schools.smartapply.cn/schools.html?data-type=json&country=$country&rank=$rank&major=$major&majorDetails=$majorDetails&page=$page");
-        $result =json_decode($result,true);
+        $result = json_decode($result, true);
 //        var_dump($result);die;
         die(json_encode($result['data']));
     }
@@ -102,127 +106,137 @@ class SchoolsController extends ThinkUController {
      */
     public function actionSearch()
     {
-        $school = Yii::$app->request->get('school',0);
-        $major = Yii::$app->request->get('major',0);
+        $school = Yii::$app->request->get('school', 0);
+        $major = Yii::$app->request->get('major', 0);
         $result = file_get_contents("http://schools.smartapply.cn/select/s-$school/m-$major.html?data-type=json");
-        $result =json_decode($result,true);
+        $result = json_decode($result, true);
         die(json_encode($result));
     }
 
     /**院校详情
      * by fawn
      */
-    public function actionDetails(){
+    public function actionDetails()
+    {
         $school = new Schools();
         $data['schoolid'] = Yii::$app->request->get('schoolid');//分类ID
-        $data=json_decode(file_get_contents("http://schools.smartapply.cn/schools/id-".$data['schoolid'].".html?data-type='json'"),true);
+        $data = json_decode(file_get_contents("http://schools.smartapply.cn/schools/id-" . $data['schoolid'] . ".html?data-type='json'"), true);
 //        echo '<pre>';var_dump($data['major']);die;
-        $school =  json_decode($school->CurlRequest('school',['catid'=>155, 'pageNumber'=>1, 'pageSize'=>6]),TRUE);
-        $this->title=$data['data']['name'].',院校库，美国留学院校分享，出国留学案例分享 申友留学专注名校留学申请';
-        $this->keywords='留学中介,留学,留学中介机构,留学机构,启德留学,EIC启德教育,留学资讯,出国留学条件,出国留学流程,出国留学中介,读研条件,出国留学费用,出国留学网,留学网,申请出国留学,留学签证,留学看点,留学考试';
-        $this->description='申友留学，专注商科与STEM留学咨询，提供留学申请一站式服务，是GMAT与托福 雅思培训的行业领跑者。申友专注美国、英国、加拿大、澳洲、香港等名校留学，留学咨询，出国留学，托福 雅思与GMAT培训，尽在申友。';
-        return $this->render('detail',['data'=>$data['data'],'major'=>$data['major'],'school'=>$school['data']]);
+        $school = json_decode($school->CurlRequest('school', ['catid' => 155, 'pageNumber' => 1, 'pageSize' => 6]), TRUE);
+        $this->title = $data['data']['name'] . ',院校库，美国留学院校分享，出国留学案例分享 申友留学专注名校留学申请';
+        $this->keywords = '留学中介,留学,留学中介机构,留学机构,启德留学,EIC启德教育,留学资讯,出国留学条件,出国留学流程,出国留学中介,读研条件,出国留学费用,出国留学网,留学网,申请出国留学,留学签证,留学看点,留学考试';
+        $this->description = '申友留学，专注商科与STEM留学咨询，提供留学申请一站式服务，是GMAT与托福 雅思培训的行业领跑者。申友专注美国、英国、加拿大、澳洲、香港等名校留学，留学咨询，出国留学，托福 雅思与GMAT培训，尽在申友。';
+        return $this->render('detail', ['data' => $data['data'], 'major' => $data['major'], 'school' => $school['data']]);
     }
 
     /**专业数据
      * by fawn
      */
-    public function actionMajor(){
+    public function actionMajor()
+    {
         $school = new Schools();
         $url = 'content';
         $data['contentid'] = Yii::$app->request->post('contentid');//分类ID
         $data['catid'] = Yii::$app->request->post('catid');//分类ID
         $data['hot'] = Yii::$app->request->post('hot');//热门
-        $result = json_decode($school->CurlRequest($url,['contentid'=>$data['contentid'],'catid'=>$data['catid'],'hot'=>$data['hot']]),TRUE);
+        $result = json_decode($school->CurlRequest($url, ['contentid' => $data['contentid'], 'catid' => $data['catid'], 'hot' => $data['hot']]), TRUE);
         die(json_encode($result));
     }
 
     /**院校的专业详情
      * by fawn
      */
-    public function actionMajormsg(){
+    public function actionMajormsg()
+    {
         $school = new Schools();
         $id = Yii::$app->request->get('id');//分类ID
-        $data=json_decode(file_get_contents("http://schools.smartapply.cn/major/".$id.".html?data-type='json'"),true);
-        $schoolData =  json_decode($school->CurlRequest('school',['catid'=>155, 'pageNumber'=>1, 'pageSize'=>6]),TRUE);
+        $data = json_decode(file_get_contents("http://schools.smartapply.cn/major/" . $id . ".html?data-type='json'"), true);
+        $schoolData = json_decode($school->CurlRequest('school', ['catid' => 155, 'pageNumber' => 1, 'pageSize' => 6]), TRUE);
 //        echo '<pre>';var_dump($data['school']);die;
-        $this->title=$data['data']['name'].',院校库，美国留学院校分享，出国留学案例分享 申友留学专注名校留学申请';
-        $this->keywords='留学中介,留学,留学中介机构,留学机构,启德留学,EIC启德教育,留学资讯,出国留学条件,出国留学流程,出国留学中介,读研条件,出国留学费用,出国留学网,留学网,申请出国留学,留学签证,留学看点,留学考试';
-        $this->description='申友留学，专注商科与STEM留学咨询，提供留学申请一站式服务，是GMAT与托福 雅思培训的行业领跑者。申友专注美国、英国、加拿大、澳洲、香港等名校留学，留学咨询，出国留学，托福 雅思与GMAT培训，尽在申友。';
-        return $this->render('major',['hot' => $data['hot'],'school'=>$data['school'],'data'=>$data['data'],'schoolData'=>$schoolData]);
+        $this->title = $data['data']['name'] . ',院校库，美国留学院校分享，出国留学案例分享 申友留学专注名校留学申请';
+        $this->keywords = '留学中介,留学,留学中介机构,留学机构,启德留学,EIC启德教育,留学资讯,出国留学条件,出国留学流程,出国留学中介,读研条件,出国留学费用,出国留学网,留学网,申请出国留学,留学签证,留学看点,留学考试';
+        $this->description = '申友留学，专注商科与STEM留学咨询，提供留学申请一站式服务，是GMAT与托福 雅思培训的行业领跑者。申友专注美国、英国、加拿大、澳洲、香港等名校留学，留学咨询，出国留学，托福 雅思与GMAT培训，尽在申友。';
+        return $this->render('major', ['hot' => $data['hot'], 'school' => $data['school'], 'data' => $data['data'], 'schoolData' => $schoolData]);
     }
 
-    public function actionTeacher(){
-        $countryid = Yii::$app->request->get('country','');
-        $regionid = Yii::$app->request->get('region',0);
-        $page = Yii::$app->request->get('page',1);
-        if($countryid==false){
+    public function actionTeacher()
+    {
+        $countryid = Yii::$app->request->get('country', '');
+        $regionid = Yii::$app->request->get('region', 0);
+        $page = Yii::$app->request->get('page', 1);
+        if ($countryid == false) {
             $data = file_get_contents("http://www.smartapply.cn/cn/consultant/$page.html?data-type=json");
-        }else{
+        } else {
             $data = file_get_contents("http://www.smartapply.cn/cn/consultant/country-$countryid/-$regionid-$page.html?data-type=json");
         }
-        $result=json_decode($data,true);
+        $result = json_decode($data, true);
 //        echo '<pre>';var_dump($result);die;
-        return $this->render('teacher',['teacher'=>$result]);
+        return $this->render('teacher', ['teacher' => $result]);
     }
 
-    public function actionTeacherDetail(){
-        $id = Yii::$app->request->get('id','');
-        $id =564;
-        $data =  Method::post("http://www.smartapply.cn/cn/app-api/adviser-detail",['contentid'=>$id]);
-        $data=json_decode($data,true);
+    public function actionTeacherDetail()
+    {
+        $id = Yii::$app->request->get('id', '');
+        $id = 564;
+        $data = Method::post("http://www.smartapply.cn/cn/app-api/adviser-detail", ['contentid' => $id]);
+        $data = json_decode($data, true);
 //        echo '<pre>';var_dump($data);die;
-        return $this->render('teacherDetail',$data);
+        return $this->render('teacherDetail', $data);
 
     }
-    public function actionSchoolDetail(){
-        $schoolId = Yii::$app->request->get('school',11693);
+
+    public function actionSchoolDetail()
+    {
+        $schoolId = Yii::$app->request->get('school', 11693);
         $data = file_get_contents("http://schools.smartapply.cn/schools/id-$schoolId.html?data-type=json");
-        $data = json_decode($data,true);
+        $data = json_decode($data, true);
 //        echo '<pre>';var_dump($data['data']);die;
-        return $this->render('schoolDetail',$data);
+        return $this->render('schoolDetail', $data);
 
     }
 
     /**专业数据
      * by yoyo
      */
-    public function actionMajorAnalysis(){
-        $catId = Yii::$app->request->get('catId',433);//分类ID
-        $page = Yii::$app->request->get('page',1);//分类ID
-        $pageSize = Yii::$app->request->get('pageSize',10);//分类ID
-        $data = Method::post("http://www.smartapply.cn/cn/app-api/major-list", ['catId' => $catId,'page'=>$page,'pageSize'=>$pageSize]);
-        $data = json_decode($data,true);
+    public function actionMajorAnalysis()
+    {
+        $catId = Yii::$app->request->get('catId', 433);//分类ID
+        $page = Yii::$app->request->get('page', 1);//分类ID
+        $pageSize = Yii::$app->request->get('pageSize', 10);//分类ID
+        $data = Method::post("http://www.smartapply.cn/cn/app-api/major-list", ['catId' => $catId, 'page' => $page, 'pageSize' => $pageSize]);
+        $data = json_decode($data, true);
 //        echo '<pre>';var_dump($data);die;
-        return $this->render('majorAnalysis',$data);
+        return $this->render('majorAnalysis', $data);
     }
 
     /**专业详情
      * by yoyo
      */
-    public function actionMajorDetail(){
-        $id = Yii::$app->request->get('id',3424);//分类ID
+    public function actionMajorDetail()
+    {
+        $id = Yii::$app->request->get('id', 3424);//分类ID
         $data = Method::post("http://www.smartapply.cn/cn/app-api/major-detail", ['id' => $id]);
-        $data = json_decode($data,true);
+        $data = json_decode($data, true);
 //        echo '<pre>';var_dump($data);die;
-        return $this->render('majorDetail',$data);
+        return $this->render('majorDetail', $data);
     }
 
     /**排行
      * by yoyo
      */
-    public function actionRanking(){
-        $classId = Yii::$app->request->get('classId',296);//分类ID
-        $yearId = Yii::$app->request->get('yearId',427);//分类ID
-        $page = Yii::$app->request->get('page',1);//分类ID
-        $pageSize = Yii::$app->request->get('pageSize',15);//分类ID
+    public function actionRanking()
+    {
+        $classId = Yii::$app->request->get('classId', 296);//分类ID
+        $yearId = Yii::$app->request->get('yearId', 427);//分类ID
+        $page = Yii::$app->request->get('page', 1);//分类ID
+        $pageSize = Yii::$app->request->get('pageSize', 15);//分类ID
         $data = file_get_contents("http://www.smartapply.cn/cn/app-api/school-rank?classId=$classId&yearId=$yearId&page=$page&pageSize=$pageSize");
         $class = file_get_contents("http://www.smartapply.cn/cn/app-api/university-class");
-        $case = Content::getContent(['fields' => 'abroadSchool,major,score,oldSchool', 'category' => "104,207", 'order' => 'c.id desc',  'pageSize' => 12, 'page' => 1]);
-        $data = json_decode($data,true);
-        $class = json_decode($class,true);
+        $case = Content::getContent(['fields' => 'abroadSchool,major,score,oldSchool', 'category' => "104,207", 'order' => 'c.id desc', 'pageSize' => 12, 'page' => 1]);
+        $data = json_decode($data, true);
+        $class = json_decode($class, true);
 //        echo '<pre>';var_dump($data);die;
-        return $this->render('rankList',['data'=>$data,'class'=>$class,'case'=>$case]);
+        return $this->render('rankList', ['data' => $data, 'class' => $class, 'case' => $case]);
     }
 
 }
