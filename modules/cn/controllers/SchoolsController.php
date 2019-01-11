@@ -159,6 +159,9 @@ class SchoolsController extends ThinkUController
         return $this->render('major', ['hot' => $data['hot'], 'school' => $data['school'], 'data' => $data['data'], 'schoolData' => $schoolData]);
     }
 
+    /**学校排行的推荐老师
+     * by yoyo
+     */
     public function actionTeacher()
     {
         $countryid = Yii::$app->request->get('country', '');
@@ -170,27 +173,29 @@ class SchoolsController extends ThinkUController
             $data = file_get_contents("http://www.smartapply.cn/cn/consultant/country-$countryid/-$regionid-$page.html?data-type=json");
         }
         $result = json_decode($data, true);
-//        echo '<pre>';var_dump($result);die;
         return $this->render('teacher', ['teacher' => $result]);
     }
 
+    /**推荐老师详情
+     * by yoyo
+     */
     public function actionTeacherDetail()
     {
         $id = Yii::$app->request->get('id', '');
-        $id = 564;
         $data = Method::post("http://www.smartapply.cn/cn/app-api/adviser-detail", ['contentid' => $id]);
         $data = json_decode($data, true);
-//        echo '<pre>';var_dump($data);die;
         return $this->render('teacherDetail', $data);
 
     }
 
+    /**学校的详情 院校排名
+     * by yoyo
+     */
     public function actionSchoolDetail()
     {
         $schoolId = Yii::$app->request->get('school', 11693);
         $data = file_get_contents("http://schools.smartapply.cn/schools/id-$schoolId.html?data-type=json");
         $data = json_decode($data, true);
-//        echo '<pre>';var_dump($data['data']);die;
         return $this->render('schoolDetail', $data);
 
     }
@@ -221,7 +226,7 @@ class SchoolsController extends ThinkUController
         return $this->render('majorDetail', $data);
     }
 
-    /**排行
+    /**学校排行
      * by yoyo
      */
     public function actionRanking()
