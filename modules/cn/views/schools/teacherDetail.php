@@ -57,6 +57,7 @@
                 </div>
             </div>
             <!--近期服务案例-->
+            <?php if ($caseList != false) {?>
             <div class="ServiceCase" id="ServiceCase">
                 <h2>近期服务案例</h2>
                 <ul>
@@ -64,24 +65,27 @@
                         <div class="grey-bot">
                             <div class="commonSee">
                                 <!--整个内容-->
-<!--                                --><?php //echo '<pre>';var_dump($caseList);die;
-                                foreach($caseList as $v){?>
-                                <p><?php echo $v[0]['cnName']?>,<?php echo $v[0]['numbering']?>,<?php echo $v[0]['sentenceNumber']?></p>
-                                <p>申请方向：<?php echo $v[0]['article']?>,录取结果：<?php echo $v[0]['problemComplement']?></p>
-                                <?php }?>
+                                <?php foreach ($caseList as $v) {
+                                    ?>
+                                    <p><?php echo $v[0]['cnName'] ?>,<?php echo $v[0]['numbering'] ?>,<?php echo $v[0]['sentenceNumber'] ?></p>
+                                    <p>申请方向：<?php echo $v[0]['article'] ?>,录取结果：<?php echo $v[0]['problemComplement'] ?></p>
+                                <?php } ?>
                             </div>
                         </div>
                     </li>
                 </ul>
             </div>
+            <?php }?>
             <!--TA的回答-->
             <div class="hisAnswer" id="hisAnswer">
                 <h2>TA的回答</h2>
                 <ul>
-                    <?php if($answer){
-                    foreach($answer as $v) { ?>
-                    <h4><?php echo $v['question'] ?></h4>
-                    <p><?php echo $v['content'] ?></p><?php }}?>
+                    <?php if ($answer) {
+                        foreach ($answer as $v) { ?>
+                            <h4><?php echo $v['question'] ?></h4>
+                            <p><?php echo $v['content'] ?></p>
+                        <?php }
+                    } ?>
                 </ul>
             </div>
         </div>
