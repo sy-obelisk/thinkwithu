@@ -46,7 +46,7 @@
             <!--导航侧边栏定位-->
             <div class="consultants-nav">
                 <div class="on" data-ids="individual">顾问介绍</div>
-                <div data-ids="hisAnswer" class="">TA的回答 <span class="trans">（2）</span></div>
+                <div data-ids="hisAnswer" class="">TA的回答 <span class="trans">（0）</span></div>
             </div>
             <!--个人简介-->
             <div class="individual" id="individual">
