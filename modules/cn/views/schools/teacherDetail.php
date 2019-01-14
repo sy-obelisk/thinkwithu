@@ -57,6 +57,7 @@
                 </div>
             </div>
             <!--近期服务案例-->
+            <?php if ($caseList != false) {?>
             <div class="ServiceCase" id="ServiceCase">
                 <h2>近期服务案例</h2>
                 <ul>
@@ -64,24 +65,27 @@
                         <div class="grey-bot">
                             <div class="commonSee">
                                 <!--整个内容-->
-<!--                                --><?php //echo '<pre>';var_dump($caseList);die;
-                                foreach($caseList as $v){?>
-                                <p><?php echo $v[0]['cnName']?>,<?php echo $v[0]['numbering']?>,<?php echo $v[0]['sentenceNumber']?></p>
-                                <p>申请方向：<?php echo $v[0]['article']?>,录取结果：<?php echo $v[0]['problemComplement']?></p>
-                                <?php }?>
+                                <?php foreach ($caseList as $v) {
+                                    ?>
+                                    <p><?php echo $v[0]['cnName'] ?>,<?php echo $v[0]['numbering'] ?>,<?php echo $v[0]['sentenceNumber'] ?></p>
+                                    <p>申请方向：<?php echo $v[0]['article'] ?>,录取结果：<?php echo $v[0]['problemComplement'] ?></p>
+                                <?php } ?>
                             </div>
                         </div>
                     </li>
                 </ul>
             </div>
+            <?php }?>
             <!--TA的回答-->
             <div class="hisAnswer" id="hisAnswer">
                 <h2>TA的回答</h2>
                 <ul>
-                    <?php if($answer){
-                    foreach($answer as $v) { ?>
-                    <h4><?php echo $v['question'] ?></h4>
-                    <p><?php echo $v['content'] ?></p><?php }}?>
+                    <?php if ($answer) {
+                        foreach ($answer as $v) { ?>
+                            <h4><?php echo $v['question'] ?></h4>
+                            <p><?php echo $v['content'] ?></p>
+                        <?php }
+                    } ?>
                 </ul>
             </div>
         </div>
@@ -90,17 +94,20 @@
             <div class="RightTitle">可能感兴趣的大学</div>
             <ul class="consuBot">
                 <!--循环li-->
-                <?php foreach($school as $k=>$v){?>
-                <li>
-                    <div class="numDiv"><?php echo $k+1?></div>
-                    <a href="/schools/<?php echo $v['id']?>.html"><?php echo $v['name']?>（<?php echo $v['title']?>）</a>
-                    <span>排名 <?php echo $v['article']?></span>
-                    <p class="c_kNum">
-                        <img src="/cn/schools/images/sercah_shcool.png" alt="查看图标">
-                        <span><?php echo $v['viewCount']?>人查看</span>
-                    </p>
-                </li>
-                <?php }?>
+                <?php foreach($school as $k=>$v){
+                    if ($k < 8) {
+                        ?>
+                        <li>
+                            <div class="numDiv"><?php echo $k + 1 ?></div>
+                            <a href="/schools/<?php echo $v['id'] ?>.html"><?php echo $v['name'] ?>（<?php echo $v['title'] ?>）</a>
+                            <span>排名 <?php echo $v['article'] ?></span>
+                            <p class="c_kNum">
+                                <img src="/cn/schools/images/sercah_shcool.png" alt="查看图标">
+                                <span><?php echo $v['viewCount'] ?>人查看</span>
+                            </p>
+                        </li>
+                    <?php }
+                } ?>
             </ul>
         </div>
         <!--清浮动-->

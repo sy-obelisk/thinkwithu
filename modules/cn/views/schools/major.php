@@ -147,8 +147,8 @@
                     '<ul>'+
                     '<li>'+ re[i].title+'</li>'+
                     '<li>'+ re[i].direction+'</li>'+
-                    '<li><a href="">查看详情>></a></li>'+
-                    '<li class="pg_free_li"><a href="" class="pg_free">免费评估<i class="iconfont left_icon">&#xe610;</i></a></li>'+
+                    '<li><a href="/schools/major/'+re[i].id+'.html">查看详情>></a></li>'+
+                    '<li class="pg_free_li"><a href="/evaluation.html" class="pg_free">免费评估<i class="iconfont left_icon">&#xe610;</i></a></li>'+
                     '</ul>'+
                     '</div>'+
                     '</li>';
