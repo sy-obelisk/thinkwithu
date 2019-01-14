@@ -94,17 +94,20 @@
             <div class="RightTitle">可能感兴趣的大学</div>
             <ul class="consuBot">
                 <!--循环li-->
-                <?php foreach($school as $k=>$v){?>
-                <li>
-                    <div class="numDiv"><?php echo $k+1?></div>
-                    <a href="/schools/<?php echo $v['id']?>.html"><?php echo $v['name']?>（<?php echo $v['title']?>）</a>
-                    <span>排名 <?php echo $v['article']?></span>
-                    <p class="c_kNum">
-                        <img src="/cn/schools/images/sercah_shcool.png" alt="查看图标">
-                        <span><?php echo $v['viewCount']?>人查看</span>
-                    </p>
-                </li>
-                <?php }?>
+                <?php foreach($school as $k=>$v){
+                    if ($k < 8) {
+                        ?>
+                        <li>
+                            <div class="numDiv"><?php echo $k + 1 ?></div>
+                            <a href="/schools/<?php echo $v['id'] ?>.html"><?php echo $v['name'] ?>（<?php echo $v['title'] ?>）</a>
+                            <span>排名 <?php echo $v['article'] ?></span>
+                            <p class="c_kNum">
+                                <img src="/cn/schools/images/sercah_shcool.png" alt="查看图标">
+                                <span><?php echo $v['viewCount'] ?>人查看</span>
+                            </p>
+                        </li>
+                    <?php }
+                } ?>
             </ul>
         </div>
         <!--清浮动-->
