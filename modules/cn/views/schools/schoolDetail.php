@@ -10,7 +10,7 @@
             <div class="bs-center">
                 <h4 class="ellipsis"><?php echo $data['name']?></h4>
                 <p class="ellipsis"><?php echo $data['title']?></p>
-                <a href="/percentages-test.htm">
+                <a href="/percentages-test.html">
                     <img src="/cn/schools/images/benkeD-jilv.png" alt="图标">
                     录取几率免费评估
                 </a>
