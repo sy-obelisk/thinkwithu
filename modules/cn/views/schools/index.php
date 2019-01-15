@@ -8,7 +8,7 @@
 <!-----------------------------头部end------------------------------>
 <!--banner-->
 <div class="adad-top">
-    <img src="cn/schools/images/academy_bigBGNew.jpg" alt="图片">
+    <img src="cn/schools/images/academy_bigBGNew1.jpg" alt="图片">
 </div>
 <!--内容-->
 <div class="">
