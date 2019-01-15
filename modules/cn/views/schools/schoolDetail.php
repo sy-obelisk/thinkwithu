@@ -131,8 +131,8 @@
                                    <?php echo $v['website']?>
                                 </a>
                             </li>
-                            <li>
-                                <span class="time">截止日期 ：</span><?php echo $v['endTime']!=false?$v['endTime']:'数据正在更新中，请前往“项目网址”查看~'?></li>
+<!--                            <li>-->
+<!--                                <span class="time">截止日期 ：</span>--><?php //echo $v['endTime']!=false?$v['endTime']:'数据正在更新中，请前往“项目网址”查看~'?><!--</li>-->
                             <li>
                                 <span class="time">基本申请要求 : </span>
                                 <table class="project-table">
