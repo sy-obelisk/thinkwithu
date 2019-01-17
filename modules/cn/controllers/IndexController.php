@@ -38,7 +38,7 @@ class IndexController extends ThinkUController {
 //            default:
 //                break;
 //        }
-        $banner = Content::getContent(['fields' => 'url', 'category' => "190,223",'order'=>'c.id desc', 'pageSize' => 10]);
+        $banner = Content::getContent(['fields' => 'url', 'category' => "190,223",'order'=>'c.sort asc,c.id desc', 'pageSize' => 10]);
         $abroadPro = Content::getContent(['fields' => 'url', 'category' => "261", 'order'=>'c.id desc','pageSize' => 11]);
         $news['gmat'] = Content::getContent(['category' => "115,166", 'pageSize' => 15, 'order' => 'c.id desc']);
         $news['toefl'] = Content::getContent(['category' => "116,166", 'pageSize' => 15, 'order' => 'c.id desc']);
