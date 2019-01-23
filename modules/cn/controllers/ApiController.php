@@ -1169,7 +1169,7 @@ class ApiController extends ThinkUApiControl {
      * @yoyo
      */
     public function actionOffer(){
-        $data = \app\modules\cn\models\Content::getContent(['fields' => 'score,abroadSchool','category' => "178,102",'limit'=>15]);
+        $data = \app\modules\cn\models\Content::getContent(['fields' => 'score,abroadSchool','category' => "104,207",'limit'=>15]);
         die(json_encode($data));
     }
 
@@ -1180,7 +1180,7 @@ class ApiController extends ThinkUApiControl {
      * @yoyo
      */
     public function actionScore(){
-        $data = \app\modules\cn\models\Content::getContent(['fields' => 'score,abroadSchool','category' => "115,102",'limit'=>15]);
+        $data = \app\modules\cn\models\Content::getContent(['fields' => 'score,abroadSchool','category' => "104,206",'limit'=>15]);
         die(json_encode($data));
     }
 
