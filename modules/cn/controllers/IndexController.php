@@ -45,7 +45,7 @@ class IndexController extends ThinkUController {
         $news['gre'] = Content::getContent(['category' => "171,166", 'pageSize' => 15, 'order' => 'c.id desc']);
         $news['ielts'] = Content::getContent(['category' => "172,166", 'pageSize' => 15, 'order' => 'c.id desc']);
         $news['sat'] = Content::getContent(['category' => "173,166", 'pageSize' => 15, 'order' => 'c.id desc']);
-        $news['recommend'] = Content::getContent(['category' => "115，118", 'pageSize' => 15, 'order' => 'c.id desc']);
+        $news['recommend'] = Content::getContent(['category' => "115,118", 'pageSize' => 15, 'order' => 'c.id desc']);
         $abroad['active'] = Content::getContent(['category' => "117,118", 'pageSize' => 15, 'order' => 'c.id desc']);
         $abroad['plan'] = Content::getContent(['category' => "117,119", 'pageSize' => 15, 'order' => 'c.id desc']);
         $abroad['state'] = Content::getContent(['category' => "165,117", 'pageSize' => 15, 'order' => 'c.id desc']);
