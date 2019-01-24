@@ -155,15 +155,15 @@
             <p class="hotLine">全国免费咨询热线:<span>400-600-1123</span></p>
             <div>
                 <img src="/cn/images/index_erweima02.jpg" alt="申友留学"/>
-                <p>申友留学</p>
+                <p style="font-size: 12px!important;">公众号【申友留学帮】</p>
             </div>
             <div>
                 <img src="/cn/images/index_erweima01.jpg" alt="申友GMAT"/>
-                <p>申友GMAT</p>
+                <p style="font-size: 12px!important;">公众号【申友GMAT与商科留学】</p>
             </div>
             <div>
                 <img src="/cn/images/index_erweima03.png" alt="托福100"/>
-                <p>托福100</p>
+                <p style="font-size: 12px!important;">微博【申友留学】</p>
             </div>
         </div>
     </div>

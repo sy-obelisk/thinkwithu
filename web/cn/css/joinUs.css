@@ -141,10 +141,10 @@
 /*工作地址*/
 .join-address {
     padding: 40px 55px;
+    margin:0 auto 30px;
     background: url("/cn/images/join_05.png") no-repeat;
     -webkit-background-size: 100% 100%;
     background-size: 100% 100%;
-    margin-bottom: 30px;
 }
 .join-address dl:after {
     display: block;
