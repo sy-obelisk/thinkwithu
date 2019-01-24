@@ -38,14 +38,14 @@ class IndexController extends ThinkUController {
 //            default:
 //                break;
 //        }
-        $banner = Content::getContent(['fields' => 'url', 'category' => "190,223",'order'=>'c.id desc', 'pageSize' => 10]);
+        $banner = Content::getContent(['fields' => 'url', 'category' => "190,223",'order'=>'c.sort asc,c.id desc', 'pageSize' => 10]);
         $abroadPro = Content::getContent(['fields' => 'url', 'category' => "261", 'order'=>'c.id desc','pageSize' => 11]);
         $news['gmat'] = Content::getContent(['category' => "115,166", 'pageSize' => 15, 'order' => 'c.id desc']);
         $news['toefl'] = Content::getContent(['category' => "116,166", 'pageSize' => 15, 'order' => 'c.id desc']);
         $news['gre'] = Content::getContent(['category' => "171,166", 'pageSize' => 15, 'order' => 'c.id desc']);
         $news['ielts'] = Content::getContent(['category' => "172,166", 'pageSize' => 15, 'order' => 'c.id desc']);
         $news['sat'] = Content::getContent(['category' => "173,166", 'pageSize' => 15, 'order' => 'c.id desc']);
-        $news['recommend'] = Content::getContent(['category' => "115", 'pageSize' => 15, 'order' => 'c.id desc']);
+        $news['recommend'] = Content::getContent(['category' => "115，118", 'pageSize' => 15, 'order' => 'c.id desc']);
         $abroad['active'] = Content::getContent(['category' => "117,118", 'pageSize' => 15, 'order' => 'c.id desc']);
         $abroad['plan'] = Content::getContent(['category' => "117,119", 'pageSize' => 15, 'order' => 'c.id desc']);
         $abroad['state'] = Content::getContent(['category' => "165,117", 'pageSize' => 15, 'order' => 'c.id desc']);

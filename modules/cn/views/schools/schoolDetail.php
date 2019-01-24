@@ -10,7 +10,7 @@
             <div class="bs-center">
                 <h4 class="ellipsis"><?php echo $data['name']?></h4>
                 <p class="ellipsis"><?php echo $data['title']?></p>
-                <a href="/percentages-test.htm">
+                <a href="/percentages-test.html">
                     <img src="/cn/schools/images/benkeD-jilv.png" alt="图标">
                     录取几率免费评估
                 </a>
@@ -131,8 +131,8 @@
                                    <?php echo $v['website']?>
                                 </a>
                             </li>
-                            <li>
-                                <span class="time">截止日期 ：</span><?php echo $v['endTime']!=false?$v['endTime']:'数据正在更新中，请前往“项目网址”查看~'?></li>
+<!--                            <li>-->
+<!--                                <span class="time">截止日期 ：</span>--><?php //echo $v['endTime']!=false?$v['endTime']:'数据正在更新中，请前往“项目网址”查看~'?><!--</li>-->
                             <li>
                                 <span class="time">基本申请要求 : </span>
                                 <table class="project-table">
