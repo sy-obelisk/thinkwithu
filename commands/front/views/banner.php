@@ -36,7 +36,19 @@
                     </ul>
                 </div>
             </div>
-            <li><a class="nav1-link <?php echo $controller == 'index' ? 'on on-hover' : '' ?>" href="/">首页</a></li>
+            <li style="flex: .8"><a class="nav1-link <?php echo $controller == 'index' ? 'on on-hover' : '' ?>" href="/">首页</a></li>
+            <li style="flex: 1.4">
+                <a class="nav1-link" href="javascript:void(0);">留学服务 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
+                <div class="eaxm-list">
+                    <ul>
+                        <li><a href="/studying-USA.html">美国留学</a></li>
+                        <li><a href="/studying-UK.html">英国留学</a></li>
+                        <li><a href="/studying-AUS.html">澳洲留学</a></li>
+<!--                        <li><a href="/studying-Canada.html">加拿大留学</a></li>-->
+                        <li><a href="/studying-HK.html">香港留学</a></li>
+                    </ul>
+                </div>
+            </li>
             <li style="flex: 1.2">
                 <a class="nav1-link <?php echo ($controller == 'satsheet' || $controller == 'ieltssheet' || $controller == 'gmatsheet' || $controller == 'toeflsheet' || $controller == 'gre') ? 'on on-hover' : '' ?>" href="javascript:void(0);">GMAT培训 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
                 <div class="eaxm-list">
@@ -49,7 +61,7 @@
                     </ul>
                 </div>
             </li>
-            <li>
+            <li style="flex: 1.2">
                 <a class="nav1-link <?php echo $controller == 'school-choice' ? 'on on-hover' : '' ?>" href="javascript:void(0);">选校工具 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
                 <div class="eaxm-list eaxm-list-1">
                     <ul>
@@ -59,7 +71,7 @@
                     </ul>
                 </div>
             </li>
-            <li>
+            <li style="flex: 1.2">
                 <a class="nav1-link <?php echo $controller == 'schools' ? 'on on-hover' : '' ?>" href="/schools.html">院校库
                     <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标">
                 </a>
@@ -71,7 +83,7 @@
                     </ul>
                 </div>
             </li>
-            <li><a class="nav1-link <?php echo $controller == 'encyclopedia' ? 'on on-hover' : '' ?>" href="javascript:void(0);">留学百科 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
+            <li style="flex: 1.2"><a class="nav1-link <?php echo $controller == 'encyclopedia' ? 'on on-hover' : '' ?>" href="javascript:void(0);">留学百科 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
                 <div class="eaxm-list eaxm-list-1">
                     <ul>
                         <li><a href="/encyclopedia/master.html">硕士动态</a></li>

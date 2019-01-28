@@ -697,7 +697,7 @@ body{
 }
 .ency_recommend{
     width: 100%;
-    height: 193px;
+    /*height: 193px;*/
     background: goldenrod;
     position:relative;
 
@@ -1301,7 +1301,7 @@ body{
 }
 .teacherTeam{
     width: 1200px;
-    margin: 10px auto;
+    margin: 40px auto;
 }
 .teamCover{
     margin-top: 30px;
@@ -1772,4 +1772,13 @@ h1.abroad-tit {
     top: 12px;
     width: 30px;
     height: 30px;
+}
+/*新版结构修改2019年1月28日 15:54:44*/
+.steps_seven{
+    width: 1200px;
+    margin: auto;
+}
+.eaxm_tab_wap{
+    width: 1300px;
+    margin: auto;
 }

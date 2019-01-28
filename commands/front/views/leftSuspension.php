@@ -30,10 +30,10 @@
         </select>
         <p class="info-tit">我计划出国的时间：</p>
         <select class="info-select" name="data" id="data">
-            <option value="2018年入学">2018年入学</option>
-            <option value="2017年春季入学">2017年春季入学</option>
-            <option value="2017年秋季入学">2017年秋季入学</option>
-            <option value="2018年春季入学">2018年春季入学</option>
+            <option value="2018年入学">2019年秋季入学</option>
+            <option value="2017年春季入学">2020年入学</option>
+            <option value="2017年秋季入学">2021年入学</option>
+            <option value="2018年春季入学">2022年入学</option>
         </select>
         <div class="codeWrap">
             <p class="info-tit">验证码：</p>
