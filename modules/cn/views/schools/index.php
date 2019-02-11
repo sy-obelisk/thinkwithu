@@ -140,7 +140,7 @@
                 if(is_numeric($k)){?>
                     <div class="right_con_son">
                         <div class="son_img">
-                            <img src="http://schools.smartapply.cn<?php echo $v['image']?>" alt="学校logo">
+                            <img src="http://schools.viplgw.cn<?php echo $v['image']?>" alt="学校logo">
                             <p>已有<span><?php echo $v['viewCount']+rand(10,100) ?></span>人评估</p>
                         </div>
                         <p class="son_sc_name"><?php echo $v['name']?></p>
@@ -160,32 +160,32 @@
     <div class="new_f_line"></div>
     <ul class="top">
         <li>
-            <img src="http://www.smartapply.cn/cn/images/index3-img/index3-footerwb.png" alt="新浪">
+            <img src="http://liuxue.viplgw.cn/cn/images/index3-img/index3-footerwb.png" alt="新浪">
         </li>
         <li>
-            <img src="http://www.smartapply.cn/cn/images/index3-img/index3-footersh.png" alt="搜狐">
+            <img src="http://liuxue.viplgw.cn/cn/images/index3-img/index3-footersh.png" alt="搜狐">
         </li>
         <li>
-            <img src="http://www.smartapply.cn/cn/images/index3-img/index3-footersb.png" alt="市报">
+            <img src="http://liuxue.viplgw.cn/cn/images/index3-img/index3-footersb.png" alt="市报">
         </li>
         <li>
-            <img src="http://www.smartapply.cn/cn/images/index3-img/index3-footeryc.png" alt="晚报">
+            <img src="http://liuxue.viplgw.cn/cn/images/index3-img/index3-footeryc.png" alt="晚报">
         </li>
     </ul>
     <h2>合作机构</h2>
     <div class="new_f_line"></div>
     <ul class="bot">
         <li>
-            <img src="http://www.smartapply.cn/cn/images/nfooter-1.png" alt="图片">
+            <img src="http://liuxue.viplgw.cn/cn/images/nfooter-1.png" alt="图片">
         </li>
         <li>
-            <img src="http://www.smartapply.cn/cn/images/nfooter-2.png" alt="图片">
+            <img src="http://liuxue.viplgw.cn/cn/images/nfooter-2.png" alt="图片">
         </li>
         <li>
-            <img src="http://www.smartapply.cn/cn/images/nfooter-3.png" alt="图片">
+            <img src="http://liuxue.viplgw.cn/cn/images/nfooter-3.png" alt="图片">
         </li>
         <li>
-            <img src="http://www.smartapply.cn/cn/images/nfooter-4.png" alt="图片">
+            <img src="http://liuxue.viplgw.cn/cn/images/nfooter-4.png" alt="图片">
         </li>
     </ul>
 </div>
@@ -259,7 +259,7 @@
                         str +=' <li>'+
                         '<div class="centTwo-left">'+
                         '<a href="/schools-detail/'+ v.id+'.html">'+
-                        '<div class="imgCover"><img src="http://schools.smartapply.cn/'+ v.image+'" alt="学校图片"></div>'+
+                        '<div class="imgCover"><img src="http://schools.viplgw.cn/'+ v.image+'" alt="学校图片"></div>'+
                         '<p>已有<span class="viewNum"> '+ v.viewCount+'</span>人关注</p>'+
                         '</a>'+
                         '</div>'+
@@ -335,7 +335,7 @@
             for(var i=0;i<6;i++){
                 str+='<div class="right_con_son">';
                 str+='<div class="son_img">';
-                str+='<img src="http://schools.smartapply.cn'+ re.school[i].image +'" alt="学校logo">';
+                str+='<img src="http://schools.viplgw.cn'+ re.school[i].image +'" alt="学校logo">';
                 str+='<p>已有<span>'+ (parseInt(re.school[i].viewCount)+parseInt(Math.floor(Math.random()*(100 - 1) + 1)))+'</span>人评估</p>';
                 str+='</div>';
                 str+='<p class="son_sc_name">'+ re.school[i].name  +'</p>';
@@ -368,7 +368,7 @@
                     str +=' <li>'+
                         '<div class="centTwo-left">'+
                         '<a href="/schools-detail/'+ v.id+'.html">'+
-                        '<div class="imgCover"><img src="http://schools.smartapply.cn/'+ v.image+'" alt="学校图片"></div>'+
+                        '<div class="imgCover"><img src="http://schools.viplgw.cn/'+ v.image+'" alt="学校图片"></div>'+
                         '<p>已有<span class="viewNum"> '+ v.viewCount+'</span>人关注</p>'+
                         '</a>'+
                         '</div>'+

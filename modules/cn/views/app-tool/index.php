@@ -53,90 +53,90 @@
             <div class="pull_down">
                 <ul>
                     <li>
-                        <a href="http://www.gmatonline.cn/DownloadApp.html">
+                        <a href="http://gmat.viplgw.cn/DownloadApp.html">
                             <div class="first_layer">
-                                <img src="http://www.gmatonline.cn/app/web_core/styles/images-3/gmatapp_logo.jpg"
+                                <img src="http://gmat.viplgw.cn/app/web_core/styles/images-3/gmatapp_logo.jpg"
                                      alt="app logo图标"/>
                                 <span>雷哥GMAT苹果版</span>
                             </div>
                         </a>
                         <div class="code_box">
-                            <img src="http://www.gmatonline.cn/app/web_core/styles/images-3/leigeQrCode.png"
+                            <img src="http://gmat.viplgw.cn/app/web_core/styles/images-3/leigeQrCode.png"
                                  alt="app二维码图片"/>
                         </div>
                     </li>
                     <li>
-                        <a href="http://www.gmatonline.cn/DownloadApp.html">
+                        <a href="http://gmat.viplgw.cn/DownloadApp.html">
                             <div class="first_layer">
-                                <img src="http://www.gmatonline.cn/app/web_core/styles/images-3/gmatapp_logo.jpg"
+                                <img src="http://gmat.viplgw.cn/app/web_core/styles/images-3/gmatapp_logo.jpg"
                                      alt="app logo图标"/>
                                 <span>雷哥GMAT安卓版</span>
                             </div>
                         </a>
                         <div class="code_box">
-                            <img src="http://www.gmatonline.cn/app/web_core/styles/images-3/leige-android.png"
+                            <img src="http://gmat.viplgw.cn/app/web_core/styles/images-3/leige-android.png"
                                  alt="app二维码图片"/>
                         </div>
                     </li>
                     <li>
-                        <a href="http://www.toeflonline.cn/toefl_app.html">
+                        <a href="http://toefl.viplgw.cn/toefl_app.html">
                             <div class="first_layer">
-                                <img src="http://www.toeflonline.cn/cn/images/toeflapp_logo.jpg" alt="app logo图标"/>
+                                <img src="http://toefl.viplgw.cn/cn/images/toeflapp_logo.jpg" alt="app logo图标"/>
                                 <span>雷哥托福苹果版</span>
                             </div>
                         </a>
                         <div class="code_box">
-                            <img src="http://www.toeflonline.cn/cn/images/app-ios.png" alt="app二维码图片"/>
+                            <img src="http://toefl.viplgw.cn/cn/images/app-ios.png" alt="app二维码图片"/>
                         </div>
                     </li>
                     <li>
-                        <a href="http://www.toeflonline.cn/toefl_app.html">
+                        <a href="http://toefl.viplgw.cn/toefl_app.html">
                             <div class="first_layer">
-                                <img src="http://www.toeflonline.cn/cn/images/toeflapp_logo.jpg" alt="app logo图标"/>
+                                <img src="http://toefl.viplgw.cn/cn/images/toeflapp_logo.jpg" alt="app logo图标"/>
                                 <span>雷哥托福安卓版</span>
                             </div>
                         </a>
                         <div class="code_box">
-                            <img src="http://www.toeflonline.cn/cn/images/app-android.png" alt="app二维码图片"/>
+                            <img src="http://toefl.viplgw.cn/cn/images/app-android.png" alt="app二维码图片"/>
                         </div>
                     </li>
                     <li>
-                        <a href="http://www.smartapply.cn/app.html">
+                        <a href="http://liuxue.viplgw.cn/app.html">
                             <div class="first_layer">
-                                <img src="http://www.smartapply.cn/cn/images/smart-appLogo.png" alt="app logo图标"/>
+                                <img src="http://liuxue.viplgw.cn/cn/images/smart-appLogo.png" alt="app logo图标"/>
                                 <span>雷哥选校苹果版</span>
                             </div>
                         </a>
                         <div class="code_box">
-                            <img src="http://www.smartapply.cn/cn/images/smart-erweima.png" alt="app二维码图片"/>
+                            <img src="http://liuxue.viplgw.cn/cn/images/smart-erweima.png" alt="app二维码图片"/>
                         </div>
                     </li>
                     <li>
-                        <a href="http://www.smartapply.cn/app.html">
+                        <a href="http://liuxue.viplgw.cn/app.html">
                             <div class="first_layer">
-                                <img src="http://www.smartapply.cn/cn/images/smart-appLogo.png" alt="app logo图标"/>
+                                <img src="http://liuxue.viplgw.cn/cn/images/smart-appLogo.png" alt="app logo图标"/>
                                 <span>雷哥选校安卓版</span>
                             </div>
                         </a>
                         <div class="code_box">
-                            <img src="http://www.smartapply.cn/cn/images/anroid-smartapp.png" alt="app二维码图片"/>
+                            <img src="http://liuxue.viplgw.cn/cn/images/anroid-smartapp.png" alt="app二维码图片"/>
                         </div>
                     </li>
                     <li>
                         <a href="http://words.viplgw.cn/" target="_blank">
                             <div class="first_layer">
-                                <img src="http://www.gmatonline.cn/app/web_core/styles/images/words-iosLogo.jpg" alt="app logo图标"/>
+                                <img src="http://gmat.viplgw.cn/app/web_core/styles/images/words-iosLogo.jpg" alt="app logo图标"/>
                                 <span>雷哥单词苹果版</span>
                             </div>
                         </a>
                         <div class="code_box">
-                            <img src="http://www.gmatonline.cn/app/web_core/styles/images/words-ios.png" alt="app二维码图片"/>
+                            <img src="http://gmat.viplgw.cn/app/web_core/styles/images/words-ios.png" alt="app二维码图片"/>
                         </div>
                     </li>
                     <li>
                         <a href="http://words.viplgw.cn/" target="_blank">
                             <div class="first_layer">
-                                <img src="http://www.gmatonline.cn/app/web_core/styles/images/words-iosLogo.jpg" alt="app logo图标"/>
+                                <img src="http://gmat.viplgw.cn/app/web_core/styles/images/words-iosLogo.jpg" alt="app logo图标"/>
                                 <span>雷哥单词安卓版</span>
                             </div>
                         </a>
@@ -211,13 +211,13 @@
                     <ul class="anne-flex">
                         <li>
                             <div>
-                                <img src="http://www.gmatonline.cn/app/web_core/styles/images/words-ios.png" alt="iOS单词app下载二维码"/>
+                                <img src="http://gmat.viplgw.cn/app/web_core/styles/images/words-ios.png" alt="iOS单词app下载二维码"/>
                             </div>
                             <p>雷哥单词iOS下载</p>
                         </li>
                         <li>
                             <div>
-                                <img src="http://www.gmatonline.cn/app/web_core/styles/images/words-Android.png" alt="安卓单词app下载二维码"/>
+                                <img src="http://gmat.viplgw.cn/app/web_core/styles/images/words-Android.png" alt="安卓单词app下载二维码"/>
                             </div>
                             <p>雷哥单词安卓下载</p>
                         </li>
@@ -235,11 +235,11 @@
             <ul>
                 <li>
                     <div class="tool-box">
-                        <a href="http://schools.smartapply.cn/schools.html">
+                        <a href="http://schools.viplgw.cn/schools.html">
                             <p><img src="/cn/studyTool/images/tool02-icon01.png" alt="图片"/></p>
                         </a>
                     </div>
-                    <h5><a href="http://schools.smartapply.cn/schools.html">查院校，搜排名</a></h5>
+                    <h5><a href="http://schools.viplgw.cn/schools.html">查院校，搜排名</a></h5>
                     <p>美英加港澳新，热门留学院校
                         权威网站最新排名，简单直观</p>
                 </li>
@@ -255,32 +255,32 @@
                 </li>
                 <li>
                     <div class="tool-box">
-                        <a href="http://www.smartapply.cn/cn/case.html">
+                        <a href="http://liuxue.viplgw.cn/cn/case.html">
                             <p><img src="/cn/studyTool/images/tool02-icon03.png" alt="图片"/></p>
                         </a>
                     </div>
-                    <h5><a href="http://www.smartapply.cn/cn/case.html">留学攻略&案例库</a></h5>
+                    <h5><a href="http://liuxue.viplgw.cn/cn/case.html">留学攻略&案例库</a></h5>
                     <p>最新留学资讯，最全申请攻略
                         名校成功案例，留学前辈经验</p>
                 </li>
                 <li>
                     <div class="tool-box">
-                        <a href="http://www.smartapply.cn/cn/question">
+                        <a href="http://liuxue.viplgw.cn/cn/question">
                             <p><img src="/cn/studyTool/images/tool02-icon04.png" alt="图片"/></p>
                         </a>
                     </div>
-                    <h5><a href="http://www.smartapply.cn/cn/question">留学问答</a></h5>
+                    <h5><a href="http://liuxue.viplgw.cn/cn/question">留学问答</a></h5>
                     <p>申请、备考小问题，专业
                         留学行家及时免费解答</p>
                 </li>
 
                 <li>
                     <div class="tool-box">
-                        <a href="http://schools.smartapply.cn/assess.html">
+                        <a href="http://schools.viplgw.cn/assess.html">
                             <p><img src="/cn/studyTool/images/tool02-icon05.png" alt="图片"/></p>
                         </a>
                     </div>
-                    <h5><a href="http://schools.smartapply.cn/assess.html">留学评估</a></h5>
+                    <h5><a href="http://schools.viplgw.cn/assess.html">留学评估</a></h5>
                     <p>大数据留学评估，免费匹配
                         录取几率</p>
                 </li>
@@ -296,22 +296,22 @@
                 </li>
                 <li>
                     <div class="tool-box">
-                        <a href="http://www.smartapply.cn/cn/know.html">
+                        <a href="http://liuxue.viplgw.cn/cn/know.html">
                             <p><img src="/cn/studyTool/images/tool02-icon07.png" alt="图片"/></p>
                         </a>
                     </div>
-                    <h5><a href="http://www.smartapply.cn/cn/know.html">留学知识库</a></h5>
+                    <h5><a href="http://liuxue.viplgw.cn/cn/know.html">留学知识库</a></h5>
                     <p>申请前、申请中、申请后、
                         申请项目、视频解析，留学
                         申请不求人</p>
                 </li>
                 <li>
                     <div class="tool-box">
-                        <a href="http://www.smartapply.cn/cn/project.html">
+                        <a href="http://liuxue.viplgw.cn/cn/project.html">
                             <p><img src="/cn/studyTool/images/tool02-icon08.png" alt="图片"/></p>
                         </a>
                     </div>
-                    <h5><a href="http://www.smartapply.cn/cn/project.html">背景提升</a></h5>
+                    <h5><a href="http://liuxue.viplgw.cn/cn/project.html">背景提升</a></h5>
                     <p>实习就业、科研比赛、公益项目
                         国际化、专业性、多样化留学
                         背景提升项目</p>

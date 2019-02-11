@@ -17,7 +17,7 @@
                     <li>
                         <img class="Course_img" src="/cn/images/gmat_erji.png" alt="">
                         <p><?php echo $v['title']?></p>
-                        <a href="<?php echo 'http://www.gmatonline.cn'.$v['detailUrl']?>" target="_blank">查看课程</a>
+                        <a href="<?php echo 'http://gmat.viplgw.cn'.$v['detailUrl']?>" target="_blank">查看课程</a>
                         <a href="<?php echo $v['url']?>" target="_blank">试听课程</a>
                     </li>
                 <?php }
@@ -561,19 +561,19 @@
                 <a href="#" target="_blank">考试工具</a>
             </li>
             <li>
-                <a href="http://www.gmatonline.cn/guide/32.html" target="_blank">考试时间</a>
+                <a href="http://gmat.viplgw.cn/guide/32.html" target="_blank">考试时间</a>
             </li>
             <li>
-                <a href="http://www.gmatonline.cn/guide/41.html" target="_blank">考试地点</a>
+                <a href="http://gmat.viplgw.cn/guide/41.html" target="_blank">考试地点</a>
             </li>
             <li>
-                <a href="http://www.gmatonline.cn/guide/42.html" target="_blank">考试内容</a>
+                <a href="http://gmat.viplgw.cn/guide/42.html" target="_blank">考试内容</a>
             </li>
             <li>
-                <a href="http://www.gmatonline.cn/guide/43.html" target="_blank">考试流程</a>
+                <a href="http://gmat.viplgw.cn/guide/43.html" target="_blank">考试流程</a>
             </li>
             <li>
-                <a href="http://www.gmatonline.cn/guide/44.html" target="_blank">考试费用</a>
+                <a href="http://gmat.viplgw.cn/guide/44.html" target="_blank">考试费用</a>
             </li>
         </ul>
     </div>

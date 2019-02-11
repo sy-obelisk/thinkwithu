@@ -11,7 +11,7 @@
 <!--            <li><a class="nav1-link --><?php //echo $controller == 'ieltssheet' ? 'on on-hover' : '' ?><!--" href="/ieltssheet.html">雅思课程</a></li>-->
 <!--            <li><a class="nav1-link --><?php //echo $controller == 'words' ? 'on on-hover' : '' ?><!--" href="/words.html">单词学习</a></li>-->
 <!--            <li><a class="nav1-link --><?php //echo $controller == 'class' ? 'on on-hover' : '' ?><!--" href="/public-class.html">申友讲堂</a></li>-->
-<!--            <li><a class="nav1-link" href="http://www.gmatonline.cn" target="_blank">申友在线</a></li>-->
+<!--            <li><a class="nav1-link" href="http://gmat.viplgw.cn" target="_blank">申友在线</a></li>-->
 <!--            <li><a class="nav1-link --><?php //echo  strpos($_SERVER['REQUEST_URI'],'teachers')?'on on-hover':''?><!--" href="/teachers.html">名师云集</a></li>-->
 <!--            <li><a class="nav1-link --><?php //echo $controller == 'case' ? 'on on-hover' : '' ?><!--" href="/case.html">成功案例</a></li>-->
 <!--            <li><a class="nav1-link --><?php //echo $controller == 'schools' ? 'on on-hover' : '' ?><!--" href="/schools.html">院校库</a></li>-->
@@ -95,7 +95,7 @@
             <li><a class="nav1-link <?php echo $controller == 'class' ? 'on on-hover' : '' ?>" href="/public-class.html">申友讲堂</a></li>
             <li><a class="nav1-link <?php echo $controller == 'case' ? 'on on-hover' : '' ?>" href="/case.html">名校案例</a></li>
             <li><a class="nav1-link <?php echo $controller == 'masters' ? 'on on-hover' : '' ?>" href="/teachers.html">名师团队</a></li>
-            <li><a href="http://bbs.thinkwithu.com/">申友论坛</a></li>
+            <li><a href="http://bbs.thinkwithu.com/" target="_blank">申友论坛</a></li>
         </ul>
     </div>
 </nav>

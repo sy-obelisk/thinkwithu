@@ -8,7 +8,7 @@
             <!--左边-->
             <div class="teacher-left">
                 <div class="teacherImg">
-                    <img src="http://www.smartapply.cn<?php echo $data[0]['image']?>" alt="老师头像">
+                    <img src="http://liuxue.viplgw.cn<?php echo $data[0]['image']?>" alt="老师头像">
                 </div>
                 <div class="teacherInfo">
                     <p><?php echo $data[0]['name']?><span><?php echo $data[0]['A']?></span></p>

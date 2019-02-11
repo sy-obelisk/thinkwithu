@@ -97,7 +97,7 @@
                                                                         <div class="xiaobian_tx">
                                                                             <a href="">
                                                                                 <img
-                                                                                    src="http://www.smartapply.cn/cn/images/editor-user/JL.png"
+                                                                                    src="http://liuxue.viplgw.cn/cn/images/editor-user/JL.png"
                                                                                     alt="小编头像">
                                                                             </a>
                                                                         </div>
@@ -146,7 +146,7 @@
                                     <li>
                                         <div class="inter-num"><?php echo $k + 1 ?></div>
                                         <div class="inter-img">
-                                            <img src="http://schools.smartapply.cn<?php echo $v['image'] ?>" alt="学校图片">
+                                            <img src="http://schools.viplgw.cn<?php echo $v['image'] ?>" alt="学校图片">
                                         </div>
                                         <div class="inter-info">
                                             <h4><a href="/schools/<?php echo $v['id'] ?>.html"><?php echo $v['name'] ?>
@@ -211,7 +211,7 @@
                     str+= '<div class="fl">' ;
                     str+=   '<div class="xiaobian_tx">' ;
                     str+=  '<a href="">' ;
-                    str+=  '<img src="http://www.smartapply.cn/cn/images/editor-user/JL.png"> ';
+                    str+=  '<img src="http://liuxue.viplgw.cn/cn/images/editor-user/JL.png"> ';
                     str+=  '</a>' ;
                     str+= '</div>' ;
                     str+= '<span class="xiaob_name">' ;

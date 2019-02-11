@@ -19,7 +19,7 @@
                     <div class="fl">
                         <div class="xiaobian_tx">
                             <a href="">
-                                <img src="http://www.smartapply.cn/cn/images/editor-user/JL.png" alt="小编头像">
+                                <img src="http://liuxue.viplgw.cn/cn/images/editor-user/JL.png" alt="小编头像">
                             </a>
                         </div>
                         <span class="xiaob_name">
@@ -66,7 +66,7 @@
                                     <div class="numDiv"><?php echo $k + 1 ?></div>
                                     <div class="interImg">
                                         <a href="/schools/<?php echo $v['id'] ?>.html">
-                                            <img src="http://schools.smartapply.cn<?php echo $v['image'] ?>" alt="学校图片">
+                                            <img src="http://schools.viplgw.cn<?php echo $v['image'] ?>" alt="学校图片">
                                         </a>
                                     </div>
                                     <div class="interSchoolF">
@@ -111,7 +111,7 @@
 <section class="error_mask">
     <div class="error_kuang">
         <div class="error_close" onclick="closeErrorMask()">
-            <img src="http://www.greonline.cn/cn/images/error_close.png" alt="关闭图标">
+            <img src="http://gre.viplgw.cn/cn/images/error_close.png" alt="关闭图标">
         </div>
         <div class="error_title bgw">
             纠错文章

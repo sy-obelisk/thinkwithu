@@ -1265,7 +1265,7 @@ class ApiController extends ThinkUApiControl {
         $result['state'] = strip_tags($apps->post('destination'));    /*申请国家*/
         $result['major'] = strip_tags($apps->post('major'));   /*申请专业id*/
         $majorName = strip_tags($apps->post('major02'));   /*专业名*/
-        $data = Method::post("http://schools.smartapply.cn/cn/api/school-choice", ['result' => $result]);
+        $data = Method::post("http://schools.viplgw.cn/cn/api/school-choice", ['result' => $result]);
         $school = json_decode($data, true);
         $most = 6;
         if (!empty($result['result_work'])) {
@@ -1523,7 +1523,7 @@ class ApiController extends ThinkUApiControl {
     {
         $catId = Yii::$app->request->get('catId', "104,88,207");
         $page = Yii::$app->request->get('page', 1);
-//        $data = file_get_contents("http://www.smartapply.cn/cn/api/get-case?catId=$catId&page=$page");
+//        $data = file_get_contents("http://liuxue.viplgw.cn/cn/api/get-case?catId=$catId&page=$page");
 //        $data = json_decode($data, true);
 
         $data['data'] = Content::getContent(['fields' => 'abroadSchool,major,score,oldSchool,time', 'category' => "$catId", 'order' => 'c.id desc', 'pageSize' => 12, 'page' => $page]);

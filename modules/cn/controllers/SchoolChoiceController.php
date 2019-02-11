@@ -94,7 +94,7 @@ class SchoolChoiceController extends ThinkUController
         }
         $res = SchoolTest::find()->asArray()->where("id={$id}")->one();
         $result = unserialize($res['result']);
-        $data = Method::post("http://schools.smartapply.cn/cn/api/school-choice", ['result' => $result]);
+        $data = Method::post("http://schools.viplgw.cn/cn/api/school-choice", ['result' => $result]);
         $school = json_decode($data, true);
         if ($res['schoolGrade'] == 1) {
             $schoolGrade = "清北复交浙大";

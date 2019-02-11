@@ -24,7 +24,7 @@
                 </p>
                 <div class="materials_c">
                     <div class="name_img"><!--学校名称图片-->
-                        <img src="http://schools.smartapply.cn/<?php echo $data['image']?>" alt="学校名称图片">
+                        <img src="http://schools.viplgw.cn/<?php echo $data['image']?>" alt="学校名称图片">
                     </div>
                     <div class="school_c"><!--中间部分-->
                         <p class="c_name"><?php echo $data['name']?></p>
@@ -36,7 +36,7 @@
                         <a href="/percentages-test.html">录取几率免费评估</a>
                     </div>
                     <div class="school_img"><!--右边-->
-                        <img src="http://schools.smartapply.cn<?php echo $data['duration']?>" alt="学校图片">
+                        <img src="http://schools.viplgw.cn<?php echo $data['duration']?>" alt="学校图片">
                     </div>
                 </div>
             </div>
@@ -82,7 +82,7 @@
                     if(is_numeric($k)){?>
                 <div class="right_con_son">
                     <div class="son_img">
-                        <img src="http://schools.smartapply.cn<?php echo $v['image']?>" alt="学校logo">
+                        <img src="http://schools.viplgw.cn<?php echo $v['image']?>" alt="学校logo">
                         <p>已有<span><?php echo $v['viewCount']+rand(10,100) ?></span>人评估</p>
                     </div>
                     <p class="son_sc_name"><?php echo $v['name']?></p>
@@ -112,7 +112,7 @@
             for(var i=0;i<6;i++){
                 str+='<div class="right_con_son">';
                 str+='<div class="son_img">';
-                str+='<img src="http://schools.smartapply.cn'+ re.school[i].image +'" alt="学校logo">';
+                str+='<img src="http://schools.viplgw.cn'+ re.school[i].image +'" alt="学校logo">';
                 str+='<p>已有<span>'+ (parseInt(re.school[i].viewCount)+parseInt(Math.floor(Math.random()*(100 - 1) + 1)))+'</span>人评估</p>';
                 str+='</div>';
                 str+='<p class="son_sc_name">'+ re.school[i].name  +'</p>';

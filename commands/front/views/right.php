@@ -256,7 +256,7 @@
                     <span>留学评估</span>
                 </a>
             </li>
-            <li class="liBG02"><a href="http://www.gmatonline.cn/" target="_blank">
+            <li class="liBG02"><a href="http://gmat.viplgw.cn/" target="_blank">
                 <b></b>
                 <img src="/cn/images/quesAnswer_smallIcon02.png" alt="小图标"/>
                 <span>GMAT测试</span>

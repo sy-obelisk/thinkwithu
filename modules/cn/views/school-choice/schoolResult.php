@@ -79,7 +79,7 @@
             <?php foreach($data['sprint'] as $v){?>
             <div class="school"><!--有多个冲刺院校就循环类名  school-->
                 <div class="school_left">
-                    <img src="http://schools.smartapply.cn<?php echo $v['image']?>" alt="">
+                    <img src="http://schools.viplgw.cn<?php echo $v['image']?>" alt="">
                 </div>
                 <div class="school_middle">
                     <p class="name_cn"><?php echo $v['name']?></p>
@@ -111,7 +111,7 @@
             <?php foreach($data['res'] as $v){?>
             <div class="school"><!--有多个目标院校就循环类名  school-->
                 <div class="school_left">
-                    <img src="http://schools.smartapply.cn<?php echo $v['image']?>" alt="">
+                    <img src="http://schools.viplgw.cn<?php echo $v['image']?>" alt="">
                 </div>
                 <div class="school_middle">
                     <p class="name_cn"><?php echo $v['name']?></p>

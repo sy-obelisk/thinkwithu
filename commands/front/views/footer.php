@@ -207,7 +207,7 @@
                 </a>
             </li>
 <!--        	<li>-->
-<!--            	<a href="http://www.gmatonline.cn" target="_blank">-->
+<!--            	<a href="http://gmat.viplgw.cn" target="_blank">-->
 <!--            		<div class="diffBG07"></div>-->
 <!--            		<p>网络课程</p>-->
 <!--            	</a>-->

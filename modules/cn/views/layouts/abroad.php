@@ -155,6 +155,18 @@
                 <?php } ?>
             </div>
             <li><a class="nav1-link <?php echo $controller == 'index' ? 'on on-hover' : '' ?>" href="/">首页</a></li>
+            <li>
+                <a class="nav1-link" href="javascript:void(0);">留学服务 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
+                <div class="eaxm-list">
+                    <ul>
+                        <li><a href="/studying-USA.html">美国留学</a></li>
+                        <li><a href="/studying-UK.html">英国留学</a></li>
+                        <li><a href="/studying-AUS.html">澳洲留学</a></li>
+                        <!--                        <li><a href="/studying-Canada.html">加拿大留学</a></li>-->
+                        <li><a href="/studying-HK.html">香港留学</a></li>
+                    </ul>
+                </div>
+            </li>
             <li style="flex: 1.2">
                 <a class="nav1-link" href="/">GMAT培训 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
                 <div class="eaxm-list">
@@ -178,14 +190,14 @@
                 </div>
             </li>
             <li>
-                <a class="nav1-link" href="/schools.html">院校库 </a> <div class="eaxm-list eaxm-list-1">
-                    <!--                    <ul>-->
-                    <!--                        <li><a href="">院校查询</a></li>-->
-                    <!--                        <li><a href="">专业排名</a></li>-->
-                    <!--                        <li><a href="">大学排名</a></li>-->
-                    <!--                    </ul>-->
-                    <!--                </div>
-                    <!--               -->
+                <a class="nav1-link" href="/schools.html">院校库  <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
+                <div class="eaxm-list eaxm-list-1">
+                    <ul>
+                        <li><a href="/schools.html">院校查询</a></li>
+                        <li><a href="/major-analysis/433/1.html">专业排名</a></li>
+                        <li><a href="/schools-ranking/296/427/1.html">大学排名</a></li>
+                    </ul>
+                </div>
             </li>
             <li>
                 <a class="nav1-link" href="/">留学百科 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
@@ -200,6 +212,7 @@
             <li><a class="nav1-link" href="/public-class.html">申友讲堂</a></li>
             <li><a class="nav1-link" href="/case.html">名校案列</a></li>
             <li><a class="nav1-link" href="/teachers.html">名师团队</a></li>
+            <li><a href="http://bbs.thinkwithu.com/" target="_blank">申友论坛</a></li>
         </ul>
     </div>
 </nav>

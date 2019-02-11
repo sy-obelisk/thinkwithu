@@ -49,11 +49,11 @@
         <span>此款单词神器，已收录&nbsp;&nbsp;</span><div id="dataNums"></div><span>&nbsp;&nbsp;词条，仅供留学界大佬免费使用，扫一扫下载</span>
         <ul class="anne-flex">
             <li>
-                <img src="http://www.gmatonline.cn/app/web_core/styles/images/words-ios.png" alt="苹果版二维码" width="95" height="95"/>
+                <img src="http://gmat.viplgw.cn/app/web_core/styles/images/words-ios.png" alt="苹果版二维码" width="95" height="95"/>
                 <b>iOS版</b>
             </li>
             <li>
-                <img src="http://www.greonline.cn/cn/images/word_android.png" alt="app安卓版二维码图片" width="95" height="95"/>
+                <img src="http://gre.viplgw.cn/cn/images/word_android.png" alt="app安卓版二维码图片" width="95" height="95"/>
                 <b>Android版</b>
             </li>
         </ul>
@@ -223,13 +223,13 @@
                 <ul class="anne-flex">
                     <li>
                         <div>
-                            <img src="http://www.gmatonline.cn/app/web_core/styles/images/words-ios.png" alt="iOS单词app下载二维码"/>
+                            <img src="http://gmat.viplgw.cn/app/web_core/styles/images/words-ios.png" alt="iOS单词app下载二维码"/>
                         </div>
                         <p>雷哥单词iOS下载</p>
                     </li>
                     <li>
                         <div>
-                            <img src="http://www.greonline.cn/cn/images/word_android.png" alt="app二维码图片"/>
+                            <img src="http://gre.viplgw.cn/cn/images/word_android.png" alt="app二维码图片"/>
                         </div>
                         <p>雷哥单词Android下载</p>
                     </li>

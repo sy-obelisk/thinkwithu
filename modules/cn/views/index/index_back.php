@@ -2017,8 +2017,8 @@
             <ul>
                 <li>
                     <div class="diffGmat">
-                        <a href="http://www.gmatonline.cn/test/index.html"><img src="/cn/images/index_gmatBG01.png" alt="智能测评"/></a>
-                        <a href="http://www.gmatonline.cn/practise/index.html"><img src="/cn/images/index_gmatBG.png" alt="在线做题"/></a>
+                        <a href="http://gmat.viplgw.cn/test/index.html"><img src="/cn/images/index_gmatBG01.png" alt="智能测评"/></a>
+                        <a href="http://gmat.viplgw.cn/practise/index.html"><img src="/cn/images/index_gmatBG.png" alt="在线做题"/></a>
                     </div>
                 </li>
                 <li>

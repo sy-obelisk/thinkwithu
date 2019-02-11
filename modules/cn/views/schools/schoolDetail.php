@@ -5,7 +5,7 @@
     <div class="details-banner">
         <div class="banner-school">
             <div class="bs-left">
-                <img src="http://schools.smartapply.cn<?php echo $data['image']?>" alt="学校图片">
+                <img src="http://schools.viplgw.cn<?php echo $data['image']?>" alt="学校图片">
             </div>
             <div class="bs-center">
                 <h4 class="ellipsis"><?php echo $data['name']?></h4>
@@ -105,7 +105,7 @@
                     <?php echo $data['cnName']?>
                 </div>
                 <div class="jianjie-right">
-                    <img src="http://schools.smartapply.cn<?php echo $data['duration']?>" alt="学校图片">
+                    <img src="http://schools.viplgw.cn<?php echo $data['duration']?>" alt="学校图片">
                 </div>
                 <div class="clearfix"></div>
             </div>

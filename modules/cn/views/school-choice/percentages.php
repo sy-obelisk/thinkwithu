@@ -485,7 +485,7 @@
         if(v){
             $(".s-i-select").find("ul").html("");
             $.ajax({
-                url:"http://schools.smartapply.cn/cn/api/words-school",
+                url:"http://schools.viplgw.cn/cn/api/words-school",
                 type:"get",
                 data:{
                     keywords:v
@@ -527,7 +527,7 @@
     function searchMajor(id){
         $(".search-major").find(".dropdown-menu").html("");
         $.ajax({
-            url:"http://schools.smartapply.cn/cn/api/id-major",
+            url:"http://schools.viplgw.cn/cn/api/id-major",
             type:"get",
             data:{
                 id:id

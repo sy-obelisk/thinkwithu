@@ -135,7 +135,7 @@
                     <img src="/cn/images/studyA_kevinLogo.jpg" alt="图片">
                 </div>
                 <div class="det-right">
-                    <h4><a href="http://www.gmatonline.cn/" target="_blank">申友GMAT在线学习平台重磅发布！</a></h4>
+                    <h4><a href="http://gmat.viplgw.cn/" target="_blank">申友GMAT在线学习平台重磅发布！</a></h4>
                 </div>
             </div>
             <ul>

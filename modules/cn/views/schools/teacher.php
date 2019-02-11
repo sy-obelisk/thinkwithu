@@ -77,7 +77,7 @@
                                 <!--老师图片 名字-->
                                 <div class="tea_img">
                                     <div>
-                                        <img src="http://www.smartapply.cn<?php echo $v['image'] ?>" alt="文服老师">
+                                        <img src="http://liuxue.viplgw.cn<?php echo $v['image'] ?>" alt="文服老师">
                                     </div>
                                     <p><?php echo $v['name'] ?></p>
                                 </div>
@@ -128,12 +128,12 @@
                     <ul>
                         <!--循环li-->
                         <?php
-                        $data = file_get_contents("http://www.smartapply.cn/cn/consultant/1.html?data-type=json");
+                        $data = file_get_contents("http://liuxue.viplgw.cn/cn/consultant/1.html?data-type=json");
                         $data = json_decode($data, true);
                         foreach ($data['data']['data'] as $v) { ?>
                             <li>
                                 <div class="caseImg">
-                                    <img src="http://www.smartapply.cn<?php echo $v['image'] ?>" alt="">
+                                    <img src="http://liuxue.viplgw.cn<?php echo $v['image'] ?>" alt="">
                                 </div>
                                 <div class="caseName">
                                     <p><?php echo $v['name'] ?></p>
