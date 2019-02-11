@@ -3135,9 +3135,18 @@ h1.info-tit {
     background: rgb(248,248,248);
     border-radius: 5px;
 }
+.specail{
+    margin-left: 10px;
+    /*width: 90%;*/
+    /*text-align: center;*/
+}
 .eaxm-list li{
     text-align: left;
     padding: 10px 30px 10px 30px;
+    /*background: yellowgreen;*/
+}
+.specail li{
+    padding: 10px 20px 10px 20px!important;
 }
 .eaxm-list-1 li{
     padding: 10px 20px 10px 20px!important;
