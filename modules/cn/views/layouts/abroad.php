@@ -167,7 +167,7 @@
                     </ul>
                 </div>
             </li>
-            <li style="flex: 1.2">
+            <li style="flex: 1.3">
                 <a class="nav1-link" href="/">GMAT培训 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
                 <div class="eaxm-list">
                     <ul>
@@ -179,7 +179,7 @@
                     </ul>
                 </div>
             </li>
-            <li style="flex: 1.2">
+            <li style="flex: 1.3">
                 <a class="nav1-link" href="/evaluation.html">选校工具 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
                 <div class="eaxm-list eaxm-list-1">
                     <ul>
@@ -189,7 +189,7 @@
                     </ul>
                 </div>
             </li>
-            <li style="flex: 1.2">
+            <li style="flex: 1.3">
                 <a class="nav1-link" href="/schools.html">院校库  <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
                 <div class="eaxm-list eaxm-list-1">
                     <ul>
@@ -199,7 +199,7 @@
                     </ul>
                 </div>
             </li>
-            <li style="flex: 1.2">
+            <li style="flex: 1.3">
                 <a class="nav1-link" href="/">留学百科 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
                 <div class="eaxm-list eaxm-list-1">
                     <ul>
