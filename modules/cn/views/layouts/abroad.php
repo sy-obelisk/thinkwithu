@@ -36,7 +36,7 @@
     <script type="text/javascript" src="//s.union.360.cn/7302.js"></script>
     <link rel="stylesheet" href="/cn/css/header.css"/>
     <link rel="stylesheet" href="/cn/css/footer.css"/>
-    <link rel="stylesheet" href="/cn/css/public.css?v=1"/>
+    <link rel="stylesheet" href="/cn/css/public.css?v=1.1"/>
     <link rel="stylesheet" href="/cn/Hirsi/css/reset.css">
     <link rel="stylesheet" type="text/css" href="/cn/css/iconfont.css">
     <link rel="stylesheet" href="/cn/css/fonts/font-awesome/css/font-awesome.min.css"/>
@@ -168,7 +168,7 @@
                 </div>
             </li>
             <li style="flex: 1.3">
-                <a class="nav1-link" href="/">GMAT培训 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
+                <a class="nav1-link" href="javascript:void(0);">GMAT培训 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
                 <div class="eaxm-list">
                     <ul>
                         <li><a href="/gmatsheet.html">GMAT</a></li>
@@ -200,7 +200,7 @@
                 </div>
             </li>
             <li style="flex: 1.3">
-                <a class="nav1-link" href="/">留学百科 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
+                <a class="nav1-link" href="javascript:void(0);">留学百科 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
                 <div class="eaxm-list eaxm-list-1">
                     <ul>
                         <li><a href="/encyclopedia/master.html">硕士动态</a></li>
@@ -208,7 +208,7 @@
                     </ul>
                 </div>
             </li>
-            <li><a class="nav1-link" href="/">实习活动</a></li>
+            <li><a class="nav1-link" href="/practices.html">实习活动</a></li>
             <li><a class="nav1-link" href="/public-class.html">申友讲堂</a></li>
             <li><a class="nav1-link" href="/case.html">名校案列</a></li>
             <li><a class="nav1-link" href="/teachers.html">名师团队</a></li>

@@ -20,9 +20,9 @@ body{
 @font-face {
     font-family: 'iconfont';  /* project id 864853 */
     src: url('//at.alicdn.com/t/font_864853_nubtre44qq.eot');
-    src: url('//at.alicdn.com/t/font_864853_nubtre44qq.eot?#iefix') format('embedded-opentype'),
-    url('//at.alicdn.com/t/font_864853_nubtre44qq.woff') format('woff'),
-    url('//at.alicdn.com/t/font_864853_nubtre44qq.ttf') format('truetype'),
+    src: url('//at.alicdn.com/t/font_864853_nubtre44qq.eot?#iefix') format('embedded-opentype');
+    url('//at.alicdn.com/t/font_864853_nubtre44qq.woff') format('woff');
+    url('//at.alicdn.com/t/font_864853_nubtre44qq.ttf') format('truetype');
     url('//at.alicdn.com/t/font_864853_nubtre44qq.svg#iconfont') format('svg');
 }
 img{
@@ -3136,7 +3136,7 @@ h1.info-tit {
     border-radius: 5px;
 }
 .specail{
-    margin-left: 10px;
+    margin-left: 5px;
     /*width: 90%;*/
     /*text-align: center;*/
 }
