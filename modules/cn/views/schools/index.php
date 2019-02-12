@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="/cn/css/header.css"/>
 <link rel="stylesheet" href="/cn/css/footer.css"/>
 <link rel="stylesheet" href="/cn/css/public.css"/>
-<link rel="stylesheet" href="/cn/schools/css/academyBase.css?v=1.2"/>
+<link rel="stylesheet" href="/cn/schools/css/academyBase.css?v=1.3"/>
 
 <script type="text/javascript" src="/cn/schools/js/academyBase.js?v=1.1"></script>
 
@@ -272,7 +272,6 @@
                         '<li>官网：<a href="'+ v.listeningFile +'" target="_blank">'+ v.listeningFile+'</a></li>';
                                 $.each(v.major,function (c,i) {
                                     str += '<li>专业项目：<span style="color: rgb(68,153,233)">'+ i.title +'</span><span style="margin: 0px 10px">学位：'+ i.degree +'</span>专业类别：<span>'+ i.name +'</span></li>';
-                                    console.log(str)
                                 });
                         str+='</ul>'+
                         '</div>'+
