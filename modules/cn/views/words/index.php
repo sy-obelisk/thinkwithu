@@ -26,8 +26,8 @@
     <link rel="stylesheet" href="/cn/words/css/globle.css">
     <link rel="stylesheet" href="/cn/words/css/animate.min.css">
     <link rel="stylesheet" href="/cn/words/css/index.css">
-<!--    <link rel="stylesheet" href="http://www.viplgw.cn/cn/css/public.css?v=1.1"/>-->
-    <link rel="stylesheet" href="/cn/css/public.css?v=1.1"/>
+<!--    <link rel="stylesheet" href="http://www.viplgw.cn/cn/css/public.css?v=1.2"/>-->
+    <link rel="stylesheet" href="/cn/css/public.css?v=1.2"/>
     <link rel="stylesheet" href="/cn/gre/css/reset.css">
     <link rel="stylesheet" href="/cn/css/header.css"/>
     <link rel="stylesheet" href="/cn/css/footer.css"/>

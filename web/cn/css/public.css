@@ -19,12 +19,14 @@ body{
 }
 @font-face {
     font-family: 'iconfont';  /* project id 864853 */
-    src: url('//at.alicdn.com/t/font_864853_nubtre44qq.eot');
-    src: url('//at.alicdn.com/t/font_864853_nubtre44qq.eot?#iefix') format('embedded-opentype');
-    url('//at.alicdn.com/t/font_864853_nubtre44qq.woff') format('woff');
-    url('//at.alicdn.com/t/font_864853_nubtre44qq.ttf') format('truetype');
-    url('//at.alicdn.com/t/font_864853_nubtre44qq.svg#iconfont') format('svg');
+    src: url('//at.alicdn.com/t/font_864853_jfuoj09mejd.eot');
+    src: url('//at.alicdn.com/t/font_864853_jfuoj09mejd.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_864853_jfuoj09mejd.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_864853_jfuoj09mejd.woff') format('woff'),
+    url('//at.alicdn.com/t/font_864853_jfuoj09mejd.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_864853_jfuoj09mejd.svg#iconfont') format('svg');
 }
+
 img{
     border: 0 none;
 }

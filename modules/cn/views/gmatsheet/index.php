@@ -375,7 +375,7 @@
 </section>
 <!--GMAT提分展示-->
 <section class="Score ruhe-tifen">
-    <p class="Score_title">申友GAMT如何帮你提分,我们更懂你</p>
+    <p class="Score_title">申友GMAT如何帮你提分,我们更懂你</p>
     <ul>
         <li class="anne-flex on">
             <div class="shu-div">
