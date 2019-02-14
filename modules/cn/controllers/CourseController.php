@@ -13,7 +13,7 @@ use app\libs\ThinkUController;
 
 class CourseController extends ThinkUController {
     public $enableCsrfValidation = false;
-
+    public $layout = 'cn';
 
     /**
      * 高分班
@@ -52,6 +52,14 @@ class CourseController extends ThinkUController {
         return $this->renderPartial('classQuery');
     }
 
+    /**
+     * 课程详情
+     * @return string
+     * @Obelisk
+     */
+    public function actionClassDetail(){
 
+        return $this->render('classDetail');
+    }
 
 }
