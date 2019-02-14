@@ -194,9 +194,10 @@
     function dounw(o) {
         var url = $(o).attr('href');
         var name = $(o).attr('title');
-        $.get('/cn/api/detaildown',{name:name,url:url},function (re) {
-
-        },'json')
+//        $.get('/cn/course/detaildown',{name:name,url:url},function (re) {
+//
+//        },'json')
+        location.href="/cn/course/detaildown?url="+url+"&name="+name;
     }
 </script>
 

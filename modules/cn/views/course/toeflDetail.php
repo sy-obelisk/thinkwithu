@@ -20,10 +20,10 @@
             <ul>
                 <li>价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格：
                     <span class="vi_r_price"><?php echo $data['price']?></span>
-                    &nbsp;&nbsp;<span class="vi_r_hui">原价<?php echo $data['answer']?></span></li><!--原价-->
+                    &nbsp;&nbsp;<span class="vi_r_hui">原价<?php echo $data['originalPrice']?></span></li><!--原价-->
 
-                <li>课程时长：<?php echo $data['listeningFile']?></li><!--课程时长-->
-                <li>开课日期： <?php echo $data['cnName']?></li><!--开课日期-->
+                <li>课程时长：<?php echo $data['duration']?></li><!--课程时长-->
+                <li>开课日期： <?php echo $data['numbering']?></li><!--开课日期-->
             </ul>
             <div class="numBox">
                 <span>数量：</span>
@@ -76,8 +76,7 @@
             <!--课程详情-->
             <ul class="intr-wrap">
                 <div>
-                    <?php echo "<h4>适合学员</h4><br>".$data['people'].'</br>'?>
-                    <?php echo "<h4>服务介绍</h4><br>".$data['item'].'</br>'?>
+                    <?php echo $data['answer']?>
                     <!--课程详情输出内容-->
                 </div>
                 <!--课程详情固定内容-->
@@ -114,34 +113,39 @@
             </ul>
             <!--名师专家-->
             <ul class="keti_teacher_box">
-                <?php foreach($teacher as $v){?>
-                    <li class="keti_t_item clearfix">
-                        <div class="image">
-                            <div class="kong">
-                                <span>托福</span><!--属于哪个课程 托福 雅思 申友 gmat gre-->
+                <?php foreach ($teacher as $v) {
+                    if ($v != false) {
+                        ?>
+                        <li class="keti_t_item clearfix">
+                            <div class="image">
+                                <div class="kong">
+                                    <span>托福</span><!--属于哪个课程 托福 雅思 申友 gmat gre-->
+                                </div>
+                                <div class="name">
+                                    <p><?php echo $v[0]['name'] ?></p><!--老师名字-->
+                                    <p>老师</p>
+                                </div>
+                                <div class="img">
+                                    <img src="http://toefl.viplgw.cn<?php echo $v[0]['image'] ?>" alt="托福老师"><!--老师图片-->
+                                </div>
                             </div>
-                            <div class="name">
-                                <p><?php echo $v['name']?></p><!--老师名字-->
-                                <p>老师</p>
+                            <div class="keti_t_intro">
+                                <h6><?php echo $v[0]['performance'] ?> </h6><!--右侧标题-->
+                                <div class="desc"><?php echo $v[0]['description'] ?></div><!--老师介绍-->
+                                <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">查看详情
+                                    &gt;&gt;</a>
+
+                                <div class="classify"><!--老师授课课程--><!--循环span-->
+                                    <?php $n = explode('<br />', nl2br($v[0]['alternatives']));
+                                    foreach ($n as $val) {
+                                        echo "<span>$val</span>";
+                                    }
+                                    ?>
+                                </div>
                             </div>
-                            <div class="img">
-                                <img src="http://toefl.viplgw.cn<?php echo $v['image']?>" alt="yasi老师"><!--老师图片-->
-                            </div>
-                        </div>
-                        <div class="keti_t_intro">
-                            <h6><?php echo $v['alternatives'].'老师'?> </h6><!--右侧标题-->
-                            <div class="desc"><?php echo $v['answer'].'<br>'.$v['article']?></div><!--老师介绍-->
-                            <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">查看详情 &gt;&gt;</a>
-                            <div class="classify"><!--老师授课课程--><!--循环span-->
-                                <?php $n=explode('<br>',nl2br($v['listeningFile']));
-                                foreach($n as $val){
-                                    echo  "<span>$val</span>";
-                                }
-                                ?>
-                            </div>
-                        </div>
-                    </li>
-                <?php }?>
+                        </li>
+                    <?php }
+                } ?>
             </ul>
             <!--用户评价-->
             <ul>
@@ -170,7 +174,7 @@
             <!--资料下载-->
             <ul class="jiangy_xiaz">
                 <li>
-                    <?php if ($data['datelist'] != false) { ?>
+                    <?php if (isset($data['datelist'])&&$data['datelist'] != false) { ?>
                         <p class="p_title">参考资料（是你所听课程需要的学习资料，更好地辅助你的学习）</p>
                         <ol>
                             <li><!--循环P标签-->

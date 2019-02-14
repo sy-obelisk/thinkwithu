@@ -65,7 +65,7 @@ class CourseController extends ThinkUController {
             return $this->render('gmatDetail');
         } elseif ($course == 'toefl') {
             $data=json_decode(file_get_contents("http://toefl.viplgw.cn/cn/api/course-detail?id=$id"),true);
-            echo '<pre>';var_dump($data);die;
+//            echo '<pre>';var_dump($data);die;
             return $this->render('toeflDetail',$data);
         } elseif ($course == 'ielts') {
             $data=json_decode(file_get_contents("http://ielts.viplgw.cn/cn/api/couser-detail?cid=$id"),true);
@@ -77,6 +77,22 @@ class CourseController extends ThinkUController {
             return $this->render('classDetail');
         }
 
+    }
+    // 多样式下载
+    public function actionDetaildown()
+    {
+        // 要下载的文件夹路径
+        $url = Yii::$app->request->get('url');
+        $fileName = Yii::$app->request->get('name');
+//        // 获取文件后缀名
+        $ext=substr($url,strrpos($url,'.')+1);
+        $houzui=substr($url,strrpos($url,'.'));
+        header('Cache-Control: public');
+        header('Content-Description: File Transfer');
+        header('Content-disposition: attachment; filename=' . $fileName.$houzui); //文件名
+        header('Content-Type: application/"' . $ext . '"'); //防止乱码
+        readfile($url);
+        die;
     }
 
 }
