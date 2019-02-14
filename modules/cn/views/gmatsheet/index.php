@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/cn/css/gmatSheet.css"/>
+<link rel="stylesheet" href="/cn/css/gmatSheet.css?v=1.1"/>
 <script type="text/javascript" src="/cn/js/gmatSheet.js"></script>
 
 <!--banner-->
