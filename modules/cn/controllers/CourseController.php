@@ -55,11 +55,27 @@ class CourseController extends ThinkUController {
     /**
      * 课程详情
      * @return string
-     * @Obelisk
+     * @yoyo
      */
-    public function actionClassDetail(){
+    public function actionClassDetail()
+    {
+        $id = Yii::$app->request->get('id');//分类ID
+        $course = Yii::$app->request->get('course', 'gmat');//是那项的课程
+        if ($course == 'gmat') {
+            return $this->render('gmatDetail');
+        } elseif ($course == 'toefl') {
+            $data=file_get_contents("http://toefl.viplgw.cn/cn/api/couser-detail?id=$id");
+            return $this->render('toeflDetail',$data);
+        } elseif ($course == 'ielts') {
+            $data=json_decode(file_get_contents("http://ielts.viplgw.cn/cn/api/couser-detail?cid=$id"),true);
+//            echo '<pre>';var_dump($data);die;
+            return $this->render('ieltsDetail',$data);
+        } elseif ($course == 'gre') {
+            return $this->render('greDetail');
+        } else {
+            return $this->render('classDetail');
+        }
 
-        return $this->render('classDetail');
     }
 
 }

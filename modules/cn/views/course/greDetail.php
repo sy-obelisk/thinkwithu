@@ -12,6 +12,7 @@
     <div id="con_video">
         <div class="video_left">
             <img src="/files/attach/images/20190116/1547638970382480.jpg" alt="图片">
+            <img src="/cn/images/ketixq_bof.png" alt="图片" class="vedio_l_img">
             <div class="blackMask">托福强化课</div><!--课程名称-->
         </div>
         <div class="video_right">
