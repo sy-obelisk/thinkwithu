@@ -122,6 +122,7 @@ $config = [
                  'encyclopedia/master.html'=>'cn/encyclopedia/master',//硕士留学
                  'encyclopedia/<id:\d+>.html'=>'cn/encyclopedia/details',//留学百科详情
                  'teachers/interviews.html' => 'cn/masters/document',
+                 '<course:\w+>-course/detail/<id:\d+>.html' => 'cn/course/class-detail',
                  //留学评估
                  'evaluation.html' => 'cn/study/assess',
                  //留学申请

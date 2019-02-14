@@ -74,7 +74,7 @@
                                 <div class="left_name" style=" border-left: 1px solid rgb(190,190,190)!important;">课程名称</div>
                                 <?php foreach($val as $v){?>
                                     <!--                                <td><a class="course-name" href="/toeflcourses/--><?php //echo $v['id']?><!--.html">--><?php //echo $v['name']?><!--</a></td>-->
-                                    <div class="couse"><a href="http://ielts.viplgw.cn/cn/course/detail-<?php echo $v['id']?>.html"><?php echo $v['name']?></a></div>
+                                    <div class="couse"><a href="/ielts-course/detail/<?php echo $v['id']?>.html"><?php echo $v['name']?></a></div>
                                 <?php }?>
                             </div>
                             <div class="fraction_price"><!--课程价格-->
