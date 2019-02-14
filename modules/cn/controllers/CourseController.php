@@ -64,7 +64,8 @@ class CourseController extends ThinkUController {
         if ($course == 'gmat') {
             return $this->render('gmatDetail');
         } elseif ($course == 'toefl') {
-            $data=file_get_contents("http://toefl.viplgw.cn/cn/api/couser-detail?id=$id");
+            $data=json_decode(file_get_contents("http://toefl.viplgw.cn/cn/api/course-detail?id=$id"),true);
+            echo '<pre>';var_dump($data);die;
             return $this->render('toeflDetail',$data);
         } elseif ($course == 'ielts') {
             $data=json_decode(file_get_contents("http://ielts.viplgw.cn/cn/api/couser-detail?cid=$id"),true);

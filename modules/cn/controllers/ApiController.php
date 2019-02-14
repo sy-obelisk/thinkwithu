@@ -1734,4 +1734,31 @@ class ApiController extends ThinkUApiControl {
         }
     }
 
+    // 多样式下载
+    public function actionDetaildown()
+    {
+        // 要下载的文件夹路径
+        $url = Yii::$app->request->get('url');
+        $fileName = Yii::$app->request->get('name');
+        $filePath = substr($url, '1');
+        // 获取文件后缀名
+        $arr = pathinfo($filePath);
+        $ext = $arr['extension'];
+        // var_dump($url);die;
+        // var_dump($ext);die;
+        // if(!file_exists($filePath))
+        // {   echo "文件".$filePath."不存在，请联系老师或者客服"; die; }
+        header('Cache-Control: public');
+        header('Content-Description: File Transfer');
+        //   header('Content-disposition: attachment; filename='.basename($fileName)); //文件名
+        header('Content-disposition: attachment; filename=' . $fileName); //文件名
+
+        header('Content-Type: application/"' . $ext . '"'); //防止乱码
+        // header('Content-Transfer-Encoding: binary');
+
+        readfile($url);
+        die;
+        //   return $this->render('down',['url'".Yii::$app->params['ieltsUrl']."=>$filePath]);
+    }
+
 }

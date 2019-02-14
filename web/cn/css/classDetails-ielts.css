@@ -854,11 +854,12 @@
     line-height: 30px;
     font-size: 14px;
 }
-.jiangy_xiaz li ol li a {
+.jiangy_xiaz li ol li .download{
     color: #994499;
     text-decoration: underline;
     font-size: 14px;
     float: right;
+    cursor: pointer;
 }
 .btn-s{
     padding: 2px 6px;
