@@ -453,6 +453,9 @@ body{
     background:rgb(151,70,148);
     color: white;
 }
+.couse:hover a{
+    color: white;
+}
 /*服务流程*/
 .course-flow {
     margin-top: 60px;

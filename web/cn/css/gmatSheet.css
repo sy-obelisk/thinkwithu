@@ -283,6 +283,9 @@
 	background:rgb(151,70,148);
 	color: white;
 }
+.couse:hover a{
+	color: white;
+}
 .tab_subList{
 	width: 100%;
 }
