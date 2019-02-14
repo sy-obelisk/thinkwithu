@@ -91,7 +91,7 @@
                     <div class="fraction_name"><!--课程名称-->
                         <div class="left_name">课程名称</div>
                         <?php foreach($val as $v){?>
-                        <div class="couse"><a href="" target="_blank"><?php echo $v['name']?></a></div>
+                        <div class="couse"><a href="/toefl-course/detail/<?php echo $v['id']?>.html" target="_blank"><?php echo $v['name']?></a></div>
                         <?php }?>
                     </div>
                     <div class="fraction_price"><!--课程价格-->

@@ -129,7 +129,7 @@
                         <div class="desc"><?php echo $v['answer'].'<br>'.$v['article']?></div><!--老师介绍-->
                         <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">查看详情 &gt;&gt;</a>
                         <div class="classify"><!--老师授课课程--><!--循环span-->
-                            <?php $n=explode('<br>',nl2br($v['listeningFile']));
+                            <?php $n=explode('<br />',nl2br($v['listeningFile']));
                             foreach($n as $val){
                                 echo  "<span>$val</span>";
                             }
@@ -173,15 +173,10 @@
                                 <?php foreach($data['datelist'] as $v){?>
                                 <p style="line-height: 16px;">
                                     <img src="/cn/images/icon_pdf.gif">
-                                    <span title="GMAT数学术语.pdf" href="/files/attach/file/20150609/1433817061715360.pdf">GMAT数学术语.pdf</span>
-                                    <a href="/files/attach/file/20150609/1433817061715360.pdf" target="_blank">下载</a>
+                                    <span title="<?php echo $v['name']?>" href="http://ielts.viplgw.cn<?php echo $v['listeningFile']?>"><?php echo $v['name']?></span>
+                                    <a href="http://ielts.viplgw.cn<?php echo $v['listeningFile']?>" target="_blank">下载</a>
                                 </p>
                                 <?php }?>
-                                <p style="line-height: 16px;">
-                                    <img src="/cn/images/icon_doc.gif">
-                                    <span title="七宗罪+范文.doc" href="/files/attach/file/20150609/1433817688120131.doc">七宗罪+范文.doc</span>
-                                    <a href="/files/attach/file/20150609/1433817688120131.doc" target="_blank">下载</a>
-                                </p>
                             </li>
                         </ol>
                     <?php } else { ?>

@@ -5,13 +5,13 @@
     <!--首页导航栏-->
     <div id="content_head">
         <ul>
-            <li><a href="/">首页</a>&gt;<a href="/ieltssheet.html">雅思课程</a>&gt;<a href="#"><?php echo $data['name']?></a></li>
+            <li><a href="/">首页</a>&gt;<a href="/toefl/assistance.htm">托福课程</a>&gt;<a href="#"><?php echo $data['name']?></a></li>
         </ul>
     </div>
     <!--雷哥基金串讲-->
     <div id="con_video">
         <div class="video_left">
-            <img src="http://ielts.viplgw.cn<?php echo $data['image']?>" alt="图片">
+            <img src="http://toefl.viplgw.cn<?php echo $data['image']?>" alt="图片">
             <img src="/cn/images/ketixq_bof.png" alt="图片" class="vedio_l_img">
             <div class="blackMask"><?php echo $data['name']?></div><!--课程名称-->
         </div>
@@ -118,14 +118,14 @@
                     <li class="keti_t_item clearfix">
                         <div class="image">
                             <div class="kong">
-                                <span>雅思</span><!--属于哪个课程 托福 雅思 申友 gmat gre-->
+                                <span>托福</span><!--属于哪个课程 托福 雅思 申友 gmat gre-->
                             </div>
                             <div class="name">
                                 <p><?php echo $v['name']?></p><!--老师名字-->
                                 <p>老师</p>
                             </div>
                             <div class="img">
-                                <img src="http://ielts.viplgw.cn<?php echo $v['image']?>" alt="yasi老师"><!--老师图片-->
+                                <img src="http://toefl.viplgw.cn<?php echo $v['image']?>" alt="yasi老师"><!--老师图片-->
                             </div>
                         </div>
                         <div class="keti_t_intro">
@@ -152,7 +152,7 @@
                                 foreach ($discuss['data'] as $v) {
                                     ?>
                                     <li>
-                                        <img src="http://ielts.viplgw.cn<?php echo $v['image']?>" alt="" width="50"
+                                        <img src="http://toefl.viplgw.cn<?php echo $v['image']?>" alt="" width="50"
                                              style="float: left">
                                         <div class="user_liuyan">
                                             <p><span class="size_9"><?php echo $v['userName']?></span></p>
