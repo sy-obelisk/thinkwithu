@@ -32,8 +32,8 @@
                 <input type="button" value="+" onclick="addNum(this)" class="btn-s">
             </div>
             <div class="course-btns">
-                <a href="javascript:void(0)" onclick="buyNow(30154)" class="buyBtn">立即购买</a><!--课程id-->
-                <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2250281936&amp;site=qq&amp;menu=yes">点击咨询</a>
+
+                <a target="_blank" href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">点击咨询</a>
             </div>
             <div class="vi_r_bluexian"></div>
             <div class="vi_r_fenxiang">
@@ -196,55 +196,3 @@
 
 
 
-<script type="text/javascript">
-    /**
-     * 添加讨论提交
-     */
-    $(".discussSubmit").click(function () {
-        var _login = $(this).attr('data-title');
-        if (_login == 0) {
-            userLogin();
-            return false;
-        }
-        var content = $('.discussContent').val();
-        if (content == "") {
-            alert("评论内容不能为空");
-            return false;
-        }
-        var contentId = $(this).attr('data-value');
-        var type = 2;
-        var pid = 0;
-        var image = $('.navImage').attr('src');
-        var nickname = $('.navNickname').html();
-        // $.post("/cn/api/add-discuss", {content: content, contentId: contentId, type: type, pid: pid}, function (re) {
-        //     if (re.code == 1) {
-        //         var str = "";
-        //         str += '<li>';
-        //         str += '<img src="' + image + '" alt="" width="50" style="float: left"/>';
-        //         str += '<div class="user_liuyan">';
-        //         str += '<p><span class="size_9">' + nickname + '</span></p>';
-        //         str += '<span>' + content + '</span>';
-        //         str += '</div>';
-        //         str += '</li>';
-        //         $('#disContent').prepend(str);
-        //         $('.discussContent').val('');
-        //         location.href = "#discuss";
-        //     } else {
-        //         alert("发表失败，请重试");
-        //     }
-        // }, "json")
-    });
-    /**
-     * 立即购买
-     */
-    function buyNow(_id) {
-        var numT = $("#numT").val();
-        var sign = $('#uidSign').attr('data-uid');
-        if (sign == 1) {
-            $('#link').attr('href', "http://order.viplgw.cn/pay/order?id=" + _id + "&num=" + numT + "&belong=2");
-            document.getElementById("link").click();
-        }
-        else {
-            location.href = "http://login.viplgw.cn/cn/index?source=2&url=<?php echo Yii::$app->request->hostInfo . Yii::$app->request->getUrl()?>"
-        }
-</script>
