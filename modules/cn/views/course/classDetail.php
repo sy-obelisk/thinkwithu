@@ -158,10 +158,6 @@
                                 </div>
                             </li>
                         </ol>
-                        <!--提交框-->
-                        <textarea class="discussContent" name="" cols="30" rows="10"></textarea> <br>
-
-                        <input data-title="0" data-value="30153" class="discussSubmit" type="button" value="提交评价">
 
                     </div>
                 </li>
