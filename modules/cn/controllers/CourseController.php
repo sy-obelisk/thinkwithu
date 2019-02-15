@@ -63,6 +63,8 @@ class CourseController extends ThinkUController {
         $course = Yii::$app->request->get('course', 'gmat');//是那项的课程
         if ($course == 'gmat') {
             $data=json_decode(file_get_contents("http://gmat.viplgw.cn/index.php?web/webapi/webGmatCourses&contentid=$id"),true);
+//                        echo '<pre>';var_dump($data);die;
+
             return $this->render('gmatDetail',$data);
         } elseif ($course == 'toefl') {
             $data=json_decode(file_get_contents("http://toefl.viplgw.cn/cn/api/course-detail?id=$id"),true);

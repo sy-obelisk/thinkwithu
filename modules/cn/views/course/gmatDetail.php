@@ -189,6 +189,51 @@
                     <li>课程时长：<?php echo $livelessondata['data'][" 111 "] ?></li><!--课程时长-->
                     <li>开课日期：请咨询</li><!--开课日期-->
                 <?php }
+                elseif ($livelessondata['contentcatid'] == 20){ ?>
+                    <li>价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格：
+                        <span class="vi_r_price"><?php echo $livelessondata['data'][" 154 "] ?></span>
+                        &nbsp;&nbsp;<span class="vi_r_hui">原价<?php echo $livelessondata['data'][" 528 "] ?></span>
+                    </li><!--原价-->
+
+                    <li>课程时长：<?php echo $livelessondata['data'][" 121 "] ?></li><!--课程时长-->
+                    <li>开课日期：请咨询</li><!--开课日期-->
+                <?php }
+                elseif ($livelessondata['contentcatid'] == 21){ ?>
+                    <li>价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格：
+                        <span class="vi_r_price"><?php echo $livelessondata['data'][" 155 "] ?></span>
+                        &nbsp;&nbsp;<span class="vi_r_hui">原价<?php echo $livelessondata['data'][" 529 "] ?></span>
+                    </li><!--原价-->
+
+                    <li>课程时长：<?php echo $livelessondata['data'][" 120 "] ?></li><!--课程时长-->
+                    <li>开课日期：请咨询</li><!--开课日期-->
+                <?php }
+                elseif ($livelessondata['contentcatid'] == 22){ ?>
+                    <li>价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格：
+                        <span class="vi_r_price"><?php echo $livelessondata['data'][" 539 "] ?></span>
+                        &nbsp;&nbsp;<span class="vi_r_hui">原价<?php echo $livelessondata['data'][" 533 "] ?></span>
+                    </li><!--原价-->
+
+                    <li>课程时长：<?php echo $livelessondata['data'][" 112 "] ?></li><!--课程时长-->
+                    <li>开课日期：请咨询</li><!--开课日期-->
+                <?php }
+                elseif ($livelessondata['contentcatid'] == 19){ ?>
+                    <li>价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格：
+                        <span class="vi_r_price"><?php echo $livelessondata['data'][" 153 "] ?></span>
+                        &nbsp;&nbsp;<span class="vi_r_hui">原价<?php echo $livelessondata['data'][" 527 "] ?></span>
+                    </li><!--原价-->
+
+                    <li>课程时长：<?php echo $livelessondata['data'][" 122 "] ?></li><!--课程时长-->
+                    <li>开课日期：请咨询</li><!--开课日期-->
+                <?php }
+                elseif ($livelessondata['contentcatid'] == 29){ ?>
+                    <li>价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格：
+                        <span class="vi_r_price"><?php echo $livelessondata['data'][" 156 "] ?></span>
+                        &nbsp;&nbsp;<span class="vi_r_hui">原价<?php echo $livelessondata['data'][" 530 "] ?></span>
+                    </li><!--原价-->
+
+                    <li>课程时长：<?php echo $livelessondata['data'][" 119 "] ?></li><!--课程时长-->
+                    <li>开课日期：请咨询</li><!--开课日期-->
+                <?php }
                 else{ ?>
                     <li>价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格：
                         <span class="vi_r_price"><?php echo $livelessondata['data'][" 278 "] ?></span>
