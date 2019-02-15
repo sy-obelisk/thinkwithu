@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/cn/css/classDetails.css">
+<link rel="stylesheet" href="/cn/css/classDetails-toefl.css">
 <script type="text/javascript" src="/cn/js/classDetails.js"></script>
 
 <div id="content_big">
@@ -12,8 +12,6 @@
     <div id="con_video">
         <div class="video_left">
             <img src="http://toefl.viplgw.cn<?php echo $data['image']?>" alt="图片">
-            <img src="/cn/images/ketixq_bof.png" alt="图片" class="vedio_l_img">
-            <div class="blackMask"><?php echo $data['name']?></div><!--课程名称-->
         </div>
         <div class="video_right">
             <span class="vedio_r_bigtitle"><?php echo $data['name']?></span><!--课程名称-->
