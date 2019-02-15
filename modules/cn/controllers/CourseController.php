@@ -62,17 +62,18 @@ class CourseController extends ThinkUController {
         $id = Yii::$app->request->get('id');//分类ID
         $course = Yii::$app->request->get('course', 'gmat');//是那项的课程
         if ($course == 'gmat') {
-            return $this->render('gmatDetail');
+            $data=json_decode(file_get_contents("http://gmat.viplgw.cn/index.php?web/webapi/webGmatCourses&contentid=$id"),true);
+            return $this->render('gmatDetail',$data);
         } elseif ($course == 'toefl') {
             $data=json_decode(file_get_contents("http://toefl.viplgw.cn/cn/api/course-detail?id=$id"),true);
-//            echo '<pre>';var_dump($data);die;
             return $this->render('toeflDetail',$data);
         } elseif ($course == 'ielts') {
             $data=json_decode(file_get_contents("http://ielts.viplgw.cn/cn/api/couser-detail?cid=$id"),true);
-//            echo '<pre>';var_dump($data);die;
             return $this->render('ieltsDetail',$data);
         } elseif ($course == 'gre') {
-            return $this->render('greDetail');
+            $data=json_decode(file_get_contents("http://gre.viplgw.cn/cn/api/web-course-detail?courseId=$id"),true);
+//            echo '<pre>';var_dump($data);die;
+            return $this->render('greDetail',$data);
         } else {
             return $this->render('classDetail');
         }

@@ -5,7 +5,7 @@
     <!--首页导航栏-->
     <div id="content_head">
         <ul>
-            <li><a href="/">首页</a>&gt;<a href="/toefl/assistance.htm">托福课程</a>&gt;<a href="#"><?php echo $data['name']?></a></li>
+            <li><a href="/">首页</a>&gt;<a href="/toefl/assistance.html">托福课程</a>&gt;<a href="#"><?php echo $data['name']?></a></li>
         </ul>
     </div>
     <!--雷哥基金串讲-->
@@ -76,7 +76,8 @@
             <!--课程详情-->
             <ul class="intr-wrap">
                 <div>
-                    <?php echo $data['answer']?>
+                    <?php echo str_replace("/files/","http://toefl.viplgw.cn/files/",$data['answer']);
+                    ?>
                     <!--课程详情输出内容-->
                 </div>
                 <!--课程详情固定内容-->
