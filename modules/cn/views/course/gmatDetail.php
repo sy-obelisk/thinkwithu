@@ -201,12 +201,6 @@
                 ?>
 
             </ul>
-<!--            <div class="numBox">-->
-<!--                <span>数量：</span>-->
-<!--                <input type="button" value="-" onclick="subtractNum(this)" class="btn-s">-->
-<!--                <input type="text" value="1" style="width: 30px;" onblur="importNum(this)" id="numT">-->
-<!--                <input type="button" value="+" onclick="addNum(this)" class="btn-s">-->
-<!--            </div>-->
             <div class="course-btns">
 
                 <a target="_blank" href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">点击咨询</a>
@@ -262,7 +256,7 @@
             <ul class="keti_teacher_box">
                 <?php
                 if($liveteacher!=false){
-                    echo html_entity_decode(str_replace("/files/", "http://gmat.viplgw.cn/files/", $liveteacher[0]['text']), ENT_QUOTES, 'UTF-8');
+                    echo str_replace('&nbsp;','',html_entity_decode(str_replace("/files/", "http://gmat.viplgw.cn/files/", $liveteacher[0]['text']), ENT_QUOTES, 'UTF-8'));
 
                 }
                 ?>

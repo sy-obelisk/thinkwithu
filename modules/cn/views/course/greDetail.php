@@ -24,12 +24,6 @@
                 <li>课程时长：<?php echo $data['data']['duration']?></li><!--课程时长-->
                 <li>开课日期： <?php echo $data['data']['commencement']?></li><!--开课日期-->
             </ul>
-<!--            <div class="numBox">-->
-<!--                <span>数量：</span>-->
-<!--                <input type="button" value="-" onclick="subtractNum(this)" class="btn-s">-->
-<!--                <input type="text" value="1" style="width: 30px;" onblur="importNum(this)" id="numT">-->
-<!--                <input type="button" value="+" onclick="addNum(this)" class="btn-s">-->
-<!--            </div>-->
             <div class="course-btns">
 
                 <a target="_blank" href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">点击咨询</a>
@@ -76,9 +70,11 @@
             <ul class="intr-wrap">
                 <div>
                     <?php if($data['data']['description']!=false) {
-                        echo str_replace("/files/", "http://gre.viplgw.cn/files/", $data['data']['description']);
+                        echo $data['data']['description'];
+//                        echo str_replace("/files/", "http://gre.viplgw.cn/files/", $data['data']['description']);
                     }else{
-                        echo str_replace("/files/", "http://gre.viplgw.cn/files/", $data['parent']['description']);
+                        echo  $data['parent']['description'];
+//                        echo str_replace("/files/", "http://gre.viplgw.cn/files/", $data['parent']['description']);
                     }
                     ?>
                     <!--课程详情输出内容-->
