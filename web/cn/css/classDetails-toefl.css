@@ -504,10 +504,15 @@
     overflow: hidden;
 }
 
+.imgUser{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+}
 .liuyan_user_big ol li img {
-    width: 50px;
-    height: 56px;
-    float: left
+    width: 100%;
 }
 
 .user_liuyan {
@@ -718,8 +723,10 @@
     授课名师
 */
 .keti_teacher_box {
-    margin: 40px auto 0;
+    margin: 0px auto 0;
     width: 90%;
+    overflow: hidden;
+    padding-bottom: 20px;
 }
 
 .keti_t_item {

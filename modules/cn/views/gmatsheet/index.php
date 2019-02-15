@@ -16,8 +16,8 @@
                 if($k<6){?>
                     <li>
                         <img class="Course_img" src="/cn/images/gmat_erji.png" alt="">
-                        <p><?php echo $v['title']?></p>
-                        <a href="<?php echo 'http://gmat.viplgw.cn'.$v['detailUrl']?>" target="_blank">查看课程</a>
+                        <p><?php  echo str_replace("雷哥", "申友",$v['title'])?></p>
+                        <a href="<?php echo '/gmat-course/detail/'.$v['contentid'].'.html'?>" target="_blank">查看课程</a>
                         <a href="<?php echo $v['url']?>" target="_blank">试听课程</a>
                     </li>
                 <?php }
@@ -58,7 +58,7 @@
                             <div class="fraction_name"><!--课程名称-->
                                 <div class="left_name">课程名称</div>
                                 <?php foreach ($val['courses'] as $v) { ?>
-                                    <div class="couse"><a href="" target="_blank"><?php echo $v['contenttitle'] ?></a></div>
+                                    <div class="couse"><a href="/gmat-course/detail/<?php echo $v['contentid'] ?>.html" target="_blank"><?php echo str_replace("雷哥", "申友",$v['contenttitle']) ?></a></div>
                                 <?php } ?>
                             </div>
                             <div class="fraction_price"><!--课程价格-->
@@ -111,7 +111,7 @@
                             <div class="fraction_name"><!--课程名称-->
                                 <div class="left_name">课程名称</div>
                                 <?php foreach ($val['courses'] as $v) { ?>
-                                    <div class="couse"><a href="" target="_blank"><?php echo $v['contenttitle'] ?></a></div>
+                                    <div class="couse"><a href="<?php echo '/gmat-course/detail/'.$v['contentid'].'.html'?>" target="_blank"><?php echo str_replace("雷哥", "申友",$v['contenttitle']) ?></a></div>
                                 <?php } ?>
                             </div>
                             <div class="fraction_price"><!--课程价格-->
@@ -164,7 +164,7 @@
                             <div class="fraction_name"><!--课程名称-->
                                 <div class="left_name">课程名称</div>
                                 <?php foreach ($val['courses'] as $v) { ?>
-                                    <div class="couse"><a href="" target="_blank"><?php echo $v['contenttitle'] ?></a></div>
+                                    <div class="couse"><a href="<?php echo '/gmat-course/detail/'.$v['contentid'].'.html'?>" target="_blank"><?php echo str_replace("雷哥", "申友",$v['contenttitle']) ?></a></div>
                                 <?php } ?>
                             </div>
                             <div class="fraction_price"><!--课程价格-->
@@ -217,7 +217,7 @@
                             <div class="fraction_name"><!--课程名称-->
                                 <div class="left_name">课程名称</div>
                                 <?php foreach ($val['courses'] as $v) { ?>
-                                    <div class="couse"><?php echo $v['contenttitle'] ?></div>
+                                    <div class="couse"><a href="<?php echo '/gmat-course/detail/'.$v['contentid'].'.html'?>" target="_blank"><?php echo str_replace("雷哥", "申友",$v['contenttitle']) ?></a></div>
                                 <?php } ?>
                             </div>
                             <div class="fraction_price"><!--课程价格-->
@@ -270,7 +270,7 @@
                             <div class="fraction_name"><!--课程名称-->
                                 <div class="left_name">课程名称</div>
                                 <?php foreach ($val['courses'] as $v) { ?>
-                                    <div class="couse"><a href="" target="_blank"><?php echo $v['contenttitle'] ?></a></div>
+                                    <div class="couse"><a href="<?php echo '/gmat-course/detail/'.$v['contentid'].'.html'?>" target="_blank"><?php echo str_replace("雷哥", "申友",$v['contenttitle']) ?></a></div>
                                 <?php } ?>
                             </div>
                             <div class="fraction_price"><!--课程价格-->
@@ -323,7 +323,7 @@
                             <div class="fraction_name"><!--课程名称-->
                                 <div class="left_name">课程名称</div>
                                 <?php foreach ($val['courses'] as $v) { ?>
-                                    <div class="couse"><a href="" target="_blank"><?php echo $v['contenttitle'] ?></a></div>
+                                    <div class="couse"><a href="<?php echo '/gmat-course/detail/'.$v['contentid'].'.html'?>" target="_blank"><?php echo str_replace("雷哥", "申友",$v['contenttitle']) ?></a></div>
                                 <?php } ?>
                             </div>
                             <div class="fraction_price"><!--课程价格-->

@@ -5,7 +5,7 @@
     <!--首页导航栏-->
     <div id="content_head">
         <ul>
-            <li><a href="/">首页</a>&gt;<a href="/toefl/assistance.htm">托福课程</a>&gt;<a href="#"><?php echo $data['name']?></a></li>
+            <li><a href="/">首页</a>&gt;<a href="/toefl/assistance.html">托福课程</a>&gt;<a href="#"><?php echo $data['name']?></a></li>
         </ul>
     </div>
     <!--雷哥基金串讲-->
@@ -74,40 +74,10 @@
             <!--课程详情-->
             <ul class="intr-wrap">
                 <div>
-                    <?php echo $data['answer']?>
+                    <?php echo str_replace("/files/","http://toefl.viplgw.cn/files/",$data['answer']);
+                    ?>
                     <!--课程详情输出内容-->
                 </div>
-                <!--课程详情固定内容-->
-                <li class="course-feature">
-                    <h2>课程特色</h2>
-                    <ul class="clearfix">
-                        <li>
-                            <div></div>
-                            <p>仿真教室</p>
-
-                            <p>线上与老师面对面上课，高效学习。</p>
-                        </li>
-                        <li>
-                            <div></div>
-                            <p>讲练结合</p>
-
-                            <p>模考+精讲结合，老师带着学生做题，疑难
-                                杂症当日全消除。</p>
-                        </li>
-                        <li>
-                            <div></div>
-                            <p>名师授课</p>
-
-                            <p>多年教学经验 积淀，考生弱点逐一击破。</p>
-                        </li>
-                        <li>
-                            <div></div>
-                            <p>全程监督</p>
-
-                            <p>导师和班主任全程监督，击败备考拖延症。</p>
-                        </li>
-                    </ul>
-                </li>
             </ul>
             <!--名师专家-->
             <ul class="keti_teacher_box">
@@ -154,8 +124,10 @@
                                 foreach ($discuss['data'] as $v) {
                                     ?>
                                     <li>
-                                        <img src="http://toefl.viplgw.cn<?php echo $v['image']?>" alt="" width="50"
-                                             style="float: left">
+                                        <div class="imgUser">
+                                            <img src="http://toefl.viplgw.cn<?php echo $v['image']?>" alt="" width="50"
+                                                 style="float: left">
+                                        </div>
                                         <div class="user_liuyan">
                                             <p><span class="size_9"><?php echo $v['userName']?></span></p>
                                             <span><?php echo  $v['discussContent']?></span>

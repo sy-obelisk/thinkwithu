@@ -26,10 +26,10 @@
 
 #con_video {
     width: 1180px;
-    height: 370px;
-    margin: 0 auto;
-    margin-top: 5px;
+    /*height: 370px;*/
+    margin: 5px auto 0;
     clear: both;
+    overflow: hidden;
 }
 
 .blackMask {
@@ -503,7 +503,6 @@
     padding: 10px;
     overflow: hidden;
 }
-
 .imgUser{
     width: 55px;
     height: 55px;
@@ -728,7 +727,10 @@
     overflow: hidden;
     padding-bottom: 20px;
 }
-
+.keti_teacher_box img{
+    max-width: 60%;
+    margin-right: 10px;
+}
 .keti_t_item {
     /*width: 90%;*/
     margin: 30px auto 0;

@@ -146,13 +146,13 @@
                             foreach ($course as $v) {
                                 ?>
                                 <li>
-                                    <a href="http://gre.viplgw.cn/course/<?php echo $v['id'] ?>.html" target="_blank">
+                                    <a href="/gre-course/detail/<?php echo $v['id'] ?>.html" target="_blank">
                                         <div class="live_sub_img">
                                             <img src="http://gre.viplgw.cn/<?php echo $v['image'] ?>" alt="">
                                             <p class="live_date"><?php echo $v['commencement'] ?></p>
                                         </div>
                                         <div class="live_text_wrap">
-                                            <p class="live_de ellipsis-2"><?php echo $v['name'] ?></p>
+                                            <p class="live_de ellipsis-2"><?php echo str_replace("雷哥", "申友",$v['name']) ?></p>
                                             <!--                                    <div class="tm">-->
                                             <!--                                        <span class="inm" style="width: 100px"><img src="/cn/images/course/course-lijizx.png" alt=""></span>-->
                                             <!--                                    </div>-->
