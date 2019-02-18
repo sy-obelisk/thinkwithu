@@ -11,8 +11,8 @@
     <!--雷哥基金串讲-->
     <div id="con_video">
         <div class="video_left">
-            <p class="video_left_name">基础直播课</p>
-            <div class="video_left_type">申友雅思</div>
+            <p class="video_left_name"><?php echo str_replace("雷哥", "申友",$livelessondata['contenttitle'])?></p>
+            <div class="video_left_type">申友GMAT</div>
         </div>
         <div class="video_right">
             <span class="vedio_r_bigtitle"><?php echo str_replace("雷哥", "申友",$livelessondata['contenttitle'])?></span><!--课程名称-->
@@ -292,7 +292,7 @@
             <ul class="intr-wrap">
                 <div>
                     <?php
-                        echo html_entity_decode(str_replace("/files/", "http://gmat.viplgw.cn/files/", $livelessondata['contenttext']), ENT_QUOTES, 'UTF-8');
+                        echo str_replace("雷哥", "申友",html_entity_decode(str_replace("/files/", "http://gmat.viplgw.cn/files/", $livelessondata['contenttext']), ENT_QUOTES, 'UTF-8'));
                     ?>
                     <!--课程详情输出内容-->
                 </div>
@@ -301,7 +301,7 @@
             <ul class="keti_teacher_box">
                 <?php
                 if($liveteacher!=false){
-                    echo str_replace('&nbsp;','',html_entity_decode(str_replace("/files/", "http://gmat.viplgw.cn/files/", $liveteacher[0]['text']), ENT_QUOTES, 'UTF-8'));
+                    echo str_replace("雷哥", "",str_replace('&nbsp;','',html_entity_decode(str_replace("/files/", "http://gmat.viplgw.cn/files/", $liveteacher[0]['text']), ENT_QUOTES, 'UTF-8')));
 
                 }
                 ?>
@@ -322,7 +322,7 @@
                                        </div>
                                         <div class="user_liuyan">
                                             <p><span class="size_9"><?php echo $v['username'] ?></span></p>
-                                            <span><?php echo $v['content'] ?></span>
+                                            <span><?php echo str_replace("雷哥", "申友",$v['content']) ?></span>
                                         </div>
                                     </li>
                                 <?php }

@@ -11,8 +11,8 @@
     <!--雷哥基金串讲-->
     <div id="con_video">
         <div class="video_left">
-            <p class="video_left_name">基础直播课</p>
-            <div class="video_left_type">申友雅思</div>
+            <p class="video_left_name"><?php echo $data['name']?></p>
+            <div class="video_left_type">申友托福</div>
         </div>
         <div class="video_right">
             <span class="vedio_r_bigtitle"><?php echo $data['name']?></span><!--课程名称-->
@@ -100,7 +100,7 @@
                             </div>
                             <div class="keti_t_intro">
                                 <h6><?php echo $v[0]['performance'] ?> </h6><!--右侧标题-->
-                                <div class="desc"><?php echo $v[0]['description'] ?></div><!--老师介绍-->
+                                <div class="desc"><?php echo str_replace("雷哥", "申友",$v[0]['description']) ?></div><!--老师介绍-->
                                 <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=">查看详情
                                     &gt;&gt;</a>
 
@@ -131,7 +131,7 @@
                                         </div>
                                         <div class="user_liuyan">
                                             <p><span class="size_9"><?php echo $v['userName']?></span></p>
-                                            <span><?php echo  $v['discussContent']?></span>
+                                            <span><?php echo  str_replace("雷哥", "申友",$v['discussContent'])?></span>
                                         </div>
                                     </li>
                                 <?php }

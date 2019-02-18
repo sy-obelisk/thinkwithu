@@ -11,7 +11,7 @@
     <!--雷哥基金串讲-->
     <div id="con_video">
         <div class="video_left">
-            <p class="video_left_name">基础直播课</p>
+            <p class="video_left_name"><?php echo $data['name']?></p>
             <div class="video_left_type">申友雅思</div>
         </div>
         <div class="video_right">
@@ -74,8 +74,8 @@
             <!--课程详情-->
             <ul class="intr-wrap">
                 <div>
-                    <?php echo "<h4>适合学员</h4><br>".$data['people'].'</br>'?>
-                    <?php echo "<h4>服务介绍</h4><br>".$data['item'].'</br>'?>
+                    <?php echo "<h4>适合学员</h4><br>".str_replace("雷哥", "申友",$data['people']).'</br>'?>
+                    <?php echo "<h4>服务介绍</h4><br>".str_replace("雷哥", "申友",$data['item']).'</br>'?>
                     <!--课程详情输出内容-->
                 </div>
             </ul>
@@ -126,7 +126,7 @@
 
                                         <div class="user_liuyan">
                                             <p><span class="size_9"><?php echo $v['userName']?></span></p>
-                                            <span><?php echo  $v['discussContent']?></span>
+                                            <span><?php echo  str_replace("雷哥", "申友",$v['discussContent'])?></span>
                                         </div>
                                     </li>
                                 <?php }
