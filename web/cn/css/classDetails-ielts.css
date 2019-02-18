@@ -60,7 +60,7 @@
     font-size: 40px;
     color:rgb(153,68,153) ;
     font-weight: bold;
-    text-shadow:1px 1px 0px #FFFFFF, -1px -1px 0px #FFFFFF, 2px 2px 0px #FFFFFF;
+    text-shadow:1px 1px 0px #FFFFFF, -1px -1px 0px #FFFFFF, 2px 2px 0px #FFFFFF, -2px -2px 0px #FFFFFF, 3px 3px 0px #FFFFFF, -3px -3px 0px #FFFFFF;
 }
 .video_left_type{
     margin:5px auto;
