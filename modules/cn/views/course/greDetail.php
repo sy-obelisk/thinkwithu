@@ -11,8 +11,8 @@
     <!--雷哥基金串讲-->
     <div id="con_video">
         <div class="video_left">
-            <img src="http://gre.viplgw.cn<?php echo $data['data']['image']?>" alt="图片">
-<!--            <div class="blackMask">--><?php //echo str_replace("雷哥", "申友",$data['data']['name'])?><!--</div>-->
+            <p class="video_left_name">基础直播课</p>
+            <div class="video_left_type">申友雅思</div>
         </div>
         <div class="video_right">
             <span class="vedio_r_bigtitle"><?php echo str_replace("雷哥", "申友",$data['data']['name'])?></span><!--课程名称-->

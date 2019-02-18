@@ -11,7 +11,8 @@
     <!--雷哥基金串讲-->
     <div id="con_video">
         <div class="video_left">
-            <img src="http://toefl.viplgw.cn<?php echo $data['image']?>" alt="图片">
+            <p class="video_left_name">基础直播课</p>
+            <div class="video_left_type">申友雅思</div>
         </div>
         <div class="video_right">
             <span class="vedio_r_bigtitle"><?php echo $data['name']?></span><!--课程名称-->

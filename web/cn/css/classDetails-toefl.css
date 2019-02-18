@@ -46,12 +46,32 @@
 }
 
 .video_left {
-    width: 584px;
-    /*height: 365px;*/
+    width: 496px;
+    height: 282px;
     float: left;
     position: relative;
     overflow: hidden;
     border: 1px #dcdcdc solid;
+    background: url("/cn/images/courseBanner.png") no-repeat center;
+}
+.video_left_name{
+    margin: 80px auto 0;
+    text-align: center;
+    font-size: 40px;
+    color:rgb(153,68,153) ;
+    font-weight: bold;
+    text-shadow:1px 1px 0px #FFFFFF, -1px -1px 0px #FFFFFF, 2px 2px 0px #FFFFFF;
+}
+.video_left_type{
+    margin:5px auto;
+    width: 112px;
+    height: 26px;
+    color: white;
+    line-height: 26px;
+    font-size: 16px;
+    text-align: center;
+    background: url("/cn/images/courseWBanner.png") no-repeat;
+    background-size: contain;
 }
 
 .video_left img.firstVideoImg {
