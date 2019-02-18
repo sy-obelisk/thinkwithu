@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/cn/css/classDetails-gmat.css">
+<link rel="stylesheet" href="/cn/css/classDetails-gmat.css?v=1.1">
 <script type="text/javascript" src="/cn/js/classDetails.js"></script>
 
 <div id="content_big">
