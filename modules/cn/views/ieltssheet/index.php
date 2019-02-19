@@ -3,7 +3,7 @@
 <!--banner-->
 <section class="courseBanner">
     <div>
-        <img src="/cn/images/itla_banner_03.png" alt="">
+        <img src="/cn/images/itla_banner_new_03.png" alt="">
     </div>
 </section>
 <!--课程-->
