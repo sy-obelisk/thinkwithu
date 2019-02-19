@@ -70,10 +70,10 @@
             <ul class="intr-wrap">
                 <div>
                     <?php if($data['data']['description']!=false) {
-                        echo str_replace("雷哥", "申友",$data['data']['description']);
+                        echo preg_replace('/<\s*img\s+[^>]*?src\s*=\s*(\'|\")(.*?)\\1[^>]*?\/?\s*>/i', '', str_replace("雷哥", "申友",$data['data']['description']));
 //                        echo str_replace("/files/", "http://gre.viplgw.cn/files/", $data['data']['description']);
                     }else{
-                        echo  str_replace("雷哥", "申友",$data['parent']['description']);
+                        echo  preg_replace('/<\s*img\s+[^>]*?src\s*=\s*(\'|\")(.*?)\\1[^>]*?\/?\s*>/i', '',str_replace("雷哥", "申友",$data['parent']['description']));
 //                        echo str_replace("/files/", "http://gre.viplgw.cn/files/", $data['parent']['description']);
                     }
                     ?>

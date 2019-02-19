@@ -74,8 +74,8 @@
             <!--课程详情-->
             <ul class="intr-wrap">
                 <div>
-                    <?php echo "<h4>适合学员</h4><br>".str_replace("雷哥", "申友",$data['people']).'</br>'?>
-                    <?php echo "<h4>服务介绍</h4><br>".str_replace("雷哥", "申友",$data['item']).'</br>'?>
+                    <?php echo "<h4>适合学员</h4><br>".preg_replace('/<\s*img\s+[^>]*?src\s*=\s*(\'|\")(.*?)\\1[^>]*?\/?\s*>/i', '',str_replace("雷哥", "申友",$data['people'])).'</br>'?>
+                    <?php echo "<h4>服务介绍</h4><br>".preg_replace('/<\s*img\s+[^>]*?src\s*=\s*(\'|\")(.*?)\\1[^>]*?\/?\s*>/i', '',str_replace("雷哥", "申友",$data['item'])).'</br>'?>
                     <!--课程详情输出内容-->
                 </div>
             </ul>

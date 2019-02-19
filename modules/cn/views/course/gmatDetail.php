@@ -292,7 +292,7 @@
             <ul class="intr-wrap">
                 <div>
                     <?php
-                        echo str_replace("雷哥", "申友",html_entity_decode(str_replace("/files/", "http://gmat.viplgw.cn/files/", $livelessondata['contenttext']), ENT_QUOTES, 'UTF-8'));
+                        echo preg_replace('/<\s*img\s+[^>]*?src\s*=\s*(\'|\")(.*?)\\1[^>]*?\/?\s*>/i', '',str_replace("雷哥", "申友",html_entity_decode(str_replace("/files/", "http://gmat.viplgw.cn/files/", $livelessondata['contenttext']), ENT_QUOTES, 'UTF-8')));
                     ?>
                     <!--课程详情输出内容-->
                 </div>

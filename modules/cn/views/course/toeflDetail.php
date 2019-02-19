@@ -75,7 +75,7 @@
             <!--课程详情-->
             <ul class="intr-wrap">
                 <div>
-                    <?php echo str_replace("/files/","http://toefl.viplgw.cn/files/",$data['answer']);
+                    <?php echo preg_replace('/<\s*img\s+[^>]*?src\s*=\s*(\'|\")(.*?)\\1[^>]*?\/?\s*>/i', '',$data['answer']);
                     ?>
                     <!--课程详情输出内容-->
                 </div>
