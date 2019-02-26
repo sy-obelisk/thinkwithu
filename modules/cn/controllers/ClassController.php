@@ -80,7 +80,7 @@ class ClassController extends ThinkUController {
         unset($data['count']);
         unset($data['total']);
         unset($data['pageStr']);
-        return $this->render('list',['count' => $count,'total' => $total,'pageStr' => $pageStr,'data'=>$data,'page' =>$page,'category' => 'syabroad']);
+        return $this->render('cultivate',['count' => $count,'total' => $total,'pageStr' => $pageStr,'data'=>$data,'page' =>$page,'category' => 'syabroad']);
     }
 
     /**

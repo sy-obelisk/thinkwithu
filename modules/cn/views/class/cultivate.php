@@ -77,10 +77,10 @@
         <div class="page pagetop">
             <ul>
                 <li>总数：<?php echo $count?></li>
-                <li><a href="<?php echo "/public-class/list/1.html"?>">首页</a></li>
-                <li><a href="<?php echo ($page >1)?'/public-class/list/'.($page-1).'.html':'javascript:;'?>">上一页</a></li>
-                <li><a href="<?php echo ($page <$total)?'/public-class/list/'.($page+1).'.html':'javascript:;'?>">下一页</a></li>
-                <li class="mr"><a href="<?php echo "/public-class/list/$total.html"?>">尾页</a></li>
+                <li><a href="<?php echo "/public-class/cultivate/1.html"?>">首页</a></li>
+                <li><a href="<?php echo ($page >1)?'/public-class/cultivate/'.($page-1).'.html':'javascript:;'?>">上一页</a></li>
+                <li><a href="<?php echo ($page <$total)?'/public-class/cultivate/'.($page+1).'.html':'javascript:;'?>">下一页</a></li>
+                <li class="mr"><a href="<?php echo "/public-class/cultivate/$total.html"?>">尾页</a></li>
                 <li class="mr02">页次：<span class="colorRed"><?php echo $page?></span>/<?php echo $total?></li>
                 <li class="mr02"><input class="pageNumber" type="text"/></li>
                 <li><input onclick="goPage()" type="button" value="GO"/></li>
