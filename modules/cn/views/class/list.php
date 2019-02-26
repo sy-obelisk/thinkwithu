@@ -71,7 +71,7 @@
                     return false;
                 }
                 var page = $('.pageNumber').val();
-                location.href="/public-class/<?php echo $category?>/"+page+".html";
+                location.href="/public-class/list/"+page+".html";
             }
         </script>
         <div class="page pagetop">
