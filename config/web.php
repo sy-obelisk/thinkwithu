@@ -156,6 +156,8 @@ $config = [
 
                  'public-class/list.html' => 'cn/class/abroad',
 
+                 'public-class/list/<page:\d+>.html' => 'cn/class/abroad',
+
                  'public-class/syabroad/<page:\d+>.html' => 'cn/class/syabroad',
 
                  'public-class/cultivate.html' => 'cn/class/cultivate',
