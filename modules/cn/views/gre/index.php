@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="/cn/css/header.css"/>
     <link rel="stylesheet" href="/cn/css/footer.css"/>
     <link rel="stylesheet" href="/cn/css/public.css"/>
-    <link rel="stylesheet" href="/cn/gre/css/gre_index.css">
+    <link rel="stylesheet" href="/cn/gre/css/gre_index.css?v=1.1">
     <link rel="stylesheet" type="text/css" href="/cn/css/iconfont.css">
     <link rel="stylesheet" href="/cn/css/fonts/font-awesome/css/font-awesome.min.css"/>
     <link rel="shortcut icon" href="http://www.thinkwithu.com/favicon.ico"/>
@@ -53,45 +53,71 @@
 <div style="background: rgb(248,248,248)">
     <div class="banner-wrap">
         <div class="slideBox-1 relative w_100">
-            <div class="b1-bd">
-                <ul><!--循环li-->
+            <div class="hd_banner hd">
+                <ul>
+                    <li class=""></li>
+                    <li class=""></li>
+                    <li class=""></li>
+                </ul>
+            </div>
+            <div class="bd_banner bd" style="width: 100%;overflow: hidden;">
+                <ul>
                     <li>
-                        <a href="http://gre.viplgw.cn/activity/a-3422.html" target="_blank">
-                            <img  src="http://gre.viplgw.cn//files/attach/images/20180829/1535532214229847.png" alt="banner图"/>
+                        <a href="" target="_blank">
+                            <img src="/cn/gre/images/grebanner-1.jpg" alt="留学活动">
                         </a>
                     </li>
                     <li>
-                        <a href="http://gre.viplgw.cn/course/7772.html" target="_blank">
-                            <img src="http://gre.viplgw.cn//files/attach/images/20180827/1535338478535151.png" alt="banner图"/>
+                        <a href="" target="_blank">
+                            <img src="/cn/gre/images/grebanner-2.jpg" alt="留学活动">
                         </a>
                     </li>
                     <li>
-                        <a href="http://gre.viplgw.cn/course/7755.html" target="_blank">
-                            <img  src="http://gre.viplgw.cn//files/attach/images/20180408/1523179876612251.png" alt="banner图"/>
+                        <a href="" target="_blank">
+                            <img src="/cn/gre/images/grebanner-3.jpg" alt="留学活动">
                         </a>
                     </li>
                 </ul>
             </div>
+<!--            <div class="b1-bd">-->
+<!--                <ul><!--循环li-->
+<!--                    <li>-->
+<!--                        <a href="http://gre.viplgw.cn/activity/a-3422.html" target="_blank">-->
+<!--                            <img  src="http://gre.viplgw.cn//files/attach/images/20180829/1535532214229847.png" alt="banner图"/>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a href="http://gre.viplgw.cn/course/7772.html" target="_blank">-->
+<!--                            <img src="http://gre.viplgw.cn//files/attach/images/20180827/1535338478535151.png" alt="banner图"/>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a href="http://gre.viplgw.cn/course/7755.html" target="_blank">-->
+<!--                            <img  src="http://gre.viplgw.cn//files/attach/images/20180408/1523179876612251.png" alt="banner图"/>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </div>-->
         </div>
         <script>
-
-            $(".b1-bd ul").animate({ 'left': '-50px' }, 300, function () {
-                $(".slideBox-1").slide({
-                    mainCell: ".b1-bd ul",
-                    titCell: ".b1-bd ul li",
-                    effect: "leftLoop",
-                    trigger: "click",
-                    autoPlay: true,
-                    easing: "easeInOutQuint",
-                    delayTime: 3000,
-                    interTime: 5000,
-                    defaultPlay: true,
-                    vis: 1,
-                });
-            });
-            //让banner背景左右透明
-            var wid = $(".b1-bd li:first").width();
-            var wind = $(window).width();
+            jQuery(".slideBox-1").slide({mainCell:".bd ul",effect:"leftLoop",autoPlay:true});
+            // $(".b1-bd ul").animate({ 'left': '-50px' }, 300, function () {
+            //     $(".slideBox-1").slide({
+            //         mainCell: ".b1-bd ul",
+            //         titCell: ".b1-bd ul li",
+            //         effect: "leftLoop",
+            //         trigger: "click",
+            //         autoPlay: true,
+            //         easing: "easeInOutQuint",
+            //         delayTime: 3000,
+            //         interTime: 5000,
+            //         defaultPlay: true,
+            //         vis: 1,
+            //     });
+            // });
+            // //让banner背景左右透明
+            // var wid = $(".b1-bd li:first").width();
+            // var wind = $(window).width();
 
         </script>
     </div>
@@ -138,7 +164,7 @@
                     <h1 class="new_model_name">直播课程</h1>
                     <div class="service_line"></div>
                 </div>
-                <div class="tr zb_more"><a href="http://gre.viplgw.cn/course.html" target="_blank">More>></a></div>
+<!--                <div class="tr zb_more"><a href="http://gre.viplgw.cn/course.html" target="_blank">More>></a></div>-->
                 <div class="live_list_wrap relative picScroll-left">
                     <div class="bd">
                         <ul class="live_list clearfix">
@@ -148,8 +174,9 @@
                                 <li>
                                     <a href="/gre-course/detail/<?php echo $v['id'] ?>.html" target="_blank">
                                         <div class="live_sub_img">
-                                            <img src="http://gre.viplgw.cn/<?php echo $v['image'] ?>" alt="">
-                                            <p class="live_date"><?php echo $v['commencement'] ?></p>
+<!--                                            <img src="http://gre.viplgw.cn/--><?php //echo $v['image'] ?><!--" alt="">-->
+                                            <p class="video_left_name"><?php echo $v['commencement'] ?></p>
+                                            <div class="video_left_type">申友GRE</div>
                                         </div>
                                         <div class="live_text_wrap">
                                             <p class="live_de ellipsis-2"><?php echo str_replace("雷哥", "申友",$v['name']) ?></p>
