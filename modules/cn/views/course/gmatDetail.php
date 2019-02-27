@@ -292,7 +292,19 @@
             <ul class="intr-wrap">
                 <div>
                     <?php
-                        echo preg_replace('/<\s*img\s+[^>]*?src\s*=\s*(\'|\")(.*?)\\1[^>]*?\/?\s*>/i', '',str_replace("雷哥", "申友",html_entity_decode(str_replace("/files/", "http://gmat.viplgw.cn/files/", $livelessondata['contenttext']), ENT_QUOTES, 'UTF-8')));
+                        $str=preg_replace('/<\s*img\s+[^>]*?src\s*=\s*(\'|\")(.*?)\\1[^>]*?\/?\s*>/i', '',str_replace("雷哥", "申友",html_entity_decode(str_replace("/files/", "http://gmat.viplgw.cn/files/", $livelessondata['contenttext']), ENT_QUOTES, 'UTF-8')));
+                    if(\Yii::$app->request->get('id')!=1112){
+                        $str=preg_replace('/2095453331/','2250281936',$str,1);
+                        $str=preg_replace('/2095453331/','Mshaonv2018',$str,1);
+                    }
+                    $str=preg_replace('/1746295647/','Mshaonv2018',$str,1);
+                    $str=preg_replace('/2313024536/','1738367468',$str,1);
+                    $str=preg_replace('/17682347413/','18621928642',$str,1);
+                    $str=preg_replace('/4001816180/','400-600-1123',$str,1);
+                    $str=preg_replace('/400-1816-180/','400-600-1123',$str,1);
+                    $str=preg_replace('/439324846/','756711364',$str,1);
+                    $str=preg_replace('/LGclub/','Thinku-GMAT',$str,1);
+                    echo $str;
                     ?>
                     <!--课程详情输出内容-->
                 </div>

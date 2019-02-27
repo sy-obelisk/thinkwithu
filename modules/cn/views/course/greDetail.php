@@ -70,12 +70,26 @@
             <ul class="intr-wrap">
                 <div>
                     <?php if($data['data']['description']!=false) {
-                        echo preg_replace('/<\s*img\s+[^>]*?src\s*=\s*(\'|\")(.*?)\\1[^>]*?\/?\s*>/i', '', str_replace("雷哥", "申友",$data['data']['description']));
-//                        echo str_replace("/files/", "http://gre.viplgw.cn/files/", $data['data']['description']);
+                         $str=preg_replace('/<\s*img\s+[^>]*?src\s*=\s*(\'|\")(.*?)\\1[^>]*?\/?\s*>/i', '', str_replace("雷哥", "申友",$data['data']['description']));
                     }else{
-                        echo  preg_replace('/<\s*img\s+[^>]*?src\s*=\s*(\'|\")(.*?)\\1[^>]*?\/?\s*>/i', '',str_replace("雷哥", "申友",$data['parent']['description']));
-//                        echo str_replace("/files/", "http://gre.viplgw.cn/files/", $data['parent']['description']);
+                        $str=preg_replace('/<\s*img\s+[^>]*?src\s*=\s*(\'|\")(.*?)\\1[^>]*?\/?\s*>/i', '',str_replace("雷哥", "申友",$data['parent']['description']));
                     }
+                    $str=preg_replace('/2072966452/','2899175815',$str);
+                    $str=preg_replace('/Larrythinku/','thinkwithu2016',$str);
+                    $str=preg_replace('/43382135617/','1738367468',$str);
+                    $str=preg_replace('/18957118117/','18621928642',$str);
+                    $str=preg_replace('/2630161614/','2072966452',$str);
+                    $str=preg_replace('/2095453331/','2250281936',$str);
+                    $str=preg_replace('/GMATonline-Lindy/','Michellethinku',$str);
+                    $str=preg_replace('/3382135617/','3176627895',$str);
+                    $str=preg_replace('/400-1816-180/','400-600-1123',$str);
+                    $str=preg_replace('/：申友GRE/','mingxiaoliuxue',$str);
+                    $str=preg_replace('/:申友GRE/','mingxiaoliuxue',$str);
+                    $str=preg_replace('/1963606598/','GMAT-ss',$str);
+                    $str=preg_replace('/上海市杨浦区政学路51号创智天地企业中心2号楼305室/','上海市徐汇区虹桥路355号 城开国际大厦5层',$str);
+                    $str=preg_replace('/杭州市下城区庆春路118号嘉德广场1703室/','杭州市江干区钱江新城万银国际1303室',$str);
+                    $str=preg_replace('/greonline/','mingxiaoliuxue',$str);
+                    echo $str;
                     ?>
                     <!--课程详情输出内容-->
                 </div>

@@ -75,7 +75,13 @@
             <!--课程详情-->
             <ul class="intr-wrap">
                 <div>
-                    <?php echo preg_replace('/<\s*img\s+[^>]*?src\s*=\s*(\'|\")(.*?)\\1[^>]*?\/?\s*>/i', '',$data['answer']);
+                    <?php $str=preg_replace('/<\s*img\s+[^>]*?src\s*=\s*(\'|\")(.*?)\\1[^>]*?\/?\s*>/i', '',str_replace("雷哥", "申友",$data['answer']));
+                    $str=preg_replace('/toefl12345/','ybnt110',$str);
+                    $str=preg_replace('/400-6021-727/','400-600-1123',$str);
+                    $str=preg_replace('/toeflgo/','mingxiaoliuxue',$str);
+                    echo $str;
+
+
                     ?>
                     <!--课程详情输出内容-->
                 </div>
