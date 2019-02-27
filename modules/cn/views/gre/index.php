@@ -63,17 +63,17 @@
             <div class="bd_banner bd" style="width: 100%;overflow: hidden;">
                 <ul>
                     <li>
-                        <a href="" target="_blank">
+                        <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=%E6%96%B0%E5%AE%98%E7%BD%91%EF%BC%88thinkwithu%EF%BC%89&cw=%E5%AE%98%E7%BD%91%E5%8F%B3%E4%BE%A7%E5%AE%A2%E6%9C%8D%E5%88%97%E8%A1%A8http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=%E6%96%B0%E5%AE%98%E7%BD%91%EF%BC%88thinkwithu%EF%BC%89&cw=%E5%AE%98%E7%BD%91%E5%8F%B3%E4%BE%A7%E5%AE%A2%E6%9C%8D%E5%88%97%E8%A1%A8" target="_blank">
                             <img src="/cn/gre/images/grebanner-1.jpg" alt="留学活动">
                         </a>
                     </li>
                     <li>
-                        <a href="" target="_blank">
+                        <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=%E6%96%B0%E5%AE%98%E7%BD%91%EF%BC%88thinkwithu%EF%BC%89&cw=%E5%AE%98%E7%BD%91%E5%8F%B3%E4%BE%A7%E5%AE%A2%E6%9C%8D%E5%88%97%E8%A1%A8http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=%E6%96%B0%E5%AE%98%E7%BD%91%EF%BC%88thinkwithu%EF%BC%89&cw=%E5%AE%98%E7%BD%91%E5%8F%B3%E4%BE%A7%E5%AE%A2%E6%9C%8D%E5%88%97%E8%A1%A8" target="_blank">
                             <img src="/cn/gre/images/grebanner-2.jpg" alt="留学活动">
                         </a>
                     </li>
                     <li>
-                        <a href="" target="_blank">
+                        <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=%E6%96%B0%E5%AE%98%E7%BD%91%EF%BC%88thinkwithu%EF%BC%89&cw=%E5%AE%98%E7%BD%91%E5%8F%B3%E4%BE%A7%E5%AE%A2%E6%9C%8D%E5%88%97%E8%A1%A8http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=%E6%96%B0%E5%AE%98%E7%BD%91%EF%BC%88thinkwithu%EF%BC%89&cw=%E5%AE%98%E7%BD%91%E5%8F%B3%E4%BE%A7%E5%AE%A2%E6%9C%8D%E5%88%97%E8%A1%A8" target="_blank">
                             <img src="/cn/gre/images/grebanner-3.jpg" alt="留学活动">
                         </a>
                     </li>
