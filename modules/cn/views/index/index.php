@@ -309,8 +309,7 @@
                     <?php foreach($case['abroad'] as $v){?>
                         <div class="recommendation">
                             <div class="recommendation_cover">
-<!--                                <div class="reco_img"><img src="--><?php //echo $v['image']?><!--" alt="申友留学案例"></div>-->
-                                <div class="reco_img"><img src="http://www.thinkwithu.com/files/attach/images/20190226/1551172762888675.jpg" alt="申友留学案例"></div>
+                                <div class="reco_img"><img src="<?php echo $v['image']?>" alt="申友留学案例"></div>
                                 <div class="reco_iforma">
                                     <p>姓名:<?php echo $v['name']?></p>
                                     <p>毕业院校:<?php echo $v['oldSchool']?></p>
