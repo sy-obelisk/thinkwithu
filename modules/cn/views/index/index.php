@@ -111,7 +111,7 @@
     <link rel="stylesheet" href="/cn/css/footer.css"/>
     <link rel="stylesheet" href="/cn/css/public.css"/>
     <link rel="stylesheet" href="/cn/Hirsi/css/reset.css">
-    <link rel="stylesheet" href="/cn/Hirsi/css/index.css?v=1.1">
+    <link rel="stylesheet" href="/cn/Hirsi/css/index.css?v=1.2">
     <link rel="stylesheet" type="text/css" href="/cn/css/iconfont.css">
     <link rel="stylesheet" href="/cn/css/fonts/font-awesome/css/font-awesome.min.css"/>
     <link rel="shortcut icon" href="http://www.thinkwithu.com/favicon.ico"/>
