@@ -227,7 +227,11 @@
                     <li>
                         <img src="<?php echo $v['image']?>" alt="">
                         <div class="service_bot">
-                            <p><?php echo $v['name']?></p>
+                           <?php $arr=explode(' ',$v['name']);
+                                foreach($arr as $val){
+                                    echo '<p>'.$val.'</p>';
+                                }
+                                ?>
                             <a href="/word-details/<?php echo $v['id']?>/index,261.html">查看详情</a>
                         </div>
                     </li>
