@@ -46,3 +46,12 @@
 .abstractContent table{
     width: 100%!important;
 }
+strong {
+    font-weight: bold!important;
+}
+.abstractContent a{
+    color: rgb(153,68,153)!important;
+}
+.abstractContent span{
+    font-weight: inherit!important;
+}
