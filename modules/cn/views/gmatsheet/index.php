@@ -4,7 +4,7 @@
 <!--banner-->
 <section class="gmatBanner">
     <div class="banner_cover">
-        <img src="/cn/images/gmatImages/gmat-banner.png" alt="">
+        <img src="/cn/images/gmatImages/GMAT_02.png" alt="">
     </div>
 </section>
 <!--Gmat第一个板块-->
