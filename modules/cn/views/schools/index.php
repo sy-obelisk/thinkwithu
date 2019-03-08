@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="/cn/css/header.css"/>
 <link rel="stylesheet" href="/cn/css/footer.css"/>
-<link rel="stylesheet" href="/cn/css/public.css"/>
+<link rel="stylesheet" href="/cn/css/public.css?v=1.3"/>
 <link rel="stylesheet" href="/cn/schools/css/academyBase.css?v=1.3"/>
 
 <script type="text/javascript" src="/cn/schools/js/academyBase.js?v=1.1"></script>

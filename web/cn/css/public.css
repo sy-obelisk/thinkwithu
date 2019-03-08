@@ -504,7 +504,7 @@ a:hover{
     margin-top: 3px;
 }
 .connectHd ul li{
-	width: 33px;
+	/*width: 33px;*/
 	height: 19px;
 	overflow: hidden;
     float: left;

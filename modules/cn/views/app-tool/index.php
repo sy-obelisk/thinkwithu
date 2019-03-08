@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="/cn/css/header.css"/>
     <link rel="stylesheet" href="/cn/css/footer.css"/>
-    <link rel="stylesheet" href="/cn/css/public.css"/>
+    <link rel="stylesheet" href="/cn/css/public.css?v=1.3"/>
     <link rel="stylesheet" href="/cn/gre/css/index.css">
     <link rel="stylesheet" href="/cn/css/fonts/font-awesome/css/font-awesome.min.css"/>
     <link rel="shortcut icon" href="http://www.thinkwithu.com/favicon.ico"/>

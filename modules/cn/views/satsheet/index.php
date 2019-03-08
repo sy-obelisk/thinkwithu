@@ -27,7 +27,7 @@
   <meta name="renderer" content="webkit">
   <title>申友SAT在线_SAT备考_SAT培训SAT网络课程_SAT在线课程_SAT网课_SAT直播课_SAT申友</title>
   <link rel="stylesheet" href="/cn/css/footer.css"/>
-  <link rel="stylesheet" href="/cn/css/public.css?v=1.2"/>
+  <link rel="stylesheet" href="/cn/css/public.css?v=1.3"/>
   <link rel="stylesheet" href="/cn/Hirsi/css/reset.css">
 <!--  <link rel="stylesheet" href="/cn/Hirsi/css/index.css">-->
   <link rel="stylesheet" type="text/css" href="/cn/css/sat.css"/>

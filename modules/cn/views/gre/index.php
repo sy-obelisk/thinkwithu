@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="/cn/gre/css/reset.css">
     <link rel="stylesheet" href="/cn/css/header.css"/>
     <link rel="stylesheet" href="/cn/css/footer.css"/>
-    <link rel="stylesheet" href="/cn/css/public.css"/>
+    <link rel="stylesheet" href="/cn/css/public.css?v=1.3"/>
     <link rel="stylesheet" href="/cn/gre/css/gre_index.css?v=1.1">
     <link rel="stylesheet" type="text/css" href="/cn/css/iconfont.css">
     <link rel="stylesheet" href="/cn/css/fonts/font-awesome/css/font-awesome.min.css"/>

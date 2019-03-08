@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>单项服务加油站</title>
     <link rel="stylesheet" href="/cn/css/reset.css">
-    <link rel="stylesheet" href="/cn/css/public.css?v=1.2">
+    <link rel="stylesheet" href="/cn/css/public.css?v=1.3">
 <!--    <link rel="stylesheet" href="/cn/Hirsi/css/index.css">-->
     <link rel="stylesheet" href="/cn/css/header.css"/>
     <link rel="stylesheet" href="/cn/css/footer.css"/>
