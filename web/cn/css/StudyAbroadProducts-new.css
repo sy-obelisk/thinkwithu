@@ -532,6 +532,11 @@ body{
 .hot_content{
     overflow: hidden;
 }
+.hot_content ul{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
 .hot_content ul li{
     width: 230px;
     height: 310px;
@@ -848,6 +853,7 @@ body{
     display: none;
 }
 .listDivCover{
+    height: 235px;
     overflow: hidden;
 }
 .listDiv:nth-child(1){

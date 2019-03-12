@@ -87,7 +87,7 @@
                     <span class="z_b"></span><span>所在地区:<?php echo $v['place']?></span>
                 </div>
                 <div class="school_right">
-                    <a href="tencent://message/?uin=3382135617&Site=www.cnclcy&Menu=yes" target="_blank" class="r_k">人工精准选校入口</a>
+                    <a href="tencent://message/?uin=2250281936&Site=www.cnclcy&Menu=yes" target="_blank" class="r_k">人工精准选校入口</a>
                     <div class="ds_yx_al">
                         <span class="d_s"></span>
                         <span><a href="/teachers.html" target="_blank">推荐导师</a></span>
@@ -119,7 +119,7 @@
                     <span class="z_b"></span><span>所在地区:<?php echo $v['place']?></span>
                 </div>
                 <div class="school_right">
-                    <a href="tencent://message/?uin=3382135617&Site=www.cnclcy&Menu=yes" target="_blank" class="r_k">人工精准选校入口</a>
+                    <a href="tencent://message/?uin=2250281936&Site=www.cnclcy&Menu=yes" target="_blank" class="r_k">人工精准选校入口</a>
                     <div class="ds_yx_al">
                         <span class="d_s"></span>
                         <span><a href="/teachers.html" target="_blank">推荐导师</a></span>

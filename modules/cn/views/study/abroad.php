@@ -273,6 +273,7 @@
                     </li>
                 <?php }
             } ?>
+
         </ul>
     </div>
     <script>
@@ -297,20 +298,22 @@
         <div class="content_list"><!--外层循环 listDiv-->
             <?php foreach($internship as $k=>$v){?>
             <div class="<?php echo $k=='inland'?'practice ':''?>listDiv"><!--国外实习  内层循环div list_show-->
-                <div class="listDivCover">
+                <ul class="listDivCover hd">
                     <?php foreach($v as $key=>$val){
                         if(is_numeric($key)){?>
-                            <a href="/word-details/<?php echo $val['id']?>/index,178.html">
-                                <div class="list_show">
-                                    <img src="<?php echo 'http://www.thinkwithu.com'.$val['image']?>" alt="">
-                                    <div class="list_bottom">
-                                        <p><?php echo $val['name']?></p>
+                            <li>
+                                <a href="/word-details/<?php echo $val['id']?>/index,178.html">
+                                    <div class="list_show">
+                                        <img src="<?php echo 'http://www.thinkwithu.com'.$val['image']?>" alt="">
+                                        <div class="list_bottom">
+                                            <p><?php echo $val['name']?></p>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </li>
                         <?php }
                     }?>
-                </div>
+                </ul>
                 <!-- 分页-->
                 <div class="pageSize">
                     <ul><?php if($v['count']!=false){?>
@@ -324,6 +327,7 @@
                 </div>
             </div>
             <?php }?>
+
         </div>
     </div>
     <script>
@@ -339,14 +343,14 @@
             $.get('/cn/api/internship',{catId:catid,page:page},function (re) {
                 for(var i in JSON.parse(re).data){
                     if(i<6){
-                        str+='<a href="/word-details/'+ JSON.parse(re).data[i].id +'/index,178.html">';
+                        str+='<li><a href="/word-details/'+ JSON.parse(re).data[i].id +'/index,178.html">';
                         str+='<div class="list_show">';
                         str+='<img src="http://www.thinkwithu.com'+JSON.parse(re).data[i].image+'" alt="">';
                         str+='<div class="list_bottom">';
                         str+='<p>'+ JSON.parse(re).data[i].name +'</p>';
                         str+='</div>';
                         str+='</div>';
-                        str+='</a>';
+                        str+='</a></li>';
                     }
                 }
                 $('.listDiv').eq(index).find('.listDivCover').html(str);
