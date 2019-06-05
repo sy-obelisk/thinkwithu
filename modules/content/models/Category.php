@@ -165,4 +165,16 @@ class Category extends ActiveRecord {
         $data = \Yii::$app->db->createCommand($sql)->queryAll();
         return $data;
     }
+
+
+    /**
+     *
+     * @sjeam
+     */
+     public function getTag(){
+        $sql = "select id,name as text from {{%category}} WHERE pid = 297";
+        $data = \Yii::$app->db->createCommand($sql)->queryAll();
+        return $data;
+
+    }
 }

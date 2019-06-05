@@ -12,6 +12,7 @@ namespace app\modules\content\controllers;
 use yii;
 use app\modules\content\models\Category;
 use app\modules\content\models\CategoryExtend;
+use app\modules\content\models\CategoryTag;
 use app\libs\AppControl;
 use app\libs\Method;
 class CategoryController extends AppControl {
@@ -172,6 +173,19 @@ class CategoryController extends AppControl {
 //        $locals = Method::getPagedRows($query, ['order'=>'id desc', 'pageSize'=>5, 'rows'=>'models']);
 //        return $this->render('test', $locals);
 //    }
+
+
+    /**
+     * 标签组
+     * @return string
+     * @Obelisk
+     */
+    public function actionTag()
+    {
+        $catId = Yii::$app->request->get('id');
+        $data = CategoryTag::getCatTag($catId);
+        return $this->render('tag',['data' => $data,'catId' => $catId,'block' => $this->block]);
+    }
 
 
 }

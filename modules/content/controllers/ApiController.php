@@ -124,7 +124,17 @@ class ApiController extends ApiControl {
         echo json_encode($data);
 
     }
-
+    /**
+     * 内容副分类调用
+     * @Obelisk
+     */
+     public function actionTag()
+     {
+         $model = new Category();
+         $data = $model->getTag();
+         echo json_encode($data);
+ 
+     }
 
 
 }

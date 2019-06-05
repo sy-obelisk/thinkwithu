@@ -186,6 +186,33 @@
                 }
                 ?>
 
+<?php
+    if($pid != 0) {
+        foreach ($tag as $v){
+            ?>
+                <div class="control-group">
+                    <label for="catdes" class="control-label"><?php echo $v['name'] ?></label>
+                    <div class="controls">
+                        <select id="contentcatid"  msg="您必须选择一个分类" needle="needle"
+                                class="autocombox input-medium" name="tagValue[]">
+                            <?php
+                            foreach($v['child'] as $val) {
+                                ?>
+                                <option <?php echo isset($val['select'])&&$val['select']?"selected='selected'":''?> value="<?php echo $val['id']?>"><?php echo $val['name']?></option>
+                            <?php
+                            }
+                            ?>
+                        </select>
+                        <input name="tagKey[]" value="<?php echo $v['id']?>" type="hidden">
+                    </div>
+                </div>
+        <?php
+        }
+    }
+        ?>
+
+
+
                 <div class="control-group">
                     <div class="controls">
                         <input name="category" type="hidden" value="<?php echo $catId?>">

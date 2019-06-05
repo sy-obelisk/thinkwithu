@@ -42,6 +42,7 @@
 			">
         <thead>
         <tr>
+            <th data-options="field:'id'"  align="middle" >id序号</th>
             <th data-options="field:'name'"  align="middle" >资源名称</th>
             <th data-options="field:'status'"  align="middle" >资源状态</th>
             <th data-options="field:'action'"  align="middle">操作</th>

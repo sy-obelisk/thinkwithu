@@ -5,6 +5,9 @@ use yii\db\ActiveRecord;
 use app\modules\cn\models\CategoryContent;
 use app\modules\cn\models\ContentExtend;
 use app\modules\cn\models\ExtendData;
+
+use app\libs\GoodsPager;
+
 class Content extends ActiveRecord {
 
     public static function tableName(){
@@ -161,6 +164,7 @@ class Content extends ActiveRecord {
         return $content;
 
     }
+    
 
     /**
      * 获取内容副分类的名称
@@ -654,4 +658,218 @@ class Content extends ActiveRecord {
 //        return $content;
 //
 //    }
+
+
+    /**
+     * 查询db1 的数据
+     * @sejam
+     */
+    public function listSearch($category,$country='',$aim='',$order='',$page,$pageSize=8,$id=''){
+        // $limit = " limit ".($page-1)*$pageSize.",$pageSize";
+        $sql = "Select c.*, (SELECT CONCAT_WS(' ',ce.value,ed.value) From {{%content_extend}} ce left JOIN {{%extend_data}} ed ON ed.extendId=ce.id WHERE ce.contentId=c.id AND ce.code='dc4793dfb52237db70b240038d086d98') as buyNum,(SELECT CONCAT_WS(' ',ce.value,ed.value) From {{%content_extend}} ce left JOIN {{%extend_data}} ed ON ed.extendId=ce.id WHERE ce.contentId=c.id AND ce.code='0ac9d45187ea22acbadedef8f8ab0e54') as price,(SELECT CONCAT_WS(' ',ce.value,ed.value) From {{%content_extend}} ce left JOIN {{%extend_data}} ed ON ed.extendId=ce.id WHERE ce.contentId=c.id AND ce.code='7611fcaa334c360593cb15bfdd72dc70') as answer,(SELECT ce.value FROM {{%content_extend}} ce WHERE ce.contentId=c.id AND ce.code='61f13913003193ea19e7e1271bca2752') as originalPrice FROM {{%content}} c WHERE c.catId=150 AND pid =0 ";
+        if($category){
+            $sql = "select * from ($sql) country WHERE id in(select DISTINCT cc.contentId from {{%category_content}} cc where cc.catId in($category))  ";
+        }
+        if($country){
+            $sql = "select * from ($sql) country WHERE id in(select DISTINCT cc.contentId from {{%category_content}} cc where cc.catId in($country))  ";
+        }
+        if($aim){
+            $sql = "select * from ($sql) aim WHERE id in(select DISTINCT cc.contentId from {{%category_content}} cc where cc.catId in($aim))  ";
+        }
+        if($id){
+            $sql .= " and id in ($id)";
+        }
+        $count = count(\Yii::$app->db1->createCommand($sql)->queryAll());
+        $sql .= $order;
+        // $sql .= " $limit";
+        $data = \Yii::$app->db1->createCommand($sql)->queryAll();
+        $pageModel = new GoodsPager($count,$page,$pageSize,5);
+        $pageStr = $pageModel->GetPagerContent();
+        $totalPage = ceil($count/$pageSize);
+        return ['totalPage' => $totalPage,'data' => $data,'pageStr' => $pageStr,'count' => $count,'page' => $page];
+    }
+
+
+
+    /**
+     * smart 写入临时 调用内容
+     * @param $select 包含where条件，查询字段，分页，排序
+     * @return array
+     * @ sejam 
+     */
+     public static function getClass($select){
+        $where = "1=1";
+        $show = isset($select['show'])?$select['show']:1;
+        $where .= " AND c.show=$show";
+        $where .= isset($select['where'])?" AND ".$select['where']:'';
+        $seField = "";
+        $fields = isset($select['fields'])?$select['fields']:'';
+        //原价
+        if(strstr($fields,'originalPrice')){
+            $seField .= ",(SELECT ce.value FROM {{%content_extend}} ce WHERE ce.contentId=c.id AND ce.code='61f13913003193ea19e7e1271bca2752') as originalPrice";
+        }
+        //vip总监
+        if(strstr($fields,'vip')){
+            $seField .= ",(SELECT ce.value FROM {{%content_extend}} ce WHERE ce.contentId=c.id AND ce.code='63948cf4e1234694cfa02048a77ad754') as vip";
+        }
+        //总监老师
+        if(strstr($fields,'majordomo')){
+            $seField .= ",(SELECT ce.value FROM {{%content_extend}} ce WHERE ce.contentId=c.id AND ce.code='ab6df6ee04cfccc7f6ff9aadf0f46a8d') as majordomo";
+        }
+        //A级培训师
+        if(strstr($fields,'A')){
+            $seField .= ",(SELECT CONCAT_WS(' ',ce.value,ed.value) From {{%content_extend}} ce left JOIN {{%extend_data}} ed ON ed.extendId=ce.id WHERE ce.contentId=c.id AND ce.code='3aa42936f977b9ef0b1717c646c5f91c') as A";
+        }
+        //描述
+        if(strstr($fields,'description')){
+            $seField .= ",(SELECT  CONCAT_WS(' ',ce.value,ed.value) From {{%content_extend}} ce left JOIN {{%extend_data}} ed ON ed.extendId=ce.id WHERE ce.contentId=c.id AND ce.code='32cc8e6f27caf3fdf26e8cfd4e7b4433') as description";
+        }
+        //培训师
+        if(strstr($fields,'trainer')){
+            $seField .= ",(SELECT CONCAT_WS(' ',ce.value,ed.value) From {{%content_extend}} ce left JOIN {{%extend_data}} ed ON ed.extendId=ce.id WHERE ce.contentId=c.id AND ce.code='784b0cdb89d960e484f35f8872b7b7ea') as trainer";
+        }
+        //课程时长
+        if(strstr($fields,'duration')){
+            $seField .= ",(SELECT CONCAT_WS(' ',ce.value,ed.value) From {{%content_extend}} ce left JOIN {{%extend_data}} ed ON ed.extendId=ce.id WHERE ce.contentId=c.id AND ce.code='c8cc4bd99d4fcfcdfd5673bd635b5bcd') as duration";
+        }
+        //连接地址
+        if(strstr($fields,'url')){
+            $seField .= ",(SELECT ce.value FROM {{%content_extend}} ce WHERE ce.contentId=c.id AND ce.code='43f8278a38a3539a7cfcdff67e5af92c') as url";
+        }
+        //开课日期
+        if(strstr($fields,'commencement')){
+            $seField .= ",(SELECT ce.value FROM {{%content_extend}} ce WHERE ce.contentId=c.id AND ce.code='90f1d6d0fea6f171e8b82d9cbefee283') as commencement";
+        }
+        //性价比
+        if(strstr($fields,'performance')){
+            $seField .= ",(SELECT CONCAT_WS(' ',ce.value,ed.value) From {{%content_extend}} ce left JOIN {{%extend_data}} ed ON ed.extendId=ce.id WHERE ce.contentId=c.id AND ce.code='32cc8e6f27caf3fdf26e8cfd4e7b44f9') as performance";
+        }
+        //主讲课程
+        if(strstr($fields,'speak')){
+            $seField .= ",(SELECT CONCAT_WS(' ',ce.value,ed.value) From {{%content_extend}} ce left JOIN {{%extend_data}} ed ON ed.extendId=ce.id WHERE ce.contentId=c.id AND ce.code='dc4793dfb52237db70b240038d086d98') as speak";
+        }
+        //价格
+        if(strstr($fields,'price')){
+            $seField .= ",(SELECT CONCAT_WS(' ',ce.value,ed.value) From {{%content_extend}} ce left JOIN {{%extend_data}} ed ON ed.extendId=ce.id WHERE ce.contentId=c.id AND ce.code='0ac9d45187ea22acbadedef8f8ab0e54') as price";
+        }
+        //答案
+        if(strstr($fields,'answer')){
+            $seField .= ",(SELECT CONCAT_WS(' ',ce.value,ed.value) From {{%content_extend}} ce left JOIN {{%extend_data}} ed ON ed.extendId=ce.id WHERE ce.contentId=c.id AND ce.code='7611fcaa334c360593cb15bfdd72dc70') as answer";
+        }
+        //备选项
+        if(strstr($fields,'alternatives')){
+            $seField .= ",(SELECT CONCAT_WS(' ',ce.value,ed.value) From {{%content_extend}} ce left JOIN {{%extend_data}} ed ON ed.extendId=ce.id WHERE ce.contentId=c.id AND ce.code='dc4793dfb52237db70b240038d086d98') as alternatives";
+        }
+//文章
+        if(strstr($fields,'article')){
+            $seField .= ",(SELECT CONCAT_WS(' ',ce.value,ed.value) From {{%content_extend}} ce left JOIN {{%extend_data}} ed ON ed.extendId=ce.id WHERE ce.contentId=c.id AND ce.code='b34abe997968ee9a0852814db839f75e') as article";
+        }
+        //听力文件
+        if(strstr($fields,'listeningFile')){
+            $seField .= ",(SELECT CONCAT_WS(' ',ce.value,ed.value) From {{%content_extend}} ce left JOIN {{%extend_data}} ed ON ed.extendId=ce.id WHERE ce.contentId=c.id AND ce.code='99b3cc02b18ec45447bd9fd59f1cd655') as listeningFile";
+        }
+        //中午名称
+        if(strstr($fields,'cnName')){
+            $seField .= ",(SELECT CONCAT_WS(' ',ce.value,ed.value) From {{%content_extend}} ce left JOIN {{%extend_data}} ed ON ed.extendId=ce.id WHERE ce.contentId=c.id AND ce.code='6d67cf3eba969f1515df48f6f43e740d') as cnName";
+        }
+        //句子编号
+        if(strstr($fields,'sentenceNumber')){
+            $seField .= ",(SELECT CONCAT_WS(' ',ce.value,ed.value) From {{%content_extend}} ce left JOIN {{%extend_data}} ed ON ed.extendId=ce.id WHERE ce.contentId=c.id AND ce.code='60883c91048a952f7abe6c666b54648b') as sentenceNumber";
+        }
+        //问题类型
+        if(strstr($fields,'questionType')){
+            $seField .= ",(SELECT CONCAT_WS(' ',ce.value,ed.value) From {{%content_extend}} ce left JOIN {{%extend_data}} ed ON ed.extendId=ce.id WHERE ce.contentId=c.id AND ce.code='1837da083c9ba84649782cda5d7b2cd9') as questionType";
+        }
+
+        //段落编号
+        if(strstr($fields,'numbering')){
+            $seField .= ",(SELECT CONCAT_WS(' ',ce.value,ed.value) From {{%content_extend}} ce left JOIN {{%extend_data}} ed ON ed.extendId=ce.id WHERE ce.contentId=c.id AND ce.code='28ec209ca256d8e34aea41d0bda50fc4') as numbering";
+        }
+        //问题补充听力
+        if(strstr($fields,'problemComplement')){
+            $seField .= ",(SELECT CONCAT_WS(' ',ce.value,ed.value) From {{%content_extend}} ce left JOIN {{%extend_data}} ed ON ed.extendId=ce.id WHERE ce.contentId=c.id AND ce.code='e4dd05210147f22f9da9bdfcb1c0c562') as problemComplement";
+        }
+        if(isset($select['category'])){
+            if(isset($select['type'])){
+                $where .= " AND c.id in(select DISTINCT cc.contentId from {{%category_content}} cc where cc.catId in(".$select['category'].") ) ";
+            }else{
+                $count = count(explode(",",$select['category']));
+                $where .= " AND c.id in(select cc.contentId from {{%category_content}} cc where cc.catId in(".$select['category'].") group by cc.contentId having count(1)=$count ) ";
+            }
+        }
+        $page = isset($select['page'])?$select['page']:1;
+        $order = isset($select['order'])?$select['order']:'c.sort ASC,c.id DESC';
+        $pageSize = isset($select['pageSize'])?$select['pageSize']:10;
+        $limit = (($page-1)*$pageSize).",$pageSize";
+        $sql = "select c.*,ca.name as catName$seField from {{%content}} c LEFT JOIN {{%category}} ca ON c.catId=ca.id where $where";
+        if(isset($select['extend_category'])){
+            $sql = " select * from ($sql) c WHERE id in(select DISTINCT cc.contentId from {{%category_content}} cc where cc.catId in({$select['extend_category']}))  ";
+        }
+        if(isset($select['pageStr'])){
+            $count = count(\Yii::$app->db1->createCommand("$sql")->queryAll());
+            $res = \Yii::$app->db1->createCommand("$sql ORDER BY $order LIMIT ".$limit)->queryAll();
+            $pageModel = new Pager($count,$page,$pageSize);
+            $pageStr = $pageModel->GetPagerContent();
+            $content['pageStr'] = $pageStr;
+            $content['count'] = $count;
+            $content['total'] = ceil($count/$pageSize);
+            $content['data'] = $res;
+        } else {
+            $content = \Yii::$app->db1->createCommand("$sql ORDER BY $order LIMIT ".$limit)->queryAll();
+        }
+
+        // 查询所有 db
+        if(isset($select['countall'])){
+            $content = \Yii::$app->db1->createCommand("select c.*,ca.id as catId,ca.name as catName$seField from {{%content}} c LEFT JOIN {{%category}} ca ON c.catId=ca.id where $where ORDER BY $order")->queryAll();
+        }
+        // 查询所有 db1
+        if(isset($select['countallone'])){
+            $content = \Yii::$app->db1->createCommand("select c.*,ca.id as catId,ca.name as catName$seField from {{%content}} c LEFT JOIN {{%category}} ca ON c.catId=ca.id where $where ORDER BY $order")->queryAll();
+        }
+
+        return $content;
+    }
+
+
+
+
+    //路径替换方法
+    //by sjeam
+    public function updaeturl($text){
+        // 有图片路径 并且 没有/  的情况 添加/
+        if(strpos($text,'files/attach')==true && strpos($text,'/files/attach') == false){
+            $expurl =  explode('files',$text);
+            // var_dump($expurl);
+            $text = $expurl[0].'/files'.$expurl[1];
+        }
+        $parrern = '/<img.*?src="(.*?)".*?\/?>/i';  //i忽略大小写 括号中内容放到内存中        
+        preg_match_all($parrern,$text,$march);
+        $str ='https://gmat.viplgw.cn';
+        if(!empty($march)){
+            foreach($march[1] as $v ){
+                $string =  $str.$v;
+                // var_dump($string);
+                // var_dump($v);
+                $text =  str_replace($v,$string,$text);
+            }
+        }
+        return $text;
+    }
+
+
+
+
+
+    
+    // 去掉图片
+    //by sjeam
+    public function deletestr($text,$str){
+        // 有图片路径 并且 没有/  的情况 添加/
+        if(strpos($text,$str)==true){
+            $parrern = '/<img.*?src="(.*?)".*?\/?>/i';  //i忽略大小写 括号中内容放到内存中        
+            preg_match_all($parrern,$text,$march);
+            $text= str_replace($march[0],"", $text);
+        }
+        return $text;
+    }
 }

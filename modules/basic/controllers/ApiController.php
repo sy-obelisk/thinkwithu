@@ -26,6 +26,7 @@ class ApiController extends ApiControl {
         $status = Yii::$app->request->get('status',1);
         $model = new Block();
         $data = $model->getAllBlock($pid,$status);
+        // var_dump($data);die;
         echo json_encode($data);
 
     }

@@ -33,6 +33,24 @@ $config = [
         ],
     ],
     'components' => [
+
+        'db' => [
+            'class' => 'yii\db\Connection',
+            'dsn' => 'mysql:host=127.0.0.1;dbname=thinkwithu',
+            'username' => 'root',
+            'password' => 'root',
+            'charset' => 'utf8',
+            'tablePrefix'=>'x2_'
+        ],
+        'db1' => [
+            'class' => 'yii\db\Connection',
+            'dsn' => 'mysql:host=127.0.0.1;dbname=liuxu',
+            'username' => 'root',
+            'password' => 'root',
+            'charset' => 'utf8',
+            'tablePrefix'=>'x2_'
+        ],
+
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => '3ggkbEhqR-n2ASj19BJSpbdvpmbO4NwK',
@@ -264,6 +282,15 @@ $config = [
                  'toefl/assistance.html' => 'cn/toeflsheet/index',//toefl单页
                  'studyTool.html' => 'cn/app-tool/index',//APP工具单页
                  'problem.html' => 'cn/index/problem',//每日一题
+
+
+
+                // 出国留学
+                 'study-abroad.html'=>'cn/serve/apply',
+                 'study-abroad/category-<category>/aim-<aim>/country-<country>/page-<page:\d+>.html'=>'cn/serve/apply',
+                 'study-abroad/category-<category>/aim-<aim>/country-<country>/page-<page:\d+>/buyNum-<buyNum:\d+>.html'=>'cn/serve/apply',
+                 'study-abroad/category-<category>/aim-<aim>/country-<country>/page-<page:\d+>/price-<price:\d+>.html'=>'cn/serve/apply',
+                 'study-abroad/category-<category>/aim-<aim>/country-<country>/page-<page:\d+>/time-<time:\d+>.html'=>'cn/serve/apply',
 
              ],
          ],

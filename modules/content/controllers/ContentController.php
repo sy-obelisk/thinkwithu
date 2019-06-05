@@ -8,11 +8,13 @@
 namespace app\modules\content\controllers;
 
 use app\modules\content\models\Category;
+use app\modules\content\models\CategoryTag;
 use app\modules\content\models\Content;
 use app\modules\content\models\CategoryExtend;
 use app\modules\content\models\ContentExtend;
 use app\modules\content\models\ExtendData;
 use app\modules\content\models\CategoryContent;
+use app\modules\content\models\ContentTag;
 use yii;
 use app\libs\AppControl;
 use app\libs\Method;
@@ -72,7 +74,7 @@ class ContentController extends AppControl {
     /**
      * 添加内容与其基本信息
      * @return string
-     * @Obelisk
+     * @Obelisk  sjeam  添加标签组
      */
     public function actionAdd(){
         if($_POST){
@@ -82,6 +84,10 @@ class ContentController extends AppControl {
             $url = Yii::$app->request->post('url');
             $extendId = Yii::$app->request->post('key',[]);
             $extendValue = Yii::$app->request->post('value');
+
+            $tagValue = Yii::$app->request->post('tagValue');
+            $tagKey = Yii::$app->request->post('tagKey',[]);
+
             $category = explode(",",Yii::$app->request->post('category'));
             if(empty($contentData['name'])){
                 die('<script>alert("请输入内容名称");history.go(-1);</script>');
@@ -90,6 +96,7 @@ class ContentController extends AppControl {
                 die('<script>alert("主分类必须在副分类中");history.go(-1);</script>');
             }
             if($id){
+                $this->verifyTag($contentData['pid'],$tagValue,$id);
                 $re = $model->updateAll($contentData,'id = :id',[':id' => $id]);
                 foreach($extendId as $k => $v){
                     $required = ContentExtend::findOne($v);
@@ -120,10 +127,14 @@ class ContentController extends AppControl {
                         }
                     }
                 }
+                foreach($tagKey as $k => $v){
+                    ContentTag::updateAll(['tagContentId' => $tagValue[$k]],'id = :id',[':id' => $v]);
+                }
                 CategoryContent::deleteAll('contentId = :contentId',array(':contentId' => $id));
                 $this->secondClass($id,$category);
             }else{
                 $model->createTime = date("Y-m-d H:i:s");
+                $this->verifyTag($contentData['pid'],$tagValue);
                 $model->userId = Yii::$app->session->get('adminId');
                 $model->name = $contentData['name'];
                 $model->title = $contentData['title'];
@@ -136,6 +147,9 @@ class ContentController extends AppControl {
                 $this->shiftExtend($model->primaryKey,$contentData['catId'],$extendValue);
                 //将分类的内容的副分类存储
                 $this->secondClass($model->primaryKey,$category);
+                if($contentData['pid'] != 0){
+                    $this->addTag($model->primaryKey,$contentData['catId'],$tagValue);
+                }
             }
             if($re=1){
                 $key = $model->primaryKey;
@@ -155,10 +169,13 @@ class ContentController extends AppControl {
             }
             if($catId){
                 $model = new CategoryExtend();
+                $tagModel = new CategoryTag();
                 $cateModel = new Category();
                 $cateName = $cateModel->findOne($catId);
                 $catContent = $model->find()->where("catId=$catId AND belong='content'")->orderBy('id ASC')->all();
-                return $this->render('add',['url' => $url,'pid' => $pid,'catId' => $catId,'catContent' => $catContent,'catName' => $cateName->name]);
+                $catTag =$tagModel->getAllTag($catId);
+               
+                return $this->render('add',['url' => $url,'pid' => $pid,'tag' => $catTag,'catId' => $catId,'catContent' => $catContent,'catName' => $cateName->name]);
             }else{
                 return $this->render('add',['url' => $url]);
             }
@@ -168,7 +185,7 @@ class ContentController extends AppControl {
     /**
      * 修改内容
      * @return string
-     * @Obelisk
+     * @Obelisk  sjeam
      */
     public function actionUpdate(){
         $id = Yii::$app->request->get('id');
@@ -177,6 +194,11 @@ class ContentController extends AppControl {
         if(!empty($url) && !empty($showId)){
             $url .= "&showId=$showId";
         }
+
+        $tagModel = new ContentTag() ;
+        
+        $tag = $tagModel->getAllTag($id);
+        // var_dump($id);die;
         $extendModel = new ContentExtend() ;
         $model = new Content();
         $contentData = $model->findOne($id);
@@ -187,7 +209,7 @@ class ContentController extends AppControl {
             $catId[] = $v['catId'];
         }
         $catId = implode(",",$catId);
-        return $this->render('add',['url' => $url,'data' => $contentData,'catContent' => $extendData,'catId' => $catId,'id' => $id,'catName' => $catName->name]);
+        return $this->render('add',['pid' => $contentData->pid,'url' => $url,'data' => $contentData,'catContent' => $extendData,'tag'=>$tag,'catId' => $catId,'id' => $id,'catName' => $catName->name]);
     }
 
     /**
@@ -304,5 +326,48 @@ class ContentController extends AppControl {
         }
 
         return $model->primaryKey;
+    }
+
+
+        /**
+     * 添加标签
+     * @param $contentId
+     * @param $catId
+     * @param $tagValue
+     * @sjeam
+     */
+     public function addTag($contentId,$catId,$tagValue){
+        $cateExtend = Yii::$app->db->createCommand("select * from {{%category_tag}} WHERE catId=$catId ORDER by id ASC")->queryAll();
+        foreach($cateExtend as $k => $v){
+            $contExtendModel = new ContentTag();
+            $contExtendModel->contentId = $contentId;
+            $contExtendModel->tagCatId = $v['tagCatId'];
+            $contExtendModel->tagContentId = $tagValue[$k]?$tagValue[$k]:'';
+            $contExtendModel->createTime = time();
+            $contExtendModel->save();
+        }
+    }
+
+
+    /**
+     * 验证标签是否可添加；
+     * @sjeam
+     */
+    public function verifyTag($pid,$tagValue,$id=""){
+        if(count($tagValue)>0){
+            $tagStr = implode(",",$tagValue);
+            $count = count($tagValue);
+            if($id){
+                $sql = "select ct.id from {{%content_tag}} ct LEFT JOIN {{%content}} c ON c.id=ct.contentId WHERE ct.contentId != $id AND c.pid = $pid AND c.id IN (select ct.contentId from {{%content_tag}} ct where ct.tagContentId in(".$tagStr.") group by ct.contentId having count(1)=$count )";
+                $sign = Yii::$app->db->createCommand($sql)->queryOne();
+            }else{
+                $sql = "select ct.id from {{%content_tag}} ct LEFT JOIN {{%content}} c ON c.id=ct.contentId WHERE c.pid = $pid AND c.id IN (select m.contentId from {{%content_tag}} m where m.tagContentId in(".$tagStr.") group by m.contentId having count(1)=$count )";
+                $sign = Yii::$app->db->createCommand($sql)->queryOne();
+            }
+            if($sign){
+                die('<script>alert("该套标签的商品已存在");history.go(-1);</script>');
+            }
+        }
+
     }
 }
