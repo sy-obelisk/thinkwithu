@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(246,246,246);
+}
+@font-face {
+    font-family: 'iconfont';  /* project id 938116 */
+    src: url('//at.alicdn.com/t/font_938116_8mnaieh980k.eot');
+    src: url('//at.alicdn.com/t/font_938116_8mnaieh980k.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_938116_8mnaieh980k.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_938116_8mnaieh980k.woff') format('woff'),
+    url('//at.alicdn.com/t/font_938116_8mnaieh980k.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_938116_8mnaieh980k.svg#iconfont') format('svg');
+}
+.teacher_banner{
+    width: 100%;
+}
+.teacher_banner img{
+    width: 100%;
+}
+.teacherContent{
+    width: 1200px;
+    margin: 15px auto;
+}
+.messageNew{
+   overflow: hidden;
+}
+.messageLeft{
+    width: 100px;
+    padding: 7px 15px;
+    float: left;
+    color: white;
+    background: rgb(1,164,229);
+}
+.messageLeft i{
+    color: white;
+    font-size: 18px;
+}
+.messageLeft span{
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 18px;
+}
+.messageRight{
+    width: 1070px;
+    float: left;
+    background: rgb(226,223,223);
+}
+.messageRight .bd ul{
+    /*width: auto!important;*/
+}
+.messageRight .bd ul li{
+    font-size: 14px;
+    height: 38px;
+    line-height: 38px;
+    width: 50%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.teacherTitle {
+    margin: 15px 0;
+    line-height: 60px;
+    text-align: center;
+    color: #994499;
+    font-size: 22px;
+    background: url('/cn/schools/images/bar.png') no-repeat;
+}
+.rightTitleContent {
+    height: 40px;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.rightTitleContent a {
+    display: inline-block;
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0px 15px;
+    border-radius: 5px;
+    margin-left: 20px;
+    position: relative;
+}
+.rightTitleContent a.on {
+    background: #994499;
+    color: white;
+}
+.tea_content{
+    overflow: hidden;
+}
+.tea_details{
+    width: 875px;
+    float: left;
+}
+.tea_details ul li{
+    /*overflow: hidden;*/
+    padding: 25px 15px;
+    background: white;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 0px 2px 5px rgb(211,211,211);
+    -moz-box-shadow: 0px 2px 5px rgb(211,211,211);
+    box-shadow: 0px 2px 5px rgb(211,211,211);
+}
+.tea_img{
+    text-align: center;
+    width: 160px;
+    float: left;
+}
+.tea_img div{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.tea_img div img{
+    width: 100%;
+}
+.tea_img p{
+    margin-top: 5px;
+    font-size: 20px;
+}
+.personal{
+    width: 650px;
+    float: left;
+    margin-left: 15px;
+}
+.Introduction{
+    overflow: hidden;
+}
+.Introduction span{
+    display: inline-block;
+    float: left;
+    font-size: 24px;
+    color: #994499;
+}
+.reservation{
+    font-size: 16px;
+    padding: 3px 10px;
+    display: inline-block;
+    float: right;
+    color:rgb(1,164,229);
+    border-radius: 15px;
+    border: 1px solid ;
+}
+.practicing{
+    font-size: 16px;
+    color: #994499;
+    margin: 15px 0;
+}
+.personalWords{
+    font-size: 15px;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    max-height: 40px;
+}
+.impression{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 10px 0;
+    margin-top: 20px;
+    background: rgb(244,244,244);
+}
+.impression div{
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid rgb(176,176,176);
+}
+.impression div p:nth-child(1){
+    font-weight: bold;
+    font-size: 24px;
+    color: rgb(252,154,2);
+}
+.impression div p:nth-child(2){
+    margin: 15px 0 10px;
+    font-size: 14px;
+    color: rgb(85,85,85);
+}
+.impression div:nth-child(3){
+    border-right: 0px solid rgb(176,176,176)!important;
+}
+.rightCenter{
+    display: flex;
+    margin: 20px auto;
+}
+.rightCenter>div{
+    flex: 1;
+    height: 90px;
+    text-align: center;
+    color: white;
+    background: rgb(164,100,241);
+    margin-right: 10px;
+    font-size: 15px;
+}
+.rightCenter>div img{
+    margin: 15px 0 5px;
+}
+.rightCenter>div p{
+    color: white;
+}
+.rightCenter>div:nth-child(3){
+    margin-right: 0px !important;
+}
+
+
+.rankListLeft {
+    width: 300px;
+    float: right;
+}
+.succesCase {
+    height: 60px;
+    line-height: 60px;
+    text-indent: 10px;
+    color: white;
+    font-size: 18px;
+    background: #994499;
+}
+.caseContent{
+    background: white;
+    padding: 0 15px;
+}
+.caseContent ul li{
+    overflow: hidden;
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(221,221,221);
+}
+.caseName{
+    float: left;
+    margin-left: 10px;
+}
+.caseName p{
+    font-size: 20px;
+    color: #994499;
+}
+.caseName div{
+    margin: 6px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.caseName a{
+    display: inline-block;
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    background: rgb(218,218,218);
+    text-align: center;
+    line-height: 25px;
+}
+.caseName a:hover{
+    background:rgb(1,164,229);
+    color: white;
+}
+.caseImg{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+}
+.caseImg img{
+    width: 100%;
+}
+.advertising_1{
+    height:150px;
+    background: url('/cn/schools/images/abroad-plan.png')no-repeat center;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 3px;
+}
+.advertising_1 p{
+    width: 85%;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin: auto;
+}
+.advertising_2{
+    height:150px;
+    margin-top: 20px;
+    background: url('/cn/schools/images/answers.png')no-repeat center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    letter-spacing: 3px;
+}
+.advertising_2 p{
+    width: 85%;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+.qrCode{
+    margin-top: 20px;
+    height: 300px;
+    background: url('/cn/schools/images/erweimalitter.jpg')no-repeat;
+    background-size: cover;
+}
+.qrCodeP{
+    color: rgb(0,163,233);
+    text-align: center;
+    margin-top: 5px;
+    font-size: 16px;
+}
+.pagetop {
+    position: relative;
+    margin: 40px 0 90px 0;
+}
+#page_s{
+    float: none!important;
+    position: absolute;
+    left: 50%;
+    overflow: hidden;
+    transform: translateX(-50%);
+    display: flex;
+}
+#page_s a{
+    display: block;
+    padding: 3px 10px;
+    border-radius: 3px;
+    color: rgb(153,153,153);
+    margin-right: 15px;
+    border: 1px solid rgb(153,153,153);
+}
+
+.page ul a.on{
+    color: white!important;
+    border: 1px solid #994499!important;
+    background: #994499;
+}

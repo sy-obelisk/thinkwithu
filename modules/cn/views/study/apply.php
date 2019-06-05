@@ -510,7 +510,7 @@
                     </a>
                 </li>
                 <li class="liBG02">
-                    <a href="http://www.gmatonline.cn/practise/index.html" target="_blank">
+                    <a href="http://gmat.viplgw.cn/practise/index.html" target="_blank">
                         <b></b>
                         <img src="/cn/images/quesAnswer_smallIcon02.png" alt="小图标"/>
                         <span>GMAT测试</span>

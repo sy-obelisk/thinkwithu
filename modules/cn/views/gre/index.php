@@ -28,8 +28,8 @@
     <link rel="stylesheet" href="/cn/gre/css/reset.css">
     <link rel="stylesheet" href="/cn/css/header.css"/>
     <link rel="stylesheet" href="/cn/css/footer.css"/>
-    <link rel="stylesheet" href="/cn/css/public.css"/>
-    <link rel="stylesheet" href="/cn/gre/css/gre_index.css">
+    <link rel="stylesheet" href="/cn/css/public.css?v=1.3"/>
+    <link rel="stylesheet" href="/cn/gre/css/gre_index.css?v=1.1">
     <link rel="stylesheet" type="text/css" href="/cn/css/iconfont.css">
     <link rel="stylesheet" href="/cn/css/fonts/font-awesome/css/font-awesome.min.css"/>
     <link rel="shortcut icon" href="http://www.thinkwithu.com/favicon.ico"/>
@@ -53,45 +53,71 @@
 <div style="background: rgb(248,248,248)">
     <div class="banner-wrap">
         <div class="slideBox-1 relative w_100">
-            <div class="b1-bd">
-                <ul><!--循环li-->
+            <div class="hd_banner hd">
+                <ul>
+                    <li class=""></li>
+                    <li class=""></li>
+                    <li class=""></li>
+                </ul>
+            </div>
+            <div class="bd_banner bd" style="width: 100%;overflow: hidden;">
+                <ul>
                     <li>
-                        <a href="http://www.greonline.cn/activity/a-3422.html" target="_blank">
-                            <img  src="http://www.greonline.cn//files/attach/images/20180829/1535532214229847.png" alt="banner图"/>
+                        <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=%E6%96%B0%E5%AE%98%E7%BD%91%EF%BC%88thinkwithu%EF%BC%89&cw=%E5%AE%98%E7%BD%91%E5%8F%B3%E4%BE%A7%E5%AE%A2%E6%9C%8D%E5%88%97%E8%A1%A8http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=%E6%96%B0%E5%AE%98%E7%BD%91%EF%BC%88thinkwithu%EF%BC%89&cw=%E5%AE%98%E7%BD%91%E5%8F%B3%E4%BE%A7%E5%AE%A2%E6%9C%8D%E5%88%97%E8%A1%A8" target="_blank">
+                            <img src="/cn/gre/images/grebanner-1.jpg" alt="留学活动">
                         </a>
                     </li>
                     <li>
-                        <a href="http://www.greonline.cn/course/7772.html" target="_blank">
-                            <img src="http://www.greonline.cn//files/attach/images/20180827/1535338478535151.png" alt="banner图"/>
+                        <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=%E6%96%B0%E5%AE%98%E7%BD%91%EF%BC%88thinkwithu%EF%BC%89&cw=%E5%AE%98%E7%BD%91%E5%8F%B3%E4%BE%A7%E5%AE%A2%E6%9C%8D%E5%88%97%E8%A1%A8http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=%E6%96%B0%E5%AE%98%E7%BD%91%EF%BC%88thinkwithu%EF%BC%89&cw=%E5%AE%98%E7%BD%91%E5%8F%B3%E4%BE%A7%E5%AE%A2%E6%9C%8D%E5%88%97%E8%A1%A8" target="_blank">
+                            <img src="/cn/gre/images/grebanner-2.jpg" alt="留学活动">
                         </a>
                     </li>
                     <li>
-                        <a href="http://www.greonline.cn/course/7755.html" target="_blank">
-                            <img  src="http://www.greonline.cn//files/attach/images/20180408/1523179876612251.png" alt="banner图"/>
+                        <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=%E6%96%B0%E5%AE%98%E7%BD%91%EF%BC%88thinkwithu%EF%BC%89&cw=%E5%AE%98%E7%BD%91%E5%8F%B3%E4%BE%A7%E5%AE%A2%E6%9C%8D%E5%88%97%E8%A1%A8http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=%E6%96%B0%E5%AE%98%E7%BD%91%EF%BC%88thinkwithu%EF%BC%89&cw=%E5%AE%98%E7%BD%91%E5%8F%B3%E4%BE%A7%E5%AE%A2%E6%9C%8D%E5%88%97%E8%A1%A8" target="_blank">
+                            <img src="/cn/gre/images/grebanner-3.jpg" alt="留学活动">
                         </a>
                     </li>
                 </ul>
             </div>
+<!--            <div class="b1-bd">-->
+<!--                <ul><!--循环li-->
+<!--                    <li>-->
+<!--                        <a href="http://gre.viplgw.cn/activity/a-3422.html" target="_blank">-->
+<!--                            <img  src="http://gre.viplgw.cn//files/attach/images/20180829/1535532214229847.png" alt="banner图"/>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a href="http://gre.viplgw.cn/course/7772.html" target="_blank">-->
+<!--                            <img src="http://gre.viplgw.cn//files/attach/images/20180827/1535338478535151.png" alt="banner图"/>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a href="http://gre.viplgw.cn/course/7755.html" target="_blank">-->
+<!--                            <img  src="http://gre.viplgw.cn//files/attach/images/20180408/1523179876612251.png" alt="banner图"/>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </div>-->
         </div>
         <script>
-
-            $(".b1-bd ul").animate({ 'left': '-50px' }, 300, function () {
-                $(".slideBox-1").slide({
-                    mainCell: ".b1-bd ul",
-                    titCell: ".b1-bd ul li",
-                    effect: "leftLoop",
-                    trigger: "click",
-                    autoPlay: true,
-                    easing: "easeInOutQuint",
-                    delayTime: 3000,
-                    interTime: 5000,
-                    defaultPlay: true,
-                    vis: 1,
-                });
-            });
-            //让banner背景左右透明
-            var wid = $(".b1-bd li:first").width();
-            var wind = $(window).width();
+            jQuery(".slideBox-1").slide({mainCell:".bd ul",effect:"leftLoop",autoPlay:true});
+            // $(".b1-bd ul").animate({ 'left': '-50px' }, 300, function () {
+            //     $(".slideBox-1").slide({
+            //         mainCell: ".b1-bd ul",
+            //         titCell: ".b1-bd ul li",
+            //         effect: "leftLoop",
+            //         trigger: "click",
+            //         autoPlay: true,
+            //         easing: "easeInOutQuint",
+            //         delayTime: 3000,
+            //         interTime: 5000,
+            //         defaultPlay: true,
+            //         vis: 1,
+            //     });
+            // });
+            // //让banner背景左右透明
+            // var wid = $(".b1-bd li:first").width();
+            // var wind = $(window).width();
 
         </script>
     </div>
@@ -107,7 +133,7 @@
                                 <div class="inm lof_text">
                                     <p class="list_name">做题</p>
                                     <p class="view_num"><?php echo $numQuestions+1020; ?>人正在做题 </p>
-                                    <div class="m1_btn"><a href="http://www.greonline.cn/practice.html" target="_blank">立即进入</a></div>
+                                    <div class="m1_btn"><a href="http://gre.viplgw.cn/practice.html" target="_blank">立即进入</a></div>
                                 </div>
                             </div>
                         </li>
@@ -117,7 +143,7 @@
                                 <div class="inm lof_text">
                                     <p class="list_name">搜题</p>
                                     <p class="view_num"><?php echo $numSearchs['viewCount']+1020; ?>人正在搜题 </p>
-                                    <div class="m1_btn"><a href="http://www.greonline.cn/search.html" target="_blank">立即进入</a></div>
+                                    <div class="m1_btn"><a href="http://gre.viplgw.cn/search.html" target="_blank">立即进入</a></div>
                                 </div>
                             </div>
                         </li>
@@ -127,7 +153,7 @@
                                 <div class="inm lof_text">
                                     <p class="list_name">备考</p>
                                     <p class="view_num"><?php echo $viewNum ?>人正在学习 </p>
-                                    <div class="m1_btn"><a href="http://www.greonline.cn/beikao.html" target="_blank">立即进入</a></div>
+                                    <div class="m1_btn"><a href="http://gre.viplgw.cn/beikao.html" target="_blank">立即进入</a></div>
                                 </div>
                             </div>
                         </li>
@@ -138,7 +164,7 @@
                     <h1 class="new_model_name">直播课程</h1>
                     <div class="service_line"></div>
                 </div>
-                <div class="tr zb_more"><a href="http://www.greonline.cn/course.html" target="_blank">More>></a></div>
+<!--                <div class="tr zb_more"><a href="http://gre.viplgw.cn/course.html" target="_blank">More>></a></div>-->
                 <div class="live_list_wrap relative picScroll-left">
                     <div class="bd">
                         <ul class="live_list clearfix">
@@ -146,13 +172,14 @@
                             foreach ($course as $v) {
                                 ?>
                                 <li>
-                                    <a href="http://www.greonline.cn/course/<?php echo $v['id'] ?>.html" target="_blank">
+                                    <a href="/gre-course/detail/<?php echo $v['id'] ?>.html" target="_blank">
                                         <div class="live_sub_img">
-                                            <img src="http://www.greonline.cn/<?php echo $v['image'] ?>" alt="">
-                                            <p class="live_date"><?php echo $v['commencement'] ?></p>
+<!--                                            <img src="http://gre.viplgw.cn/--><?php //echo $v['image'] ?><!--" alt="">-->
+                                            <p class="video_left_name"><?php echo $v['commencement'] ?></p>
+                                            <div class="video_left_type">申友GRE</div>
                                         </div>
                                         <div class="live_text_wrap">
-                                            <p class="live_de ellipsis-2"><?php echo $v['name'] ?></p>
+                                            <p class="live_de ellipsis-2"><?php echo str_replace("雷哥", "申友",$v['name']) ?></p>
                                             <!--                                    <div class="tm">-->
                                             <!--                                        <span class="inm" style="width: 100px"><img src="/cn/images/course/course-lijizx.png" alt=""></span>-->
                                             <!--                                    </div>-->
@@ -205,11 +232,11 @@
                             ?>
                             <li>
                                 <div class="small_img">
-                                    <img src="http://www.greonline.cn/<?php echo $v['image'] ?>" alt="">
+                                    <img src="http://gre.viplgw.cn/<?php echo $v['image'] ?>" alt="">
                                 </div>
                                 <div class="small_info_wrap">
                                     <p class="small_h1">
-                                        <a class="ellipsis" href="http://www.greonline.cn/beikao/d-537-<?php echo $v['id'] ?>.html"><?php echo $v['name'] ?></a>
+                                        <a class="ellipsis" href="http://gre.viplgw.cn/beikao/d-537-<?php echo $v['id'] ?>.html"><?php echo $v['name'] ?></a>
                                     </p>
 
                                         <p class="ellipsis small_de"><?php echo $v['answer'] ?></p>
@@ -239,7 +266,7 @@
                                 ?>
                                 <div class="m3_img fl">
                                     <a href="/beikao/d-538-<?php echo $v['id'] ?>.html" target="_blank">
-                                        <img src="http://www.greonline.cn/<?php echo $v['image'] ?>" alt="">
+                                        <img src="http://gre.viplgw.cn/<?php echo $v['image'] ?>" alt="">
                                         <p class="ellipsis m3_img_tit"><?php echo $v['name'] ?></p>
                                     </a>
                                 </div>
@@ -251,7 +278,7 @@
                                 foreach ($word['contents'] as $v) {
                                     ?>
                                     <li>
-                                        <a class="inm bk_tit ellipsis" href="http://www.greonline.cn/beikao/d-538-<?php echo $v['id'] ?>.html"
+                                        <a class="inm bk_tit ellipsis" href="http://gre.viplgw.cn/beikao/d-538-<?php echo $v['id'] ?>.html"
                                            target="_blank"><?php echo $v['name'] ?></a>
                                         <span class="bk_date inm"><?php echo date("Y-m-d", strtotime($v['alternatives'])) ?></span>
                                     </li>
@@ -267,8 +294,8 @@
                             foreach ($read['imageMessage'] as $v) {
                                 ?>
                                 <div class="m3_img fl">
-                                    <a href="http://www.greonline.cn/beikao/d-540-<?php echo $v['id'] ?>.html" target="_blank">
-                                        <img src="http://www.greonline.cn/<?php echo $v['image'] ?>" alt="">
+                                    <a href="http://gre.viplgw.cn/beikao/d-540-<?php echo $v['id'] ?>.html" target="_blank">
+                                        <img src="http://gre.viplgw.cn/<?php echo $v['image'] ?>" alt="">
 
                                         <p class="ellipsis m3_img_tit"><?php echo $v['name'] ?></p>
                                     </a>
@@ -281,7 +308,7 @@
                                 foreach ($read['contents'] as $v) {
                                     ?>
                                     <li>
-                                        <a class="inm bk_tit ellipsis" href="http://www.greonline.cn/beikao/d-540-<?php echo $v['id'] ?>.html"
+                                        <a class="inm bk_tit ellipsis" href="http://gre.viplgw.cn/beikao/d-540-<?php echo $v['id'] ?>.html"
                                            target="_blank"><?php echo $v['name'] ?></a>
                                         <span class="bk_date inm"><?php echo date("Y-m-d", strtotime($v['alternatives'])) ?></span>
                                     </li>
@@ -297,8 +324,8 @@
                             foreach ($blank['imageMessage'] as $v) {
                                 ?>
                                 <div class="m3_img fl">
-                                    <a href="http://www.greonline.cn/beikao/d-539-<?php echo $v['id'] ?>.html" target="_blank">
-                                        <img src="http://www.greonline.cn/<?php echo $v['image'] ?>" alt="">
+                                    <a href="http://gre.viplgw.cn/beikao/d-539-<?php echo $v['id'] ?>.html" target="_blank">
+                                        <img src="http://gre.viplgw.cn/<?php echo $v['image'] ?>" alt="">
 
                                         <p class="ellipsis m3_img_tit"><?php echo $v['name'] ?></p>
                                     </a>
@@ -311,7 +338,7 @@
                                 foreach ($blank['contents'] as $v) {
                                     ?>
                                     <li>
-                                        <a class="inm bk_tit ellipsis" href="http://www.greonline.cn/beikao/d-539-<?php echo $v['id'] ?>.html"
+                                        <a class="inm bk_tit ellipsis" href="http://gre.viplgw.cn/beikao/d-539-<?php echo $v['id'] ?>.html"
                                            target="_blank"><?php echo $v['name'] ?></a>
                                         <span class="bk_date inm"><?php echo date("Y-m-d", strtotime($v['alternatives'])) ?></span>
                                     </li>
@@ -327,8 +354,8 @@
                             foreach ($math['imageMessage'] as $v) {
                                 ?>
                                 <div class="m3_img fl">
-                                    <a href="http://www.greonline.cn/beikao/d-541-<?php echo $v['id'] ?>.html" target="_blank">
-                                        <img src="http://www.greonline.cn/<?php echo $v['image'] ?>" alt="">
+                                    <a href="http://gre.viplgw.cn/beikao/d-541-<?php echo $v['id'] ?>.html" target="_blank">
+                                        <img src="http://gre.viplgw.cn/<?php echo $v['image'] ?>" alt="">
                                         <p class="ellipsis m3_img_tit"><?php echo $v['name'] ?></p>
                                     </a>
                                 </div>
@@ -340,7 +367,7 @@
                                 foreach ($math['contents'] as $v) {
                                     ?>
                                     <li>
-                                        <a class="inm bk_tit ellipsis" href="http://www.greonline.cn/beikao/d-541-<?php echo $v['id'] ?>.html"
+                                        <a class="inm bk_tit ellipsis" href="http://gre.viplgw.cn/beikao/d-541-<?php echo $v['id'] ?>.html"
                                            target="_blank"><?php echo $v['name'] ?></a>
                                         <span class="bk_date inm"><?php echo date("Y-m-d", strtotime($v['alternatives'])) ?></span>
                                     </li>
@@ -356,8 +383,8 @@
                             foreach ($write['imageMessage'] as $v) {
                                 ?>
                                 <div class="m3_img">
-                                    <a href="http://www.greonline.cn/beikao/d-542-<?php echo $v['id'] ?>.html" target="_blank">
-                                        <img src="http://www.greonline.cn/<?php echo $v['image'] ?>" alt="">
+                                    <a href="http://gre.viplgw.cn/beikao/d-542-<?php echo $v['id'] ?>.html" target="_blank">
+                                        <img src="http://gre.viplgw.cn/<?php echo $v['image'] ?>" alt="">
 
                                         <p class="ellipsis m3_img_tit"><?php echo $v['name'] ?></p>
                                     </a>
@@ -370,7 +397,7 @@
                                 foreach ($write['contents'] as $v) {
                                     ?>
                                     <li>
-                                        <a class="inm bk_tit ellipsis" href="http://www.greonline.cn/beikao/d-542-<?php echo $v['id'] ?>.html"
+                                        <a class="inm bk_tit ellipsis" href="http://gre.viplgw.cn/beikao/d-542-<?php echo $v['id'] ?>.html"
                                            target="_blank"><?php echo $v['name'] ?></a>
                                         <span class="bk_date inm"><?php echo date("Y-m-d", strtotime($v['alternatives'])) ?></span>
                                     </li>
@@ -397,7 +424,7 @@
                     <img src="/cn/gre/images/gre-ku.png" alt="图标"/>
 <!--                    <p>雷哥GRE<br>最新更新题目</p>-->
                 </div>
-                <a href="http://www.greonline.cn/search.html">查看更多>></a>
+                <a href="http://gre.viplgw.cn/search.html">查看更多>></a>
             </div>
             <div class="topic-right">
                 <p class="topic-right-title">网络最新GRE题目，及时了解新题考点</p>
@@ -409,7 +436,7 @@
                                 if ($k < 10) {
                                     ?>
                                     <li>
-                                        <a href="http://www.greonline.cn/question/<?php echo $v['id'] ?>.html">
+                                        <a href="http://gre.viplgw.cn/question/<?php echo $v['id'] ?>.html">
                                             <div class="topic-title">
                                                 【<?php echo $v['section'] ?>】-<?php echo $v['source']['alias'] ?>
                                                 -<?php echo $v['id'] ?>
@@ -435,7 +462,7 @@
                                 if ($k > 10) {
                                     ?>
                                     <li>
-                                        <a href="http://www.greonline.cn/question/<?php echo $v['id'] ?>.html">
+                                        <a href="http://gre.viplgw.cn/question/<?php echo $v['id'] ?>.html">
                                             <div class="topic-title">
                                                 【<?php echo $v['section'] ?>】-<?php echo $v['source']['alias'] ?>
                                                 -<?php echo $v['id'] ?>
@@ -470,7 +497,7 @@
         <div class="model_4">
             <div class="w12">
                 <div class="register_enter flex-container-center clearfix">
-                    <div class="fl" style="margin-right: 70px"><img src="/cn/gre/images/gre_1.png" alt=""></div>
+                    <div class="fl" style="margin-right: 70px"><img src="/cn/gre/images/gre_new.png" alt=""></div>
                     <div class="fr tm">
                         <p class="bold_gre">来申友，我们帮你拿高分 </p>
                         <p class="gre_de">全球已有<strong>10000+</strong>你的小伙伴加入申友GRE</p>

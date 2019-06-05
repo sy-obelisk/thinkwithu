@@ -19,7 +19,7 @@
         <span>选择最适合你的题目难度</span>
         <ul>
             <li>
-                <a href="http://www.gmatonline.cn/practise/cepingtishi&kzid=66&cptime=45" target="_blank">
+                <a href="http://gmat.viplgw.cn/practise/cepingtishi&kzid=66&cptime=45" target="_blank">
                     <div class="circleWhite">
                         <span></span>
                         <img src="/cn/images/quesAnswer_cepingIcon01.png" alt="图标"/>
@@ -31,7 +31,7 @@
                 </a>
             </li>
             <li>
-                <a href="http://www.gmatonline.cn/practise/cepingtishi&kzid=67&cptime=45" target="_blank">
+                <a href="http://gmat.viplgw.cn/practise/cepingtishi&kzid=67&cptime=45" target="_blank">
                     <div class="circleWhite">
                         <span></span>
                         <img src="/cn/images/quesAnswer_cepingIcon02.png" alt="图标"/>
@@ -43,7 +43,7 @@
                 </a>
             </li>
             <li>
-                <a href="http://www.gmatonline.cn/practise/cepingtishi&kzid=68&cptime=50" target="_blank">
+                <a href="http://gmat.viplgw.cn/practise/cepingtishi&kzid=68&cptime=50" target="_blank">
                     <div class="circleWhite">
                         <span></span>
                         <img src="/cn/images/quesAnswer_cepingIcon03.png" alt="图标" style="width: 41px"/>
@@ -55,7 +55,7 @@
                 </a>
             </li>
             <li>
-                <a href="http://www.gmatonline.cn/practise/cepingtishi&kzid=69&cptime=55" target="_blank">
+                <a href="http://gmat.viplgw.cn/practise/cepingtishi&kzid=69&cptime=55" target="_blank">
                     <div class="circleWhite">
                         <span></span>
                         <img src="/cn/images/quesAnswer_cepingIcon04.png" alt="图标"/>
@@ -67,7 +67,7 @@
                 </a>
             </li>
             <li>
-                <a href="http://www.gmatonline.cn/practise/cepingtishi&kzid=70&cptime=55" target="_blank">
+                <a href="http://gmat.viplgw.cn/practise/cepingtishi&kzid=70&cptime=55" target="_blank">
                     <div class="circleWhite">
                         <span></span>
                         <img src="/cn/images/quesAnswer_cepingIcon05.png" alt="图标" style="width: 54px"/>

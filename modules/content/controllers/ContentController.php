@@ -141,6 +141,7 @@ class ContentController extends AppControl {
                 $model->pid = $contentData['pid'];
                 $model->image = $contentData['image'];
                 $model->catId = $contentData['catId'];
+                $model->viewCount = $contentData['viewCount'];
                 $re = $model->save();
                 Content::updateAll(['sort' => $model->primaryKey],"id=$model->primaryKey");
                 //将分类的内容属性，转移到内容本身的扩展属性中

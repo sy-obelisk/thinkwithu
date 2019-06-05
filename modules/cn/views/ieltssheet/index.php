@@ -3,13 +3,13 @@
 <!--banner-->
 <section class="courseBanner">
     <div>
-        <img src="/cn/images/itla_banner_03.png" alt="">
+        <img src="/cn/images/itla_banner_new_03.png" alt="">
     </div>
 </section>
 <!--课程-->
 <section class="courseContent">
     <div class="sixgn-top">
-        <p class="courseName">雷哥雅思课程</p>
+        <p class="courseName">申友雅思课程</p>
         <div class="xia"></div>
         <img src="/cn/images/ielts.png">
         <div class="lxia"></div>
@@ -59,11 +59,11 @@
         <div class="fraction_content">
             <div class="content_hd hd">
                 <ul>
-                    <li class=""><p>雅思单项课程</p></li>
                     <li class=""><p>直播课程</p></li>
                     <li class=""><p>面授课程</p></li>
                     <li class=""><p>视频课程</p></li>
                     <li class=""><p>一对一</p></li>
+                    <li class=""><p>雅思单项课程</p></li>
                 </ul>
             </div>
             <div class="content_bd bd">
@@ -74,7 +74,7 @@
                                 <div class="left_name" style=" border-left: 1px solid rgb(190,190,190)!important;">课程名称</div>
                                 <?php foreach($val as $v){?>
                                     <!--                                <td><a class="course-name" href="/toeflcourses/--><?php //echo $v['id']?><!--.html">--><?php //echo $v['name']?><!--</a></td>-->
-                                    <div class="couse"><a href="http://ielts.viplgw.cn/cn/course/detail-<?php echo $v['id']?>.html"><?php echo $v['name']?></a></div>
+                                    <div class="couse"><a href="/ielts-course/detail/<?php echo $v['id']?>.html"><?php echo str_replace("雷哥", "申友",$v['name'])?></a></div>
                                 <?php }?>
                             </div>
                             <div class="fraction_price"><!--课程价格-->
@@ -135,7 +135,7 @@
         <div class="xia"></div>
         <img src="/cn/images/ielts.png">
         <div class="lxia"></div>
-        <p class="c_detail">雷哥雅思服务流程体系: 课前-课中-课后三阶段超值服务</p>
+        <p class="c_detail">申友雅思服务流程体系: 课前-课中-课后三阶段超值服务</p>
     </div>
     <div class="Service_content">
         <div class="k_q">
@@ -146,7 +146,7 @@
         </div>
         <div class="k_z">
             <p class="content_title"><span class="cousr-h">课中</span><span class="horizontal"></span></p>
-            <p><span class="s_img">1</span><span class="s_words">雷哥雅思名师，精品小班/VIP授课</span></p>
+            <p><span class="s_img">1</span><span class="s_words">申友雅思名师，精品小班/VIP授课</span></p>
             <p><span class="s_img">2</span><span class="s_words">复习方案私人制定，阶段作业检测</span></p>
             <p><span class="s_img">3</span><span class="s_words">建立学员档案，每周回访备考情况</span></p>
         </div>

@@ -64,7 +64,7 @@
             <h4>
                 <span> <img src="/cn/images/openD_titleIcon01.png" alt="标题图标"/><span>课程内容</span></span>
             </h4>
-           <pre>
+           <pre style="white-space: pre-wrap">
                <?php echo $data[0]['synopsis']?>
            </pre>
         </div>
@@ -75,7 +75,7 @@
 
         <div class="open-commonStyle">
             <?php
-            $inter = \app\modules\cn\models\Content::getContent(['order'=>'c.viewCount DESC','fields' => 'place,time,','category' => '107','pageSize' => 4,'where' => 'c.catId != 190']);
+            $inter = \app\modules\cn\models\Content::getContent(['order'=>'c.viewCount DESC','fields' => 'place,time,','category' => '107','pageSize' => 4,'where' => 'c.catId != 190' ,'order'=>'c.id desc']);
             ?>
             <ul>
                 <?php

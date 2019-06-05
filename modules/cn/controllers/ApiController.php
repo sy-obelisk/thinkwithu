@@ -1169,7 +1169,7 @@ class ApiController extends ThinkUApiControl {
      * @yoyo
      */
     public function actionOffer(){
-        $data = \app\modules\cn\models\Content::getContent(['fields' => 'score,abroadSchool','category' => "178,102",'limit'=>15]);
+        $data = \app\modules\cn\models\Content::getContent(['fields' => 'score,abroadSchool','category' => "104,207",'limit'=>15]);
         die(json_encode($data));
     }
 
@@ -1180,7 +1180,7 @@ class ApiController extends ThinkUApiControl {
      * @yoyo
      */
     public function actionScore(){
-        $data = \app\modules\cn\models\Content::getContent(['fields' => 'score,abroadSchool','category' => "115,102",'limit'=>15]);
+        $data = \app\modules\cn\models\Content::getContent(['fields' => 'score,abroadSchool','category' => "104,206",'limit'=>15]);
         die(json_encode($data));
     }
 
@@ -1229,7 +1229,7 @@ class ApiController extends ThinkUApiControl {
         $education = strip_tags($apps->post('education'));  /*目前学历*/
         $result['school_rank'] = strip_tags($apps->post('school'));  /*获取就读学校等级*/
         $attendSchool = strip_tags($apps->post('schoolName'));  /*目前学校*/
-        $nowMajor = strip_tags($apps->post('nowMajor'));  /*目前专业名*/
+        $nowMajor = strip_tags($apps->post('major01'));  /*目前专业名*/
         $result['major_top'] = strip_tags($apps->post('major_top'));  /*详细专业*/
         $result['school_major'] = strip_tags($apps->post('school_major'));/*专业方向*/
         $result['result_work'] = $apps->post('work');  /*工作企业*/
@@ -1265,7 +1265,7 @@ class ApiController extends ThinkUApiControl {
         $result['state'] = strip_tags($apps->post('destination'));    /*申请国家*/
         $result['major'] = strip_tags($apps->post('major'));   /*申请专业id*/
         $majorName = strip_tags($apps->post('major02'));   /*专业名*/
-        $data = Method::post("http://schools.smartapply.cn/cn/api/school-choice", ['result' => $result]);
+        $data = Method::post("http://schools.viplgw.cn/cn/api/school-choice", ['result' => $result]);
         $school = json_decode($data, true);
         $most = 6;
         if (!empty($result['result_work'])) {
@@ -1523,10 +1523,10 @@ class ApiController extends ThinkUApiControl {
     {
         $catId = Yii::$app->request->get('catId', "104,88,207");
         $page = Yii::$app->request->get('page', 1);
-//        $data = file_get_contents("http://www.smartapply.cn/cn/api/get-case?catId=$catId&page=$page");
+//        $data = file_get_contents("http://liuxue.viplgw.cn/cn/api/get-case?catId=$catId&page=$page");
 //        $data = json_decode($data, true);
 
-        $data['data'] = Content::getContent(['fields' => 'abroadSchool,major,score,oldSchool', 'category' => "$catId", 'order' => 'c.sort asc,c.id desc', 'pageSize' => 12, 'page' => $page]);
+        $data['data'] = Content::getContent(['fields' => 'abroadSchool,major,score,oldSchool,time', 'category' => "$catId", 'order' => 'c.id desc', 'pageSize' => 12, 'page' => $page]);
         $data['page'] = $page;
         die(json_encode($data));
     }
@@ -1632,7 +1632,7 @@ class ApiController extends ThinkUApiControl {
         $model->contentId = $contentId;
         $model->reportType = $reportType;
         $model->description = $description;
-//        $model->reportCat = $reportCat;
+        $model->cate = $reportCat;
         $model->type = $type;
         $model->userId = '';
         $model->createTime = time();
@@ -1702,5 +1702,37 @@ class ApiController extends ThinkUApiControl {
         die(json_encode($res));
 
     }
+
+    /**
+     *推荐顾问
+     * @yoyo
+     */
+    public function actionRecommendCounselor()
+    {
+        if ($_POST) {
+            $extendVal = Yii::$app->request->post('extendValue');
+            $name = Yii::$app->request->post('name');
+            $code = Yii::$app->request->post('code');
+            $content = new Content();
+            $contentModel = new Practices();
+            $checkTime = $content->checkTime();
+            if(!$checkTime){
+                $res['code'] = 0;
+                $res['message'] = '验证码过期';
+            }else{
+                $checkCode = $content->checkCode($extendVal[2],$code);
+                if(!$checkCode){
+                    $res['code'] = 0;
+                    $res['message'] = '验证码错误';
+                }else{
+                    $data = $contentModel->addContent(270, $name, $extendVal);
+                    $res['code'] = 1;
+                    $res['message'] = '我们的工作人员将于1-2个工作日内跟你联系';
+                }
+            }
+            die(json_encode($res));
+        }
+    }
+
 
 }

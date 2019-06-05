@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'iconfont';  /* project id 938116 */
+    src: url('//at.alicdn.com/t/font_938116_8mnaieh980k.eot');
+    src: url('//at.alicdn.com/t/font_938116_8mnaieh980k.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_938116_8mnaieh980k.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_938116_8mnaieh980k.woff') format('woff'),
+    url('//at.alicdn.com/t/font_938116_8mnaieh980k.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_938116_8mnaieh980k.svg#iconfont') format('svg');
+}
+body{
+    background: rgb(246,246,246);
+}
+.rankListCover{
+    width: 1200px;
+    margin: 30px auto;
+    overflow: hidden;
+}
+.rankListLeft{
+    width: 300px;
+    float: left;
+
+}
+.leftTitle{
+    height: 60px;
+    border-top: 1px solid rgb(254,221,253);
+    line-height: 60px;
+    text-align: center;
+    color: #994499;
+    font-size: 22px;
+    background: rgb(241,240,240);
+}
+.listContent{
+    background: white;
+}
+.listContent li{
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-indent: 35px;
+    padding: 15px 0;
+    font-size: 16px;
+    list-style: none;
+    border-bottom: 1px dotted rgb(212,211,213);
+}
+.listContent li.listOn:after{
+    content: ' ';
+    height: 0;
+    right: 0;
+    position: absolute;
+    width: 10px;
+    border-width: 7px;
+    top: 20px;
+    border-top:7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 15px solid #994499;
+}
+.listContent li:last-child{
+    border-bottom: 0px dotted rgb(212,211,213)!important;
+}
+.recommend{
+    background: url('/cn/schools/images/recommend_1.png')no-repeat ;
+}
+.succesCase{
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color:white;
+    font-size: 22px;
+    background: #994499;
+    margin-top: 30px;
+}
+.caseContent{
+    background: white;
+}
+.caseContent li{
+    width: 95%;
+    margin: auto;
+    padding: 10px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    list-style: none;
+}
+.caseContent li b{
+    color: #994499;
+}
+.caseContent li a{
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 15px;
+}
+.rightCenter{
+    display: flex;
+    margin: 20px auto;
+}
+.rightCenter>div{
+    flex: 1;
+    height: 90px;
+    text-align: center;
+    color: white;
+    background: rgb(164,100,241);
+    margin-right: 10px;
+    font-size: 15px;
+}
+.rightCenter>div img{
+    margin: 15px 0 5px;
+}
+.rightCenter>div p{
+    color: white;
+}
+.rightCenter>div:nth-child(3){
+    margin-right: 0px !important;
+}
+.advertising_1{
+    height:150px;
+    background: url('/cn/schools/images/abroad-plan.png')no-repeat center;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 3px;
+}
+.advertising_1 p{
+    width: 85%;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin: auto;
+}
+.advertising_2{
+    height:150px;
+    margin-top: 20px;
+    background: url('/cn/schools/images/answers.png')no-repeat center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    letter-spacing: 3px;
+}
+.advertising_2 p{
+    width: 85%;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+.qrCode{
+    margin-top: 20px;
+    height: 300px;
+    background: url('/cn/schools/images/erweimalitter.jpg')no-repeat;
+    background-size: cover;
+}
+.qrCodeP{
+    color: rgb(0,163,233);
+    text-align: center;
+    margin-top: 5px;
+    font-size: 16px;
+}
+.rankListRight{
+    width: 875px;
+    float: right;
+    background: white;
+}
+.rightTitle{
+    border-top: 1px solid rgb(254,221,253);
+    line-height: 60px;
+    text-align: center;
+    color: #994499;
+    font-size: 22px;
+    background: rgb(241,240,240);
+}
+.rightTitleContent{
+    height: 40px;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /*justify-content: center;*/
+    align-items: center;
+}
+.rightTitleContent a{
+    display: inline-block;
+    font-size: 18px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0px 15px;
+    border-radius: 15px;
+    margin-left: 20px;
+    position: relative;
+}
+.rightTitleContent a:hover{
+    color: rgb(85,85,85);
+}
+.year{
+    margin: 0 15px 0 20px;
+}
+.rightTitleContent a.on{
+    background: #994499;
+    color: white;
+}
+.new{
+    position: absolute;
+    right: -25px;
+    top: -12px;
+}
+.schoolContent{
+    background: white;
+}
+.schoolContent ul li{
+    margin: auto;
+    list-style: none;
+    width: 90%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid rgb(212,211,213);
+}
+.schoolContent ul li:nth-child(1) .ContentLeft{
+    background:  url('/cn/schools/images/1_1.png')no-repeat!important;
+    background-size: contain;
+    color: white;
+}
+.schoolContent ul li:nth-child(2) .ContentLeft{
+    background:  url('/cn/schools/images/2_2.png')no-repeat!important;
+    background-size: contain;
+    color: white;
+}
+.schoolContent ul li:nth-child(3) .ContentLeft{
+    background:  url('/cn/schools/images/3_3.png')no-repeat!important;
+    background-size: contain;
+    color: white;
+}
+.ContentLeft{
+    background:  url('/cn/schools/images/4_4.png')no-repeat;
+    width: 41px;
+    height: 48px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 48px;
+}
+.ContentCenter{
+    flex: 2;
+    margin-left: 30px;
+    color: rgb(85,85,85);
+}
+.ContentCenter a:hover p{
+    color: #994499;
+}
+.ContentCenter p{
+    padding: 5px 0;
+    font-size: 16px;
+}
+.ContentCenter p:nth-child(2){
+    font-size: 14px;
+}
+.ContentCenter p:nth-child(3){
+    font-size: 14px;
+}
+.ContentCenter b{
+    font-weight: bold;
+    color: rgb(102,102,102);
+    margin-left: 5px;
+}
+
+.ContentRight{
+
+}
+.ContentRight>a{
+    display: block;
+    padding: 5px 20px;
+    border: 1px solid rgb(0,163,233);
+    border-radius: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.ContentRight>a span{
+    color: rgb(0,163,233);
+}
+.ContentRight>a i{
+    display: inline-block;
+    margin-right: 5px;
+    color: rgb(0,163,233);
+}
+.pagetop {
+    position: relative;
+    margin: 40px 0 90px 0;
+}
+#page_s{
+    float: none!important;
+    position: absolute;
+    left: 50%;
+    overflow: hidden;
+    transform: translateX(-50%);
+    display: flex;
+}
+#page_s a{
+    display: block;
+    padding: 3px 10px;
+    border-radius: 3px;
+    color: rgb(153,153,153);
+    margin-right: 15px;
+    border: 1px solid rgb(153,153,153);
+}
+
+.page ul a.on{
+    color: white!important;
+    border: 1px solid #994499!important;
+    background: #994499;
+}

@@ -19,12 +19,14 @@ body{
 }
 @font-face {
     font-family: 'iconfont';  /* project id 864853 */
-    src: url('//at.alicdn.com/t/font_864853_nubtre44qq.eot');
-    src: url('//at.alicdn.com/t/font_864853_nubtre44qq.eot?#iefix') format('embedded-opentype'),
-    url('//at.alicdn.com/t/font_864853_nubtre44qq.woff') format('woff'),
-    url('//at.alicdn.com/t/font_864853_nubtre44qq.ttf') format('truetype'),
-    url('//at.alicdn.com/t/font_864853_nubtre44qq.svg#iconfont') format('svg');
+    src: url('//at.alicdn.com/t/font_864853_jfuoj09mejd.eot');
+    src: url('//at.alicdn.com/t/font_864853_jfuoj09mejd.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_864853_jfuoj09mejd.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_864853_jfuoj09mejd.woff') format('woff'),
+    url('//at.alicdn.com/t/font_864853_jfuoj09mejd.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_864853_jfuoj09mejd.svg#iconfont') format('svg');
 }
+
 img{
     border: 0 none;
 }
@@ -502,7 +504,7 @@ a:hover{
     margin-top: 3px;
 }
 .connectHd ul li{
-	width: 33px;
+	/*width: 33px;*/
 	height: 19px;
 	overflow: hidden;
     float: left;
@@ -2837,10 +2839,13 @@ h1.abroad-tit {
     overflow: hidden;
 }
 .img_left{
-    float: left;
+    /*float: left;*/
 }
 .img_right{
-    float: right;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    /*float: right;*/
 }
 .phone_index,.phoneNum_index{
     color: rgb(153,153,153);
@@ -2867,18 +2872,31 @@ h1.abroad-tit {
     width: 1200px ;
     margin: auto;
     overflow: hidden;
+    position: relative;
+}
+.imgC{
+    display: block;
+    overflow: hidden;
+    float: left;
+    vertical-align: middle;
 }
 .logo-new{
     float: left;
 }
+.logo-new_1{
+    vertical-align: middle;
+    float: left;
+    margin: 20px 70px 0 40px;
+}
 .search_div{
+    float: left;
     width: 400px;
-    margin: auto;
+    height: 19px;
+    margin:6px auto 0;
     border-radius: 20px;
     border: 1px solid rgb(153,68,153);
-    padding: 10px;
+    padding:10px;
     position: relative;
-    margin-top: 6px;
     background: white;
 }
 .seach_index{
@@ -2895,11 +2913,11 @@ h1.abroad-tit {
     background: rgb(153,68,153);
     color: white;
     position: absolute;
-    right: 0px;
+    right: -1px;
     top: 0;
-    height: 39px;
+    /*height: 39px;*/
     text-align: center;
-    line-height: 38px;
+    line-height: 40px;
     width: 60px;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
@@ -3002,6 +3020,7 @@ h1.info-tit {
     top: 0;
     width: 100%;
     background: #974694!important;
+    box-shadow: none!important;
 }
 .a-fiexd {
     color: #ffffff!important;
@@ -3012,6 +3031,9 @@ h1.info-tit {
 
 .nav-wrap {
     background: rgba(248,248,248,0.5);
+    -webkit-box-shadow: 0px 2px 5px #e6e6e6;
+    -moz-box-shadow: 0px 2px 5px #e6e6e6;
+    box-shadow: 0px 2px 5px #e6e6e6;
 }
 .nav-top{
     width: 1200px;
@@ -3115,9 +3137,18 @@ h1.info-tit {
     background: rgb(248,248,248);
     border-radius: 5px;
 }
+.specail{
+    margin-left: 5px;
+    /*width: 90%;*/
+    /*text-align: center;*/
+}
 .eaxm-list li{
     text-align: left;
     padding: 10px 30px 10px 30px;
+    /*background: yellowgreen;*/
+}
+.specail li{
+    padding: 10px 20px 10px 20px!important;
 }
 .eaxm-list-1 li{
     padding: 10px 20px 10px 20px!important;

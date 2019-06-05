@@ -1,10 +1,10 @@
-<link rel="stylesheet" href="/cn/css/gmatSheet.css"/>
+<link rel="stylesheet" href="/cn/css/gmatSheet.css?v=1.1"/>
 <script type="text/javascript" src="/cn/js/gmatSheet.js"></script>
 
 <!--banner-->
 <section class="gmatBanner">
     <div class="banner_cover">
-        <img src="/cn/images/gmatImages/gmat-banner.png" alt="">
+        <img src="/cn/images/gmatImages/GMAT_02.png" alt="">
     </div>
 </section>
 <!--Gmat第一个板块-->
@@ -16,13 +16,19 @@
                 if($k<6){?>
                     <li>
                         <img class="Course_img" src="/cn/images/gmat_erji.png" alt="">
-                        <p><?php echo $v['title']?></p>
-                        <a href="<?php echo 'http://www.gmatonline.cn'.$v['detailUrl']?>" target="_blank">查看课程</a>
+                        <p><?php  echo str_replace("雷哥", "申友",$v['title'])?></p>
+                        <a href="<?php echo '/gmat-course/detail/'.$v['contentid'].'.html'?>" target="_blank">查看课程</a>
                         <a href="<?php echo $v['url']?>" target="_blank">试听课程</a>
                     </li>
                 <?php }
             }
         }?>
+        <li>
+            <img class="Course_img" src="/cn/images/gmat_erji.png" alt="">
+            <p>GMAT一对一VIP课程</p>
+            <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=%E6%96%B0%E5%AE%98%E7%BD%91%EF%BC%88thinkwithu%EF%BC%89&cw=%E5%AE%98%E7%BD%91%E5%8F%B3%E4%BE%A7%E5%AE%A2%E6%9C%8D%E5%88%97%E8%A1%A8http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=%E6%96%B0%E5%AE%98%E7%BD%91%EF%BC%88thinkwithu%EF%BC%89&cw=%E5%AE%98%E7%BD%91%E5%8F%B3%E4%BE%A7%E5%AE%A2%E6%9C%8D%E5%88%97%E8%A1%A8" target="_blank">查看课程</a>
+            <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=%E6%96%B0%E5%AE%98%E7%BD%91%EF%BC%88thinkwithu%EF%BC%89&cw=%E5%AE%98%E7%BD%91%E5%8F%B3%E4%BE%A7%E5%AE%A2%E6%9C%8D%E5%88%97%E8%A1%A8http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=%E6%96%B0%E5%AE%98%E7%BD%91%EF%BC%88thinkwithu%EF%BC%89&cw=%E5%AE%98%E7%BD%91%E5%8F%B3%E4%BE%A7%E5%AE%A2%E6%9C%8D%E5%88%97%E8%A1%A8" target="_blank">试听课程</a>
+        </li>
     </ul>
 </section>
 <!--GMAT出分课程-->
@@ -35,68 +41,341 @@
         <div class="content_hd hd">
             <ul>
                 <li><p>经典课程</p></li>
+                <li><p>面授课程</p></li>
                 <li><p>直播课程</p></li>
                 <li><p>视频课程</p></li>
-                <li><p>面授课程</p></li>
                 <li><p>习题课程</p></li>
                 <li><p>留学套餐</p></li>
             </ul>
         </div>
         <div class="content_bd bd">
-            <?php foreach($course['data']['mainCourse'] as $key=> $val){?>
-            <ul>
-               <div class="fraction_details">
-                   <div class="fraction_name"><!--课程名称-->
-                       <div class="left_name">课程名称</div>
-                       <?php foreach($val['courses'] as $v){?>
-                           <div class="couse"><?php echo $v['contenttitle']?></div>
-                       <?php }?>
-                   </div>
-                   <div class="fraction_price"><!--课程价格-->
-                       <div class="left_price">价格</div>
-                       <?php foreach($val['courses'] as $v){?>
-                           <div><?php echo $v['price']?></div>
-                       <?php }?>
-                   </div>
-                   <div class="fraction_value"><!--性价比-->
-                       <div class="left_value">性价比</div>
-                       <?php foreach($val['courses'] as $v){?>
-                           <div><?php echo $v['cost']?></div>
-                       <?php }?>
-                   </div>
-                   <div class="fraction_startTime"><!--开课时间-->
-                       <div class="left_startTime">开课时间</div>
-                       <?php foreach($val['courses'] as $v){?>
-                           <div><?php echo $v['times']?></div>
-                       <?php }?>
-                   </div>
-                   <div class="fraction_Time"><!--课程时长-->
-                       <div class="left_Time">课程时长</div>
-                       <?php foreach($val['courses'] as $v){?>
-                           <div><?php echo $v['hour']?></div>
-                       <?php }?>
-                   </div>
-                   <div class="fraction_try"><!--试听-->
-                       <div class="left_try">试听</div>
-                       <?php foreach($val['courses'] as $v){?>
-                           <div><a href="<?php echo $v['url']?>" target="_blank">试听</a></div>
-                       <?php }?>
-                   </div>
-                   <div class="fraction_sign"><!--报名-->
-                       <div class="left_sign">报名</div>
-                       <?php foreach($val['courses'] as $v){?>
-                           <div><a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank">立即报名</a></div>
-                       <?php }?>
-                   </div>
-               </div>
-           </ul>
-            <?php }?>
+<!--            --><?php //foreach($course['data']['mainCourse'] as $key=> $val){?>
+
+            <?php foreach ($course['data']['mainCourse'] as $key => $val) {
+                if ($val['name'] == '经典课程') { ?>
+                    <ul>
+                        <div class="fraction_details">
+                            <div class="fraction_name"><!--课程名称-->
+                                <div class="left_name">课程名称</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div class="couse"><a href="/gmat-course/detail/<?php echo $v['contentid'] ?>.html" target="_blank"><?php echo str_replace("雷哥", "申友",$v['contenttitle']) ?></a></div>
+                                <?php } ?>
+                            </div>
+                            <div class="fraction_price"><!--课程价格-->
+                                <div class="left_price">价格</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div><?php echo $v['price'] ?></div>
+                                <?php } ?>
+                            </div>
+                            <div class="fraction_value"><!--性价比-->
+                                <div class="left_value">性价比</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div><?php echo $v['cost'] ?></div>
+                                <?php } ?>
+                            </div>
+                            <div class="fraction_startTime"><!--开课时间-->
+                                <div class="left_startTime">开课时间</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div><?php echo $v['times'] ?></div>
+                                <?php } ?>
+                            </div>
+                            <div class="fraction_Time"><!--课程时长-->
+                                <div class="left_Time">课程时长</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div><?php echo $v['hour'] ?></div>
+                                <?php } ?>
+                            </div>
+                            <div class="fraction_try"><!--试听-->
+                                <div class="left_try">试听</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div><a href="<?php echo $v['url'] ?>" target="_blank">试听</a></div>
+                                <?php } ?>
+                            </div>
+                            <div class="fraction_sign"><!--报名-->
+                                <div class="left_sign">报名</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div>
+                                        <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="
+                                           target="_blank">立即报名</a></div>
+                                <?php } ?>
+                            </div>
+                        </div>
+                    </ul>
+                <?php }
+            } ?>
+            <?php foreach ($course['data']['mainCourse'] as $key => $val) {
+                if ($val['name'] == '面授课程') {
+                    ?>
+                    <ul>
+                        <div class="fraction_details">
+                            <div class="fraction_name"><!--课程名称-->
+                                <div class="left_name">课程名称</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div class="couse"><a href="<?php echo '/gmat-course/detail/'.$v['contentid'].'.html'?>" target="_blank"><?php echo str_replace("雷哥", "申友",$v['contenttitle']) ?></a></div>
+                                <?php } ?>
+                            </div>
+                            <div class="fraction_price"><!--课程价格-->
+                                <div class="left_price">价格</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div><?php echo $v['price'] ?></div>
+                                <?php } ?>
+                            </div>
+                            <div class="fraction_value"><!--性价比-->
+                                <div class="left_value">性价比</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div><?php echo $v['cost'] ?></div>
+                                <?php } ?>
+                            </div>
+                            <div class="fraction_startTime"><!--开课时间-->
+                                <div class="left_startTime">开课时间</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div><?php echo $v['times'] ?></div>
+                                <?php } ?>
+                            </div>
+                            <div class="fraction_Time"><!--课程时长-->
+                                <div class="left_Time">课程时长</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div><?php echo $v['hour'] ?></div>
+                                <?php } ?>
+                            </div>
+                            <div class="fraction_try"><!--试听-->
+                                <div class="left_try">试听</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div><a href="<?php echo $v['url'] ?>" target="_blank">试听</a></div>
+                                <?php } ?>
+                            </div>
+                            <div class="fraction_sign"><!--报名-->
+                                <div class="left_sign">报名</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div>
+                                        <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="
+                                           target="_blank">立即报名</a></div>
+                                <?php } ?>
+                            </div>
+                        </div>
+                    </ul>
+                <?php }
+            } ?>
+            <?php foreach ($course['data']['mainCourse'] as $key => $val) {
+                if ($val['name'] == '直播课程') {
+                    ?>
+                    <ul>
+                        <div class="fraction_details">
+                            <div class="fraction_name"><!--课程名称-->
+                                <div class="left_name">课程名称</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div class="couse"><a href="<?php echo '/gmat-course/detail/'.$v['contentid'].'.html'?>" target="_blank"><?php echo str_replace("雷哥", "申友",$v['contenttitle']) ?></a></div>
+                                <?php } ?>
+                            </div>
+                            <div class="fraction_price"><!--课程价格-->
+                                <div class="left_price">价格</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div><?php echo $v['price'] ?></div>
+                                <?php } ?>
+                            </div>
+                            <div class="fraction_value"><!--性价比-->
+                                <div class="left_value">性价比</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div><?php echo $v['cost'] ?></div>
+                                <?php } ?>
+                            </div>
+                            <div class="fraction_startTime"><!--开课时间-->
+                                <div class="left_startTime">开课时间</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div><?php echo $v['times'] ?></div>
+                                <?php } ?>
+                            </div>
+                            <div class="fraction_Time"><!--课程时长-->
+                                <div class="left_Time">课程时长</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div><?php echo $v['hour'] ?></div>
+                                <?php } ?>
+                            </div>
+                            <div class="fraction_try"><!--试听-->
+                                <div class="left_try">试听</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div><a href="<?php echo $v['url'] ?>" target="_blank">试听</a></div>
+                                <?php } ?>
+                            </div>
+                            <div class="fraction_sign"><!--报名-->
+                                <div class="left_sign">报名</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div>
+                                        <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="
+                                           target="_blank">立即报名</a></div>
+                                <?php } ?>
+                            </div>
+                        </div>
+                    </ul>
+                <?php }
+            } ?>
+            <?php foreach ($course['data']['mainCourse'] as $key => $val) {
+                if ($val['name'] == '视频课程') {
+                    ?>
+                    <ul>
+                        <div class="fraction_details">
+                            <div class="fraction_name"><!--课程名称-->
+                                <div class="left_name">课程名称</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div class="couse"><a href="<?php echo '/gmat-course/detail/'.$v['contentid'].'.html'?>" target="_blank"><?php echo str_replace("雷哥", "申友",$v['contenttitle']) ?></a></div>
+                                <?php } ?>
+                            </div>
+                            <div class="fraction_price"><!--课程价格-->
+                                <div class="left_price">价格</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div><?php echo $v['price'] ?></div>
+                                <?php } ?>
+                            </div>
+                            <div class="fraction_value"><!--性价比-->
+                                <div class="left_value">性价比</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div><?php echo $v['cost'] ?></div>
+                                <?php } ?>
+                            </div>
+                            <div class="fraction_startTime"><!--开课时间-->
+                                <div class="left_startTime">开课时间</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div><?php echo $v['times'] ?></div>
+                                <?php } ?>
+                            </div>
+                            <div class="fraction_Time"><!--课程时长-->
+                                <div class="left_Time">课程时长</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div><?php echo $v['hour'] ?></div>
+                                <?php } ?>
+                            </div>
+                            <div class="fraction_try"><!--试听-->
+                                <div class="left_try">试听</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div><a href="<?php echo $v['url'] ?>" target="_blank">试听</a></div>
+                                <?php } ?>
+                            </div>
+                            <div class="fraction_sign"><!--报名-->
+                                <div class="left_sign">报名</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div>
+                                        <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="
+                                           target="_blank">立即报名</a></div>
+                                <?php } ?>
+                            </div>
+                        </div>
+                    </ul>
+                <?php }
+            } ?>
+            <?php foreach ($course['data']['mainCourse'] as $key => $val) {
+                if ($val['name'] == '习题课程') {
+                    ?>
+                    <ul>
+                        <div class="fraction_details">
+                            <div class="fraction_name"><!--课程名称-->
+                                <div class="left_name">课程名称</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div class="couse"><a href="<?php echo '/gmat-course/detail/'.$v['contentid'].'.html'?>" target="_blank"><?php echo str_replace("雷哥", "申友",$v['contenttitle']) ?></a></div>
+                                <?php } ?>
+                            </div>
+                            <div class="fraction_price"><!--课程价格-->
+                                <div class="left_price">价格</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div><?php echo $v['price'] ?></div>
+                                <?php } ?>
+                            </div>
+                            <div class="fraction_value"><!--性价比-->
+                                <div class="left_value">性价比</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div><?php echo $v['cost'] ?></div>
+                                <?php } ?>
+                            </div>
+                            <div class="fraction_startTime"><!--开课时间-->
+                                <div class="left_startTime">开课时间</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div><?php echo $v['times'] ?></div>
+                                <?php } ?>
+                            </div>
+                            <div class="fraction_Time"><!--课程时长-->
+                                <div class="left_Time">课程时长</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div><?php echo $v['hour'] ?></div>
+                                <?php } ?>
+                            </div>
+                            <div class="fraction_try"><!--试听-->
+                                <div class="left_try">试听</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div><a href="<?php echo $v['url'] ?>" target="_blank">试听</a></div>
+                                <?php } ?>
+                            </div>
+                            <div class="fraction_sign"><!--报名-->
+                                <div class="left_sign">报名</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div>
+                                        <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="
+                                           target="_blank">立即报名</a></div>
+                                <?php } ?>
+                            </div>
+                        </div>
+                    </ul>
+                <?php }
+            } ?>
+            <?php foreach ($course['data']['mainCourse'] as $key => $val) {
+                if ($val['name'] == '留学套餐') {
+                    ?>
+                    <ul>
+                        <div class="fraction_details">
+                            <div class="fraction_name"><!--课程名称-->
+                                <div class="left_name">课程名称</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div class="couse"><a href="<?php echo '/gmat-course/detail/'.$v['contentid'].'.html'?>" target="_blank"><?php echo str_replace("雷哥", "申友",$v['contenttitle']) ?></a></div>
+                                <?php } ?>
+                            </div>
+                            <div class="fraction_price"><!--课程价格-->
+                                <div class="left_price">价格</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div><?php echo $v['price'] ?></div>
+                                <?php } ?>
+                            </div>
+                            <div class="fraction_value"><!--性价比-->
+                                <div class="left_value">性价比</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div><?php echo $v['cost'] ?></div>
+                                <?php } ?>
+                            </div>
+                            <div class="fraction_startTime"><!--开课时间-->
+                                <div class="left_startTime">开课时间</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div><?php echo $v['times'] ?></div>
+                                <?php } ?>
+                            </div>
+                            <div class="fraction_Time"><!--课程时长-->
+                                <div class="left_Time">课程时长</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div><?php echo $v['hour'] ?></div>
+                                <?php } ?>
+                            </div>
+                            <div class="fraction_try"><!--试听-->
+                                <div class="left_try">试听</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div><a href="<?php echo $v['url'] ?>" target="_blank">试听</a></div>
+                                <?php } ?>
+                            </div>
+                            <div class="fraction_sign"><!--报名-->
+                                <div class="left_sign">报名</div>
+                                <?php foreach ($val['courses'] as $v) { ?>
+                                    <div>
+                                        <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw="
+                                           target="_blank">立即报名</a></div>
+                                <?php } ?>
+                            </div>
+                        </div>
+                    </ul>
+                <?php }
+            } ?>
+
+<!--            --><?php //}?>
         </div>
     </div>
 </section>
 <!--GMAT提分展示-->
 <section class="Score ruhe-tifen">
-    <p class="Score_title">申友GAMT如何帮你提分,我们更懂你</p>
+    <p class="Score_title">申友GMAT如何帮你提分,我们更懂你</p>
     <ul>
         <li class="anne-flex on">
             <div class="shu-div">
@@ -282,19 +561,19 @@
                 <a href="#" target="_blank">考试工具</a>
             </li>
             <li>
-                <a href="http://www.gmatonline.cn/guide/32.html" target="_blank">考试时间</a>
+                <a href="http://gmat.viplgw.cn/guide/32.html" target="_blank">考试时间</a>
             </li>
             <li>
-                <a href="http://www.gmatonline.cn/guide/41.html" target="_blank">考试地点</a>
+                <a href="http://gmat.viplgw.cn/guide/41.html" target="_blank">考试地点</a>
             </li>
             <li>
-                <a href="http://www.gmatonline.cn/guide/42.html" target="_blank">考试内容</a>
+                <a href="http://gmat.viplgw.cn/guide/42.html" target="_blank">考试内容</a>
             </li>
             <li>
-                <a href="http://www.gmatonline.cn/guide/43.html" target="_blank">考试流程</a>
+                <a href="http://gmat.viplgw.cn/guide/43.html" target="_blank">考试流程</a>
             </li>
             <li>
-                <a href="http://www.gmatonline.cn/guide/44.html" target="_blank">考试费用</a>
+                <a href="http://gmat.viplgw.cn/guide/44.html" target="_blank">考试费用</a>
             </li>
         </ul>
     </div>

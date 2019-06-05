@@ -10,7 +10,9 @@
     margin: 0;
     padding: 0;
 }
-
+body{
+    overflow-x: hidden;
+}
 /************************头部********************/
 /*.sy-header {*/
     /*padding: 10px 0;*/
@@ -695,7 +697,7 @@
 }
 .ency_recommend{
     width: 100%;
-    height: 193px;
+    /*height: 193px;*/
     background: goldenrod;
     position:relative;
 
@@ -834,7 +836,7 @@
 }
 .eaxm_bot{
     position: absolute;
-    bottom: 90px;
+    bottom: 50px;
     text-align: center;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -842,11 +844,19 @@
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
     left: 50%;
+    width: 100%;
 }
-.eaxm_bot p{
+.eaxm_bot p:nth-child(1){
     text-align: center;
-    font-size: 28px;
+    font-size: 24px;
     color: white;
+    letter-spacing: 2px;
+}
+.eaxm_bot p:nth-child(2){
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    letter-spacing: 1px;
 }
 .eaxm_bot a{
     display: inline-block;
@@ -1018,8 +1028,8 @@
 }
 .eaxm_recommend{
     width: 100%;
-    height: 200px;
-    background: goldenrod;
+    /*height: 200px;*/
+    /*background: goldenrod;*/
     position: relative;
 }
 .eaxm_right_lb{
@@ -1059,8 +1069,8 @@
 .Curriculum_Broadcast {
     position: relative;
     /* overflow: hidden; */
-    padding-top: 20px;
-    max-height: 422px;
+    padding: 20px 0px 100px 0px;
+    max-height: 452px;
 }
 .Curriculum_Broadcast{
     position: relative;
@@ -1076,7 +1086,7 @@
 }
 .recommendation_cover{
     width: 278px;
-    height: 340px;
+    height: 400px;
     border: 1px solid rgb(215,215,215);
     border-radius: 10px;
     background: white;
@@ -1164,39 +1174,48 @@
     cursor: pointer;
 }
 .hdCurriculum{
-    width:60px ;
-    height:350px;
+    /*width:300px ;*/
+    height:44px;
     position: absolute;
-    top: 20px;
-    left: -105px;
-    -webkit-box-shadow:10px 2px 10px 0px rgb(248,248,248);
-    -moz-box-shadow:10px 2px 10px 0px rgb(248,248,248);
-    box-shadow: 10px 2px 10px 0px rgb(248,248,248);
+    bottom: 20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-box-shadow:10px 2px 10px 0px #e0dfdf;
+    -moz-box-shadow:10px 2px 10px 0px #e0dfdf;
+    box-shadow: 10px 2px 10px 0px #e0dfdf;
+    overflow: hidden;
+    border-radius: 10px;
 }
 .hdCurriculum ul li{
-    width: 100%;
+    width: 60px;
     height: 44px;
+    float: left;
     background: white;
     text-align: center;
     border-bottom: 1px solid rgb(224,224,224);
     font-family: 宋体;
     color: rgb(83,83,83);
-    padding-top: 25px;
+    /*padding-top: 25px;*/
     cursor: pointer;
+    line-height: 44px;
 }
 .hdCurriculum ul li:nth-child(1) p{
-    transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
+    /*transform: rotate(90deg);*/
+    /*-ms-transform: rotate(90deg);*/
+    /*-moz-transform: rotate(90deg);*/
+    /*-webkit-transform: rotate(90deg);*/
+    /*-o-transform: rotate(90deg);*/
 }
 .hdCurriculum ul li:nth-child(2) p{
-    transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
+    /*transform: rotate(90deg);*/
+    /*-ms-transform: rotate(90deg);*/
+    /*-moz-transform: rotate(90deg);*/
+    /*-webkit-transform: rotate(90deg);*/
+    /*-o-transform: rotate(90deg);*/
 }
 .Curriculum_more{
     width: 60px;
@@ -1222,15 +1241,14 @@
     font-size: 20px;
 }
 .hdCurriculum ul li:first-child{
-    height: 45px!important;
     border-bottom: 1px solid rgb(224,224,224);
     border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 .hdCurriculum ul li:last-child{
     /*height: 65px!important;*/
+    border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
     border: none!important;
 }
 .hdCurriculum ul li.on{
@@ -1241,7 +1259,7 @@
     color: white;
 }
 .bdCurriculum{
-    max-height: 422px;
+    max-height: 452px;
     overflow: hidden;
 }
 .bdCurriculum .banner{
@@ -1251,7 +1269,7 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     width: 100%;
-    height: 160px;
+    height: 225px;
     overflow: hidden;
     background: goldenrod;
 }
@@ -1291,7 +1309,7 @@
 }
 .teacherTeam{
     width: 1200px;
-    margin: 10px auto;
+    margin: 40px auto;
 }
 .teamCover{
     margin-top: 30px;
@@ -1366,7 +1384,7 @@
     z-index: 10;
 }
 .cotent_img img{
-    margin:20px auto 0px;
+    margin:0px auto 0px;
 }
 .teacher_name{
     font-size: 20px;
@@ -1762,4 +1780,13 @@ h1.abroad-tit {
     top: 12px;
     width: 30px;
     height: 30px;
+}
+/*新版结构修改2019年1月28日 15:54:44*/
+.steps_seven{
+    width: 1200px;
+    margin: auto;
+}
+.eaxm_tab_wap{
+    width: 1300px;
+    margin: auto;
 }

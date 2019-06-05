@@ -12,7 +12,7 @@ class GreController extends ThinkUController {
     public $enableCsrfValidation = false;
     public $layout = 'cn';
     public function actionIndex(){
-        $greContents = file_get_contents("http://www.greonline.cn/cn/api/gre-index");
+        $greContents = file_get_contents("http://gre.viplgw.cn/cn/api/gre-index");
         $greContents = json_decode($greContents,true);
         $contents = $greContents['data'];
         $this->title='GRE培训|GRE考试|GRE在线课程|GRE网课|GRE机经真题_申友GRE培训官网';

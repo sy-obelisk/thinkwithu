@@ -82,7 +82,7 @@
                                                         <div class="clearfix">
                                                             <div class="consult_img fl">
                                                                 <a href="/encyclopedia/<?php echo $v['id'] ?>.html">
-                                                                    <img src="http://www.thinkwithu.com<?php echo $v['image'] ?>" alt="资讯左侧图片">
+                                                                    <img src="http://www.thinkwithu.com<?php echo $v['image']!=false?$v['image']:'/files/attach/images/20181209/1544341497105409.jpg'?>" alt="资讯左侧图片">
                                                                 </a>
                                                             </div>
                                                             <div class="consult_text fr">
@@ -97,7 +97,7 @@
                                                                         <div class="xiaobian_tx">
                                                                             <a href="">
                                                                                 <img
-                                                                                    src="http://www.smartapply.cn/cn/images/editor-user/JL.png"
+                                                                                    src="http://liuxue.viplgw.cn/cn/images/editor-user/JL.png"
                                                                                     alt="小编头像">
                                                                             </a>
                                                                         </div>
@@ -146,7 +146,7 @@
                                     <li>
                                         <div class="inter-num"><?php echo $k + 1 ?></div>
                                         <div class="inter-img">
-                                            <img src="http://schools.smartapply.cn<?php echo $v['image'] ?>" alt="学校图片">
+                                            <img src="http://schools.viplgw.cn<?php echo $v['image'] ?>" alt="学校图片">
                                         </div>
                                         <div class="inter-info">
                                             <h4><a href="/schools/<?php echo $v['id'] ?>.html"><?php echo $v['name'] ?>
@@ -191,36 +191,40 @@
                 consult_list.empty();
                 var da=data.data;
                 for(var i=0;i<da.length;i++){
-                    str+='<li class="nc" data-id="'+ da[i].id +'">' +
-                        '<div class="clearfix">' +
-                        '<div class="consult_img fl">' +
-                        '<a href="/encyclopedia/'+ da[i].id +'.html">' +
-                        '<img src="http://www.thinkwithu.com'+da[i].image+'" alt="资讯左侧图片">' +
-                        '</a>' +
-                        '</div>' +
-                        '<div class="consult_text fr">' +
-                        '<p class="ellipsis consult_tit">' +
-                        '<a href="/encyclopedia/'+ da[i].id +'.html">' +da[i].name+ '</a>' +
-                        '</p>' +
-                        '<p class="ellipsis-2 consult_de">'+da[i].abstract+'</p>' +
-                        '<div class="consult_view clearfix">' +
-                        '<div class="fl">' +
-                        '<div class="xiaobian_tx">' +
-                        '<a href="">' +
-                        '<img src="http://www.smartapply.cn/cn/images/editor-user/JL.png"> '+
-                        '</a>' +
-                        '</div>' +
-                        '<span class="xiaob_name">' +
-                        '<a href="javascript:void(0);">申友</a>' +
-                        '</span>' +
-                        '<span>'+da[i].createTime+'</span>' +
-                        '<span class="view_line">|</span>' +
-                        '<span>阅读（'+da[i].viewCount+'）</span>' +
-                        '</div>' +
-                        '</div>' +
-                        '</div>' +
-                        '</div>' +
-                        '</li>';
+                    str+='<li class="nc" data-id="'+ da[i].id +'">' ;
+                    str+='<div class="clearfix">' ;
+                    str+=  '<div class="consult_img fl">';
+                    str+=  '<a href="/encyclopedia/'+ da[i].id +'.html">' ;
+                    if(da[i].image){
+                        str+=  '<img src="http://www.thinkwithu.com'+da[i].image+'" alt="资讯左侧图片">' ;
+                    }else {
+                        str+=  '<img src="http://www.thinkwithu.com/files/attach/images/20181209/1544341497105409.jpg" alt="资讯左侧图片">' ;
+                    }
+                    str+='</a>' ;
+                    str+=   '</div>' ;
+                    str+=  '<div class="consult_text fr">';
+                    str+=  '<p class="ellipsis consult_tit">' ;
+                    str+=  '<a href="/encyclopedia/'+ da[i].id +'.html">' +da[i].name+ '</a>' ;
+                    str+=  '</p>' ;
+                    str+=  '<p class="ellipsis-2 consult_de">'+da[i].abstract+'</p>' ;
+                    str+= '<div class="consult_view clearfix">';
+                    str+= '<div class="fl">' ;
+                    str+=   '<div class="xiaobian_tx">' ;
+                    str+=  '<a href="">' ;
+                    str+=  '<img src="http://liuxue.viplgw.cn/cn/images/editor-user/JL.png"> ';
+                    str+=  '</a>' ;
+                    str+= '</div>' ;
+                    str+= '<span class="xiaob_name">' ;
+                    str+= '<a href="javascript:void(0);">申友</a>' ;
+                    str+=  '</span>' ;
+                    str+= '<span>'+da[i].createTime+'</span>' ;
+                    str+=  '<span class="view_line">|</span>' ;
+                    str+=  '<span>阅读（'+da[i].viewCount+'）</span>';
+                    str+=  '</div>' ;
+                    str+=  '</div>';
+                    str+= '</div>';
+                    str+= '</div>' ;
+                    str+=  '</li>';
                 }
                 consult_list.html(str);
 

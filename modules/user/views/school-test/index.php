@@ -63,6 +63,7 @@
                 <th>申请国家</th>
                 <th>申请专业</th>
                 <th>分数</th>
+                <th>测评时间</th>
 <!--                <th>链接</th>-->
             </tr>
             </thead>
@@ -82,7 +83,8 @@
                     <td><?php echo Yii::$app->params['country'][$v['country']]?></td>
                     <td><?php echo $v['majorName']?></td>
                     <td><?php echo $v['score']?></td>
-<!--                    <td><a href="/choice-result/--><?php //echo $v['id']?><!--.html" target="_blank">choice-result/--><?php //echo $v['id']?><!--.html</a></td>-->
+                    <td><?php echo date('Y-m-d H:i:s',$v['createTime'])?></td>
+                    <!--                    <td><a href="/choice-result/--><?php //echo $v['id']?><!--.html" target="_blank">choice-result/--><?php //echo $v['id']?><!--.html</a></td>-->
                 </tr>
                 <?php
             }

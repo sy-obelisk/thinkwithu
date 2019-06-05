@@ -35,9 +35,9 @@
         $seo['keywords'] = '';
         $seo['description'] = '';
     } elseif ($url == '/toefl/assistance.html') {
-        $seo['title'] = 'TOEFL(托福)培训-托福课程-托福辅导-托福在线课程-申友网';
-        $seo['keywords'] = '托福报名，托福考试时间，托福备考，托福机经，托福真题，托福培训，托福课程，托福网络课程，托福辅导，托福班，托福听力，托福口语、托福词汇、托福写作、托福阅读';
-        $seo['description'] = '申友托福培训平台致力培育托福高分学员。为学员提供关于托福报名，托福考试时间，托福机经，托福真题，托福听力，托福口语、托福词汇、托福写作、托福阅读等专业的托福备考信息，被业界称为“托福高分基地”。';
+        $seo['title'] = '申友官网-留学咨询—名校留学专业申请机构-托福/雅思/GMAT/GRE培训机构-申友网';
+        $seo['keywords'] = '出国留学 名校留学 留学咨询 留学条件 留学机构哪家好 美国留学 美国留学咨询机构 美国留学服务 GMAT培训 雅思培训 托福培训 GRE培训';
+        $seo['description'] = '申友留学，专注商科与STEM留学咨询，提供留学申请一站式服务，是GMAT与托福 雅思培训的行业领跑者。申友专注美国、英国、加拿大、澳洲、香港等名校留学，留学咨询，出国留学，托福 雅思与GMAT培训，尽在申友。';
     } elseif (strstr($url, '/teachers/')) {
         $seo['title'] = 'GMAT名师、托福名师、留学顾问';
         $seo['keywords'] = '';
@@ -109,9 +109,9 @@
     <script type="text/javascript" src="//s.union.360.cn/7302.js"></script>
     <link rel="stylesheet" href="/cn/css/header.css"/>
     <link rel="stylesheet" href="/cn/css/footer.css"/>
-    <link rel="stylesheet" href="/cn/css/public.css"/>
+    <link rel="stylesheet" href="/cn/css/public.css?v=1.3"/>
     <link rel="stylesheet" href="/cn/Hirsi/css/reset.css">
-    <link rel="stylesheet" href="/cn/Hirsi/css/index.css">
+    <link rel="stylesheet" href="/cn/Hirsi/css/index.css?v=1.3">
     <link rel="stylesheet" type="text/css" href="/cn/css/iconfont.css">
     <link rel="stylesheet" href="/cn/css/fonts/font-awesome/css/font-awesome.min.css"/>
     <link rel="shortcut icon" href="http://www.thinkwithu.com/favicon.ico"/>
@@ -146,7 +146,7 @@
     </div>
 
 </section>
-<!--留学百科-->
+<!--部分战绩以及留学服务-->
 <section class="index_Record">
     <img class="Record_map" src="/cn/Hirsi/images/map.png" alt="">
     <!--部分战绩-->
@@ -158,28 +158,28 @@
                 <img class="uyLogo" src="/cn/Hirsi/images/stanford.gif" alt="">
                 <div>
                     <p class="ut_name">Stanford</p>
-                    <p class="ut_num"><span>60</span>例</p>
+                    <p class="ut_num"><span>35</span>例</p>
                 </div>
             </div>
             <div class="logo_content">
                 <img class="uyLogo" src="/cn/Hirsi/images/princeton.gif" alt="">
                 <div>
                     <p class="ut_name">Princeton</p>
-                    <p class="ut_num"><span>25</span>例</p>
+                    <p class="ut_num"><span>12</span>例</p>
                 </div>
             </div>
             <div class="logo_content">
                 <img class="uyLogo" src="/cn/Hirsi/images/mit.gif" alt="" style="margin-top: 20px">
                 <div>
                     <p class="ut_name">MIT</p>
-                    <p class="ut_num"><span>48</span>例</p>
+                    <p class="ut_num"><span>23</span>例</p>
                 </div>
             </div>
             <div class="logo_content">
                 <img class="uyLogo" src="/cn/Hirsi/images/berkeley.gif" alt="">
                 <div>
                     <p class="ut_name">Berkeley</p>
-                    <p class="ut_num"><span>83</span>例</p>
+                    <p class="ut_num"><span>30</span>例</p>
                 </div>
             </div>
         </div>
@@ -188,28 +188,28 @@
                 <img class="uyLogo" src="/cn/Hirsi/images/cmu.gif" alt="">
                 <div>
                     <p class="ut_name">CMU</p>
-                    <p class="ut_num"><span>78</span>例</p>
+                    <p class="ut_num"><span>28</span>例</p>
                 </div>
             </div>
             <div class="logo_content">
                 <img class="uyLogo" src="/cn/Hirsi/images/harvard.gif" alt="">
                 <div>
                     <p class="ut_name">Harvard</p>
-                    <p class="ut_num"><span>39</span>例</p>
+                    <p class="ut_num"><span>18</span>例</p>
                 </div>
             </div>
             <div class="logo_content">
                 <img class="uyLogo" src="/cn/Hirsi/images/oxford.gif" alt="">
                 <div>
                     <p class="ut_name">Oxford</p>
-                    <p class="ut_num"><span>8</span>例</p>
+                    <p class="ut_num"><span>14</span>例</p>
                 </div>
             </div>
             <div class="logo_content">
                 <img class="uyLogo" src="/cn/Hirsi/images/cambridge.gif" alt="">
                 <div>
                     <p class="ut_name">Cambridge</p>
-                    <p class="ut_num"><span>14</span>例</p>
+                    <p class="ut_num"><span>21</span>例</p>
                 </div>
             </div>
         </div>
@@ -218,7 +218,7 @@
     <div class="study_service">
         <p class="Record_title">留学服务</p>
         <div class="service_line"></div>
-        <div class="first_title"><span>|</span>留学服务</div>
+        <div class="first_title"><span>|</span>名校留学产品</div>
         <div class="service_list">
             <!--留学服务轮播  循环li-->
             <div class="service_bd">
@@ -227,7 +227,11 @@
                     <li>
                         <img src="<?php echo $v['image']?>" alt="">
                         <div class="service_bot">
-                            <p><?php echo $v['name']?></p>
+                           <?php $arr=explode(' ',$v['name']);
+                                foreach($arr as $val){
+                                    echo '<p>'.$val.'</p>';
+                                }
+                                ?>
                             <a href="/word-details/<?php echo $v['id']?>/index,261.html">查看详情</a>
                         </div>
                     </li>
@@ -237,58 +241,220 @@
             <a class="next"><i class="iconfont next_icon">&#xe602;</i></a>
             <a class="prev"><i class="iconfont prev_icon">&#xe601;</i></a>
         </div>
-        <!--留学七步曲-->
-        <div class="first_title"><span>|</span>留学七步曲</div>
-        <div class="steps_study">
-            <div class="steps_left">
-                <p class="steps_num">0 1</p>
-                <p class="steps_time">时间规划</p>
-                <p class="steps_left_word">三大申请规划方案</p>
-                <p class="steps_left_word">明确名校申请计划</p>
+
+    </div>
+</section>
+<!--考试服务-->
+<section class="eaxm_service">
+    <p class="Record_title">考试服务</p>
+    <div class="service_line"></div>
+    <div class="eaxm_list">
+        <!--留学服务轮播  循环li-->
+        <div class="eaxm_bd">
+            <ul>
+                <li>
+                    <img src="/cn/Hirsi/images/test-1.png" alt="">
+                    <div class="eaxm_bot">
+                        <p>申友GMAT</p>
+                        <p>提分课程</p>
+                        <a href="/gmatsheet.html">查看详情</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="/cn/Hirsi/images/test-2.png" alt="">
+                    <div class="eaxm_bot">
+                        <p>申友GRE</p>
+                        <p>提分课程</p>
+                        <a href="/gre.html">查看详情</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="/cn/Hirsi/images/test-3.png" alt="">
+                    <div class="eaxm_bot">
+                        <p>申友托福</p>
+                        <p>提分课程</p>
+                        <a href="/toefl/assistance.html">查看详情</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="/cn/Hirsi/images/test-4.png" alt="">
+                    <div class="eaxm_bot">
+                        <p>申友雅思</p>
+                        <p>提分课程</p>
+                        <a href="/ieltssheet.html">查看详情</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="/cn/Hirsi/images/test-5.png" alt="">
+                    <div class="eaxm_bot">
+                        <p>申友SAT</p>
+                        <p>提分课程</p>
+                        <a href="/satsheet.html">查看详情</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--        <a class="next"><i class="iconfont next_icon">&#xe602;</i></a>-->
+        <!--        <a class="prev"><i class="iconfont prev_icon">&#xe601;</i></a>-->
+    </div>
+</section>
+<!--成功案例-->
+<section class="success_case">
+    <p class="Record_title">成功案例</p>
+    <div class="service_line"></div>
+    <div class="Curriculum_Broadcast">
+        <div class="hd hdCurriculum">
+            <ul>
+                <li><p>留学</p></li>
+                <li><p>GMAT</p></li>
+                <li><p>雅思</p></li>
+                <li><p>托福</p></li>
+                <!--                <li><p>GRE</p></li>-->
+            </ul>
+        </div>
+        <div class="bdCurriculum bd">
+            <ul class="banner"><!--外层循环li-->
+                <li><!--内层层循环div  recommendation-->
+                    <?php foreach($case['abroad'] as $v){?>
+                        <div class="recommendation">
+                            <div class="recommendation_cover">
+                                <div class="reco_img"><img src="<?php echo $v['image']?>" alt="申友留学案例"></div>
+                                <div class="reco_iforma">
+                                    <p>姓名:<?php echo $v['name']?></p>
+                                    <p>毕业院校:<?php echo $v['oldSchool']?></p>
+                                    <p>硬件条件:<?php echo $v['score']?></p>
+                                    <p>录取学校:<?php echo $v['abroadSchool']?></p>
+                                    <p>录取专业:<?php echo $v['major']?></p>
+                                </div>
+                                <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank"><div class="zx_btn">咨询名校秘籍</div></a>
+                            </div>
+                        </div>
+                    <?php }?>
+                </li>
+                <li>
+                    <?php foreach($case['gmat'] as $v){?>
+                        <div class="recommendation">
+                            <div class="recommendation_cover">
+                                <div class="reco_img"><img src="<?php echo $v['image']?>" alt="申友高分案例"></div>
+                                <div class="reco_iforma">
+                                    <p>姓名:<?php echo $v['name']?></p>
+                                    <p>分数:<?php echo $v['score']?></p>
+                                    <p>出分时间:<?php echo $v['time']?></p>
+                                    <p><?php echo $v['title']?></p>
+                                </div>
+                                <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank"><div class="zx_btn">咨询高分秘籍</div></a>
+                            </div>
+                        </div>
+                    <?php }?>
+                </li>
+                <li>
+                    <?php foreach($case['ielts'] as $v){?>
+                        <div class="recommendation">
+                            <div class="recommendation_cover">
+                                <div class="reco_img"><img src="<?php echo $v['image']?>" alt="申友高分案例"></div>
+                                <div class="reco_iforma">
+                                    <p>姓名:<?php echo $v['name']?></p>
+                                    <p>分数:<?php echo $v['score']?></p>
+                                    <p>出分时间:<?php echo $v['time']?></p>
+                                    <p><?php echo $v['title']?></p>
+                                </div>
+                                <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank"><div class="zx_btn">咨询高分秘籍</div></a>
+                            </div>
+                        </div>
+                    <?php }?>
+                </li>
+                <li>
+                    <?php foreach($case['toefl'] as $v){?>
+                        <div class="recommendation">
+                            <div class="recommendation_cover">
+                                <div class="reco_img"><img src="<?php echo $v['image']?>" alt="申友高分案例"></div>
+                                <div class="reco_iforma">
+                                    <p>姓名:<?php echo $v['name']?></p>
+                                    <p>分数:<?php echo $v['score']?></p>
+                                    <p>出分时间:<?php echo $v['time']?></p>
+                                    <p><?php echo $v['title']?></p>
+                                </div>
+                                <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank"><div class="zx_btn">咨询高分秘籍</div></a>
+                            </div>
+                        </div>
+                    <?php }?>
+                </li>
+                <li>
+                    <?php foreach($case['gre'] as $v){?>
+                        <div class="recommendation">
+                            <div class="recommendation_cover">
+                                <div class="reco_img"><img src="<?php echo $v['image']?>" alt="申友高分案例"></div>
+                                <div class="reco_iforma">
+                                    <p>姓名:<?php echo $v['name']?></p>
+                                    <p>分数:<?php echo $v['score']?></p>
+                                    <p>出分时间:<?php echo $v['time']?></p>
+                                    <p><?php echo $v['title']?></p>
+                                </div>
+                                <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank"><div class="zx_btn">咨询高分秘籍</div></a>
+                            </div>
+                        </div>
+                    <?php }?>
+                </li>
+
+            </ul>
+        </div>
+        <div style="clear: both"></div>
+    </div>
+</section>
+<!--留学七步曲-->
+<section class="steps_seven">
+    <div class="first_title"><span>|</span>留学七步曲解决方案</div>
+    <div class="steps_study">
+        <div class="steps_left">
+            <p class="steps_num">0 1</p>
+            <p class="steps_time">时间规划</p>
+            <p class="steps_left_word">三大申请规划方案</p>
+            <p class="steps_left_word">明确名校申请计划</p>
+        </div>
+        <div class="steps_right">
+            <div class="steps_right_div steps_right2">
+                <p class="steps_num_right">0 2</p>
+                <p class="steps_time_right">背景提升</p>
+                <p class="steps_right_word">专业背景竞争力提升辅导</p>
+                <p class="steps_right_word">申请策略辅导和执行</p>
             </div>
-            <div class="steps_right">
-                <div class="steps_right_div steps_right2">
-                    <p class="steps_num_right">0 2</p>
-                    <p class="steps_time_right">背景提升</p>
-                    <p class="steps_right_word">专业背景竞争力提升辅导</p>
-                    <p class="steps_right_word">申请策略辅导和执行</p>
-                </div>
-                <div class="steps_right_div steps_right3">
-                    <p class="steps_num_right">0 3</p>
-                    <p class="steps_time_right">专家选校</p>
-                    <p class="steps_right_word">专家选校建议和指导</p>
-                    <p class="steps_right_word">确立目标名校名单</p>
-                </div>
-                <div class="steps_right_div steps_right4">
-                    <p class="steps_num_right">0 4</p>
-                    <p class="steps_time_right">文书设计</p>
-                    <p class="steps_right_word">制作优秀高质量的文书</p>
-                    <p class="steps_right_word">准备申请材料</p>
-                </div>
-                <div class="steps_right_div step10 steps_right5">
-                    <p class="steps_num_right">0 5</p>
-                    <p class="steps_time_right">申请手续</p>
-                    <p class="steps_right_word">完成客户指定目标学校申请</p>
-                    <p class="steps_right_word">学校联系与“套磁”帮助</p>
-                </div>
-                <div class="steps_right_div step10 steps_right6">
-                    <p class="steps_num_right">0 6</p>
-                    <p class="steps_time_right">面试指导</p>
-                    <p class="steps_right_word">精细的面试分析</p>
-                    <p class="steps_right_word">优质的面试辅导</p>
-                </div>
-                <div class="steps_right_div step10 steps_right7">
-                    <p class="steps_num_right">0 7</p>
-                    <p class="steps_time_right">出国签证</p>
-                    <p class="steps_right_word">出国咨询高端服务</p>
-                    <p class="steps_right_word">圆梦留学海外</p>
-                </div>
+            <div class="steps_right_div steps_right3">
+                <p class="steps_num_right">0 3</p>
+                <p class="steps_time_right">专家选校</p>
+                <p class="steps_right_word">专家选校建议和指导</p>
+                <p class="steps_right_word">确立目标名校名单</p>
+            </div>
+            <div class="steps_right_div steps_right4">
+                <p class="steps_num_right">0 4</p>
+                <p class="steps_time_right">文书设计</p>
+                <p class="steps_right_word">制作优秀高质量的文书</p>
+                <p class="steps_right_word">准备申请材料</p>
+            </div>
+            <div class="steps_right_div step10 steps_right5">
+                <p class="steps_num_right">0 5</p>
+                <p class="steps_time_right">申请手续</p>
+                <p class="steps_right_word">完成客户指定目标学校申请</p>
+                <p class="steps_right_word">学校联系与“套磁”帮助</p>
+            </div>
+            <div class="steps_right_div step10 steps_right6">
+                <p class="steps_num_right">0 6</p>
+                <p class="steps_time_right">面试指导</p>
+                <p class="steps_right_word">精细的面试分析</p>
+                <p class="steps_right_word">优质的面试辅导</p>
+            </div>
+            <div class="steps_right_div step10 steps_right7">
+                <p class="steps_num_right">0 7</p>
+                <p class="steps_time_right">出国签证</p>
+                <p class="steps_right_word">出国咨询高端服务</p>
+                <p class="steps_right_word">圆梦留学海外</p>
             </div>
         </div>
     </div>
-    <!--留学系统-->
+</section>
+<!--留学系统-->
+<section>
     <div class="studySystem">
-        <div class="first_title studySystem_title"><span>|</span>CRM 留学系统</div>
+        <div class="first_title studySystem_title"><span>|</span>CRM 在线留学系统</div>
         <div class="seven_steps">
             <div class="steps_div">
                 <i class="iconfont stepsIcon">&#xe60a;</i>
@@ -342,7 +508,7 @@
                <li>香港</li>
                <li>欧洲</li>
                <li>亚洲</li>
-               <div><a href="">More>></a></div>
+               <div><a target="_blank" href="/encyclopedia/master.html">More>></a></div>
            </ul>
        </div>
        <div style="width: 100%;overflow: hidden">
@@ -362,7 +528,7 @@
                                    ?>
                                    <li class="ency_school">
                                        <div class="ency_logo">
-                                           <img src="http://schools.smartapply.cn<?php echo $v['image'] ?>" alt="">
+                                           <img src="http://schools.viplgw.cn<?php echo $v['image'] ?>" alt="">
                                        </div>
                                        <p class="ency_name"><?php echo $v['name'] ?></p>
 
@@ -399,7 +565,7 @@
                                    ?>
                                    <li class="ency_school">
                                        <div class="ency_logo">
-                                           <img src="http://schools.smartapply.cn<?php echo $v['image'] ?>" alt="">
+                                           <img src="http://schools.viplgw.cn<?php echo $v['image'] ?>" alt="">
                                        </div>
                                        <p class="ency_name"><?php echo $v['name'] ?></p>
 
@@ -435,7 +601,7 @@
                                    ?>
                                    <li class="ency_school">
                                        <div class="ency_logo">
-                                           <img src="http://schools.smartapply.cn<?php echo $v['image'] ?>" alt="">
+                                           <img src="http://schools.viplgw.cn<?php echo $v['image'] ?>" alt="">
                                        </div>
                                        <p class="ency_name"><?php echo $v['name'] ?></p>
 
@@ -472,7 +638,7 @@
                                    ?>
                                    <li class="ency_school">
                                        <div class="ency_logo">
-                                           <img src="http://schools.smartapply.cn<?php echo $v['image'] ?>" alt="">
+                                           <img src="http://schools.viplgw.cn<?php echo $v['image'] ?>" alt="">
                                        </div>
                                        <p class="ency_name"><?php echo $v['name'] ?></p>
 
@@ -510,7 +676,7 @@
                                    ?>
                                    <li class="ency_school">
                                        <div class="ency_logo">
-                                           <img src="http://schools.smartapply.cn<?php echo $v['image'] ?>" alt="">
+                                           <img src="http://schools.viplgw.cn<?php echo $v['image'] ?>" alt="">
                                        </div>
                                        <p class="ency_name"><?php echo $v['name'] ?></p>
 
@@ -549,7 +715,7 @@
                                    ?>
                                    <li class="ency_school">
                                        <div class="ency_logo">
-                                           <img src="http://schools.smartapply.cn<?php echo $v['image'] ?>" alt="">
+                                           <img src="http://schools.viplgw.cn<?php echo $v['image'] ?>" alt="">
                                        </div>
                                        <p class="ency_name"><?php echo $v['name'] ?></p>
 
@@ -588,7 +754,7 @@
                                    ?>
                                    <li class="ency_school">
                                        <div class="ency_logo">
-                                           <img src="http://schools.smartapply.cn<?php echo $v['image'] ?>" alt="">
+                                           <img src="http://schools.viplgw.cn<?php echo $v['image'] ?>" alt="">
                                        </div>
                                        <p class="ency_name"><?php echo $v['name'] ?></p>
 
@@ -627,7 +793,7 @@
                                    ?>
                                    <li class="ency_school">
                                        <div class="ency_logo">
-                                           <img src="http://schools.smartapply.cn<?php echo $v['image'] ?>" alt="">
+                                           <img src="http://schools.viplgw.cn<?php echo $v['image'] ?>" alt="">
                                        </div>
                                        <p class="ency_name"><?php echo $v['name'] ?></p>
 
@@ -660,15 +826,15 @@
     </div>
     <div class="encyclopedia_tab"><!--第二个选项卡-->
         <div class="encyclopedia_left"><!--第二个选项卡左边-->
-            <img src="/cn/Hirsi/images/reply.png" alt="">
+            <img src="/cn/Hirsi/images/replynew.png" alt="">
 <!--            <div class="encyclopedia_left_tab"><span>2018</span><p>年申请攻略</p></div>-->
         </div>
         <div class="encyclopedia_center encyclopedia_center_1"><!--第二个选项卡中间-->
             <div class="ency_center_nav">
                 <ul>
-                    <li>留学活动</li>
+                    <li>留学动态</li>
                     <li>留学规划</li>
-                    <li>留学国家</li>
+                    <li>留学提升</li>
                     <li>留学手续</li>
                 </ul>
             </div>
@@ -712,7 +878,7 @@
             </div>
         </div>
         <div class="encyctab_right"><!--第二个选项卡右边-->
-            <a href="">
+            <a href="/word-details/<?php echo $abroad['recommend'][0]['id']?>/index,261.html">
                 <div class="ency_recommend">
                     <img class="recommend_img" src="/cn/Hirsi/images/recommend.png" alt="">
                     <img style="width: 100%" src="http://www.thinkwithu.com/<?php echo $abroad['recommend'][0]['image']?>" alt="">
@@ -732,88 +898,12 @@
         </div>
     </div>
 </section>
-<!--中间轮播-->
-<section class="center_carousel">
-    <div class="carousel carousel_head" style="overflow: hidden;max-height: 200px">
-        <div class="hd_carousel hd">
-            <ul>
-                <!--            循环li-->
-                <li class=""></li>
-                <li class=""></li>
-                <li class=""></li>
-            </ul>
-        </div>
-        <div class="bd_carousel bd" style="width: 100%;overflow: hidden;">
-            <ul>
-                <!--            循环li-->
-                <li>
-                    <a href="" target="_blank"><img src="/cn/Hirsi/images/index-gmat.jpg" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="" target="_blank"><img src="/cn/Hirsi/images/index-toefl.jpg" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="" target="_blank"><img src="/cn/Hirsi/images/index-itels.jpg" alt="">
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</section>
-<!--考试服务-->
-<section class="eaxm_service">
-    <p class="Record_title">考试服务</p>
-    <div class="service_line"></div>
-    <div class="eaxm_list">
-        <!--留学服务轮播  循环li-->
-        <div class="eaxm_bd">
-            <ul>
-                <li>
-                    <img src="/cn/Hirsi/images/test-1.png" alt="">
-                    <div class="eaxm_bot">
-                        <p>GMAT</p>
-                        <a href="/gmatsheet.html">查看详情</a>
-                    </div>
-                </li>
-                <li>
-                    <img src="/cn/Hirsi/images/test-2.png" alt="">
-                    <div class="eaxm_bot">
-                        <p>GRE</p>
-                        <a href="/gre.html">查看详情</a>
-                    </div>
-                </li>
-                <li>
-                    <img src="/cn/Hirsi/images/test-3.png" alt="">
-                    <div class="eaxm_bot">
-                        <p>托福</p>
-                        <a href="/toefl/assistance.html">查看详情</a>
-                    </div>
-                </li>
-                <li>
-                    <img src="/cn/Hirsi/images/test-4.png" alt="">
-                    <div class="eaxm_bot">
-                        <p>雅思</p>
-                        <a href="/ieltssheet.html">查看详情</a>
-                    </div>
-                </li>
-                <li>
-                    <img src="/cn/Hirsi/images/test-5.png" alt="">
-                    <div class="eaxm_bot">
-                        <p>SAT</p>
-                        <a href="/satsheet.html">查看详情</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-<!--        <a class="next"><i class="iconfont next_icon">&#xe602;</i></a>-->
-<!--        <a class="prev"><i class="iconfont prev_icon">&#xe601;</i></a>-->
-    </div>
-    <div class="eaxm_tab"><!--考试服务选项卡-->
+<!--考试服务选项卡-->
+<section class="eaxm_tab_wap">
+    <div class="eaxm_tab">
         <div class="eaxm_left"><!--考试服务选项卡左边-->
-            <img src="/cn/Hirsi/images/reply.png" alt="">
-<!--            <div class="eaxm_left_tab"><span>2018</span><p>年<span>GMAT</span>考务查询</p></div>-->
+            <img src="/cn/Hirsi/images/replynew1.png" alt="">
+            <!--            <div class="eaxm_left_tab"><span>2018</span><p>年<span>GMAT</span>考务查询</p></div>-->
         </div>
         <div class="eaxm_center eaxm_center_1"><!--第二个选项卡中间-->
             <div class="eaxm_center_nav">
@@ -874,7 +964,7 @@
             </div>
         </div>
         <div class="eaxm_right"><!--第二个选项卡右边-->
-            <a href="">
+            <a href="/word-details/<?php echo $news['recommend'][0]['id']?>/index,261.html">
                 <div class="eaxm_recommend">
                     <img style="width: 100%" src="http://www.thinkwithu.com/<?php echo $news['recommend'][0]['image']?>" alt="">
                     <div class="ency_bot_words"><p><?php echo $news['recommend'][0]['name']?></p></div>
@@ -884,117 +974,43 @@
                 <ul>
                     <?php foreach($news['recommend'] as $k=>$v){
                         if($k>0){?>
-                        <li class="active">
-                            <span><?php echo $k?></span><a href="/word-details/<?php echo $v['id']?>/index,261.html" ><?php echo $v['name']?></a>
-                        </li>
-                    <?php }}?>
-                   </ul>
+                            <li class="active">
+                                <span><?php echo $k?></span><a href="/word-details/<?php echo $v['id']?>/index,261.html" ><?php echo $v['name']?></a>
+                            </li>
+                        <?php }}?>
+                </ul>
             </div>
         </div>
     </div>
 </section>
-<!--成功案例-->
-<section class="success_case">
-    <p class="Record_title">成功案例</p>
-    <div class="service_line"></div>
-    <div class="Curriculum_Broadcast">
-        <div class="bdCurriculum">
-            <ul class="banner"><!--外层循环li-->
-                <li><!--内层层循环div  recommendation-->
-                    <?php foreach($case['gmat'] as $v){?>
-                    <div class="recommendation">
-                        <div class="recommendation_cover">
-                            <div class="reco_img"><img src="<?php echo $v['image']?>" alt="申友高分案例"></div>
-                            <div class="reco_iforma">
-                                <p>姓名:<?php echo $v['name']?></p>
-                                <p>分数:<?php echo $v['score']?></p>
-                                <p>出分时间:<?php echo $v['time']?></p>
-                                <p><?php echo $v['title']?></p>
-                            </div>
-                            <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank"><div class="zx_btn">咨询高分秘籍</div></a>
-                        </div>
-                    </div>
-                    <?php }?>
-                </li>
-                <li>
-                    <?php foreach($case['gre'] as $v){?>
-                    <div class="recommendation">
-                        <div class="recommendation_cover">
-                            <div class="reco_img"><img src="<?php echo $v['image']?>" alt="申友高分案例"></div>
-                            <div class="reco_iforma">
-                                <p>姓名:<?php echo $v['name']?></p>
-                                <p>分数:<?php echo $v['score']?></p>
-                                <p>出分时间:<?php echo $v['time']?></p>
-                                <p><?php echo $v['title']?></p>
-                            </div>
-                            <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank"><div class="zx_btn">咨询高分秘籍</div></a>
-                        </div>
-                    </div>
-                    <?php }?>
-                </li>
-                <li>
-                    <?php foreach($case['toefl'] as $v){?>
-                    <div class="recommendation">
-                        <div class="recommendation_cover">
-                            <div class="reco_img"><img src="<?php echo $v['image']?>" alt="申友高分案例"></div>
-                            <div class="reco_iforma">
-                                <p>姓名:<?php echo $v['name']?></p>
-                                <p>分数:<?php echo $v['score']?></p>
-                                <p>出分时间:<?php echo $v['time']?></p>
-                                <p><?php echo $v['title']?></p>
-                            </div>
-                            <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank"><div class="zx_btn">咨询高分秘籍</div></a>
-                        </div>
-                    </div>
-                    <?php }?>
-                </li>
-                <li>
-                    <?php foreach($case['ielts'] as $v){?>
-                        <div class="recommendation">
-                            <div class="recommendation_cover">
-                                <div class="reco_img"><img src="<?php echo $v['image']?>" alt="申友高分案例"></div>
-                                <div class="reco_iforma">
-                                    <p>姓名:<?php echo $v['name']?></p>
-                                    <p>分数:<?php echo $v['score']?></p>
-                                    <p>出分时间:<?php echo $v['time']?></p>
-                                    <p><?php echo $v['title']?></p>
-                                </div>
-                                <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank"><div class="zx_btn">咨询高分秘籍</div></a>
-                            </div>
-                        </div>
-                    <?php }?>
-                </li>
-                <li>
-                    <?php foreach($case['abroad'] as $v){?>
-                        <div class="recommendation">
-                            <div class="recommendation_cover">
-                                <div class="reco_img"><img src="<?php echo $v['image']?>" alt="申友留学案例"></div>
-                                <div class="reco_iforma">
-                                    <p>姓名:<?php echo $v['name']?></p>
-                                    <p>毕业院校:<?php echo $v['oldSchool']?></p>
-                                    <p>硬件条件:<?php echo $v['score']?></p>
-                                    <p>录取学校:<?php echo $v['abroadSchool']?></p>
-                                    <p>录取专业:<?php echo $v['major']?></p>
-                                </div>
-                                <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank"><div class="zx_btn">咨询名校秘籍</div></a>
-                            </div>
-                        </div>
-                    <?php }?>
-                </li>
-            </ul>
-        </div>
-        <div class="hd hdCurriculum">
-            <ul>
-                <li><p>GMAT</p></li>
-                <li><p>GRE</p></li>
-                <li><p>托福</p></li>
-                <li><p>雅思</p></li>
-                <li><p>留学</p></li>
-            </ul>
-        </div>
-        <div style="clear: both"></div>
-    </div>
-</section>
+<!--中间轮播-->
+<!--<section class="center_carousel">-->
+<!--    <div class="carousel carousel_head" style="overflow: hidden;max-height: 200px">-->
+<!--        <div class="hd_carousel hd">-->
+<!--            <ul>-->
+<!--                <li class=""></li>-->
+<!--                <li class=""></li>-->
+<!--                <li class=""></li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--        <div class="bd_carousel bd" style="width: 100%;overflow: hidden;">-->
+<!--            <ul>-->
+<!--                <li>-->
+<!--                    <a href="" target="_blank"><img src="/cn/Hirsi/images/index-gmat.jpg" alt="">-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="" target="_blank"><img src="/cn/Hirsi/images/index-toefl.jpg" alt="">-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="" target="_blank"><img src="/cn/Hirsi/images/index-itels.jpg" alt="">-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
 <!--名师团队-->
 <section class="teacherTeam">
     <p class="Record_title">名师团队</p>
@@ -1170,16 +1186,16 @@ else{
     jQuery(".eaxm_right").slide({mainCell:".eaxm_right_lb ul",autoPlay:true,effect:"topMarquee",vis:5,interTime:50,trigger:"click"});
     //成功案例
     jQuery(".Curriculum_Broadcast").slide({
+        titCell:".hd ul li",
         mainCell: ".bdCurriculum ul",
-        effect: "leftLoop",
-        trigger: "click",
+        effect: "left",
+        trigger: "mouseover",
         delayTime: 1000,
         interTime: 3000,
+        autoPlay:true,
         mouseOverStop: true
     });
     //名师团队
-
-
     jQuery(".teamCover").slide({
         titCell:".smallImg ul li",
         mainCell:".tinter_wrap",

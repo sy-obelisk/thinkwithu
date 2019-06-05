@@ -60,9 +60,10 @@
                 <th>留学专业</th>
                 <th>gmat/托福/雅思</th>
                 <th>微信/qq</th>
-                <th>实习经历</th>
+                <th>软背景</th>
                 <th>关心的问题</th>
                 <th>感兴趣的服务</th>
+                <th>补充的问题</th>
                 <th>时间</th>
             </tr>
             </thead>
@@ -89,6 +90,7 @@
                             echo Yii::$app->params['service'][$val].',';
                         }?>
                     </td>
+                    <td><?php echo $v['supplement']?></td>
                     <td><?php echo date("Y-m-d H:i:s",$v['createTime'])?></td>
                 </tr>
                 <?php

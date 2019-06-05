@@ -34,7 +34,7 @@
     <script type="text/javascript" src="//s.union.360.cn/7302.js"></script>
     <link rel="stylesheet" href="/cn/css/header.css"/>
     <link rel="stylesheet" href="/cn/css/footer.css"/>
-    <link rel="stylesheet" href="/cn/css/public.css"/>
+    <link rel="stylesheet" href="/cn/css/public.css?v=1.3"/>
     <link rel="stylesheet" href="/cn/Hirsi/css/reset.css">
     <link rel="stylesheet" type="text/css" href="/cn/css/iconfont.css">
     <link rel="stylesheet" href="/cn/css/fonts/font-awesome/css/font-awesome.min.css"/>
@@ -47,25 +47,33 @@
 </head>
 <body>
 <!-----------------------------头部------------------------------>
-<div class="headTop">
-    <div class="headTopContent">
-        <div class="img_left">
-            <img src="/cn/Hirsi/images/sy-text-new.png" alt="">
-        </div>
-        <div class="img_right">
-            <i class="iconfont phone_index">&#xe6df;</i>
-            <span class="phoneNum_index">400-600-1123</span>
-            <a href=""><span class="consultation_index">在线咨询>></span></a>
-        </div>
-    </div>
-</div>
+<!--<div class="headTop">-->
+<!--    <div class="headTopContent">-->
+<!--        <div class="img_left">-->
+<!--            <img src="/cn/Hirsi/images/sy-text-new.png" alt="">-->
+<!--        </div>-->
+<!--        <div class="img_right">-->
+<!--            <i class="iconfont phone_index">&#xe6df;</i>-->
+<!--            <span class="phoneNum_index">400-600-1123</span>-->
+<!--            <a href=""><span class="consultation_index">在线咨询>></span></a>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
 <div class="seach_input">
     <div class="seachInputContent">
-        <a href="/"><img class="logo-new" src="/cn/Hirsi/images/sy-logo3.png" alt="" style="width: 172px;"></a>
+        <a href="/" class="imgC">
+            <img class="logo-new" src="/cn/Hirsi/images/sy-logo4.png" alt="" style="width: 172px;">
+            <img class="logo-new_1" src="/cn/Hirsi/images/sy-text-new.png" alt="">
+        </a>
         <div class="search_div">
             <i class="iconfont seach_index">&#xe6bc;</i>
             <input type="search" placeholder="关键词" class="input_seach search search1" onkeyup="enterKey(event,this)">
             <div class="seach_word" onclick="keySearch()">搜索</div>
+        </div>
+        <div class="img_right">
+            <i class="iconfont phone_index">&#xe6df;</i>
+            <span class="phoneNum_index">400-600-1123</span>
+            <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank"><span class="consultation_index">在线咨询>></span></a>
         </div>
     </div>
 </div>

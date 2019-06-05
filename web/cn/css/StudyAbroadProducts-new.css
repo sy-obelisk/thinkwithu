@@ -532,6 +532,11 @@ body{
 .hot_content{
     overflow: hidden;
 }
+.hot_content ul{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
 .hot_content ul li{
     width: 230px;
     height: 310px;
@@ -761,19 +766,27 @@ body{
     color: white;
     background: rgb(149,178,253);
     display: inline-block;
-    padding: 3px 10px;
+    width: 96px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    /*padding: 3px 10px;*/
     border-radius: 4px;
     float: left;
 }
 .sq{
     background: rgb(218,218,218);
     display: inline-block;
-    padding: 3px 10px;
+    width: 96px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
     border-radius: 4px;
     float: right;
 }
 .btn{
-    width: 70%;
+    width: 80%;
+    overflow: hidden;
     margin: 40px auto 0;
 }
 .teacher_content .prev {
@@ -840,6 +853,7 @@ body{
     display: none;
 }
 .listDivCover{
+    height: 235px;
     overflow: hidden;
 }
 .listDiv:nth-child(1){

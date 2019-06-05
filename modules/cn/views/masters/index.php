@@ -330,7 +330,10 @@
                     foreach($data as $k => $v) {
                         ?>
                         <div class="product0<?php echo $k+1?>" onmouseover="hideZZC(this)" onmouseout="showZZC(this)">
-                            <a href="/picture-details/<?php echo $v['id']?>/113.html"><?php echo $v['title']?><br><?php echo $v['name']?></a>
+                            <a href="/picture-details/<?php echo $v['id']?>/113.html">
+<!--                                --><?php //echo $v['title']?><!--<br>-->
+                                <?php echo $v['name']?>
+                            </a>
                             <!--遮罩层-->
                             <div class="productZZC"></div>
                         </div>

@@ -9,7 +9,7 @@
         <ul><!--循环li-->
             <li>
                 <a href="" target="_blank">
-                    <img src="http://www.thinkwithu.com//files/attach/images/20170217/1487326065197811.png" alt="案例库">
+                    <img src="/cn/images/2019_case_banner.png" alt="案例库">
                 </a>
             </li>
         </ul>
@@ -18,10 +18,10 @@
     <div class="bannerLeft">
         <div class="b_l_content">
             <div class="b_l_title">
-                <div>
-                    <i class="iconfont r_w">&#xe656;</i>
-                    <span>姓名</span>
-                </div>
+<!--                <div>-->
+<!--                    <i class="iconfont r_w">&#xe656;</i>-->
+<!--                    <span>姓名</span>-->
+<!--                </div>-->
 <!--                <div>-->
 <!--                    <i class="iconfont j_b">&#xe655;</i>-->
 <!--                    <span>录取专业</span>-->
@@ -34,13 +34,13 @@
             <div class="b_l_details">
                 <ul>
                     <?php foreach($list as $v){
-                        if(($v['title']!=false)&&($v['name']!=$v['title'])){?>
+//                        if(($v['title']!=false)&&($v['name']!=$v['title'])){?>
                     <li><!--循环li-->
-                        <div><p><?php echo $v['name']?></p></div>
+<!--                        <div><p>--><?php //echo $v['name']?><!--</p></div>-->
 <!--                        <div>金融</div>-->
-                        <div><?php echo $v['title']?></div>
+                        <div><?php echo $v['title']!=false?$v['title']:$v['name']?></div>
                     </li>
-                    <?php }}?>
+                    <?php }?>
                 </ul>
             </div>
         </div>
@@ -72,7 +72,7 @@
                             <a href="/case/<?php echo $v['id']?>.html" class="Content_d_cover">
                                 <div class="Content_d">
                                     <div class="imgCover">
-                                        <img src="http://www.smartapply.cn/<?php echo $v['image']?>" alt="录取图片">
+                                        <img src="http://www.thinkwithu.com<?php echo $v['image']?>" alt="录取图片">
                                         <div class="mask">
                                             <p class="mask_name"><?php echo $v['title']==false?$v['name']:$v['title']?></p><!--姓名-->
                                             <?php if($v['abroadSchool']!=false){?><p class="mask_school">录取院校: <?php echo $v['abroadSchool']?></p><?php }?><!--录取院校-->
@@ -100,10 +100,10 @@
         </script>
     </div>
 </section>
-<!--成功案例-->
+<!--留学案例-->
 <section class="success_cases">
     <div class="success_content">
-        <p class="Record_title">成功案例</p>
+        <p class="Record_title">留学案例</p>
         <div class="service_line"></div>
         <div class="success_title hd">
             <ul>
@@ -112,7 +112,7 @@
                 <li data-catid="104,91,96,207"><p>澳洲加拿大</p></li>
                 <li data-catid="104,90,93,207"><p>香港新加坡</p></li>
                 <li data-catid="104,94,207"><p>欧洲国家</p></li>
-                <a href="">More>></a>
+<!--                <a href="">More>></a>-->
             </ul>
         </div>
         <div class="admission_c bd">
@@ -142,7 +142,7 @@
                 <!--分页-->
                 <div class="pageSize">
                     <?php for($i=1;$i<=$val['total'];$i++){?>
-                    <li data-value="<?php echo $val['total']?>" class="total mr02"><span class="colorRed"><?php echo $i;?></span></li>
+                    <li data-value="<?php echo $val['total']?>" class="total mr02 <?php if($i==1) echo 'on'?>"><span class="colorRed"><?php echo $i;?></span></li>
                     <?php }?>
                 </div>
             </ul>
@@ -153,9 +153,62 @@
         jQuery(".success_content").slide({});
     </script>
 </section>
+<!--成功案例-->
+<section class="Study_case">
+    <div class="StudyContent">
+        <p class="Record_title">高分案例</p>
+        <div class="service_line"></div>
+        <div class="Study_title hd">
+            <ul>
+                <li data-catid="115,104,206"><p>GMAT</p></li>
+                <li data-catid="172,104,206"><p>雅思</p></li>
+                <li data-catid="116,104,206"><p>托福</p></li>
+<!--                <li data-catid="171,104,206"><p>GRE</p></li>-->
+<!--                <a href="">More>></a>-->
+            </ul>
+        </div>
+
+        <div class="admission_c bd">
+            <!--外层循环ul  内层循环a标签 admission_d_cover-->
+            <?php foreach($score as $val){?>
+            <ul class="successList">
+                <div class="List_c">
+                    <?php foreach ($val as $k => $v) {
+                        if (is_numeric($k)) { ?>
+                            <a href="/case/<?php echo $v['id'] ?>.html" class="admission_d_cover">
+                                <li class="Study_d">
+                                    <div class="Study_img">
+                                        <img src="http://www.thinkwithu.com<?php echo $v['image'] ?>" alt="高分案例图片">
+                                    </div>
+                                    <p class="admission_name"><?php echo $v['title'] != false ? $v['title'] : $v['name'] ?></p>
+                                    <!--录取院校-->
+                                    <p class="admission_school">考试分数:<span><?php echo $v['score'] ?></span></p>
+                                    <!--毕业院校-->
+                                    <p class="admission_hardware">考试时间:<?php echo $v['time'] ?><span></span></p>
+                                </li>
+                            </a>
+                        <?php }
+                    } ?>
+                </div>
+                <!--分页-->
+                <div class="pageSizeStudy">
+                    <?php for($i=1;$i<=$val['total'];$i++){?>
+                        <li data-value="<?php echo $val['total']?>" class="total mr02 <?php if($i==1) echo 'on'?>"><span class="colorRed"><?php echo $i;?></span></li>
+                    <?php }?>
+                </div>
+            </ul>
+            <?php }?>
+        </div>
+    </div>
+    <script>
+        jQuery(".StudyContent").slide({});
+    </script>
+</section>
+
 
 <script>
-    //分页
+
+    //留学案例分页
     $(document).on("click", ".pageSize li.total", function () {
         var caseWrap = $(this).parent().parent().find('.List_c');
         var catId = $('.success_title ul li.on').attr("data-catid");
@@ -174,7 +227,7 @@
                 var str = "";
                 caseWrap.empty();
                 for (var i = 0; i < data.data.length; i++) {
-                    str += '<a href="/case/' + catId + '/' + data.data[i].id+'.html" class="admission_d_cover">';
+                    str += '<a href="/case/' + data.data[i].id+'.html" class="admission_d_cover">';
                     str +='<li class="admission_d">';
 
                     str +='<div class="admission_img"><img src="http://www.thinkwithu.com'+ data.data[i].image +'" alt="录取图片"></div>';
@@ -189,6 +242,51 @@
                     str +='<p class="admission_ad">录取院校:<span>'+ data.data[i].abroadSchool +'</span></p><!--录取院校-->';
                     str +='<p class="admission_obj">录取专业:<span>'+ data.data[i].major+'</span></p><!--录取专业-->';
 
+                    str +='</li>';
+                    str += '</a>';
+                }
+                caseWrap.append(str);
+            }
+        });
+    });
+    //成功案例分页
+    $(document).on("click", ".pageSizeStudy li.total", function () {
+        var caseWrap = $(this).parent().parent().find('.List_c');
+        var catId = $('.Study_title ul li.on').attr("data-catid");
+        var page = parseInt($(this).children().html());
+        $(this).siblings().removeClass('on');
+        $(this).addClass('on');
+        $.ajax({
+            url: "/cn/api/get-case",
+            type: "get",
+            data: {
+                catId: catId,
+                page: page,
+            },
+            dataType: "json",
+            success: function (data) {
+                var str = "";
+                caseWrap.empty();
+                for (var i = 0; i < data.data.length; i++) {
+                    str += '<a href="/case/' + catId + '/' + data.data[i].id+'.html" class="admission_d_cover">';
+                    str +='<li class="Study_d">';
+
+                    str +='<div class="Study_img"><img src="http://www.thinkwithu.com'+ data.data[i].image +'" alt="录取图片"></div>';
+                    if(data.data[i].title){
+                        str +='<p class="admission_name">'+ data.data[i].title +'</p>';
+                    }else {
+                        str +='<p class="admission_name">'+ data.data[i].name +'</p>';
+                    }
+                    if(data.data[i].score){
+                        str +='<p class="admission_school">考试分数:<span>'+ data.data[i].score +'</span></p>';
+                    }else {
+                        str +='<p class="admission_hardware">考试时间:<span></span></p>';
+                    }
+                    if(data.data[i].time){
+                        str +='<p class="admission_hardware">考试时间:<span>'+ data.data[i].time+'</span></p>';
+                    }else {
+                        str +='<p class="admission_hardware">考试时间:<span></span></p>';
+                    }
                     str +='</li>';
                     str += '</a>';
                 }

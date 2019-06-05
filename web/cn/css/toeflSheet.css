@@ -10,7 +10,7 @@ body{
     position: relative;
     width: 100%;
     height: 480px;
-    background: url(/cn/images/tuofu-banner.png) no-repeat center;
+    background: url(/cn/images/tuofu-banner-new.jpg) no-repeat center;
 }
 .course-bnr>ul {
     position: absolute;
@@ -229,7 +229,7 @@ body{
     width: 100%;
     height: 108px;
     margin-bottom: 20px;
-    background: url(http://www.toeflonline.cn/cn/images/course-icon.png) 0 0 no-repeat;
+    background: url(http://toefl.viplgw.cn/cn/images/course-icon.png) 0 0 no-repeat;
 }
 .course-cnt .course-icon>li:nth-child(2)>div {
     background-position: -107px 0;
@@ -451,6 +451,9 @@ body{
 }
 .couse:hover{
     background:rgb(151,70,148);
+    color: white;
+}
+.couse:hover a{
     color: white;
 }
 /*服务流程*/

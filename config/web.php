@@ -140,6 +140,7 @@ $config = [
                  'encyclopedia/master.html'=>'cn/encyclopedia/master',//硕士留学
                  'encyclopedia/<id:\d+>.html'=>'cn/encyclopedia/details',//留学百科详情
                  'teachers/interviews.html' => 'cn/masters/document',
+                 '<course:\w+>-course/detail/<id:\d+>.html' => 'cn/course/class-detail',
                  //留学评估
                  'evaluation.html' => 'cn/study/assess',
                  //留学申请
@@ -172,6 +173,8 @@ $config = [
                  'public-class/syabroad.html' => 'cn/class/syabroad',
 
                  'public-class/list.html' => 'cn/class/abroad',
+
+                 'public-class/list/<page:\d+>.html' => 'cn/class/abroad',
 
                  'public-class/syabroad/<page:\d+>.html' => 'cn/class/syabroad',
 
@@ -265,9 +268,21 @@ $config = [
 
                  'schools.html' => 'cn/schools/index',//院校库首页
 
-                 'schools/<schoolid:\d+>.html' => 'cn/schools/details',//院校详情
+                 'schools/<schoolid:\d+>.html' => 'cn/schools/details',//院校详情 排行
 
-                 'schools/major/<id:\d+>.html' => 'cn/schools/majormsg',//专业详情
+                 'schools-detail/<school:\d+>.html' => 'cn/schools/school-detail',//院校详情 学校查询
+
+                 'schools/major/<id:\d+>.html' => 'cn/schools/majormsg',//学校专业
+
+                 'major-analysis/<catId:\d+>/<page:\d>.html' => 'cn/schools/major-analysis',//专业二级
+
+                 'major-detail/<id:\d+>.html' => 'cn/schools/major-detail',//专业详情
+
+                 'schools-ranking/<classId:\d+>/<yearId:\d+>/<page:\d+>.html' => 'cn/schools/ranking',//学校的排行
+
+                 'counselor-teachers/<country:\d+>/<page:\d+>.html' => 'cn/schools/teacher',//推荐顾问
+
+                 'counselor-detail/<id:\d+>.html' => 'cn/schools/teacher-detail',//推荐顾问
 
                  'practices.html' => 'cn/practices/index',//游学实习首页
 

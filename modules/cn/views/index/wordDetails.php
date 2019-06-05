@@ -1,5 +1,5 @@
 
-<link rel="stylesheet" href="/cn/css/frame.css"/>
+<link rel="stylesheet" href="/cn/css/frame.css?v=1.1"/>
 <script type="text/javascript" src="/cn/js/index.js"></script>
 
 

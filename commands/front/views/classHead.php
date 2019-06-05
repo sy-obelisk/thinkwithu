@@ -5,7 +5,7 @@
 
 <nav class="nav-wrap">
     <div class="w10 w12" style="overflow: inherit;">
-        <a href="/"><img class="logo" src="/cn/Hirsi/images/sy-logo3.png" alt=""></a>
+        <a href="/"><img class="logo" src="/cn/Hirsi/images/sy-logo4.png" alt=""></a>
         <ul class="inb nav-list clearfix" style="margin-top: 6px">
             <li><a class=" nav1-link" href="/">首页</a></li>
             <li><a class="nav1-link" href="/study-aboard/assistance.html">留学服务</a>
@@ -49,7 +49,7 @@
             <li><a class="nav1-link <?php echo $controller == 'ieltssheet' ? 'on on-hover' : '' ?>" href="/ieltssheet.html">雅思课程</a></li>
             <li><a class="nav1-link <?php echo $controller == 'words' ? 'on on-hover' : '' ?>" href="/words.html">单词学习</a></li>
             <li><a class="nav1-link <?php echo $controller == 'class' ? 'on on-hover' : '' ?>" href="/public-class.html">申友讲堂</a></li>
-            <li><a class="nav1-link" href="http://www.gmatonline.cn/index.html" target="_blank">申友在线</a></li>
+            <li><a class="nav1-link" href="http://gmat.viplgw.cn/index.html" target="_blank">申友在线</a></li>
             <li><a class="nav1-link" href="/teachers.html">名师云集</a></li>
             <li><a class="nav1-link" href="/case.html">成功案例</a></li>
             <li><a class="nav1-link" href="/schools.html">院校库</a></li>

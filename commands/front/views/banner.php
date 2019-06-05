@@ -11,7 +11,7 @@
 <!--            <li><a class="nav1-link --><?php //echo $controller == 'ieltssheet' ? 'on on-hover' : '' ?><!--" href="/ieltssheet.html">雅思课程</a></li>-->
 <!--            <li><a class="nav1-link --><?php //echo $controller == 'words' ? 'on on-hover' : '' ?><!--" href="/words.html">单词学习</a></li>-->
 <!--            <li><a class="nav1-link --><?php //echo $controller == 'class' ? 'on on-hover' : '' ?><!--" href="/public-class.html">申友讲堂</a></li>-->
-<!--            <li><a class="nav1-link" href="http://www.gmatonline.cn" target="_blank">申友在线</a></li>-->
+<!--            <li><a class="nav1-link" href="http://gmat.viplgw.cn" target="_blank">申友在线</a></li>-->
 <!--            <li><a class="nav1-link --><?php //echo  strpos($_SERVER['REQUEST_URI'],'teachers')?'on on-hover':''?><!--" href="/teachers.html">名师云集</a></li>-->
 <!--            <li><a class="nav1-link --><?php //echo $controller == 'case' ? 'on on-hover' : '' ?><!--" href="/case.html">成功案例</a></li>-->
 <!--            <li><a class="nav1-link --><?php //echo $controller == 'schools' ? 'on on-hover' : '' ?><!--" href="/schools.html">院校库</a></li>-->
@@ -36,12 +36,24 @@
                     </ul>
                 </div>
             </div>
-            <li><a class="nav1-link <?php echo $controller == 'index' ? 'on on-hover' : '' ?>" href="/">首页</a></li>
-            <li>
-                <a class="nav1-link <?php echo ($controller == 'satsheet' || $controller == 'ieltssheet' || $controller == 'gmatsheet' || $controller == 'toeflsheet' || $controller == 'gre') ? 'on on-hover' : '' ?>" href="javascript:void(0);">考试提分 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
+            <li style="flex: .8"><a class="nav1-link <?php echo $controller == 'index' ? 'on on-hover' : '' ?>" href="/">首页</a></li>
+            <li style="flex: 1.4">
+                <a class="nav1-link" href="javascript:void(0);">留学服务 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
                 <div class="eaxm-list">
                     <ul>
-                        <li><a href="/gmatsheet.html">GAMT</a></li>
+                        <li><a href="/studying-USA.html">美国留学</a></li>
+                        <li><a href="/studying-UK.html">英国留学</a></li>
+                        <li><a href="/studying-AUS.html">澳洲留学</a></li>
+<!--                        <li><a href="/studying-Canada.html">加拿大留学</a></li>-->
+                        <li><a href="/studying-HK.html">香港留学</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li style="flex: 1.2">
+                <a class="nav1-link <?php echo ($controller == 'satsheet' || $controller == 'ieltssheet' || $controller == 'gmatsheet' || $controller == 'toeflsheet' || $controller == 'gre' || $controller == 'course') ? 'on on-hover' : '' ?>" href="javascript:void(0);">GMAT培训 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
+                <div class="eaxm-list">
+                    <ul>
+                        <li><a href="/gmatsheet.html">GMAT</a></li>
                         <li><a href="/ieltssheet.html">雅思</a></li>
                         <li><a href="/toefl/assistance.html">托福</a></li>
                         <li><a href="/gre.html">GRE</a></li>
@@ -49,7 +61,7 @@
                     </ul>
                 </div>
             </li>
-            <li>
+            <li style="flex: 1.2">
                 <a class="nav1-link <?php echo $controller == 'school-choice' ? 'on on-hover' : '' ?>" href="javascript:void(0);">选校工具 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
                 <div class="eaxm-list eaxm-list-1">
                     <ul>
@@ -59,19 +71,19 @@
                     </ul>
                 </div>
             </li>
-            <li>
+            <li style="flex: 1.2">
                 <a class="nav1-link <?php echo $controller == 'schools' ? 'on on-hover' : '' ?>" href="/schools.html">院校库
-<!--                    <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标">-->
+                    <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标">
                 </a>
-<!--                <div class="eaxm-list eaxm-list-1">-->
-<!--                    <ul>-->
-<!--                        <li><a href="">院校查询</a></li>-->
-<!--                        <li><a href="">专业排名</a></li>-->
-<!--                        <li><a href="">大学排名</a></li>-->
-<!--                    </ul>-->
-<!--                </div>-->
+                <div class="eaxm-list eaxm-list-1">
+                    <ul>
+                        <li><a href="/schools.html">院校查询</a></li>
+                        <li><a href="/major-analysis/433/1.html">专业排名</a></li>
+                        <li><a href="/schools-ranking/296/427/1.html">大学排名</a></li>
+                    </ul>
+                </div>
             </li>
-            <li><a class="nav1-link <?php echo $controller == 'encyclopedia' ? 'on on-hover' : '' ?>" href="javascript:void(0);">留学百科 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
+            <li style="flex: 1.2"><a class="nav1-link <?php echo $controller == 'encyclopedia' ? 'on on-hover' : '' ?>" href="javascript:void(0);">留学百科 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
                 <div class="eaxm-list eaxm-list-1">
                     <ul>
                         <li><a href="/encyclopedia/master.html">硕士动态</a></li>
@@ -81,9 +93,9 @@
             </li>
             <li><a class="nav1-link <?php echo $controller == 'practices' ? 'on on-hover' : '' ?>" href="/practices.html">实习活动</a></li>
             <li><a class="nav1-link <?php echo $controller == 'class' ? 'on on-hover' : '' ?>" href="/public-class.html">申友讲堂</a></li>
-            <li><a class="nav1-link <?php echo $controller == 'case' ? 'on on-hover' : '' ?>" href="/case.html">名校案列</a></li>
+            <li><a class="nav1-link <?php echo $controller == 'case' ? 'on on-hover' : '' ?>" href="/case.html">名校案例</a></li>
             <li><a class="nav1-link <?php echo $controller == 'masters' ? 'on on-hover' : '' ?>" href="/teachers.html">名师团队</a></li>
-            <li><a href="http://bbs.thinkwithu.com/">申友论坛</a></li>
+            <li><a href="http://bbs.thinkwithu.com/" target="_blank">申友论坛</a></li>
         </ul>
     </div>
 </nav>

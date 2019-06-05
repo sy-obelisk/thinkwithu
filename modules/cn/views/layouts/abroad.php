@@ -36,7 +36,7 @@
     <script type="text/javascript" src="//s.union.360.cn/7302.js"></script>
     <link rel="stylesheet" href="/cn/css/header.css"/>
     <link rel="stylesheet" href="/cn/css/footer.css"/>
-    <link rel="stylesheet" href="/cn/css/public.css"/>
+    <link rel="stylesheet" href="/cn/css/public.css?v=1.3"/>
     <link rel="stylesheet" href="/cn/Hirsi/css/reset.css">
     <link rel="stylesheet" type="text/css" href="/cn/css/iconfont.css">
     <link rel="stylesheet" href="/cn/css/fonts/font-awesome/css/font-awesome.min.css"/>
@@ -49,25 +49,33 @@
 </head>
 <body>
 <!-----------------------------头部------------------------------>
-<div class="headTop">
-    <div class="headTopContent">
-        <div class="img_left">
-            <img src="/cn/Hirsi/images/sy-text-new.png" alt="">
-        </div>
-        <div class="img_right">
-            <i class="iconfont phone_index">&#xe6df;</i>
-            <span class="phoneNum_index">400-600-1123</span>
-            <a href=""><span class="consultation_index">在线咨询>></span></a>
-        </div>
-    </div>
-</div>
+<!--<div class="headTop">-->
+<!--    <div class="headTopContent">-->
+<!--        <div class="img_left">-->
+<!--            <img src="/cn/Hirsi/images/sy-text-new.png" alt="">-->
+<!--        </div>-->
+<!--        <div class="img_right">-->
+<!--            <i class="iconfont phone_index">&#xe6df;</i>-->
+<!--            <span class="phoneNum_index">400-600-1123</span>-->
+<!--            <a href=""><span class="consultation_index">在线咨询>></span></a>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
 <div class="seach_input">
     <div class="seachInputContent">
-        <a href="/"><img class="logo-new" src="/cn/Hirsi/images/sy-logo3.png" alt=""></a>
+        <a href="/" class="imgC">
+            <img class="logo-new" src="/cn/Hirsi/images/sy-logo4.png" alt="" style="width: 172px;">
+            <img class="logo-new_1" src="/cn/Hirsi/images/sy-text-new.png" alt="">
+        </a>
         <div class="search_div">
             <i class="iconfont seach_index">&#xe6bc;</i>
             <input type="search" placeholder="关键词" class="input_seach search search1" onkeyup="enterKey(event,this)">
             <div class="seach_word" onclick="keySearch()">搜索</div>
+        </div>
+        <div class="img_right">
+            <i class="iconfont phone_index">&#xe6df;</i>
+            <span class="phoneNum_index">400-600-1123</span>
+            <a href="http://p.qiao.baidu.com/im/index?siteid=6058744&ucid=3827656&cp=&cr=&cw=" target="_blank"><span class="consultation_index">在线咨询>></span></a>
         </div>
     </div>
 </div>
@@ -84,35 +92,32 @@
             <div class="forYou">
                 <?php
                 $country = Yii::$app->request->get('country','USA'); if($country=='USA'){
-                    $product1 = app\modules\cn\models\Content::getContent(['category' => "261,88", 'pageSize' => 6, 'order' => 'c.sort asc,c.id desc']);
+                    $product1 = app\modules\cn\models\Content::getContent(['category' => "261,88", 'pageSize' => 6, 'order' => 'c.id desc']);
                     ?>
                     <img src="/cn/Hirsi/images/classify.png" alt="横">
                     <span>美国留学申请服务</span>
                     <div class="recommend-list">
                         <ul>
-                            <?php foreach($product1 as $v){?>
-                            <li><a href="/word-details/<?php echo $v['id']?>/index,178.html" class=""><b>•</b><?php echo $v['name']?></a></li>
-                            <?php }?>
-<!--                            <li><a href="/word-details/2408/index,178.html" class=""><b>•</b>美国星途计划</a></li>-->
-<!--                            <li><a href="" class=""><b>•</b>MBA精英计划</a></li>-->
-<!--                            <li><a href="" class=""><b>•</b>美国本科留学服务 </a></li>-->
-<!--                            <li><a href="" class=""><b>•</b>留学考试提分方案 </a></li>-->
-<!--                            <li><a href="" class=""><b>•</b>美国留学DIY论坛 </a></li>-->
+                            <?php foreach ($product1 as $k => $v) {
+                                if ($k < count($product1) - 2) {
+                                    ?>
+                                    <li><a href="/word-details/<?php echo $v['id'] ?>/index,178.html" class=""><b>•</b><?php echo $v['name'] ?></a></li>
+                                <?php }
+                            } ?>
                         </ul>
                     </div>
                 <?php } elseif ($country == 'UK') {
-                    $product2 = app\modules\cn\models\Content::getContent(['category' => "261,89", 'pageSize' => 6, 'order' => 'c.sort asc,c.id desc']);
+                    $product2 = app\modules\cn\models\Content::getContent(['category' => "261,89", 'pageSize' => 6, 'order' => 'c.id desc']);
                     ?>
                     <img src="/cn/Hirsi/images/classify.png" alt="横">
                     <span>英国留学申请服务</span>
                     <div class="recommend-list">
                         <ul>
-                            <?php foreach($product2 as $v){?>
-                                <li><a href="/word-details/<?php echo $v['id']?>/index,178.html" class=""><b>•</b><?php echo $v['name']?></a></li>
-                            <?php }?>
-<!--                            <li><a href="/word-details/2409/index,178.html" class=""><b>•</b>英国康桥计划</a></li>-->
-<!--                            <li><a href="/word-details/2410/index,178.html" class=""><b>•</b>大本钟计划</a></li>-->
-<!--                            <li><a href="" class=""><b>•</b>日不落计划</a></li>-->
+                            <?php foreach ($product2 as $k=>$v) {
+                                if ($k < count($product2) - 2) { ?>
+                                    <li><a href="/word-details/<?php echo $v['id'] ?>/index,178.html" class=""><b>•</b><?php echo $v['name'] ?></a></li>
+                                <?php }
+                            } ?>
                         </ul>
                     </div>
                 <?php } elseif ($country == 'HK') {
@@ -125,7 +130,6 @@
                             <?php foreach($product3 as $v){?>
                                 <li><a href="/word-details/<?php echo $v['id']?>/index,178.html" class=""><b>•</b><?php echo $v['name']?></a></li>
                             <?php }?>
-<!--                            <li><a href="" class=""><b>•</b>紫荆花计划</a></li>-->
                         </ul>
                     </div>
                 <?php } elseif ($country == 'AUS') {
@@ -138,7 +142,6 @@
                             <?php foreach($product4 as $v){?>
                                 <li><a href="/word-details/<?php echo $v['id']?>/index,178.html" class=""><b>•</b><?php echo $v['name']?></a></li>
                             <?php }?>
-<!--                            <li><a href="" class=""><b>•</b>澳世起航计划</a></li>-->
                         </ul>
                     </div>
                 <?php } elseif ($country == 'Canada') { ?>
@@ -151,20 +154,32 @@
                     </div>
                 <?php } ?>
             </div>
-            <li><a class="nav1-link <?php echo $controller == 'index' ? 'on on-hover' : '' ?>" href="/">首页</a></li>
-            <li>
-                <a class="nav1-link" href="/">考试提分 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
-                <div class="eaxm-list">
+            <li style="flex: .8"><a class="nav1-link <?php echo $controller == 'index' ? 'on on-hover' : '' ?>" href="/">首页</a></li>
+            <li style="flex: 1.4">
+                <a class="nav1-link" href="javascript:void(0);">留学服务 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
+                <div class="eaxm-list specail">
                     <ul>
-                        <li><a href="/satsheet.html">SAT</a></li>
-                        <li><a href="/toefl/assistance.html">托福</a></li>
-                        <li><a href="/ieltssheet.html">雅思</a></li>
-                        <li><a href="/gmatsheet.html">GAMT</a></li>
-                        <li><a href="/gre.html">GRE</a></li>
+                        <li><a href="/studying-USA.html">美国留学</a></li>
+                        <li><a href="/studying-UK.html">英国留学</a></li>
+                        <li><a href="/studying-AUS.html">澳洲留学</a></li>
+                        <!--                        <li><a href="/studying-Canada.html">加拿大留学</a></li>-->
+                        <li><a href="/studying-HK.html">香港留学</a></li>
                     </ul>
                 </div>
             </li>
-            <li>
+            <li style="flex: 1.3">
+                <a class="nav1-link" href="javascript:void(0);">GMAT培训 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
+                <div class="eaxm-list">
+                    <ul>
+                        <li><a href="/gmatsheet.html">GMAT</a></li>
+                        <li><a href="/ieltssheet.html">雅思</a></li>
+                        <li><a href="/toefl/assistance.html">托福</a></li>
+                        <li><a href="/gre.html">GRE</a></li>
+                        <li><a href="/satsheet.html">SAT</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li style="flex: 1.3">
                 <a class="nav1-link" href="/evaluation.html">选校工具 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
                 <div class="eaxm-list eaxm-list-1">
                     <ul>
@@ -174,21 +189,30 @@
                     </ul>
                 </div>
             </li>
-            <li>
-                <a class="nav1-link" href="/schools.html">院校库 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
+            <li style="flex: 1.3">
+                <a class="nav1-link" href="/schools.html">院校库  <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
                 <div class="eaxm-list eaxm-list-1">
                     <ul>
-                        <li><a href="">院校查询</a></li>
-                        <li><a href="">专业排名</a></li>
-                        <li><a href="">大学排名</a></li>
+                        <li><a href="/schools.html">院校查询</a></li>
+                        <li><a href="/major-analysis/433/1.html">专业排名</a></li>
+                        <li><a href="/schools-ranking/296/427/1.html">大学排名</a></li>
                     </ul>
                 </div>
             </li>
-            <li><a class="nav1-link" href="/">留学百科 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a></li>
-            <li><a class="nav1-link" href="/">实习活动</a></li>
+            <li style="flex: 1.3">
+                <a class="nav1-link" href="javascript:void(0);">留学百科 <img class="crow-1" src="/cn/Hirsi/images/crow-1.png" alt="下拉三角图标"></a>
+                <div class="eaxm-list eaxm-list-1">
+                    <ul>
+                        <li><a href="/encyclopedia/master.html">硕士动态</a></li>
+                        <li><a href="/encyclopedia/bachelor.html">本科动态</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a class="nav1-link" href="/practices.html">实习活动</a></li>
             <li><a class="nav1-link" href="/public-class.html">申友讲堂</a></li>
             <li><a class="nav1-link" href="/case.html">名校案列</a></li>
             <li><a class="nav1-link" href="/teachers.html">名师团队</a></li>
+            <li><a href="http://bbs.thinkwithu.com/" target="_blank">申友论坛</a></li>
         </ul>
     </div>
 </nav>

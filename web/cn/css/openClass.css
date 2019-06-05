@@ -240,7 +240,7 @@
     height: 100%;
     line-height: 260px;
     text-align: center;
-    color: white;
+    color: white;.detail-con
     font-size: 20px;
 }
 .imgBack01{
@@ -249,4 +249,15 @@
 .imgBack02{
     background: url("../images/open_toeflBG.png") no-repeat;
 }
-
+.imgBack03{
+    position: relative;
+    background: url("../images/iteilts-3.png") no-repeat;
+}
+.zz_div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0,.5);
+}

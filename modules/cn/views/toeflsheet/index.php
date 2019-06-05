@@ -1,5 +1,5 @@
 
-<link rel="stylesheet" href="/cn/css/toeflSheet.css"/>
+<link rel="stylesheet" href="/cn/css/toeflSheet.css?v=1.2"/>
 <script type="text/javascript" src="/cn/js/toeflSheet.js"></script>
 <title>tuofu11111-申友网</title>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
@@ -91,7 +91,7 @@
                     <div class="fraction_name"><!--课程名称-->
                         <div class="left_name">课程名称</div>
                         <?php foreach($val as $v){?>
-                        <div class="couse"><?php echo $v['name']?></div>
+                        <div class="couse"><a href="/toefl-course/detail/<?php echo $v['id']?>.html" target="_blank"><?php echo $v['name']?></a></div>
                         <?php }?>
                     </div>
                     <div class="fraction_price"><!--课程价格-->
@@ -264,7 +264,7 @@
         <?php foreach($course['active'] as $v){?>
         <li>
             <div class="img">
-                <img src="http://www.toeflonline.cn<?php echo $v['image']?>" alt="">
+                <img src="http://toefl.viplgw.cn<?php echo $v['image']?>" alt="">
             </div>
             <p class="openClassTitle"><?php echo $v['name']?></p>
             <p class="openClassTime"><?php echo $v['commencement']?></p>
@@ -302,7 +302,7 @@
 
                         </div>
                         <div class="teacher_index_big_head ani">
-                            <img src="http://www.toeflonline.cn<?php echo $v['image']?>" alt="托福名师"/>
+                            <img src="http://toefl.viplgw.cn<?php echo $v['image']?>" alt="托福名师"/>
                         </div>
                     </li>
                     <?php }?>
@@ -317,7 +317,7 @@
                             <?php foreach($course['teachers'] as $v){?>
                                 <li>
                                     <div class="teacher_index_head_small">
-                                        <img src="http://www.toeflonline.cn<?php echo $v['image']?>" alt="托福名师">
+                                        <img src="http://toefl.viplgw.cn<?php echo $v['image']?>" alt="托福名师">
                                     </div>
                                 </li>
                             <?php }?>
@@ -339,35 +339,35 @@
             </a>
         </li>
         <li>
-            <a href="http://www.toeflonline.cn/toeflnews/29705.html" target="_blank">
+            <a href="http://toefl.viplgw.cn/toeflnews/29705.html" target="_blank">
                 <span class="zero"></span>
                 <span class="one">考试时间</span>
                 <span class="two"></span>
             </a>
         </li>
         <li>
-            <a href="http://www.toeflonline.cn/toeflnews/10520.html" target="_blank">
+            <a href="http://toefl.viplgw.cn/toeflnews/10520.html" target="_blank">
                 <span class="zero"></span>
                 <span class="one">考试地点</span>
                 <span class="two"></span>
             </a>
         </li>
         <li>
-            <a href="http://www.toeflonline.cn/toeflnews/10512.html" target="_blank">
+            <a href="http://toefl.viplgw.cn/toeflnews/10512.html" target="_blank">
                 <span class="zero"></span>
                 <span class="one">考试内容</span>
                 <span class="two"></span>
             </a>
         </li>
         <li>
-            <a href="http://www.toeflonline.cn/toeflnews/10515.html" target="_blank">
+            <a href="http://toefl.viplgw.cn/toeflnews/10515.html" target="_blank">
                 <span class="zero"></span>
                 <span class="one">考试流程</span>
                 <span class="two"></span>
             </a>
         </li>
         <li>
-            <a href="http://www.toeflonline.cn/toeflnews/29060.html" target="_blank">
+            <a href="http://toefl.viplgw.cn/toeflnews/29060.html" target="_blank">
                 <span class="zero"></span>
                 <span class="one">考试费用</span>
             </a>
@@ -386,7 +386,7 @@
             <ul><!--循环li-->
                 <?php foreach($course['active'] as $v){?>
                 <li>
-                    <a href="http://www.toeflonline.cn/toeflnews/<?php echo $v['id']?>.html" target="_blank">
+                    <a href="http://toefl.viplgw.cn/toeflnews/<?php echo $v['id']?>.html" target="_blank">
                         <b><?php echo $v['name']?></b>
 <!--                        <p>托福写作中，大家替换掉一些低级词汇，也可以让我们的作文焕然一新，拿到高分。那么具体的哪些词汇可以被替换呢?雷哥托福网为大家整理了这些替换词汇，供大家参考练习。</p>-->
                     </a>

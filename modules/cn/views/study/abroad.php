@@ -41,7 +41,7 @@
                 <?php foreach($caseList as $v){?>
                 <li>
                     <b>•</b>
-                    <span><a href="/word-details/<?php echo $v['id']?>/index,178.html"><?php echo $v['name']?></a></span>
+                    <span><a href="/word-details/<?php echo $v['id']?>/index,178.html"><?php echo $v['title']!=false?$v['title']:$v['name']?></a></span>
                     <div class="clearfix"></div>
                 </li>
                 <?php }?>
@@ -253,13 +253,27 @@
     <div class="service_line"></div>
     <div class="hot_content">
         <ul>
-            <?php foreach($abroadPro as $v){?>
-            <li>
-<!--                <img class="hotImg" src="--><?php //echo $v['image']?><!--" alt="">-->
-                <img class="hotImg" src="<?php echo $v['image']?>" alt="">
-                <a href="/word-details/<?php echo $v['id']?>/index,178.html"><?php echo $v['name']?> <span><i class="iconfont">&#xe600;</i></span></a>
-            </li>
-            <?php }?>
+            <?php foreach ($abroadPro as $k => $v) {
+                $country = Yii::$app->request->get('country', 'USA');
+                if ($country == 'USA' || $country == 'UK') {
+                    if ($k < count($abroadPro) - 2) {
+                        ?>
+                        <li>
+                            <img class="hotImg" src="<?php echo $v['image'] ?>" alt="">
+                            <a href="/word-details/<?php echo $v['id'] ?>/index,178.html"><?php echo $v['name'] ?>
+                                <span><i class="iconfont">&#xe600;</i></span></a>
+                        </li>
+                    <?php }
+                } else {
+                    ?>
+                    <li>
+                        <img class="hotImg" src="<?php echo $v['image'] ?>" alt="">
+                        <a href="/word-details/<?php echo $v['id'] ?>/index,178.html"><?php echo $v['name'] ?> <span><i
+                                    class="iconfont">&#xe600;</i></span></a>
+                    </li>
+                <?php }
+            } ?>
+
         </ul>
     </div>
     <script>
@@ -284,20 +298,22 @@
         <div class="content_list"><!--外层循环 listDiv-->
             <?php foreach($internship as $k=>$v){?>
             <div class="<?php echo $k=='inland'?'practice ':''?>listDiv"><!--国外实习  内层循环div list_show-->
-                <div class="listDivCover">
+                <ul class="listDivCover hd">
                     <?php foreach($v as $key=>$val){
                         if(is_numeric($key)){?>
-                            <a href="/word-details/<?php echo $val['id']?>/index,178.html">
-                                <div class="list_show">
-                                    <img src="<?php echo 'http://www.thinkwithu.com'.$val['image']?>" alt="">
-                                    <div class="list_bottom">
-                                        <p><?php echo $val['name']?></p>
+                            <li>
+                                <a href="/word-details/<?php echo $val['id']?>/index,178.html">
+                                    <div class="list_show">
+                                        <img src="<?php echo 'http://www.thinkwithu.com'.$val['image']?>" alt="">
+                                        <div class="list_bottom">
+                                            <p><?php echo $val['name']?></p>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </li>
                         <?php }
                     }?>
-                </div>
+                </ul>
                 <!-- 分页-->
                 <div class="pageSize">
                     <ul><?php if($v['count']!=false){?>
@@ -311,6 +327,7 @@
                 </div>
             </div>
             <?php }?>
+
         </div>
     </div>
     <script>
@@ -326,14 +343,14 @@
             $.get('/cn/api/internship',{catId:catid,page:page},function (re) {
                 for(var i in JSON.parse(re).data){
                     if(i<6){
-                        str+='<a href="/word-details/'+ JSON.parse(re).data[i].id +'/index,178.html">';
+                        str+='<li><a href="/word-details/'+ JSON.parse(re).data[i].id +'/index,178.html">';
                         str+='<div class="list_show">';
                         str+='<img src="http://www.thinkwithu.com'+JSON.parse(re).data[i].image+'" alt="">';
                         str+='<div class="list_bottom">';
                         str+='<p>'+ JSON.parse(re).data[i].name +'</p>';
                         str+='</div>';
                         str+='</div>';
-                        str+='</a>';
+                        str+='</a></li>';
                     }
                 }
                 $('.listDiv').eq(index).find('.listDivCover').html(str);
@@ -442,11 +459,11 @@
         <div class="scoring_course">
             <?php $country = Yii::$app->request->get('country', 'USA');
             if ($country == 'USA') { ?>
-                <a href="http://www.gmatonline.cn/gmatcourses/397.html" target="_blank">
+                <a href="http://gmat.viplgw.cn/gmatcourses/397.html" target="_blank">
                     <p>GMAT 700 分</p>
                     <p>冲刺课程</p>
                 </a>
-                <a href="http://www.greonline.cn/course/7778.html" target="_blank">
+                <a href="http://gre.viplgw.cn/course/7778.html" target="_blank">
                     <p>GRE 330 分</p>
                     <p>冲刺课程</p>
                 </a>
@@ -463,11 +480,11 @@
                     <p>精品课</p>
                 </a>
             <?php } elseif ($country == 'UK') { ?>
-                <a href="http://www.gmatonline.cn/gmatcourses/397.html" target="_blank">
+                <a href="http://gmat.viplgw.cn/gmatcourses/397.html" target="_blank">
                     <p>GMAT 700 分</p>
                     <p>冲刺课程</p>
                 </a>
-                <a href="http://www.greonline.cn/course/7778.html" target="_blank">
+                <a href="http://gre.viplgw.cn/course/7778.html" target="_blank">
                     <p>GRE 330 分</p>
                     <p>冲刺课程</p>
                 </a>
@@ -476,11 +493,11 @@
                     <p>精品课</p>
                 </a>
             <?php } elseif ($country == 'HK') { ?>
-                <a href="http://www.gmatonline.cn/gmatcourses/397.html" target="_blank" style="margin-left: 170px!important;">
+                <a href="http://gmat.viplgw.cn/gmatcourses/397.html" target="_blank" style="margin-left: 170px!important;">
                     <p>GMAT 700 分</p>
                     <p>冲刺课程</p>
                 </a>
-                <a href="http://www.greonline.cn/course/7778.html" target="_blank" style="margin-left: 90px!important;">
+                <a href="http://gre.viplgw.cn/course/7778.html" target="_blank" style="margin-left: 90px!important;">
                     <p>GRE 330 分</p>
                     <p>冲刺课程</p>
                 </a>
@@ -493,11 +510,11 @@
                     <p>精品课</p>
                 </a>
             <?php } elseif ($country == 'AUS') { ?>
-                <a href="http://www.gmatonline.cn/gmatcourses/397.html" target="_blank">
+                <a href="http://gmat.viplgw.cn/gmatcourses/397.html" target="_blank">
                     <p>GMAT 700 分</p>
                     <p>冲刺课程</p>
                 </a>
-                <a href="http://www.greonline.cn/course/7778.html" target="_blank">
+                <a href="http://gre.viplgw.cn/course/7778.html" target="_blank">
                     <p>GRE 330 分</p>
                     <p>冲刺课程</p>
                 </a>
